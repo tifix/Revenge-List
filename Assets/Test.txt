@@ -1,0 +1,2 @@
+This is a test file.
+If you can see this file, you have succesfully grabbed the project template
