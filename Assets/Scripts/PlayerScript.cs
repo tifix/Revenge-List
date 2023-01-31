@@ -1,11 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    Controls input;
+    InputAction movement;
+    InputAction jump;
+    InputAction attack;
+
+    Rigidbody2D rb;
+
+    private void Awake()
+    {
+        input = new Controls();
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void OnEnable()
     {
         
     }
@@ -13,6 +26,6 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
