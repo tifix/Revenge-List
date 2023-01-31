@@ -6,9 +6,10 @@ using UnityEngine.InputSystem;
 public class PlayerCombat : ObjectScript
 {
     Controls input;
-           
-    const float maxStamina = 100.0f;            // The maximum stamina of the Player
-    float stamina;                              // The current stamina of the Player
+
+    const float maxStamina = 100.0f;                                                                // The maximum stamina of the Player
+    [SerializeField, Tooltip("Stamina Regen Per Second")]float staminaRegenPerSec = 2.0f;           // Stamina regen rate *MAKE CONST WHEN FINALISED*
+    [SerializeField, Tooltip("current stamina of the Player")]float stamina;                        // The current stamina of the Player
 
 
     // Start is called before the first frame update
@@ -21,16 +22,35 @@ public class PlayerCombat : ObjectScript
         stamina = maxStamina;
 
         input.Ground.Attack.performed += Attack;
+        input.Ground.Attack.Enable();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
+
+    private void FixedUpdate()
+    {
+        if(stamina < maxStamina)
+        {
+            stamina += staminaRegenPerSec * Time.fixedDeltaTime;
+            Debug.Log("Stamina: %f" + stamina);
+        }
+        else if(stamina > maxStamina)
+        {
+            stamina = maxStamina;
+        }
+    }
+
     private void Attack(InputAction.CallbackContext obj)
     {
-        Debug.Log("Attacking now");
+        if(stamina >= 10.0f)
+        {
+            stamina -= 5.0f;
+            Debug.Log("Attacking now. Stamina: %f" + stamina);
+        }
     }
 
     // For applying healing to the player
