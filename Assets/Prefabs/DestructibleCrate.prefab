@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3067482050923579234}
   - component: {fileID: 3067482050923579233}
   - component: {fileID: 7036463017820390683}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DestructibleCrate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08ce82e816f41634295d648b12097f70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 1
 --- !u!54 &3067482050923579233
 Rigidbody:
   m_ObjectHideFlags: 0
