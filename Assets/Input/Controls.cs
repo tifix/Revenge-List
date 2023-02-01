@@ -62,6 +62,15 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""KillSelf"",
+                    ""type"": ""Button"",
+                    ""id"": ""ad580bff-114a-47e2-b6be-b24b65b212a2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -194,6 +203,17 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""33f79ddb-b640-4567-8322-f0e61ece8b18"",
+                    ""path"": ""<Keyboard>/l"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""KillSelf"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -412,6 +432,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         m_Ground_Jump = m_Ground.FindAction("Jump", throwIfNotFound: true);
         m_Ground_Attack = m_Ground.FindAction("Attack", throwIfNotFound: true);
         m_Ground_Interact = m_Ground.FindAction("Interact", throwIfNotFound: true);
+        m_Ground_KillSelf = m_Ground.FindAction("KillSelf", throwIfNotFound: true);
         // Menu
         m_Menu = asset.FindActionMap("Menu", throwIfNotFound: true);
         m_Menu_Newaction = m_Menu.FindAction("New action", throwIfNotFound: true);
@@ -484,6 +505,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
     private readonly InputAction m_Ground_Jump;
     private readonly InputAction m_Ground_Attack;
     private readonly InputAction m_Ground_Interact;
+    private readonly InputAction m_Ground_KillSelf;
     public struct GroundActions
     {
         private @Controls m_Wrapper;
@@ -492,6 +514,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         public InputAction @Jump => m_Wrapper.m_Ground_Jump;
         public InputAction @Attack => m_Wrapper.m_Ground_Attack;
         public InputAction @Interact => m_Wrapper.m_Ground_Interact;
+        public InputAction @KillSelf => m_Wrapper.m_Ground_KillSelf;
         public InputActionMap Get() { return m_Wrapper.m_Ground; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -513,6 +536,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @Interact.started -= m_Wrapper.m_GroundActionsCallbackInterface.OnInteract;
                 @Interact.performed -= m_Wrapper.m_GroundActionsCallbackInterface.OnInteract;
                 @Interact.canceled -= m_Wrapper.m_GroundActionsCallbackInterface.OnInteract;
+                @KillSelf.started -= m_Wrapper.m_GroundActionsCallbackInterface.OnKillSelf;
+                @KillSelf.performed -= m_Wrapper.m_GroundActionsCallbackInterface.OnKillSelf;
+                @KillSelf.canceled -= m_Wrapper.m_GroundActionsCallbackInterface.OnKillSelf;
             }
             m_Wrapper.m_GroundActionsCallbackInterface = instance;
             if (instance != null)
@@ -529,6 +555,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @Interact.started += instance.OnInteract;
                 @Interact.performed += instance.OnInteract;
                 @Interact.canceled += instance.OnInteract;
+                @KillSelf.started += instance.OnKillSelf;
+                @KillSelf.performed += instance.OnKillSelf;
+                @KillSelf.canceled += instance.OnKillSelf;
             }
         }
     }
@@ -629,6 +658,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         void OnJump(InputAction.CallbackContext context);
         void OnAttack(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
+        void OnKillSelf(InputAction.CallbackContext context);
     }
     public interface IMenuActions
     {
