@@ -15,24 +15,22 @@ public struct TextData
 */
 
 
-public class DialogueMASTERCLASS : MonoBehaviour
+public class UI_GameHandler : MonoBehaviour
 {
-    public static DialogueMASTERCLASS instance;
+    public static UI_GameHandler instance;
     public Dialogue dialogueCur;
 
     public bool isWaiting = false;
-    public bool choosing;
+    protected bool choosing;
     [SerializeField] protected bool runCoroutine; //we need this so that the coroutine doesn't try to run every frame
     protected string pageText="VOID";
-    [SerializeField] protected GameObject textBox;  //this is here in case the text box's visibility needs to be toggled on/off.
-                                                    //Just drop the textbox image here in the inspector
 
+    [SerializeField] protected GameObject textBox; public GameObject interactPrompt;  //object that displays dialogue , the prompt to interact object 
+    [SerializeField] Text txtMain, txtSpeaker;                //the text that displays the dialogue in UI.   Aaaand the caption of WHO is speaking
 
-    public Text txtMain, txtSpeaker;                //the text that displays the dialogue in UI.   Aaaand the caption of WHO is speaking
+    [Tooltip("What part of the dialogue is displayed"), Range(0,99)] public int txtPageNr = 0; //this is used to get dialogue onwards with switch case
 
-    [Range(0,99)] public int txtPageNr = 0; //this is used to get dialogue onwards with switch case
-
-    public float typingWait = 0.03f; //how much time passes between the letters typed
+    [Tooltip("time in s between each letter typed")]public float typingWait = 0.03f; //how much time passes between the letters typed
 
 
     public void Awake()
@@ -64,10 +62,11 @@ public class DialogueMASTERCLASS : MonoBehaviour
 
     protected IEnumerator Typer(Dialogue _dialogue) //typing the text over time
     {
+        //Debug.Log("Starting Display of "+_dialogue.textBody[0]);
         /*
          * PlayerMovement.canMove=false;
          */
-        textBox.SetActive(true);
+        
         dialogueCur = _dialogue;
         txtPageNr = 0;      //page iterator
 
@@ -106,6 +105,8 @@ public class DialogueMASTERCLASS : MonoBehaviour
     }
     public void Show(Dialogue _dialogue)
     {
+        textBox.SetActive(true);
+
         Debug.Log("initialising text");
         if (!runCoroutine)
         {

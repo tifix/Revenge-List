@@ -14,14 +14,17 @@ public class Interactible : MonoBehaviour
     public void Awake()
     {
         input = new Controls();
-        //input.Ground.Interact.Enable();
-        input.Ground.Interact.performed +=DoInteraction;
+        input.Ground.Interact.Enable();
+        //input.Ground.Interact.performed +=DoInteraction;
     }
 
     void OnTriggerEnter()
     {
-        input.Ground.Interact.Enable();
+        //input.Ground.Interact.Enable();
+        input.Ground.Interact.performed += DoInteraction;
+
         isInRange = true;
+        if(!isAutoUse) UI_GameHandler.instance.interactPrompt.SetActive(true);
         if (isAutoUse) { Interaction(); }  //Forbidden magiks resonate deep within
     }
 
@@ -29,6 +32,8 @@ public class Interactible : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         isInRange = false;
+        if (!isAutoUse) UI_GameHandler.instance.interactPrompt.SetActive(false);
+        //input.Ground.Interact.ChangeBinding(0).Erase();//
         input.Ground.Interact.performed -= DoInteraction;
     }
     public void DoInteraction(InputAction.CallbackContext obj) {if(isInRange) Interaction(); }
@@ -37,7 +42,7 @@ public class Interactible : MonoBehaviour
     protected virtual void Interaction()
     {
         uponInteractionDo.Invoke();
-        if (isSingleUse) Destroy(this);
+        if (isSingleUse) { UI_GameHandler.instance.interactPrompt.SetActive(false); input.Ground.Interact.performed -= DoInteraction; Destroy(this); }
     }
 
 
