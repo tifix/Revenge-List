@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Events;
 
 public class PlayerCombat : ObjectScript
 {
@@ -11,6 +12,9 @@ public class PlayerCombat : ObjectScript
     [SerializeField, Tooltip("Stamina Regen Per Second")]float staminaRegenPerSec = 2.0f;           // Stamina regen rate *MAKE CONST WHEN FINALISED*
     [SerializeField, Tooltip("current stamina of the Player")]float stamina;                        // The current stamina of the Player
 
+    public Transform attackOrg;
+    public float attackRange = 2.0f;
+    public LayerMask enemyLayers;
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +40,7 @@ public class PlayerCombat : ObjectScript
         if(stamina < maxStamina)
         {
             stamina += staminaRegenPerSec * Time.fixedDeltaTime;
-            Debug.Log("Stamina: %f" + stamina);
+            //Debug.Log("Stamina: %f" + stamina);
         }
         else if(stamina > maxStamina)
         {
@@ -44,12 +48,21 @@ public class PlayerCombat : ObjectScript
         }
     }
 
-    private void Attack(InputAction.CallbackContext obj)
+    public void Attack(InputAction.CallbackContext obj)
     {
         if(stamina >= 10.0f)
         {
             stamina -= 5.0f;
             Debug.Log("Attacking now. Stamina: %f" + stamina);
+
+            // Detect enemies in range
+            Collider[] hitEnemies = Physics.OverlapSphere(attackOrg.position, attackRange, enemyLayers);
+
+            // Damage destructibles hit by collider
+            foreach(Collider enemy in hitEnemies)
+            {
+                Debug.Log("Enemy hit: " + enemy.name);
+            }
         }
     }
 
@@ -58,4 +71,13 @@ public class PlayerCombat : ObjectScript
     {
         health += _value;
     }
+
+    private void OnDrawGizmosSelected()
+    {
+        if(attackOrg == null)
+            return;
+        Gizmos.DrawWireSphere(attackOrg.position, attackRange);
+    }
+
+
 }
