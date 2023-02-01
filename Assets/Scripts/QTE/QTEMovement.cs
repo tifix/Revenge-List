@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
@@ -90,6 +91,14 @@ public class QTEMovement : MonoBehaviour
         {
             transform.rotation = Quaternion.Slerp(currentAngle, finalAngle, i);
             yield return null;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.gameObject.CompareTag("Skull"))
+        {
+            Destroy(col.gameObject);
         }
     }
 }
