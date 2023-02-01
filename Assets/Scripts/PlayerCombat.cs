@@ -76,6 +76,7 @@ public class PlayerCombat : ObjectScript
     void ApplyHealing(float _value)
     {
         health += _value;
+        Debug.Log("Health: %f" + health);
     }
 
     private void OnDrawGizmosSelected()
