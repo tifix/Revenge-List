@@ -16,6 +16,9 @@ public class PlayerMovement : MonoBehaviour
 
     SpriteRenderer sprite;
 
+    [Header("Dialogue")]
+    public bool isDialogue = false;
+
     [Header("Move")]
     [Range(1f, 10f), Tooltip("Player movement speed")]
     public float moveSpeed = 5f;
@@ -60,13 +63,20 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         //Movement axis
-        dir = movement.ReadValue<Vector2>();
-        if (dir.x < 0)
-            sprite.flipX = true;
-        else if(dir.x > 0)
-            sprite.flipX= false;
-        CheckGround();
-        ProcessInput();
+        if(!isDialogue) 
+        {
+            dir = movement.ReadValue<Vector2>();
+            if (dir.x < 0)
+                sprite.flipX = true;
+            else if (dir.x > 0)
+                sprite.flipX = false;
+            CheckGround();
+            ProcessInput();
+        }
+        else
+        {
+            rb.velocity = Vector3.zero;
+        }
     }
 
     void CheckGround()
