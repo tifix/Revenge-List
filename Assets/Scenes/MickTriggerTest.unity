@@ -514,12 +514,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0680fa30cd7281444b79b7a6ea8b2ba1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDialogue: 0
   moveSpeed: 7
   verticalSpeedBoost: 2
   allowJump: 1
-  jumpSpeed: 6
+  jumpStrenght: 4
   groundCheckDistance: 0.05
   gravityScale: 2
+  zLimits: {x: 10, y: -10}
 --- !u!1 &604995573
 GameObject:
   m_ObjectHideFlags: 0
