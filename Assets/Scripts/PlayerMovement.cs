@@ -16,20 +16,29 @@ public class PlayerMovement : MonoBehaviour
 
     SpriteRenderer sprite;
 
+    [Header("Move")]
     [Range(1f, 10f), Tooltip("Player movement speed")]
     public float moveSpeed = 5f;
     [Range(1f, 10f), Tooltip("Depth speed offset")]
     public float verticalSpeedBoost = 2f;
+
+    [Header("Jump")]
     [Tooltip("Can the player jump")]
     public bool allowJump = true;
     [Range(1f, 100f), Tooltip("Jump height")]
     public float jumpStrenght = 4f;
     [Range(0f,1f), Tooltip("Ground check ray lenght")]
     public float groundCheckDistance = 0.5f;
+
+    [Header("Gravity")]
     [Range(1f, 10f), Tooltip("Gravity for the player")]
     public float gravityScale = 1f;
     float gravityForce = 0;
 
+
+    [Header("Screen Limits")]
+    [Tooltip("Max depth and minimun depth")]
+    public Vector2 zLimits;
     public bool IsGrounded { get; private set; }
 
     void Awake()
@@ -95,6 +104,9 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector3(0, rb.velocity.y - gravityForce, 0);
             gravityForce += gravityScale * Time.deltaTime;
         }
+
+        if (transform.position.z > zLimits.x || transform.position.z < zLimits.y)
+            transform.position = transform.position.z > 0 ? new Vector3(transform.position.x, transform.position.y, zLimits.x) : new Vector3(transform.position.x, transform.position.y, zLimits.y);
     }
 
     void DoJump(InputAction.CallbackContext obj)
@@ -112,5 +124,8 @@ public class PlayerMovement : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position - new Vector3(0,0.5f,0), transform.position - new Vector3(0, 0.5f + groundCheckDistance, 0));
+        Gizmos.color = Color.blue;
+        Gizmos.DrawLine(Vector3.zero, new Vector3(0, 0, zLimits.x));
+        Gizmos.DrawLine(Vector3.zero, new Vector3(0, 0, zLimits.y));
     }
 }
