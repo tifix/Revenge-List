@@ -6,7 +6,7 @@ public class ObjectScript : MonoBehaviour
 {
     Texture2D texture;
     Rigidbody rb;
-
+    
     protected bool isAlive, isStatic;               // Is the Object alive? isStatic;              // Is the Object static?
     protected Vector3 position;                     // Position Vector x,y,z: z = Depth?
     protected float maxHealth = 1;            // The maximum health the Object can have, defaults to 1 for Props.
