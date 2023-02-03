@@ -138,4 +138,10 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.DrawLine(Vector3.zero, new Vector3(0, 0, zLimits.x));
         Gizmos.DrawLine(Vector3.zero, new Vector3(0, 0, zLimits.y));
     }
+
+    private void OnDestroy()
+    {
+        movement.Disable();
+        input.Ground.Jump.Disable();
+    }
 }

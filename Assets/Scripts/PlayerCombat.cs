@@ -96,4 +96,9 @@ public class PlayerCombat : ObjectScript
         this.ApplyDamage(maxHealth);
     }
 
+    private void OnDestroy()    //Disabling attack input when exiting to menu
+    {
+        input.Ground.Attack.Disable();
+
+    }
 }

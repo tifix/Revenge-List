@@ -10,7 +10,7 @@ public class Inter_TextTrigger : Interactible
     protected override void Interaction()  
     {
         Debug.Log("priming " + dialogue.textBody[0]);
-        UI_GameHandler.instance.Show(dialogue);
+        UI.instance.Show(dialogue);
         Debug.Log("x");
         base.Interaction(); 
     }
