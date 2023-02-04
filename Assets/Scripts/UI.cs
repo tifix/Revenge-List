@@ -35,7 +35,7 @@ public class UI : MonoBehaviour
     private string pageText = "Warning: Unassigned text";
     [Tooltip("time in s between each letter typed")] public float typingWait = 0.03f;               //how much time passes between each letter typed
     [Space,Header("Object references")]
-    public GameObject boxInteractPrompt;                                                            //object that displays dialogue
+    public GameObject boxInteractPrompt, boxQTE;                                                    //object that displays dialogue and the quick time event parent
     [SerializeField]            private GameObject boxTextDisplay, boxPause, boxSettings;           //the pause menu, the settings menu and the prompt to interact with an object
     [SerializeField]            Text txtMain, txtSpeaker;                                           //the text that displays the dialogue in UI.   Aaaand the caption of WHO is speaking
     
@@ -142,6 +142,7 @@ public class UI : MonoBehaviour
     public void BackToMenu() { GameData.instance.LoadMenu(); }
     public void InputPause(InputAction.CallbackContext obj) => TogglePauseMenu();
     public void ToggleSettings() { boxSettings.SetActive(!boxSettings.activeInHierarchy); }                                                        //Toggle settings menu
+    public void ToggleQTEScreen() { boxQTE.SetActive(!boxQTE.activeInHierarchy); }                                                        //Toggle settings menu
     public void QuitToWindows() { Application.Quit(); }
 
 

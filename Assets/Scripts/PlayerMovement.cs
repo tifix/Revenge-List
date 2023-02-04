@@ -16,8 +16,8 @@ public class PlayerMovement : MonoBehaviour
 
     SpriteRenderer sprite;
 
-    [Header("Dialogue")]
-    public bool isDialogue = false;
+    [Header("Locks"), Tooltip("for example when player is in dialogue or in QTE")]
+    public bool isMovementLocked = false;
 
     [Header("Move")]
     [Range(1f, 10f), Tooltip("Player movement speed")]
@@ -63,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         //Movement axis
-        if(!isDialogue) 
+        if(!isMovementLocked) 
         {
             dir = movement.ReadValue<Vector2>();
             if (dir.x < 0)
