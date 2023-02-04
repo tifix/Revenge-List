@@ -12,7 +12,9 @@ public class QTEMovement : MonoBehaviour
     bool up, down, left, right;
 
     [Range(0f, 1f)]
-    public float rotationSpeed = 0.1f;
+    public float rotationSpeed = 0.2f;
+
+    bool rotating = false;
     // Start is called before the first frame update
     void Awake()
     {
@@ -71,34 +73,66 @@ public class QTEMovement : MonoBehaviour
 
     IEnumerator SmoothRotate(int pos,float time)
     {
+        rotating = true;
         Vector3 finalRot = Vector3.zero;
         switch(pos)
         {
-            case 0:finalRot.z = 0;
+            case 0:finalRot.z = 0.0f;
                 break;
-            case 1:finalRot.z = 90;
+            case 1:finalRot.z = 90.0f;
                 break;
-            case 2:finalRot.z = 180;
+            case 2:finalRot.z = 180.0f;
                 break;
-            case 3:finalRot.z = 270;
+            case 3:finalRot.z = 270.0f;
                 break;
         }
 
         Quaternion currentAngle = transform.rotation;
         Quaternion finalAngle = Quaternion.Euler(finalRot);
 
-        for (float i = 0; i <= 1; i+= Time.deltaTime/time)
+        for (float i = 0; i <= 1; i+= Time.fixedDeltaTime/time)
         {
             transform.rotation = Quaternion.Slerp(currentAngle, finalAngle, i);
             yield return null;
         }
+        rotating = false;
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
         if(col.gameObject.CompareTag("Skull"))
-        {
-            Destroy(col.gameObject);
+        {            
+            //Top 0  -90 
+            if (up && !rotating && col.gameObject.transform.position.y > transform.position.y)
+            {
+                Debug.Log("Top");
+                col.gameObject.GetComponent<SkullController>().Kill();
+                return;
+            }
+            //Left 90  0
+            else if (left && !rotating && col.gameObject.transform.position.x < transform.position.x)
+            {
+                Debug.Log("Left");
+                col.gameObject.GetComponent<SkullController>().Kill();
+                return;
+            }
+            //Bottom -180  90
+            else if (down && !rotating && col.gameObject.transform.position.y < transform.position.y)
+            {
+                Debug.Log("Dowm");
+                col.gameObject.GetComponent<SkullController>().Kill();
+                return;
+            }
+            //Right -90  -180
+            else if (right && !rotating && col.gameObject.transform.position.x > transform.position.x)
+            {
+                Debug.Log("Right");
+                col.gameObject.GetComponent<SkullController>().Kill();
+                return;
+            }
+            else
+                col.gameObject.GetComponent<SkullController>().BadHit();
+
         }
     }
 }
