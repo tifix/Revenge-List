@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aec95ee9f071fb74eb68723917246010, type: 3}
+  m_Name: 0_dialogueTyper
+  m_EditorClassIdentifier: 
+  textBody:
+  - 'We''ve got a linear dialogue set-up up  and running. '
+  - You can fast forward the dialogue, if it's taking too long. (type speed is also
+    adjustable)
+  - <Slow, boring exposition><Slow, boring exposition><Slow, boring exposition><Slow,
+    boring exposition><Slow, boring exposition><Slow, boring exposition><Slow, boring
+    exposition><Slow, boring exposition><Slow, boring exposition>
+  - It can be invoked from invisible triggers, UnityEvents or interactibles
+  textSpeaker:
+  - Narrator
+  - Narrator
+  - Boring narrator
+  - Technical narrator

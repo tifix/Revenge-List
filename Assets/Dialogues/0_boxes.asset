@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 0_boxes
   m_EditorClassIdentifier: 
   textBody:
-  - 
+  - 'Combat system - you can attack and destroy things. We will not have smal enemies,
+    just bosses '
   textSpeaker:
   - Narrator
