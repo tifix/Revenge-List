@@ -27,8 +27,6 @@ public class PlayerMovement : MonoBehaviour
     public float verticalSpeedBoost = 2f;
 
     [Header("Jump")]
-    [Tooltip("Can the player jump")]
-    public bool allowJump = true;
     [Range(1f, 100f), Tooltip("Jump height")]
     public float jumpStrenght = 4f;
     [Range(0f,1f), Tooltip("Ground check ray lenght")]
@@ -122,7 +120,7 @@ public class PlayerMovement : MonoBehaviour
 
     void DoJump(InputAction.CallbackContext obj)
     {
-        if(IsGrounded && allowJump)
+        if(IsGrounded && !isMovementLocked)
         {
             Debug.Log("Jump");
             //Jump up

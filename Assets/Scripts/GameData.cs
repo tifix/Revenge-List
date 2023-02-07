@@ -34,9 +34,9 @@ public class GameData : MonoBehaviour
     }
 
     #region Scene Switching
-    public void LoadScene(int _SceneNumber) => SceneManager.LoadScene(_SceneNumber);
-    public void LoadScene(string _SceneName) => SceneManager.LoadScene(_SceneName);
-    public void LoadMenu() => LoadScene("Menu");
+    public static void LoadScene(int _SceneNumber) => SceneManager.LoadScene(_SceneNumber);
+    public static void LoadScene(string _SceneName) => SceneManager.LoadScene(_SceneName);
+    public static void LoadMenu() => LoadScene("Menu");
     //public void LoadGame() => LoadScene();
 
     public void QuitToWindows() { Application.Quit(); }
