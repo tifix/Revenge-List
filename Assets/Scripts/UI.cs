@@ -21,6 +21,7 @@ public class UI : MonoBehaviour
     [Space,Header("Object references")]
     public GameObject boxInteractPrompt, boxQTE;                                                    //object that displays dialogue and the quick time event parent
     [SerializeField]            private GameObject boxTextDisplay, boxPause, boxSettings;           //the pause menu, the settings menu and the prompt to interact with an object
+    [SerializeField]            private GameObject boxWon, boxLost;
     [SerializeField]            Text txtMain, txtSpeaker;                                           //the text that displays the dialogue in UI.   Aaaand the caption of WHO is speaking
     
 

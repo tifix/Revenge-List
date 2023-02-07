@@ -7,7 +7,9 @@ public class GameData : MonoBehaviour
 {
     public float testScore = 0;
     public static GameData instance;
-    [SerializeField] private bool isGamePaused=false;
+    [SerializeField] private bool isGamePaused = false;
+    [SerializeField] private bool isGameWon = false;
+    [SerializeField] private bool isGameLost = false;
 
     public void Awake()
     {
@@ -30,6 +32,24 @@ public class GameData : MonoBehaviour
     {
         isGamePaused = targetState;
         if (isGamePaused) Time.timeScale = 0;
+        else Time.timeScale = 1;
+    }
+
+    // Change to win State
+    public void ToggleWon() => SetWon(!isGameWon);
+    public void SetWon(bool targetState)
+    {
+        isGameWon = targetState;
+        if (isGameWon) Time.timeScale = 0;
+        else Time.timeScale = 1;
+    }
+
+    // Change to lost State
+    public void ToggleLost() => SetWon(!isGameLost);
+    public void SetLost(bool targetState)
+    {
+        isGameLost = targetState;
+        if (isGameLost) Time.timeScale = 0;
         else Time.timeScale = 1;
     }
 

@@ -89,6 +89,8 @@ public class PlayerCombat : ObjectScript
     void OnDeath()
     {
         Debug.Log("PLAYER DEAD... [WIP]");
+        
+        
     }
 
     void KillSelf()
