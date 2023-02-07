@@ -117,7 +117,7 @@ Transform:
   m_Children:
   - {fileID: 2046416954523418678}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4814028220110693392
 MeshFilter:
@@ -138,8 +138,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 4.61, z: 23.250002}
-  m_Center: {x: 0, y: 0.5, z: 0}
+  m_Size: {x: 1, y: 4.2550726, z: 32.490467}
+  m_Center: {x: 0, y: 0.677464, z: -11.538079}
 --- !u!114 &4814028220110693398
 MonoBehaviour:
   m_ObjectHideFlags: 0

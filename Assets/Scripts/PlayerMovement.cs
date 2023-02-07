@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+
     //Input Action Map Script
     Controls input;
     InputAction movement;
@@ -16,8 +17,8 @@ public class PlayerMovement : MonoBehaviour
 
     SpriteRenderer sprite;
 
-    [Header("Dialogue")]
-    public bool isDialogue = false;
+    [Header("Locks"), Tooltip("for example when player is in dialogue or in QTE")]
+    public static bool isMovementLocked = false;
 
     [Header("Move")]
     [Range(1f, 10f), Tooltip("Player movement speed")]
@@ -63,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         //Movement axis
-        if(!isDialogue) 
+        if(!isMovementLocked) 
         {
             dir = movement.ReadValue<Vector2>();
             if (dir.x < 0)
@@ -138,4 +139,13 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.DrawLine(Vector3.zero, new Vector3(0, 0, zLimits.x));
         Gizmos.DrawLine(Vector3.zero, new Vector3(0, 0, zLimits.y));
     }
+
+    private void OnDestroy()
+    {
+        movement.Disable();
+        input.Ground.Jump.Disable();
+    }
+
+    public static void SetLockMovement() { isMovementLocked = true; }   //Globally accessible movement locks
+    public static void SetUnLockMovement() { isMovementLocked = false; }
 }

@@ -24,7 +24,7 @@ public class Interactible : MonoBehaviour
         input.Ground.Interact.performed += DoInteraction;
 
         isInRange = true;
-        if(!isAutoUse) UI_GameHandler.instance.interactPrompt.SetActive(true);
+        if(!isAutoUse) UI.instance.boxInteractPrompt.SetActive(true);
         if (isAutoUse) { Interaction(); }  //Forbidden magiks resonate deep within
     }
 
@@ -32,7 +32,7 @@ public class Interactible : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         isInRange = false;
-        if (!isAutoUse) UI_GameHandler.instance.interactPrompt.SetActive(false);
+        if (!isAutoUse) UI.instance.boxInteractPrompt.SetActive(false);
         //input.Ground.Interact.ChangeBinding(0).Erase();//
         input.Ground.Interact.performed -= DoInteraction;
     }
@@ -42,7 +42,7 @@ public class Interactible : MonoBehaviour
     protected virtual void Interaction()
     {
         uponInteractionDo.Invoke();
-        if (isSingleUse) { UI_GameHandler.instance.interactPrompt.SetActive(false); input.Ground.Interact.performed -= DoInteraction; Destroy(this); }
+        if (isSingleUse) { UI.instance.boxInteractPrompt.SetActive(false); input.Ground.Interact.performed -= DoInteraction; Destroy(this); }
     }
 
 

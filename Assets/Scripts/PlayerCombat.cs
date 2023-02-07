@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Events;
+using System.Xml.Serialization;
+
 
 public class PlayerCombat : ObjectScript
 {
@@ -30,9 +32,12 @@ public class PlayerCombat : ObjectScript
     }
 
     // Update is called once per frame
-    void Update()
+    override protected void Update()
     {
-
+        if (this.health <= 0.0f)
+        {
+            OnDeath();
+        }
     }
 
     private void FixedUpdate()
@@ -62,6 +67,7 @@ public class PlayerCombat : ObjectScript
             foreach(Collider enemy in hitEnemies)
             {
                 Debug.Log("Enemy hit: " + enemy.name);
+                enemy.GetComponent<ObjectScript>().ApplyDamage(10.0f);
             }
         }
     }
@@ -70,6 +76,7 @@ public class PlayerCombat : ObjectScript
     void ApplyHealing(float _value)
     {
         health += _value;
+        Debug.Log("Health: %f" + health);
     }
 
     private void OnDrawGizmosSelected()
@@ -79,5 +86,19 @@ public class PlayerCombat : ObjectScript
         Gizmos.DrawWireSphere(attackOrg.position, attackRange);
     }
 
+    void OnDeath()
+    {
+        Debug.Log("PLAYER DEAD... [WIP]");
+    }
 
+    void KillSelf()
+    {
+        this.ApplyDamage(maxHealth);
+    }
+
+    private void OnDestroy()    //Disabling attack input when exiting to menu
+    {
+        input.Ground.Attack.Disable();
+
+    }
 }
