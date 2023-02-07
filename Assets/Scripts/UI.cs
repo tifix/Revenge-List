@@ -4,23 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-/*
-public struct TextData 
-{
-    public List<string> textBody;// = new List<string>;
-    public List<string> textSpeaker;// = new List<string>;
 
-    public TextData(List<string> _body, List<string> _speaker) { textBody = _body; textSpeaker = _speaker; }
-    //public TextData(List<string> _body, string _speaker) { textBody.Add(" "); textSpeaker = _speaker; }
-}
-*/
-/*
-public struct Objects 
-{
-    public GameObject 
-
-}
-*/
 
 public class UI : MonoBehaviour
 {
@@ -84,9 +68,8 @@ public class UI : MonoBehaviour
     protected IEnumerator Typer(Dialogue _dialogue) //typing the text over time
     {
         //Debug.Log("Starting Display of "+_dialogue.textBody[0]);
-        /*
-         PlayerMovement.instance.isDialogue = true;
-         */
+        
+         PlayerMovement.SetLockMovement();
         
         dialogueCur = _dialogue;
         txtPageNr = 0;      //page iterator
@@ -120,11 +103,9 @@ public class UI : MonoBehaviour
         dialogueCur = null;
         boxTextDisplay.SetActive(false);
 
-        /*
-         * PlayerMovement.canMove=false;
-         */
+        PlayerMovement.SetUnLockMovement();
     }
-    public void Show(Dialogue _dialogue)            //Call this with a dialogue structure to display it!
+    public void Show(Dialogue _dialogue)                            //Call this with a dialogue structure to display it!
     {
         boxTextDisplay.SetActive(true);
 
@@ -142,7 +123,13 @@ public class UI : MonoBehaviour
     public void BackToMenu() { GameData.instance.LoadMenu(); }
     public void InputPause(InputAction.CallbackContext obj) => TogglePauseMenu();
     public void ToggleSettings() { boxSettings.SetActive(!boxSettings.activeInHierarchy); }                                                        //Toggle settings menu
-    public void ToggleQTEScreen() { boxQTE.SetActive(!boxQTE.activeInHierarchy); }                                                        //Toggle settings menu
+    public void ToggleQTEScreen() //Toggle QTE screen and freeze player movement
+    {
+        if(!boxQTE.activeInHierarchy) PlayerMovement.SetLockMovement();
+        else { PlayerMovement.SetUnLockMovement(); }
+
+        boxQTE.SetActive(!boxQTE.activeInHierarchy); 
+    }                                                        
     public void QuitToWindows() { Application.Quit(); }
 
 

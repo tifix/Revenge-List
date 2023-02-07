@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+
     //Input Action Map Script
     Controls input;
     InputAction movement;
@@ -17,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     SpriteRenderer sprite;
 
     [Header("Locks"), Tooltip("for example when player is in dialogue or in QTE")]
-    public bool isMovementLocked = false;
+    public static bool isMovementLocked = false;
 
     [Header("Move")]
     [Range(1f, 10f), Tooltip("Player movement speed")]
@@ -144,4 +145,7 @@ public class PlayerMovement : MonoBehaviour
         movement.Disable();
         input.Ground.Jump.Disable();
     }
+
+    public static void SetLockMovement() { isMovementLocked = true; }   //Globally accessible movement locks
+    public static void SetUnLockMovement() { isMovementLocked = false; }
 }
