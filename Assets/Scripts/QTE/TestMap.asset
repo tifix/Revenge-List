@@ -14,4 +14,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   delay: 0.5
-  beats: 010000000300000002000000040000000100000002000000030000000100000002000000030000000100000002000000030000000200000004000000
+  beats:
+  - myBeat: 1
+    speedMod: 1
+  - myBeat: 2
+    speedMod: 1
+  - myBeat: 3
+    speedMod: 1
+  - myBeat: 4
+    speedMod: 1
+  - myBeat: 1
+    speedMod: 2
+  - myBeat: 2
+    speedMod: 1
+  - myBeat: 2
+    speedMod: 1
+  - myBeat: 4
+    speedMod: 1
+  - myBeat: 4
+    speedMod: 3
+  - myBeat: 1
+    speedMod: 1
+  - myBeat: 3
+    speedMod: 1
+  - myBeat: 2
+    speedMod: 1

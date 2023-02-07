@@ -5,19 +5,24 @@ using UnityEngine;
 public class SkullController : MonoBehaviour
 {
     int speed = 1;
+    bool isAlive = true;
+    bool badHit = false;
     void Awake()
     {
-        transform.localScale = new Vector3(30,30,1);
+        transform.localScale = new Vector3(25,25,1);
     }
     void Update()
     {
         transform.Translate(speed * Time.deltaTime, 0, 0);
-        if(Vector3.Distance(transform.localPosition,Vector3.zero) <= transform.localScale.x)
-        {
-            Destroy(gameObject);
-        }
-
     }
 
     public void SetSpeed(int s) { speed = s; }
+
+    public void Kill() { isAlive = false; }
+
+    public bool GetIsAlive() { return isAlive; }
+
+    public void BadHit() { badHit = true; }
+
+    public bool GetBadHit() { return badHit; }
 }
