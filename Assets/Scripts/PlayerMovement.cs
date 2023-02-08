@@ -26,6 +26,15 @@ public class PlayerMovement : MonoBehaviour
     [Range(1f, 10f), Tooltip("Depth speed offset")]
     public float verticalSpeedBoost = 2f;
 
+    [Header("Dash")]
+    [Range(1,100), Tooltip("How fast the player will travel")]
+    public float dashStrenght = 1.0f;
+    [Range(0.1f,2), Tooltip("How long the dash is")]
+    public float dashLenght = 1.0f;
+    [Range(0.1f,2), Tooltip("How often the player can dash")]
+    public float dashCoolDown = 1.0f;
+    float dashTime = 0;
+
     [Header("Jump")]
     [Range(1f, 100f), Tooltip("Jump height")]
     public float jumpStrenght = 4f;
@@ -36,7 +45,6 @@ public class PlayerMovement : MonoBehaviour
     [Range(1f, 10f), Tooltip("Gravity for the player")]
     public float gravityScale = 1f;
     float gravityForce = 0;
-
 
     [Header("Screen Limits")]
     [Tooltip("Max depth and minimun depth")]
@@ -57,6 +65,9 @@ public class PlayerMovement : MonoBehaviour
         //Bind jump to a function
         input.Ground.Jump.performed += DoJump;
         input.Ground.Jump.Enable();
+
+        input.Ground.Dash.performed += DoDash;
+        input.Ground.Dash.Enable();
     }
 
     void Update()
@@ -126,6 +137,29 @@ public class PlayerMovement : MonoBehaviour
             //Jump up
             rb.velocity = Vector3.zero;
             rb.AddForce(Vector3.up* jumpStrenght,ForceMode.Impulse);
+        }
+    }
+
+    void DoDash(InputAction.CallbackContext obj)
+    {
+        if (IsGrounded && !isMovementLocked && dashTime + dashCoolDown < Time.time)
+        {
+            Debug.Log("Dash");
+            dashTime = Time.time;
+            //Dash
+            StartCoroutine("Dash");
+        }
+    }
+
+    IEnumerator Dash()
+    {
+        float t = dashLenght;
+        while (t > 0) 
+        {
+            //Controller can do shorter dashes, diagonal dashes are a bit longer
+            rb.velocity = rb.velocity + new Vector3(dir.x * dashStrenght, 0, dir.y * dashStrenght * verticalSpeedBoost);
+            t -= Time.deltaTime;
+            yield return new WaitForEndOfFrame();
         }
     }
 

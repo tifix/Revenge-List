@@ -19,7 +19,9 @@ public class QTEManager : MonoBehaviour
     int comboCount;
 
     public GameObject skullPrefab;
+    public GameObject skullVFX;
     public GameObject BeatUI;
+    public Image FillSong;
     [Range(0.1f,1.0f)]
     public float beatScale;
     public TMP_Text comboUI;
@@ -27,6 +29,8 @@ public class QTEManager : MonoBehaviour
 
     public List<BeatItem> beatObjects; 
     List<SkullController> _skulls;
+
+    float percentagePerSkull;
 
     [System.Serializable]
     public struct BeatItem
@@ -52,13 +56,19 @@ public class QTEManager : MonoBehaviour
 
         //currentMap = new QTEObject();
         if (currentMap == null)
-            currentMap = defaultMap;                                  
+            currentMap = defaultMap;
+
+        percentagePerSkull = (float)(1.0f / currentMap.beats.Count);
+
         playQTE = true;
         isPlaying = true;
+
         StartCoroutine("Rythm");
+
         beatCounter = 0;
-        _skulls = new List<SkullController>();
         comboUI.text = "";
+
+        _skulls = new List<SkullController>();
 
         for (int i = 0; i < beatObjects.Count; i++)
         {
@@ -84,6 +94,7 @@ public class QTEManager : MonoBehaviour
                 {
                     SpawnSkull();
                     beatCounter++;
+                    FillSong.fillAmount += percentagePerSkull;
                 }
                 beatTimer = 0;
             }
@@ -107,6 +118,7 @@ public class QTEManager : MonoBehaviour
                     if (Vector3.Distance(_skulls[i].transform.localPosition, Vector3.zero) <= _skulls[i].transform.localScale.x)
                     {
                         //Debug.Log("Player");
+                        Instantiate<GameObject>(skullVFX, _skulls[i].transform.position, Quaternion.identity);
                         Destroy(_skulls[i].gameObject);
                         _skulls.RemoveAt(i);
                         comboCount = 0;
@@ -118,6 +130,7 @@ public class QTEManager : MonoBehaviour
                     if (!_skulls[i].GetIsAlive())
                     {
                         //Debug.Log("Sword");
+                        Instantiate<GameObject>(skullVFX, _skulls[i].transform.position, Quaternion.identity);
                         Destroy(_skulls[i].gameObject);
                         _skulls.RemoveAt(i);
                         comboCount += 1;
@@ -128,6 +141,7 @@ public class QTEManager : MonoBehaviour
                     //Hit the sword while rotating
                     else if (_skulls[i].GetBadHit())
                     {
+                        Instantiate<GameObject>(skullVFX, _skulls[i].transform.position, Quaternion.identity);
                         Destroy(_skulls[i].gameObject);
                         _skulls.RemoveAt(i);
                     }
@@ -157,11 +171,13 @@ public class QTEManager : MonoBehaviour
         _skulls.Last<SkullController>().SetSpeed(currentMap.speed * currentMap.beats[beatCounter].speedMod);
     }
 
-    public static void QTEStart()
+    public void QTEStart()
     {
         UI.instance.ToggleQTEScreen();
         instance.playQTE = true;
         
+        percentagePerSkull = (float)(1.0f / currentMap.beats.Count);
+        FillSong.fillAmount = 0;
     }
     public int QTEEnd()
     {
@@ -182,11 +198,15 @@ public class QTEManager : MonoBehaviour
     public void SetBeatMap(QTEObject map)
     {
         currentMap = map;
+        percentagePerSkull = (float)(1.0f / currentMap.beats.Count);
+        FillSong.fillAmount = 0;
     }
 
     public void SetDefaultMap()
     {
         currentMap = defaultMap;
+        percentagePerSkull = (float)(1.0f / currentMap.beats.Count);
+        FillSong.fillAmount = 0;
     }
 
     IEnumerator PulseObject(BeatItem obj, float rate)
