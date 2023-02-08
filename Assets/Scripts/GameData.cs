@@ -7,7 +7,10 @@ public class GameData : MonoBehaviour
 {
     public float testScore = 0;
     public static GameData instance;
-    [SerializeField] private bool isGamePaused=false;
+    [SerializeField] private bool isGamePaused = false;
+    [SerializeField] private bool isGameWon = false;
+    [SerializeField] private bool isGameLost = false;
+    [SerializeField] public float DeathReloadTime;                                      //time in seconds(realtime) before menu reloads on game over.
 
     public void Awake()
     {
@@ -31,6 +34,23 @@ public class GameData : MonoBehaviour
         isGamePaused = targetState;
         if (isGamePaused) Time.timeScale = 0;
         else Time.timeScale = 1;
+    }
+
+    // Set win State
+    public void SetWon(bool targetState)
+    {
+        isGameWon = targetState;
+        if (isGameWon) Time.timeScale = 0;
+        else Time.timeScale = 1;
+    }
+
+    // Set lost State
+    public void SetLost(bool targetState)
+    {
+        isGameLost = targetState;
+        if (isGameLost) Time.timeScale = 0;
+        else Time.timeScale = 1;
+        UI.instance.EnableLostScreen();
     }
 
     #region Scene Switching

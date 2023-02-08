@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Events;
 using System.Xml.Serialization;
+using UnityEngine.Windows;
 
 
 public class PlayerCombat : ObjectScript
@@ -29,6 +30,9 @@ public class PlayerCombat : ObjectScript
 
         input.Ground.Attack.performed += Attack;
         input.Ground.Attack.Enable();
+
+        input.Ground.KillSelf.performed += KillSelf;
+        input.Ground.KillSelf.Enable();
     }
 
     // Update is called once per frame
@@ -89,9 +93,11 @@ public class PlayerCombat : ObjectScript
     void OnDeath()
     {
         Debug.Log("PLAYER DEAD... [WIP]");
+
+        GameData.instance.SetLost(true);
     }
 
-    void KillSelf()
+    void KillSelf(InputAction.CallbackContext obj)
     {
         this.ApplyDamage(maxHealth);
     }

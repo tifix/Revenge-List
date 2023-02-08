@@ -21,8 +21,9 @@ public class UI : MonoBehaviour
     [Space,Header("Object references")]
     public GameObject boxInteractPrompt, boxQTE;                                                    //object that displays dialogue and the quick time event parent
     [SerializeField]            private GameObject boxTextDisplay, boxPause, boxSettings;           //the pause menu, the settings menu and the prompt to interact with an object
+    [SerializeField]            private GameObject boxWon, boxLost;
     [SerializeField]            Text txtMain, txtSpeaker;                                           //the text that displays the dialogue in UI.   Aaaand the caption of WHO is speaking
-    
+
 
 
     public void Awake()                             //Ensuring single instance of the script
@@ -105,6 +106,13 @@ public class UI : MonoBehaviour
 
         PlayerMovement.SetUnLockMovement();
     }
+
+    protected IEnumerator WaitAndLoadMenu(float waitTime)
+    {
+        yield return new WaitForSecondsRealtime(waitTime);
+        BackToMenu();
+
+    }
     public void Show(Dialogue _dialogue)                            //Call this with a dialogue structure to display it!
     {
         boxTextDisplay.SetActive(true);
@@ -119,17 +127,22 @@ public class UI : MonoBehaviour
 
 
     #region button Stuffs
-    public void TogglePauseMenu() { boxPause.SetActive(!boxPause.activeInHierarchy); GameData.instance.TogglePause(); }  //Toggle pause menu
-    public void BackToMenu() { GameData.instance.LoadMenu(); }
+    public void TogglePauseMenu() { boxPause.SetActive(!boxPause.activeInHierarchy); GameData.instance.TogglePause(); }     //Toggle pause menu
+    public void BackToMenu() { GameData.LoadMenu(); }
     public void InputPause(InputAction.CallbackContext obj) => TogglePauseMenu();
-    public void ToggleSettings() { boxSettings.SetActive(!boxSettings.activeInHierarchy); }                                                        //Toggle settings menu
-    public void ToggleQTEScreen() //Toggle QTE screen and freeze player movement
+    public void ToggleSettings() { boxSettings.SetActive(!boxSettings.activeInHierarchy); }                                 //Toggle settings menu
+    public void ToggleQTEScreen()                                                                                           //Toggle QTE screen and freeze player movement
     {
         if(!boxQTE.activeInHierarchy) PlayerMovement.SetLockMovement();
         else { PlayerMovement.SetUnLockMovement(); }
 
         boxQTE.SetActive(!boxQTE.activeInHierarchy); 
-    }                                                        
+    }
+    public void EnableLostScreen()
+    {
+        boxLost.SetActive(true);
+        StartCoroutine(WaitAndLoadMenu(GameData.instance.DeathReloadTime));
+    }
     public void QuitToWindows() { Application.Quit(); }
 
 
