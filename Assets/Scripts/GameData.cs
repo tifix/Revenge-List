@@ -10,6 +10,7 @@ public class GameData : MonoBehaviour
     [SerializeField] private bool isGamePaused = false;
     [SerializeField] private bool isGameWon = false;
     [SerializeField] private bool isGameLost = false;
+    [SerializeField] public float DeathReloadTime;                                      //time in seconds(realtime) before menu reloads on game over.
 
     public void Awake()
     {
@@ -35,8 +36,7 @@ public class GameData : MonoBehaviour
         else Time.timeScale = 1;
     }
 
-    // Change to win State
-    public void ToggleWon() => SetWon(!isGameWon);
+    // Set win State
     public void SetWon(bool targetState)
     {
         isGameWon = targetState;
@@ -44,19 +44,19 @@ public class GameData : MonoBehaviour
         else Time.timeScale = 1;
     }
 
-    // Change to lost State
-    public void ToggleLost() => SetWon(!isGameLost);
+    // Set lost State
     public void SetLost(bool targetState)
     {
         isGameLost = targetState;
         if (isGameLost) Time.timeScale = 0;
         else Time.timeScale = 1;
+        UI.instance.EnableLostScreen();
     }
 
     #region Scene Switching
-    public void LoadScene(int _SceneNumber) => SceneManager.LoadScene(_SceneNumber);
-    public void LoadScene(string _SceneName) => SceneManager.LoadScene(_SceneName);
-    public void LoadMenu() => LoadScene("Menu");
+    public static void LoadScene(int _SceneNumber) => SceneManager.LoadScene(_SceneNumber);
+    public static void LoadScene(string _SceneName) => SceneManager.LoadScene(_SceneName);
+    public static void LoadMenu() => LoadScene("Menu");
     //public void LoadGame() => LoadScene();
 
     public void QuitToWindows() { Application.Quit(); }
