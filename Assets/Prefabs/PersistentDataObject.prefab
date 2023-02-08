@@ -44,3 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2ce40c6ba0febc42bdce009e7613280, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  testScore: 0
+  isGamePaused: 0
+  isGameWon: 0
+  isGameLost: 0
+  DeathReloadTime: 5
