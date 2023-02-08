@@ -92,7 +92,7 @@ public class PlayerCombat : ObjectScript
 
     void OnDeath()
     {
-        Debug.Log("PLAYER DEAD... [WIP]");
+        //Debug.Log("PLAYER DEAD... [WIP]");
 
         GameData.instance.SetLost(true);
     }

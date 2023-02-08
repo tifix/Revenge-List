@@ -728,6 +728,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3702850953895804210, guid: 044178dd346668d49946ca50d8299ffb, type: 3}
+      propertyPath: DeathReloadTime
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3702850953895804211, guid: 044178dd346668d49946ca50d8299ffb, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -1422,6 +1426,10 @@ PrefabInstance:
       propertyPath: boxLost
       value: 
       objectReference: {fileID: 174219345}
+    - target: {fileID: 4133116104273043938, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
+      propertyPath: DeathReloadTime
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4133116104273043939, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_Pivot.x
       value: 0
