@@ -10,6 +10,7 @@ using UnityEngine.Windows;
 public class PlayerCombat : ObjectScript
 {
     Controls input;
+    public static PlayerCombat instance;
 
     const float maxStamina = 100.0f;                                                                // The maximum stamina of the Player
     [SerializeField, Tooltip("Stamina Regen Per Second")]float staminaRegenPerSec = 2.0f;           // Stamina regen rate *MAKE CONST WHEN FINALISED*
@@ -19,7 +20,13 @@ public class PlayerCombat : ObjectScript
     public float attackRange = 2.0f;
     public LayerMask enemyLayers;
 
-    // Start is called before the first frame update
+    protected override void Awake()                             //Ensuring single instance of the script
+    {
+        base.Awake();
+        if (instance == null) instance = this;
+        else Destroy(this);
+    }
+
     void Start()
     {
         input = new Controls();

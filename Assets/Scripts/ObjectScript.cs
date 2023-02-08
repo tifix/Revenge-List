@@ -11,11 +11,11 @@ public class ObjectScript : MonoBehaviour
     
     protected bool isAlive, isStatic;               // Is the Object alive? isStatic;              // Is the Object static?
     protected Vector3 position;                     // Position Vector x,y,z: z = Depth?
-    protected float maxHealth = 1;            // The maximum health the Object can have, defaults to 1 for Props.
+    [SerializeField] protected float maxHealth = 1;            // The maximum health the Object can have, defaults to 1 for Props.
     [SerializeField] protected float health;                                   // The current health of the Object 
 
     // Start is called before the first frame update
-    protected void Awake()
+    protected virtual void Awake()
     {
         rb = GetComponent<Rigidbody>();
         isAlive = true;
@@ -60,4 +60,8 @@ public class ObjectScript : MonoBehaviour
     {
         Destroy(this.gameObject);
     }
+
+    public float GetHealth() { return health; }
+    public void SetHealth(float _health) { health= _health; }
+    public float GetMaxHealth() { return maxHealth; }
 }

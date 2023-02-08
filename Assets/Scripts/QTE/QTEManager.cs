@@ -8,6 +8,7 @@ using TMPro;
 
 public class QTEManager : MonoBehaviour
 {
+    public static QTEManager instance;        //cross-script access shorthand
     public QTEObject defaultMap;
     public QTEObject currentMap;
 
@@ -46,6 +47,9 @@ public class QTEManager : MonoBehaviour
 
     void Awake()
     {
+        if (instance == null) instance = this;
+        else Destroy(this);
+
         //currentMap = new QTEObject();
         if (currentMap == null)
             currentMap = defaultMap;                                  
@@ -90,6 +94,9 @@ public class QTEManager : MonoBehaviour
                 isPlaying = false;
                 beatTimer = 0;
                 beatCounter = 0;
+
+                Debug.Log("skull track finished");
+                Invoke("QTEEnd",3);
             }
 
             if (_skulls.Count > 0)
@@ -125,6 +132,7 @@ public class QTEManager : MonoBehaviour
                         _skulls.RemoveAt(i);
                     }
                 }
+                
             }
             else if (!isPlaying)
                 playQTE = false;
@@ -149,10 +157,27 @@ public class QTEManager : MonoBehaviour
         _skulls.Last<SkullController>().SetSpeed(currentMap.speed * currentMap.beats[beatCounter].speedMod);
     }
 
-    public void QTEStart()
+    public static void QTEStart()
     {
-        playQTE = true;
+        UI.instance.ToggleQTEScreen();
+        instance.playQTE = true;
+        
     }
+    public int QTEEnd()
+    {
+        if (UI.instance.bossHealth != null) 
+        {
+            Debug.Log("boss QTE finished");
+            UI.instance.bossHealth.coreHealth -= comboCount;
+            UI.instance.RefillShieldAfterQTE();
+        }
+        
+        
+        UI.instance.ToggleQTEScreen();
+        return comboCount;
+        //Score;
+    }
+
 
     public void SetBeatMap(QTEObject map)
     {

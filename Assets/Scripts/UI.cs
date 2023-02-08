@@ -20,10 +20,16 @@ public class UI : MonoBehaviour
     [Tooltip("time in s between each letter typed")] public float typingWait = 0.03f;               //how much time passes between each letter typed
     [Space,Header("Object references")]
     public GameObject boxInteractPrompt, boxQTE;                                                    //object that displays dialogue and the quick time event parent
-    [SerializeField]            private GameObject boxTextDisplay, boxPause, boxSettings;           //the pause menu, the settings menu and the prompt to interact with an object
-    [SerializeField]            private GameObject boxWon, boxLost;
+    [SerializeField]            GameObject boxTextDisplay, boxPause, boxSettings;                   //the pause menu, the settings menu and the prompt to interact with an object
+    [SerializeField]            GameObject boxWon, boxLost;                                         //VictoryScreen and Death screen respectively
+    [SerializeField]            GameObject boxHealthbar, boxBossBar;                                 //PLAYER AND BOSS healthbars respectively
     [SerializeField]            Text txtMain, txtSpeaker;                                           //the text that displays the dialogue in UI.   Aaaand the caption of WHO is speaking
+    [SerializeField]            Slider playerHealthBar, bossHealthBar, bossShieldBar;
+    [SerializeField]            Image   playerPortrait;                                             //Displayer of player portrait
+    [SerializeField]            Sprite[] playerPortraits = new Sprite[5];                           //Images to display as player looses health
 
+    //[HideInInspector] 
+    public bossHealth bossHealth;
 
 
     public void Awake()                             //Ensuring single instance of the script
@@ -31,13 +37,19 @@ public class UI : MonoBehaviour
         if (instance == null) instance = this;
         else Destroy(this);
 
-        input = new Controls();
+        
 
+        input = new Controls();                         //Initialising inputs
         input.Menu.Pause.performed += InputPause;
         input.Menu.Pause.Enable();
         input.Menu.Confirm.performed += ForwardDialogue;
         input.Menu.Confirm.Enable();
     }
+    public void Start()
+    {
+        playerHealthBar.maxValue = PlayerCombat.instance.GetMaxHealth();    //Scaling healthbar automatically
+    }
+
     public void OnDestroy()
     {
         input.Menu.Confirm.performed -= ForwardDialogue;
@@ -48,9 +60,9 @@ public class UI : MonoBehaviour
 
     public void Update()
     {
-      //if(dialogueCur!=null) DialogueStoppingLogic();
+        UpdateHealthDisplays();
     }
-
+    #region dialogue-related
 
     public void ForwardDialogue(InputAction.CallbackContext obj)        //advancing the dialogue - next page if finished, fast forwarding otherwise.
     {
@@ -106,13 +118,6 @@ public class UI : MonoBehaviour
 
         PlayerMovement.SetUnLockMovement();
     }
-
-    protected IEnumerator WaitAndLoadMenu(float waitTime)
-    {
-        yield return new WaitForSecondsRealtime(waitTime);
-        BackToMenu();
-
-    }
     public void Show(Dialogue _dialogue)                            //Call this with a dialogue structure to display it!
     {
         boxTextDisplay.SetActive(true);
@@ -125,12 +130,74 @@ public class UI : MonoBehaviour
         }
     }
 
+    #endregion
 
-    #region button Stuffs
+    public void UpdateHealthDisplays()
+    {
+        Debug.Log(PlayerCombat.instance.GetHealth());
+        playerHealthBar.value = PlayerCombat.instance.GetHealth();
+        SetPlayerPortrait(PlayerCombat.instance.GetHealth(), PlayerCombat.instance.GetMaxHealth()); //setting the player portrait from the base of avalible health-reflecting portraits
+
+        if (bossHealth != null)
+        {
+            bossShieldBar.maxValue = bossHealth.GetMaxHealth();
+            bossShieldBar.value = bossHealth.GetHealth();
+            //ONCE QTE IS FINISHED INVOKE THE FOLLOWING
+            //RefillShieldAfterQTE();
+
+            /*
+            if (bossHealth.isCoreExposed) 
+            {
+                QTEManager.QTEStart();
+                RefillShieldAfterQTE();  
+            }*/
+            //bossShieldBar.transform.Find("Fill Area").Find("Fill").GetComponent<Image>().color = Color.cyan;
+            //else bossHealthBar.transform.Find("Fill Area").Find("Fill").GetComponent<Image>().color = Color.red;
+        } 
+    }
+    public void RefillShieldAfterQTE() 
+    {
+        //SubtractHealthByQTEPerformence()
+        Debug.Log("B");
+        bossHealth.isCoreExposed = false;
+        bossHealth.SetHealth(bossHealth.GetMaxHealth());
+        bossShieldBar.value = bossShieldBar.maxValue;
+    }
+
+
+    public void EnableBossHealthBar() 
+    {
+        GameObject boss = GameObject.FindGameObjectWithTag("Boss");
+        if (boss.TryGetComponent<bossHealth>(out bossHealth healthData)) bossHealth = healthData;
+        bossHealthBar.maxValue = healthData.GetMaxHealth();
+        bossHealthBar.value = bossHealthBar.maxValue;
+        boxHealthbar.SetActive(true);
+    }
+
+    public void SetPlayerPortrait(float health, float maxHealth) 
+    {
+        float hp_normalised = health / maxHealth;
+        int whichPortrait =(int)Mathf.Round( Mathf.Lerp(0, playerPortraits.Length-1, hp_normalised));  //from the list of portraits, grab  
+        playerPortrait.sprite = playerPortraits[whichPortrait];
+    }
+
+    protected IEnumerator WaitAndLoadMenu(float waitTime)
+    {
+        yield return new WaitForSecondsRealtime(waitTime);
+        BackToMenu();
+
+    }
+
+
+   
+
+
+    #region buttons and element toggles
     public void TogglePauseMenu() { boxPause.SetActive(!boxPause.activeInHierarchy); GameData.instance.TogglePause(); }     //Toggle pause menu
     public void BackToMenu() { GameData.LoadMenu(); }
     public void InputPause(InputAction.CallbackContext obj) => TogglePauseMenu();
     public void ToggleSettings() { boxSettings.SetActive(!boxSettings.activeInHierarchy); }                                 //Toggle settings menu
+    public void ToggleHealthbar() { boxHealthbar.SetActive(!boxHealthbar.activeInHierarchy); }                              //Toggle the player healthbar display
     public void ToggleQTEScreen()                                                                                           //Toggle QTE screen and freeze player movement
     {
         if(!boxQTE.activeInHierarchy) PlayerMovement.SetLockMovement();
