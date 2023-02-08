@@ -55,6 +55,15 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
+                    ""name"": ""Dash"",
+                    ""type"": ""Button"",
+                    ""id"": ""d0812aac-2b61-419a-97b4-7373e570a45c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
                     ""name"": ""Interact"",
                     ""type"": ""Button"",
                     ""id"": ""8e3582d6-dfb3-4a80-990f-dc8385ec631f"",
@@ -214,6 +223,28 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""KillSelf"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ec5dd4e7-4b28-42ae-9fdb-32cdba7bb2c6"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""512e8ea6-8e77-4eba-ad60-9691cbe31063"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dash"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -484,6 +515,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         m_Ground_Move = m_Ground.FindAction("Move", throwIfNotFound: true);
         m_Ground_Jump = m_Ground.FindAction("Jump", throwIfNotFound: true);
         m_Ground_Attack = m_Ground.FindAction("Attack", throwIfNotFound: true);
+        m_Ground_Dash = m_Ground.FindAction("Dash", throwIfNotFound: true);
         m_Ground_Interact = m_Ground.FindAction("Interact", throwIfNotFound: true);
         m_Ground_KillSelf = m_Ground.FindAction("KillSelf", throwIfNotFound: true);
         // Menu
@@ -558,6 +590,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
     private readonly InputAction m_Ground_Move;
     private readonly InputAction m_Ground_Jump;
     private readonly InputAction m_Ground_Attack;
+    private readonly InputAction m_Ground_Dash;
     private readonly InputAction m_Ground_Interact;
     private readonly InputAction m_Ground_KillSelf;
     public struct GroundActions
@@ -567,6 +600,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         public InputAction @Move => m_Wrapper.m_Ground_Move;
         public InputAction @Jump => m_Wrapper.m_Ground_Jump;
         public InputAction @Attack => m_Wrapper.m_Ground_Attack;
+        public InputAction @Dash => m_Wrapper.m_Ground_Dash;
         public InputAction @Interact => m_Wrapper.m_Ground_Interact;
         public InputAction @KillSelf => m_Wrapper.m_Ground_KillSelf;
         public InputActionMap Get() { return m_Wrapper.m_Ground; }
@@ -587,6 +621,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @Attack.started -= m_Wrapper.m_GroundActionsCallbackInterface.OnAttack;
                 @Attack.performed -= m_Wrapper.m_GroundActionsCallbackInterface.OnAttack;
                 @Attack.canceled -= m_Wrapper.m_GroundActionsCallbackInterface.OnAttack;
+                @Dash.started -= m_Wrapper.m_GroundActionsCallbackInterface.OnDash;
+                @Dash.performed -= m_Wrapper.m_GroundActionsCallbackInterface.OnDash;
+                @Dash.canceled -= m_Wrapper.m_GroundActionsCallbackInterface.OnDash;
                 @Interact.started -= m_Wrapper.m_GroundActionsCallbackInterface.OnInteract;
                 @Interact.performed -= m_Wrapper.m_GroundActionsCallbackInterface.OnInteract;
                 @Interact.canceled -= m_Wrapper.m_GroundActionsCallbackInterface.OnInteract;
@@ -606,6 +643,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @Attack.started += instance.OnAttack;
                 @Attack.performed += instance.OnAttack;
                 @Attack.canceled += instance.OnAttack;
+                @Dash.started += instance.OnDash;
+                @Dash.performed += instance.OnDash;
+                @Dash.canceled += instance.OnDash;
                 @Interact.started += instance.OnInteract;
                 @Interact.performed += instance.OnInteract;
                 @Interact.canceled += instance.OnInteract;
@@ -719,6 +759,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnAttack(InputAction.CallbackContext context);
+        void OnDash(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
         void OnKillSelf(InputAction.CallbackContext context);
     }
