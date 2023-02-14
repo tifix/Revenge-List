@@ -5,8 +5,9 @@ using UnityEngine.InputSystem;
 using UnityEngine.Events;
 using System.Xml.Serialization;
 using UnityEngine.Windows;
+using static BossController;
 
-
+[RequireComponent(typeof(Animator))]
 public class PlayerCombat : ObjectScript
 {
     Controls input;
@@ -70,6 +71,7 @@ public class PlayerCombat : ObjectScript
         {
             stamina -= 5.0f;
             Debug.Log("Attacking now. Stamina: %f" + stamina);
+            GetComponent<Animator>().SetTrigger("attack");
 
             // Detect enemies in range
             Collider[] hitEnemies = Physics.OverlapSphere(attackOrg.position, attackRange, enemyLayers);

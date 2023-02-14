@@ -4,6 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(Animator))]
 public class PlayerMovement : MonoBehaviour
 {
 
@@ -82,6 +83,7 @@ public class PlayerMovement : MonoBehaviour
                 sprite.flipX = false;
             CheckGround();
             ProcessInput();
+            GetComponent<Animator>().SetFloat("walkDirection", dir.x);
         }
         else
         {
