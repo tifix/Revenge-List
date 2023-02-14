@@ -8,7 +8,9 @@ using UnityEngine.Events;
 public class Interactible : MonoBehaviour
 {
     Controls input;
-    [SerializeField] bool isAutoUse=true, isSingleUse = false, isInRange = false;
+    [SerializeField] bool isAutoUse = true, isInRange = false;
+    [SerializeField, Tooltip("if true, the script is destroyed upon use")] bool isSingleUse = false;
+    [SerializeField, Tooltip("if true, the script is disabled upon use")] bool isDisabledOnUse = false;
     public UnityEvent uponInteractionDo = new UnityEvent();
 
     public void Awake()
@@ -43,6 +45,7 @@ public class Interactible : MonoBehaviour
     {
         uponInteractionDo.Invoke();
         if (isSingleUse) { UI.instance.boxInteractPrompt.SetActive(false); input.Ground.Interact.performed -= DoInteraction; Destroy(this); }
+        if (isDisabledOnUse) { UI.instance.boxInteractPrompt.SetActive(false); gameObject.SetActive(false); }
     }
 
 

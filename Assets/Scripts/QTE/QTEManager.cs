@@ -63,7 +63,7 @@ public class QTEManager : MonoBehaviour
         playQTE = true;
         isPlaying = true;
 
-        StartCoroutine("Rythm");
+        //StartCoroutine("Rythm");                                      //No such coroutine found?? Throws Exception on Play
 
         beatCounter = 0;
         comboUI.text = "";
@@ -183,9 +183,7 @@ public class QTEManager : MonoBehaviour
     {
         if (UI.instance.bossHealth != null) 
         {
-            Debug.Log("boss QTE finished");
-            UI.instance.bossHealth.coreHealth -= comboCount;
-            UI.instance.RefillShieldAfterQTE();
+            UI.instance.RefillShieldAfterQTE(comboCount);
         }
         
         

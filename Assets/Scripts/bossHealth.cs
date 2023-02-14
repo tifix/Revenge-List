@@ -6,6 +6,8 @@ public class bossHealth : ObjectScript
 {
     public bool isCoreExposed= false;
     public float coreHealth = 100;
+    [Range(0, 100f)] public float damageQTEcomplete=40;
+    [Range(0,2f)]public float damageQTEcomboMultiplier=2f;
     [SerializeField] GameObject QTEtriggerPrompt;
 
     private void Start()

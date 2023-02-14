@@ -15,6 +15,8 @@ public class UI : MonoBehaviour
     [Space, Header("Typing settings")]
     [Tooltip("What part of the dialogue is displayed"), Range(0, 99)] public int txtPageNr = 0;     //Which chunk / page / part of dialogue is currently displayed or being typed out
     [SerializeField] private bool isWaiting = false;                                                //is the dialogue paused after a page is completelly written
+    [SerializeField] private bool isShowingBossHealth = false;                                      //is the boss healthbar being displayed?
+
     private bool runCoroutine;                                                                      //is the typer coroutine suspended?
     private string pageText = "Warning: Unassigned text";
     [Tooltip("time in s between each letter typed")] public float typingWait = 0.03f;               //how much time passes between each letter typed
@@ -48,6 +50,7 @@ public class UI : MonoBehaviour
     public void Start()
     {
         playerHealthBar.maxValue = PlayerCombat.instance.GetMaxHealth();    //Scaling healthbar automatically
+        EnableBossHealthBar();
     }
 
     public void OnDestroy()
@@ -142,26 +145,25 @@ public class UI : MonoBehaviour
         {
             bossShieldBar.maxValue = bossHealth.GetMaxHealth();
             bossShieldBar.value = bossHealth.GetHealth();
-            //ONCE QTE IS FINISHED INVOKE THE FOLLOWING
-            //RefillShieldAfterQTE();
-
-            /*
-            if (bossHealth.isCoreExposed) 
-            {
-                QTEManager.QTEStart();
-                RefillShieldAfterQTE();  
-            }*/
-            //bossShieldBar.transform.Find("Fill Area").Find("Fill").GetComponent<Image>().color = Color.cyan;
-            //else bossHealthBar.transform.Find("Fill Area").Find("Fill").GetComponent<Image>().color = Color.red;
         } 
     }
-    public void RefillShieldAfterQTE() 
+    public void RefillShieldAfterQTE(int count)
     {
         //SubtractHealthByQTEPerformence()
-        Debug.Log("B");
+        bossHealth.coreHealth -= bossHealth.damageQTEcomplete;
+        bossHealth.coreHealth -= count * bossHealth.damageQTEcomboMultiplier;
+
+        if (bossHealth.coreHealth < 1) 
+        {
+            Debug.LogWarning("Boss defeated!");
+            bossHealth.gameObject.SetActive(false);
+            boxBossBar.SetActive(false);
+        }
+
         bossHealth.isCoreExposed = false;
         bossHealth.SetHealth(bossHealth.GetMaxHealth());
         bossShieldBar.value = bossShieldBar.maxValue;
+        bossHealthBar.value = bossHealth.coreHealth;
     }
 
 
@@ -171,7 +173,7 @@ public class UI : MonoBehaviour
         if (boss.TryGetComponent<bossHealth>(out bossHealth healthData)) bossHealth = healthData;
         bossHealthBar.maxValue = healthData.GetMaxHealth();
         bossHealthBar.value = bossHealthBar.maxValue;
-        boxHealthbar.SetActive(true);
+        boxBossBar.SetActive(true);
     }
 
     public void SetPlayerPortrait(float health, float maxHealth) 
