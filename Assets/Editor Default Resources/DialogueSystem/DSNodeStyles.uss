@@ -1,0 +1,133 @@
+/* Containers */
+
+.ds-node_extension-container
+{
+	background-color: #1D1D1E;
+	padding: 8px;
+}
+.ds-node_main-container
+{
+	background-color: #1D1D1E; 
+}
+
+.ds-node_custom-data-containers
+{
+	background-color: #212325;
+	border-radius: 4px;
+	padding: 8px;
+}
+
+/* Inputs */
+.ds-node_testfield > .unity-text-field_input
+{
+	background-color: #1D1D1E;
+	border-color: #27292C;
+	border-radius: 4px;
+	max-width: 240px;
+	min-width: 160px;
+	padding: 8px;
+}
+
+.ds-node_textfield_hidden > .unity-text-field_input
+{
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.ds-node_textfield_hidden > .unity-text-field_input:focus
+{
+	background-color: #1D1D1E;
+	border-color: #27292C;
+}
+
+.ds-node_filename-textfield > .unity-text-field_input
+{
+	max_width: 1000px;
+}
+
+.ds-node_filename-textfield > .unity-text-field_input:focus
+{
+	margin: 4px;
+	padding: 4px;
+}
+
+.ds-node_choice-textfield > .unity-text-field_input
+{
+	font-size: 11px;
+	height: 35px;
+	max-width: 1000px;
+	min-width: 0px;
+}
+
+.ds-node_choice-textfield > .unity-text-field_input:focus
+{
+	height: 25px;
+	margin: 4px;
+	padding: 4px;
+}
+
+.ds-node_quote-textfield > .unity-text-field_input
+{
+	background-color: #232527;
+	border-color transparent;
+	border-left-color: #27292C;
+	border-left-width: 4px;
+	padding: 16px;
+	max-width: 600px;
+}
+
+.ds-node_quote-textfield > .unity-text-field_input:hover
+{
+	background-color: #252729;
+}
+
+.ds-node_quote-textfield > .unity-text-field_input:focus
+{
+	background-color: #1D1D1E;
+	border-color: #27292C;
+}
+
+/*Buttons*/
+.ds-node_button
+{
+	background-color: #252729;
+	border-color: #1D1D1E;
+	margin:4px
+	max-height: 25px;
+}
+
+.ds-node_button:hover
+{
+	background-color: #2B2D2F;
+}
+
+.ds-node_button:active
+{
+	background-color: #212325;
+	color: #FDD057;
+}
+
+/*Elements*/
+
+TextField
+{
+	margin-left: 0px;
+}
+
+.ds-node_custom-data-container > Foldout
+{
+	margin-left: -4px;
+	margin-top: 4px;
+}
+
+.ds-node_custom-data-container > Foldout > TextField
+{
+	margin-left: -12px;
+	margin-top: 8px;
+}
+
+/*Built In*/
+.unity-toggle_text
+{
+	margin-left: 2px;
+}

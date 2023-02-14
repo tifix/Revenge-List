@@ -9,6 +9,7 @@ namespace DS.Elements
 
     using Enumerations;
     using UnityEditor;
+    using UnityEngine.InputSystem;
     using UnityEngine.UIElements;
 
     public class DSNode : Node
@@ -18,14 +19,19 @@ namespace DS.Elements
         public string Text { get; set; }
         public DSDialogueType DialogueType { get; set; }
 
-        public void Init()
+        public virtual void Init(Vector2 position)
         {
             DialogueName = "DialogueName";
             Choices = new List<string>();
             Text = "Dialogue text.";
+
+            SetPosition(new Rect(position, Vector2.zero));
+
+            mainContainer.AddToClassList("ds-node_main-container");
+            extensionContainer.AddToClassList("ds-node_extension-container");
         }
 
-        public void Draw()
+        public virtual void Draw()
         {
 
             // Title Container
@@ -34,10 +40,14 @@ namespace DS.Elements
                 value = DialogueName
             };
 
+            dialgueNameTextField.AddToClassList("ds-node_textfield");
+            dialgueNameTextField.AddToClassList("ds-node_filename-textfield");
+            dialgueNameTextField.AddToClassList("ds-node_textfield_hidden");
+
             titleContainer.Insert(0, dialgueNameTextField);
 
             // Input Container
-            Port inputPort = InstantiatePort(Orientation.Horizontal, Direction.Input, Port.Capacity.Multi, typeof(Input));
+            Port inputPort = InstantiatePort(Orientation.Horizontal, Direction.Input, Port.Capacity.Multi, typeof(InputActionType));
 
             inputPort.name = "Dialogue Connection";
 
@@ -45,6 +55,8 @@ namespace DS.Elements
 
             // Extensions Container
             VisualElement customDataContainer = new VisualElement();
+
+            customDataContainer.AddToClassList("ds-node_custom-data-container");
 
             Foldout textFoldout = new Foldout()
             {
@@ -56,13 +68,15 @@ namespace DS.Elements
                 value = Text
             };
 
+            textTextField.AddToClassList("ds-node_textfield");
+            textTextField.AddToClassList("ds-node_quote-textfield");
+
             textFoldout.Add(textTextField);
 
             customDataContainer.Add(textFoldout);
 
             extensionContainer.Add(customDataContainer);
 
-            RefreshExpandedState();
         }
     }
 }
