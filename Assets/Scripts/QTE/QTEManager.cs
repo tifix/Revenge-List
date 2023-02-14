@@ -183,7 +183,10 @@ public class QTEManager : MonoBehaviour
     {
         if (UI.instance.bossHealth != null) 
         {
-            UI.instance.RefillShieldAfterQTE(comboCount);
+            
+            UI.instance.bossHealth.coreHealth -= UI.instance.bossHealth.damageQTEcomplete;
+            UI.instance.bossHealth.coreHealth -= comboCount * UI.instance.bossHealth.damageQTEcomboMultiplier;
+            UI.instance.AfterQTE_UI(comboCount);
         }
         
         

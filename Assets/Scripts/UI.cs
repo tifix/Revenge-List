@@ -50,7 +50,9 @@ public class UI : MonoBehaviour
     public void Start()
     {
         playerHealthBar.maxValue = PlayerCombat.instance.GetMaxHealth();    //Scaling healthbar automatically
-        EnableBossHealthBar();
+
+        GameObject boss = GameObject.FindGameObjectWithTag("Boss");
+        if (boss.TryGetComponent<bossHealth>(out bossHealth healthData)) EnableBossHealthBar(healthData);
     }
 
     public void OnDestroy()
@@ -147,19 +149,16 @@ public class UI : MonoBehaviour
             bossShieldBar.value = bossHealth.GetHealth();
         } 
     }
-    public void RefillShieldAfterQTE(int count)
+    public void AfterQTE_UI(int count)
     {
-        //SubtractHealthByQTEPerformence()
-        bossHealth.coreHealth -= bossHealth.damageQTEcomplete;
-        bossHealth.coreHealth -= count * bossHealth.damageQTEcomboMultiplier;
 
-        if (bossHealth.coreHealth < 1) 
+        if (bossHealth.coreHealth < 1)  //Hide healthbars upon boss death
         {
             Debug.LogWarning("Boss defeated!");
             bossHealth.gameObject.SetActive(false);
             boxBossBar.SetActive(false);
         }
-
+                                        //Refill shieldbar and main health
         bossHealth.isCoreExposed = false;
         bossHealth.SetHealth(bossHealth.GetMaxHealth());
         bossShieldBar.value = bossShieldBar.maxValue;
@@ -167,13 +166,13 @@ public class UI : MonoBehaviour
     }
 
 
-    public void EnableBossHealthBar() 
+    public void EnableBossHealthBar(bossHealth data) 
     {
-        GameObject boss = GameObject.FindGameObjectWithTag("Boss");
-        if (boss.TryGetComponent<bossHealth>(out bossHealth healthData)) bossHealth = healthData;
-        bossHealthBar.maxValue = healthData.GetMaxHealth();
-        bossHealthBar.value = bossHealthBar.maxValue;
-        boxBossBar.SetActive(true);
+            bossHealth = data;
+            bossHealthBar.maxValue = data.GetMaxHealth();
+            bossHealthBar.value = bossHealthBar.maxValue;
+            boxBossBar.SetActive(true);
+        
     }
 
     public void SetPlayerPortrait(float health, float maxHealth) 
