@@ -16,7 +16,7 @@ public class UI : MonoBehaviour
     [Tooltip("What part of the dialogue is displayed"), Range(0, 99)] public int txtPageNr = 0;     //Which chunk / page / part of dialogue is currently displayed or being typed out
     [SerializeField] private bool isWaiting = false;                                                //is the dialogue paused after a page is completelly written
     [SerializeField] private bool isShowingBossHealth = false;                                      //is the boss healthbar being displayed?
-
+    public bossHealth bossHealth;                                                                   // the data for a boss. SHOULD auto assign when a boss spawns
     private bool runCoroutine;                                                                      //is the typer coroutine suspended?
     private string pageText = "Warning: Unassigned text";
     [Tooltip("time in s between each letter typed")] public float typingWait = 0.03f;               //how much time passes between each letter typed
@@ -29,9 +29,9 @@ public class UI : MonoBehaviour
     [SerializeField]            Slider playerHealthBar, bossHealthBar, bossShieldBar;
     [SerializeField]            Image   playerPortrait;                                             //Displayer of player portrait
     [SerializeField]            Sprite[] playerPortraits = new Sprite[5];                           //Images to display as player looses health
+    [SerializeField]            Image XLPortraitLilith, XLPortraitOther;                           //Images to display as player looses health
 
-    //[HideInInspector] 
-    public bossHealth bossHealth;
+    
 
 
     public void Awake()                             //Ensuring single instance of the script
@@ -213,6 +213,10 @@ public class UI : MonoBehaviour
     }
     public void QuitToWindows() { Application.Quit(); }
 
+    public void SetSpriteXLLilith(Sprite s) { XLPortraitLilith.gameObject.SetActive(true); XLPortraitLilith.sprite = s; }
+    public void SetSpriteXLOther(Sprite s) { XLPortraitOther.gameObject.SetActive(true); XLPortraitOther.sprite = s; }
+    public void HideSpriteXLLilith() { XLPortraitLilith.gameObject.SetActive(false); }
+    public void HideSpriteXLOther() { XLPortraitOther.gameObject.SetActive(false); }
 
     #endregion
 }
