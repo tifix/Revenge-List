@@ -20,8 +20,6 @@ namespace DS.Windows
 
             AddGridBackground();
 
-            CreateNode();
-
             AddStyles();
         }
         
@@ -30,8 +28,19 @@ namespace DS.Windows
             // sets up zoom to allow mouse wheel scrolling zoom
             SetupZoom(ContentZoomer.DefaultMinScale, ContentZoomer.DefaultMaxScale);
 
+            this.AddManipulator(CreateNodeContextualMenu());
+
             // adds manipulator to allow movement by dragging
             this.AddManipulator(new ContentDragger());
+        }
+
+        private IManipulator CreateNodeContextualMenu()
+        {
+            ContextualMenuManipulator contextualMenuManipulator = new ContextualMenuManipulator(
+                menuEvent => menuEvent.menu.AppendAction("Add Node", actionEvent => AddElement(CreateNode()))
+                );
+
+            return contextualMenuManipulator;
         }
 
         private void AddGridBackground()
@@ -43,11 +52,14 @@ namespace DS.Windows
             Insert(0, gridBackground);
         }
 
-        private void CreateNode()
+        private DSNode CreateNode()
         {
             DSNode node = new DSNode();
 
-            AddElement(node);
+            node.Init();
+            node.Draw();
+
+            return node;
         }
 
         private void AddStyles()

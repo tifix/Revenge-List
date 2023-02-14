@@ -8,6 +8,8 @@ namespace DS.Elements
 {
 
     using Enumerations;
+    using UnityEditor;
+    using UnityEngine.UIElements;
 
     public class DSNode : Node
     {
@@ -21,6 +23,46 @@ namespace DS.Elements
             DialogueName = "DialogueName";
             Choices = new List<string>();
             Text = "Dialogue text.";
+        }
+
+        public void Draw()
+        {
+
+            // Title Container
+            TextField dialgueNameTextField = new TextField()
+            {
+                value = DialogueName
+            };
+
+            titleContainer.Insert(0, dialgueNameTextField);
+
+            // Input Container
+            Port inputPort = InstantiatePort(Orientation.Horizontal, Direction.Input, Port.Capacity.Multi, typeof(Input));
+
+            inputPort.name = "Dialogue Connection";
+
+            inputContainer.Add(inputPort);
+
+            // Extensions Container
+            VisualElement customDataContainer = new VisualElement();
+
+            Foldout textFoldout = new Foldout()
+            {
+                text = "Dialogue Text"
+            };
+
+            TextField textTextField = new TextField()
+            {
+                value = Text
+            };
+
+            textFoldout.Add(textTextField);
+
+            customDataContainer.Add(textFoldout);
+
+            extensionContainer.Add(customDataContainer);
+
+            RefreshExpandedState();
         }
     }
 }
