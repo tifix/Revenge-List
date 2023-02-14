@@ -103,7 +103,7 @@ public class PlayerCombat : ObjectScript
     {
         //Debug.Log("PLAYER DEAD... [WIP]");
 
-        GameData.instance.SetLost(true);
+        GameManager.instance.SetLost(true);
     }
 
     void KillSelf(InputAction.CallbackContext obj)

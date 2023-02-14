@@ -52,14 +52,14 @@ public class UI : MonoBehaviour
         playerHealthBar.maxValue = PlayerCombat.instance.GetMaxHealth();    //Scaling healthbar automatically
 
         GameObject boss = GameObject.FindGameObjectWithTag("Boss");
-        if (boss.TryGetComponent<bossHealth>(out bossHealth healthData)) EnableBossHealthBar(healthData);
+        if (boss.TryGetComponent<bossHealth>(out bossHealth healthData)) BossInitialiseHealthBar(healthData);
     }
 
     public void OnDestroy()
     {
         input.Menu.Confirm.performed -= ForwardDialogue;
         input.Menu.Pause.performed -= InputPause;
-        GameData.instance.SetPause(false);                  //ensuring the game is not locked in a permanent pause state upon exiting while paused
+        GameManager.instance.SetPause(false);                  //ensuring the game is not locked in a permanent pause state upon exiting while paused
     }
 
 
@@ -71,17 +71,12 @@ public class UI : MonoBehaviour
 
     public void ForwardDialogue(InputAction.CallbackContext obj)        //advancing the dialogue - next page if finished, fast forwarding otherwise.
     {
-        
         if (dialogueCur != null)
         {
             if (isWaiting) { txtPageNr++; isWaiting = false; }
-            else
-            {
-                runCoroutine = false;
-            }
+            else runCoroutine = false;
         }
     }
-
 
     protected IEnumerator Typer(Dialogue _dialogue) //typing the text over time
     {
@@ -114,10 +109,10 @@ public class UI : MonoBehaviour
             txtMain.text = pageText;                                   //display the text
             isWaiting = true;
 
-            while (isWaiting == true) yield return null;               //hold until player progresses the text
+            while (isWaiting == true) yield return null;               //hold until player progresses the text with SPACE
             
         }
-        runCoroutine = false;
+        runCoroutine = false;                                          //Disable once finished
         dialogueCur = null;
         boxTextDisplay.SetActive(false);
 
@@ -166,7 +161,7 @@ public class UI : MonoBehaviour
     }
 
 
-    public void EnableBossHealthBar(bossHealth data) 
+    public void BossInitialiseHealthBar(bossHealth data)                        //initialises the boss healthbar. 
     {
             bossHealth = data;
             bossHealthBar.maxValue = data.GetMaxHealth();
@@ -180,7 +175,7 @@ public class UI : MonoBehaviour
         float hp_normalised = health / maxHealth;
         int whichPortrait =(int)Mathf.Round( Mathf.Lerp(0, playerPortraits.Length-1, hp_normalised));  //from the list of portraits, grab  
         playerPortrait.sprite = playerPortraits[whichPortrait];
-    }
+    }       //Changes the player portrait shown next to the healthbar
 
     protected IEnumerator WaitAndLoadMenu(float waitTime)
     {
@@ -194,8 +189,8 @@ public class UI : MonoBehaviour
 
 
     #region buttons and element toggles
-    public void TogglePauseMenu() { boxPause.SetActive(!boxPause.activeInHierarchy); GameData.instance.TogglePause(); }     //Toggle pause menu
-    public void BackToMenu() { GameData.LoadMenu(); }
+    public void TogglePauseMenu() { boxPause.SetActive(!boxPause.activeInHierarchy); GameManager.instance.TogglePause(); }     //Toggle pause menu
+    public void BackToMenu() { GameManager.LoadMenu(); }
     public void InputPause(InputAction.CallbackContext obj) => TogglePauseMenu();
     public void ToggleSettings() { boxSettings.SetActive(!boxSettings.activeInHierarchy); }                                 //Toggle settings menu
     public void ToggleHealthbar() { boxHealthbar.SetActive(!boxHealthbar.activeInHierarchy); }                              //Toggle the player healthbar display
@@ -209,7 +204,7 @@ public class UI : MonoBehaviour
     public void EnableLostScreen()
     {
         boxLost.SetActive(true);
-        StartCoroutine(WaitAndLoadMenu(GameData.instance.DeathReloadTime));
+        StartCoroutine(WaitAndLoadMenu(GameManager.instance.DeathReloadTime));
     }
     public void QuitToWindows() { Application.Quit(); }
 
