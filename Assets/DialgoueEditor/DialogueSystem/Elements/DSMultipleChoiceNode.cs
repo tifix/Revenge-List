@@ -1,17 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Unity.VisualScripting.InputSystem;
 using UnityEditor.Experimental.GraphView;
-using UnityEngine.UI;
 using UnityEngine.UIElements;
 
 
 namespace DS.Elements
 {
     using Enumerations;
-    using Button = UnityEngine.UIElements.Button;
-
     public class DSMultipleChoiceNode : DSNode
     {
         public override void Init(Vector2 position)
@@ -40,7 +35,7 @@ namespace DS.Elements
             // Output Container
             foreach (string choice in Choices)
             {
-                Port choicePort = InstantiatePort(Orientation.Horizontal, Direction.Output, Port.Capacity.Single, typeof(OutputType));
+                Port choicePort = InstantiatePort(Orientation.Horizontal, Direction.Output, Port.Capacity.Single, typeof(bool));
 
                 choicePort.portName = "";
 
@@ -57,14 +52,13 @@ namespace DS.Elements
                 };
 
                 choiceTextField.AddToClassList("ds-node_textfield");
-                choiceTextField.AddToClassList("ds-node_filename-textfield");
+                choiceTextField.AddToClassList("ds-node_choice-textfield");
                 choiceTextField.AddToClassList("ds-node_textfield_hidden");
 
                 choicePort.Add(choiceTextField);
                 choicePort.Add(deleteChoiceButton);
 
                 outputContainer.Add(choicePort);
-
             }
 
             RefreshExpandedState();
