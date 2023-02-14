@@ -192,7 +192,7 @@ GameObject:
   - component: {fileID: 1337283920656425531}
   - component: {fileID: 1337283920656425508}
   m_Layer: 0
-  m_Name: BossProjectile
+  m_Name: Envelope
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -227,3 +227,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f78fc63bab133ea44ab21b8a7f2c1883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dir: {x: -1, y: 0, z: 0}
+  destroyVFX: {fileID: 8083233970450910706, guid: d0db28c32d0b48448a3d53c23bc37c07, type: 3}
