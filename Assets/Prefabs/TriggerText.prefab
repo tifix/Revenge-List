@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2496380472867278756}
   - component: {fileID: 2496380472867278753}
   m_Layer: 0
-  m_Name: AutoDialogueInvisible
+  m_Name: TriggerText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
