@@ -5438,14 +5438,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 4133116104273043939}
     m_Modifications:
-    - target: {fileID: 8594872309033769969, guid: 8f990c0081324cb4199d9b4fd76c227b, type: 3}
-      propertyPath: healthQTE
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8594872309033769969, guid: 8f990c0081324cb4199d9b4fd76c227b, type: 3}
-      propertyPath: currentMap
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 8594872309033769970, guid: 8f990c0081324cb4199d9b4fd76c227b, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -5530,17 +5522,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8594872309033769971, guid: 8f990c0081324cb4199d9b4fd76c227b, type: 3}
-      propertyPath: m_SortingOrder
-      value: 80
-      objectReference: {fileID: 0}
     - target: {fileID: 8594872309033769974, guid: 8f990c0081324cb4199d9b4fd76c227b, type: 3}
       propertyPath: m_Name
       value: UI_QTE
-      objectReference: {fileID: 0}
-    - target: {fileID: 8594872309033769974, guid: 8f990c0081324cb4199d9b4fd76c227b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

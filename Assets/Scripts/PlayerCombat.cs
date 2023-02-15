@@ -2,10 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Events;
-using System.Xml.Serialization;
-using UnityEngine.Windows;
-using static BossController;
+//Removed unused "usings" - AV
 
 [RequireComponent(typeof(Animator))]
 public class PlayerCombat : ObjectScript
@@ -13,9 +10,10 @@ public class PlayerCombat : ObjectScript
     Controls input;
     public static PlayerCombat instance;
 
-    const float maxStamina = 100.0f;                                                                // The maximum stamina of the Player
-    [SerializeField, Tooltip("Stamina Regen Per Second")]float staminaRegenPerSec = 2.0f;           // Stamina regen rate *MAKE CONST WHEN FINALISED*
-    [SerializeField, Tooltip("current stamina of the Player")]float stamina;                        // The current stamina of the Player
+    //I'd recommend most stamina stuff to be int - AV
+    const float maxStamina = 100;                                                                // The maximum stamina of the Player
+    [SerializeField, Tooltip("Stamina Regen Per Second")] float staminaRegenPerSec = 2;           // Stamina regen rate *MAKE CONST WHEN FINALISED*
+    [SerializeField, Tooltip("current stamina of the Player")] float stamina;                        // The current stamina of the Player
 
     public Transform attackOrg;
     public float attackRange = 2.0f;
@@ -43,14 +41,7 @@ public class PlayerCombat : ObjectScript
         input.Ground.KillSelf.Enable();
     }
 
-    // Update is called once per frame
-    override protected void Update()
-    {
-        if (this.health <= 0.0f)
-        {
-            OnDeath();
-        }
-    }
+    //Now the ApplyDamage function is virtual, so this object gets called directly for the damage check only when necessary - AV
 
     private void FixedUpdate()
     {
@@ -99,11 +90,22 @@ public class PlayerCombat : ObjectScript
         Gizmos.DrawWireSphere(attackOrg.position, attackRange);
     }
 
+    public override void ApplyDamage(float _value)
+    {
+        health -= _value;
+
+        if (health <= 0.0f)
+        {
+            OnDeath();
+        }
+    }
+
     void OnDeath()
     {
         //Debug.Log("PLAYER DEAD... [WIP]");
 
         GameManager.instance.SetLost(true);
+        DeleteObject();
     }
 
     void KillSelf(InputAction.CallbackContext obj)

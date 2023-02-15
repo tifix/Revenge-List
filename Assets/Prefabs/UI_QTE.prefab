@@ -971,7 +971,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8594872309033769970
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1020,7 +1020,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 80
   m_TargetDisplay: 0
 --- !u!114 &8594872309033769972
 MonoBehaviour:
@@ -1077,6 +1077,7 @@ MonoBehaviour:
   defaultMap: {fileID: 11400000, guid: 83ac4bcb91d29244f96343ceb4495d36, type: 2}
   currentMap: {fileID: 0}
   playQTE: 0
+  healthQTE: 3
   skullPrefab: {fileID: 1877277126013219022, guid: 3c851864ee85a9149af80144f605ebd2, type: 3}
   skullVFX: {fileID: 8083233970450910706, guid: d0db28c32d0b48448a3d53c23bc37c07, type: 3}
   BeatUI: {fileID: 8594872308723275364}

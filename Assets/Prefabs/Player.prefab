@@ -111,7 +111,6 @@ GameObject:
   - component: {fileID: 3395993812505339140}
   - component: {fileID: 3395993812505339143}
   - component: {fileID: 3395993812505339147}
-  - component: {fileID: 3395993812505339144}
   - component: {fileID: 3395993812505339142}
   - component: {fileID: 3395993812505339145}
   - component: {fileID: 7241419354925877604}
@@ -182,21 +181,6 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 64
---- !u!114 &3395993812505339144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3395993812505339146}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63950077655d6814182060888f7b69de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite: {fileID: 3395993813611527099}
-  yOffset: 0
-  isSortingUpdating: 1
 --- !u!65 &3395993812505339142
 BoxCollider:
   m_ObjectHideFlags: 0

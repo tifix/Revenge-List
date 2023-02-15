@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Animator))]
 public class PlayerMovement : MonoBehaviour
 {
-
+    public static PlayerMovement instance;
     //Input Action Map Script
     Controls input;
     InputAction movement;
@@ -54,6 +54,9 @@ public class PlayerMovement : MonoBehaviour
 
     void Awake()
     {
+        if (instance == null) instance = this;
+        else Destroy(this);
+
         input = new Controls();
         rb = GetComponent<Rigidbody>();
         boxCol = GetComponent<BoxCollider>();

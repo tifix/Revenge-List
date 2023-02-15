@@ -78,6 +78,7 @@ public class UI : MonoBehaviour
         }
     }
 
+    //Probably need a version that doesn't lock the movement and/or stops time (actually use pauseWhileRunning) - AV
     protected IEnumerator Typer(Dialogue _dialogue, bool pauseWhileRunning) //typing the text over time
     {
         //Debug.Log("Starting Display of "+_dialogue.textBody[0]);
@@ -136,6 +137,8 @@ public class UI : MonoBehaviour
 
     #endregion
 
+    //Some values seem unnecessary to update each frame ie. the max values
+    //Might be useful to call player and boss separately only when taking damage - AV
     public void UpdateHealthDisplays()
     {
         //Debug.Log(PlayerCombat.instance.GetHealth());
