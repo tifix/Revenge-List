@@ -135,6 +135,14 @@ MonoBehaviour:
     waitTime: 1
     speed: 1
     timeAlive: 1
+  phase_QTEs:
+  - {fileID: 11400000, guid: bbfd62af9cfd19b4b94847ae0d5f913c, type: 2}
+  - {fileID: 11400000, guid: b10ac846c951d9c4cbdf8361c9c0bf15, type: 2}
+  - {fileID: 11400000, guid: 83ac4bcb91d29244f96343ceb4495d36, type: 2}
+  phase_Dialogues:
+  - {fileID: 11400000, guid: 458065f4a0100c847ae51a2bf1d3d18b, type: 2}
+  - {fileID: 11400000, guid: afd2a7bb305a36742a383c51a2405815, type: 2}
+  - {fileID: 11400000, guid: 356ca8e7e4a032448b9b2792fcf45044, type: 2}
 --- !u!114 &5668457906109925841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,10 +155,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d83cf26bf926a842ac85c295315d22b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  health: 30
+  maxHealth: 25
+  health: 25
   isCoreExposed: 0
-  coreHealth: 100
+  coreHealth: 150
   damageQTEcomplete: 40
   damageQTEcomboMultiplier: 2
   QTEtriggerPrompt: {fileID: 8133781382231593314}
@@ -361,7 +369,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: cbc46d75f7733304e9e29e82f21e4183, type: 2}
     - target: {fileID: 4814028220110693398, guid: e00c074aaf2a8be4cbc9496d99af2ae7, type: 3}
       propertyPath: isAutoUse
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4814028220110693398, guid: e00c074aaf2a8be4cbc9496d99af2ae7, type: 3}
       propertyPath: isSingleUse
@@ -374,6 +382,18 @@ PrefabInstance:
     - target: {fileID: 4814028220110693398, guid: e00c074aaf2a8be4cbc9496d99af2ae7, type: 3}
       propertyPath: isDisabledOnUse
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4814028220110693398, guid: e00c074aaf2a8be4cbc9496d99af2ae7, type: 3}
+      propertyPath: postUsedialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: ca3d8d854e7183149b9698b3b8d97ac1, type: 2}
+    - target: {fileID: 4814028220110693398, guid: e00c074aaf2a8be4cbc9496d99af2ae7, type: 3}
+      propertyPath: waitAfterInteract
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4814028220110693398, guid: e00c074aaf2a8be4cbc9496d99af2ae7, type: 3}
+      propertyPath: waitAfterPreDialogue
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4814028220110693398, guid: e00c074aaf2a8be4cbc9496d99af2ae7, type: 3}
       propertyPath: uponInteractionDo.m_PersistentCalls.m_Calls.Array.size
@@ -390,7 +410,7 @@ PrefabInstance:
     - target: {fileID: 4814028220110693398, guid: e00c074aaf2a8be4cbc9496d99af2ae7, type: 3}
       propertyPath: uponInteractionDo.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 8594872309033769969, guid: 8f990c0081324cb4199d9b4fd76c227b, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 4814028220110693398, guid: e00c074aaf2a8be4cbc9496d99af2ae7, type: 3}
       propertyPath: uponInteractionDo.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -401,11 +421,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4814028220110693398, guid: e00c074aaf2a8be4cbc9496d99af2ae7, type: 3}
       propertyPath: uponInteractionDo.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: QTEStart
+      value: StartQuickTimeEventEverything
       objectReference: {fileID: 0}
     - target: {fileID: 4814028220110693398, guid: e00c074aaf2a8be4cbc9496d99af2ae7, type: 3}
       propertyPath: uponInteractionDo.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: QTEManager, Assembly-CSharp
+      value: GameManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4814028220110693398, guid: e00c074aaf2a8be4cbc9496d99af2ae7, type: 3}
       propertyPath: uponInteractionDo.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
