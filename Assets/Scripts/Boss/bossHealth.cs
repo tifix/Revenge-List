@@ -10,9 +10,11 @@ public class bossHealth : ObjectScript
     [Range(0,2f)]public float damageQTEcomboMultiplier=2f;
     [SerializeField] GameObject QTEtriggerPrompt;
 
-    private void Start()
+    protected override void OnEnable()
     {
+        base.OnEnable();
         UI.instance.bossHealth = this;
+        UI.instance.BossInitialiseHealthBar(this);
     }
 
     protected override void Update() 

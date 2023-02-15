@@ -7,6 +7,7 @@ public class BossProjectile : MonoBehaviour
     float speed = 1;
     float timeAlive = 5;
     float t = 0;
+    [Range(1,5),SerializeField]private float damage = 8;
 
     public Vector3 dir = new Vector3(-1,0,0);
     public GameObject destroyVFX;
@@ -33,4 +34,14 @@ public class BossProjectile : MonoBehaviour
     public void SetSpeed(float s) { speed = s; }
     public void SetDistance(float d) { timeAlive= d; }
     public void SetDirection(Vector3 d) { dir = d; }
+
+    private void OnTriggerEnter(Collider other)
+    {
+
+        if (other.gameObject.CompareTag("Player")) 
+        {
+            Debug.Log("Player hit!");
+            if (other.gameObject.TryGetComponent<PlayerCombat>(out PlayerCombat PC)) PC.ApplyDamage(damage);
+        } 
+    }
 }

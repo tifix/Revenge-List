@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2496380472867278758}
   - component: {fileID: 2496380472867278756}
   - component: {fileID: 2496380472867278753}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TriggerText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,4 +65,6 @@ MonoBehaviour:
   uponInteractionDo:
     m_PersistentCalls:
       m_Calls: []
-  dialogue: {fileID: 11400000, guid: 356ca8e7e4a032448b9b2792fcf45044, type: 2}
+  isGamePausedWhileShowing: 1
+  preUseDialogue: {fileID: 0}
+  postUsedialogue: {fileID: 0}

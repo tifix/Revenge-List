@@ -17,11 +17,11 @@ public class UI : MonoBehaviour
     [SerializeField] private bool isWaiting = false;                                                //is the dialogue paused after a page is completelly written
     [SerializeField] private bool isShowingBossHealth = false;                                      //is the boss healthbar being displayed?
     public bossHealth bossHealth;                                                                   // the data for a boss. SHOULD auto assign when a boss spawns
-    private bool runCoroutine;                                                                      //is the typer coroutine suspended?
+    public bool runCoroutine;                                                                      //is the typer coroutine suspended?
     private string pageText = "Warning: Unassigned text";
     [Tooltip("time in s between each letter typed")] public float typingWait = 0.03f;               //how much time passes between each letter typed
-    [Space,Header("Object references")]
-    public GameObject boxInteractPrompt, boxQTE;                                                    //object that displays dialogue and the quick time event parent
+    [Space, Header("Object references")]
+    public GameObject boxInteractPrompt; public GameObject boxQTE;                                                    //object that displays dialogue and the quick time event parent
     [SerializeField]            GameObject boxTextDisplay, boxPause, boxSettings;                   //the pause menu, the settings menu and the prompt to interact with an object
     [SerializeField]            GameObject boxWon, boxLost;                                         //VictoryScreen and Death screen respectively
     [SerializeField]            GameObject boxHealthbar, boxBossBar;                                 //PLAYER AND BOSS healthbars respectively
@@ -52,7 +52,7 @@ public class UI : MonoBehaviour
         playerHealthBar.maxValue = PlayerCombat.instance.GetMaxHealth();    //Scaling healthbar automatically
 
         GameObject boss = GameObject.FindGameObjectWithTag("Boss");
-        if (boss.TryGetComponent<bossHealth>(out bossHealth healthData)) BossInitialiseHealthBar(healthData);
+        if (boss!=null && boss.TryGetComponent<bossHealth>(out bossHealth healthData)) BossInitialiseHealthBar(healthData);
     }
 
     public void OnDestroy()
@@ -78,7 +78,7 @@ public class UI : MonoBehaviour
         }
     }
 
-    protected IEnumerator Typer(Dialogue _dialogue) //typing the text over time
+    protected IEnumerator Typer(Dialogue _dialogue, bool pauseWhileRunning) //typing the text over time
     {
         //Debug.Log("Starting Display of "+_dialogue.textBody[0]);
         
@@ -86,6 +86,7 @@ public class UI : MonoBehaviour
         
         dialogueCur = _dialogue;
         txtPageNr = 0;      //page iterator
+        Time.timeScale = 0;
 
         while (txtPageNr < _dialogue.textBody.Count)
         {
@@ -102,7 +103,7 @@ public class UI : MonoBehaviour
             for (int i = 0; i < (pageText.Length + 1); i++)
             {
                 txtMain.text = pageText.Substring(0, i);               //slice the text 
-                yield return new WaitForSeconds(typingWait);
+                yield return new WaitForSecondsRealtime(typingWait);
                 if (!runCoroutine) break;
             }
             
@@ -112,29 +113,32 @@ public class UI : MonoBehaviour
             while (isWaiting == true) yield return null;               //hold until player progresses the text with SPACE
             
         }
+        yield return 1;
+        Time.timeScale = 1;
         runCoroutine = false;                                          //Disable once finished
         dialogueCur = null;
         boxTextDisplay.SetActive(false);
 
         PlayerMovement.SetUnLockMovement();
     }
-    public void Show(Dialogue _dialogue)                            //Call this with a dialogue structure to display it!
+    public void Show(Dialogue _dialogue, bool pauseWhileRunning)                            //Call this with a dialogue structure to display it!
     {
         boxTextDisplay.SetActive(true);
 
         Debug.Log("initialising text");
         if (!runCoroutine)
         {
-            StartCoroutine(Typer(_dialogue));
+            StartCoroutine(Typer(_dialogue,pauseWhileRunning));
             runCoroutine = true;
         }
     }
+    public void Show(Dialogue _dialogue) => Show(_dialogue, false); //by default - pause world time while showing dialogue
 
     #endregion
 
     public void UpdateHealthDisplays()
     {
-        Debug.Log(PlayerCombat.instance.GetHealth());
+        //Debug.Log(PlayerCombat.instance.GetHealth());
         playerHealthBar.value = PlayerCombat.instance.GetHealth();
         SetPlayerPortrait(PlayerCombat.instance.GetHealth(), PlayerCombat.instance.GetMaxHealth()); //setting the player portrait from the base of avalible health-reflecting portraits
 

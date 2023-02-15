@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3395993811860920323}
   - component: {fileID: 3395993811860920320}
   - component: {fileID: 3395993811860920321}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115,9 +115,9 @@ GameObject:
   - component: {fileID: 3395993812505339142}
   - component: {fileID: 3395993812505339145}
   - component: {fileID: 7241419354925877604}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -255,7 +255,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3395993812620112224}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackOrigin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -288,7 +288,7 @@ GameObject:
   - component: {fileID: 3395993813611527096}
   - component: {fileID: 3395993813611527099}
   - component: {fileID: 3395993813611527097}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
