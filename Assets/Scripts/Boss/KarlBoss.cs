@@ -33,7 +33,7 @@ public class KarlBoss : MonoBehaviour
 
     public GameObject steak;
     public GameObject envelope;
-    public GameObject dog;
+    public GameObject gnome;
 
     public GameObject fireWall;
 

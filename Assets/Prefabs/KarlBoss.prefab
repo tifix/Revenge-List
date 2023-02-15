@@ -54,7 +54,7 @@ MonoBehaviour:
   shield: 3
   steak: {fileID: 1337283920656425530, guid: 0dbf1de66fe8f2a4690d47d2c58d26a1, type: 3}
   envelope: {fileID: 1337283920656425530, guid: b76e09703fb7abd4d9ad9207b3bad724, type: 3}
-  dog: {fileID: 1337283920656425530, guid: b76e09703fb7abd4d9ad9207b3bad724, type: 3}
+  gnome: {fileID: 1337283920656425530, guid: 9d223fbd625d2f64e844980bbb13131b, type: 3}
   fireWall: {fileID: 7954562019768154657}
   playerRadius: 2
   phase1:
