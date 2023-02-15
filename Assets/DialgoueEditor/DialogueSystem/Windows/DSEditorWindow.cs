@@ -25,7 +25,7 @@ namespace DS.Windows
         #region Elements Addition
         private void AddGraphView()
         {
-            DSGraphView graphView = new DSGraphView();
+            DSGraphView graphView = new DSGraphView(this);
 
             graphView.StretchToParentSize();
 

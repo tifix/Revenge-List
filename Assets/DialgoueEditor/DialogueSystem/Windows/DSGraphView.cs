@@ -13,9 +13,16 @@ namespace DS.Windows
 
     public class DSGraphView : GraphView
     {
-        public DSGraphView()
+        private DSEditorWindow editorWindow;
+        private DSSearchWindow searchWindow;
+
+        public DSGraphView(DSEditorWindow dsEditorWindow)
         {
+            editorWindow = dsEditorWindow;
+
             AddManipulators();
+
+            AddSearchWindow();
 
             AddGridBackground();
 
@@ -51,7 +58,7 @@ namespace DS.Windows
         }
         #endregion
 
-        #region Maniopulators
+        #region Manipulators
         private void AddManipulators()
         {
             // sets up zoom to allow mouse wheel scrolling zoom
@@ -75,7 +82,7 @@ namespace DS.Windows
         private IManipulator CereateGroupContextualMenu()
         {
             ContextualMenuManipulator contextualMenuManipulator = new ContextualMenuManipulator(
-                menuEvent => menuEvent.menu.AppendAction("Add Group", actionEvent => AddElement(CreateGroup("Dialogue Group", actionEvent.eventInfo.localMousePosition)))
+                menuEvent => menuEvent.menu.AppendAction("Add Group", actionEvent => AddElement(CreateGroup("Dialogue Group", GetLocalMousePosition(actionEvent.eventInfo.localMousePosition))))
                 );
 
             return contextualMenuManipulator;
@@ -84,7 +91,7 @@ namespace DS.Windows
         private IManipulator CreateNodeContextualMenu(string actionTitle, DSDialogueType dialogueType)
         {
             ContextualMenuManipulator contextualMenuManipulator = new ContextualMenuManipulator(
-                menuEvent => menuEvent.menu.AppendAction(actionTitle, actionEvent => AddElement(CreateNode(dialogueType, actionEvent.eventInfo.localMousePosition)))
+                menuEvent => menuEvent.menu.AppendAction(actionTitle, actionEvent => AddElement(CreateNode(dialogueType, GetLocalMousePosition(actionEvent.eventInfo.localMousePosition))))
                 );
 
             return contextualMenuManipulator;
@@ -92,7 +99,7 @@ namespace DS.Windows
         #endregion
 
         #region Elements Creation
-        private Group CreateGroup(string title, Vector2 localMousePosition)
+        public Group CreateGroup(string title, Vector2 localMousePosition)
         {
             Group group = new Group()
             {
@@ -104,7 +111,7 @@ namespace DS.Windows
             return group;
         }
 
-        private DSNode CreateNode(DSDialogueType dialogueType, Vector2 position)
+        public DSNode CreateNode(DSDialogueType dialogueType, Vector2 position)
         {
             Type nodeType = Type.GetType($"DS.Elements.DS{dialogueType}Node");
 
@@ -118,6 +125,19 @@ namespace DS.Windows
         #endregion
 
         #region Element Addition
+
+        private void AddSearchWindow()
+        {
+            if (searchWindow == null)
+            {
+                searchWindow = ScriptableObject.CreateInstance<DSSearchWindow>();
+
+                searchWindow.Init(this);
+            }
+
+            nodeCreationRequest = context => SearchWindow.Open(new SearchWindowContext(context.screenMousePosition), searchWindow);
+        }
+
         private void AddGridBackground()
         {
             GridBackground gridBackground = new GridBackground();
@@ -134,6 +154,22 @@ namespace DS.Windows
                 "DialogueSystem/DSGraphViewStyles.uss",
                 "DialogueSystem/DSNodeStyles.uss"
                 );
+        }
+        #endregion
+
+        #region Utilities
+        public Vector2 GetLocalMousePosition(Vector2 mousePosition, bool isSerachWindow = false)
+        {
+            Vector2 worldMousePosition = mousePosition;
+
+            if(isSerachWindow)
+            {
+                worldMousePosition -= editorWindow.position.position;
+            }
+
+            Vector2 localMousePosition = contentViewContainer.WorldToLocal(worldMousePosition);
+
+            return localMousePosition;
         }
         #endregion
     }
