@@ -13,10 +13,13 @@ public class QTEManager : MonoBehaviour
     public QTEObject currentMap;
 
     public bool playQTE;
+    public int healthQTE = 3;
+
     bool isPlaying;
     float beatTimer;
     int beatCounter;
     int comboCount;
+    int correctHits;
 
     public GameObject skullPrefab;
     public GameObject skullVFX;
@@ -63,6 +66,7 @@ public class QTEManager : MonoBehaviour
         isPlaying = true;
 
         beatCounter = 0;
+        correctHits = 0;
         comboUI.text = "";
 
         _skulls = new List<SkullController>();
@@ -119,6 +123,16 @@ public class QTEManager : MonoBehaviour
                         _skulls.RemoveAt(i);
                         comboCount = 0;
                         comboUI.text = "";
+
+                        healthQTE--;
+                        //Fail QTE
+                        if(healthQTE<=0)
+                        {
+                            //End QTE
+                            correctHits = 0;
+                            QTEEnd();
+                            QTECleanUp();
+                        }
                         break;
                     }
 
@@ -130,6 +144,7 @@ public class QTEManager : MonoBehaviour
                         Destroy(_skulls[i].gameObject);
                         _skulls.RemoveAt(i);
                         comboCount += 1;
+                        correctHits++;
                         comboUI.text = "Combo " + comboCount.ToString();
                         break;
                     }
@@ -178,12 +193,26 @@ public class QTEManager : MonoBehaviour
     }
     public int QTEEnd()
     {
-        if (UI.instance.bossHealth != null) 
+        if (UI.instance.bossHealth != null)
         {
             UI.instance.RefillShieldAfterQTE(comboCount);
         }
-        
+
         UI.instance.ToggleQTEScreen();
+
+        //Win QTE
+        if (correctHits >= currentMap.beatsForWin)
+        {
+            //Progress boss fight
+        }
+
+        //Lose - Repeat phase
+        else 
+        { 
+            //Reset phase
+        }
+
+        correctHits = 0;
         return comboCount;
         //Score;
     }
@@ -202,6 +231,30 @@ public class QTEManager : MonoBehaviour
         currentMap = defaultMap;
         percentagePerSkull = (float)(1.0f / currentMap.beats.Count);
         FillSong.fillAmount = 0;
+    }
+
+    public void QTECleanUp()
+    {
+        currentMap = defaultMap;
+        percentagePerSkull = (float)(1.0f / currentMap.beats.Count);
+        FillSong.fillAmount = 0;
+
+        beatCounter = 0;
+        beatTimer = 0;
+        comboCount = 0;
+        correctHits = 0;
+        healthQTE = 3;
+        
+        playQTE = false;
+        isPlaying = false;
+
+
+
+        for (int i = 0; i < _skulls.Count; i++)
+        {
+            Destroy(_skulls[i].gameObject);
+            _skulls.RemoveAt(i);
+        }
     }
 
     //Scale up object over time

@@ -35,7 +35,7 @@ public class KarlBoss : MonoBehaviour
     public GameObject envelope;
     public GameObject dog;
 
-    public ParticleSystem fireWall;
+    public GameObject fireWall;
 
     public float playerRadius;
     public List<AttackType> phase1 = new List<AttackType>();
@@ -166,11 +166,11 @@ public class KarlBoss : MonoBehaviour
 
     public void StopParticles()
     {
-        fireWall.Stop();
+        fireWall.SetActive(false);
     }
 
     public void StartParticles()
     {
-        fireWall.Play();
+        fireWall.SetActive(true);
     }
 }

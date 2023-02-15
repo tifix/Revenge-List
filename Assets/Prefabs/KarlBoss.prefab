@@ -55,7 +55,7 @@ MonoBehaviour:
   steak: {fileID: 1337283920656425530, guid: 0dbf1de66fe8f2a4690d47d2c58d26a1, type: 3}
   envelope: {fileID: 1337283920656425530, guid: b76e09703fb7abd4d9ad9207b3bad724, type: 3}
   dog: {fileID: 1337283920656425530, guid: b76e09703fb7abd4d9ad9207b3bad724, type: 3}
-  fireWall: {fileID: 8252282387391339312}
+  fireWall: {fileID: 7954562019768154657}
   playerRadius: 2
   phase1:
   - myType: 0
@@ -447,7 +447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4179636883530405871, guid: 7deee093173aea944af8e83e3a61c76d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.29
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4179636883530405871, guid: 7deee093173aea944af8e83e3a61c76d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -577,8 +577,21 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4179636883530405871, guid: 7deee093173aea944af8e83e3a61c76d, type: 3}
   m_PrefabInstance: {fileID: 3615865190633601978}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &8252282387391339312 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 4660061370795303050, guid: 7deee093173aea944af8e83e3a61c76d, type: 3}
+--- !u!1 &7954562019768154657 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6650244591728607643, guid: 7deee093173aea944af8e83e3a61c76d, type: 3}
   m_PrefabInstance: {fileID: 3615865190633601978}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &3615865190073122274
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7954562019768154657}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.63, y: 1, z: 36.13}
+  m_Center: {x: -1, y: 0, z: 0}
