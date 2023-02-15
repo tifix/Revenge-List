@@ -187,7 +187,12 @@ public class QTEManager : MonoBehaviour
         UI.instance.ToggleQTEScreen();
         instance.playQTE = true;
         instance.isPlaying = true;
-        
+
+        Time.timeScale = 1.0f;
+
+        if (currentMap == null)
+            currentMap = defaultMap;
+
         percentagePerSkull = (float)(1.0f / currentMap.beats.Count);
         FillSong.fillAmount = 0;
     }
@@ -195,7 +200,6 @@ public class QTEManager : MonoBehaviour
     {
         if (UI.instance.bossHealth != null)
         {
-            
             UI.instance.bossHealth.coreHealth -= UI.instance.bossHealth.damageQTEcomplete;
             UI.instance.bossHealth.coreHealth -= comboCount * UI.instance.bossHealth.damageQTEcomboMultiplier;
             UI.instance.AfterQTE_UI(comboCount);
