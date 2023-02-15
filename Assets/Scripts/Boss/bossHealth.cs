@@ -5,7 +5,7 @@ using UnityEngine;
 public class bossHealth : ObjectScript
 {
     public bool isCoreExposed= false;
-    public float coreHealth = 100;
+    [Tooltip("The health damaged by QTEs")] public float coreHealth = 100;
     [Range(0, 100f)] public float damageQTEcomplete=40;
     [Range(0,2f)]public float damageQTEcomboMultiplier=2f;
     [SerializeField] GameObject QTEtriggerPrompt;
@@ -22,7 +22,7 @@ public class bossHealth : ObjectScript
         if (health <= 0.0f) { Debug.Log("shield down, QTE time"); OnShieldDepleted(); }
     }
 
-    void OnShieldDepleted() 
+    public void OnShieldDepleted() 
     {
         isCoreExposed = true;
         QTEtriggerPrompt.SetActive(true);

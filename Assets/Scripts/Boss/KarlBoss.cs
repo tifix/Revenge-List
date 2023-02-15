@@ -23,8 +23,7 @@ public class KarlBoss : MonoBehaviour
         public float timeAlive;
     }
 
-    public int health;
-    public int shield;
+    public bossHealth health;
 
     int currentPhase = 0;
     int currentAttack = 0;
@@ -46,7 +45,8 @@ public class KarlBoss : MonoBehaviour
 
     private void OnEnable()
     {
-        player = FindObjectOfType<PlayerMovement>();    
+        player = FindObjectOfType<PlayerMovement>();
+        StartParticles();
     }
 
     void Update()
@@ -69,6 +69,7 @@ public class KarlBoss : MonoBehaviour
                             //End phase
                             EndPhase();
                             //Wait for shield to break
+                            //health.OnShieldDepleted(); //QTEManager.instance.QTEStart();
                             //Dialogue and QTE
                             //After QTE success, call NextPhase()
                         }

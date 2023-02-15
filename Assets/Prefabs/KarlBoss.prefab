@@ -50,8 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88fe5c74cc6058f40837696ea562651f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
-  shield: 3
+  health: {fileID: 5668457906109925841}
   steak: {fileID: 1337283920656425530, guid: 0dbf1de66fe8f2a4690d47d2c58d26a1, type: 3}
   envelope: {fileID: 1337283920656425530, guid: b76e09703fb7abd4d9ad9207b3bad724, type: 3}
   gnome: {fileID: 1337283920656425530, guid: 9d223fbd625d2f64e844980bbb13131b, type: 3}
@@ -149,7 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  health: 100
+  health: 30
   isCoreExposed: 0
   coreHealth: 100
   damageQTEcomplete: 40
