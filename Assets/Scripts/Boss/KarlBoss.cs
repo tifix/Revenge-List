@@ -35,6 +35,8 @@ public class KarlBoss : MonoBehaviour
     public GameObject envelope;
     public GameObject dog;
 
+    public ParticleSystem fireWall;
+
     public float playerRadius;
     public List<AttackType> phase1 = new List<AttackType>();
     public List<AttackType> phase2 = new List<AttackType>();
@@ -65,9 +67,10 @@ public class KarlBoss : MonoBehaviour
                         if(currentAttack >= phase1.Count)
                         {
                             //End phase
+                            EndPhase();
+                            //Wait for shield to break
                             //Dialogue and QTE
-                            currentAttack = 0;
-                            currentPhase++;
+                            //After QTE success, call NextPhase()
                         }
                     }
                     break;
@@ -82,9 +85,10 @@ public class KarlBoss : MonoBehaviour
                         if (currentAttack >= phase2.Count)
                         {
                             //End phase
+                            EndPhase();
+                            //Wait for shield to break
                             //Dialogue and QTE
-                            currentAttack = 0;
-                            currentPhase++;
+                            //After QTE success, call NextPhase()
                         }
                     }
                     break;
@@ -99,9 +103,10 @@ public class KarlBoss : MonoBehaviour
                         if (currentAttack >= phase3.Count)
                         {
                             //End phase
+                            EndPhase();
+                            //Wait for shield to break
                             //Dialogue and QTE
-                            currentAttack = 0;
-                            currentPhase = 0;
+                            //After QTE success, call NextPhase()
                         }
                     }
                     break;
@@ -140,13 +145,32 @@ public class KarlBoss : MonoBehaviour
         }
     }
 
-    public void nextPhase()
+    public void EndPhase()
     {
+        canAttack = false;
+        StopParticles();
+    }
+
+    public void NextPhase()
+    {
+        currentAttack = 0;
         currentPhase++;
+        ChangeAttack();
+        StartParticles();
     }
 
     public void ChangeAttack()
     {
         canAttack = !canAttack;
+    }
+
+    public void StopParticles()
+    {
+        fireWall.Stop();
+    }
+
+    public void StartParticles()
+    {
+        fireWall.Play();
     }
 }

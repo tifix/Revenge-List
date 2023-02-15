@@ -797,6 +797,7 @@ MonoBehaviour:
   steak: {fileID: 1337283920656425530, guid: 0dbf1de66fe8f2a4690d47d2c58d26a1, type: 3}
   envelope: {fileID: 1337283920656425530, guid: b76e09703fb7abd4d9ad9207b3bad724, type: 3}
   dog: {fileID: 1337283920656425530, guid: b76e09703fb7abd4d9ad9207b3bad724, type: 3}
+  fireWall: {fileID: 560481884}
   playerRadius: 2
   phase1:
   - myType: 0
@@ -1077,6 +1078,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4660061370795303050, guid: 7deee093173aea944af8e83e3a61c76d, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660061370795303050, guid: 7deee093173aea944af8e83e3a61c76d, type: 3}
       propertyPath: UVModule.cycles
       value: 1
       objectReference: {fileID: 0}
@@ -1106,7 +1111,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4660061370795303050, guid: 7deee093173aea944af8e83e3a61c76d, type: 3}
       propertyPath: ShapeModule.radiusThickness
-      value: 1.0000
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4660061370795303050, guid: 7deee093173aea944af8e83e3a61c76d, type: 3}
       propertyPath: InitialModule.startSize.scalar
@@ -1170,6 +1175,11 @@ PrefabInstance:
 --- !u!4 &560481883 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4179636883530405871, guid: 7deee093173aea944af8e83e3a61c76d, type: 3}
+  m_PrefabInstance: {fileID: 560481882}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &560481884 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4660061370795303050, guid: 7deee093173aea944af8e83e3a61c76d, type: 3}
   m_PrefabInstance: {fileID: 560481882}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &708439212
