@@ -54,7 +54,6 @@ public class QTEManager : MonoBehaviour
         if (instance == null) instance = this;
         else Destroy(this);
 
-        //currentMap = new QTEObject();
         if (currentMap == null)
             currentMap = defaultMap;
 
@@ -62,8 +61,6 @@ public class QTEManager : MonoBehaviour
 
         playQTE = true;
         isPlaying = true;
-
-        //StartCoroutine("Rythm");                                      //No such coroutine found?? Throws Exception on Play
 
         beatCounter = 0;
         comboUI.text = "";
@@ -77,7 +74,6 @@ public class QTEManager : MonoBehaviour
         beatObjects.Add(new BeatItem(BeatUI));
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (playQTE)
@@ -175,6 +171,7 @@ public class QTEManager : MonoBehaviour
     {
         UI.instance.ToggleQTEScreen();
         instance.playQTE = true;
+        instance.isPlaying = true;
         
         percentagePerSkull = (float)(1.0f / currentMap.beats.Count);
         FillSong.fillAmount = 0;
@@ -189,13 +186,12 @@ public class QTEManager : MonoBehaviour
             UI.instance.AfterQTE_UI(comboCount);
         }
         
-        
         UI.instance.ToggleQTEScreen();
         return comboCount;
         //Score;
     }
 
-
+    //Change the current beat map
     public void SetBeatMap(QTEObject map)
     {
         currentMap = map;
@@ -203,6 +199,7 @@ public class QTEManager : MonoBehaviour
         FillSong.fillAmount = 0;
     }
 
+    //Change to default beat map
     public void SetDefaultMap()
     {
         currentMap = defaultMap;
@@ -210,6 +207,7 @@ public class QTEManager : MonoBehaviour
         FillSong.fillAmount = 0;
     }
 
+    //Scale up object over time
     IEnumerator PulseObject(BeatItem obj, float rate)
     {
         Vector3 finalScale = obj.GetDoubleScale();
@@ -221,6 +219,7 @@ public class QTEManager : MonoBehaviour
         StartCoroutine(EndPulseObject(obj, rate));
     }
 
+    //Scale down object over time
     IEnumerator EndPulseObject(BeatItem obj, float rate)
     {
         Vector3 finalScale = obj.GetScale();

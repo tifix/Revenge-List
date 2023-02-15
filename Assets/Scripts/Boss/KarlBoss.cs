@@ -15,9 +15,11 @@ public class KarlBoss : MonoBehaviour
     public struct AttackType
     {
         public ProjectileType myType;
-        [Range(0.1f, 10f)]
+        [Range(0.1f, 4f)]
         public float waitTime;
+        [Range(1f, 10f)]
         public float speed;
+        [Range(1f, 10f)]
         public float timeAlive;
     }
 
@@ -33,9 +35,19 @@ public class KarlBoss : MonoBehaviour
     public GameObject envelope;
     public GameObject dog;
 
+    public ParticleSystem fireWall;
+
+    public float playerRadius;
     public List<AttackType> phase1 = new List<AttackType>();
     public List<AttackType> phase2 = new List<AttackType>();
     public List<AttackType> phase3 = new List<AttackType>();
+
+    PlayerMovement player;
+
+    private void OnEnable()
+    {
+        player = FindObjectOfType<PlayerMovement>();    
+    }
 
     void Update()
     {
@@ -55,9 +67,10 @@ public class KarlBoss : MonoBehaviour
                         if(currentAttack >= phase1.Count)
                         {
                             //End phase
+                            EndPhase();
+                            //Wait for shield to break
                             //Dialogue and QTE
-                            currentAttack = 0;
-                            currentPhase++;
+                            //After QTE success, call NextPhase()
                         }
                     }
                     break;
@@ -72,9 +85,10 @@ public class KarlBoss : MonoBehaviour
                         if (currentAttack >= phase2.Count)
                         {
                             //End phase
+                            EndPhase();
+                            //Wait for shield to break
                             //Dialogue and QTE
-                            currentAttack = 0;
-                            currentPhase++;
+                            //After QTE success, call NextPhase()
                         }
                     }
                     break;
@@ -89,9 +103,10 @@ public class KarlBoss : MonoBehaviour
                         if (currentAttack >= phase3.Count)
                         {
                             //End phase
+                            EndPhase();
+                            //Wait for shield to break
                             //Dialogue and QTE
-                            currentAttack = 0;
-                            currentPhase = 0;
+                            //After QTE success, call NextPhase()
                         }
                     }
                     break;
@@ -104,33 +119,58 @@ public class KarlBoss : MonoBehaviour
     {
         if(a.myType == ProjectileType.OVERHEAD)
         {
-            GameObject temp = Instantiate<GameObject>(steak, transform.position, Quaternion.identity);
+            float xOffset = Random.Range(-playerRadius, playerRadius);
+            float zOffset = Random.Range(-playerRadius, playerRadius);
+
+            GameObject temp = Instantiate<GameObject>(steak, player.transform.position + new Vector3(xOffset, 5, zOffset), Quaternion.identity);
             temp.GetComponent<BossProjectile>().SetSpeed(a.speed);
             temp.GetComponent<BossProjectile>().SetDistance(a.timeAlive);
         }
 
         else if(a.myType == ProjectileType.STRAIGHT)
         {
-            GameObject temp = Instantiate<GameObject>(envelope, transform.position, Quaternion.identity);
+            float zOffset = Random.Range(-1, 1);
+
+            GameObject temp = Instantiate<GameObject>(envelope, transform.position + new Vector3(0, -1, 0), Quaternion.identity);
             temp.GetComponent<BossProjectile>().SetSpeed(a.speed);
             temp.GetComponent<BossProjectile>().SetDistance(a.timeAlive);
+            temp.GetComponent<BossProjectile>().SetDirection(new Vector3(-1, 0, zOffset));
         }
 
         else if (a.myType == ProjectileType.DOG)
         {
-            GameObject temp = Instantiate<GameObject>(dog, transform.position, Quaternion.identity);
+            GameObject temp = Instantiate<GameObject>(steak, player.transform.position, Quaternion.identity);
             temp.GetComponent<BossProjectile>().SetSpeed(a.speed);
             temp.GetComponent<BossProjectile>().SetDistance(a.timeAlive);
         }
     }
 
-    public void nextPhase()
+    public void EndPhase()
     {
+        canAttack = false;
+        StopParticles();
+    }
+
+    public void NextPhase()
+    {
+        currentAttack = 0;
         currentPhase++;
+        ChangeAttack();
+        StartParticles();
     }
 
     public void ChangeAttack()
     {
         canAttack = !canAttack;
+    }
+
+    public void StopParticles()
+    {
+        fireWall.Stop();
+    }
+
+    public void StartParticles()
+    {
+        fireWall.Play();
     }
 }
