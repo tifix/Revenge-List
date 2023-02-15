@@ -6,9 +6,10 @@ using UnityEngine;
 
 
 
-[CreateAssetMenu(fileName = "bossAttack", menuName = "BossAttack")]
+//[CreateAssetMenu(fileName = "bossAttack", menuName = "BossAttack")]
 public class BossAttacks : ScriptableObject
 {
+    /*
     public enum AttackType {Melee, Projectile}
 
     public AttackType type;
@@ -81,4 +82,5 @@ public class Attackeditor : Editor
         }
 
     }
+    */
 }

@@ -4,6 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(Animator))]
 public class PlayerMovement : MonoBehaviour
 {
 
@@ -82,6 +83,7 @@ public class PlayerMovement : MonoBehaviour
                 sprite.flipX = false;
             CheckGround();
             ProcessInput();
+            GetComponent<Animator>().SetFloat("walkDirection", dir.x);
         }
         else
         {
@@ -168,8 +170,8 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position - new Vector3(0,0.5f,0), transform.position - new Vector3(0, 0.5f + groundCheckDistance, 0));
         Gizmos.color = Color.blue;
-        Gizmos.DrawLine(Vector3.zero, new Vector3(0, 0, zLimits.x));
-        Gizmos.DrawLine(Vector3.zero, new Vector3(0, 0, zLimits.y));
+        Gizmos.DrawLine(new Vector3(transform.position.x, 0, 0), new Vector3(transform.position.x, 0, zLimits.x));
+        Gizmos.DrawLine(new Vector3(transform.position.x, 0, 0), new Vector3(transform.position.x, 0, zLimits.y));
     }
 
     private void OnDestroy()

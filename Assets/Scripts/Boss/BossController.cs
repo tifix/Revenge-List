@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BossController : MonoBehaviour
 {
+    /*
     [System.Serializable]
     public struct Attacks
     {
@@ -47,5 +48,5 @@ public class BossController : MonoBehaviour
             }
         }
 
-    }
+    }*/
 }

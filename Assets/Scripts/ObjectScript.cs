@@ -23,7 +23,7 @@ public class ObjectScript : MonoBehaviour
         position = new Vector3(0.0f, 0.0f, 0.0f);
         health = maxHealth;
     }
-    protected void OnEnable()
+    protected virtual void OnEnable()
     {
         
     }
