@@ -7,13 +7,14 @@ namespace DS.Elements
 {
     using Enumerations;
     using Utilities;
+    using Windows;
 
 
     public class DSSingleChoiceNode : DSNode
     {
-        public override void Init(Vector2 position)
+        public override void Init(DSGraphView dsGraphView, Vector2 position)
         {
-            base.Init(position);
+            base.Init(dsGraphView, position);
 
             DialogueType = DSDialogueType.SingleChoice;
 

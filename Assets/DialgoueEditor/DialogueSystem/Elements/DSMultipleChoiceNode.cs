@@ -5,14 +5,15 @@ using UnityEngine.UIElements;
 
 namespace DS.Elements
 {
+    using Windows;
     using Enumerations;
     using Utilities;
 
     public class DSMultipleChoiceNode : DSNode
     {
-        public override void Init(Vector2 position)
+        public override void Init(DSGraphView dsGraphView, Vector2 position)
         {
-            base.Init(position);
+            base.Init(dsGraphView, position);
 
             DialogueType = DSDialogueType.MultipleChoice;
 

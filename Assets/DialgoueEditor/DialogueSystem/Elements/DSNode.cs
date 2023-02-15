@@ -2,14 +2,13 @@ using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UIElements;
-using UnityEngine.Windows;
 
 
 namespace DS.Elements
 {
-
     using Enumerations;
     using Utilities;
+    using Windows;
 
     public class DSNode : Node
     {
@@ -18,11 +17,19 @@ namespace DS.Elements
         public string Text { get; set; }
         public DSDialogueType DialogueType { get; set; }
 
-        public virtual void Init(Vector2 position)
+        private DSGraphView graphView;
+
+        private Color defaultBackgroundColor;
+
+        public virtual void Init(DSGraphView dsGraphView, Vector2 position)
         {
             DialogueName = "DialogueName";
             Choices = new List<string>();
             Text = "Dialogue text.";
+
+            graphView = dsGraphView;
+
+            defaultBackgroundColor = new Color(29f / 255f, 29f / 255f, 30f / 255f);
 
             SetPosition(new Rect(position, Vector2.zero));
 
@@ -34,7 +41,14 @@ namespace DS.Elements
         {
 
             // Title Container
-            TextField dialgueNameTextField = DSElementUtility.CreateTextField(DialogueName);
+            TextField dialgueNameTextField = DSElementUtility.CreateTextField(DialogueName, callback =>
+            {
+                graphView.RemoveUngroupedNode(this);
+
+                DialogueName = callback.newValue;
+
+                graphView.AddUngroupedNode(this);
+            });
 
 
             dialgueNameTextField.AddClasses(
@@ -73,6 +87,16 @@ namespace DS.Elements
 
             extensionContainer.Add(customDataContainer);
 
+        }
+
+        public void SetErrorStyle(Color color)
+        {
+            mainContainer.style.backgroundColor = color;
+        }
+
+        public void ResetStyle()
+        {
+            mainContainer.style.backgroundColor = defaultBackgroundColor;
         }
     }
 }
