@@ -121,14 +121,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1337283919670149635}
-  m_LocalRotation: {x: -0, y: -0, z: 0.70710677, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.8511776, y: 1.8511776, z: 1.8511776}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.057, y: 0.29, z: 0}
+  m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1337283920656425531}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1337283919670149645
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -170,9 +170,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e519280e1c1d43649be5374a5ed00538, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1f6378ddb688cc44eadb0c90eb6e5ec6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 7.16, y: 5.83}
@@ -191,6 +191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1337283920656425531}
   - component: {fileID: 1337283920656425508}
+  - component: {fileID: 6450113446644680082}
   m_Layer: 0
   m_Name: Steak
   m_TagString: Untagged
@@ -229,3 +230,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dir: {x: 0, y: -1, z: 0}
   destroyVFX: {fileID: 8083233970450910706, guid: d454ee8b73a9607428fe332e218baa54, type: 3}
+--- !u!65 &6450113446644680082
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337283920656425530}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5815298, y: 0.6110236, z: 0.39607453}
+  m_Center: {x: 0.06339979, y: 0.30818906, z: -0.039345264}
