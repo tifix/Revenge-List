@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: boss2_PreQTEtext
   m_EditorClassIdentifier: 
   textBody:
-  - going into QTE
+  - Ouch, that hurts.
+  - This is for not returning those eggs you borrowed!
+  - What?
   textSpeaker:
+  - Karl
+  - Lilith
   - Karl

@@ -36,6 +36,13 @@ public class GameManager : MonoBehaviour
         else Time.timeScale = 1;
     }
 
+
+    public static void StartQuickTimeEventEverything() 
+    {
+        UI.instance.ToggleQTEScreen();
+        QTEManager.instance.QTEStart();
+    }
+
     // Set win State
     public void SetWon(bool targetState)
     {

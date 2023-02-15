@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5668457906109925841}
   - component: {fileID: 458392176}
   - component: {fileID: 458392175}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: KarlBoss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -193,7 +193,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3615865191426516607}
   - component: {fileID: 3615865191426516544}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -275,6 +275,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 3615865189927272333}
     m_Modifications:
+    - target: {fileID: 4163816480970649169, guid: e00c074aaf2a8be4cbc9496d99af2ae7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4163816480970649169, guid: e00c074aaf2a8be4cbc9496d99af2ae7, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -416,8 +420,12 @@ PrefabInstance:
       value: QTE prompt
       objectReference: {fileID: 0}
     - target: {fileID: 4814028220110693405, guid: e00c074aaf2a8be4cbc9496d99af2ae7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4814028220110693405, guid: e00c074aaf2a8be4cbc9496d99af2ae7, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5425561320645101272, guid: e00c074aaf2a8be4cbc9496d99af2ae7, type: 3}
       propertyPath: m_Enabled
@@ -579,6 +587,10 @@ PrefabInstance:
     - target: {fileID: 6650244591728607643, guid: 7deee093173aea944af8e83e3a61c76d, type: 3}
       propertyPath: m_Name
       value: FireWall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6650244591728607643, guid: 7deee093173aea944af8e83e3a61c76d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

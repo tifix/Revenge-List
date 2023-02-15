@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec95ee9f071fb74eb68723917246010, type: 3}
   m_Name: boss2_exitText
   m_EditorClassIdentifier: 
-  textBody: []
-  textSpeaker: []
+  textBody:
+  - Now leaving scene 2
+  textSpeaker:
+  - Narrator
