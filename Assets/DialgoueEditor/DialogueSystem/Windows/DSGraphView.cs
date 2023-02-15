@@ -1,6 +1,4 @@
-using DS.Elements;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.Experimental.GraphView;
@@ -9,9 +7,9 @@ using UnityEngine.UIElements;
 
 namespace DS.Windows
 {
-
     using Elements;
     using Enumerations;
+    using Utilities;
 
     public class DSGraphView : GraphView
     {
@@ -23,7 +21,37 @@ namespace DS.Windows
 
             AddStyles();
         }
-        
+
+        #region Overrided Methods
+        public override List<Port> GetCompatiblePorts(Port startPort, NodeAdapter nodeAdapter)
+        {
+            List<Port> compatiblePorts = new List<Port>();
+
+            ports.ForEach(port =>
+            {
+                if(startPort == port)
+                {
+                    return;
+                }
+
+                if(startPort.node == port.node)
+                {
+                    return;
+                }
+
+                if(startPort.direction == port.direction)
+                {
+                    return;
+                }
+
+                compatiblePorts.Add(port);
+            });
+
+            return compatiblePorts;
+        }
+        #endregion
+
+        #region Maniopulators
         private void AddManipulators()
         {
             // sets up zoom to allow mouse wheel scrolling zoom
@@ -40,6 +68,17 @@ namespace DS.Windows
 
             this.AddManipulator(CreateNodeContextualMenu("Add Node (Single Choice)", DSDialogueType.SingleChoice));
             this.AddManipulator(CreateNodeContextualMenu("Add Node (Multiple Choice)", DSDialogueType.MultipleChoice));
+
+            this.AddManipulator(CereateGroupContextualMenu());
+        }
+
+        private IManipulator CereateGroupContextualMenu()
+        {
+            ContextualMenuManipulator contextualMenuManipulator = new ContextualMenuManipulator(
+                menuEvent => menuEvent.menu.AppendAction("Add Group", actionEvent => AddElement(CreateGroup("Dialogue Group", actionEvent.eventInfo.localMousePosition)))
+                );
+
+            return contextualMenuManipulator;
         }
 
         private IManipulator CreateNodeContextualMenu(string actionTitle, DSDialogueType dialogueType)
@@ -50,14 +89,19 @@ namespace DS.Windows
 
             return contextualMenuManipulator;
         }
+        #endregion
 
-        private void AddGridBackground()
+        #region Elements Creation
+        private Group CreateGroup(string title, Vector2 localMousePosition)
         {
-            GridBackground gridBackground = new GridBackground();
+            Group group = new Group()
+            {
+                title = title
+            };
 
-            gridBackground.StretchToParentSize();
+            group.SetPosition(new Rect(localMousePosition, Vector2.zero));
 
-            Insert(0, gridBackground);
+            return group;
         }
 
         private DSNode CreateNode(DSDialogueType dialogueType, Vector2 position)
@@ -71,15 +115,27 @@ namespace DS.Windows
 
             return node;
         }
+        #endregion
+
+        #region Element Addition
+        private void AddGridBackground()
+        {
+            GridBackground gridBackground = new GridBackground();
+
+            gridBackground.StretchToParentSize();
+
+            Insert(0, gridBackground);
+        }
 
         private void AddStyles()
         {
-            StyleSheet graphViewStyleSheet = (StyleSheet) EditorGUIUtility.Load("DialogueSystem/DSGraphViewStyles.uss");
-            StyleSheet nodeStyleSheet = (StyleSheet)EditorGUIUtility.Load("DialogueSystem/DSNodeStyles.uss");
 
-            styleSheets.Add(graphViewStyleSheet);
-            styleSheets.Add(nodeStyleSheet);
+            this.AddStyleSheets(
+                "DialogueSystem/DSGraphViewStyles.uss",
+                "DialogueSystem/DSNodeStyles.uss"
+                );
         }
+        #endregion
     }
 }
 
