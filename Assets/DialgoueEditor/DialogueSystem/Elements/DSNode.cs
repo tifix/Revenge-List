@@ -17,6 +17,8 @@ namespace DS.Elements
         public string Text { get; set; }
         public DSDialogueType DialogueType { get; set; }
 
+        public DSGroup Group { get; set; }
+
         private DSGraphView graphView;
 
         private Color defaultBackgroundColor;
@@ -43,11 +45,25 @@ namespace DS.Elements
             // Title Container
             TextField dialgueNameTextField = DSElementUtility.CreateTextField(DialogueName, callback =>
             {
-                graphView.RemoveUngroupedNode(this);
+
+                if( Group == null)
+                {
+                    graphView.RemoveUngroupedNode(this);
+
+                    DialogueName = callback.newValue;
+
+                    graphView.AddUngroupedNode(this);
+
+                    return;
+                }
+
+                DSGroup currentGroup = Group;
+
+                graphView.RemoveGroupedNode(this, Group);
 
                 DialogueName = callback.newValue;
 
-                graphView.AddUngroupedNode(this);
+                graphView.AddGroupedNode(this, currentGroup);
             });
 
 
