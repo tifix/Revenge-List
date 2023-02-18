@@ -168,7 +168,8 @@ public class UI : MonoBehaviour
     public void BossInitialiseHealthBar(bossHealth data)                        //initialises the boss healthbar. 
     {
             bossHealth = data;
-            bossHealthBar.maxValue = data.GetMaxHealth();
+            bossShieldBar.maxValue = data.GetMaxHealth();
+            bossHealthBar.maxValue = data.coreHealth;
             bossHealthBar.value = bossHealthBar.maxValue;
             boxBossBar.SetActive(true);
         

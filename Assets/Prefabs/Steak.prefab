@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1337283918968851370}
   - component: {fileID: 1337283918968851348}
   - component: {fileID: 1337283918968851371}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1337283919670149644}
   - component: {fileID: 1337283919670149645}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,7 +192,7 @@ GameObject:
   - component: {fileID: 1337283920656425531}
   - component: {fileID: 1337283920656425508}
   - component: {fileID: 6450113446644680082}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Steak
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -228,6 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f78fc63bab133ea44ab21b8a7f2c1883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 8
   dir: {x: 0, y: -1, z: 0}
   destroyVFX: {fileID: 8083233970450910706, guid: d454ee8b73a9607428fe332e218baa54, type: 3}
 --- !u!65 &6450113446644680082

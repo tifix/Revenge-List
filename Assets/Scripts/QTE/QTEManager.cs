@@ -184,7 +184,7 @@ public class QTEManager : MonoBehaviour
 
     public void QTEStart()
     {
-        UI.instance.ToggleQTEScreen();
+        //UI.instance.ToggleQTEScreen();
         instance.playQTE = true;
         instance.isPlaying = true;
 
@@ -210,12 +210,13 @@ public class QTEManager : MonoBehaviour
         //Win QTE
         if (correctHits >= currentMap.beatsForWin)
         {
-            //Progress boss fight
+            if(UI.instance.bossHealth.gameObject.TryGetComponent<KarlBoss>(out KarlBoss karl)){ karl.NextPhase(); }
         }
 
         //Lose - Repeat phase
         else 
-        { 
+        {
+            Debug.LogWarning("too bad, repeat the phase");
             //Reset phase
         }
 

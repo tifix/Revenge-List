@@ -8,7 +8,7 @@ public class bossHealth : ObjectScript
     [Tooltip("The health damaged by QTEs")] public float coreHealth = 100;
     [Range(0, 100f)] public float damageQTEcomplete=40;
     [Range(0,2f)]public float damageQTEcomboMultiplier=2f;
-    [SerializeField] GameObject QTEtriggerPrompt;
+    public GameObject QTEtriggerPrompt;
 
     protected override void OnEnable()
     {
@@ -19,12 +19,16 @@ public class bossHealth : ObjectScript
 
     protected override void Update() 
     {
-        if (health <= 0.0f) { Debug.Log("shield down, QTE time"); OnShieldDepleted(); }
+        if (health <= 0.0f)OnShieldDepleted(); 
     }
 
     public void OnShieldDepleted() 
     {
-        isCoreExposed = true;
-        QTEtriggerPrompt.SetActive(true);
+        if (isCoreExposed == false)
+        {
+            isCoreExposed = true;
+            Debug.Log("shield down, QTE time");
+            QTEtriggerPrompt.SetActive(true);
+        }
     }
 }
