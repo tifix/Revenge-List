@@ -40,7 +40,8 @@ namespace DS.Windows
             OnGroupElementsAdded();
 
             OnGroupElementsRemoved();
-            OnGroupRenamed()
+
+            OnGroupRenamed();
 
             AddStyles();
         }
