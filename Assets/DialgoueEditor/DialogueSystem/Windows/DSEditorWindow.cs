@@ -5,10 +5,11 @@ using UnityEditor.UIElements;
 
 namespace DS.Windows
 {
-    
+    using System;
     using Utilities;
     public class DSEditorWindow : EditorWindow
     {
+        private DSGraphView graphView;
         private readonly string defaultFilename = "DialogueFileName";
         
         private TextField fileNameTextField;
@@ -35,7 +36,7 @@ namespace DS.Windows
         #region Elements Addition
         private void AddGraphView()
         {
-            DSGraphView graphView = new DSGraphView(this);
+            graphView = new DSGraphView(this);
 
             graphView.StretchToParentSize();
 
@@ -51,7 +52,7 @@ namespace DS.Windows
                 fileNameTextField.value = callback.newValue.RemoveWhitespaces().RemoveSpecialCharacters();
             });
 
-            saveButton = DSElementUtility.CreateButton("Save");
+            saveButton = DSElementUtility.CreateButton("Save", () => Save());
 
             toolbar.Add(fileNameTextField);
             toolbar.Add(saveButton);
@@ -64,6 +65,25 @@ namespace DS.Windows
         private void AddStyles()
         {
             rootVisualElement.AddStyleSheets("DialogueSystem/DSVariables.uss");
+        }
+        #endregion
+
+        #region Toolbar Actions
+        private void Save()
+        {
+            if(string.IsNullOrEmpty(fileNameTextField.value))
+            {
+                EditorUtility.DisplayDialog(
+                    "Invalid Filename.",
+                    "Please use a valid filename",
+                    "Okay!"
+                );
+
+                return;
+            }
+
+            DSIOUtility.Init(graphView, fileNameTextField.value);
+            DSIOUtility.Save();
         }
         #endregion
 
