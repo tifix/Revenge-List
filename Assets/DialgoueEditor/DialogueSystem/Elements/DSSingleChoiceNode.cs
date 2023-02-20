@@ -12,9 +12,9 @@ namespace DS.Elements
 
     public class DSSingleChoiceNode : DSNode
     {
-        public override void Init(DSGraphView dsGraphView, Vector2 position)
+        public override void Init(string nodeName, DSGraphView dsGraphView, Vector2 position)
         {
-            base.Init(dsGraphView, position);
+            base.Init(nodeName, dsGraphView, position);
 
             DialogueType = DSDialogueType.SingleChoice;
 
