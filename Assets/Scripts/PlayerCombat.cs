@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Events;
-using System.Xml.Serialization;
+//Removed unused "usings" - AV
 
-
+[RequireComponent(typeof(Animator))]
 public class PlayerCombat : ObjectScript
 {
     Controls input;
+    public static PlayerCombat instance;
 
+    //I'd recommend most stamina stuff to be int - AV
     const float maxStamina = 100.0f;                                                                // The maximum stamina of the Player
     [SerializeField, Tooltip("Stamina Regen Per Second")]float staminaRegenPerSec = 2.0f;           // Stamina regen rate *MAKE CONST WHEN FINALISED*
     [SerializeField, Tooltip("current stamina of the Player")]float stamina;                        // The current stamina of the Player
@@ -18,7 +19,13 @@ public class PlayerCombat : ObjectScript
     public float attackRange = 2.0f;
     public LayerMask enemyLayers;
 
-    // Start is called before the first frame update
+    protected override void Awake()                             //Ensuring single instance of the script
+    {
+        base.Awake();
+        if (instance == null) instance = this;
+        else Destroy(this);
+    }
+
     void Start()
     {
         input = new Controls();
@@ -29,16 +36,12 @@ public class PlayerCombat : ObjectScript
 
         input.Ground.Attack.performed += Attack;
         input.Ground.Attack.Enable();
+
+        input.Ground.KillSelf.performed += KillSelf;
+        input.Ground.KillSelf.Enable();
     }
 
-    // Update is called once per frame
-    override protected void Update()
-    {
-        if (this.health <= 0.0f)
-        {
-            OnDeath();
-        }
-    }
+    //Now the ApplyDamage function is virtual, so this object gets called directly for the damage check only when necessary - AV
 
     private void FixedUpdate()
     {
@@ -59,6 +62,7 @@ public class PlayerCombat : ObjectScript
         {
             stamina -= 5.0f;
             Debug.Log("Attacking now. Stamina: %f" + stamina);
+            GetComponent<Animator>().SetTrigger("attack");
 
             // Detect enemies in range
             Collider[] hitEnemies = Physics.OverlapSphere(attackOrg.position, attackRange, enemyLayers);
@@ -79,6 +83,16 @@ public class PlayerCombat : ObjectScript
         Debug.Log("Health: %f" + health);
     }
 
+    public override void ApplyDamage(float _value)
+    {
+        health -= _value;
+
+        if (health <= 0.0f)
+        {
+            OnDeath();
+        }
+    }
+
     private void OnDrawGizmosSelected()
     {
         if(attackOrg == null)
@@ -88,10 +102,12 @@ public class PlayerCombat : ObjectScript
 
     void OnDeath()
     {
-        Debug.Log("PLAYER DEAD... [WIP]");
+        //Debug.Log("PLAYER DEAD... [WIP]");
+
+        GameManager.instance.SetLost(true);
     }
 
-    void KillSelf()
+    void KillSelf(InputAction.CallbackContext obj)
     {
         this.ApplyDamage(maxHealth);
     }

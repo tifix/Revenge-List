@@ -16,7 +16,7 @@ public class QTEMovement : MonoBehaviour
 
     bool rotating = false;
     // Start is called before the first frame update
-    void Awake()
+    void OnEnable()
     {
         input = new Controls();
 
@@ -33,6 +33,13 @@ public class QTEMovement : MonoBehaviour
         input.QTE.Right.Enable();
 
         up = true; down = false; left = false; right = false;
+    }
+    private void OnDisable()
+    {
+        input.QTE.Up.Disable();
+        input.QTE.Down.Disable();
+        input.QTE.Left.Disable();
+        input.QTE.Right.Disable();
     }
 
     void Up(InputAction.CallbackContext obj)

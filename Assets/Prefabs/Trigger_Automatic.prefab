@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3869569092108806191}
   - component: {fileID: 5191195902823950253}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Graphic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 5461849238889560789}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.99, z: 0}
-  m_LocalScale: {x: 0.5839416, y: 1, z: 13.333511}
+  m_LocalScale: {x: 0.8732262, y: 1, z: 13.333511}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9027183330998076734}
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a2568e181015be443ac6f9880725683f, type: 3}
-  m_Color: {r: 1, g: 0.7400186, b: 0, a: 1}
+  m_Color: {r: 0.64567673, g: 0.24870951, b: 0.6509434, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 9027183330998076734}
   - component: {fileID: 9027183330998076732}
   - component: {fileID: 9027183330998076733}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Trigger_Automatic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ Transform:
   m_GameObject: {fileID: 9027183330998076730}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.95, y: 0.4178763, z: -1.2065382}
-  m_LocalScale: {x: 1.7125, y: 1, z: 0.074999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3869569092108806191}
@@ -129,8 +129,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 4.2634673, z: 79.659584}
-  m_Center: {x: 0, y: 0.6732662, z: -30.21954}
+  m_Size: {x: 1, y: 0.5, z: 2}
+  m_Center: {x: 0, y: -1, z: 0}
 --- !u!114 &9027183330998076733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,9 +143,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d15955a771f53ce428288919f145e016, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isAutoUse: 1
-  isSingleUse: 0
+  isAutoUse: 0
   isInRange: 0
+  isSingleUse: 1
+  isDisabledOnUse: 0
   uponInteractionDo:
     m_PersistentCalls:
       m_Calls: []

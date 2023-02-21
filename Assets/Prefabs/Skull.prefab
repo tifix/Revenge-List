@@ -32,6 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3111466439928930075}
+  - {fileID: 1822376302886724922}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -178,3 +179,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &2543245223045395157
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 1877277126013218993}
+    m_Modifications:
+    - target: {fileID: 4179636883530405871, guid: af1df02e49a07664e9d8d5ac40100e6a, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4179636883530405871, guid: af1df02e49a07664e9d8d5ac40100e6a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4179636883530405871, guid: af1df02e49a07664e9d8d5ac40100e6a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4179636883530405871, guid: af1df02e49a07664e9d8d5ac40100e6a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4179636883530405871, guid: af1df02e49a07664e9d8d5ac40100e6a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.38268375
+      objectReference: {fileID: 0}
+    - target: {fileID: 4179636883530405871, guid: af1df02e49a07664e9d8d5ac40100e6a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4179636883530405871, guid: af1df02e49a07664e9d8d5ac40100e6a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4179636883530405871, guid: af1df02e49a07664e9d8d5ac40100e6a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.92387944
+      objectReference: {fileID: 0}
+    - target: {fileID: 4179636883530405871, guid: af1df02e49a07664e9d8d5ac40100e6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4179636883530405871, guid: af1df02e49a07664e9d8d5ac40100e6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4179636883530405871, guid: af1df02e49a07664e9d8d5ac40100e6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 135
+      objectReference: {fileID: 0}
+    - target: {fileID: 6650244591728607643, guid: af1df02e49a07664e9d8d5ac40100e6a, type: 3}
+      propertyPath: m_Name
+      value: Fire
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: af1df02e49a07664e9d8d5ac40100e6a, type: 3}
+--- !u!4 &1822376302886724922 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4179636883530405871, guid: af1df02e49a07664e9d8d5ac40100e6a, type: 3}
+  m_PrefabInstance: {fileID: 2543245223045395157}
+  m_PrefabAsset: {fileID: 0}

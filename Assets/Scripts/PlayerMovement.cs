@@ -4,10 +4,12 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(Animator))]
 public class PlayerMovement : MonoBehaviour
 {
 
     //Input Action Map Script
+    public static PlayerMovement instance;
     Controls input;
     InputAction movement;
 
@@ -26,9 +28,16 @@ public class PlayerMovement : MonoBehaviour
     [Range(1f, 10f), Tooltip("Depth speed offset")]
     public float verticalSpeedBoost = 2f;
 
+    [Header("Dash")]
+    [Range(1,100), Tooltip("How fast the player will travel")]
+    public float dashStrenght = 1.0f;
+    [Range(0.1f,2), Tooltip("How long the dash is")]
+    public float dashLenght = 1.0f;
+    [Range(0.1f,2), Tooltip("How often the player can dash")]
+    public float dashCoolDown = 1.0f;
+    float dashTime = 0;
+
     [Header("Jump")]
-    [Tooltip("Can the player jump")]
-    public bool allowJump = true;
     [Range(1f, 100f), Tooltip("Jump height")]
     public float jumpStrenght = 4f;
     [Range(0f,1f), Tooltip("Ground check ray lenght")]
@@ -39,7 +48,6 @@ public class PlayerMovement : MonoBehaviour
     public float gravityScale = 1f;
     float gravityForce = 0;
 
-
     [Header("Screen Limits")]
     [Tooltip("Max depth and minimun depth")]
     public Vector2 zLimits;
@@ -47,6 +55,9 @@ public class PlayerMovement : MonoBehaviour
 
     void Awake()
     {
+        if (instance == null) instance = this;
+        else Destroy(this);
+
         input = new Controls();
         rb = GetComponent<Rigidbody>();
         boxCol = GetComponent<BoxCollider>();
@@ -59,6 +70,9 @@ public class PlayerMovement : MonoBehaviour
         //Bind jump to a function
         input.Ground.Jump.performed += DoJump;
         input.Ground.Jump.Enable();
+
+        input.Ground.Dash.performed += DoDash;
+        input.Ground.Dash.Enable();
     }
 
     void Update()
@@ -73,6 +87,7 @@ public class PlayerMovement : MonoBehaviour
                 sprite.flipX = false;
             CheckGround();
             ProcessInput();
+            GetComponent<Animator>().SetFloat("walkDirection", dir.x);
         }
         else
         {
@@ -122,7 +137,7 @@ public class PlayerMovement : MonoBehaviour
 
     void DoJump(InputAction.CallbackContext obj)
     {
-        if(IsGrounded && allowJump)
+        if(IsGrounded && !isMovementLocked)
         {
             Debug.Log("Jump");
             //Jump up
@@ -131,13 +146,36 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    void DoDash(InputAction.CallbackContext obj)
+    {
+        if (IsGrounded && !isMovementLocked && dashTime + dashCoolDown < Time.time)
+        {
+            Debug.Log("Dash");
+            dashTime = Time.time;
+            //Dash
+            StartCoroutine("Dash");
+        }
+    }
+
+    IEnumerator Dash()
+    {
+        float t = dashLenght;
+        while (t > 0) 
+        {
+            //Controller can do shorter dashes, diagonal dashes are a bit longer
+            rb.velocity = rb.velocity + new Vector3(dir.x * dashStrenght, 0, dir.y * dashStrenght * verticalSpeedBoost);
+            t -= Time.deltaTime;
+            yield return new WaitForEndOfFrame();
+        }
+    }
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position - new Vector3(0,0.5f,0), transform.position - new Vector3(0, 0.5f + groundCheckDistance, 0));
         Gizmos.color = Color.blue;
-        Gizmos.DrawLine(Vector3.zero, new Vector3(0, 0, zLimits.x));
-        Gizmos.DrawLine(Vector3.zero, new Vector3(0, 0, zLimits.y));
+        Gizmos.DrawLine(new Vector3(transform.position.x, 0, 0), new Vector3(transform.position.x, 0, zLimits.x));
+        Gizmos.DrawLine(new Vector3(transform.position.x, 0, 0), new Vector3(transform.position.x, 0, zLimits.y));
     }
 
     private void OnDestroy()

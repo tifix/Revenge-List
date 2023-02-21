@@ -30,7 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7780584626273123985
 MonoBehaviour:
@@ -48,4 +48,4 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: cbc6cb1eb1b0aed41949212b24c8c171, type: 2}
+  sharedProfile: {fileID: 11400000, guid: f2c78aabbcd30ce40afd3987ac7ed270, type: 2}

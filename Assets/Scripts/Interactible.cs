@@ -7,8 +7,10 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Collider))]
 public class Interactible : MonoBehaviour
 {
-    Controls input;
-    [SerializeField] bool isAutoUse=true, isSingleUse = false, isInRange = false;
+    protected Controls input;
+    [SerializeField] bool isAutoUse = true, isInRange = false;
+    [SerializeField, Tooltip("if true, the script is destroyed upon use")] protected bool isSingleUse = false;
+    [SerializeField, Tooltip("if true, the script is disabled upon use")] protected bool isDisabledOnUse = false;
     public UnityEvent uponInteractionDo = new UnityEvent();
 
     public void Awake()
@@ -18,8 +20,11 @@ public class Interactible : MonoBehaviour
         //input.Ground.Interact.performed +=DoInteraction;
     }
 
-    void OnTriggerEnter()
+    
+
+    void OnTriggerEnter(Collider other)
     {
+        //if(other.gameObject)
         //input.Ground.Interact.Enable();
         input.Ground.Interact.performed += DoInteraction;
 
@@ -27,7 +32,7 @@ public class Interactible : MonoBehaviour
         if(!isAutoUse) UI.instance.boxInteractPrompt.SetActive(true);
         if (isAutoUse) { Interaction(); }  //Forbidden magiks resonate deep within
     }
-
+    
 
     private void OnTriggerExit(Collider other)
     {
@@ -43,6 +48,7 @@ public class Interactible : MonoBehaviour
     {
         uponInteractionDo.Invoke();
         if (isSingleUse) { UI.instance.boxInteractPrompt.SetActive(false); input.Ground.Interact.performed -= DoInteraction; Destroy(this); }
+        if (isDisabledOnUse) { UI.instance.boxInteractPrompt.SetActive(false); gameObject.SetActive(false); }
     }
 
 
