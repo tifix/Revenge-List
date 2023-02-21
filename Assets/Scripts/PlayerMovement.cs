@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
 {
 
     //Input Action Map Script
+    public static PlayerMovement instance;
     Controls input;
     InputAction movement;
 
@@ -54,6 +55,9 @@ public class PlayerMovement : MonoBehaviour
 
     void Awake()
     {
+        if (instance == null) instance = this;
+        else Destroy(this);
+
         input = new Controls();
         rb = GetComponent<Rigidbody>();
         boxCol = GetComponent<BoxCollider>();

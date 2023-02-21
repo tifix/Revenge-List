@@ -185,10 +185,10 @@ public class QTEManager : MonoBehaviour
     public void QTEStart()
     {
         //UI.instance.ToggleQTEScreen();
-        instance.playQTE = true;
-        instance.isPlaying = true;
+        playQTE = true;
+        isPlaying = true;
 
-        Time.timeScale = 1.0f;
+        GameManager.instance.SetPause(false);
 
         if (currentMap == null)
             currentMap = defaultMap;

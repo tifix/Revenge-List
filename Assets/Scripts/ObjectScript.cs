@@ -8,11 +8,13 @@ public class ObjectScript : MonoBehaviour
 {
     Texture2D texture;
     Rigidbody rb;
-    
+
     protected bool isAlive, isStatic;               // Is the Object alive? isStatic;              // Is the Object static?
+    //Is this used? seems unnecessary when you have transform.position - AV
     protected Vector3 position;                     // Position Vector x,y,z: z = Depth?
+    //I'd recommend health being int - AV
     [SerializeField] protected float maxHealth = 1;            // The maximum health the Object can have, defaults to 1 for Props.
-    [SerializeField] protected float health;                                   // The current health of the Object 
+    [SerializeField] protected float health;
 
     // Start is called before the first frame update
     protected virtual void Awake()
@@ -42,15 +44,12 @@ public class ObjectScript : MonoBehaviour
 
         // --- Regular updates START --- 
 
-        if(health <= 0.0f)
-        {
-            DeleteObject();
-        }
+        //Moved the health check to the ApplyDamage function, more performant - AV
 
     }
 
     // For applying damage to the object
-    public void ApplyDamage(float _value)
+    public virtual void ApplyDamage(float _value)
     {
         health -= _value;
     }
@@ -62,6 +61,6 @@ public class ObjectScript : MonoBehaviour
     }
 
     public float GetHealth() { return health; }
-    public void SetHealth(float _health) { health= _health; }
+    public void SetHealth(float _health) { health = _health; }
     public float GetMaxHealth() { return maxHealth; }
 }

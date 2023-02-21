@@ -60,6 +60,11 @@ public class GameManager : MonoBehaviour
         UI.instance.EnableLostScreen();
     }
 
+    //I recommend looking into async loading of scenes, this would allow us to have a scene for transitioning (loading screen)
+    //When loading a scene, you can choose the mode to load it in, a pretty cool one is "Additive", which basically just allows
+    //2 or more scenes to be loaded at once and be able to interact
+    //This could be useful to have all the persitant data objects in said scene + the loading screen itself
+    //Oh, loading the screen in an async manner, requieres the use of a coroutine - AV
     #region Scene Switching
     public static void LoadScene(int _SceneNumber) => SceneManager.LoadScene(_SceneNumber);
     public static void LoadScene(string _SceneName) => SceneManager.LoadScene(_SceneName);
