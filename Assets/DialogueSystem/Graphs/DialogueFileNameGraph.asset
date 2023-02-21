@@ -9,12 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5016886999756b44fa42e8ad3bfbb640, type: 3}
-  m_Name: DialogueFileName
+  m_Script: {fileID: 11500000, guid: 330ce6680441e444f96079c0bb98687a, type: 3}
+  m_Name: DialogueFileNameGraph
   m_EditorClassIdentifier: 
   <FileName>k__BackingField: DialogueFileName
-  <DialogueGroups>k__BackingField:
+  <Groups>k__BackingField: []
+  <Nodes>k__BackingField: []
+  <OldGroupNames>k__BackingField: []
+  <OldUngroupedNodeNames>k__BackingField:
+  - DialogueName
+  - 2
+  <OldGroupNodeNames>k__BackingField:
     list: []
-  <UngroupedDialogues>k__BackingField:
-  - {fileID: 11400000, guid: 1a5f90c616417e142918569738ba9af3, type: 2}
-  - {fileID: 11400000, guid: 8b1533988589a7c449afc397fac07ab0, type: 2}

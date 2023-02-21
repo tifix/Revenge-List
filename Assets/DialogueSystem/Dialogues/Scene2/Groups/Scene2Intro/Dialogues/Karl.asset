@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Karl
   m_EditorClassIdentifier: 
   <DialogueName>k__BackingField: Karl
-  <Text>k__BackingField: Oh, hi, Lilly!
+  <Text>k__BackingField: 1
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: c5a548be1b135a04197b3b457aae477c, type: 2}

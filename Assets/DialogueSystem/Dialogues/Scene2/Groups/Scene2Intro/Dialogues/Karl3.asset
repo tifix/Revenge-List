@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Karl3
   m_EditorClassIdentifier: 
   <DialogueName>k__BackingField: Karl3
-  <Text>k__BackingField: "Darkness? Isn\u2019t that rather glum? \\nTo me, you look
-    more like Lilith, the Queen of..."
+  <Text>k__BackingField: 5
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: f1aa1b597dc37cd4c80c3a13de973370, type: 2}

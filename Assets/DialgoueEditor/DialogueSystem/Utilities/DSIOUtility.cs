@@ -169,6 +169,23 @@ namespace DS.Utilities
         {
             List<DSChoiceSaveData> choices = CloneNodeChoices(node.Choices);
 
+            List<string> IDs = new List<string>();
+
+            //Value.outputContainer
+            foreach (var p in node.outputContainer.Children())
+            {
+               // Debug.Log("Child");
+                if (p is Port) 
+                {
+                    
+                    DSChoiceSaveData temp = (DSChoiceSaveData)p.userData;
+                    IDs.Add(temp.NodeID);
+
+                    Debug.Log("port found "+ temp.NodeID);
+                }
+
+            }
+
             DSNodeSaveData nodeData = new DSNodeSaveData()
             {
                 ID = node.ID,
@@ -177,10 +194,15 @@ namespace DS.Utilities
                 Text = node.Text,
                 GroupID = node.Group?.ID,
                 DialogueType = node.DialogueType,
-                Position = node.GetPosition().position
+                Position = node.GetPosition().position,
+                isStartNode = node.IsStartingNode(),
+                ChildIDs = IDs
+
+
             };
 
-            graphData.Nodes.Add(nodeData);
+            
+            
         }
 
 
@@ -422,6 +444,32 @@ namespace DS.Utilities
                 }
             });
         }
+
+        public static DSNode FindObjectID(string ID)
+        {
+            foreach(DSNode node in nodes)
+            {
+                if(ID == node.ID)
+                {
+                    return node;
+                }
+            }
+            return null;
+        }
+        
+        public static DSNodeSaveData FindSaveDataID(string ID, DSGraphSaveDataSO graph)
+        {
+            foreach (DSNodeSaveData node in graph.Nodes)
+            {
+                if (ID == node.ID)
+                {
+                    return node;
+                }
+            }
+            return null;
+        }
+
+        
         #endregion
 
         #region Utility Methods

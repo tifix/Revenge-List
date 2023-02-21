@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DS.Data.Save;
 using UnityEngine.InputSystem;
 using UnityEngine.Windows;
 
@@ -8,10 +9,10 @@ public class Inter_TextTrigger : Interactible
 {
     private bool isRunning = false;
     public bool isPausedWhileShowingA= true;
-    [Tooltip("this should be shown when entered")] public Dialogue preUseDialogue;
+    [Tooltip("this should be shown when entered")] public DSGraphSaveDataSO preUseDialogue;
     [Range(0, 2f)] public float waitAfterPreDialogue = 0;
     public bool isPausedWhileShowingB = false;
-    [Tooltip("this should be shown when entered")] public Dialogue postUsedialogue;
+    [Tooltip("this should be shown when entered")] public DSGraphSaveDataSO postUsedialogue;
     [Range(0, 2f)] public float waitAfterInteract = 0;
     // Start is called before the first frame update
 

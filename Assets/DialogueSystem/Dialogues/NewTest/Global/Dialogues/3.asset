@@ -10,14 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 284e991c0cc122d4397cb723b29099f1, type: 3}
-  m_Name: Karl4
+  m_Name: 3
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: Karl4
-  <Text>k__BackingField: 'Warning: Unassigned text'
+  <DialogueName>k__BackingField: 3
+  <Text>k__BackingField: 3
   <Choices>k__BackingField:
-  - <Text>k__BackingField: I'd rather die. Or you Should.
+  - <Text>k__BackingField: Next Dialogue
     <NextDialogue>k__BackingField: {fileID: 0}
-  - <Text>k__BackingField: 1. He's not called Snuffles.
-    <NextDialogue>k__BackingField: {fileID: 0}
-  <DialogueType>k__BackingField: 1
+  <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0

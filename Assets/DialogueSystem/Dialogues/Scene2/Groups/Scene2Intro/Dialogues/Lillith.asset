@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Lillith
   m_EditorClassIdentifier: 
   <DialogueName>k__BackingField: Lillith
-  <Text>k__BackingField: It's Lilith... the Queen of Darkness.
+  <Text>k__BackingField: 2
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 2fdd0b5946f178b4095824c4daffd72e, type: 2}

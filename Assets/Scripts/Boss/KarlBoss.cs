@@ -1,3 +1,4 @@
+using DS.Data.Save;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
@@ -42,7 +43,7 @@ public class KarlBoss : MonoBehaviour
     public List<AttackType> phase3 = new List<AttackType>();
     [Space(3)]
     [Tooltip("each phase is to have a different QTE, set them here"), SerializeField] List<QTEObject> phase_QTEs;
-    [Tooltip("each phase will have different dialogue, set it here"), SerializeField] List<Dialogue> phase_Dialogues;
+    [Tooltip("each phase will have different dialogue, set it here"), SerializeField] List<DSGraphSaveDataSO> phase_Dialogues;
 
     PlayerMovement player;
     private Vector3 knockbackPosition = Vector3.zero; //to avoid player spam-attacking when behind the firewall, knock the player behind the firewall;
