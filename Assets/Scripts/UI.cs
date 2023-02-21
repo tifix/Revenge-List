@@ -110,67 +110,31 @@ public class UI : MonoBehaviour
         }
         if (NodeCurrent == null) Debug.LogWarning("No start node found!");
 
-
-        pageText = NodeCurrent.Text;
-            
-
-            //Debug.Log(dialogueCur.Nodes[i].nextNode.Text);
-            //dialogueCur.Nodes[i] = dialogueCur.Nodes[i].nextNode;
-
-
-        Debug.Log(pageText);
-        //Slowly display the page text
-        for (int j = 0; j < (pageText.Length + 1); j++)
+        while(true) //Main dialogue loop - repeat until the next one has no children
         {
-            txtMain.text = pageText.Substring(0, j);               //slice the text 
-            yield return new WaitForSecondsRealtime(typingWait);
-            if (!runCoroutine) break;
-        }
-        txtMain.text = pageText;
-        isWaiting = true;
-        while (isWaiting == true) yield return null;
-
-
-
-        //Get the next Node
-        if (NodeCurrent.ChildIDs.Count < 1) Debug.LogWarning("End of dialogue stream reached");
-        else
-        {
-            //NodeCurrent.
-            NodeCurrent = DSIOUtility.FindSaveDataID(NodeCurrent.ChildIDs[0],_dialogue);
-        }
-
-        
-
-
-
-        /*while (txtPageNr < _dialogue.Nodes.Count)    //move to next node here 
-        {
-            _dialogue.
-
-            runCoroutine = true;
-            //speaker set
-            if (_dialogue.textSpeaker.Count > 1) txtSpeaker.text = _dialogue.textSpeaker[txtPageNr];      //if dialogue switches between speakers - updates speaker. If just one, doesn't bother checking.
-            else txtSpeaker.text = _dialogue.textSpeaker[0];
-
-            //get text data
-            pageText = _dialogue.textBody[txtPageNr];
-
+            pageText = NodeCurrent.Text;
+            Debug.Log(pageText);
 
             //Slowly display the page text
-            for (int i = 0; i < (pageText.Length + 1); i++)
+            for (int j = 0; j < (pageText.Length + 1); j++)
             {
-                txtMain.text = pageText.Substring(0, i);               //slice the text 
+                txtMain.text = pageText.Substring(0, j);               //slice the text 
                 yield return new WaitForSecondsRealtime(typingWait);
                 if (!runCoroutine) break;
             }
-            
-            txtMain.text = pageText;                                   //display the text
+            txtMain.text = pageText;
             isWaiting = true;
+            while (isWaiting == true) yield return null;
 
-            while (isWaiting == true) yield return null;               //hold until player progresses the text with SPACE
-            
-        }*/
+            //Final node detection - break the loop if the node has no children
+            try 
+            {
+                if (string.IsNullOrEmpty(NodeCurrent.ChildIDs[0])) { Debug.LogWarning("End of dialogue stream reached"); break; }
+                NodeCurrent = DSIOUtility.FindSaveDataID(NodeCurrent.ChildIDs[0], _dialogue);
+            }
+            catch {Debug.LogWarning("End of dialogue stream reached"); break;  }
+        }
+
         yield return 1;
         Time.timeScale = 1;
         runCoroutine = false;                                          //Disable once finished

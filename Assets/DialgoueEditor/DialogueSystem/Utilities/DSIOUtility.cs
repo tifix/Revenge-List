@@ -181,7 +181,15 @@ namespace DS.Utilities
                     DSChoiceSaveData temp = (DSChoiceSaveData)p.userData;
                     IDs.Add(temp.NodeID);
 
-                    Debug.Log("port found "+ temp.NodeID);
+                    Port temp2 = (Port)p;
+
+                    if (temp2.connected == true) Debug.Log("port found " + temp.NodeID);
+                    else 
+                    {
+                        Debug.Log("final port empty. ");
+                        //IDs.
+                    }
+                    
                 }
 
             }
@@ -201,8 +209,9 @@ namespace DS.Utilities
 
             };
 
-            
-            
+
+            graphData.Nodes.Add(nodeData);
+
         }
 
 
@@ -447,7 +456,9 @@ namespace DS.Utilities
 
         public static DSNode FindObjectID(string ID)
         {
-            foreach(DSNode node in nodes)
+            if(ID==null || ID=="") return null;
+
+            foreach (DSNode node in nodes)
             {
                 if(ID == node.ID)
                 {
@@ -459,6 +470,8 @@ namespace DS.Utilities
         
         public static DSNodeSaveData FindSaveDataID(string ID, DSGraphSaveDataSO graph)
         {
+            if (ID == null || ID == "") return null;
+
             foreach (DSNodeSaveData node in graph.Nodes)
             {
                 if (ID == node.ID)
