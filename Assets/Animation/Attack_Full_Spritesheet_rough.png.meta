@@ -1,0 +1,1174 @@
+fileFormatVersion: 2
+guid: d0e03511605dcdb4fae94a9fcbba94f4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5600
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9356980dd167f5849a8fe89188dbe8d6
+      internalID: -957354251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_1
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 5600
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca5d19f86b0258a4e8954c25a9cdda61
+      internalID: -1073946362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_2
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 5600
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22777fc3c1ca7b8449909ac6bda4176c
+      internalID: 1387170409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_3
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 5600
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46aaefb28ff23864abde508de7e87529
+      internalID: 959467760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_4
+      rect:
+        serializedVersion: 2
+        x: 4596
+        y: 5600
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eaffe9805c57304c9a7d82209e822a0
+      internalID: -470126127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_5
+      rect:
+        serializedVersion: 2
+        x: 5745
+        y: 5600
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7fa3e5d3fd91a740a83161e99aad004
+      internalID: -837972011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4800
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11dd16504df68814da396262e7a55973
+      internalID: -958496890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_7
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 4800
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ac39f1123d3e84b8d3855aeebe9724
+      internalID: -61435674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_8
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 4800
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62866cd9d645c649a5b487579b4a712
+      internalID: -693916600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_9
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 4800
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 157484201b1c9624f9efbb86949622e3
+      internalID: 1258860174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_10
+      rect:
+        serializedVersion: 2
+        x: 4596
+        y: 4800
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a2167b63ce3d384282e8445a4c1867f
+      internalID: 1039282254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_11
+      rect:
+        serializedVersion: 2
+        x: 5745
+        y: 4800
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c2f275e6a4edd438db62d4c13955ed
+      internalID: -1890250645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4000
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1407af7dacaaee4eb9a05b7127f1151
+      internalID: 1055455635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_13
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 4000
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355bfca40d0af2146b06738f2b140f06
+      internalID: -1445019237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_14
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 4000
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc097ed573f15554395bbd20fd00cbad
+      internalID: 1634719118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_15
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 4000
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16de03e5042bf064b85712073a460e26
+      internalID: 1364967929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_16
+      rect:
+        serializedVersion: 2
+        x: 4596
+        y: 4000
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee667bf1f128be244b96383d9614e16d
+      internalID: -275790172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_17
+      rect:
+        serializedVersion: 2
+        x: 5745
+        y: 4000
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0a03831d60c3649a6f4e336443f18b
+      internalID: 1965105617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3200
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ccd6ec1578c6348a47f86fbde5944b
+      internalID: -1105566594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_19
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 3200
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb555bd7be7fea4187729e8f86387ac
+      internalID: 1098148248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_20
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 3200
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf6b93db3fc36a46a644f1ef687abb7
+      internalID: -2030321171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_21
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 3200
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8c9399ea8b3b145a512e70a2a78ac8
+      internalID: -119520270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_22
+      rect:
+        serializedVersion: 2
+        x: 4596
+        y: 3200
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d594701d43c2e43add2c2bc04249a5
+      internalID: -1511691743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_23
+      rect:
+        serializedVersion: 2
+        x: 5745
+        y: 3200
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e200d601411bbbc4cb2ad7ace785b9bf
+      internalID: 1535421136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2400
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a2cbd442c9c0dd4db1b341984844069
+      internalID: 1512131222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_25
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 2400
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b21ed2a7b85b39e4ca119b2e4ee840b2
+      internalID: -538018564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_26
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 2400
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be766636812a58d4a881936ae30a4a7d
+      internalID: -673886541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_27
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 2400
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c4bace44f45f9429ea1d0c6b11cc18
+      internalID: -37390755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_28
+      rect:
+        serializedVersion: 2
+        x: 4596
+        y: 2400
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b116359cfd322044f9a39e8fe0cc9a57
+      internalID: -1089779299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_29
+      rect:
+        serializedVersion: 2
+        x: 5745
+        y: 2400
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2d98e38826542844989821d0964a28e
+      internalID: -2098341158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1600
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a815d3876bcb08479307a18192f66ca
+      internalID: 988817771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_31
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 1600
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb7eeaea5fa4dca45b03da18ef0b2ab2
+      internalID: -1039991115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_32
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 1600
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2b763b8e26ac5f49a530857936a1aa0
+      internalID: 1297962323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_33
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 1600
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e6313610444f244b648b772faca3bc
+      internalID: 1625581262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_34
+      rect:
+        serializedVersion: 2
+        x: 4596
+        y: 1600
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a0a9e7941303d947ad4e4cf11aff32e
+      internalID: -1411316308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b90d24244ffa5be46a3aaca904d2acdc
+      internalID: -2112849355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_36
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 800
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55960a06702ff8146b0ff852b071ffe9
+      internalID: 853773635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_37
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 800
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f69a456103ad4459e64556b65f8bd6
+      internalID: -1398783711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_38
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 800
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade04dc1865133a499e6eab2f426df0d
+      internalID: 1821533024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_39
+      rect:
+        serializedVersion: 2
+        x: 4596
+        y: 800
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a48f0a77e5990fe4c9d923a24901f383
+      internalID: -1066267100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8930291ac568802489c63e8dd70ac5f9
+      internalID: -105207839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_41
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 0
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2347c842d8bc314cb9207134928211b
+      internalID: -446308216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_42
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 0
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb50a5aef5caf184d84de2ae679919a7
+      internalID: 374430974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_43
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 0
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acd0e04b0cdea9f44bfb5cbca6d3aafa
+      internalID: 1583309628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Full_Spritesheet_rough_44
+      rect:
+        serializedVersion: 2
+        x: 4596
+        y: 0
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2f32d219688b34b8b3773a8d5e37d6
+      internalID: -480197615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Attack_Full_Spritesheet_rough_43: 1583309628
+      Attack_Full_Spritesheet_rough_41: -446308216
+      Attack_Full_Spritesheet_rough_15: 1364967929
+      Attack_Full_Spritesheet_rough_27: -37390755
+      Attack_Full_Spritesheet_rough_9: 1258860174
+      Attack_Full_Spritesheet_rough_1: -1073946362
+      Attack_Full_Spritesheet_rough_24: 1512131222
+      Attack_Full_Spritesheet_rough_6: -958496890
+      Attack_Full_Spritesheet_rough_35: -2112849355
+      Attack_Full_Spritesheet_rough_18: -1105566594
+      Attack_Full_Spritesheet_rough_7: -61435674
+      Attack_Full_Spritesheet_rough_28: -1089779299
+      Attack_Full_Spritesheet_rough_32: 1297962323
+      Attack_Full_Spritesheet_rough_4: -470126127
+      Attack_Full_Spritesheet_rough_12: 1055455635
+      Attack_Full_Spritesheet_rough_34: -1411316308
+      Attack_Full_Spritesheet_rough_25: -538018564
+      Attack_Full_Spritesheet_rough_37: -1398783711
+      Attack_Full_Spritesheet_rough_33: 1625581262
+      Attack_Full_Spritesheet_rough_20: -2030321171
+      Attack_Full_Spritesheet_rough_22: -1511691743
+      Attack_Full_Spritesheet_rough_29: -2098341158
+      Attack_Full_Spritesheet_rough_3: 959467760
+      Attack_Full_Spritesheet_rough_11: -1890250645
+      Attack_Full_Spritesheet_rough_42: 374430974
+      Attack_Full_Spritesheet_rough_26: -673886541
+      Attack_Full_Spritesheet_rough_17: 1965105617
+      Attack_Full_Spritesheet_rough_8: -693916600
+      Attack_Full_Spritesheet_rough_23: 1535421136
+      Attack_Full_Spritesheet_rough_44: -480197615
+      Attack_Full_Spritesheet_rough_40: -105207839
+      Attack_Full_Spritesheet_rough_38: 1821533024
+      Attack_Full_Spritesheet_rough_19: 1098148248
+      Attack_Full_Spritesheet_rough_39: -1066267100
+      Attack_Full_Spritesheet_rough_10: 1039282254
+      Attack_Full_Spritesheet_rough_0: -957354251
+      Attack_Full_Spritesheet_rough_5: -837972011
+      Attack_Full_Spritesheet_rough_21: -119520270
+      Attack_Full_Spritesheet_rough_13: -1445019237
+      Attack_Full_Spritesheet_rough_16: -275790172
+      Attack_Full_Spritesheet_rough_36: 853773635
+      Attack_Full_Spritesheet_rough_14: 1634719118
+      Attack_Full_Spritesheet_rough_31: -1039991115
+      Attack_Full_Spritesheet_rough_2: 1387170409
+      Attack_Full_Spritesheet_rough_30: 988817771
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

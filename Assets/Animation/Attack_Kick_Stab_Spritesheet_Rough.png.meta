@@ -1,0 +1,778 @@
+fileFormatVersion: 2
+guid: 8d8d28410fb326045a5fc544cd4441ff
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Attack_Kick_Stab_Spritesheet_Rough_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3595
+        width: 1149
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e61e4b34ef6cc0488e3894ec4be8df6
+      internalID: -956147271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Kick_Stab_Spritesheet_Rough_1
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 3595
+        width: 1149
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20725ee4c3728bb44b1e94dcaf3b40c0
+      internalID: -740924824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Kick_Stab_Spritesheet_Rough_2
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 3595
+        width: 1149
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74879473846968448a017c00f5696d9
+      internalID: 475832916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Kick_Stab_Spritesheet_Rough_3
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 3595
+        width: 1149
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e8d1f29fd82e54fa22b707adbc4da6
+      internalID: -512971886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Kick_Stab_Spritesheet_Rough_4
+      rect:
+        serializedVersion: 2
+        x: 4596
+        y: 3595
+        width: 1149
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18539a854b4299f418f5741a18105897
+      internalID: 713065109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Kick_Stab_Spritesheet_Rough_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2876
+        width: 1149
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23beb105a769a3a4a913c18dd6802b66
+      internalID: 1480133327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Kick_Stab_Spritesheet_Rough_6
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 2876
+        width: 1149
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a02629c565c4c2641875b9b645fc0c11
+      internalID: -1527562667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Kick_Stab_Spritesheet_Rough_7
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 2876
+        width: 1149
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad449479a0af0ea4ba4cac192b13724b
+      internalID: -831920827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Kick_Stab_Spritesheet_Rough_8
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 2876
+        width: 1149
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a08120dfad9077a4cb8d822bf963f31b
+      internalID: -1412912277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Kick_Stab_Spritesheet_Rough_9
+      rect:
+        serializedVersion: 2
+        x: 4596
+        y: 2876
+        width: 1149
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4806668bfb3af9f43bada4d9e2a5ddd0
+      internalID: -426835038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Kick_Stab_Spritesheet_Rough_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2157
+        width: 1149
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984d260d3e55cb44db62a2bd17a32cf7
+      internalID: -1742963914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Kick_Stab_Spritesheet_Rough_11
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 2157
+        width: 1149
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 948aeb91493343e4f9747656e8825768
+      internalID: -2008108796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Kick_Stab_Spritesheet_Rough_12
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 2157
+        width: 1149
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f770e659be89d43a4ce6bef9b3691e
+      internalID: 1631176808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Kick_Stab_Spritesheet_Rough_13
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 2157
+        width: 1149
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7afd8e3e717fd4d9f58cb19a4718d4
+      internalID: 623501089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Kick_Stab_Spritesheet_Rough_14
+      rect:
+        serializedVersion: 2
+        x: 4596
+        y: 2157
+        width: 1149
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5494603b3a10944b302cbe50e046f1
+      internalID: 392467672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Kick_Stab_Spritesheet_Rough_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1438
+        width: 1149
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8c792df3842114db5f3a849a65b6b8
+      internalID: 1801339640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Kick_Stab_Spritesheet_Rough_16
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 1438
+        width: 1149
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30274223a9f855f4ebaf342e3d597468
+      internalID: -371798872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Kick_Stab_Spritesheet_Rough_17
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 1438
+        width: 1149
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ab74893a6704c44b27b50012a1fa4b
+      internalID: 1397382697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Kick_Stab_Spritesheet_Rough_18
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 1438
+        width: 1149
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb2275e21b2190041a839cbfa1d38014
+      internalID: -1226599067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Kick_Stab_Spritesheet_Rough_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 719
+        width: 1149
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acfd516e360d45745a7f0980636acf6e
+      internalID: -211616546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Kick_Stab_Spritesheet_Rough_20
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 719
+        width: 1149
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6334bbea9a7af44e88bcbc0dfc5b0cb
+      internalID: -1229034473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Kick_Stab_Spritesheet_Rough_21
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 719
+        width: 1149
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a6c6a17e8c7804b96b859f1fdd7d9a
+      internalID: -495300197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Kick_Stab_Spritesheet_Rough_22
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 719
+        width: 1149
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a0f91f0a5c7f30409eedbd188ecfed0
+      internalID: 322782264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Kick_Stab_Spritesheet_Rough_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1149
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c12d6937db4114c4d8f5049f68577545
+      internalID: -42393386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Kick_Stab_Spritesheet_Rough_24
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 0
+        width: 1149
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af1ef5bb0782984e8b11898aedcf67d
+      internalID: -1940993025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Kick_Stab_Spritesheet_Rough_25
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 0
+        width: 1149
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d945534c5177d46a80843fceabb542
+      internalID: 1590759107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Kick_Stab_Spritesheet_Rough_26
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 0
+        width: 1149
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ec806a9593e434e831a13363356bee
+      internalID: -1048598657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Attack_Kick_Stab_Spritesheet_Rough_10: -1742963914
+      Attack_Kick_Stab_Spritesheet_Rough_11: -2008108796
+      Attack_Kick_Stab_Spritesheet_Rough_14: 392467672
+      Attack_Kick_Stab_Spritesheet_Rough_17: 1397382697
+      Attack_Kick_Stab_Spritesheet_Rough_19: -211616546
+      Attack_Kick_Stab_Spritesheet_Rough_20: -1229034473
+      Attack_Kick_Stab_Spritesheet_Rough_8: -1412912277
+      Attack_Kick_Stab_Spritesheet_Rough_4: 713065109
+      Attack_Kick_Stab_Spritesheet_Rough_2: 475832916
+      Attack_Kick_Stab_Spritesheet_Rough_18: -1226599067
+      Attack_Kick_Stab_Spritesheet_Rough_12: 1631176808
+      Attack_Kick_Stab_Spritesheet_Rough_0: -956147271
+      Attack_Kick_Stab_Spritesheet_Rough_7: -831920827
+      Attack_Kick_Stab_Spritesheet_Rough_26: -1048598657
+      Attack_Kick_Stab_Spritesheet_Rough_15: 1801339640
+      Attack_Kick_Stab_Spritesheet_Rough_24: -1940993025
+      Attack_Kick_Stab_Spritesheet_Rough_13: 623501089
+      Attack_Kick_Stab_Spritesheet_Rough_23: -42393386
+      Attack_Kick_Stab_Spritesheet_Rough_3: -512971886
+      Attack_Kick_Stab_Spritesheet_Rough_16: -371798872
+      Attack_Kick_Stab_Spritesheet_Rough_9: -426835038
+      Attack_Kick_Stab_Spritesheet_Rough_5: 1480133327
+      Attack_Kick_Stab_Spritesheet_Rough_25: 1590759107
+      Attack_Kick_Stab_Spritesheet_Rough_1: -740924824
+      Attack_Kick_Stab_Spritesheet_Rough_22: 322782264
+      Attack_Kick_Stab_Spritesheet_Rough_6: -1527562667
+      Attack_Kick_Stab_Spritesheet_Rough_21: -495300197
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
