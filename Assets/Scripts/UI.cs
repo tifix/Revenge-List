@@ -37,7 +37,8 @@ public class UI : MonoBehaviour
     [SerializeField]            Slider playerHealthBar, bossHealthBar, bossShieldBar;
     [SerializeField]            Image   playerPortrait;                                             //Displayer of player portrait
     [SerializeField]            Sprite[] playerPortraits = new Sprite[5];                           //Images to display as player looses health
-    [SerializeField]            Image XLPortraitLilith, XLPortraitOther;                           //Images to display as player looses health
+    [SerializeField]            Image XLPortraitLilith, XLPortraitOther;                            //Portraits which display Lilith and others as they tallk
+    [SerializeField]            GameObject RevengeList, RevengeListTriggerer;                       //the gorgeous scrollable revenge list
 
     
 
@@ -235,6 +236,9 @@ public class UI : MonoBehaviour
         boxLost.SetActive(true);
         StartCoroutine(WaitAndLoadMenu(GameManager.instance.DeathReloadTime));
     }
+
+    public void ToggleRevengeList() => RevengeList.SetActive(!RevengeList.activeInHierarchy);
+
     public void QuitToWindows() { Application.Quit(); }
 
     public void SetSpriteXLLilith(Sprite s) { XLPortraitLilith.gameObject.SetActive(true); XLPortraitLilith.sprite = s; }
