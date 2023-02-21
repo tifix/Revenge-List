@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3615865189927272333
 Transform:
   m_ObjectHideFlags: 0
@@ -36,7 +36,7 @@ Transform:
   - {fileID: 589742450778123349}
   - {fileID: 8133781382231593326}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3615865189927272334
 MonoBehaviour:
@@ -344,9 +344,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b10ac846c951d9c4cbdf8361c9c0bf15, type: 2}
   - {fileID: 11400000, guid: 83ac4bcb91d29244f96343ceb4495d36, type: 2}
   phase_Dialogues:
-  - {fileID: 11400000, guid: 458065f4a0100c847ae51a2bf1d3d18b, type: 2}
-  - {fileID: 11400000, guid: afd2a7bb305a36742a383c51a2405815, type: 2}
-  - {fileID: 11400000, guid: 356ca8e7e4a032448b9b2792fcf45044, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &5668457906109925841
 MonoBehaviour:
   m_ObjectHideFlags: 0

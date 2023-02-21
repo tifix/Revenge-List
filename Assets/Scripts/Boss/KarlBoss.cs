@@ -141,7 +141,7 @@ public class KarlBoss : MonoBehaviour
         {
             float zOffset = Random.Range(-1, 1);
 
-            GameObject temp = Instantiate<GameObject>(envelope, transform.position + new Vector3(0, 2, 0), Quaternion.identity);    //previous spawn position spawned them underground and insta-despawned
+            GameObject temp = Instantiate<GameObject>(envelope, transform.position/* + new Vector3(0, 2, 0)*/, Quaternion.identity);    //previous spawn position spawned them underground and insta-despawned
             temp.GetComponent<BossProjectile>().SetSpeed(a.speed + 2);
             temp.GetComponent<BossProjectile>().SetDistance(a.timeAlive);
             temp.GetComponent<BossProjectile>().SetDirection(new Vector3(-1, 0, zOffset));

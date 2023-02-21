@@ -184,6 +184,7 @@ public class QTEManager : MonoBehaviour
 
     public void QTEStart()
     {
+        QTECleanUp();
         //UI.instance.ToggleQTEScreen();
         playQTE = true;
         isPlaying = true;
