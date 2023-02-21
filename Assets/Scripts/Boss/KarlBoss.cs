@@ -3,13 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using DS.Data.Save;
 
 public class KarlBoss : MonoBehaviour
 {
     [System.Serializable]
     public enum ProjectileType
     {
-        OVERHEAD, STRAIGHT, DOG
+        OVERHEAD, STRAIGHT, GNOME
     }
 
     [System.Serializable]
@@ -132,22 +133,22 @@ public class KarlBoss : MonoBehaviour
             float xOffset = Random.Range(-playerRadius, playerRadius);
             float zOffset = Random.Range(-playerRadius, playerRadius);
 
-            GameObject temp = Instantiate<GameObject>(steak, player.transform.position + new Vector3(xOffset, 5, zOffset), Quaternion.identity);
-            temp.GetComponent<BossProjectile>().SetSpeed(a.speed);
-            temp.GetComponent<BossProjectile>().SetDistance(a.timeAlive);
+            GameObject temp = Instantiate<GameObject>(steak, player.transform.position + new Vector3(xOffset, 10, zOffset), Quaternion.identity);
+            temp.GetComponent<BossProjectile>().SetSpeed(a.speed + 1);
+            temp.GetComponent<BossProjectile>().SetDistance(a.timeAlive * 2);
         }
 
         else if(a.myType == ProjectileType.STRAIGHT)
         {
             float zOffset = Random.Range(-1, 1);
 
-            GameObject temp = Instantiate<GameObject>(envelope, transform.position + new Vector3(0, 2, 0), Quaternion.identity);    //previous spawn position spawned them underground and insta-despawned
-            temp.GetComponent<BossProjectile>().SetSpeed(a.speed);
+            GameObject temp = Instantiate<GameObject>(envelope, transform.position/* + new Vector3(0, 2, 0)*/, Quaternion.identity);    //previous spawn position spawned them underground and insta-despawned
+            temp.GetComponent<BossProjectile>().SetSpeed(a.speed + 2);
             temp.GetComponent<BossProjectile>().SetDistance(a.timeAlive);
             temp.GetComponent<BossProjectile>().SetDirection(new Vector3(-1, 0, zOffset));
         }
 
-        else if (a.myType == ProjectileType.DOG)
+        else if (a.myType == ProjectileType.GNOME)
         {
             GameObject temp = Instantiate<GameObject>(steak, player.transform.position, Quaternion.identity);
             temp.GetComponent<BossProjectile>().SetSpeed(a.speed);
@@ -157,7 +158,7 @@ public class KarlBoss : MonoBehaviour
 
     public void EndPhase()
     {
-        RecordPosition();   //records player position so we can knock them away from spamming th boss as soon as the QTE ends
+        RecordPosition();   //records player position so we can knock them away from spamming the boss as soon as the QTE ends
         canAttack = false;
         StopParticles();
     }
@@ -172,7 +173,8 @@ public class KarlBoss : MonoBehaviour
     }
     public void SetQTEandDialogueForRound(int round) 
     {
-        health.QTEtriggerPrompt.GetComponent<Inter_TextTrigger>().preUseDialogue = phase_Dialogues[round];
+        //health.QTEtriggerPrompt.GetComponent<Inter_TextTrigger>().preUseDialogue = phase_Dialogues[round];
+        //QTE needs to be initialie beforehand i.e. instance doesnt exist
         QTEManager.instance.SetBeatMap(phase_QTEs[round]);
     }
 
@@ -216,9 +218,9 @@ public class KarlBoss : MonoBehaviour
     }
     #endregion
 
-
-    private void OnDrawGizmosSelected()
+    private void OnDrawGizmos()
     {
+        Gizmos.color = Color.green;
         Gizmos.DrawSphere(transform.position + new Vector3(0, 2, 0),.25f);
     }
 }
