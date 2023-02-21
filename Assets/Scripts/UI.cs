@@ -1,5 +1,13 @@
-﻿using System.Collections;
+﻿using DS.Data.Save;
+using DS.Elements;
+using DS.ScriptableObjects;
+using DS.Utilities;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
+using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -11,7 +19,7 @@ public class UI : MonoBehaviour
     Controls input;
     public static UI instance;                                                                      //globally accessible reference to this script to remotely invoke it's public methods
     
-    [Tooltip("Drop Dialogue Data here to be displayed")] public Dialogue dialogueCur;               //Dialogue data to be displayed
+    [Tooltip("Drop Dialogue Data here to be displayed")] public DSGraphSaveDataSO dialogueCur;               //Dialogue data to be displayed
     [Space, Header("Typing settings")]
     [Tooltip("What part of the dialogue is displayed"), Range(0, 99)] public int txtPageNr = 0;     //Which chunk / page / part of dialogue is currently displayed or being typed out
     [SerializeField] private bool isWaiting = false;                                                //is the dialogue paused after a page is completelly written
@@ -79,41 +87,54 @@ public class UI : MonoBehaviour
     }
 
     //Probably need a version that doesn't lock the movement and/or stops time (actually use pauseWhileRunning) - AV
-    protected IEnumerator Typer(Dialogue _dialogue, bool pauseWhileRunning) //typing the text over time
+    protected IEnumerator Typer(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning) //typing the text over time
     {
         //Debug.Log("Starting Display of "+_dialogue.textBody[0]);
         
-         PlayerMovement.SetLockMovement();
+        PlayerMovement.SetLockMovement();
         
         dialogueCur = _dialogue;
         txtPageNr = 0;      //page iterator
         Time.timeScale = 0;
 
-        while (txtPageNr < _dialogue.textBody.Count)
+        //retrieve START node
+        DSNodeSaveData NodeCurrent = null;
+        foreach (DSNodeSaveData n in dialogueCur.Nodes)
         {
-            runCoroutine = true;
-            //speaker set
-            if (_dialogue.textSpeaker.Count > 1) txtSpeaker.text = _dialogue.textSpeaker[txtPageNr];      //if dialogue switches between speakers - updates speaker. If just one, doesn't bother checking.
-            else txtSpeaker.text = _dialogue.textSpeaker[0];
+            if (n.isStartNode) 
+            {
+                NodeCurrent = n;
+                Debug.Log("start node found! " + n.Name);
+                break;
+            } 
+        }
+        if (NodeCurrent == null) Debug.LogWarning("No start node found!");
 
-            //get text data
-            pageText = _dialogue.textBody[txtPageNr];
-
+        while(true) //Main dialogue loop - repeat until the next one has no children
+        {
+            pageText = NodeCurrent.Text;
+            Debug.Log(pageText);
 
             //Slowly display the page text
-            for (int i = 0; i < (pageText.Length + 1); i++)
+            for (int j = 0; j < (pageText.Length + 1); j++)
             {
-                txtMain.text = pageText.Substring(0, i);               //slice the text 
+                txtMain.text = pageText.Substring(0, j);               //slice the text 
                 yield return new WaitForSecondsRealtime(typingWait);
                 if (!runCoroutine) break;
             }
-            
-            txtMain.text = pageText;                                   //display the text
+            txtMain.text = pageText;
             isWaiting = true;
+            while (isWaiting == true) yield return null;
 
-            while (isWaiting == true) yield return null;               //hold until player progresses the text with SPACE
-            
+            //Final node detection - break the loop if the node has no children
+            try 
+            {
+                if (string.IsNullOrEmpty(NodeCurrent.ChildIDs[0])) { Debug.LogWarning("End of dialogue stream reached"); break; }
+                NodeCurrent = DSIOUtility.FindSaveDataID(NodeCurrent.ChildIDs[0], _dialogue);
+            }
+            catch {Debug.LogWarning("End of dialogue stream reached"); break;  }
         }
+
         yield return 1;
         Time.timeScale = 1;
         runCoroutine = false;                                          //Disable once finished
@@ -122,7 +143,7 @@ public class UI : MonoBehaviour
 
         PlayerMovement.SetUnLockMovement();
     }
-    public void Show(Dialogue _dialogue, bool pauseWhileRunning)                            //Call this with a dialogue structure to display it!
+    public void Show(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning)                            //Call this with a dialogue structure to display it!
     {
         boxTextDisplay.SetActive(true);
 
@@ -133,7 +154,7 @@ public class UI : MonoBehaviour
             runCoroutine = true;
         }
     }
-    public void Show(Dialogue _dialogue) => Show(_dialogue, false); //by default - pause world time while showing dialogue
+    public void Show(DSGraphSaveDataSO _dialogue) => Show(_dialogue, false); //by default - pause world time while showing dialogue
 
     #endregion
 

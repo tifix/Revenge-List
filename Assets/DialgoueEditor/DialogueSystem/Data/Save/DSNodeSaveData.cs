@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace DS.Data.Save
 {
+    using DS.Elements;
     using Enumerations;
 
     [Serializable]
@@ -16,6 +17,8 @@ namespace DS.Data.Save
         [field: SerializeField] public string GroupID { get; set; }
         [field: SerializeField] public DSDialogueType DialogueType { get; set; }
         [field: SerializeField] public Vector2 Position { get; set; }
+        [field: SerializeField] public bool isStartNode { get; set; } = false;
+        [field: SerializeField] public List<string> ChildIDs { get; set; }
     }
 }
 

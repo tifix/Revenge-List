@@ -14,95 +14,85 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <FileName>k__BackingField: Scene2
   <Groups>k__BackingField:
-  - <ID>k__BackingField: 2044ec0e-2cf5-4f3c-86d8-9d0c320d09bf
-    <Name>k__BackingField: Scene2Intro
-    <Position>k__BackingField: {x: -976.99994, y: -403.99994}
-  - <ID>k__BackingField: f856dc13-8dd1-4dda-8344-3f2d419546c4
-    <Name>k__BackingField: FirstDialogueChoice
-    <Position>k__BackingField: {x: -760, y: 142}
+  - <ID>k__BackingField: 99554656-7887-4012-b1cb-779795df2ea8
+    <Name>k__BackingField: Entering
+    <Position>k__BackingField: {x: 152, y: 159}
+  - <ID>k__BackingField: e925f734-eb15-4c03-b58c-d728a1f5b499
+    <Name>k__BackingField: Dialogue Group
+    <Position>k__BackingField: {x: 880, y: 210}
   <Nodes>k__BackingField:
-  - <ID>k__BackingField: ad6e6ffe-4169-4b53-8558-382c3f92e9f0
-    <Name>k__BackingField: Karl
-    <Text>k__BackingField: Oh, hi, Lilly!
+  - <ID>k__BackingField: e79e7c57-00a9-4ac1-b680-fc5e1059948f
+    <Name>k__BackingField: 1
+    <Text>k__BackingField: Welcome to the scene
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: c570332b-2f56-40a5-9941-a6f42f9d0a54
-    <GroupID>k__BackingField: 2044ec0e-2cf5-4f3c-86d8-9d0c320d09bf
+      <NodeID>k__BackingField: 01777f45-72a9-4124-a072-a1182bf890ff
+    <GroupID>k__BackingField: 99554656-7887-4012-b1cb-779795df2ea8
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: -952, y: -336}
-  - <ID>k__BackingField: c570332b-2f56-40a5-9941-a6f42f9d0a54
-    <Name>k__BackingField: Lillith
-    <Text>k__BackingField: It's Lilith... the Queen of Darkness.
+    <Position>k__BackingField: {x: 177, y: 218}
+    <isStartNode>k__BackingField: 1
+    <ChildIDs>k__BackingField:
+    - 01777f45-72a9-4124-a072-a1182bf890ff
+  - <ID>k__BackingField: 01777f45-72a9-4124-a072-a1182bf890ff
+    <Name>k__BackingField: 2
+    <Text>k__BackingField: 2
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: c321b784-4fe7-479e-97d5-fdd83b44d833
-    <GroupID>k__BackingField: 2044ec0e-2cf5-4f3c-86d8-9d0c320d09bf
+      <NodeID>k__BackingField: 6183d267-5904-40a3-9374-6dbb8f8d662a
+    <GroupID>k__BackingField: 99554656-7887-4012-b1cb-779795df2ea8
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: -572, y: -337}
-  - <ID>k__BackingField: 46c19059-2dcd-43cc-ac14-5ec3db951192
-    <Name>k__BackingField: Lilith2
-    <Text>k__BackingField: Lilith... The Queen... Of Darkness.
+    <Position>k__BackingField: {x: 482, y: 275}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 6183d267-5904-40a3-9374-6dbb8f8d662a
+  - <ID>k__BackingField: 6183d267-5904-40a3-9374-6dbb8f8d662a
+    <Name>k__BackingField: 3
+    <Text>k__BackingField: 3
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: c8b7da6c-4197-49a7-8db1-772a7e1803d7
-    <GroupID>k__BackingField: 2044ec0e-2cf5-4f3c-86d8-9d0c320d09bf
+      <NodeID>k__BackingField: 07874c26-23c1-42fe-a5e2-ea36726b94d4
+    <GroupID>k__BackingField: e925f734-eb15-4c03-b58c-d728a1f5b499
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: -950, y: -118}
-  - <ID>k__BackingField: c8b7da6c-4197-49a7-8db1-772a7e1803d7
-    <Name>k__BackingField: Karl3
-    <Text>k__BackingField: "Darkness? Isn\u2019t that rather glum? \\nTo me, you
-      look more like Lilith, the Queen of..."
+    <Position>k__BackingField: {x: 905, y: 380}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 07874c26-23c1-42fe-a5e2-ea36726b94d4
+  - <ID>k__BackingField: 07874c26-23c1-42fe-a5e2-ea36726b94d4
+    <Name>k__BackingField: 4
+    <Text>k__BackingField: 4
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 2f33ef5b-f22c-4116-90d5-d533238ffff5
-    <GroupID>k__BackingField: 2044ec0e-2cf5-4f3c-86d8-9d0c320d09bf
+      <NodeID>k__BackingField: a0d1532b-1dfa-4e0c-b8bb-6279a1238d56
+    <GroupID>k__BackingField: e925f734-eb15-4c03-b58c-d728a1f5b499
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: -588, y: -126}
-  - <ID>k__BackingField: 2f33ef5b-f22c-4116-90d5-d533238ffff5
-    <Name>k__BackingField: Lilith3
-    <Text>k__BackingField: "Don\u2019t... \\n\\n(Lilith gets annoyed.)"
+    <Position>k__BackingField: {x: 1214, y: 427}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - a0d1532b-1dfa-4e0c-b8bb-6279a1238d56
+  - <ID>k__BackingField: a0d1532b-1dfa-4e0c-b8bb-6279a1238d56
+    <Name>k__BackingField: 5
+    <Text>k__BackingField: this is the last screen of the dialogue
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: e77210e2-add2-4624-960a-025451b71a5e
-    <GroupID>k__BackingField: 2044ec0e-2cf5-4f3c-86d8-9d0c320d09bf
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: -199, y: -135}
-  - <ID>k__BackingField: c321b784-4fe7-479e-97d5-fdd83b44d833
-    <Name>k__BackingField: Karl2
-    <Text>k__BackingField: Pardon?
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 46c19059-2dcd-43cc-ac14-5ec3db951192
-    <GroupID>k__BackingField: 2044ec0e-2cf5-4f3c-86d8-9d0c320d09bf
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: -195, y: -345}
-  - <ID>k__BackingField: e77210e2-add2-4624-960a-025451b71a5e
-    <Name>k__BackingField: Karl4
-    <Text>k__BackingField: "Suit yourself.\n\r\nAnyway, I was just about to collect
-      Snuffles. We\u2019re going to the park, aren\u2019t we, Snuffie?\n \r\nWould
-      you like to join us, \u2026 Lilith?\r\n"
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: I'd rather die. Or you Should.
       <NodeID>k__BackingField: 
-    - <Text>k__BackingField: 1. He's not called Snuffles.
-      <NodeID>k__BackingField: 
-    <GroupID>k__BackingField: f856dc13-8dd1-4dda-8344-3f2d419546c4
-    <DialogueType>k__BackingField: 1
-    <Position>k__BackingField: {x: -735, y: 201}
+    <GroupID>k__BackingField: e925f734-eb15-4c03-b58c-d728a1f5b499
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1526, y: 269}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 
   <OldGroupNames>k__BackingField:
-  - Scene2Intro
-  - FirstDialogueChoice
+  - Entering
+  - Dialogue Group
   <OldUngroupedNodeNames>k__BackingField: []
   <OldGroupNodeNames>k__BackingField:
     list:
-    - Key: Scene2Intro
+    - Key: Entering
       Value:
-      - Karl
-      - Lillith
-      - Lilith2
-      - Karl3
-      - Lilith3
-      - Karl2
-    - Key: FirstDialogueChoice
+      - 1
+      - 2
+    - Key: Dialogue Group
       Value:
-      - Karl4
+      - 3
+      - 4
+      - 5
