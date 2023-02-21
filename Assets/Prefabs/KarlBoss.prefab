@@ -58,83 +58,287 @@ MonoBehaviour:
   playerRadius: 2
   phase1:
   - myType: 0
+    waitTime: 0.5
+    speed: 3
+    timeAlive: 10
+  - myType: 0
+    waitTime: 0.5
+    speed: 3
+    timeAlive: 10
+  - myType: 0
+    waitTime: 0.5
+    speed: 3
+    timeAlive: 10
+  - myType: 0
+    waitTime: 0.5
+    speed: 3
+    timeAlive: 10
+  - myType: 0
+    waitTime: 0.5
+    speed: 3
+    timeAlive: 10
+  - myType: 0
+    waitTime: 0.5
+    speed: 3
+    timeAlive: 10
+  - myType: 0
+    waitTime: 1.5
+    speed: 4
+    timeAlive: 10
+  - myType: 0
     waitTime: 0.1
-    speed: 6
+    speed: 4
     timeAlive: 10
-  - myType: 1
+  - myType: 0
+    waitTime: 0.1
+    speed: 4
+    timeAlive: 10
+  - myType: 0
+    waitTime: 0.1
+    speed: 4
+    timeAlive: 10
+  - myType: 0
     waitTime: 1
-    speed: 4
-    timeAlive: 5
+    speed: 5
+    timeAlive: 10
   - myType: 0
-    waitTime: 0.5
-    speed: 4
+    waitTime: 0.1
+    speed: 5
+    timeAlive: 10
+  - myType: 0
+    waitTime: 0.1
+    speed: 5
+    timeAlive: 10
+  - myType: 0
+    waitTime: 0.1
+    speed: 5
+    timeAlive: 10
+  - myType: 0
+    waitTime: 0.1
+    speed: 5
+    timeAlive: 10
+  - myType: 0
+    waitTime: 0.1
+    speed: 5
+    timeAlive: 10
+  - myType: 0
+    waitTime: 1
+    speed: 5
     timeAlive: 10
   - myType: 0
     waitTime: 0.5
-    speed: 4
+    speed: 5
     timeAlive: 10
   - myType: 0
     waitTime: 0.5
-    speed: 4
+    speed: 5
     timeAlive: 10
   - myType: 0
     waitTime: 0.5
-    speed: 4
+    speed: 5
     timeAlive: 10
   - myType: 0
     waitTime: 0.5
-    speed: 4
+    speed: 5
     timeAlive: 10
   - myType: 0
     waitTime: 0.5
-    speed: 4
+    speed: 5
     timeAlive: 10
   - myType: 0
     waitTime: 0.5
-    speed: 4
+    speed: 5
     timeAlive: 10
   - myType: 0
     waitTime: 0.5
-    speed: 4
+    speed: 5
+    timeAlive: 10
+  - myType: 0
+    waitTime: 0.1
+    speed: 7
+    timeAlive: 10
+  - myType: 0
+    waitTime: 0.1
+    speed: 7
+    timeAlive: 10
+  - myType: 0
+    waitTime: 0.1
+    speed: 7
+    timeAlive: 10
+  - myType: 0
+    waitTime: 0.1
+    speed: 7
+    timeAlive: 10
+  - myType: 0
+    waitTime: 0.1
+    speed: 7
+    timeAlive: 10
+  - myType: 0
+    waitTime: 0.1
+    speed: 7
     timeAlive: 10
   phase2:
-  - myType: 0
-    waitTime: 0
-    speed: 0
-    timeAlive: 0
   - myType: 1
-    waitTime: 1
-    speed: 5
+    waitTime: 0.5
+    speed: 1
+    timeAlive: 5
+  - myType: 1
+    waitTime: 0.5
+    speed: 2
+    timeAlive: 5
+  - myType: 1
+    waitTime: 0.5
+    speed: 1
+    timeAlive: 5
+  - myType: 1
+    waitTime: 0.5
+    speed: 3
+    timeAlive: 5
+  - myType: 1
+    waitTime: 0.5
+    speed: 2
+    timeAlive: 5
+  - myType: 1
+    waitTime: 1.5
+    speed: 3
+    timeAlive: 5
+  - myType: 1
+    waitTime: 0.2
+    speed: 3
+    timeAlive: 5
+  - myType: 1
+    waitTime: 0.2
+    speed: 3
+    timeAlive: 5
+  - myType: 1
+    waitTime: 0.2
+    speed: 3
+    timeAlive: 5
+  - myType: 1
+    waitTime: 0.2
+    speed: 3
+    timeAlive: 5
+  - myType: 1
+    waitTime: 0.2
+    speed: 3
     timeAlive: 5
   - myType: 1
     waitTime: 1
     speed: 5
     timeAlive: 5
   - myType: 1
-    waitTime: 1
+    waitTime: 0.6
+    speed: 5
+    timeAlive: 5
+  - myType: 1
+    waitTime: 0.4
+    speed: 5
+    timeAlive: 5
+  - myType: 1
+    waitTime: 0.2
+    speed: 5
+    timeAlive: 5
+  - myType: 1
+    waitTime: 0.4
     speed: 5
     timeAlive: 5
   - myType: 1
     waitTime: 1
-    speed: 5
+    speed: 7
     timeAlive: 5
   - myType: 1
-    waitTime: 1
-    speed: 5
+    waitTime: 0.1
+    speed: 7
+    timeAlive: 5
+  - myType: 1
+    waitTime: 0.1
+    speed: 7
+    timeAlive: 5
+  - myType: 1
+    waitTime: 0.1
+    speed: 7
+    timeAlive: 5
+  - myType: 1
+    waitTime: 0.1
+    speed: 7
+    timeAlive: 5
+  - myType: 1
+    waitTime: 0.1
+    speed: 7
+    timeAlive: 5
+  - myType: 1
+    waitTime: 0.5
+    speed: 7
+    timeAlive: 5
+  - myType: 1
+    waitTime: 0.1
+    speed: 7
+    timeAlive: 5
+  - myType: 1
+    waitTime: 0.1
+    speed: 7
+    timeAlive: 5
+  - myType: 1
+    waitTime: 0.1
+    speed: 7
+    timeAlive: 5
+  - myType: 1
+    waitTime: 0.1
+    speed: 7
+    timeAlive: 5
+  - myType: 1
+    waitTime: 0.1
+    speed: 7
     timeAlive: 5
   phase3:
   - myType: 0
-    waitTime: 0
-    speed: 0
-    timeAlive: 0
-  - myType: 0
-    waitTime: 1
+    waitTime: 0.5
     speed: 1
-    timeAlive: 1
-  - myType: 0
-    waitTime: 1
+    timeAlive: 10
+  - myType: 1
+    waitTime: 0.5
     speed: 1
-    timeAlive: 1
+    timeAlive: 5
+  - myType: 0
+    waitTime: 0.5
+    speed: 1
+    timeAlive: 10
+  - myType: 1
+    waitTime: 0.5
+    speed: 2
+    timeAlive: 5
+  - myType: 0
+    waitTime: 0.5
+    speed: 1
+    timeAlive: 10
+  - myType: 1
+    waitTime: 0.5
+    speed: 1
+    timeAlive: 5
+  - myType: 0
+    waitTime: 0.5
+    speed: 1
+    timeAlive: 10
+  - myType: 1
+    waitTime: 0.5
+    speed: 3
+    timeAlive: 5
+  - myType: 0
+    waitTime: 0.5
+    speed: 1
+    timeAlive: 10
+  - myType: 1
+    waitTime: 0.5
+    speed: 2
+    timeAlive: 5
+  - myType: 0
+    waitTime: 0.5
+    speed: 1
+    timeAlive: 10
+  - myType: 2
+    waitTime: 0.1
+    speed: 10
+    timeAlive: 10
   phase_QTEs:
   - {fileID: 11400000, guid: bbfd62af9cfd19b4b94847ae0d5f913c, type: 2}
   - {fileID: 11400000, guid: b10ac846c951d9c4cbdf8361c9c0bf15, type: 2}
@@ -189,7 +393,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &3615865191426516606
 GameObject:
