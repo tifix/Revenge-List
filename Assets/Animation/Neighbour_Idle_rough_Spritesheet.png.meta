@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4b8a916105fda4846a2ed2bc01c34125
+guid: d7917d7ee19fca245b11e3a298b4cb0a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 130
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -165,91 +165,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Idle_Spritesheet_rough_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 497
-        height: 719
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 451df389d4f058449aedf61c81d42180
-      internalID: 2043410612
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_Spritesheet_rough_1
-      rect:
-        serializedVersion: 2
-        x: 497
-        y: 0
-        width: 497
-        height: 719
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1393ade5824b8fe4fae7a3fa22d339d1
-      internalID: 180597956
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_Spritesheet_rough_2
-      rect:
-        serializedVersion: 2
-        x: 994
-        y: 0
-        width: 497
-        height: 719
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 76d6c032eeeb07345a769980de304fd4
-      internalID: 8503817
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_Spritesheet_rough_3
-      rect:
-        serializedVersion: 2
-        x: 1491
-        y: 0
-        width: 497
-        height: 719
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3cfba3369f380b243873d11143d66771
-      internalID: 1962290037
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -260,11 +176,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Idle_Spritesheet_rough_3: 1962290037
-      Idle_Spritesheet_rough_1: 180597956
-      Idle_Spritesheet_rough_0: 2043410612
-      Idle_Spritesheet_rough_2: 8503817
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
