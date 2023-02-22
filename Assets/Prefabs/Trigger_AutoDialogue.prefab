@@ -72,8 +72,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a2568e181015be443ac6f9880725683f, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: d0bb52268b670324294bc1d7a5d5cc71, type: 3}
   m_Color: {r: 1, g: 0.405365, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -129,8 +129,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.8878212, y: 4.2550726, z: 53.044323}
-  m_Center: {x: -0.94391006, y: 0.677464, z: -10.779571}
+  m_Size: {x: 2.3789563, y: 4.2550726, z: 177.80212}
+  m_Center: {x: -0.69190156, y: 0.677464, z: 4.5572596}
 --- !u!114 &4814028220110693398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d4eaff75da25bf4a85c91316235e889, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isAutoUse: 1
+  isAutoUse: 0
   isInRange: 0
   isSingleUse: 1
   isDisabledOnUse: 0
@@ -151,12 +151,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LockCamera
+        m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -175,19 +175,19 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: LockCamera
-        m_Mode: 2
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
   isPausedWhileShowingA: 1
-  preUseDialogue: {fileID: 11400000, guid: 5fa29c7c27415524b9bc262e59ab8425, type: 2}
+  preUseDialogue: {fileID: 0}
   waitAfterPreDialogue: 0
   isPausedWhileShowingB: 0
   postUsedialogue: {fileID: 0}

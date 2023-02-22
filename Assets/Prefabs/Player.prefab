@@ -159,7 +159,7 @@ MonoBehaviour:
   jumpStrenght: 8
   groundCheckDistance: 0.1
   gravityScale: 1
-  zLimits: {x: 10, y: -10}
+  zLimits: {x: 8, y: -10}
 --- !u!114 &3395993812505339147
 MonoBehaviour:
   m_ObjectHideFlags: 0

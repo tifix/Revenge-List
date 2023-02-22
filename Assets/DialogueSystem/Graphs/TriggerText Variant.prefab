@@ -8,9 +8,13 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2496380472867278753, guid: 2345a07462d5dd7489c4e1716ddbfc5f, type: 3}
+      propertyPath: preUseDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 4b6cab06a67495745bb01fc923e59c24, type: 2}
     - target: {fileID: 2496380472867278758, guid: 2345a07462d5dd7489c4e1716ddbfc5f, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2496380472867278758, guid: 2345a07462d5dd7489c4e1716ddbfc5f, type: 3}
       propertyPath: m_LocalScale.x
@@ -22,15 +26,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2496380472867278758, guid: 2345a07462d5dd7489c4e1716ddbfc5f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.47
+      value: -15.25
       objectReference: {fileID: 0}
     - target: {fileID: 2496380472867278758, guid: 2345a07462d5dd7489c4e1716ddbfc5f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.19999981
+      value: 0.19999886
       objectReference: {fileID: 0}
     - target: {fileID: 2496380472867278758, guid: 2345a07462d5dd7489c4e1716ddbfc5f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.01
+      value: -4.37
       objectReference: {fileID: 0}
     - target: {fileID: 2496380472867278758, guid: 2345a07462d5dd7489c4e1716ddbfc5f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -62,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2496380472867278762, guid: 2345a07462d5dd7489c4e1716ddbfc5f, type: 3}
       propertyPath: m_Name
-      value: TriggerText
+      value: TriggerText Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
