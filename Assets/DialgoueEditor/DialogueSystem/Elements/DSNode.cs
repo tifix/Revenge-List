@@ -20,6 +20,7 @@ namespace DS.Elements
         public List<DSChoiceSaveData> Choices { get; set; }
         public string SpeakerName{ get; set; }
         public string Text { get; set; }
+        public string SpritePath { get; set; }
         public DSDialogueType DialogueType { get; set; }
 
         public DSGroup Group { get; set; }
@@ -35,6 +36,7 @@ namespace DS.Elements
             Choices = new List<DSChoiceSaveData>();
             Text = "Dialogue text.";
             SpeakerName = "Character name.";
+            SpritePath = "Insert Sprite Path Here.";
 
             graphView = dsGraphView;
 
@@ -139,11 +141,25 @@ namespace DS.Elements
                 "ds-node_quote-textfield"
                 );
 
+            TextField spritePathField = DSElementUtility.CreateTextField(SpritePath, null, callback =>
+            {
+                SpritePath = callback.newValue;
+            });
+
+            spritePathField.AddClasses(
+                "ds-node_textfield",
+                "ds-node_choice-textfield",
+                "ds-node_textfield_hidden"
+                );
+
+
             textFoldout.Add(textTextField);
 
             customDataContainer.Add(charNameField);
 
             customDataContainer.Add(textFoldout);
+
+            customDataContainer.Add(spritePathField);
 
             extensionContainer.Add(customDataContainer);
 
