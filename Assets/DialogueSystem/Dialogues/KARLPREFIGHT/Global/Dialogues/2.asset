@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: 2
   m_EditorClassIdentifier: 
   <DialogueName>k__BackingField: 2
-  <Text>k__BackingField: "It\u2019s a pity, really, you\u2019re sweet and I would
-    have liked to keep you around\u2026\npfft\u2026\npffffff \u2013"
+  <SpeakerName>k__BackingField: Astrid
+  <Text>k__BackingField: In my heart they are, honey!
+  <SpritePath>k__BackingField: Insert Sprite Path Here.
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 0233257cf5e2f4644bfa3441c90a468e, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 0}
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0

@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330ce6680441e444f96079c0bb98687a, type: 3}
+  m_Name: KARLOUCH
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: KARLOUCH
+  <Groups>k__BackingField: []
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: e79e7c57-00a9-4ac1-b680-fc5e1059948f
+    <Name>k__BackingField: 1
+    <SpeakerName>k__BackingField: Karl
+    <Text>k__BackingField: Ouch, that hurts.
+    <SpritePath>k__BackingField: Neighbour_Sad
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 4f70103e-010f-4aea-ad4e-af5721f06eb6
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 177, y: 218}
+    <isStartNode>k__BackingField: 1
+    <ChildIDs>k__BackingField:
+    - 4f70103e-010f-4aea-ad4e-af5721f06eb6
+  - <ID>k__BackingField: 4f70103e-010f-4aea-ad4e-af5721f06eb6
+    <Name>k__BackingField: 2
+    <SpeakerName>k__BackingField: Lilith
+    <Text>k__BackingField: This is for not returning those eggs you borrowed!
+    <SpritePath>k__BackingField: Lilith_Angry
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 1f6d2c03-cd79-482f-852f-711480b65040
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 475, y: 219}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 1f6d2c03-cd79-482f-852f-711480b65040
+  - <ID>k__BackingField: 1f6d2c03-cd79-482f-852f-711480b65040
+    <Name>k__BackingField: 3
+    <SpeakerName>k__BackingField: Karl
+    <Text>k__BackingField: What?
+    <SpritePath>k__BackingField: Neighbour_Sad
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 865, y: 208}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 
+  <OldGroupNames>k__BackingField: []
+  <OldUngroupedNodeNames>k__BackingField:
+  - 1
+  - 2
+  - 3
+  <OldGroupNodeNames>k__BackingField:
+    list: []
