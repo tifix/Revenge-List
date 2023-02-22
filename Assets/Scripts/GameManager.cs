@@ -21,15 +21,9 @@ public class GameManager : MonoBehaviour
         { 
             instance = this; 
             DontDestroyOnLoad(gameObject); 
-
-            cam = FindObjectOfType<CinemachineVirtualCamera>(); 
-            cam.m_Lens.OrthographicSize = 4;
-
-            perlin = cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
-            perlin.m_AmplitudeGain = 0;
-            perlin.m_FrequencyGain = 0;
         }
         else Destroy(this);
+
     }
 
     // Update is called once per frame
@@ -50,6 +44,15 @@ public class GameManager : MonoBehaviour
         else Time.timeScale = 1;
     }
 
+    public void GetCamera() 
+    {
+        cam = FindObjectOfType<CinemachineVirtualCamera>();
+        cam.m_Lens.OrthographicSize = 4;
+
+        perlin = cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+        perlin.m_AmplitudeGain = 0;
+        perlin.m_FrequencyGain = 0;
+    }
 
     public static void StartQuickTimeEventEverything() 
     {
