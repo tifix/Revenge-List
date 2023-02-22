@@ -200,6 +200,7 @@ namespace DS.Utilities
                 Name = node.DialogueName,
                 Choices = choices,
                 Text = node.Text,
+                SpeakerName = node.SpeakerName,
                 GroupID = node.Group?.ID,
                 DialogueType = node.DialogueType,
                 Position = node.GetPosition().position,
@@ -235,6 +236,7 @@ namespace DS.Utilities
 
             dialogue.Init(
                 node.DialogueName, 
+                node.SpeakerName,
                 node.Text, 
                 ConvertNodeChoicesToDialogueChoices(node.Choices),
                 node.DialogueType,
@@ -369,6 +371,7 @@ namespace DS.Utilities
 
                 node.ID = nodeData.ID;
                 node.Choices = choices;
+                node.SpeakerName = nodeData.SpeakerName;
                 node.Text = nodeData.Text;
 
                 node.Draw();

@@ -113,7 +113,10 @@ namespace DS.Elements
             customDataContainer.AddToClassList("ds-node_custom-data-container");
 
             // Char Name Field
-            TextField charNameField = DSElementUtility.CreateTextField(SpeakerName);
+            TextField charNameField = DSElementUtility.CreateTextField(SpeakerName, null, callback =>
+            {
+                SpeakerName = callback.newValue;
+            });
 
             charNameField.AddClasses(
                 "ds-node_textfield",

@@ -17,18 +17,47 @@ MonoBehaviour:
   <Nodes>k__BackingField:
   - <ID>k__BackingField: df9ec9c9-d8a1-4647-b4ab-9cc78eebfe6f
     <Name>k__BackingField: Test
-    <Text>k__BackingField: Is this working?
+    <SpeakerName>k__BackingField: speaker 1
+    <Text>k__BackingField: haiii
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 8e9cc319-79bc-4ebd-95e2-57c1f4422ad8
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 300, y: 127}
     <isStartNode>k__BackingField: 1
     <ChildIDs>k__BackingField:
+    - 8e9cc319-79bc-4ebd-95e2-57c1f4422ad8
+  - <ID>k__BackingField: cda1a208-d794-4dd5-b2ba-cd4edaa4d0ee
+    <Name>k__BackingField: 3
+    <SpeakerName>k__BackingField: speaker 1
+    <Text>k__BackingField: angery
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1092, y: 484}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
     - 
+  - <ID>k__BackingField: 8e9cc319-79bc-4ebd-95e2-57c1f4422ad8
+    <Name>k__BackingField: 2
+    <SpeakerName>k__BackingField: speaker 2
+    <Text>k__BackingField: test
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: cda1a208-d794-4dd5-b2ba-cd4edaa4d0ee
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 766, y: 332}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - cda1a208-d794-4dd5-b2ba-cd4edaa4d0ee
   <OldGroupNames>k__BackingField: []
   <OldUngroupedNodeNames>k__BackingField:
   - Test
+  - 3
+  - 2
   <OldGroupNodeNames>k__BackingField:
     list: []

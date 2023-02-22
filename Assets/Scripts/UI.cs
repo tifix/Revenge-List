@@ -112,6 +112,7 @@ public class UI : MonoBehaviour
 
         while(true) //Main dialogue loop - repeat until the next one has no children
         {
+            txtSpeaker.text = NodeCurrent.SpeakerName;
             pageText = NodeCurrent.Text;
             Debug.Log(pageText);
 

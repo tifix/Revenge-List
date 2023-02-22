@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Test
   m_EditorClassIdentifier: 
   <DialogueName>k__BackingField: Test
-  <SpeakerName>k__BackingField: haiii
-  <Text>k__BackingField: speaker 1
+  <SpeakerName>k__BackingField: 'p-ouqwefpoijhwef '
+  <Text>k__BackingField: Lilith
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 47c9b74f07280ba4e9c41dd5676b38a1, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 0}
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 1
