@@ -15,8 +15,13 @@ MonoBehaviour:
   <FileName>k__BackingField: Scene2
   <DialogueGroups>k__BackingField:
     list:
-    - Key: {fileID: 11400000, guid: c2983db26c65ed84780ef9be40a315fc, type: 2}
-      Value: []
-    - Key: {fileID: 11400000, guid: 319858d4b57c0e8469f5875d5fa7d699, type: 2}
-      Value: []
+    - Key: {fileID: 11400000, guid: fdf1f1e25629f154cb663ccccce01a04, type: 2}
+      Value:
+      - {fileID: 11400000, guid: d6982fd03deaded4583c10701dfb52d5, type: 2}
+      - {fileID: 11400000, guid: 69bcd8a2ff9c2a640970c8518af1dc92, type: 2}
+    - Key: {fileID: 11400000, guid: aefb5a03bda38474bb647cae458a70bc, type: 2}
+      Value:
+      - {fileID: 11400000, guid: f3f19619406f0554f96af1fff2de25d4, type: 2}
+      - {fileID: 11400000, guid: 90cfea0df2bc0114e8d0b4ef308433a2, type: 2}
+      - {fileID: 11400000, guid: ec834f5dd49b41a4f96945d3c92fbad1, type: 2}
   <UngroupedDialogues>k__BackingField: []
