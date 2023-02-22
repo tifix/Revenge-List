@@ -18,6 +18,7 @@ namespace DS.Elements
         public string ID { get; set; }
         public string DialogueName { get; set; }
         public List<DSChoiceSaveData> Choices { get; set; }
+        public string SpeakerName{ get; set; }
         public string Text { get; set; }
         public DSDialogueType DialogueType { get; set; }
 
@@ -33,6 +34,7 @@ namespace DS.Elements
             DialogueName = nodeName;
             Choices = new List<DSChoiceSaveData>();
             Text = "Dialogue text.";
+            SpeakerName = "Character name.";
 
             graphView = dsGraphView;
 
@@ -105,13 +107,24 @@ namespace DS.Elements
 
             inputContainer.Insert(0, inputPort);
 
-            // Extensions Container
+            // Extensions Container that contains foldout for dialogue text
             VisualElement customDataContainer = new VisualElement();
 
             customDataContainer.AddToClassList("ds-node_custom-data-container");
 
+            // Char Name Field
+            TextField charNameField = DSElementUtility.CreateTextField(SpeakerName);
+
+            charNameField.AddClasses(
+                "ds-node_textfield",
+                "ds-node_choice-textfield",
+                "ds-node_textfield_hidden"
+                );
+
+            // Foldout for Dialogue Text
             Foldout textFoldout = DSElementUtility.CreateFoldout("Dialogue Text");
 
+            // Dialogue Text Area
             TextField textTextField = DSElementUtility.CreateTextArea(Text, null, callback =>
             {
                 Text = callback.newValue;
@@ -124,6 +137,8 @@ namespace DS.Elements
                 );
 
             textFoldout.Add(textTextField);
+
+            customDataContainer.Add(charNameField);
 
             customDataContainer.Add(textFoldout);
 
