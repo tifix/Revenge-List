@@ -4,36 +4,17 @@ using System.Threading;
 using UnityEngine;
 using DS.Data.Save;
 
+[System.Serializable]
+public class Phases
+{
+    public List<BossAttacks> attacks = new List<BossAttacks>();
+}
+
 public class KarlBoss : MonoBehaviour
 {
-    [System.Serializable]
-    public enum ProjectileType
-    {
-        OVERHEAD, STRAIGHT, GNOME
-    }
-
-    [System.Serializable]
-    public enum ProjectileStyle
-    {
-        SINGLE, BURST
-    }
-
-    [System.Serializable]
-    public struct AttackType
-    {
-        public ProjectileStyle myStyle;
-        public ProjectileType myType;
-        [Range(0.1f, 4f)]
-        public float waitTime;
-        [Range(1f, 10f)]
-        public float speed;
-        [Range(1f, 10f)]
-        public float timeAlive;
-    }
-
     public bossHealth health;
 
-    int currentPhase = 1;
+    int currentPhase = 0;
     int currentAttack = 0;
     float attackTimer = 0;
     bool canAttack = true;
@@ -45,9 +26,8 @@ public class KarlBoss : MonoBehaviour
     public GameObject fireWall;
 
     public float playerRadius;
-    public List<AttackType> phase1 = new List<AttackType>();
-    public List<AttackType> phase2 = new List<AttackType>();
-    public List<AttackType> phase3 = new List<AttackType>();
+    public List<Phases> phases = new List<Phases>();
+
     [Space(3)]
     [Tooltip("each phase is to have a different QTE, set them here"), SerializeField] List<QTEObject> phase_QTEs;
     [Tooltip("each phase will have different dialogue, set it here"), SerializeField] List<DSGraphSaveDataSO> phase_Dialogues;
@@ -66,75 +46,52 @@ public class KarlBoss : MonoBehaviour
         if (canAttack)
         {
             attackTimer += Time.deltaTime;
-            switch (currentPhase)
+            if (attackTimer >= phases[currentPhase].attacks[currentAttack].waitTime)
             {
-                case 0:
-                    if(attackTimer >= phase1[currentAttack].waitTime)
+                //Burst attack
+                if (phases[currentPhase].attacks[currentAttack].style == BossAttacks.ProjectileStyle.BURST)
+                {
+                    float extraTimer = 0;
+                    int count = phases[currentPhase].attacks[currentAttack].amount;
+                    while (count > 0)
                     {
-                        Attack(phase1[currentAttack]);
-                        
-                        attackTimer = 0;
-                        currentAttack++;
-
-                        if(currentAttack >= phase1.Count)
+                        extraTimer += Time.deltaTime;
+                        if (extraTimer >= phases[currentPhase].attacks[currentAttack].delay)
                         {
-                            //End phase
-                            EndPhase();
-                            //Wait for shield to break
-
-                            //update Dialogue and QTE
-                            SetQTEandDialogueForRound(0);
-                            //After QTE success, call NextPhase()
+                            Attack(phases[currentPhase].attacks[currentAttack]);
+                            extraTimer = 0;
+                            count--;
                         }
                     }
-                    break;
-                case 1:
-                    if (attackTimer >= phase2[currentAttack].waitTime)
-                    {
-                        Attack(phase2[currentAttack]);
+                }
 
-                        attackTimer = 0;
-                        currentAttack++;
+                //Single attack
+                else if (phases[currentPhase].attacks[currentAttack].style == BossAttacks.ProjectileStyle.SINGLE)
+                {
+                    Attack(phases[currentPhase].attacks[currentAttack]);
+                }
 
-                        if (currentAttack >= phase2.Count)
-                        {
-                            //End phase
-                            EndPhase();
-                            //Wait for shield to break
-                            //Dialogue and QTE
-                            SetQTEandDialogueForRound(1);
-                            //After QTE success, call NextPhase()
-                        }
-                    }
-                    break;
-                case 2:
-                    if (attackTimer >= phase3[currentAttack].waitTime)
-                    {
-                        Attack(phase3[currentAttack]);
+                //Attacked
+                attackTimer = 0;
+                currentAttack++;
 
-                        attackTimer = 0;
-                        currentAttack++;
+                if (currentAttack >= phases[currentPhase].attacks.Count)
+                {
+                    //End phase
+                    EndPhase();
+                    //Wait for shield to break
 
-                        if (currentAttack >= phase3.Count)
-                        {
-                            //End phase
-                            EndPhase();
-                            //Wait for shield to break
-                            //Dialogue and QTE
-                            SetQTEandDialogueForRound(2);
-                            //After QTE success, call NextPhase()
-                        }
-                    }
-                    break;
-                default: { Debug.LogWarning("Karl Defeated!"); break; }
+                    //update Dialogue and QTE
+                    SetQTEandDialogueForRound(currentPhase);
+                    //After QTE success, call NextPhase()
+                }
             }
-
         }
     }
 
-    void Attack(AttackType a)
+    void Attack(BossAttacks a)
     {
-        if(a.myType == ProjectileType.OVERHEAD)
+        if(a.type == BossAttacks.ProjectileType.OVERHEAD)
         {
             float xOffset = Random.Range(-playerRadius, playerRadius);
             float zOffset = Random.Range(-playerRadius, playerRadius);
@@ -144,7 +101,7 @@ public class KarlBoss : MonoBehaviour
             temp.GetComponent<BossProjectile>().SetDistance(a.timeAlive * 2);
         }
 
-        else if(a.myType == ProjectileType.STRAIGHT)
+        else if(a.type == BossAttacks.ProjectileType.STRAIGHT)
         {
             float zOffset = Random.Range(-1, 1);
 
@@ -152,11 +109,12 @@ public class KarlBoss : MonoBehaviour
             temp.GetComponent<BossProjectile>().SetSpeed(a.speed + 5);
             temp.GetComponent<BossProjectile>().SetDistance(a.timeAlive);
             Vector3 dir = player.transform.position - temp.transform.position;
+            dir.y = 0;
             dir.z += zOffset;
             temp.GetComponent<BossProjectile>().SetDirection(dir.normalized);
         }
 
-        else if (a.myType == ProjectileType.GNOME)
+        else if (a.type == BossAttacks.ProjectileType.GNOME)
         {
             GameObject temp = Instantiate<GameObject>(steak, player.transform.position, Quaternion.identity);
             temp.GetComponent<BossProjectile>().SetSpeed(a.speed);

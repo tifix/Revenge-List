@@ -5534,6 +5534,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 80
       objectReference: {fileID: 0}
+    - target: {fileID: 8594872309033769972, guid: 8f990c0081324cb4199d9b4fd76c227b, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8594872309033769974, guid: 8f990c0081324cb4199d9b4fd76c227b, type: 3}
       propertyPath: m_Name
       value: UI_QTE

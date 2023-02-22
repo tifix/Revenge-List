@@ -62,8 +62,8 @@ public class QTEManager : MonoBehaviour
 
         percentagePerSkull = (float)(1.0f / currentMap.beats.Count);
 
-        playQTE = true;
-        isPlaying = true;
+        playQTE = false;
+        isPlaying = false;
 
         beatCounter = 0;
         correctHits = 0;
@@ -244,7 +244,7 @@ public class QTEManager : MonoBehaviour
 
     public void QTECleanUp()
     {
-        currentMap = defaultMap;
+        //currentMap = defaultMap;
         percentagePerSkull = (float)(1.0f / currentMap.beats.Count);
         FillSong.fillAmount = 0;
 
