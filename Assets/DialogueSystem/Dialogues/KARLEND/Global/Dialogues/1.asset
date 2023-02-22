@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <DialogueName>k__BackingField: 1
   <SpeakerName>k__BackingField: Karl
-  <Text>k__BackingField: My steaks are world famous!
-  <SpritePath>k__BackingField: Neighbour_Friendly
+  <Text>k__BackingField: "Well.\nThis certainly was a way to go\u2026"
+  <SpritePath>k__BackingField: Karl_Sad
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 33902c7c3958ddd4f899cc47cb579e64, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: e6e4aa1c90ee64e488d551c01ca9358a, type: 2}
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 1

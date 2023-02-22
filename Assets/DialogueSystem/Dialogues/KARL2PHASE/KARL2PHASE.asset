@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5016886999756b44fa42e8ad3bfbb640, type: 3}
-  m_Name: KARLPREFIGHT
+  m_Name: KARL2PHASE
   m_EditorClassIdentifier: 
-  <FileName>k__BackingField: KARLPREFIGHT
+  <FileName>k__BackingField: KARL2PHASE
   <DialogueGroups>k__BackingField:
     list: []
   <UngroupedDialogues>k__BackingField:
-  - {fileID: 11400000, guid: df14c70438dec384dae08d0ffc1b03f4, type: 2}
-  - {fileID: 11400000, guid: 33902c7c3958ddd4f899cc47cb579e64, type: 2}
+  - {fileID: 11400000, guid: 5f3c8ff1502b3eb4ab2e0ebe0c6a961b, type: 2}
+  - {fileID: 11400000, guid: 13d9424a11036324a820f292486899b2, type: 2}

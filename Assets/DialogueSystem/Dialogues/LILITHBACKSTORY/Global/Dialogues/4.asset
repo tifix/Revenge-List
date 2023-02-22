@@ -10,14 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 284e991c0cc122d4397cb723b29099f1, type: 3}
-  m_Name: 2
+  m_Name: 4
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: 2
-  <SpeakerName>k__BackingField: Astrid
-  <Text>k__BackingField: In my heart they are, honey!
-  <SpritePath>k__BackingField: Insert Sprite Path Here.
+  <DialogueName>k__BackingField: 4
+  <SpeakerName>k__BackingField: Lilith
+  <Text>k__BackingField: "They were fighting so much, they were always trying to
+    grill each other. \nThey got really clever with it. And they got huge barbeque
+    tongs just for that, and trained in gym to be able to pick them up."
+  <SpritePath>k__BackingField: Lilith_Sad
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: c01a35e86a87e604888826086e426e2b, type: 2}
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0

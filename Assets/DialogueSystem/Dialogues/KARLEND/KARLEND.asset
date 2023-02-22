@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5016886999756b44fa42e8ad3bfbb640, type: 3}
+  m_Name: KARLEND
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: KARLEND
+  <DialogueGroups>k__BackingField:
+    list: []
+  <UngroupedDialogues>k__BackingField:
+  - {fileID: 11400000, guid: afb059d405cfe6342a99eab30fce1658, type: 2}
+  - {fileID: 11400000, guid: e6e4aa1c90ee64e488d551c01ca9358a, type: 2}
+  - {fileID: 11400000, guid: d37f56dd94a2fc748bf0afd18d139cac, type: 2}
+  - {fileID: 11400000, guid: 1f2926b99bd73174a843f05605aa18c5, type: 2}
+  - {fileID: 11400000, guid: c5e30ee5a7f99c4428d0d907e22b519e, type: 2}
+  - {fileID: 11400000, guid: 51adb0ad79968e940862e8fd82260af0, type: 2}

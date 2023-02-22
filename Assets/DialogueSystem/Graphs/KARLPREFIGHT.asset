@@ -1,0 +1,253 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330ce6680441e444f96079c0bb98687a, type: 3}
+  m_Name: KARLPREFIGHT
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: KARLPREFIGHT
+  <Groups>k__BackingField: []
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: e79e7c57-00a9-4ac1-b680-fc5e1059948f
+    <Name>k__BackingField: 1
+    <SpeakerName>k__BackingField: Lilith
+    <Text>k__BackingField: Karl, I think we both know how this is going to end.
+    <SpritePath>k__BackingField: Lilith_Smug
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 2f691f4e-68eb-460f-9bff-84c7543e9c1a
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 177, y: 218}
+    <isStartNode>k__BackingField: 1
+    <ChildIDs>k__BackingField:
+    - 2f691f4e-68eb-460f-9bff-84c7543e9c1a
+  - <ID>k__BackingField: 2f691f4e-68eb-460f-9bff-84c7543e9c1a
+    <Name>k__BackingField: 2
+    <SpeakerName>k__BackingField: Lilith
+    <Text>k__BackingField: "It\u2019s a pity, really, you\u2019re sweet and I would
+      have liked to keep you around\u2026\npfft\u2026\npffffff \u2013"
+    <SpritePath>k__BackingField: Lilith_Happy
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 1c2bc9db-7def-462a-8d92-59fc285f3fae
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 504, y: 213}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 1c2bc9db-7def-462a-8d92-59fc285f3fae
+  - <ID>k__BackingField: 1c2bc9db-7def-462a-8d92-59fc285f3fae
+    <Name>k__BackingField: 3
+    <SpeakerName>k__BackingField: Lilith
+    <Text>k__BackingField: 'HAHAHAHAHAHA! '
+    <SpritePath>k__BackingField: Lilith_Smug
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: b934a2bb-431c-4fb1-a3e7-006c2ca383eb
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 987, y: 213}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - b934a2bb-431c-4fb1-a3e7-006c2ca383eb
+  - <ID>k__BackingField: b934a2bb-431c-4fb1-a3e7-006c2ca383eb
+    <Name>k__BackingField: 4
+    <SpeakerName>k__BackingField: Lilith
+    <Text>k__BackingField: "I can\u2019t even say it with a straight face!\nAnyway\u2026"
+    <SpritePath>k__BackingField: Lilith_Happy
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 0a9cece1-5992-47d4-8070-ab63d44d4160
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1301, y: 209}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 0a9cece1-5992-47d4-8070-ab63d44d4160
+  - <ID>k__BackingField: 0a9cece1-5992-47d4-8070-ab63d44d4160
+    <Name>k__BackingField: 5
+    <SpeakerName>k__BackingField: Lilith
+    <Text>k__BackingField: "You give me no choice but to kill\u2026"
+    <SpritePath>k__BackingField: Lilith_Unhappy
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 540f8192-6d50-49d6-ab41-9a3c2c326951
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1607, y: 210}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 540f8192-6d50-49d6-ab41-9a3c2c326951
+  - <ID>k__BackingField: 540f8192-6d50-49d6-ab41-9a3c2c326951
+    <Name>k__BackingField: 6
+    <SpeakerName>k__BackingField: Karl
+    <Text>k__BackingField: Did you say grill?
+    <SpritePath>k__BackingField: Neighbour_Friendly
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: fcc2ee55-45d4-4151-99bb-cf3887657f7f
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1919, y: 212}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - fcc2ee55-45d4-4151-99bb-cf3887657f7f
+  - <ID>k__BackingField: fcc2ee55-45d4-4151-99bb-cf3887657f7f
+    <Name>k__BackingField: 7
+    <SpeakerName>k__BackingField: Karl
+    <Text>k__BackingField: Nevermind the dog park, there is always time for some
+      barbeque!
+    <SpritePath>k__BackingField: Neighbour_Laughing
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: df2e9e6e-7dfc-473d-9803-78c8b487a4f1
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2216, y: 211}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - df2e9e6e-7dfc-473d-9803-78c8b487a4f1
+  - <ID>k__BackingField: df2e9e6e-7dfc-473d-9803-78c8b487a4f1
+    <Name>k__BackingField: 8
+    <SpeakerName>k__BackingField: Snuffles
+    <Text>k__BackingField: ... (Upset dog noises)
+    <SpritePath>k__BackingField: Insert Sprite Path Here.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 9fb95523-1ff9-4ca4-86a7-0d60928ce403
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2677, y: 201}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 9fb95523-1ff9-4ca4-86a7-0d60928ce403
+  - <ID>k__BackingField: 9fb95523-1ff9-4ca4-86a7-0d60928ce403
+    <Name>k__BackingField: 9
+    <SpeakerName>k__BackingField: Karl
+    <Text>k__BackingField: Time to bring out the barbecue!
+    <SpritePath>k__BackingField: Neighbour_Friendly
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 15ea2113-6888-4a62-b759-d707302d295b
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2987, y: 202}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 15ea2113-6888-4a62-b759-d707302d295b
+  - <ID>k__BackingField: 15ea2113-6888-4a62-b759-d707302d295b
+    <Name>k__BackingField: 10
+    <SpeakerName>k__BackingField: Astrid
+    <Text>k__BackingField: 'No Sweetheart! We just had barbecue this morning!
+
+      Ask
+      Lily if she''s hungry!'
+    <SpritePath>k__BackingField: Insert Sprite Path Here.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: e481bc36-dd20-410c-b358-12d14f6a0497
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3335, y: 215}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - e481bc36-dd20-410c-b358-12d14f6a0497
+  - <ID>k__BackingField: e481bc36-dd20-410c-b358-12d14f6a0497
+    <Name>k__BackingField: 11
+    <SpeakerName>k__BackingField: Karl
+    <Text>k__BackingField: 'Lily, want anything?
+
+      I make scrumptious steak.'
+    <SpritePath>k__BackingField: Neighbour_Friendly
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 5d3cb23e-b693-4ccc-b490-f315a0d72aeb
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3719, y: 252}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 5d3cb23e-b693-4ccc-b490-f315a0d72aeb
+  - <ID>k__BackingField: 5d3cb23e-b693-4ccc-b490-f315a0d72aeb
+    <Name>k__BackingField: 12
+    <SpeakerName>k__BackingField: Lilith
+    <Text>k__BackingField: No! I want to fight you.
+    <SpritePath>k__BackingField: Lilith_Unhappy
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 11b049bb-5df5-4be8-ab3a-55a63f497c3d
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4075, y: 274}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 11b049bb-5df5-4be8-ab3a-55a63f497c3d
+  - <ID>k__BackingField: 11b049bb-5df5-4be8-ab3a-55a63f497c3d
+    <Name>k__BackingField: 13
+    <SpeakerName>k__BackingField: Karl
+    <Text>k__BackingField: "That\u2019s great, because I have a license\u2026"
+    <SpritePath>k__BackingField: Neighbour_Friendly
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: caaca3ab-e827-4c4b-bc4a-895930268b95
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4408, y: 265}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - caaca3ab-e827-4c4b-bc4a-895930268b95
+  - <ID>k__BackingField: caaca3ab-e827-4c4b-bc4a-895930268b95
+    <Name>k__BackingField: 14
+    <SpeakerName>k__BackingField: Lilith
+    <Text>k__BackingField: "DON\u2019T SAY IT \u2013 "
+    <SpritePath>k__BackingField: Lilith_Unhappy
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: f65e7a45-72d1-44c4-ad06-d1fe5488ff0e
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4728, y: 259}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - f65e7a45-72d1-44c4-ad06-d1fe5488ff0e
+  - <ID>k__BackingField: f65e7a45-72d1-44c4-ad06-d1fe5488ff0e
+    <Name>k__BackingField: 15
+    <SpeakerName>k__BackingField: Karl
+    <Text>k__BackingField: "\u2026TO GRILL!"
+    <SpritePath>k__BackingField: Neighbour_Laughing
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5055, y: 244}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 
+  <OldGroupNames>k__BackingField: []
+  <OldUngroupedNodeNames>k__BackingField:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  <OldGroupNodeNames>k__BackingField:
+    list: []
