@@ -18,7 +18,9 @@ namespace DS.Elements
         public string ID { get; set; }
         public string DialogueName { get; set; }
         public List<DSChoiceSaveData> Choices { get; set; }
+        public string SpeakerName{ get; set; }
         public string Text { get; set; }
+        public string SpritePath { get; set; }
         public DSDialogueType DialogueType { get; set; }
 
         public DSGroup Group { get; set; }
@@ -33,6 +35,8 @@ namespace DS.Elements
             DialogueName = nodeName;
             Choices = new List<DSChoiceSaveData>();
             Text = "Dialogue text.";
+            SpeakerName = "Character name.";
+            SpritePath = "Insert Sprite Path Here.";
 
             graphView = dsGraphView;
 
@@ -105,13 +109,27 @@ namespace DS.Elements
 
             inputContainer.Insert(0, inputPort);
 
-            // Extensions Container
+            // Extensions Container that contains foldout for dialogue text
             VisualElement customDataContainer = new VisualElement();
 
             customDataContainer.AddToClassList("ds-node_custom-data-container");
 
+            // Char Name Field
+            TextField charNameField = DSElementUtility.CreateTextField(SpeakerName, null, callback =>
+            {
+                SpeakerName = callback.newValue;
+            });
+
+            charNameField.AddClasses(
+                "ds-node_textfield",
+                "ds-node_choice-textfield",
+                "ds-node_textfield_hidden"
+                );
+
+            // Foldout for Dialogue Text
             Foldout textFoldout = DSElementUtility.CreateFoldout("Dialogue Text");
 
+            // Dialogue Text Area
             TextField textTextField = DSElementUtility.CreateTextArea(Text, null, callback =>
             {
                 Text = callback.newValue;
@@ -123,9 +141,25 @@ namespace DS.Elements
                 "ds-node_quote-textfield"
                 );
 
+            TextField spritePathField = DSElementUtility.CreateTextField(SpritePath, null, callback =>
+            {
+                SpritePath = callback.newValue;
+            });
+
+            spritePathField.AddClasses(
+                "ds-node_textfield",
+                "ds-node_choice-textfield",
+                "ds-node_textfield_hidden"
+                );
+
+
             textFoldout.Add(textTextField);
 
+            customDataContainer.Add(charNameField);
+
             customDataContainer.Add(textFoldout);
+
+            customDataContainer.Add(spritePathField);
 
             extensionContainer.Add(customDataContainer);
 

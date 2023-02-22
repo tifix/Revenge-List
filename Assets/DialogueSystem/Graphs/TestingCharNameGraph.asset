@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330ce6680441e444f96079c0bb98687a, type: 3}
+  m_Name: TestingCharNameGraph
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: TestingCharName
+  <Groups>k__BackingField: []
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: cda1a208-d794-4dd5-b2ba-cd4edaa4d0ee
+    <Name>k__BackingField: 3
+    <SpeakerName>k__BackingField: speaker 1
+    <Text>k__BackingField: angery
+    <SpritePath>k__BackingField: Neighbour_Sad
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1092, y: 484}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 
+  - <ID>k__BackingField: 8e9cc319-79bc-4ebd-95e2-57c1f4422ad8
+    <Name>k__BackingField: 2
+    <SpeakerName>k__BackingField: speaker 2
+    <Text>k__BackingField: test
+    <SpritePath>k__BackingField: 
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: cda1a208-d794-4dd5-b2ba-cd4edaa4d0ee
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 766, y: 332}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - cda1a208-d794-4dd5-b2ba-cd4edaa4d0ee
+  - <ID>k__BackingField: df9ec9c9-d8a1-4647-b4ab-9cc78eebfe6f
+    <Name>k__BackingField: Test
+    <SpeakerName>k__BackingField: speaker 1
+    <Text>k__BackingField: haiii
+    <SpritePath>k__BackingField: Neighbour_Sad
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 8e9cc319-79bc-4ebd-95e2-57c1f4422ad8
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 300, y: 127}
+    <isStartNode>k__BackingField: 1
+    <ChildIDs>k__BackingField:
+    - 8e9cc319-79bc-4ebd-95e2-57c1f4422ad8
+  <OldGroupNames>k__BackingField: []
+  <OldUngroupedNodeNames>k__BackingField:
+  - 3
+  - 2
+  - Test
+  <OldGroupNodeNames>k__BackingField:
+    list: []
