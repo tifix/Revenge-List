@@ -10,9 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a99bef880a6146744aacc81d8da9e274, type: 3}
-  m_Name: Attacktest
+  m_Name: Karl_SingleSteak
   m_EditorClassIdentifier: 
+  style: 0
   type: 0
-  damage: 0
-  speed: 0
-  distance: 0
+  a: 0
+  b: 0
+  c: 0
+  d: 0
+  e: 0
+  waitTime: 1
+  speed: 1
+  timeAlive: 1
+  amount: 1
+  delay: 0.1
+  speedModifier: 0

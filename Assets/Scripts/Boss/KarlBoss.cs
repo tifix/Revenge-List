@@ -13,8 +13,15 @@ public class KarlBoss : MonoBehaviour
     }
 
     [System.Serializable]
+    public enum ProjectileStyle
+    {
+        SINGLE, BURST
+    }
+
+    [System.Serializable]
     public struct AttackType
     {
+        public ProjectileStyle myStyle;
         public ProjectileType myType;
         [Range(0.1f, 4f)]
         public float waitTime;
@@ -26,7 +33,7 @@ public class KarlBoss : MonoBehaviour
 
     public bossHealth health;
 
-    int currentPhase = 0;
+    int currentPhase = 1;
     int currentAttack = 0;
     float attackTimer = 0;
     bool canAttack = true;
@@ -142,9 +149,11 @@ public class KarlBoss : MonoBehaviour
             float zOffset = Random.Range(-1, 1);
 
             GameObject temp = Instantiate<GameObject>(envelope, transform.position/* + new Vector3(0, 2, 0)*/, Quaternion.identity);    //previous spawn position spawned them underground and insta-despawned
-            temp.GetComponent<BossProjectile>().SetSpeed(a.speed + 2);
+            temp.GetComponent<BossProjectile>().SetSpeed(a.speed + 5);
             temp.GetComponent<BossProjectile>().SetDistance(a.timeAlive);
-            temp.GetComponent<BossProjectile>().SetDirection(new Vector3(-1, 0, zOffset));
+            Vector3 dir = player.transform.position - temp.transform.position;
+            dir.z += zOffset;
+            temp.GetComponent<BossProjectile>().SetDirection(dir.normalized);
         }
 
         else if (a.myType == ProjectileType.GNOME)
@@ -158,7 +167,7 @@ public class KarlBoss : MonoBehaviour
     public void EndPhase()
     {
         RecordPosition();   //records player position so we can knock them away from spamming the boss as soon as the QTE ends
-        canAttack = false;
+        ChangeAttack();
         StopParticles();
     }
 
