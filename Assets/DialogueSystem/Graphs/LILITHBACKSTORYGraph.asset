@@ -1,0 +1,301 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330ce6680441e444f96079c0bb98687a, type: 3}
+  m_Name: LILITHBACKSTORYGraph
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: LILITHBACKSTORY
+  <Groups>k__BackingField: []
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: 8cb09157-2865-41a2-8424-867b2c2a5e1d
+    <Name>k__BackingField: 1
+    <SpeakerName>k__BackingField: Lilith
+    <Text>k__BackingField: "You know, Karl, you remind me of someone\u2026\nOr something\u2026"
+    <SpritePath>k__BackingField: Lilith_Smug
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: a9b69863-069d-4f2c-90d6-a0cd10ec1aff
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1860, y: 189}
+    <isStartNode>k__BackingField: 1
+    <ChildIDs>k__BackingField:
+    - a9b69863-069d-4f2c-90d6-a0cd10ec1aff
+  - <ID>k__BackingField: a9b69863-069d-4f2c-90d6-a0cd10ec1aff
+    <Name>k__BackingField: 2
+    <SpeakerName>k__BackingField: Lilith
+    <Text>k__BackingField: "My childhood. Back when I hadn\u2019t yet met you and
+      still felt happiness.\nIt was also because my parents were still alive."
+    <SpritePath>k__BackingField: Lilith_Sad
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: affe2e95-891d-447c-a549-adea1e04f670
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2177, y: 191}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - affe2e95-891d-447c-a549-adea1e04f670
+  - <ID>k__BackingField: affe2e95-891d-447c-a549-adea1e04f670
+    <Name>k__BackingField: 3
+    <SpeakerName>k__BackingField: Lilith
+    <Text>k__BackingField: "They really liked to barbeque, too\u2026"
+    <SpritePath>k__BackingField: Lilith_Unhappy
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: f9512165-b949-4fc7-b962-e6f4004aae89
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2644, y: 190}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - f9512165-b949-4fc7-b962-e6f4004aae89
+  - <ID>k__BackingField: f9512165-b949-4fc7-b962-e6f4004aae89
+    <Name>k__BackingField: 4
+    <SpeakerName>k__BackingField: Lilith
+    <Text>k__BackingField: "They were fighting so much, they were always trying to
+      grill each other. \nThey got really clever with it. And they got huge barbeque
+      tongs just for that, and trained in gym to be able to pick them up."
+    <SpritePath>k__BackingField: Lilith_Sad
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 74dd9327-8925-479b-8348-53086b7f8ca2
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2940, y: 192}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 74dd9327-8925-479b-8348-53086b7f8ca2
+  - <ID>k__BackingField: 74dd9327-8925-479b-8348-53086b7f8ca2
+    <Name>k__BackingField: 5
+    <SpeakerName>k__BackingField: Lilith
+    <Text>k__BackingField: "I still remember them running around with the huge barbeque
+      tongs, trying to kill each other\u2026\nAll the traps around the house\u2026\r"
+    <SpritePath>k__BackingField: Lilith_Happy
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: b50b0e99-1851-4db9-a4ac-a1bf0b5cb30c
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3680, y: 198}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - b50b0e99-1851-4db9-a4ac-a1bf0b5cb30c
+  - <ID>k__BackingField: b50b0e99-1851-4db9-a4ac-a1bf0b5cb30c
+    <Name>k__BackingField: 6
+    <SpeakerName>k__BackingField: Lilith
+    <Text>k__BackingField: But then, they went to marriage counsellor.
+    <SpritePath>k__BackingField: Lilith_Unhappy
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 7b615842-1864-458a-bac1-6b6c82286634
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4310, y: 214}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 7b615842-1864-458a-bac1-6b6c82286634
+  - <ID>k__BackingField: 7b615842-1864-458a-bac1-6b6c82286634
+    <Name>k__BackingField: 7
+    <SpeakerName>k__BackingField: Lilith
+    <Text>k__BackingField: And they stopped wanting to kill each other.
+    <SpritePath>k__BackingField: Lilith_Unhappy
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 383d6306-7726-4088-accd-047e8fc6e651
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4621, y: 198}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 383d6306-7726-4088-accd-047e8fc6e651
+  - <ID>k__BackingField: 383d6306-7726-4088-accd-047e8fc6e651
+    <Name>k__BackingField: 8
+    <SpeakerName>k__BackingField: Lilith
+    <Text>k__BackingField: "And all the frustration they used to feel for each other,
+      they directed\u2026\ntowards me.\r"
+    <SpritePath>k__BackingField: Lilith_Unhappy
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 856f0d39-e48e-4d78-8bac-113dcdfb5a28
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4930, y: 200}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 856f0d39-e48e-4d78-8bac-113dcdfb5a28
+  - <ID>k__BackingField: 856f0d39-e48e-4d78-8bac-113dcdfb5a28
+    <Name>k__BackingField: 9
+    <SpeakerName>k__BackingField: Lilith
+    <Text>k__BackingField: "Running away from barbeque tongs, trying to keep out\u2026\nI
+      still remember it so clearly, mr Svensson."
+    <SpritePath>k__BackingField: Lilith_Unhappy
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 451176e5-448c-4138-b172-73500bac8dca
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5431, y: 215}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 451176e5-448c-4138-b172-73500bac8dca
+  - <ID>k__BackingField: 451176e5-448c-4138-b172-73500bac8dca
+    <Name>k__BackingField: 10
+    <SpeakerName>k__BackingField: Lilith
+    <Text>k__BackingField: And yet somehow, seeing you everyday is worse horror than
+      my childhood could have ever been.
+    <SpritePath>k__BackingField: Lilith_Unhappy
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: a76a9d22-7bb7-4291-88e8-67171f2e77a3
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5809, y: 209}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - a76a9d22-7bb7-4291-88e8-67171f2e77a3
+  - <ID>k__BackingField: a76a9d22-7bb7-4291-88e8-67171f2e77a3
+    <Name>k__BackingField: 11
+    <SpeakerName>k__BackingField: Lilith
+    <Text>k__BackingField: "It\u2019s weird I\u2019ve not already killed you, really.
+      Your crimes are numerous.\nThe eggs\u2026 The dog\u2026 Stealing away my girl\u2026"
+    <SpritePath>k__BackingField: Lilith_Sad
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: d6d4fb74-b786-4b1f-8f13-466904b5e24c
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 6453, y: 228}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - d6d4fb74-b786-4b1f-8f13-466904b5e24c
+  - <ID>k__BackingField: d6d4fb74-b786-4b1f-8f13-466904b5e24c
+    <Name>k__BackingField: 12
+    <SpeakerName>k__BackingField: Lilith
+    <Text>k__BackingField: "And let\u2019s not even get started on just who you are
+      as a person, which is crime in and on itself.\nNobody should be like you."
+    <SpritePath>k__BackingField: Lilith_Unhappy
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 807a09c1-8c71-497a-ae9f-dd34851b271a
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 6898, y: 220}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 807a09c1-8c71-497a-ae9f-dd34851b271a
+  - <ID>k__BackingField: 807a09c1-8c71-497a-ae9f-dd34851b271a
+    <Name>k__BackingField: 13
+    <SpeakerName>k__BackingField: Lilith
+    <Text>k__BackingField: "So it\u2019s strange I\u2019ve not gotten to you before
+      this.\nI have so many reasons to take revenge on you."
+    <SpritePath>k__BackingField: Lilith_Unhappy
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 0a8fd5d8-b954-4ea7-8c21-6ec24efa4afa
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 7492, y: 260}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 0a8fd5d8-b954-4ea7-8c21-6ec24efa4afa
+  - <ID>k__BackingField: 0a8fd5d8-b954-4ea7-8c21-6ec24efa4afa
+    <Name>k__BackingField: 14
+    <SpeakerName>k__BackingField: Karl
+    <Text>k__BackingField: "Isn\u2019t the best revenge a life well-lived?"
+    <SpritePath>k__BackingField: Neighbour_Friendly
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 6d56d5e9-d40c-4e76-be59-37c8a1170e02
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 7848, y: 257}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 6d56d5e9-d40c-4e76-be59-37c8a1170e02
+  - <ID>k__BackingField: 6d56d5e9-d40c-4e76-be59-37c8a1170e02
+    <Name>k__BackingField: 15
+    <SpeakerName>k__BackingField: Lilith
+    <Text>k__BackingField: 'HAHAHAHAHAHAHAHA. '
+    <SpritePath>k__BackingField: Lilith_Smug
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 6a475f4e-dfa4-45b4-a06d-cba73672892c
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 8150, y: 243}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 6a475f4e-dfa4-45b4-a06d-cba73672892c
+  - <ID>k__BackingField: 6a475f4e-dfa4-45b4-a06d-cba73672892c
+    <Name>k__BackingField: 16
+    <SpeakerName>k__BackingField: Lilith
+    <Text>k__BackingField: HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA.
+    <SpritePath>k__BackingField: Lilith_Smug
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: a357f5d5-89cf-478d-a466-433f6176e110
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 8464, y: 277}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - a357f5d5-89cf-478d-a466-433f6176e110
+  - <ID>k__BackingField: 88e479d0-d754-4673-a3d4-fa093d05138e
+    <Name>k__BackingField: 18
+    <SpeakerName>k__BackingField: Lilith
+    <Text>k__BackingField: "Anyway\u2026"
+    <SpritePath>k__BackingField: Lilith_Unhappy
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 9199, y: 270}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 
+  - <ID>k__BackingField: a357f5d5-89cf-478d-a466-433f6176e110
+    <Name>k__BackingField: 17
+    <SpeakerName>k__BackingField: Lilith
+    <Text>k__BackingField: HA HA HA.
+    <SpritePath>k__BackingField: Lilith_Unhappy
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 88e479d0-d754-4673-a3d4-fa093d05138e
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 8917, y: 276}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 88e479d0-d754-4673-a3d4-fa093d05138e
+  <OldGroupNames>k__BackingField: []
+  <OldUngroupedNodeNames>k__BackingField:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 18
+  - 17
+  <OldGroupNodeNames>k__BackingField:
+    list: []

@@ -10,50 +10,38 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 330ce6680441e444f96079c0bb98687a, type: 3}
-  m_Name: KARLOUCH
+  m_Name: KARL2PHASEGraph
   m_EditorClassIdentifier: 
-  <FileName>k__BackingField: KARLOUCH
+  <FileName>k__BackingField: KARL2PHASE
   <Groups>k__BackingField: []
   <Nodes>k__BackingField:
-  - <ID>k__BackingField: e79e7c57-00a9-4ac1-b680-fc5e1059948f
+  - <ID>k__BackingField: 12417c5d-a0f9-49aa-a541-5ebd06a6a5a8
     <Name>k__BackingField: 1
     <SpeakerName>k__BackingField: Karl
-    <Text>k__BackingField: Ouch, that hurts.
+    <Text>k__BackingField: "Lily, be honest. Is this about that crayfish party we
+      didn\u2019t invite you to?"
     <SpritePath>k__BackingField: Neighbour_Sad
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 4f70103e-010f-4aea-ad4e-af5721f06eb6
+      <NodeID>k__BackingField: ac47ffa0-d48f-4967-b4c0-406cd35b579d
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 177, y: 218}
+    <Position>k__BackingField: {x: 834, y: 243}
     <isStartNode>k__BackingField: 1
     <ChildIDs>k__BackingField:
-    - 4f70103e-010f-4aea-ad4e-af5721f06eb6
-  - <ID>k__BackingField: 4f70103e-010f-4aea-ad4e-af5721f06eb6
+    - ac47ffa0-d48f-4967-b4c0-406cd35b579d
+  - <ID>k__BackingField: ac47ffa0-d48f-4967-b4c0-406cd35b579d
     <Name>k__BackingField: 2
-    <SpeakerName>k__BackingField: Lilith
-    <Text>k__BackingField: This is for not returning those eggs you borrowed!
-    <SpritePath>k__BackingField: Lilith_Angry
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 1f6d2c03-cd79-482f-852f-711480b65040
-    <GroupID>k__BackingField: 
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 475, y: 219}
-    <isStartNode>k__BackingField: 0
-    <ChildIDs>k__BackingField:
-    - 1f6d2c03-cd79-482f-852f-711480b65040
-  - <ID>k__BackingField: 1f6d2c03-cd79-482f-852f-711480b65040
-    <Name>k__BackingField: 3
     <SpeakerName>k__BackingField: Karl
-    <Text>k__BackingField: What?
-    <SpritePath>k__BackingField: Neighbour_Sad
+    <Text>k__BackingField: "I told you, you should come to the next one! It\u2019s
+      this Thursday! It\u2019s gonna be crab-ulous!"
+    <SpritePath>k__BackingField: Neighbour_Friendly
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 865, y: 208}
+    <Position>k__BackingField: {x: 1287, y: 239}
     <isStartNode>k__BackingField: 0
     <ChildIDs>k__BackingField:
     - 
@@ -61,6 +49,5 @@ MonoBehaviour:
   <OldUngroupedNodeNames>k__BackingField:
   - 1
   - 2
-  - 3
   <OldGroupNodeNames>k__BackingField:
     list: []

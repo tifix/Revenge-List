@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330ce6680441e444f96079c0bb98687a, type: 3}
+  m_Name: KARLENDGraph
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: KARLEND
+  <Groups>k__BackingField: []
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: d410f6ac-599e-46f0-a35d-fdd78609ee51
+    <Name>k__BackingField: 1
+    <SpeakerName>k__BackingField: Karl
+    <Text>k__BackingField: "Well.\nThis certainly was a way to go\u2026"
+    <SpritePath>k__BackingField: Karl_Sad
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 8ae36938-02f7-4f73-81b6-6bb12d12c1df
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 8784, y: 292}
+    <isStartNode>k__BackingField: 1
+    <ChildIDs>k__BackingField:
+    - 8ae36938-02f7-4f73-81b6-6bb12d12c1df
+  - <ID>k__BackingField: 8ae36938-02f7-4f73-81b6-6bb12d12c1df
+    <Name>k__BackingField: 2
+    <SpeakerName>k__BackingField: Karl
+    <Text>k__BackingField: "If I get reincarnated I\u2019ll always remember to return
+      the eggs I borrow\u2026\r"
+    <SpritePath>k__BackingField: Karl_Sad
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 16e1fe77-0992-477e-8897-bd3e392a6896
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 9063, y: 256}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 16e1fe77-0992-477e-8897-bd3e392a6896
+  - <ID>k__BackingField: 16e1fe77-0992-477e-8897-bd3e392a6896
+    <Name>k__BackingField: 3
+    <SpeakerName>k__BackingField: Karl
+    <Text>k__BackingField: "\u2026"
+    <SpritePath>k__BackingField: Karl_Sad
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: a0015d52-0d03-4b8f-ad99-30982e291acb
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 9544, y: 290}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - a0015d52-0d03-4b8f-ad99-30982e291acb
+  - <ID>k__BackingField: a0015d52-0d03-4b8f-ad99-30982e291acb
+    <Name>k__BackingField: 4
+    <SpeakerName>k__BackingField: Karl
+    <Text>k__BackingField: "Now that I think about it, maybe my barbeque wasn\u2019t
+      really that good.\nPeople around me just pretended it was, to make me happy."
+    <SpritePath>k__BackingField: Karl_Sad
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 01448ff0-f365-43e1-9e13-8dd13338d66a
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 9844, y: 266}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 01448ff0-f365-43e1-9e13-8dd13338d66a
+  - <ID>k__BackingField: 01448ff0-f365-43e1-9e13-8dd13338d66a
+    <Name>k__BackingField: 5
+    <SpeakerName>k__BackingField: Karl
+    <Text>k__BackingField: "And they made me so very happy\u2026"
+    <SpritePath>k__BackingField: Karl_Sad
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 14a5ae14-21a1-47b3-9e9d-43a9f5559447
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 10278, y: 279}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 14a5ae14-21a1-47b3-9e9d-43a9f5559447
+  - <ID>k__BackingField: 14a5ae14-21a1-47b3-9e9d-43a9f5559447
+    <Name>k__BackingField: 6
+    <SpeakerName>k__BackingField: Karl
+    <Text>k__BackingField: "Lily, please tell Astrid that\u2026"
+    <SpritePath>k__BackingField: Karl_Sad
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 10576, y: 278}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 
+  <OldGroupNames>k__BackingField: []
+  <OldUngroupedNodeNames>k__BackingField:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  <OldGroupNodeNames>k__BackingField:
+    list: []

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5016886999756b44fa42e8ad3bfbb640, type: 3}
+  m_Name: LILITHBACKSTORY
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: LILITHBACKSTORY
+  <DialogueGroups>k__BackingField:
+    list: []
+  <UngroupedDialogues>k__BackingField:
+  - {fileID: 11400000, guid: e52b991f3ed46f34682f8998ee332fc2, type: 2}
+  - {fileID: 11400000, guid: a4d564ca89e94e044b97783f56d949f8, type: 2}
+  - {fileID: 11400000, guid: 4e8e95bcb3cc50442b5e95e65d15b37f, type: 2}
+  - {fileID: 11400000, guid: 597d48d43d546b64a9b87d870088f6b6, type: 2}
+  - {fileID: 11400000, guid: c01a35e86a87e604888826086e426e2b, type: 2}
+  - {fileID: 11400000, guid: d9997be2ed3836442983667d71e9494d, type: 2}
+  - {fileID: 11400000, guid: c31f799b3f1065b41a568ed2c40c76cc, type: 2}
+  - {fileID: 11400000, guid: 5c6836b60447b79478b7300b4abc0210, type: 2}
+  - {fileID: 11400000, guid: 55eaaca7bcde45846aac5c3c7bdcf3bf, type: 2}
+  - {fileID: 11400000, guid: 6aebd4e610da43944a490cc01502e026, type: 2}
+  - {fileID: 11400000, guid: 715252f492c93bd4082d08555ee99586, type: 2}
+  - {fileID: 11400000, guid: 8e85017a223a58442892fe7280bb7382, type: 2}
+  - {fileID: 11400000, guid: 4af1e60f7b9fac749aeea2eb8452f3b3, type: 2}
+  - {fileID: 11400000, guid: c3cb748d0b30eef4bb84cb61454f6e75, type: 2}
+  - {fileID: 11400000, guid: 6357e15e7e7480342a3887ad7521003e, type: 2}
+  - {fileID: 11400000, guid: 38eab38de34e6b44d9b4c56bde03567c, type: 2}
+  - {fileID: 11400000, guid: 12f85f1f5a1b1e846b9731b2cff5459d, type: 2}
+  - {fileID: 11400000, guid: 10e963f6d4e3ec4489ca2534883e0cf5, type: 2}

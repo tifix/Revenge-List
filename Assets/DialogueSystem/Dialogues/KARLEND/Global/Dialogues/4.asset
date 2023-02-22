@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 284e991c0cc122d4397cb723b29099f1, type: 3}
+  m_Name: 4
+  m_EditorClassIdentifier: 
+  <DialogueName>k__BackingField: 4
+  <SpeakerName>k__BackingField: Karl
+  <Text>k__BackingField: "Now that I think about it, maybe my barbeque wasn\u2019t
+    really that good.\nPeople around me just pretended it was, to make me happy."
+  <SpritePath>k__BackingField: Karl_Sad
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: Next Dialogue
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: c5e30ee5a7f99c4428d0d907e22b519e, type: 2}
+  <DialogueType>k__BackingField: 0
+  <IsStartingDialogue>k__BackingField: 0
