@@ -104,7 +104,7 @@ public class KarlBoss : MonoBehaviour
 
         else if(a.type == BossAttacks.ProjectileType.STRAIGHT)
         {
-            float zOffset = Random.Range(-1, 1);
+            float zOffset = Random.Range(-10, 10);
 
             GameObject temp = Instantiate<GameObject>(envelope, transform.position/* + new Vector3(0, 2, 0)*/, Quaternion.identity);    //previous spawn position spawned them underground and insta-despawned
             temp.GetComponent<BossProjectile>().SetSpeed(a.speed + 5);
@@ -112,6 +112,7 @@ public class KarlBoss : MonoBehaviour
             Vector3 dir = player.transform.position - temp.transform.position;
             dir.y = 0;
             dir.z += zOffset;
+            dir.x += zOffset;
             temp.GetComponent<BossProjectile>().SetDirection(dir.normalized);
         }
 
