@@ -10,12 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a99bef880a6146744aacc81d8da9e274, type: 3}
-  m_Name: FastProjectile
+  m_Name: Karl_BustSteakSlow
   m_EditorClassIdentifier: 
+  style: 1
   type: 0
   a: 0
   b: 0
-  damage: 1
-  speed: 1
-  distance: 1
-  fireRate: 1
+  c: 0
+  d: 0
+  e: 0
+  waitTime: 1
+  speed: 3
+  timeAlive: 10
+  amount: 5
+  delay: 1
+  speedModifier: 0

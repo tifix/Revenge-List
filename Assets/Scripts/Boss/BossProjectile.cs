@@ -7,7 +7,7 @@ public class BossProjectile : MonoBehaviour
     float speed = 1;
     float timeAlive = 5;
     float t = 0;
-    [Range(1,5),SerializeField]private float damage = 8;
+    [Range(1,50),SerializeField]private float damage = 8;
 
     public Vector3 dir = new Vector3(-1,0,0);
     public GameObject destroyVFX;

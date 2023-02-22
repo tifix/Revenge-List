@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1337283918968851370}
   - component: {fileID: 1337283918968851348}
   - component: {fileID: 1337283918968851371}
+  - component: {fileID: 7874526283309142096}
   m_Layer: 6
   m_Name: Shadow
   m_TagString: Untagged
@@ -25,9 +26,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1337283918968851369}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0.70710576, y: -0, z: -0, w: 0.70710784}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.2, z: 0.1}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1337283920656425531}
@@ -97,6 +98,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee23720c13a219943a55e912a18d40f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7874526283309142096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337283918968851369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78156ba966620594c8a534a126a0c725, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axis: {x: 0, y: 0, z: 1}
+  speed: 200
 --- !u!1 &1337283919670149635
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1337283919670149644}
   - component: {fileID: 1337283919670149645}
+  - component: {fileID: 7595796788122579925}
   m_Layer: 6
   m_Name: Sprite
   m_TagString: Untagged
@@ -181,6 +197,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7595796788122579925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337283919670149635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78156ba966620594c8a534a126a0c725, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axis: {x: 0, y: 0, z: 1}
+  speed: 200
 --- !u!1 &1337283920656425530
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,7 +238,7 @@ Transform:
   m_GameObject: {fileID: 1337283920656425530}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1337283919670149644}
@@ -228,7 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f78fc63bab133ea44ab21b8a7f2c1883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 8
+  damage: 10
   dir: {x: -1, y: 0, z: 0}
   destroyVFX: {fileID: 8083233970450910706, guid: d0db28c32d0b48448a3d53c23bc37c07, type: 3}
 --- !u!65 &3195007581981239477
