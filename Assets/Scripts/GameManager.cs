@@ -23,7 +23,11 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject); 
         }
         else Destroy(this);
-
+    }
+    private void Start()
+    {
+        GetCamera();
+        CamFollowPlayer();
     }
 
     // Update is called once per frame
@@ -88,6 +92,9 @@ public class GameManager : MonoBehaviour
         cam.Follow = FindObjectOfType<PlayerMovement>().transform;
         StartCoroutine(DecreaseCamSize(4));
     }
+
+    public void CameraInstantified() => GameManager.instance.GetCamera();
+
 
     public void Noise(float amplitude, float frequency)
     {
