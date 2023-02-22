@@ -115,13 +115,7 @@ public class UI : MonoBehaviour
         {
             txtSpeaker.text = NodeCurrent.SpeakerName;
             pageText = NodeCurrent.Text;
-            Sprite s = Resources.Load<Sprite>("DialogueSprites/" + NodeCurrent.SpritePath ) as Sprite;
-            if (s != null)
-            {
-                SetSpriteXLOther(s);
-                ShowSpriteXLOther();
-            }
-            if (s == null) HideSpriteXLOther();
+            SetBigSpriteForDialogue("DialogueSprites/" + NodeCurrent.SpritePath);
 
                 Debug.Log(pageText);
 
@@ -150,6 +144,8 @@ public class UI : MonoBehaviour
         runCoroutine = false;                                          //Disable once finished
         dialogueCur = null;
         boxTextDisplay.SetActive(false);
+        HideSpriteXLLilith();
+        HideSpriteXLOther();
 
         PlayerMovement.SetUnLockMovement();
     }
@@ -226,7 +222,30 @@ public class UI : MonoBehaviour
     }
 
 
-   
+   public Sprite SetBigSpriteForDialogue(string fileName) 
+   {
+        Sprite s = Resources.Load<Sprite>(fileName) as Sprite;
+        if (s != null)
+        {
+            if (fileName.Contains("Lil"))
+            {
+                Debug.Log("Sprite identified as Lilith");
+                SetSpriteXLLilith(s);
+                ShowSpriteXLLilith();
+            }
+            else
+            {
+                Debug.Log("Sprite identified as Other");
+                SetSpriteXLOther(s);
+                ShowSpriteXLOther();
+            }
+
+        }
+        if (s == null) { Debug.LogWarning("Could not find a sprite named: "+fileName+ " in the Resorces/DialogueSprites folder"); HideSpriteXLLilith(); HideSpriteXLOther(); } //Hide both if name is invalid
+
+        return null;
+   }
+
 
 
     #region buttons and element toggles
