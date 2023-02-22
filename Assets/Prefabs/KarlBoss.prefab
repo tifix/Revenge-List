@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3615865189927272333
 Transform:
   m_ObjectHideFlags: 0
@@ -36,7 +36,7 @@ Transform:
   - {fileID: 589742450778123349}
   - {fileID: 8133781382231593326}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3615865189927272334
 MonoBehaviour:
@@ -56,289 +56,43 @@ MonoBehaviour:
   gnome: {fileID: 1337283920656425530, guid: 9d223fbd625d2f64e844980bbb13131b, type: 3}
   fireWall: {fileID: 7954562019768154657}
   playerRadius: 2
-  phase1:
-  - myType: 0
-    waitTime: 0.5
-    speed: 3
-    timeAlive: 10
-  - myType: 0
-    waitTime: 0.5
-    speed: 3
-    timeAlive: 10
-  - myType: 0
-    waitTime: 0.5
-    speed: 3
-    timeAlive: 10
-  - myType: 0
-    waitTime: 0.5
-    speed: 3
-    timeAlive: 10
-  - myType: 0
-    waitTime: 0.5
-    speed: 3
-    timeAlive: 10
-  - myType: 0
-    waitTime: 0.5
-    speed: 3
-    timeAlive: 10
-  - myType: 0
-    waitTime: 1.5
-    speed: 4
-    timeAlive: 10
-  - myType: 0
-    waitTime: 0.1
-    speed: 4
-    timeAlive: 10
-  - myType: 0
-    waitTime: 0.1
-    speed: 4
-    timeAlive: 10
-  - myType: 0
-    waitTime: 0.1
-    speed: 4
-    timeAlive: 10
-  - myType: 0
-    waitTime: 1
-    speed: 5
-    timeAlive: 10
-  - myType: 0
-    waitTime: 0.1
-    speed: 5
-    timeAlive: 10
-  - myType: 0
-    waitTime: 0.1
-    speed: 5
-    timeAlive: 10
-  - myType: 0
-    waitTime: 0.1
-    speed: 5
-    timeAlive: 10
-  - myType: 0
-    waitTime: 0.1
-    speed: 5
-    timeAlive: 10
-  - myType: 0
-    waitTime: 0.1
-    speed: 5
-    timeAlive: 10
-  - myType: 0
-    waitTime: 1
-    speed: 5
-    timeAlive: 10
-  - myType: 0
-    waitTime: 0.5
-    speed: 5
-    timeAlive: 10
-  - myType: 0
-    waitTime: 0.5
-    speed: 5
-    timeAlive: 10
-  - myType: 0
-    waitTime: 0.5
-    speed: 5
-    timeAlive: 10
-  - myType: 0
-    waitTime: 0.5
-    speed: 5
-    timeAlive: 10
-  - myType: 0
-    waitTime: 0.5
-    speed: 5
-    timeAlive: 10
-  - myType: 0
-    waitTime: 0.5
-    speed: 5
-    timeAlive: 10
-  - myType: 0
-    waitTime: 0.5
-    speed: 5
-    timeAlive: 10
-  - myType: 0
-    waitTime: 0.1
-    speed: 7
-    timeAlive: 10
-  - myType: 0
-    waitTime: 0.1
-    speed: 7
-    timeAlive: 10
-  - myType: 0
-    waitTime: 0.1
-    speed: 7
-    timeAlive: 10
-  - myType: 0
-    waitTime: 0.1
-    speed: 7
-    timeAlive: 10
-  - myType: 0
-    waitTime: 0.1
-    speed: 7
-    timeAlive: 10
-  - myType: 0
-    waitTime: 0.1
-    speed: 7
-    timeAlive: 10
-  phase2:
-  - myType: 1
-    waitTime: 0.5
-    speed: 1
-    timeAlive: 5
-  - myType: 1
-    waitTime: 0.5
-    speed: 2
-    timeAlive: 5
-  - myType: 1
-    waitTime: 0.5
-    speed: 1
-    timeAlive: 5
-  - myType: 1
-    waitTime: 0.5
-    speed: 3
-    timeAlive: 5
-  - myType: 1
-    waitTime: 0.5
-    speed: 2
-    timeAlive: 5
-  - myType: 1
-    waitTime: 1.5
-    speed: 3
-    timeAlive: 5
-  - myType: 1
-    waitTime: 0.2
-    speed: 3
-    timeAlive: 5
-  - myType: 1
-    waitTime: 0.2
-    speed: 3
-    timeAlive: 5
-  - myType: 1
-    waitTime: 0.2
-    speed: 3
-    timeAlive: 5
-  - myType: 1
-    waitTime: 0.2
-    speed: 3
-    timeAlive: 5
-  - myType: 1
-    waitTime: 0.2
-    speed: 3
-    timeAlive: 5
-  - myType: 1
-    waitTime: 1
-    speed: 5
-    timeAlive: 5
-  - myType: 1
-    waitTime: 0.6
-    speed: 5
-    timeAlive: 5
-  - myType: 1
-    waitTime: 0.4
-    speed: 5
-    timeAlive: 5
-  - myType: 1
-    waitTime: 0.2
-    speed: 5
-    timeAlive: 5
-  - myType: 1
-    waitTime: 0.4
-    speed: 5
-    timeAlive: 5
-  - myType: 1
-    waitTime: 1
-    speed: 7
-    timeAlive: 5
-  - myType: 1
-    waitTime: 0.1
-    speed: 7
-    timeAlive: 5
-  - myType: 1
-    waitTime: 0.1
-    speed: 7
-    timeAlive: 5
-  - myType: 1
-    waitTime: 0.1
-    speed: 7
-    timeAlive: 5
-  - myType: 1
-    waitTime: 0.1
-    speed: 7
-    timeAlive: 5
-  - myType: 1
-    waitTime: 0.1
-    speed: 7
-    timeAlive: 5
-  - myType: 1
-    waitTime: 0.5
-    speed: 7
-    timeAlive: 5
-  - myType: 1
-    waitTime: 0.1
-    speed: 7
-    timeAlive: 5
-  - myType: 1
-    waitTime: 0.1
-    speed: 7
-    timeAlive: 5
-  - myType: 1
-    waitTime: 0.1
-    speed: 7
-    timeAlive: 5
-  - myType: 1
-    waitTime: 0.1
-    speed: 7
-    timeAlive: 5
-  - myType: 1
-    waitTime: 0.1
-    speed: 7
-    timeAlive: 5
-  phase3:
-  - myType: 0
-    waitTime: 0.5
-    speed: 1
-    timeAlive: 10
-  - myType: 1
-    waitTime: 0.5
-    speed: 1
-    timeAlive: 5
-  - myType: 0
-    waitTime: 0.5
-    speed: 1
-    timeAlive: 10
-  - myType: 1
-    waitTime: 0.5
-    speed: 2
-    timeAlive: 5
-  - myType: 0
-    waitTime: 0.5
-    speed: 1
-    timeAlive: 10
-  - myType: 1
-    waitTime: 0.5
-    speed: 1
-    timeAlive: 5
-  - myType: 0
-    waitTime: 0.5
-    speed: 1
-    timeAlive: 10
-  - myType: 1
-    waitTime: 0.5
-    speed: 3
-    timeAlive: 5
-  - myType: 0
-    waitTime: 0.5
-    speed: 1
-    timeAlive: 10
-  - myType: 1
-    waitTime: 0.5
-    speed: 2
-    timeAlive: 5
-  - myType: 0
-    waitTime: 0.5
-    speed: 1
-    timeAlive: 10
-  - myType: 2
-    waitTime: 0.1
-    speed: 10
-    timeAlive: 10
+  phases:
+  - attacks:
+    - {fileID: 11400000, guid: e8fc09fcea783204c90e119069f47b7a, type: 2}
+    - {fileID: 11400000, guid: 58cdb0da6873caa4586f5a02caa897e2, type: 2}
+    - {fileID: 11400000, guid: 216e4ce9f9f2e7245bc2b1c8465ece2c, type: 2}
+    - {fileID: 11400000, guid: 58cdb0da6873caa4586f5a02caa897e2, type: 2}
+    - {fileID: 11400000, guid: 3eb29023dcf83804299babc3164ea252, type: 2}
+    - {fileID: 11400000, guid: 58cdb0da6873caa4586f5a02caa897e2, type: 2}
+    - {fileID: 11400000, guid: 216e4ce9f9f2e7245bc2b1c8465ece2c, type: 2}
+    - {fileID: 11400000, guid: 58cdb0da6873caa4586f5a02caa897e2, type: 2}
+    - {fileID: 11400000, guid: 216e4ce9f9f2e7245bc2b1c8465ece2c, type: 2}
+    - {fileID: 11400000, guid: 216e4ce9f9f2e7245bc2b1c8465ece2c, type: 2}
+    - {fileID: 11400000, guid: 3eb29023dcf83804299babc3164ea252, type: 2}
+  - attacks:
+    - {fileID: 11400000, guid: 622abf3638b599641a4a34fcc09f30c7, type: 2}
+    - {fileID: 11400000, guid: a15a55d19f62ba74e9d42648f7847aa3, type: 2}
+    - {fileID: 11400000, guid: f29460c219e796942bea76ef423c5df7, type: 2}
+    - {fileID: 11400000, guid: a15a55d19f62ba74e9d42648f7847aa3, type: 2}
+    - {fileID: 11400000, guid: f4cb0dc149225064f819f24ac6bdb99a, type: 2}
+    - {fileID: 11400000, guid: f29460c219e796942bea76ef423c5df7, type: 2}
+    - {fileID: 11400000, guid: a15a55d19f62ba74e9d42648f7847aa3, type: 2}
+    - {fileID: 11400000, guid: a15a55d19f62ba74e9d42648f7847aa3, type: 2}
+    - {fileID: 11400000, guid: f4cb0dc149225064f819f24ac6bdb99a, type: 2}
+  - attacks:
+    - {fileID: 11400000, guid: e8fc09fcea783204c90e119069f47b7a, type: 2}
+    - {fileID: 11400000, guid: f4cb0dc149225064f819f24ac6bdb99a, type: 2}
+    - {fileID: 11400000, guid: a15a55d19f62ba74e9d42648f7847aa3, type: 2}
+    - {fileID: 11400000, guid: 58cdb0da6873caa4586f5a02caa897e2, type: 2}
+    - {fileID: 11400000, guid: 216e4ce9f9f2e7245bc2b1c8465ece2c, type: 2}
+    - {fileID: 11400000, guid: f29460c219e796942bea76ef423c5df7, type: 2}
+    - {fileID: 11400000, guid: 216e4ce9f9f2e7245bc2b1c8465ece2c, type: 2}
+    - {fileID: 11400000, guid: a15a55d19f62ba74e9d42648f7847aa3, type: 2}
+    - {fileID: 11400000, guid: 3eb29023dcf83804299babc3164ea252, type: 2}
+    - {fileID: 11400000, guid: a15a55d19f62ba74e9d42648f7847aa3, type: 2}
+    - {fileID: 11400000, guid: 58cdb0da6873caa4586f5a02caa897e2, type: 2}
+    - {fileID: 11400000, guid: f29460c219e796942bea76ef423c5df7, type: 2}
+    - {fileID: 11400000, guid: 58cdb0da6873caa4586f5a02caa897e2, type: 2}
   phase_QTEs:
   - {fileID: 11400000, guid: bbfd62af9cfd19b4b94847ae0d5f913c, type: 2}
   - {fileID: 11400000, guid: b10ac846c951d9c4cbdf8361c9c0bf15, type: 2}
@@ -582,7 +336,7 @@ PrefabInstance:
     - target: {fileID: 4814028220110693398, guid: e00c074aaf2a8be4cbc9496d99af2ae7, type: 3}
       propertyPath: preUseDialogue
       value: 
-      objectReference: {fileID: 11400000, guid: 458065f4a0100c847ae51a2bf1d3d18b, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4814028220110693398, guid: e00c074aaf2a8be4cbc9496d99af2ae7, type: 3}
       propertyPath: isDisabledOnUse
       value: 1
@@ -590,7 +344,7 @@ PrefabInstance:
     - target: {fileID: 4814028220110693398, guid: e00c074aaf2a8be4cbc9496d99af2ae7, type: 3}
       propertyPath: postUsedialogue
       value: 
-      objectReference: {fileID: 11400000, guid: ca3d8d854e7183149b9698b3b8d97ac1, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4814028220110693398, guid: e00c074aaf2a8be4cbc9496d99af2ae7, type: 3}
       propertyPath: waitAfterInteract
       value: 0.1
