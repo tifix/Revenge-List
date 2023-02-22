@@ -17,9 +17,14 @@ public class bossHealth : ObjectScript
         UI.instance.BossInitialiseHealthBar(this);
     }
 
-    protected override void Update() 
+    public override void ApplyDamage(float _value)
     {
-        if (health <= 0.0f)OnShieldDepleted(); 
+        health -= _value;
+
+        if (health <= 0.0f)
+        {
+            OnShieldDepleted();
+        }
     }
 
     public void OnShieldDepleted() 

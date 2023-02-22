@@ -1,3 +1,4 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,10 +12,23 @@ public class GameManager : MonoBehaviour
     [SerializeField] private bool isGameWon = false;
     [SerializeField] private bool isGameLost = false;
     [SerializeField] public float DeathReloadTime;                                      //time in seconds(realtime) before menu reloads on game over.
+    CinemachineVirtualCamera cam;
+    CinemachineBasicMultiChannelPerlin perlin;
 
     public void Awake()
     {
-        if (instance == null) { instance = this; DontDestroyOnLoad(gameObject); }
+        if (instance == null) 
+        { 
+            instance = this; 
+            DontDestroyOnLoad(gameObject); 
+
+            cam = FindObjectOfType<CinemachineVirtualCamera>(); 
+            cam.m_Lens.OrthographicSize = 4;
+
+            perlin = cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+            perlin.m_AmplitudeGain = 0;
+            perlin.m_FrequencyGain = 0;
+        }
         else Destroy(this);
     }
 
@@ -58,6 +72,54 @@ public class GameManager : MonoBehaviour
         if (isGameLost) Time.timeScale = 0;
         else Time.timeScale = 1;
         UI.instance.EnableLostScreen();
+    }
+
+    public void LockCamera(Transform pos)
+    {
+        cam.Follow = pos;
+        StartCoroutine(IncreaseCamSize(5));
+    }
+
+    public void CamFollowPlayer()
+    {
+        cam.Follow = FindObjectOfType<PlayerMovement>().transform;
+        StartCoroutine(DecreaseCamSize(4));
+    }
+
+    public void Noise(float amplitude, float frequency)
+    {
+        perlin.m_AmplitudeGain = amplitude;
+        perlin.m_FrequencyGain = frequency;
+    }
+
+    public void CallShake(float shakeIntensity, float shakeTiming)
+    {
+        StartCoroutine(ScreenShake(shakeIntensity, shakeTiming));
+    }
+
+    IEnumerator ScreenShake(float shakeIntensity = 5f, float shakeTiming = 0.5f)
+    {
+        Noise(1, shakeIntensity);
+        yield return new WaitForSeconds(shakeTiming);
+        Noise(0, 0);
+    }
+
+    IEnumerator IncreaseCamSize(int x)
+    {
+        while(cam.m_Lens.OrthographicSize < x)
+        {
+            cam.m_Lens.OrthographicSize += 10 * Time.fixedDeltaTime;
+            yield return null;
+        }
+    }
+
+    IEnumerator DecreaseCamSize(int x)
+    {
+        while (cam.m_Lens.OrthographicSize > x)
+        {
+            cam.m_Lens.OrthographicSize -= 10 * Time.fixedDeltaTime;
+            yield return null;
+        }
     }
 
     //I recommend looking into async loading of scenes, this would allow us to have a scene for transitioning (loading screen)

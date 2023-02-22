@@ -48,6 +48,7 @@ public class KarlBoss : MonoBehaviour
             attackTimer += Time.deltaTime;
             if (attackTimer >= phases[currentPhase].attacks[currentAttack].waitTime)
             {
+                GameManager.instance.CallShake(5, 0.5f);
                 //Burst attack
                 if (phases[currentPhase].attacks[currentAttack].style == BossAttacks.ProjectileStyle.BURST)
                 {

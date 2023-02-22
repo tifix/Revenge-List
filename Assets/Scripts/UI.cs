@@ -157,8 +157,10 @@ public class UI : MonoBehaviour
         if (bossHealth.coreHealth < 1)  //Hide healthbars upon boss death
         {
             Debug.LogWarning("Boss defeated!");
+            GameManager.instance.CamFollowPlayer();
             bossHealth.gameObject.SetActive(false);
             boxBossBar.SetActive(false);
+            
         }
                                         //Refill shieldbar and main health
         bossHealth.isCoreExposed = false;
