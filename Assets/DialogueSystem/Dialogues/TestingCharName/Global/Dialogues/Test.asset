@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Test
   m_EditorClassIdentifier: 
   <DialogueName>k__BackingField: Test
-  <SpeakerName>k__BackingField: haiii
-  <Text>k__BackingField: speaker 1
+  <SpeakerName>k__BackingField: speaker 1
+  <Text>k__BackingField: haiii
+  <SpritePath>k__BackingField: Neighbour_Sad
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 47c9b74f07280ba4e9c41dd5676b38a1, type: 2}

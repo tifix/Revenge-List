@@ -114,7 +114,15 @@ public class UI : MonoBehaviour
         {
             txtSpeaker.text = NodeCurrent.SpeakerName;
             pageText = NodeCurrent.Text;
-            Debug.Log(pageText);
+            Sprite s = Resources.Load<Sprite>("DialogueSprites/" + NodeCurrent.SpritePath ) as Sprite;
+            if (s != null)
+            {
+                SetSpriteXLOther(s);
+                ShowSpriteXLOther();
+            }
+            if (s == null) HideSpriteXLOther();
+
+                Debug.Log(pageText);
 
             //Slowly display the page text
             for (int j = 0; j < (pageText.Length + 1); j++)
@@ -242,6 +250,9 @@ public class UI : MonoBehaviour
     public void SetSpriteXLOther(Sprite s) { XLPortraitOther.gameObject.SetActive(true); XLPortraitOther.sprite = s; }
     public void HideSpriteXLLilith() { XLPortraitLilith.gameObject.SetActive(false); }
     public void HideSpriteXLOther() { XLPortraitOther.gameObject.SetActive(false); }
+    public void ShowSpriteXLLilith() { XLPortraitLilith.gameObject.SetActive(true); }
+    public void ShowSpriteXLOther() { XLPortraitOther.gameObject.SetActive(true); }
+
 
     #endregion
 }
