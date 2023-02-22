@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 1
   m_EditorClassIdentifier: 
   <DialogueName>k__BackingField: 1
-  <Text>k__BackingField: Dialogue text.
+  <Text>k__BackingField: iujgbwqeiduhqowihdqwd
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Dialogue
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: e9bc36f099a07f84890f06e51efd9bbc, type: 2}
