@@ -43,7 +43,7 @@
 
 .ds-node_filename-textfield > .unity-text-field_input
 {
-	max-width: var(--ds-metrics-window-pixels-1000);
+	max-width: var(--ds-metrics-window-pixels-600);
 	margin: var(--ds-metrics-window-pixels-4);
 	padding: var(--ds-metrics-window-pixels-25);
 }
@@ -54,11 +54,12 @@
 	padding: var(--ds-metrics-window-pixels-4);
 }
 
-.ds-node_choice-textfield > .unity-text-field_input
+.ds-node_choice-textfield /*> .unity-text-field_input*/
 {
+	margin: var(--ds-metrics-window-pixels-4);
 	font-size: var(--ds-metrics-window-pixels-11);
-	height: var(--ds-metrics-window-pixels-35);
-	max-width: var(--ds-metrics-window-pixels-1000);
+	height: var(--ds-metrics-window-pixels-16);
+	max-width: var(--ds-metrics-window-pixels-240);
 	min-width: var(--ds-metrics-window-pixels-0);
 }
 
