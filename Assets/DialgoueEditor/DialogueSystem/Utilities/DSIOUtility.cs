@@ -139,7 +139,7 @@ namespace DS.Utilities
         #region Nodes
         private static void SaveNodes(DSGraphSaveDataSO graphData, DSDialogueContainerSO dialogueContainer)
         {
-            SerializableDictionary<string, List<string>> groupedNodeNames = new SerializableDictionary<string, List<string>>();
+            Dictionary<string, List<string>> groupedNodeNames = new Dictionary<string, List<string>>();
             List<string> ungroupedNodeNames = new List<string>();
             foreach(DSNode node in nodes)
             {
@@ -286,7 +286,7 @@ namespace DS.Utilities
                 }
             }
         }
-        private static void UpdateOldGroupedNodes(SerializableDictionary<string, List<string>> currentGroupedNodeNames, DSGraphSaveDataSO graphData)
+        private static void UpdateOldGroupedNodes(Dictionary<string, List<string>> currentGroupedNodeNames, DSGraphSaveDataSO graphData)
         {
             if(graphData.OldGroupNodeNames != null && graphData.OldGroupNodeNames.Count != 0)
             {
@@ -305,7 +305,7 @@ namespace DS.Utilities
                 }
             }
 
-            graphData.OldGroupNodeNames = new SerializableDictionary<string, List<string>>(currentGroupedNodeNames);
+            graphData.OldGroupNodeNames = new Dictionary<string, List<string>>(currentGroupedNodeNames);
         }
         private static void UpdateOldUngroupedNodes(List<string> currentUngroupedNodeNames, DSGraphSaveDataSO graphData)
         {

@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -18,9 +17,9 @@ namespace DS.Windows
         private DSEditorWindow editorWindow;
         private DSSearchWindow searchWindow;
 
-        private SerializableDictionary<string, DSNodeErrorData> ungroupedNodes;
-        private SerializableDictionary<string, DSGroupErrorData> groups;
-        private SerializableDictionary<Group, SerializableDictionary<string, DSNodeErrorData>> groupedNodes;
+        private Dictionary<string, DSNodeErrorData> ungroupedNodes;
+        private Dictionary<string, DSGroupErrorData> groups;
+        private Dictionary<Group, Dictionary<string, DSNodeErrorData>> groupedNodes;
 
         private int nameErrorsAmount;
 
@@ -54,9 +53,9 @@ namespace DS.Windows
         {
             editorWindow = dsEditorWindow;
 
-            ungroupedNodes = new SerializableDictionary<string, DSNodeErrorData>();
-            groups = new SerializableDictionary<string, DSGroupErrorData>();
-            groupedNodes = new SerializableDictionary<Group, SerializableDictionary<string, DSNodeErrorData>>();
+            ungroupedNodes = new Dictionary<string, DSNodeErrorData>();
+            groups = new Dictionary<string, DSGroupErrorData>();
+            groupedNodes = new Dictionary<Group, Dictionary<string, DSNodeErrorData>>();
 
             AddManipulators();
 
@@ -500,7 +499,7 @@ namespace DS.Windows
 
             if (!groupedNodes.ContainsKey(group))
             {
-                groupedNodes.Add(group, new SerializableDictionary<string, DSNodeErrorData>());
+                groupedNodes.Add(group, new Dictionary<string, DSNodeErrorData>());
             }
 
             if (!groupedNodes[group].ContainsKey(nodeName))

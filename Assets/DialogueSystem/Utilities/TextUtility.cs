@@ -29,14 +29,14 @@ public static class TextUtility
             case '\u000C':
             case '\u000D':
             case '\u0085':
-            {
-                return true;
-            }
+                {
+                    return true;
+                }
 
             default:
-            {
-                return false;
-            }
+                {
+                    return false;
+                }
         }
     }
 
@@ -65,27 +65,27 @@ public static class TextUtility
         return new string(textCharacters, 0, currentWhitespacelessTextLength);
     }
 
-	// See here for alternatives: https://stackoverflow.com/questions/3210393/how-do-i-remove-all-non-alphanumeric-characters-from-a-string-except-dash
-	public static string RemoveSpecialCharacters(this string text)
-	{
-		int textLength = text.Length;
+    // See here for alternatives: https://stackoverflow.com/questions/3210393/how-do-i-remove-all-non-alphanumeric-characters-from-a-string-except-dash
+    public static string RemoveSpecialCharacters(this string text)
+    {
+        int textLength = text.Length;
 
         char[] textCharacters = text.ToCharArray();
 
-		int currentWhitespacelessTextLength = 0;
+        int currentWhitespacelessTextLength = 0;
 
-		for (int currentCharacterIndex = 0; currentCharacterIndex < textLength; ++currentCharacterIndex)
-		{
-			char currentTextCharacter = textCharacters[currentCharacterIndex];
+        for (int currentCharacterIndex = 0; currentCharacterIndex < textLength; ++currentCharacterIndex)
+        {
+            char currentTextCharacter = textCharacters[currentCharacterIndex];
 
-			if (!char.IsLetterOrDigit(currentTextCharacter) && !currentTextCharacter.IsWhitespace())
-			{
-				continue;
-			}
+            if (!char.IsLetterOrDigit(currentTextCharacter) && !currentTextCharacter.IsWhitespace())
+            {
+                continue;
+            }
 
-			textCharacters[currentWhitespacelessTextLength++] = currentTextCharacter;
-		}
+            textCharacters[currentWhitespacelessTextLength++] = currentTextCharacter;
+        }
 
-		return new string(textCharacters, 0, currentWhitespacelessTextLength);
-	}
+        return new string(textCharacters, 0, currentWhitespacelessTextLength);
+    }
 }

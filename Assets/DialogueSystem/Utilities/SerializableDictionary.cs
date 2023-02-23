@@ -64,7 +64,7 @@ public class SerializableDictionary<TKey, TValue> : SerializableDictionary, IDic
 
         for (int i = 0; i < numEntries; ++i)
         {
-            result[list[i].Key] = (uint) i;
+            result[list[i].Key] = (uint)i;
         }
 
         return result;
@@ -83,16 +83,16 @@ public class SerializableDictionary<TKey, TValue> : SerializableDictionary, IDic
     #region IDictionary
     public TValue this[TKey key]
     {
-        get => list[(int) KeyPositions[key]].Value;
+        get => list[(int)KeyPositions[key]].Value;
         set
         {
             if (KeyPositions.TryGetValue(key, out uint index))
             {
-                list[(int) index].SetValue(value);
+                list[(int)index].SetValue(value);
             }
             else
             {
-                KeyPositions[key] = (uint) list.Count;
+                KeyPositions[key] = (uint)list.Count;
 
                 list.Add(new SerializableKeyValuePair(key, value));
             }
@@ -110,7 +110,7 @@ public class SerializableDictionary<TKey, TValue> : SerializableDictionary, IDic
         }
         else
         {
-            KeyPositions[key] = (uint) list.Count;
+            KeyPositions[key] = (uint)list.Count;
 
             list.Add(new SerializableKeyValuePair(key, value));
         }
@@ -126,13 +126,13 @@ public class SerializableDictionary<TKey, TValue> : SerializableDictionary, IDic
 
             kp.Remove(key);
 
-            list.RemoveAt((int) index);
+            list.RemoveAt((int)index);
 
             int numEntries = list.Count;
 
             for (uint i = index; i < numEntries; i++)
             {
-                kp[list[(int) i].Key] = i;
+                kp[list[(int)i].Key] = i;
             }
 
             return true;
@@ -145,13 +145,13 @@ public class SerializableDictionary<TKey, TValue> : SerializableDictionary, IDic
     {
         if (KeyPositions.TryGetValue(key, out uint index))
         {
-            value = list[(int) index].Value;
+            value = list[(int)index].Value;
 
             return true;
         }
 
         value = default;
-            
+
         return false;
     }
     #endregion

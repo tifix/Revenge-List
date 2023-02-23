@@ -1,9 +1,7 @@
-using System;
 using System.IO;
 using UnityEditor;
-using UnityEngine;
-using UnityEngine.UIElements;
 using UnityEditor.UIElements;
+using UnityEngine.UIElements;
 
 namespace DS.Windows
 {
@@ -20,8 +18,9 @@ namespace DS.Windows
         [MenuItem("Window/DS/Dialogue Graph")]
         public static void Open()
         {
-            DSEditorWindow wnd = GetWindow<DSEditorWindow>();
-            wnd.titleContent = new GUIContent("Dialogue Graph");
+            //DSEditorWindow wnd = GetWindow<DSEditorWindow>();
+            //wnd.titleContent = new GUIContent("Dialogue Graph");
+            GetWindow<DSEditorWindow>("Dialogue Graph");
         }
 
         private void OnEnable()
