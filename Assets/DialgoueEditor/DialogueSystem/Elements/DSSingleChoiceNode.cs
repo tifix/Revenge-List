@@ -1,3 +1,4 @@
+#if (UNITY_EDITOR) 
 using UnityEngine;
 using Unity.VisualScripting.InputSystem;
 using UnityEditor.Experimental.GraphView;
@@ -47,3 +48,4 @@ namespace DS.Elements
     }
 }
 
+#endif
