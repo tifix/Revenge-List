@@ -26,7 +26,6 @@ public class Inter_TextTrigger : Interactible
         isRunning = true;
 
         //Show the pre dialogue and wait for it to finish before proceeding
-        if (preUseDialogue != null) UI.instance.Show(preUseDialogue, isPausedWhileShowingA);
 
         yield return new WaitForSeconds(waitAfterPreDialogue);
         while (UI.instance.runCoroutine == true) yield return new WaitForEndOfFrame();

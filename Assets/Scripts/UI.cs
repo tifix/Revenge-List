@@ -1,6 +1,4 @@
-﻿using DS.Data.Save;
-using DS.Utilities;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -12,7 +10,6 @@ public class UI : MonoBehaviour
     Controls input;
     public static UI instance;                                                                      //globally accessible reference to this script to remotely invoke it's public methods
     
-    [Tooltip("Drop Dialogue Data here to be displayed")] public DSGraphSaveDataSO dialogueCur;               //Dialogue data to be displayed
     [Space, Header("Typing settings")]
     [Tooltip("What part of the dialogue is displayed"), Range(0, 99)] public int txtPageNr = 0;     //Which chunk / page / part of dialogue is currently displayed or being typed out
     [SerializeField] private bool isWaiting = false;                                                //is the dialogue paused after a page is completelly written
@@ -46,8 +43,6 @@ public class UI : MonoBehaviour
         input = new Controls();                         //Initialising inputs
         input.Menu.Pause.performed += InputPause;
         input.Menu.Pause.Enable();
-        input.Menu.Confirm.performed += ForwardDialogue;
-        input.Menu.Confirm.Enable();
     }
     public void Start()
     {
@@ -59,7 +54,6 @@ public class UI : MonoBehaviour
 
     public void OnDestroy()
     {
-        input.Menu.Confirm.performed -= ForwardDialogue;
         input.Menu.Pause.performed -= InputPause;
         GameManager.instance.SetPause(false);                  //ensuring the game is not locked in a permanent pause state upon exiting while paused
     }
@@ -69,93 +63,6 @@ public class UI : MonoBehaviour
     {
         UpdateHealthDisplays();
     }
-    #region dialogue-related
-
-    public void ForwardDialogue(InputAction.CallbackContext obj)        //advancing the dialogue - next page if finished, fast forwarding otherwise.
-    {
-        if (dialogueCur != null)
-        {
-            if (isWaiting) { txtPageNr++; isWaiting = false; }
-            else runCoroutine = false;
-        }
-    }
-
-    //Probably need a version that doesn't lock the movement and/or stops time (actually use pauseWhileRunning) - AV
-    protected IEnumerator Typer(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning) //typing the text over time
-    {
-        //Debug.Log("Starting Display of "+_dialogue.textBody[0]);
-        
-        PlayerMovement.instance.SetLockMovement();
-        
-        dialogueCur = _dialogue;
-        txtPageNr = 0;      //page iterator
-        Time.timeScale = 0;
-
-        //retrieve START node
-        DSNodeSaveData NodeCurrent = null;
-        foreach (DSNodeSaveData n in dialogueCur.Nodes)
-        {
-            if (n.isStartNode) 
-            {
-                NodeCurrent = n;
-                Debug.Log("start node found! " + n.Name);
-                break;
-            } 
-        }
-        if (NodeCurrent == null) Debug.LogWarning("No start node found!");
-
-        while(true) //Main dialogue loop - repeat until the next one has no children
-        {
-            txtSpeaker.text = NodeCurrent.SpeakerName;
-            pageText = NodeCurrent.Text;
-            SetBigSpriteForDialogue("DialogueSprites/" + NodeCurrent.SpritePath);
-
-                Debug.Log(pageText);
-
-            //Slowly display the page text
-            for (int j = 0; j < (pageText.Length + 1); j++)
-            {
-                txtMain.text = pageText.Substring(0, j);               //slice the text 
-                yield return new WaitForSecondsRealtime(typingWait);
-                if (!runCoroutine) break;
-            }
-            txtMain.text = pageText;
-            isWaiting = true;
-            while (isWaiting == true) yield return null;
-
-            //Final node detection - break the loop if the node has no children
-            try 
-            {
-                if (string.IsNullOrEmpty(NodeCurrent.ChildIDs[0])) { Debug.LogWarning("End of dialogue stream reached"); break; }
-                NodeCurrent = DSIOUtility.FindSaveDataID(NodeCurrent.ChildIDs[0], _dialogue);
-            }
-            catch {Debug.LogWarning("End of dialogue stream reached"); break;  }
-        }
-
-        yield return 1;
-        Time.timeScale = 1;
-        runCoroutine = false;                                          //Disable once finished
-        dialogueCur = null;
-        boxTextDisplay.SetActive(false);
-        HideSpriteXLLilith();
-        HideSpriteXLOther();
-
-        PlayerMovement.instance.SetUnLockMovement();
-    }
-    public void Show(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning)                            //Call this with a dialogue structure to display it!
-    {
-        boxTextDisplay.SetActive(true);
-
-        Debug.Log("initialising text");
-        if (!runCoroutine)
-        {
-            StartCoroutine(Typer(_dialogue,pauseWhileRunning));
-            runCoroutine = true;
-        }
-    }
-    public void Show(DSGraphSaveDataSO _dialogue) => Show(_dialogue, false); //by default - pause world time while showing dialogue
-
-    #endregion
 
     //Some values seem unnecessary to update each frame ie. the max values
     //Might be useful to call player and boss separately only when taking damage - AV
