@@ -34,10 +34,12 @@ public class KarlBoss : MonoBehaviour
 
     PlayerMovement player;
     private Vector3 knockbackPosition = Vector3.zero; //to avoid player spam-attacking when behind the firewall, knock the player behind the firewall;
-
+    [SerializeField]
+    Transform camCenter;
     private void OnEnable()
     {
         player = FindObjectOfType<PlayerMovement>();
+        knockbackPosition = new Vector3(camCenter.position.x, player.transform.position.y, camCenter.position.z);
         StartParticles();
     }
 
@@ -126,14 +128,13 @@ public class KarlBoss : MonoBehaviour
 
     public void EndPhase()
     {
-        RecordPosition();   //records player position so we can knock them away from spamming the boss as soon as the QTE ends
         ChangeAttack();
         StopParticles();
     }
 
     public void NextPhase()
     {
-        KnockBackToPosition(2f);    
+        StartCoroutine(Woosh(1f)); //Knocks the player back into their position when the phase attacks ended right after going out of QTE 
         currentAttack = 0;
         currentPhase++;
         ChangeAttack();
@@ -161,27 +162,20 @@ public class KarlBoss : MonoBehaviour
         fireWall.SetActive(true);
     }
 
-
     #region post QTE knockback
-    public void RecordPosition() 
-    {
-        knockbackPosition = player.transform.position;
-    }
-    public void KnockBackToPosition(float duration)   //Knocks the player back into their position when the phase attacks ended right after going out of QTE 
-    {
-        StartCoroutine(Woosh(duration));
-    }
     public IEnumerator Woosh(float duration) 
     {
         Vector3 init = player.transform.position;
         float progress = 0;
         while (progress < 1) 
         {
+            player.SetLockMovement();
             player.GetComponent<Collider>().enabled = false;
             yield return new WaitForFixedUpdate();
             player.transform.position = Vector3.Lerp(init, knockbackPosition, progress);
             progress += Time.fixedDeltaTime/ duration;
         }
+        player.SetUnLockMovement();
         player.GetComponent<Collider>().enabled = true;
     }
     #endregion
