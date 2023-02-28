@@ -13,10 +13,12 @@ public class SpriteTrail : MonoBehaviour
     public bool useTrail { get; set; }
 
     public int clonesPerSec = 10;
+    public Color colourOverride = Color.white;
     [Tooltip("Size decrement overime")]
     public Vector3 scaleOverTime = Vector3.one;
     [Tooltip("Colour drop overime")]
     public Color colourOverTime = Color.white;
+    public float fadeSpeed = 1.0f;
 
     void Update()
     {
@@ -24,7 +26,7 @@ public class SpriteTrail : MonoBehaviour
         {
             for (int i = 0; i < clones.Count; i++)
             {
-                clones[i].color -= colourOverTime * Time.deltaTime;
+                clones[i].color -= colourOverTime * fadeSpeed * Time.deltaTime;
                 clones[i].transform.localScale -= scaleOverTime * Time.deltaTime;
                 if (clones[i].color.a<=0f || clones[i].transform.localScale.x <= 0f)
                 {
@@ -54,18 +56,19 @@ public class SpriteTrail : MonoBehaviour
         while(t > 0)
         {
             GameObject obj = new GameObject("CloneTrail");
-            obj.transform.position = parentPos.position;
+            obj.transform.position = parentPos.position + new Vector3(0, sr.sprite.vertices[0].y / 2, 0);
             obj.transform.localScale = parentPos.localScale;
 
             SpriteRenderer tempSR = obj.AddComponent<SpriteRenderer>();
-            tempSR.sprite = sr.sprite;
+            tempSR.sprite = Sprite.Create(sr.sprite.texture, sr.sprite.textureRect, new Vector2(0.5f, 0), sr.sprite.pixelsPerUnit);
+            tempSR.color = colourOverride;
             tempSR.flipX = sr.flipX;
             tempSR.flipY = sr.flipY;
             tempSR.sortingOrder = sr.sortingOrder - 1;
 
             clones.Add(tempSR);
-            t -= Time.deltaTime;
             yield return new WaitForSeconds(duration / clonesPerSec);
+            t -= Time.deltaTime;
         }
         Debug.Log("Stop");
         useTrail = false;
