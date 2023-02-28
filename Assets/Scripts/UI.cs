@@ -85,7 +85,7 @@ public class UI : MonoBehaviour
     {
         //Debug.Log("Starting Display of "+_dialogue.textBody[0]);
         
-        PlayerMovement.SetLockMovement();
+        PlayerMovement.instance.SetLockMovement();
         
         dialogueCur = _dialogue;
         txtPageNr = 0;      //page iterator
@@ -140,7 +140,7 @@ public class UI : MonoBehaviour
         HideSpriteXLLilith();
         HideSpriteXLOther();
 
-        PlayerMovement.SetUnLockMovement();
+        PlayerMovement.instance.SetUnLockMovement();
     }
     public void Show(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning)                            //Call this with a dialogue structure to display it!
     {
@@ -249,9 +249,9 @@ public class UI : MonoBehaviour
     public void ToggleHealthbar() { boxHealthbar.SetActive(!boxHealthbar.activeInHierarchy); }                              //Toggle the player healthbar display
     public void ToggleQTEScreen()                                                                                           //Toggle QTE screen and freeze player movement
     {
-        if(!boxQTE.activeInHierarchy) PlayerMovement.SetLockMovement();
-        else { PlayerMovement.SetUnLockMovement(); }
-
+        if(!boxQTE.activeSelf) PlayerMovement.instance.SetLockMovement();
+        else { PlayerMovement.instance.SetUnLockMovement(); }
+        
         boxQTE.SetActive(!boxQTE.activeInHierarchy); 
     }
     public void EnableLostScreen()
