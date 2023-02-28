@@ -20,7 +20,7 @@ public class QTEManager : MonoBehaviour
     int beatCounter;
     int comboCount;
     int correctHits;
-
+    [SerializeField] private Sprite skullPerfect, skullMiss;
     public GameObject skullPrefab;
     public GameObject skullVFX;
     public GameObject BeatUI;
@@ -121,7 +121,9 @@ public class QTEManager : MonoBehaviour
                     {
                         //Debug.Log("Player");
                         Instantiate<GameObject>(skullVFX, _skulls[i].transform.position, Quaternion.identity);
-                        Destroy(_skulls[i].gameObject);
+                        Debug.Log("miss! Going red");
+                        _skulls[i].gameObject.GetComponentInChildren<Animator>().SetTrigger("Miss");
+                        Destroy(_skulls[i].gameObject, 0.2f);
                         _skulls.RemoveAt(i);
                         comboCount = 0;
                         comboUI.text = "";
@@ -143,7 +145,9 @@ public class QTEManager : MonoBehaviour
                     {
                         //Debug.Log("Sword");
                         Instantiate<GameObject>(skullVFX, _skulls[i].transform.position, Quaternion.identity);
-                        Destroy(_skulls[i].gameObject);
+                        Debug.Log("perfect");
+                        _skulls[i].gameObject.GetComponentInChildren<Animator>().SetTrigger("Perfect");  //GetComponentInChildren<SpriteRenderer>().sprite = skullPerfect;
+                        Destroy(_skulls[i].gameObject,0.2f);
                         _skulls.RemoveAt(i);
                         comboCount += 1;
                         correctHits++;
@@ -155,7 +159,9 @@ public class QTEManager : MonoBehaviour
                     else if (_skulls[i].GetBadHit())
                     {
                         Instantiate<GameObject>(skullVFX, _skulls[i].transform.position, Quaternion.identity);
-                        Destroy(_skulls[i].gameObject);
+                        Debug.Log("meh hit");
+                        _skulls[i].gameObject.GetComponentInChildren<Animator>().SetTrigger("Hit");
+                        Destroy(_skulls[i].gameObject, 0.2f);
                         _skulls.RemoveAt(i);
                     }
                 }
