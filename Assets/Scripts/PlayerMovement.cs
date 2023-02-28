@@ -19,6 +19,9 @@ public class PlayerMovement : MonoBehaviour
 
     SpriteRenderer sprite;
 
+    bool bossFightBind { get; set; } = false;
+    Transform left, right;
+
     [Header("Locks"), Tooltip("for example when player is in dialogue or in QTE")]
     public static bool isMovementLocked = false;
 
@@ -133,6 +136,16 @@ public class PlayerMovement : MonoBehaviour
 
         if (transform.position.z > zLimits.x || transform.position.z < zLimits.y)
             transform.position = transform.position.z > 0 ? new Vector3(transform.position.x, transform.position.y, zLimits.x) : new Vector3(transform.position.x, transform.position.y, zLimits.y);
+
+        if(bossFightBind)
+        {
+            //Max to the right
+            if (transform.position.x > right.position.x)
+                transform.position = new Vector3(right.position.x, transform.position.y, transform.position.z);
+            //Max to the left
+            else if (transform.position.x < left.position.x)
+                transform.position = new Vector3(left.position.x, transform.position.y, transform.position.z);
+        }
     }
 
     void DoJump(InputAction.CallbackContext obj)
@@ -193,4 +206,18 @@ public class PlayerMovement : MonoBehaviour
     public void SetUnLockMovement() { isMovementLocked = false; movement.Enable(); input.Ground.Enable(); PlayerCombat.instance.EnableAttack(); }
     public void PauseMovement() { isMovementLocked = true; }
     public void UnPauseMovement() { isMovementLocked = false; }
+
+    public void BossFightBinding(Transform t)
+    {
+        bossFightBind = true;
+        left = t.GetChild(0).transform;
+        right = t.GetChild(1).transform;
+    }
+
+    public void ReleaseBind()
+    {
+        bossFightBind = false;
+        left = null;
+        right = null;
+    }
 }
