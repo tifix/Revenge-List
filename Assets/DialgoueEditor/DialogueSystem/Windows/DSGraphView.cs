@@ -1,9 +1,11 @@
+#if (UNITY_EDITOR) 
 using System;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.UIElements.UIR;
 
 namespace DS.Windows
 {
@@ -624,3 +626,4 @@ namespace DS.Windows
 }
 
 
+#endif

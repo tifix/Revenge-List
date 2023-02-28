@@ -1,8 +1,9 @@
+#if (UNITY_EDITOR) 
 using System.Collections.Generic;
 
 namespace DS.Data.Error
 {
-    using Elements;
+    using DS.Elements;
 
     public class DSGroupErrorData
     {
@@ -17,3 +18,4 @@ namespace DS.Data.Error
     }
 }
 
+#endif

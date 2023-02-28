@@ -1,3 +1,4 @@
+#if (UNITY_EDITOR) 
 using UnityEngine;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine.UIElements;
@@ -109,3 +110,4 @@ namespace DS.Elements
     }
 }
 
+#endif

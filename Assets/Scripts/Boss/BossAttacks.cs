@@ -1,8 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
-using UnityEditor;
+using Unity.VisualScripting;
 using UnityEngine;
+#if (UNITY_EDITOR)
+using UnityEditor;
+#endif
 
 [CreateAssetMenu(fileName = "bossAttack", menuName = "BossAttack")]
 public class BossAttacks : ScriptableObject
@@ -40,6 +43,7 @@ public class BossAttacks : ScriptableObject
     public float speedModifier = 0;
 }
 
+#if (UNITY_EDITOR)
 [CustomEditor(typeof(BossAttacks))]
 public class Attackeditor : Editor
 {
@@ -81,3 +85,4 @@ public class Attackeditor : Editor
         EditorUtility.SetDirty(s);
     }
 }
+#endif

@@ -1,5 +1,5 @@
+#if (UNITY_EDITOR) 
 using System;
-using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
@@ -38,5 +38,5 @@ namespace DS.Elements
         }
     }
 }
-
+#endif
 
