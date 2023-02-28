@@ -56,6 +56,16 @@ public class PlayerCombat : ObjectScript
         }
     }
 
+    public void DisableAttack()
+    {
+        input.Ground.Disable();
+    }
+
+    public void EnableAttack()
+    {
+        input.Ground.Enable();
+    }
+
     public void Attack(InputAction.CallbackContext obj)
     {
         if(stamina >= 10.0f)

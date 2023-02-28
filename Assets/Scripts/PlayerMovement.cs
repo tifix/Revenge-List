@@ -184,6 +184,8 @@ public class PlayerMovement : MonoBehaviour
         input.Ground.Jump.Disable();
     }
 
-    public static void SetLockMovement() { isMovementLocked = true; }   //Globally accessible movement locks
-    public static void SetUnLockMovement() { isMovementLocked = false; }
+    public void SetLockMovement() { isMovementLocked = true; movement.Disable(); input.Ground.Disable(); PlayerCombat.instance.DisableAttack(); }   //Globally accessible movement locks
+    public void SetUnLockMovement() { isMovementLocked = false; movement.Enable(); input.Ground.Enable(); PlayerCombat.instance.EnableAttack(); }
+    public void PauseMovement() { isMovementLocked = true; }
+    public void UnPauseMovement() { isMovementLocked = false; }
 }
