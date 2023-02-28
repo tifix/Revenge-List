@@ -80,6 +80,8 @@ public class QTEManager : MonoBehaviour
 
     void Update()
     {
+        if (TryGetComponent(out Animator anim)) anim.SetBool("QTE_Playing",playQTE);
+
         if (playQTE)
         {
             beatTimer += Time.deltaTime;
@@ -188,6 +190,7 @@ public class QTEManager : MonoBehaviour
         //UI.instance.ToggleQTEScreen();
         playQTE = true;
         isPlaying = true;
+        if (TryGetComponent(out Animator anim)) anim.SetTrigger("QTE_entered");
 
         GameManager.instance.SetPause(false);
 

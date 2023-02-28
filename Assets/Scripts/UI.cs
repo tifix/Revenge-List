@@ -249,10 +249,10 @@ public class UI : MonoBehaviour
     public void ToggleHealthbar() { boxHealthbar.SetActive(!boxHealthbar.activeInHierarchy); }                              //Toggle the player healthbar display
     public void ToggleQTEScreen()                                                                                           //Toggle QTE screen and freeze player movement
     {
-        if(!boxQTE.activeSelf) PlayerMovement.instance.SetLockMovement();
+        if (!boxQTE.activeSelf) PlayerMovement.instance.SetLockMovement();
         else { PlayerMovement.instance.SetUnLockMovement(); }
         
-        boxQTE.SetActive(!boxQTE.activeInHierarchy); 
+        //boxQTE.SetActive(!boxQTE.activeInHierarchy); 
     }
     public void EnableLostScreen()
     {
