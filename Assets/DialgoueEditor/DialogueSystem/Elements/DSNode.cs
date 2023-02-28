@@ -11,9 +11,11 @@ namespace DS.Elements
 {
     using Data.Save;
     using Enumerations;
+    using Unity.VisualScripting;
     using Utilities;
     using Windows;
 
+    [System.Serializable]
     public class DSNode : Node
     {
         public string ID { get; set; }
@@ -225,7 +227,13 @@ namespace DS.Elements
             mainContainer.style.backgroundColor = defaultBackgroundColor;
         }
         #endregion
+
+        public string ThisToJson() { return JsonUtility.ToJson(this); }
+        public DSNode FromJson(string jsonString) { return JsonUtility.FromJson<DSNode>(jsonString); }
     }
+
+
+
 }
 
 #endif

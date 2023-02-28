@@ -4,6 +4,10 @@ using UnityEngine;
 using DS.Data.Save;
 using UnityEngine.InputSystem;
 using UnityEngine.Windows;
+using System.IO;
+using UnityEditor.VersionControl;
+using UnityEditor;
+using UnityEngine.Assertions;
 
 public class Inter_TextTrigger : Interactible
 {
@@ -50,4 +54,5 @@ public class Inter_TextTrigger : Interactible
     }
 
 
-}
+
+} 

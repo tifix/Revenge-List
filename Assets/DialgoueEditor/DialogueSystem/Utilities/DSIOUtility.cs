@@ -1,5 +1,7 @@
 #if (UNITY_EDITOR) 
 using System;
+using System.IO;
+
 using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
@@ -110,6 +112,11 @@ namespace DS.Utilities
 
             DSDialogueGroupSO dialogueGroup = CreateAsset<DSDialogueGroupSO>($"{containerFolderPath}/Groups/{groupName}", groupName);
 
+
+
+
+            //dialogueGroup = Create
+
             dialogueGroup.Init(groupName);
 
             createdDialogueGroups.Add(group.ID, dialogueGroup);
@@ -145,6 +152,8 @@ namespace DS.Utilities
             foreach(DSNode node in nodes)
             {
                 SaveNodeToGraph(node, graphData);
+
+                SaveToJson(node);
 
                 SaveNodeToScriptableObject(node, dialogueContainer);
 
@@ -216,9 +225,50 @@ namespace DS.Utilities
             graphData.Nodes.Add(nodeData);
 
         }
+        private static void SaveToJson(DSNode node)//, DSDialogueContainerSO dialogueContainer 
+        {
+            //DSDialogueSO dialogue;
+
+            if (node.Group != null)
+            {
+                //dialogue = CreateAsset<DSDialogueSO>($"{containerFolderPath}/Groups/{node.Group.title}/Dialogues", node.DialogueName);
+                StreamWriter writer = new StreamWriter($"{containerFolderPath}/Groups/{node.Group.title}/Dialogues" + node.DialogueName + ".txt");   //save file structure
+                writer.WriteLine(node.ID);
+                writer.WriteLine(node.SpeakerName);
+                writer.WriteLine(node.Text);
+                writer.WriteLine(node.SpritePath);
+
+                writer.Close();
 
 
+                //dialogueContainer.DialogueGroups.AddItem(createdDialogueGroups[node.Group.ID], dialogue);
+            }
+            else
+            {
+                //dialogue = CreateAsset<DSDialogueSO>($"{containerFolderPath}/Global/Dialogues", node.DialogueName);
 
+                StreamWriter writer = new StreamWriter($"{containerFolderPath}/Global/Dialogues" + node.DialogueName + ".txt");   //save file structure
+                writer.WriteLine(node.ID);
+                writer.WriteLine(node.SpeakerName);
+                writer.WriteLine(node.Text);
+                writer.WriteLine(node.SpritePath);
+
+                writer.Close();
+
+                //dialogueContainer.UngroupedDialogues.Add(dialogue);
+            }
+
+            //string Jsonutil;
+            //StreamWriter writer = new StreamWriter(Application.dataPath+"/DialogueSystem/Dialogues/" + node.ID + ".txt");   //save file structure
+            /*
+            StreamWriter writer = new StreamWriter($"{containerFolderPath}/Global/Dialogues"+ node.DialogueName + ".txt");   //save file structure
+            writer.WriteLine(node.ID);
+            writer.WriteLine(node.SpeakerName);
+            writer.WriteLine(node.Text);
+            writer.WriteLine(node.SpritePath);
+
+            writer.Close();*/
+        }
         private static void SaveNodeToScriptableObject(DSNode node, DSDialogueContainerSO dialogueContainer)
         {
             DSDialogueSO dialogue;
@@ -369,6 +419,7 @@ namespace DS.Utilities
         {
             foreach (DSNodeSaveData nodeData in nodes)
             {
+               
                 List<DSChoiceSaveData> choices = CloneNodeChoices(nodeData.Choices);
                 DSNode node = graphView.CreateNode(nodeData.Name, nodeData.DialogueType, nodeData.Position, false);
 
@@ -396,6 +447,21 @@ namespace DS.Utilities
                 group.AddElement(node);
             }
         }
+        public static DSNode LoadFromJson(string fileName)
+        {
+            string path = LoadAsset(path, assetName);
+
+            DSNode temp = new DSNode();
+            StreamReader reader = new StreamReader(path);   //save file structure
+            temp.ID = reader.ReadLine();
+            temp.SpeakerName = reader.ReadLine();
+            temp.Text = reader.ReadLine();
+            temp.SpritePath = reader.ReadLine();
+
+            //reader.Close();
+            return temp;
+        }
+
         private static void LoadNodesConnections()
         {
             foreach(KeyValuePair<string, DSNode> loadedNode in loadedNodes)
@@ -525,7 +591,7 @@ namespace DS.Utilities
             return asset;
         }
 
-        private static T LoadAsset<T>(string path, string assetName) where T : ScriptableObject
+        public static T LoadAsset<T>(string path, string assetName) where T : ScriptableObject
         {
             string fullPath = $"{path}/{assetName}.asset";
 

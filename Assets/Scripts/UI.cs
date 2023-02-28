@@ -1,6 +1,7 @@
 ﻿using DS.Data.Save;
 using DS.Utilities;
 using System.Collections;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -84,9 +85,13 @@ public class UI : MonoBehaviour
     protected IEnumerator Typer(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning) //typing the text over time
     {
         //Debug.Log("Starting Display of "+_dialogue.textBody[0]);
-        
+
         PlayerMovement.SetLockMovement();
-        
+
+        DSIOUtility.LoadFromJson();
+
+
+
         dialogueCur = _dialogue;
         txtPageNr = 0;      //page iterator
         Time.timeScale = 0;
@@ -142,9 +147,24 @@ public class UI : MonoBehaviour
 
         PlayerMovement.SetUnLockMovement();
     }
+
+    /*
+    public void TryToLoadTheDamnThing() 
+    {
+        
+        var asset = DSIOUtility.LoadAsset("Assets/DialogueSystem/Dialogues/", "KARL2PHASEOUCH");
+
+        string text = asset.text;
+        Debug.LogWarning(text.Length);
+        Debug.LogWarning(text);
+    }*/
+
     public void Show(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning)                            //Call this with a dialogue structure to display it!
     {
         boxTextDisplay.SetActive(true);
+
+
+
 
         Debug.Log("initialising text");
         if (!runCoroutine)
