@@ -757,6 +757,26 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 26240189505988134, guid: 140465e8217c6d347a5bc5c7e0cd1573, type: 3}
+      propertyPath: parentPos
+      value: 
+      objectReference: {fileID: 596890712}
+    - target: {fileID: 26240189505988134, guid: 140465e8217c6d347a5bc5c7e0cd1573, type: 3}
+      propertyPath: clonesPerSec
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 26240189505988134, guid: 140465e8217c6d347a5bc5c7e0cd1573, type: 3}
+      propertyPath: colourOverTime.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 26240189505988134, guid: 140465e8217c6d347a5bc5c7e0cd1573, type: 3}
+      propertyPath: colourOverTime.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 26240189505988134, guid: 140465e8217c6d347a5bc5c7e0cd1573, type: 3}
+      propertyPath: colourOverTime.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3395993812505339140, guid: 140465e8217c6d347a5bc5c7e0cd1573, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1467,6 +1487,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &596890712 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3395993813611527096, guid: 140465e8217c6d347a5bc5c7e0cd1573, type: 3}
+  m_PrefabInstance: {fileID: 259458312}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &666858085
 GameObject:
   m_ObjectHideFlags: 0
@@ -2384,7 +2409,7 @@ MonoBehaviour:
   m_Follow: {fileID: 259458313}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 5.199999
+    OrthographicSize: 4
     NearClipPlane: 0.001
     FarClipPlane: 1000
     Dutch: 0
@@ -2408,7 +2433,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897402303}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: -29.462511, y: 19.878286, z: -43.14893}
+  m_LocalPosition: {x: -29.452702, y: 19.65276, z: -43.231014}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3072,7 +3097,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.199999
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3171,7 +3196,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162723989}
   m_LocalRotation: {x: 0.17364816, y: -0, z: -0, w: 0.9848078}
-  m_LocalPosition: {x: -29.462511, y: 19.878286, z: -43.14893}
+  m_LocalPosition: {x: -29.452702, y: 19.65276, z: -43.231014}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4172,7 +4197,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 988588770, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -4
+      value: -4.0000305
       objectReference: {fileID: 0}
     - target: {fileID: 1298446756, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_AnchorMax.x
@@ -4672,8 +4697,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
   m_PivotOffset: {x: 0, y: 0, z: 0}
-  m_AmplitudeGain: 1
-  m_FrequencyGain: 5
+  m_AmplitudeGain: 0
+  m_FrequencyGain: 0
   mNoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1001 &1707229587
 PrefabInstance:

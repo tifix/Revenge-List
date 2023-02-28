@@ -47,11 +47,11 @@ public class PlayerMovement : MonoBehaviour
     [Range(1f, 10f), Tooltip("Gravity for the player")]
     public float gravityScale = 1f;
     float gravityForce = 0;
+    public bool IsGrounded { get; private set; }
 
     [Header("Screen Limits")]
     [Tooltip("Max depth and minimun depth")]
     public Vector2 zLimits;
-    public bool IsGrounded { get; private set; }
 
     void Awake()
     {
@@ -151,7 +151,9 @@ public class PlayerMovement : MonoBehaviour
         if (IsGrounded && !isMovementLocked && dashTime + dashCoolDown < Time.time)
         {
             Debug.Log("Dash");
+            PlayerCombat.instance.canBeDamaged = false;
             dashTime = Time.time;
+            GetComponentInChildren<SpriteTrail>().CallTrail(dashLenght);
             //Dash
             StartCoroutine("Dash");
         }
@@ -166,6 +168,8 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = rb.velocity + new Vector3(dir.x * dashStrenght, 0, dir.y * dashStrenght * verticalSpeedBoost);
             t -= Time.deltaTime;
             yield return new WaitForEndOfFrame();
+            PlayerCombat.instance.canBeDamaged = true;
+            GetComponentInChildren<SpriteTrail>().StopTrail();
         }
     }
 

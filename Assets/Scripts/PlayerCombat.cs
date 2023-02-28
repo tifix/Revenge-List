@@ -18,6 +18,7 @@ public class PlayerCombat : ObjectScript
     public Transform attackOrg;
     public float attackRange = 2.0f;
     public LayerMask enemyLayers;
+    public bool canBeDamaged = true;
 
     protected override void Awake()                             //Ensuring single instance of the script
     {
@@ -95,6 +96,8 @@ public class PlayerCombat : ObjectScript
 
     public override void ApplyDamage(float _value)
     {
+        if (!canBeDamaged)
+            return;
         health -= _value;
 
         if (health <= 0.0f)
