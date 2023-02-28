@@ -56,7 +56,7 @@ public class SpriteTrail : MonoBehaviour
         while(t > 0)
         {
             GameObject obj = new GameObject("CloneTrail");
-            obj.transform.position = parentPos.position + new Vector3(0, sr.sprite.vertices[0].y / 2, 0);
+            obj.transform.position = parentPos.position + new Vector3(0, sr.sprite.vertices[3].y / 2, 0);
             obj.transform.localScale = parentPos.localScale;
 
             SpriteRenderer tempSR = obj.AddComponent<SpriteRenderer>();

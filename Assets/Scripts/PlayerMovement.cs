@@ -119,7 +119,7 @@ public class PlayerMovement : MonoBehaviour
     void ProcessInput()
     {     
         if (IsGrounded) 
-        { 
+        {
             //Movement
             rb.velocity= Vector3.zero;
             rb.velocity += new Vector3(dir.x, 0, dir.y * verticalSpeedBoost) * moveSpeed;
@@ -162,10 +162,11 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator Dash()
     {
         float t = dashLenght;
+        Vector3 dashDir = new Vector3((dir.y != 0 ? dir.x : (sprite.flipX ? -1 : 1)) * dashStrenght, 0, dir.y * dashStrenght * verticalSpeedBoost);
         while (t > 0) 
         {
             //Controller can do shorter dashes, diagonal dashes are a bit longer
-            rb.velocity = rb.velocity + new Vector3(dir.x * dashStrenght, 0, dir.y * dashStrenght * verticalSpeedBoost);
+            rb.velocity = rb.velocity + dashDir;
             t -= Time.deltaTime;
             yield return new WaitForEndOfFrame();
             PlayerCombat.instance.canBeDamaged = true;
