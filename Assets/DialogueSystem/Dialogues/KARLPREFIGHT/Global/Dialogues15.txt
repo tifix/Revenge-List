@@ -1,0 +1,14 @@
+{
+    "ID": "f65e7a45-72d1-44c4-ad06-d1fe5488ff0e",
+    "DialogueName": "15",
+    "Choices": [
+        {
+            "<Text>k__BackingField": "Next Dialogue",
+            "<NodeID>k__BackingField": ""
+        }
+    ],
+    "SpeakerName": "Karl",
+    "Text": "…TO GRILL!",
+    "SpritePath": "Neighbour_Laughing",
+    "DialogueType": 0
+}

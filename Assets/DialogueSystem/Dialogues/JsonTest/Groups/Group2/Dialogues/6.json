@@ -1,0 +1,14 @@
+{
+    "ID": "9bb4fc5d-8677-4a89-a7c5-80432e7446ca",
+    "DialogueName": "6",
+    "Choices": [
+        {
+            "<Text>k__BackingField": "Next Dialogue",
+            "<NodeID>k__BackingField": ""
+        }
+    ],
+    "SpeakerName": "Character name.",
+    "Text": "Dialogue text.",
+    "SpritePath": "Insert Sprite Path Here.",
+    "DialogueType": 0
+}

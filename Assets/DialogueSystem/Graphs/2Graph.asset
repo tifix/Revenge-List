@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330ce6680441e444f96079c0bb98687a, type: 3}
+  m_Name: 2Graph
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: 2
+  <Groups>k__BackingField:
+  - <ID>k__BackingField: 3237e031-cdde-44dc-a1b7-76de57b5c5e0
+    <Name>k__BackingField: Groupppp
+    <Position>k__BackingField: {x: 259, y: 63}
+  - <ID>k__BackingField: d1568193-dda3-4485-9e64-8a5cb8b9275f
+    <Name>k__BackingField: Dialogue Group
+    <Position>k__BackingField: {x: 952, y: 561}
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: d5e8082a-badb-453b-bc64-66754a88c16a
+    <Name>k__BackingField: 1
+    <SpeakerName>k__BackingField: Character name.
+    <Text>k__BackingField: Dialogue text.
+    <SpritePath>k__BackingField: Insert Sprite Path Here.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 797a5569-8a40-4663-92d3-575d8b14acb9
+    <GroupID>k__BackingField: 3237e031-cdde-44dc-a1b7-76de57b5c5e0
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 284, y: 122}
+    <isStartNode>k__BackingField: 1
+    <ChildIDs>k__BackingField:
+    - 797a5569-8a40-4663-92d3-575d8b14acb9
+  - <ID>k__BackingField: 797a5569-8a40-4663-92d3-575d8b14acb9
+    <Name>k__BackingField: 2
+    <SpeakerName>k__BackingField: Character name.
+    <Text>k__BackingField: Dialogue text.
+    <SpritePath>k__BackingField: Insert Sprite Path Here.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 48abcdcb-589c-42bd-95ab-845a49789b5f
+    <GroupID>k__BackingField: 3237e031-cdde-44dc-a1b7-76de57b5c5e0
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 640, y: 226}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 48abcdcb-589c-42bd-95ab-845a49789b5f
+  - <ID>k__BackingField: 48abcdcb-589c-42bd-95ab-845a49789b5f
+    <Name>k__BackingField: 3
+    <SpeakerName>k__BackingField: Character name.
+    <Text>k__BackingField: Dialogue text.
+    <SpritePath>k__BackingField: Insert Sprite Path Here.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 4658b4e9-4f18-4a29-8d58-183c6be41ba1
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 521, y: 516}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 4658b4e9-4f18-4a29-8d58-183c6be41ba1
+  - <ID>k__BackingField: 4658b4e9-4f18-4a29-8d58-183c6be41ba1
+    <Name>k__BackingField: 4
+    <SpeakerName>k__BackingField: Character name.
+    <Text>k__BackingField: Dialogue text.
+    <SpritePath>k__BackingField: Insert Sprite Path Here.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: d50e649f-44de-41cf-8c2f-42643b595b1a
+    <GroupID>k__BackingField: d1568193-dda3-4485-9e64-8a5cb8b9275f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 977, y: 620}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - d50e649f-44de-41cf-8c2f-42643b595b1a
+  - <ID>k__BackingField: d50e649f-44de-41cf-8c2f-42643b595b1a
+    <Name>k__BackingField: 5
+    <SpeakerName>k__BackingField: Character name.
+    <Text>k__BackingField: Dialogue text.
+    <SpritePath>k__BackingField: Insert Sprite Path Here.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: d1568193-dda3-4485-9e64-8a5cb8b9275f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1293, y: 723}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 
+  <OldGroupNames>k__BackingField:
+  - Groupppp
+  - Dialogue Group
+  <OldUngroupedNodeNames>k__BackingField:
+  - 3
+  <OldGroupNodeNames>k__BackingField:
+    list:
+    - Key: Groupppp
+      Value:
+      - 1
+      - 2
+    - Key: Dialogue Group
+      Value:
+      - 4
+      - 5

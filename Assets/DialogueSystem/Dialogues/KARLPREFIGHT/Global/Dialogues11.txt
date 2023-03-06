@@ -1,0 +1,14 @@
+{
+    "ID": "e481bc36-dd20-410c-b358-12d14f6a0497",
+    "DialogueName": "11",
+    "Choices": [
+        {
+            "<Text>k__BackingField": "Next Dialogue",
+            "<NodeID>k__BackingField": "5d3cb23e-b693-4ccc-b490-f315a0d72aeb"
+        }
+    ],
+    "SpeakerName": "Karl",
+    "Text": "Lily, want anything?\nI make scrumptious steak.",
+    "SpritePath": "Neighbour_Friendly",
+    "DialogueType": 0
+}

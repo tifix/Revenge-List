@@ -1,0 +1,41 @@
+{
+    "FileName": "JsonTest",
+    "DialogueGroups": {
+        "list": [
+            {
+                "Key": {
+                    "instanceID": -32524
+                },
+                "Value": [
+                    {
+                        "instanceID": -29146
+                    },
+                    {
+                        "instanceID": -29152
+                    },
+                    {
+                        "instanceID": -29158
+                    }
+                ]
+            },
+            {
+                "Key": {
+                    "instanceID": -32526
+                },
+                "Value": [
+                    {
+                        "instanceID": -29474
+                    }
+                ]
+            }
+        ]
+    },
+    "UngroupedDialogues": [
+        {
+            "instanceID": -29330
+        },
+        {
+            "instanceID": -29398
+        }
+    ]
+}

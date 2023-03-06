@@ -1,0 +1,14 @@
+{
+    "ID": "15ea2113-6888-4a62-b759-d707302d295b",
+    "DialogueName": "10",
+    "Choices": [
+        {
+            "<Text>k__BackingField": "Next Dialogue",
+            "<NodeID>k__BackingField": "e481bc36-dd20-410c-b358-12d14f6a0497"
+        }
+    ],
+    "SpeakerName": "Astrid",
+    "Text": "No Sweetheart! We just had barbecue this morning!\nAsk Lily if she's hungry!",
+    "SpritePath": "Insert Sprite Path Here.",
+    "DialogueType": 0
+}

@@ -63,7 +63,7 @@ namespace DS.Utilities
 
             graphData.Init(graphFileName);
 
-            DSDialogueContainerSO dialogueContainer = CreateAsset<DSDialogueContainerSO>(containerFolderPath, graphFileName);
+            DSDialogueContainerSO dialogueContainer = new DSDialogueContainerSO();//CreateAsset<DSDialogueContainerSO>(containerFolderPath, graphFileName);
 
             dialogueContainer.Init(graphFileName);
 
@@ -71,7 +71,8 @@ namespace DS.Utilities
             SaveNodes(graphData, dialogueContainer);
 
             SaveAsset(graphData);
-            SaveAsset(dialogueContainer);
+            //SaveAsset(dialogueContainer);
+            SaveToJsonMasterData(dialogueContainer);
         }
 
         #region Groups
@@ -83,7 +84,8 @@ namespace DS.Utilities
             {
                 SaveGroupToGraph(group, graphData);
 
-                SaveGroupToScriptableObject(group, dialogueContainer);
+                //SaveGroupToScriptableObject(group, dialogueContainer);
+                SaveGroupToJson(group, dialogueContainer);
 
                 groupNames.Add(group.title);
             }
@@ -102,7 +104,7 @@ namespace DS.Utilities
 
             graphData.Groups.Add(groupData);
         }
-
+        /*
         private static void SaveGroupToScriptableObject(DSGroup group, DSDialogueContainerSO dialogueContainer)
         {
             string groupName = group.title;
@@ -124,6 +126,33 @@ namespace DS.Utilities
             dialogueContainer.DialogueGroups.Add(dialogueGroup, new List<DSDialogueSO>());
 
             SaveAsset(dialogueGroup);
+        }*/
+        private static void SaveGroupToJson(DSGroup group, DSDialogueContainerSO dialogueContainer)
+        {
+            string groupName = group.title;
+
+            CreateFolder($"{containerFolderPath}/Groups", groupName);
+            CreateFolder($"{containerFolderPath}/Groups/{groupName}", "Dialogues");
+
+            StreamWriter writer = new StreamWriter($"{containerFolderPath}/Groups/" + groupName + "/" + groupName + ".json");
+
+
+
+            DSDialogueGroupSO dialogueGroup = new DSDialogueGroupSO();//(DSDialogueGroupSO)ScriptableObject.CreateInstance("DSDialogueGroupSO");
+
+            dialogueGroup.Init(groupName);
+
+
+            //Debug.Log("name "+groupName+ " ID " + group.ID);
+            Debug.Log("name "+ dialogueGroup.GroupName);
+            //createdDialogueGroups.Add(group.ID, dialogueGroup);
+            createdDialogueGroups.Add(group.ID, dialogueGroup);
+
+            dialogueContainer.DialogueGroups.Add(groupName, new List<DSDialogueSO>());
+
+            string s = JsonUtility.ToJson(dialogueGroup, true);
+            writer.Write(s);
+            writer.Close();
         }
 
         private static void UpdateOldGroups(List<string> currentGroupNames, DSGraphSaveDataSO graphData)
@@ -153,9 +182,9 @@ namespace DS.Utilities
             {
                 SaveNodeToGraph(node, graphData);
 
-                SaveToJson(node);
+                SaveToJson(node, dialogueContainer);
 
-                SaveNodeToScriptableObject(node, dialogueContainer);
+                //SaveNodeToScriptableObject(node, dialogueContainer);
 
                 if(node.Group != null)
                 {
@@ -225,50 +254,41 @@ namespace DS.Utilities
             graphData.Nodes.Add(nodeData);
 
         }
-        private static void SaveToJson(DSNode node)//, DSDialogueContainerSO dialogueContainer 
+        private static void SaveToJson(DSNode node, DSDialogueContainerSO dialogueContainer)//, DSDialogueContainerSO dialogueContainer 
         {
-            //DSDialogueSO dialogue;
+            StreamWriter writer;
+            DSDialogueSO dialogue = new DSDialogueSO();
+
 
             if (node.Group != null)
             {
-                //dialogue = CreateAsset<DSDialogueSO>($"{containerFolderPath}/Groups/{node.Group.title}/Dialogues", node.DialogueName);
-                StreamWriter writer = new StreamWriter($"{containerFolderPath}/Groups/{node.Group.title}/Dialogues" + node.DialogueName + ".txt");   //save file structure
-                writer.WriteLine(node.ID);
-                writer.WriteLine(node.SpeakerName);
-                writer.WriteLine(node.Text);
-                writer.WriteLine(node.SpritePath);
+                writer = new StreamWriter($"{containerFolderPath}/Groups/{node.Group.title}/Dialogues/" + node.DialogueName + ".json");   //save file structure
 
-                writer.Close();
-
-
-                //dialogueContainer.DialogueGroups.AddItem(createdDialogueGroups[node.Group.ID], dialogue);
+                dialogueContainer.DialogueGroups.AddItem(node.Group.ID, dialogue);
             }
             else
             {
-                //dialogue = CreateAsset<DSDialogueSO>($"{containerFolderPath}/Global/Dialogues", node.DialogueName);
-
-                StreamWriter writer = new StreamWriter($"{containerFolderPath}/Global/Dialogues" + node.DialogueName + ".txt");   //save file structure
-                writer.WriteLine(node.ID);
-                writer.WriteLine(node.SpeakerName);
-                writer.WriteLine(node.Text);
-                writer.WriteLine(node.SpritePath);
-
-                writer.Close();
-
-                //dialogueContainer.UngroupedDialogues.Add(dialogue);
+                writer = new StreamWriter($"{containerFolderPath}/Global/Dialogues/" + node.DialogueName + ".json");   //save file structure
+                dialogueContainer.UngroupedDialogues.Add(dialogue);
             }
 
-            //string Jsonutil;
-            //StreamWriter writer = new StreamWriter(Application.dataPath+"/DialogueSystem/Dialogues/" + node.ID + ".txt");   //save file structure
-            /*
-            StreamWriter writer = new StreamWriter($"{containerFolderPath}/Global/Dialogues"+ node.DialogueName + ".txt");   //save file structure
-            writer.WriteLine(node.ID);
-            writer.WriteLine(node.SpeakerName);
-            writer.WriteLine(node.Text);
-            writer.WriteLine(node.SpritePath);
+            dialogue.Init(
+                 node.DialogueName,
+                 node.Text,
+                 node.SpeakerName,
+                 node.SpritePath,
+                 ConvertNodeChoicesToDialogueChoices(node.Choices),
+                 node.DialogueType,
+                 node.IsStartingNode()
+                 );
 
-            writer.Close();*/
+            createdDialogues.Add(node.ID, dialogue);
+
+            string s = JsonUtility.ToJson(dialogue,true);
+            writer.Write(s);
+            writer.Close();
         }
+        /*
         private static void SaveNodeToScriptableObject(DSNode node, DSDialogueContainerSO dialogueContainer)
         {
             DSDialogueSO dialogue;
@@ -277,7 +297,7 @@ namespace DS.Utilities
             {
                 dialogue = CreateAsset<DSDialogueSO>($"{containerFolderPath}/Groups/{node.Group.title}/Dialogues", node.DialogueName);
 
-                dialogueContainer.DialogueGroups.AddItem(createdDialogueGroups[node.Group.ID], dialogue);
+                //dialogueContainer.DialogueGroups.AddItem(createdDialogueGroups[node.Group.ID], dialogue);         //removed for format switching
             }
             else
             {
@@ -299,7 +319,7 @@ namespace DS.Utilities
             createdDialogues.Add(node.ID, dialogue);
 
             SaveAsset(dialogue);
-        }
+        }*/
         private static List<DSDialogueChoiceData> ConvertNodeChoicesToDialogueChoices(List<DSChoiceSaveData> nodeChoices)
         {
             List<DSDialogueChoiceData> dialogueChoices = new List<DSDialogueChoiceData>();
@@ -333,7 +353,7 @@ namespace DS.Utilities
 
                     dialogue.Choices[choiceIndex].NextDialogue = createdDialogues[nodeChoice.NodeID];
 
-                    SaveAsset(dialogue);
+                    //SaveAsset(dialogue);
                 }
             }
         }
@@ -381,8 +401,10 @@ namespace DS.Utilities
         public static void Load()
         {
             DSGraphSaveDataSO graphData = LoadAsset<DSGraphSaveDataSO>("Assets/DialogueSystem/Graphs", graphFileName);
+            //graphData = LoadFromJson();
 
-            if(graphData == null)
+
+            if (graphData == null)
             {
                 EditorUtility.DisplayDialog(
                     "Couldn't load file!", 
@@ -414,6 +436,8 @@ namespace DS.Utilities
                 loadedGroups.Add(group.ID, group);
             }
         }
+
+
 
         private static void LoadNodes(List<DSNodeSaveData> nodes)
         {
@@ -447,20 +471,49 @@ namespace DS.Utilities
                 group.AddElement(node);
             }
         }
-        public static DSNode LoadFromJson(string fileName)
+
+        public static DSDialogueContainerSO LoadFromJson()
         {
-            string path = LoadAsset(path, assetName);
+            string path = "Assets/DialogueSystem/Graphs/" + graphFileName + ".json";
+            StreamReader r = new StreamReader(path);
 
-            DSNode temp = new DSNode();
-            StreamReader reader = new StreamReader(path);   //save file structure
-            temp.ID = reader.ReadLine();
-            temp.SpeakerName = reader.ReadLine();
-            temp.Text = reader.ReadLine();
-            temp.SpritePath = reader.ReadLine();
+            DSDialogueContainerSO masterData = new DSDialogueContainerSO();
+            try
+            {
+                Debug.Log("Attempting to load from "+ path);
+                string rawJson = r.ReadToEnd();
+                Debug.Log("json length"+rawJson.Length);
+                Debug.Log(rawJson);
+                masterData = JsonUtility.FromJson<DSDialogueContainerSO>(rawJson);
+                Debug.LogWarning(masterData.FileName+" loaded!");
+            }
+            
+            catch{Debug.LogWarning("Unknown error loading master data");}
 
-            //reader.Close();
-            return temp;
+            r.Close();
+
+            return masterData;
         }
+        
+        private static void LoadSaveDataFromContainer(DSDialogueContainerSO container) 
+        {
+        
+        }
+
+        private static void LoadGroupFromJson(DSGroup group)
+        {
+            string groupName = group.title;
+
+            CreateFolder($"{containerFolderPath}/Groups", groupName);
+            CreateFolder($"{containerFolderPath}/Groups/{groupName}", "Dialogues");
+
+            StreamWriter writer = new StreamWriter($"{containerFolderPath}/Groups" + groupName + ".json");
+            //($"{containerFolderPath}/Groups/{group.title}/Dialogues" + node.DialogueName + ".json");
+            string s = JsonUtility.ToJson(group);
+            writer.Write(s);
+            writer.Close();
+        }
+
 
         private static void LoadNodesConnections()
         {
@@ -607,9 +660,23 @@ namespace DS.Utilities
         {
             EditorUtility.SetDirty(asset);
 
+
             AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();
         }
+        private static void SaveToJsonMasterData(DSDialogueContainerSO dialogueContainer) 
+        {
+            //StreamWriter w = new StreamWriter(containerFolderPath +"/"+ graphFileName + "Graph.json");
+            StreamWriter w = new StreamWriter("Assets/DialogueSystem/Graphs/" + graphFileName + "Graph.json");
+            string s = JsonUtility.ToJson(dialogueContainer,true);
+            Debug.LogWarning("Saving data to json at Assets/DialogueSystem/Graphs/" + graphFileName + "Graph.json");
+            Debug.Log(s);
+            w.Write(s);
+            w.Close();
+            AssetDatabase.Refresh();
+        }
+
+
         private static List<DSChoiceSaveData> CloneNodeChoices(List<DSChoiceSaveData> nodeChoices)
         {
             List<DSChoiceSaveData> choices = new List<DSChoiceSaveData>();

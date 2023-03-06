@@ -1,0 +1,252 @@
+{
+    "FileName": "3",
+    "DialogueGroups": {
+        "list": [
+            {
+                "Key": "g",
+                "Value": []
+            },
+            {
+                "Key": "Group2",
+                "Value": []
+            },
+            {
+                "Key": "92d40c3c-f96a-49ad-b0c4-b9c89435c826",
+                "Value": [
+                    {
+                        "DialogueName": "1",
+                        "SpeakerName": "Character name.",
+                        "Text": "Dialogue text.",
+                        "SpritePath": "Insert Sprite Path Here.",
+                        "Choices": [
+                            {
+                                "<Text>k__BackingField": "Next Dialogue",
+                                "<NextDialogue>k__BackingField": {
+                                    "DialogueName": "2",
+                                    "SpeakerName": "Character name.",
+                                    "Text": "Dialogue text.",
+                                    "SpritePath": "Insert Sprite Path Here.",
+                                    "Choices": [
+                                        {
+                                            "<Text>k__BackingField": "Next Dialogue",
+                                            "<NextDialogue>k__BackingField": {
+                                                "DialogueName": "orphan",
+                                                "SpeakerName": "Character name.",
+                                                "Text": "Dialogue text.",
+                                                "SpritePath": "Insert Sprite Path Here.",
+                                                "Choices": [
+                                                    {
+                                                        "<Text>k__BackingField": "Next Dialogue",
+                                                        "<NextDialogue>k__BackingField": {
+                                                            "DialogueName": "3",
+                                                            "SpeakerName": "Character name.",
+                                                            "Text": "Dialogue text.",
+                                                            "SpritePath": "Insert Sprite Path Here.",
+                                                            "Choices": [
+                                                                {
+                                                                    "<Text>k__BackingField": "Next Dialogue",
+                                                                    "<NextDialogue>k__BackingField": {
+                                                                        "DialogueName": "4",
+                                                                        "SpeakerName": "Character name.",
+                                                                        "Text": "Dialogue text.",
+                                                                        "SpritePath": "Insert Sprite Path Here.",
+                                                                        "DialogueType": 0,
+                                                                        "IsStartingDialogue": false
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "DialogueType": 0,
+                                                            "IsStartingDialogue": false
+                                                        }
+                                                    }
+                                                ],
+                                                "DialogueType": 0,
+                                                "IsStartingDialogue": false
+                                            }
+                                        }
+                                    ],
+                                    "DialogueType": 0,
+                                    "IsStartingDialogue": false
+                                }
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": true
+                    },
+                    {
+                        "DialogueName": "2",
+                        "SpeakerName": "Character name.",
+                        "Text": "Dialogue text.",
+                        "SpritePath": "Insert Sprite Path Here.",
+                        "Choices": [
+                            {
+                                "<Text>k__BackingField": "Next Dialogue",
+                                "<NextDialogue>k__BackingField": {
+                                    "DialogueName": "orphan",
+                                    "SpeakerName": "Character name.",
+                                    "Text": "Dialogue text.",
+                                    "SpritePath": "Insert Sprite Path Here.",
+                                    "Choices": [
+                                        {
+                                            "<Text>k__BackingField": "Next Dialogue",
+                                            "<NextDialogue>k__BackingField": {
+                                                "DialogueName": "3",
+                                                "SpeakerName": "Character name.",
+                                                "Text": "Dialogue text.",
+                                                "SpritePath": "Insert Sprite Path Here.",
+                                                "Choices": [
+                                                    {
+                                                        "<Text>k__BackingField": "Next Dialogue",
+                                                        "<NextDialogue>k__BackingField": {
+                                                            "DialogueName": "4",
+                                                            "SpeakerName": "Character name.",
+                                                            "Text": "Dialogue text.",
+                                                            "SpritePath": "Insert Sprite Path Here.",
+                                                            "Choices": [
+                                                                {
+                                                                    "<Text>k__BackingField": "Next Dialogue",
+                                                                    "<NextDialogue>k__BackingField": {
+                                                                        "DialogueName": "",
+                                                                        "SpeakerName": "",
+                                                                        "Text": "",
+                                                                        "SpritePath": "",
+                                                                        "DialogueType": 0,
+                                                                        "IsStartingDialogue": false
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "DialogueType": 0,
+                                                            "IsStartingDialogue": false
+                                                        }
+                                                    }
+                                                ],
+                                                "DialogueType": 0,
+                                                "IsStartingDialogue": false
+                                            }
+                                        }
+                                    ],
+                                    "DialogueType": 0,
+                                    "IsStartingDialogue": false
+                                }
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                ]
+            },
+            {
+                "Key": "fa15efaf-e63f-485b-8415-6499f3eed123",
+                "Value": [
+                    {
+                        "DialogueName": "3",
+                        "SpeakerName": "Character name.",
+                        "Text": "Dialogue text.",
+                        "SpritePath": "Insert Sprite Path Here.",
+                        "Choices": [
+                            {
+                                "<Text>k__BackingField": "Next Dialogue",
+                                "<NextDialogue>k__BackingField": {
+                                    "DialogueName": "4",
+                                    "SpeakerName": "Character name.",
+                                    "Text": "Dialogue text.",
+                                    "SpritePath": "Insert Sprite Path Here.",
+                                    "Choices": [
+                                        {
+                                            "<Text>k__BackingField": "Next Dialogue",
+                                            "<NextDialogue>k__BackingField": {
+                                                "DialogueName": "",
+                                                "SpeakerName": "",
+                                                "Text": "",
+                                                "SpritePath": "",
+                                                "Choices": [],
+                                                "DialogueType": 0,
+                                                "IsStartingDialogue": false
+                                            }
+                                        }
+                                    ],
+                                    "DialogueType": 0,
+                                    "IsStartingDialogue": false
+                                }
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "4",
+                        "SpeakerName": "Character name.",
+                        "Text": "Dialogue text.",
+                        "SpritePath": "Insert Sprite Path Here.",
+                        "Choices": [
+                            {
+                                "<Text>k__BackingField": "Next Dialogue",
+                                "<NextDialogue>k__BackingField": {
+                                    "DialogueName": "",
+                                    "SpeakerName": "",
+                                    "Text": "",
+                                    "SpritePath": "",
+                                    "Choices": [],
+                                    "DialogueType": 0,
+                                    "IsStartingDialogue": false
+                                }
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                ]
+            }
+        ]
+    },
+    "UngroupedDialogues": [
+        {
+            "DialogueName": "orphan",
+            "SpeakerName": "Character name.",
+            "Text": "Dialogue text.",
+            "SpritePath": "Insert Sprite Path Here.",
+            "Choices": [
+                {
+                    "<Text>k__BackingField": "Next Dialogue",
+                    "<NextDialogue>k__BackingField": {
+                        "DialogueName": "3",
+                        "SpeakerName": "Character name.",
+                        "Text": "Dialogue text.",
+                        "SpritePath": "Insert Sprite Path Here.",
+                        "Choices": [
+                            {
+                                "<Text>k__BackingField": "Next Dialogue",
+                                "<NextDialogue>k__BackingField": {
+                                    "DialogueName": "4",
+                                    "SpeakerName": "Character name.",
+                                    "Text": "Dialogue text.",
+                                    "SpritePath": "Insert Sprite Path Here.",
+                                    "Choices": [
+                                        {
+                                            "<Text>k__BackingField": "Next Dialogue",
+                                            "<NextDialogue>k__BackingField": {
+                                                "DialogueName": "",
+                                                "SpeakerName": "",
+                                                "Text": "",
+                                                "SpritePath": "",
+                                                "Choices": [],
+                                                "DialogueType": 0,
+                                                "IsStartingDialogue": false
+                                            }
+                                        }
+                                    ],
+                                    "DialogueType": 0,
+                                    "IsStartingDialogue": false
+                                }
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        }
+    ]
+}

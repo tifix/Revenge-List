@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5016886999756b44fa42e8ad3bfbb640, type: 3}
   m_Name: DialogueFileName
   m_EditorClassIdentifier: 
-  <FileName>k__BackingField: 
-  <DialogueGroups>k__BackingField:
+  FileName: DialogueFileName
+  DialogueGroups:
     list: []
-  <UngroupedDialogues>k__BackingField: []
+  UngroupedDialogues: []

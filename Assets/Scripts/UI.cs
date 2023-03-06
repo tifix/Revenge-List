@@ -88,7 +88,7 @@ public class UI : MonoBehaviour
 
         PlayerMovement.SetLockMovement();
 
-        DSIOUtility.LoadFromJson();
+        //DSIOUtility.LoadFromJson();
 
 
 

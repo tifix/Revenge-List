@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5016886999756b44fa42e8ad3bfbb640, type: 3}
+  m_Name: JsonTest2
+  m_EditorClassIdentifier: 
+  FileName: JsonTest2
+  DialogueGroups:
+    list:
+    - Key: {fileID: 11400000, guid: be764474b428b044bb9e3d608f2210fa, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 2dfe6c5372cabef4183f8400bb33ce94, type: 2}
+      - {fileID: 11400000, guid: 802b5b6ecc4808c438becd6d5780f36f, type: 2}
+      - {fileID: 11400000, guid: f71b4590a18eac84c8abe97e778087b5, type: 2}
+      - {fileID: 11400000, guid: e32a3e5c1f74b004f9ea8aeba177db32, type: 2}
+  UngroupedDialogues: []

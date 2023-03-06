@@ -1,0 +1,14 @@
+{
+    "ID": "9fb95523-1ff9-4ca4-86a7-0d60928ce403",
+    "DialogueName": "9",
+    "Choices": [
+        {
+            "<Text>k__BackingField": "Next Dialogue",
+            "<NodeID>k__BackingField": "15ea2113-6888-4a62-b759-d707302d295b"
+        }
+    ],
+    "SpeakerName": "Karl",
+    "Text": "Time to bring out the barbecue!",
+    "SpritePath": "Neighbour_Friendly",
+    "DialogueType": 0
+}

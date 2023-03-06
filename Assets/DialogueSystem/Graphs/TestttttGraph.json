@@ -1,0 +1,16 @@
+{
+    "FileName": "Testtttt",
+    "DialogueGroups": {
+        "list": [
+            {
+                "Key": "Dialogue Group",
+                "Value": []
+            },
+            {
+                "Key": "SecondGroup",
+                "Value": []
+            }
+        ]
+    },
+    "UngroupedDialogues": []
+}

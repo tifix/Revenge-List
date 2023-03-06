@@ -1,0 +1,42 @@
+{
+    "FileName": "KARLPREFIGHT",
+    "DialogueGroups": {
+        "list": [
+            {
+                "Key": {
+                    "instanceID": -13578
+                },
+                "Value": [
+                    {
+                        "instanceID": -13584
+                    },
+                    {
+                        "instanceID": -13590
+                    },
+                    {
+                        "instanceID": -13596
+                    },
+                    {
+                        "instanceID": -13602
+                    },
+                    {
+                        "instanceID": -13608
+                    },
+                    {
+                        "instanceID": -14010
+                    },
+                    {
+                        "instanceID": -14016
+                    }
+                ]
+            }
+        ]
+    },
+    "UngroupedDialogues": [
+        {
+            "instanceID": -12796
+        },
+        {
+            "instanceID": -12800
+        },
+        

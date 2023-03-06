@@ -12,9 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5016886999756b44fa42e8ad3bfbb640, type: 3}
   m_Name: KARLPREFIGHT
   m_EditorClassIdentifier: 
-  <FileName>k__BackingField: KARLPREFIGHT
-  <DialogueGroups>k__BackingField:
-    list: []
-  <UngroupedDialogues>k__BackingField:
-  - {fileID: 11400000, guid: df14c70438dec384dae08d0ffc1b03f4, type: 2}
-  - {fileID: 11400000, guid: 33902c7c3958ddd4f899cc47cb579e64, type: 2}
+  FileName: KARLPREFIGHT
+  DialogueGroups:
+    list:
+    - Key: {fileID: 11400000, guid: f7081d6bac0a69b4e95cb8d5ecf60ec6, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 4f7731f123d5a234cb29776abccc0477, type: 2}
+      - {fileID: 11400000, guid: 392396220cc30e34f89ec006dc8277f5, type: 2}
+      - {fileID: 11400000, guid: 2a6a2b86c812887418bdf7bcf8791c43, type: 2}
+      - {fileID: 11400000, guid: 4f97878a50ee5a6449920d09479c683b, type: 2}
+      - {fileID: 11400000, guid: 98e75117cd2dd2b40bb377fa1289cd03, type: 2}
+      - {fileID: 11400000, guid: cd44bb01d2fe14d45a34b49332b1b743, type: 2}
+      - {fileID: 11400000, guid: b6c17ea9a013fc1438469583f4742971, type: 2}
+  UngroupedDialogues:
+  - {fileID: 11400000, guid: c8b8b48e1b860554689fc9b55b84b27e, type: 2}
+  - {fileID: 11400000, guid: e2da713c80567f84db595dd84065dbce, type: 2}
+  - {fileID: 11400000, guid: 6bf83532845419b40bd964053ded3dbb, type: 2}
+  - {fileID: 11400000, guid: 2ce0419bf1ddd7747909f33e87434b61, type: 2}
+  - {fileID: 11400000, guid: 1261660a3430b1d4c992685c022c8cb3, type: 2}
+  - {fileID: 11400000, guid: 4a8a1a06e316f514b8798591665046bb, type: 2}
+  - {fileID: 11400000, guid: 06cdd1eabed1b0149a0f1c42504f375c, type: 2}
+  - {fileID: 11400000, guid: 1fd790dfc0a35e2488f435bc7d877f5f, type: 2}

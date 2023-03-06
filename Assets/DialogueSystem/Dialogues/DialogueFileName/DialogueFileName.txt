@@ -1,0 +1,17 @@
+{
+    "FileName": "DialogueFileName",
+    "DialogueGroups": {
+        "list": []
+    },
+    "UngroupedDialogues": [
+        {
+            "instanceID": -17134
+        },
+        {
+            "instanceID": -17140
+        },
+        {
+            "instanceID": -17146
+        }
+    ]
+}

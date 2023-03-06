@@ -1,0 +1,14 @@
+{
+    "ID": "11b049bb-5df5-4be8-ab3a-55a63f497c3d",
+    "DialogueName": "13",
+    "Choices": [
+        {
+            "<Text>k__BackingField": "Next Dialogue",
+            "<NodeID>k__BackingField": "caaca3ab-e827-4c4b-bc4a-895930268b95"
+        }
+    ],
+    "SpeakerName": "Karl",
+    "Text": "That’s great, because I have a license…",
+    "SpritePath": "Neighbour_Friendly",
+    "DialogueType": 0
+}

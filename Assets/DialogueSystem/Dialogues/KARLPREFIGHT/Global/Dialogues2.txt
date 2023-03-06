@@ -1,0 +1,14 @@
+{
+    "ID": "2f691f4e-68eb-460f-9bff-84c7543e9c1a",
+    "DialogueName": "2",
+    "Choices": [
+        {
+            "<Text>k__BackingField": "Next Dialogue",
+            "<NodeID>k__BackingField": "1c2bc9db-7def-462a-8d92-59fc285f3fae"
+        }
+    ],
+    "SpeakerName": "Lilith",
+    "Text": "It’s a pity, really, you’re sweet and I would have liked to keep you around…\npfft…\npffffff –",
+    "SpritePath": "Lilith_Happy",
+    "DialogueType": 0
+}

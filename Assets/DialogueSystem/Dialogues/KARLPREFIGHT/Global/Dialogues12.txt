@@ -1,0 +1,14 @@
+{
+    "ID": "5d3cb23e-b693-4ccc-b490-f315a0d72aeb",
+    "DialogueName": "12",
+    "Choices": [
+        {
+            "<Text>k__BackingField": "Next Dialogue",
+            "<NodeID>k__BackingField": "11b049bb-5df5-4be8-ab3a-55a63f497c3d"
+        }
+    ],
+    "SpeakerName": "Lilith",
+    "Text": "No! I want to fight you.",
+    "SpritePath": "Lilith_Unhappy",
+    "DialogueType": 0
+}

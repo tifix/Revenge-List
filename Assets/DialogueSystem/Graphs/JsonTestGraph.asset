@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330ce6680441e444f96079c0bb98687a, type: 3}
+  m_Name: JsonTestGraph
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: JsonTest
+  <Groups>k__BackingField:
+  - <ID>k__BackingField: 1d784da0-48b0-463f-ba15-2881b9fc0eed
+    <Name>k__BackingField: FancyGroupName
+    <Position>k__BackingField: {x: 120, y: 16}
+  - <ID>k__BackingField: caedcd99-434a-4e05-a624-df56961f669b
+    <Name>k__BackingField: Group2
+    <Position>k__BackingField: {x: 2054, y: 295}
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: 4dcdc302-a2cd-4e9b-80dc-3729ef56ef43
+    <Name>k__BackingField: 1
+    <SpeakerName>k__BackingField: Character name.
+    <Text>k__BackingField: Dialogue text.
+    <SpritePath>k__BackingField: Insert Sprite Path Here.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: a37d2462-f30f-4f44-ac11-34d714d5fd12
+    <GroupID>k__BackingField: 1d784da0-48b0-463f-ba15-2881b9fc0eed
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 145, y: 75}
+    <isStartNode>k__BackingField: 1
+    <ChildIDs>k__BackingField:
+    - a37d2462-f30f-4f44-ac11-34d714d5fd12
+  - <ID>k__BackingField: a37d2462-f30f-4f44-ac11-34d714d5fd12
+    <Name>k__BackingField: 2
+    <SpeakerName>k__BackingField: Character name.
+    <Text>k__BackingField: Dialogue text.
+    <SpritePath>k__BackingField: Insert Sprite Path Here.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 0a950335-2afa-44a0-ab2f-0bd24386951f
+    <GroupID>k__BackingField: 1d784da0-48b0-463f-ba15-2881b9fc0eed
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 525, y: 122}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 0a950335-2afa-44a0-ab2f-0bd24386951f
+  - <ID>k__BackingField: 0a950335-2afa-44a0-ab2f-0bd24386951f
+    <Name>k__BackingField: 3
+    <SpeakerName>k__BackingField: Character name.
+    <Text>k__BackingField: Dialogue text.
+    <SpritePath>k__BackingField: Insert Sprite Path Here.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 5470ccca-47b4-4628-93c7-db17cb5fb772
+    <GroupID>k__BackingField: 1d784da0-48b0-463f-ba15-2881b9fc0eed
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 838, y: 179}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 5470ccca-47b4-4628-93c7-db17cb5fb772
+  - <ID>k__BackingField: 5470ccca-47b4-4628-93c7-db17cb5fb772
+    <Name>k__BackingField: 4
+    <SpeakerName>k__BackingField: Character name.
+    <Text>k__BackingField: Dialogue text.
+    <SpritePath>k__BackingField: Insert Sprite Path Here.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 03d7434d-2bd3-4199-b8a5-8893ea23ad00
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1238, y: 226}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 03d7434d-2bd3-4199-b8a5-8893ea23ad00
+  - <ID>k__BackingField: 03d7434d-2bd3-4199-b8a5-8893ea23ad00
+    <Name>k__BackingField: 5
+    <SpeakerName>k__BackingField: Character name.
+    <Text>k__BackingField: Dialogue text.
+    <SpritePath>k__BackingField: Insert Sprite Path Here.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 9bb4fc5d-8677-4a89-a7c5-80432e7446ca
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1630, y: 369}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 9bb4fc5d-8677-4a89-a7c5-80432e7446ca
+  - <ID>k__BackingField: 9bb4fc5d-8677-4a89-a7c5-80432e7446ca
+    <Name>k__BackingField: 6
+    <SpeakerName>k__BackingField: Character name.
+    <Text>k__BackingField: Dialogue text.
+    <SpritePath>k__BackingField: Insert Sprite Path Here.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: caedcd99-434a-4e05-a624-df56961f669b
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2079, y: 354}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 
+  <OldGroupNames>k__BackingField:
+  - FancyGroupName
+  - Group2
+  <OldUngroupedNodeNames>k__BackingField:
+  - 4
+  - 5
+  <OldGroupNodeNames>k__BackingField:
+    list:
+    - Key: FancyGroupName
+      Value:
+      - 1
+      - 2
+      - 3
+    - Key: Group2
+      Value:
+      - 6

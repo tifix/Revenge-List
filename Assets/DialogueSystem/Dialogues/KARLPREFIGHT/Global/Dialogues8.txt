@@ -1,0 +1,14 @@
+{
+    "ID": "df2e9e6e-7dfc-473d-9803-78c8b487a4f1",
+    "DialogueName": "8",
+    "Choices": [
+        {
+            "<Text>k__BackingField": "Next Dialogue",
+            "<NodeID>k__BackingField": "9fb95523-1ff9-4ca4-86a7-0d60928ce403"
+        }
+    ],
+    "SpeakerName": "Snuffles",
+    "Text": "... (Upset dog noises)",
+    "SpritePath": "Insert Sprite Path Here.",
+    "DialogueType": 0
+}

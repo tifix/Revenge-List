@@ -7,8 +7,8 @@ namespace DS.Elements
 {
     public class DSGroup : Group
     {
-        public string ID { get; set; }
-        public string OldTitle { get; set; }
+        public string ID;// { get; set; }
+        public string OldTitle;// { get; set; }
 
         private Color defaultBorderColor;
         private float defaultBorderWidth;

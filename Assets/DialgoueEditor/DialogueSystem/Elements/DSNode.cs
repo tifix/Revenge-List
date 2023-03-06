@@ -18,15 +18,15 @@ namespace DS.Elements
     [System.Serializable]
     public class DSNode : Node
     {
-        public string ID { get; set; }
-        public string DialogueName { get; set; }
-        public List<DSChoiceSaveData> Choices { get; set; }
-        public string SpeakerName{ get; set; }
-        public string Text { get; set; }
-        public string SpritePath { get; set; }
-        public DSDialogueType DialogueType { get; set; }
+        public string ID; //{ get; set; }
+        public string DialogueName;// { get; set; }
+        public List<DSChoiceSaveData> Choices;// { get; set; }
+        public string SpeakerName;//{ get; set; }
+        public string Text;// { get; set; }
+        public string SpritePath;// { get; set; }
+        public DSDialogueType DialogueType;//{ get; set; }
 
-        public DSGroup Group { get; set; }
+        public DSGroup Group;//{ get; set; }
 
         protected DSGraphView graphView;
 
@@ -228,7 +228,7 @@ namespace DS.Elements
         }
         #endregion
 
-        public string ThisToJson() { return JsonUtility.ToJson(this); }
+        public string ThisToJson() { return JsonUtility.ToJson(this,true); }
         public DSNode FromJson(string jsonString) { return JsonUtility.FromJson<DSNode>(jsonString); }
     }
 

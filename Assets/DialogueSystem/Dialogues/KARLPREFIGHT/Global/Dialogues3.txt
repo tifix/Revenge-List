@@ -1,0 +1,14 @@
+{
+    "ID": "1c2bc9db-7def-462a-8d92-59fc285f3fae",
+    "DialogueName": "3",
+    "Choices": [
+        {
+            "<Text>k__BackingField": "Next Dialogue",
+            "<NodeID>k__BackingField": "b934a2bb-431c-4fb1-a3e7-006c2ca383eb"
+        }
+    ],
+    "SpeakerName": "Lilith",
+    "Text": "HAHAHAHAHAHA! ",
+    "SpritePath": "Lilith_Smug",
+    "DialogueType": 0
+}
