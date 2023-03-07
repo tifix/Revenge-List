@@ -1,20 +1,13 @@
 {
     "DialogueName": "2",
+    "nodeID": "",
     "SpeakerName": "Lilith",
-    "Text": "It’s a pity, really, you’re sweet and I would have liked to keep you around…\\npfft…\\npffffff –",
+    "Text": "It’s a pity, really, you’re sweet and I would have liked to keep you around...\npff...\npffffff –",
     "SpritePath": "Lilith_Happy",
     "Choices": [
         {
             "Text": "Next Dialogue",
-            "NextDialogue": {
-                "DialogueName": "",
-                "SpeakerName": "",
-                "Text": "",
-                "SpritePath": "",
-                "Choices": [],
-                "DialogueType": 0,
-                "IsStartingDialogue": false
-            }
+            "nextID": ""
         }
     ],
     "DialogueType": 0,

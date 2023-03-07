@@ -1,20 +1,13 @@
 {
     "DialogueName": "11",
+    "nodeID": "",
     "SpeakerName": "Karl",
-    "Text": "ily, want anything?\\nI make scrumptious steak.",
+    "Text": "Lily, want anything?\nI make scrumptious steak.",
     "SpritePath": "Neighbour_Friendly",
     "Choices": [
         {
             "Text": "Next Dialogue",
-            "NextDialogue": {
-                "DialogueName": "",
-                "SpeakerName": "",
-                "Text": "",
-                "SpritePath": "",
-                "Choices": [],
-                "DialogueType": 0,
-                "IsStartingDialogue": false
-            }
+            "nextID": ""
         }
     ],
     "DialogueType": 0,

@@ -1,20 +1,13 @@
 {
     "DialogueName": "3",
+    "nodeID": "",
     "SpeakerName": "Lilith",
     "Text": "HAHAHAHAHAHA! ",
     "SpritePath": "Lilith_Smug",
     "Choices": [
         {
             "Text": "Next Dialogue",
-            "NextDialogue": {
-                "DialogueName": "",
-                "SpeakerName": "",
-                "Text": "",
-                "SpritePath": "",
-                "Choices": [],
-                "DialogueType": 0,
-                "IsStartingDialogue": false
-            }
+            "nextID": ""
         }
     ],
     "DialogueType": 0,

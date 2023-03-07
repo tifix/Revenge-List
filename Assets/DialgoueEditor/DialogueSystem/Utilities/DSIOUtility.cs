@@ -273,6 +273,7 @@ namespace DS.Utilities
             }
 
             dialogue.Init(
+                 node.ID,
                  node.DialogueName,
                  node.Text,
                  node.SpeakerName,
@@ -351,7 +352,7 @@ namespace DS.Utilities
                         continue;
                     }
 
-                    dialogue.Choices[choiceIndex].NextDialogue = createdDialogues[nodeChoice.NodeID];
+                    dialogue.Choices[choiceIndex].nextID = createdDialogues[nodeChoice.NodeID].nodeID;
 
                     //SaveAsset(dialogue);
                 }

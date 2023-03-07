@@ -15,59 +15,14 @@
                 "Value": [
                     {
                         "DialogueName": "2",
+                        "nodeID": "",
                         "SpeakerName": "Lilith",
-                        "Text": "It’s a pity, really, you’re sweet and I would have liked to keep you around…\\npfft…\\npffffff –",
+                        "Text": "It’s a pity, really, you’re sweet and I would have liked to keep you around...\npff...\npffffff –",
                         "SpritePath": "Lilith_Happy",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
-                                "NextDialogue": {
-                                    "DialogueName": "3",
-                                    "SpeakerName": "Lilith",
-                                    "Text": "HAHAHAHAHAHA! ",
-                                    "SpritePath": "Lilith_Smug",
-                                    "Choices": [
-                                        {
-                                            "Text": "Next Dialogue",
-                                            "NextDialogue": {
-                                                "DialogueName": "4",
-                                                "SpeakerName": "Lilith",
-                                                "Text": "I can’t even say it with a straight face!\\nAnyway…",
-                                                "SpritePath": "Lilith_Happy",
-                                                "Choices": [
-                                                    {
-                                                        "Text": "Next Dialogue",
-                                                        "NextDialogue": {
-                                                            "DialogueName": "5",
-                                                            "SpeakerName": "Lilith",
-                                                            "Text": "You give me no choice but to kill…",
-                                                            "SpritePath": "Lilith_Unhappy",
-                                                            "Choices": [
-                                                                {
-                                                                    "Text": "Next Dialogue",
-                                                                    "NextDialogue": {
-                                                                        "DialogueName": "6",
-                                                                        "SpeakerName": "Karl",
-                                                                        "Text": "Did you say grill?",
-                                                                        "SpritePath": "Neighbour_Friendly",
-                                                                        "DialogueType": 0,
-                                                                        "IsStartingDialogue": false
-                                                                    }
-                                                                }
-                                                            ],
-                                                            "DialogueType": 0,
-                                                            "IsStartingDialogue": false
-                                                        }
-                                                    }
-                                                ],
-                                                "DialogueType": 0,
-                                                "IsStartingDialogue": false
-                                            }
-                                        }
-                                    ],
-                                    "DialogueType": 0,
-                                    "IsStartingDialogue": false
-                                }
+                                "nextID": ""
                             }
                         ],
                         "DialogueType": 0,
@@ -75,59 +30,14 @@
                     },
                     {
                         "DialogueName": "3",
+                        "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "HAHAHAHAHAHA! ",
                         "SpritePath": "Lilith_Smug",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
-                                "NextDialogue": {
-                                    "DialogueName": "4",
-                                    "SpeakerName": "Lilith",
-                                    "Text": "I can’t even say it with a straight face!\\nAnyway…",
-                                    "SpritePath": "Lilith_Happy",
-                                    "Choices": [
-                                        {
-                                            "Text": "Next Dialogue",
-                                            "NextDialogue": {
-                                                "DialogueName": "5",
-                                                "SpeakerName": "Lilith",
-                                                "Text": "You give me no choice but to kill…",
-                                                "SpritePath": "Lilith_Unhappy",
-                                                "Choices": [
-                                                    {
-                                                        "Text": "Next Dialogue",
-                                                        "NextDialogue": {
-                                                            "DialogueName": "6",
-                                                            "SpeakerName": "Karl",
-                                                            "Text": "Did you say grill?",
-                                                            "SpritePath": "Neighbour_Friendly",
-                                                            "Choices": [
-                                                                {
-                                                                    "Text": "Next Dialogue",
-                                                                    "NextDialogue": {
-                                                                        "DialogueName": "7",
-                                                                        "SpeakerName": "Karl",
-                                                                        "Text": "Nevermind the dog park, there is always time for some barbeque!",
-                                                                        "SpritePath": "Neighbour_Laughing",
-                                                                        "DialogueType": 0,
-                                                                        "IsStartingDialogue": false
-                                                                    }
-                                                                }
-                                                            ],
-                                                            "DialogueType": 0,
-                                                            "IsStartingDialogue": false
-                                                        }
-                                                    }
-                                                ],
-                                                "DialogueType": 0,
-                                                "IsStartingDialogue": false
-                                            }
-                                        }
-                                    ],
-                                    "DialogueType": 0,
-                                    "IsStartingDialogue": false
-                                }
+                                "nextID": ""
                             }
                         ],
                         "DialogueType": 0,
@@ -135,59 +45,14 @@
                     },
                     {
                         "DialogueName": "4",
+                        "nodeID": "",
                         "SpeakerName": "Lilith",
-                        "Text": "I can’t even say it with a straight face!\\nAnyway…",
+                        "Text": "I can’t even say it with a straight face!\nAnyway…",
                         "SpritePath": "Lilith_Happy",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
-                                "NextDialogue": {
-                                    "DialogueName": "5",
-                                    "SpeakerName": "Lilith",
-                                    "Text": "You give me no choice but to kill…",
-                                    "SpritePath": "Lilith_Unhappy",
-                                    "Choices": [
-                                        {
-                                            "Text": "Next Dialogue",
-                                            "NextDialogue": {
-                                                "DialogueName": "6",
-                                                "SpeakerName": "Karl",
-                                                "Text": "Did you say grill?",
-                                                "SpritePath": "Neighbour_Friendly",
-                                                "Choices": [
-                                                    {
-                                                        "Text": "Next Dialogue",
-                                                        "NextDialogue": {
-                                                            "DialogueName": "7",
-                                                            "SpeakerName": "Karl",
-                                                            "Text": "Nevermind the dog park, there is always time for some barbeque!",
-                                                            "SpritePath": "Neighbour_Laughing",
-                                                            "Choices": [
-                                                                {
-                                                                    "Text": "Next Dialogue",
-                                                                    "NextDialogue": {
-                                                                        "DialogueName": "8",
-                                                                        "SpeakerName": "Snuffles",
-                                                                        "Text": "... (Upset dog noises)",
-                                                                        "SpritePath": "Insert Sprite Path Here.",
-                                                                        "DialogueType": 0,
-                                                                        "IsStartingDialogue": false
-                                                                    }
-                                                                }
-                                                            ],
-                                                            "DialogueType": 0,
-                                                            "IsStartingDialogue": false
-                                                        }
-                                                    }
-                                                ],
-                                                "DialogueType": 0,
-                                                "IsStartingDialogue": false
-                                            }
-                                        }
-                                    ],
-                                    "DialogueType": 0,
-                                    "IsStartingDialogue": false
-                                }
+                                "nextID": ""
                             }
                         ],
                         "DialogueType": 0,
@@ -195,59 +60,14 @@
                     },
                     {
                         "DialogueName": "5",
+                        "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "You give me no choice but to kill…",
                         "SpritePath": "Lilith_Unhappy",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
-                                "NextDialogue": {
-                                    "DialogueName": "6",
-                                    "SpeakerName": "Karl",
-                                    "Text": "Did you say grill?",
-                                    "SpritePath": "Neighbour_Friendly",
-                                    "Choices": [
-                                        {
-                                            "Text": "Next Dialogue",
-                                            "NextDialogue": {
-                                                "DialogueName": "7",
-                                                "SpeakerName": "Karl",
-                                                "Text": "Nevermind the dog park, there is always time for some barbeque!",
-                                                "SpritePath": "Neighbour_Laughing",
-                                                "Choices": [
-                                                    {
-                                                        "Text": "Next Dialogue",
-                                                        "NextDialogue": {
-                                                            "DialogueName": "8",
-                                                            "SpeakerName": "Snuffles",
-                                                            "Text": "... (Upset dog noises)",
-                                                            "SpritePath": "Insert Sprite Path Here.",
-                                                            "Choices": [
-                                                                {
-                                                                    "Text": "Next Dialogue",
-                                                                    "NextDialogue": {
-                                                                        "DialogueName": "9",
-                                                                        "SpeakerName": "Karl",
-                                                                        "Text": "Time to bring out the barbecue!",
-                                                                        "SpritePath": "Neighbour_Friendly",
-                                                                        "DialogueType": 0,
-                                                                        "IsStartingDialogue": false
-                                                                    }
-                                                                }
-                                                            ],
-                                                            "DialogueType": 0,
-                                                            "IsStartingDialogue": false
-                                                        }
-                                                    }
-                                                ],
-                                                "DialogueType": 0,
-                                                "IsStartingDialogue": false
-                                            }
-                                        }
-                                    ],
-                                    "DialogueType": 0,
-                                    "IsStartingDialogue": false
-                                }
+                                "nextID": ""
                             }
                         ],
                         "DialogueType": 0,
@@ -255,59 +75,14 @@
                     },
                     {
                         "DialogueName": "1",
+                        "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "Karl, I think we both know how this is going to end.",
                         "SpritePath": "Lilith_Smug",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
-                                "NextDialogue": {
-                                    "DialogueName": "2",
-                                    "SpeakerName": "Lilith",
-                                    "Text": "It’s a pity, really, you’re sweet and I would have liked to keep you around…\\npfft…\\npffffff –",
-                                    "SpritePath": "Lilith_Happy",
-                                    "Choices": [
-                                        {
-                                            "Text": "Next Dialogue",
-                                            "NextDialogue": {
-                                                "DialogueName": "3",
-                                                "SpeakerName": "Lilith",
-                                                "Text": "HAHAHAHAHAHA! ",
-                                                "SpritePath": "Lilith_Smug",
-                                                "Choices": [
-                                                    {
-                                                        "Text": "Next Dialogue",
-                                                        "NextDialogue": {
-                                                            "DialogueName": "4",
-                                                            "SpeakerName": "Lilith",
-                                                            "Text": "I can’t even say it with a straight face!\\nAnyway…",
-                                                            "SpritePath": "Lilith_Happy",
-                                                            "Choices": [
-                                                                {
-                                                                    "Text": "Next Dialogue",
-                                                                    "NextDialogue": {
-                                                                        "DialogueName": "5",
-                                                                        "SpeakerName": "Lilith",
-                                                                        "Text": "You give me no choice but to kill…",
-                                                                        "SpritePath": "Lilith_Unhappy",
-                                                                        "DialogueType": 0,
-                                                                        "IsStartingDialogue": false
-                                                                    }
-                                                                }
-                                                            ],
-                                                            "DialogueType": 0,
-                                                            "IsStartingDialogue": false
-                                                        }
-                                                    }
-                                                ],
-                                                "DialogueType": 0,
-                                                "IsStartingDialogue": false
-                                            }
-                                        }
-                                    ],
-                                    "DialogueType": 0,
-                                    "IsStartingDialogue": false
-                                }
+                                "nextID": ""
                             }
                         ],
                         "DialogueType": 0,
@@ -320,59 +95,14 @@
                 "Value": [
                     {
                         "DialogueName": "6",
+                        "nodeID": "",
                         "SpeakerName": "Karl",
                         "Text": "Did you say grill?",
                         "SpritePath": "Neighbour_Friendly",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
-                                "NextDialogue": {
-                                    "DialogueName": "7",
-                                    "SpeakerName": "Karl",
-                                    "Text": "Nevermind the dog park, there is always time for some barbeque!",
-                                    "SpritePath": "Neighbour_Laughing",
-                                    "Choices": [
-                                        {
-                                            "Text": "Next Dialogue",
-                                            "NextDialogue": {
-                                                "DialogueName": "8",
-                                                "SpeakerName": "Snuffles",
-                                                "Text": "... (Upset dog noises)",
-                                                "SpritePath": "Insert Sprite Path Here.",
-                                                "Choices": [
-                                                    {
-                                                        "Text": "Next Dialogue",
-                                                        "NextDialogue": {
-                                                            "DialogueName": "9",
-                                                            "SpeakerName": "Karl",
-                                                            "Text": "Time to bring out the barbecue!",
-                                                            "SpritePath": "Neighbour_Friendly",
-                                                            "Choices": [
-                                                                {
-                                                                    "Text": "Next Dialogue",
-                                                                    "NextDialogue": {
-                                                                        "DialogueName": "10",
-                                                                        "SpeakerName": "Astrid",
-                                                                        "Text": "No Sweetheart! We just had barbecue this morning!\\nAsk Lily if she's hungry!",
-                                                                        "SpritePath": "Insert Sprite Path Here.",
-                                                                        "DialogueType": 0,
-                                                                        "IsStartingDialogue": false
-                                                                    }
-                                                                }
-                                                            ],
-                                                            "DialogueType": 0,
-                                                            "IsStartingDialogue": false
-                                                        }
-                                                    }
-                                                ],
-                                                "DialogueType": 0,
-                                                "IsStartingDialogue": false
-                                            }
-                                        }
-                                    ],
-                                    "DialogueType": 0,
-                                    "IsStartingDialogue": false
-                                }
+                                "nextID": ""
                             }
                         ],
                         "DialogueType": 0,
@@ -380,59 +110,14 @@
                     },
                     {
                         "DialogueName": "8",
+                        "nodeID": "",
                         "SpeakerName": "Snuffles",
                         "Text": "... (Upset dog noises)",
-                        "SpritePath": "Insert Sprite Path Here.",
+                        "SpritePath": "",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
-                                "NextDialogue": {
-                                    "DialogueName": "9",
-                                    "SpeakerName": "Karl",
-                                    "Text": "Time to bring out the barbecue!",
-                                    "SpritePath": "Neighbour_Friendly",
-                                    "Choices": [
-                                        {
-                                            "Text": "Next Dialogue",
-                                            "NextDialogue": {
-                                                "DialogueName": "10",
-                                                "SpeakerName": "Astrid",
-                                                "Text": "No Sweetheart! We just had barbecue this morning!\\nAsk Lily if she's hungry!",
-                                                "SpritePath": "Insert Sprite Path Here.",
-                                                "Choices": [
-                                                    {
-                                                        "Text": "Next Dialogue",
-                                                        "NextDialogue": {
-                                                            "DialogueName": "11",
-                                                            "SpeakerName": "Karl",
-                                                            "Text": "ily, want anything?\\nI make scrumptious steak.",
-                                                            "SpritePath": "Neighbour_Friendly",
-                                                            "Choices": [
-                                                                {
-                                                                    "Text": "Next Dialogue",
-                                                                    "NextDialogue": {
-                                                                        "DialogueName": "12",
-                                                                        "SpeakerName": "Lilith",
-                                                                        "Text": "No! I want to fight you.",
-                                                                        "SpritePath": "Lilith_Unhappy",
-                                                                        "DialogueType": 0,
-                                                                        "IsStartingDialogue": false
-                                                                    }
-                                                                }
-                                                            ],
-                                                            "DialogueType": 0,
-                                                            "IsStartingDialogue": false
-                                                        }
-                                                    }
-                                                ],
-                                                "DialogueType": 0,
-                                                "IsStartingDialogue": false
-                                            }
-                                        }
-                                    ],
-                                    "DialogueType": 0,
-                                    "IsStartingDialogue": false
-                                }
+                                "nextID": ""
                             }
                         ],
                         "DialogueType": 0,
@@ -440,59 +125,14 @@
                     },
                     {
                         "DialogueName": "7",
+                        "nodeID": "",
                         "SpeakerName": "Karl",
                         "Text": "Nevermind the dog park, there is always time for some barbeque!",
                         "SpritePath": "Neighbour_Laughing",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
-                                "NextDialogue": {
-                                    "DialogueName": "8",
-                                    "SpeakerName": "Snuffles",
-                                    "Text": "... (Upset dog noises)",
-                                    "SpritePath": "Insert Sprite Path Here.",
-                                    "Choices": [
-                                        {
-                                            "Text": "Next Dialogue",
-                                            "NextDialogue": {
-                                                "DialogueName": "9",
-                                                "SpeakerName": "Karl",
-                                                "Text": "Time to bring out the barbecue!",
-                                                "SpritePath": "Neighbour_Friendly",
-                                                "Choices": [
-                                                    {
-                                                        "Text": "Next Dialogue",
-                                                        "NextDialogue": {
-                                                            "DialogueName": "10",
-                                                            "SpeakerName": "Astrid",
-                                                            "Text": "No Sweetheart! We just had barbecue this morning!\\nAsk Lily if she's hungry!",
-                                                            "SpritePath": "Insert Sprite Path Here.",
-                                                            "Choices": [
-                                                                {
-                                                                    "Text": "Next Dialogue",
-                                                                    "NextDialogue": {
-                                                                        "DialogueName": "11",
-                                                                        "SpeakerName": "Karl",
-                                                                        "Text": "ily, want anything?\\nI make scrumptious steak.",
-                                                                        "SpritePath": "Neighbour_Friendly",
-                                                                        "DialogueType": 0,
-                                                                        "IsStartingDialogue": false
-                                                                    }
-                                                                }
-                                                            ],
-                                                            "DialogueType": 0,
-                                                            "IsStartingDialogue": false
-                                                        }
-                                                    }
-                                                ],
-                                                "DialogueType": 0,
-                                                "IsStartingDialogue": false
-                                            }
-                                        }
-                                    ],
-                                    "DialogueType": 0,
-                                    "IsStartingDialogue": false
-                                }
+                                "nextID": ""
                             }
                         ],
                         "DialogueType": 0,
@@ -500,59 +140,14 @@
                     },
                     {
                         "DialogueName": "9",
+                        "nodeID": "",
                         "SpeakerName": "Karl",
                         "Text": "Time to bring out the barbecue!",
                         "SpritePath": "Neighbour_Friendly",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
-                                "NextDialogue": {
-                                    "DialogueName": "10",
-                                    "SpeakerName": "Astrid",
-                                    "Text": "No Sweetheart! We just had barbecue this morning!\\nAsk Lily if she's hungry!",
-                                    "SpritePath": "Insert Sprite Path Here.",
-                                    "Choices": [
-                                        {
-                                            "Text": "Next Dialogue",
-                                            "NextDialogue": {
-                                                "DialogueName": "11",
-                                                "SpeakerName": "Karl",
-                                                "Text": "ily, want anything?\\nI make scrumptious steak.",
-                                                "SpritePath": "Neighbour_Friendly",
-                                                "Choices": [
-                                                    {
-                                                        "Text": "Next Dialogue",
-                                                        "NextDialogue": {
-                                                            "DialogueName": "12",
-                                                            "SpeakerName": "Lilith",
-                                                            "Text": "No! I want to fight you.",
-                                                            "SpritePath": "Lilith_Unhappy",
-                                                            "Choices": [
-                                                                {
-                                                                    "Text": "Next Dialogue",
-                                                                    "NextDialogue": {
-                                                                        "DialogueName": "13",
-                                                                        "SpeakerName": "Karl",
-                                                                        "Text": "That’s great, because I have a license…",
-                                                                        "SpritePath": "Insert Sprite Path Here.",
-                                                                        "DialogueType": 0,
-                                                                        "IsStartingDialogue": false
-                                                                    }
-                                                                }
-                                                            ],
-                                                            "DialogueType": 0,
-                                                            "IsStartingDialogue": false
-                                                        }
-                                                    }
-                                                ],
-                                                "DialogueType": 0,
-                                                "IsStartingDialogue": false
-                                            }
-                                        }
-                                    ],
-                                    "DialogueType": 0,
-                                    "IsStartingDialogue": false
-                                }
+                                "nextID": ""
                             }
                         ],
                         "DialogueType": 0,
@@ -560,59 +155,14 @@
                     },
                     {
                         "DialogueName": "10",
+                        "nodeID": "",
                         "SpeakerName": "Astrid",
-                        "Text": "No Sweetheart! We just had barbecue this morning!\\nAsk Lily if she's hungry!",
-                        "SpritePath": "Insert Sprite Path Here.",
+                        "Text": "No Sweetheart! We just had barbecue this morning!\nAsk Lily if she's hungry!",
+                        "SpritePath": "",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
-                                "NextDialogue": {
-                                    "DialogueName": "11",
-                                    "SpeakerName": "Karl",
-                                    "Text": "ily, want anything?\\nI make scrumptious steak.",
-                                    "SpritePath": "Neighbour_Friendly",
-                                    "Choices": [
-                                        {
-                                            "Text": "Next Dialogue",
-                                            "NextDialogue": {
-                                                "DialogueName": "12",
-                                                "SpeakerName": "Lilith",
-                                                "Text": "No! I want to fight you.",
-                                                "SpritePath": "Lilith_Unhappy",
-                                                "Choices": [
-                                                    {
-                                                        "Text": "Next Dialogue",
-                                                        "NextDialogue": {
-                                                            "DialogueName": "13",
-                                                            "SpeakerName": "Karl",
-                                                            "Text": "That’s great, because I have a license…",
-                                                            "SpritePath": "Insert Sprite Path Here.",
-                                                            "Choices": [
-                                                                {
-                                                                    "Text": "Next Dialogue",
-                                                                    "NextDialogue": {
-                                                                        "DialogueName": "14",
-                                                                        "SpeakerName": "Lilith",
-                                                                        "Text": "DON’T SAY IT – ",
-                                                                        "SpritePath": "Lilith_Unhappy",
-                                                                        "DialogueType": 0,
-                                                                        "IsStartingDialogue": false
-                                                                    }
-                                                                }
-                                                            ],
-                                                            "DialogueType": 0,
-                                                            "IsStartingDialogue": false
-                                                        }
-                                                    }
-                                                ],
-                                                "DialogueType": 0,
-                                                "IsStartingDialogue": false
-                                            }
-                                        }
-                                    ],
-                                    "DialogueType": 0,
-                                    "IsStartingDialogue": false
-                                }
+                                "nextID": ""
                             }
                         ],
                         "DialogueType": 0,
@@ -620,59 +170,14 @@
                     },
                     {
                         "DialogueName": "11",
+                        "nodeID": "",
                         "SpeakerName": "Karl",
-                        "Text": "ily, want anything?\\nI make scrumptious steak.",
+                        "Text": "Lily, want anything?\nI make scrumptious steak.",
                         "SpritePath": "Neighbour_Friendly",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
-                                "NextDialogue": {
-                                    "DialogueName": "12",
-                                    "SpeakerName": "Lilith",
-                                    "Text": "No! I want to fight you.",
-                                    "SpritePath": "Lilith_Unhappy",
-                                    "Choices": [
-                                        {
-                                            "Text": "Next Dialogue",
-                                            "NextDialogue": {
-                                                "DialogueName": "13",
-                                                "SpeakerName": "Karl",
-                                                "Text": "That’s great, because I have a license…",
-                                                "SpritePath": "Insert Sprite Path Here.",
-                                                "Choices": [
-                                                    {
-                                                        "Text": "Next Dialogue",
-                                                        "NextDialogue": {
-                                                            "DialogueName": "14",
-                                                            "SpeakerName": "Lilith",
-                                                            "Text": "DON’T SAY IT – ",
-                                                            "SpritePath": "Lilith_Unhappy",
-                                                            "Choices": [
-                                                                {
-                                                                    "Text": "Next Dialogue",
-                                                                    "NextDialogue": {
-                                                                        "DialogueName": "15",
-                                                                        "SpeakerName": "Karl",
-                                                                        "Text": "…TO GRILL!",
-                                                                        "SpritePath": "Neighbour_Laughing",
-                                                                        "DialogueType": 0,
-                                                                        "IsStartingDialogue": false
-                                                                    }
-                                                                }
-                                                            ],
-                                                            "DialogueType": 0,
-                                                            "IsStartingDialogue": false
-                                                        }
-                                                    }
-                                                ],
-                                                "DialogueType": 0,
-                                                "IsStartingDialogue": false
-                                            }
-                                        }
-                                    ],
-                                    "DialogueType": 0,
-                                    "IsStartingDialogue": false
-                                }
+                                "nextID": ""
                             }
                         ],
                         "DialogueType": 0,
@@ -680,59 +185,14 @@
                     },
                     {
                         "DialogueName": "12",
+                        "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "No! I want to fight you.",
                         "SpritePath": "Lilith_Unhappy",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
-                                "NextDialogue": {
-                                    "DialogueName": "13",
-                                    "SpeakerName": "Karl",
-                                    "Text": "That’s great, because I have a license…",
-                                    "SpritePath": "Insert Sprite Path Here.",
-                                    "Choices": [
-                                        {
-                                            "Text": "Next Dialogue",
-                                            "NextDialogue": {
-                                                "DialogueName": "14",
-                                                "SpeakerName": "Lilith",
-                                                "Text": "DON’T SAY IT – ",
-                                                "SpritePath": "Lilith_Unhappy",
-                                                "Choices": [
-                                                    {
-                                                        "Text": "Next Dialogue",
-                                                        "NextDialogue": {
-                                                            "DialogueName": "15",
-                                                            "SpeakerName": "Karl",
-                                                            "Text": "…TO GRILL!",
-                                                            "SpritePath": "Neighbour_Laughing",
-                                                            "Choices": [
-                                                                {
-                                                                    "Text": "Next Dialogue",
-                                                                    "NextDialogue": {
-                                                                        "DialogueName": "",
-                                                                        "SpeakerName": "",
-                                                                        "Text": "",
-                                                                        "SpritePath": "",
-                                                                        "DialogueType": 0,
-                                                                        "IsStartingDialogue": false
-                                                                    }
-                                                                }
-                                                            ],
-                                                            "DialogueType": 0,
-                                                            "IsStartingDialogue": false
-                                                        }
-                                                    }
-                                                ],
-                                                "DialogueType": 0,
-                                                "IsStartingDialogue": false
-                                            }
-                                        }
-                                    ],
-                                    "DialogueType": 0,
-                                    "IsStartingDialogue": false
-                                }
+                                "nextID": ""
                             }
                         ],
                         "DialogueType": 0,
@@ -740,47 +200,14 @@
                     },
                     {
                         "DialogueName": "13",
+                        "nodeID": "",
                         "SpeakerName": "Karl",
                         "Text": "That’s great, because I have a license…",
-                        "SpritePath": "Insert Sprite Path Here.",
+                        "SpritePath": "",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
-                                "NextDialogue": {
-                                    "DialogueName": "14",
-                                    "SpeakerName": "Lilith",
-                                    "Text": "DON’T SAY IT – ",
-                                    "SpritePath": "Lilith_Unhappy",
-                                    "Choices": [
-                                        {
-                                            "Text": "Next Dialogue",
-                                            "NextDialogue": {
-                                                "DialogueName": "15",
-                                                "SpeakerName": "Karl",
-                                                "Text": "…TO GRILL!",
-                                                "SpritePath": "Neighbour_Laughing",
-                                                "Choices": [
-                                                    {
-                                                        "Text": "Next Dialogue",
-                                                        "NextDialogue": {
-                                                            "DialogueName": "",
-                                                            "SpeakerName": "",
-                                                            "Text": "",
-                                                            "SpritePath": "",
-                                                            "Choices": [],
-                                                            "DialogueType": 0,
-                                                            "IsStartingDialogue": false
-                                                        }
-                                                    }
-                                                ],
-                                                "DialogueType": 0,
-                                                "IsStartingDialogue": false
-                                            }
-                                        }
-                                    ],
-                                    "DialogueType": 0,
-                                    "IsStartingDialogue": false
-                                }
+                                "nextID": ""
                             }
                         ],
                         "DialogueType": 0,
@@ -788,34 +215,14 @@
                     },
                     {
                         "DialogueName": "14",
+                        "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "DON’T SAY IT – ",
                         "SpritePath": "Lilith_Unhappy",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
-                                "NextDialogue": {
-                                    "DialogueName": "15",
-                                    "SpeakerName": "Karl",
-                                    "Text": "…TO GRILL!",
-                                    "SpritePath": "Neighbour_Laughing",
-                                    "Choices": [
-                                        {
-                                            "Text": "Next Dialogue",
-                                            "NextDialogue": {
-                                                "DialogueName": "",
-                                                "SpeakerName": "",
-                                                "Text": "",
-                                                "SpritePath": "",
-                                                "Choices": [],
-                                                "DialogueType": 0,
-                                                "IsStartingDialogue": false
-                                            }
-                                        }
-                                    ],
-                                    "DialogueType": 0,
-                                    "IsStartingDialogue": false
-                                }
+                                "nextID": ""
                             }
                         ],
                         "DialogueType": 0,
@@ -823,21 +230,14 @@
                     },
                     {
                         "DialogueName": "15",
+                        "nodeID": "",
                         "SpeakerName": "Karl",
                         "Text": "…TO GRILL!",
                         "SpritePath": "Neighbour_Laughing",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
-                                "NextDialogue": {
-                                    "DialogueName": "",
-                                    "SpeakerName": "",
-                                    "Text": "",
-                                    "SpritePath": "",
-                                    "Choices": [],
-                                    "DialogueType": 0,
-                                    "IsStartingDialogue": false
-                                }
+                                "nextID": ""
                             }
                         ],
                         "DialogueType": 0,

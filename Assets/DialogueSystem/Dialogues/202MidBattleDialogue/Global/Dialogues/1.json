@@ -1,20 +1,13 @@
 {
     "DialogueName": "1",
+    "nodeID": "",
     "SpeakerName": "karl",
     "Text": "Well that hurt",
     "SpritePath": "Insert Sprite Path Here.",
     "Choices": [
         {
             "Text": "Next Dialogue",
-            "NextDialogue": {
-                "DialogueName": "",
-                "SpeakerName": "",
-                "Text": "",
-                "SpritePath": "",
-                "Choices": [],
-                "DialogueType": 0,
-                "IsStartingDialogue": false
-            }
+            "nextID": ""
         }
     ],
     "DialogueType": 0,

@@ -8,7 +8,7 @@ namespace DS.Data
     public class DSDialogueChoiceData
     {
         [field: SerializeField] public string Text;// { get; set; }
-        [field: SerializeField] public DSDialogueSO NextDialogue;// { get; set; }
+        [field: SerializeField] public string nextID;// NextDialogue;// { get; set; }
     }
 }
 

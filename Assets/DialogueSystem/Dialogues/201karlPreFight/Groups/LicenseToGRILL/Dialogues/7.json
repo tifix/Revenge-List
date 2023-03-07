@@ -1,20 +1,13 @@
 {
     "DialogueName": "7",
+    "nodeID": "",
     "SpeakerName": "Karl",
     "Text": "Nevermind the dog park, there is always time for some barbeque!",
     "SpritePath": "Neighbour_Laughing",
     "Choices": [
         {
             "Text": "Next Dialogue",
-            "NextDialogue": {
-                "DialogueName": "",
-                "SpeakerName": "",
-                "Text": "",
-                "SpritePath": "",
-                "Choices": [],
-                "DialogueType": 0,
-                "IsStartingDialogue": false
-            }
+            "nextID": ""
         }
     ],
     "DialogueType": 0,

@@ -1,20 +1,13 @@
 {
     "DialogueName": "12",
+    "nodeID": "",
     "SpeakerName": "Lilith",
     "Text": "No! I want to fight you.",
     "SpritePath": "Lilith_Unhappy",
     "Choices": [
         {
             "Text": "Next Dialogue",
-            "NextDialogue": {
-                "DialogueName": "",
-                "SpeakerName": "",
-                "Text": "",
-                "SpritePath": "",
-                "Choices": [],
-                "DialogueType": 0,
-                "IsStartingDialogue": false
-            }
+            "nextID": ""
         }
     ],
     "DialogueType": 0,

@@ -1,20 +1,13 @@
 {
     "DialogueName": "13",
+    "nodeID": "",
     "SpeakerName": "Karl",
     "Text": "That’s great, because I have a license…",
-    "SpritePath": "Insert Sprite Path Here.",
+    "SpritePath": "",
     "Choices": [
         {
             "Text": "Next Dialogue",
-            "NextDialogue": {
-                "DialogueName": "",
-                "SpeakerName": "",
-                "Text": "",
-                "SpritePath": "",
-                "Choices": [],
-                "DialogueType": 0,
-                "IsStartingDialogue": false
-            }
+            "nextID": ""
         }
     ],
     "DialogueType": 0,

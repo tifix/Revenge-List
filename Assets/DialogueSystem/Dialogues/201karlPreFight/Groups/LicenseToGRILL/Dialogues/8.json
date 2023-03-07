@@ -1,20 +1,13 @@
 {
     "DialogueName": "8",
+    "nodeID": "",
     "SpeakerName": "Snuffles",
     "Text": "... (Upset dog noises)",
-    "SpritePath": "Insert Sprite Path Here.",
+    "SpritePath": "",
     "Choices": [
         {
             "Text": "Next Dialogue",
-            "NextDialogue": {
-                "DialogueName": "",
-                "SpeakerName": "",
-                "Text": "",
-                "SpritePath": "",
-                "Choices": [],
-                "DialogueType": 0,
-                "IsStartingDialogue": false
-            }
+            "nextID": ""
         }
     ],
     "DialogueType": 0,

@@ -1,20 +1,13 @@
 {
     "DialogueName": "1",
+    "nodeID": "",
     "SpeakerName": "Lilith",
     "Text": "Karl, I think we both know how this is going to end.",
     "SpritePath": "Lilith_Smug",
     "Choices": [
         {
             "Text": "Next Dialogue",
-            "NextDialogue": {
-                "DialogueName": "",
-                "SpeakerName": "",
-                "Text": "",
-                "SpritePath": "",
-                "Choices": [],
-                "DialogueType": 0,
-                "IsStartingDialogue": false
-            }
+            "nextID": ""
         }
     ],
     "DialogueType": 0,

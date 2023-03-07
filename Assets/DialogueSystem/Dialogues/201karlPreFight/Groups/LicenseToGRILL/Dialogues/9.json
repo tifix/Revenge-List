@@ -1,20 +1,13 @@
 {
     "DialogueName": "9",
+    "nodeID": "",
     "SpeakerName": "Karl",
     "Text": "Time to bring out the barbecue!",
     "SpritePath": "Neighbour_Friendly",
     "Choices": [
         {
             "Text": "Next Dialogue",
-            "NextDialogue": {
-                "DialogueName": "",
-                "SpeakerName": "",
-                "Text": "",
-                "SpritePath": "",
-                "Choices": [],
-                "DialogueType": 0,
-                "IsStartingDialogue": false
-            }
+            "nextID": ""
         }
     ],
     "DialogueType": 0,

@@ -16,7 +16,7 @@ MonoBehaviour:
   Groups:
   - ID: 3848fe61-1004-472c-add3-c99fe671903b
     Name: Lilithbit
-    Position: {x: -370.00006, y: -541}
+    Position: {x: -370, y: -541}
   - ID: 1655ada0-8863-458f-aa2f-c57b1c2023d9
     Name: LicenseToGRILL
     Position: {x: 1432, y: -204}
@@ -25,7 +25,7 @@ MonoBehaviour:
     Name: 2
     SpeakerName: Lilith
     Text: "It\u2019s a pity, really, you\u2019re sweet and I would have liked to
-      keep you around\u2026\\npfft\u2026\\npffffff \u2013"
+      keep you around...\npff...\npffffff \u2013"
     SpritePath: Lilith_Happy
     Choices:
     - Text: Next Dialogue
@@ -51,7 +51,7 @@ MonoBehaviour:
   - ID: 51840bc9-889a-424f-950b-e2bde983df4f
     Name: 4
     SpeakerName: Lilith
-    Text: "I can\u2019t even say it with a straight face!\\nAnyway\u2026"
+    Text: "I can\u2019t even say it with a straight face!\nAnyway\u2026"
     SpritePath: Lilith_Happy
     Choices:
     - Text: Next Dialogue
@@ -104,7 +104,7 @@ MonoBehaviour:
     Name: 8
     SpeakerName: Snuffles
     Text: ... (Upset dog noises)
-    SpritePath: Insert Sprite Path Here.
+    SpritePath: 
     Choices:
     - Text: Next Dialogue
       NodeID: 58df70fb-4ea0-4652-9697-2d458cb61b10
@@ -142,8 +142,11 @@ MonoBehaviour:
   - ID: 98c55e23-f73f-479a-88d6-6880c2c5e475
     Name: 10
     SpeakerName: Astrid
-    Text: No Sweetheart! We just had barbecue this morning!\nAsk Lily if she's hungry!
-    SpritePath: Insert Sprite Path Here.
+    Text: 'No Sweetheart! We just had barbecue this morning!
+
+      Ask Lily if she''s
+      hungry!'
+    SpritePath: 
     Choices:
     - Text: Next Dialogue
       NodeID: 8006b63b-dbc8-44f8-b5be-25cff692f513
@@ -155,7 +158,9 @@ MonoBehaviour:
   - ID: 8006b63b-dbc8-44f8-b5be-25cff692f513
     Name: 11
     SpeakerName: Karl
-    Text: ily, want anything?\nI make scrumptious steak.
+    Text: 'Lily, want anything?
+
+      I make scrumptious steak.'
     SpritePath: Neighbour_Friendly
     Choices:
     - Text: Next Dialogue
@@ -182,7 +187,7 @@ MonoBehaviour:
     Name: 13
     SpeakerName: Karl
     Text: "That\u2019s great, because I have a license\u2026"
-    SpritePath: Insert Sprite Path Here.
+    SpritePath: 
     Choices:
     - Text: Next Dialogue
       NodeID: cc2bfe16-5cd1-4b16-ab24-62aabe4aba1a
