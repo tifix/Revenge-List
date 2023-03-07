@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1337283918968851348}
   - component: {fileID: 1337283918968851371}
   - component: {fileID: 7874526283309142096}
+  - component: {fileID: 295003563382121892}
   m_Layer: 6
   m_Name: Shadow
   m_TagString: Untagged
@@ -112,6 +113,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   axis: {x: 0, y: 0, z: 1}
   speed: 200
+--- !u!65 &295003563382121892
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337283918968851369}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 16.716238, y: 16.876398, z: 4.234275}
+  m_Center: {x: 0.44044176, y: 0.8408483, z: -2.0171382}
 --- !u!1 &1337283919670149635
 GameObject:
   m_ObjectHideFlags: 0
@@ -221,7 +235,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1337283920656425531}
   - component: {fileID: 1337283920656425508}
-  - component: {fileID: 3195007581981239477}
   m_Layer: 6
   m_Name: Envelope
   m_TagString: Untagged
@@ -261,16 +274,3 @@ MonoBehaviour:
   damage: 10
   dir: {x: -1, y: 0, z: 0}
   destroyVFX: {fileID: 8083233970450910706, guid: d0db28c32d0b48448a3d53c23bc37c07, type: 3}
---- !u!65 &3195007581981239477
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1337283920656425530}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.5769458, y: 1.0514177, z: 0.73}
-  m_Center: {x: 0.016527057, y: 0.1065079, z: 0}
