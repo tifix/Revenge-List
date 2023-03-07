@@ -5859,11 +5859,9 @@ MonoBehaviour:
   bossShieldBar: {fileID: 1029231595}
   playerPortrait: {fileID: 2565247685047568145}
   playerPortraits:
-  - {fileID: 21300000, guid: 1117f3dc8d1960848896058c8570b689, type: 3}
-  - {fileID: 21300000, guid: 751cb7fb15c9fd747b971699c5320ec2, type: 3}
-  - {fileID: 21300000, guid: e19285adb2778834d938042a164b6075, type: 3}
-  - {fileID: 21300000, guid: 0a570b5d5c012c04c88f324e4f919653, type: 3}
-  - {fileID: 21300000, guid: 9e7c765be98d61a4882363d974cef8e7, type: 3}
+  - {fileID: 21300000, guid: 5ac70e784f54db1439aaffc13e1709bf, type: 3}
+  - {fileID: 21300000, guid: b3d5373dc8f19754bba2d567043654d6, type: 3}
+  - {fileID: 21300000, guid: 6846484e71f255f4697e35623bfb4390, type: 3}
   XLPortraitLilith: {fileID: 4763698780034001839}
   XLPortraitOther: {fileID: 3640916071015081630}
   RevengeList: {fileID: 3665701568203247820}
