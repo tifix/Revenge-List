@@ -191,9 +191,10 @@ public class UI : MonoBehaviour
         {
             Debug.LogWarning("Boss defeated!");
             GameManager.instance.CamFollowPlayer();
+            PlayerMovement.instance.SetUnLockMovement();
+            PlayerMovement.instance.ReleaseBind();
             bossHealth.gameObject.SetActive(false);
             boxBossBar.SetActive(false);
-            
         }
                                         //Refill shieldbar and main health
         bossHealth.isCoreExposed = false;
@@ -276,7 +277,7 @@ public class UI : MonoBehaviour
     public void ToggleHealthbar() { boxHealthbar.SetActive(!boxHealthbar.activeInHierarchy); }                              //Toggle the player healthbar display
     public void ToggleQTEScreen()                                                                                           //Toggle QTE screen and freeze player movement
     {
-        if(!boxQTE.activeInHierarchy) PlayerMovement.instance.SetLockMovement();
+        if(boxQTE.activeSelf) PlayerMovement.instance.SetLockMovement();
         else { PlayerMovement.instance.SetUnLockMovement(); }
 
         boxQTE.SetActive(!boxQTE.activeInHierarchy); 

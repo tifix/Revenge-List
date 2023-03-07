@@ -13,7 +13,7 @@ public class KarlBoss : MonoBehaviour
 {
     public bossHealth health;
 
-    int currentPhase = 0;
+    public int currentPhase = 0;
     int currentAttack = 0;
     float attackTimer = 0;
     bool canAttack = true;
@@ -137,8 +137,15 @@ public class KarlBoss : MonoBehaviour
         currentAttack = 0;
         currentPhase++;
         ChangeAttack();
-        StartParticles();
     }
+
+    public void RepeatPhase()
+    {
+        StartCoroutine(Woosh(1f)); //Knocks the player back into their position when the phase attacks ended right after going out of QTE 
+        currentAttack = 0;
+        ChangeAttack();
+    }
+
     public void SetQTEandDialogueForRound(int round) 
     {
         //health.QTEtriggerPrompt.GetComponent<Inter_TextTrigger>().preUseDialogue = phase_Dialogues[round];
@@ -172,12 +179,15 @@ public class KarlBoss : MonoBehaviour
         {
             player.SetLockMovement();
             player.GetComponent<Collider>().enabled = false;
+
             yield return new WaitForFixedUpdate();
+
             player.transform.position = Vector3.Lerp(init, knockbackPosition, progress);
             progress += Time.fixedDeltaTime/ duration;
         }
         player.SetUnLockMovement();
         player.GetComponent<Collider>().enabled = true;
+        StartParticles();
     }
     #endregion
 

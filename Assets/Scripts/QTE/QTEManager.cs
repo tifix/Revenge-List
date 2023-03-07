@@ -20,6 +20,7 @@ public class QTEManager : MonoBehaviour
     int beatCounter;
     int comboCount;
     int correctHits;
+
     [SerializeField] private Sprite skullPerfect, skullMiss;
     public GameObject skullPrefab;
     public GameObject skullVFX;
@@ -28,12 +29,15 @@ public class QTEManager : MonoBehaviour
     [Range(0.1f,1.0f)]
     public float beatScale;
     public TMP_Text comboUI;
+    public TMP_Text countDownUI;
     public Transform up, down, left, right;
 
     public List<BeatItem> beatObjects; 
     List<SkullController> _skulls;
 
     float percentagePerSkull;
+
+    Animator anim;
 
     [System.Serializable]
     public struct BeatItem
@@ -76,12 +80,14 @@ public class QTEManager : MonoBehaviour
             beatObjects[i] = new BeatItem(beatObjects[i].GetObj());        
         }
         beatObjects.Add(new BeatItem(BeatUI));
+
+        anim = GetComponent<Animator>();
+
+        countDownUI.SetText("3");
     }
 
     void Update()
-    {
-        if (TryGetComponent(out Animator anim)) anim.SetBool("QTE_Playing",playQTE);
-
+    {       
         if (playQTE)
         {
             beatTimer += Time.deltaTime;
@@ -102,14 +108,15 @@ public class QTEManager : MonoBehaviour
             }
 
             //End of map
-            if (beatCounter >= currentMap.beats.Count)
+            if (beatCounter >= currentMap.beats.Count && isPlaying)
             {
                 isPlaying = false;
                 beatTimer = 0;
                 beatCounter = 0;
-
+               
                 Debug.Log("skull track finished");
                 Invoke("QTEEnd",3);
+                Invoke("QTECleanUp", 3.1f);
             }
 
             if (_skulls.Count > 0)
@@ -130,7 +137,7 @@ public class QTEManager : MonoBehaviour
 
                         healthQTE--;
                         //Fail QTE
-                        if(healthQTE<=0)
+                        if(healthQTE<=0 && isPlaying)
                         {
                             //End QTE
                             correctHits = 0;
@@ -167,8 +174,8 @@ public class QTEManager : MonoBehaviour
                 }
                 
             }
-            else if (!isPlaying)
-                playQTE = false;
+            //else if (!isPlaying)
+            //    playQTE = false;
         }
     }
 
@@ -193,10 +200,8 @@ public class QTEManager : MonoBehaviour
     public void QTEStart()
     {
         QTECleanUp();
-        //UI.instance.ToggleQTEScreen();
-        playQTE = true;
-        isPlaying = true;
-        if (TryGetComponent(out Animator anim)) anim.SetTrigger("QTE_entered");
+
+        anim.SetTrigger("QTE_entered");
 
         GameManager.instance.SetPause(false);
 
@@ -205,32 +210,59 @@ public class QTEManager : MonoBehaviour
 
         percentagePerSkull = (float)(1.0f / currentMap.beats.Count);
         FillSong.fillAmount = 0;
+
+        anim.SetBool("QTE_Playing", true);
+        StartCoroutine(QTECountDown());
     }
+
+    IEnumerator QTECountDown()
+    {
+        countDownUI.gameObject.SetActive(true);
+        countDownUI.SetText("3");
+
+        for (int i = 3; i > 0 ; i--)
+        {
+            countDownUI.SetText(i.ToString());
+            yield return new WaitForSeconds(1);
+        }
+        countDownUI.gameObject.SetActive(false);
+        playQTE = true;
+        isPlaying = true;
+    }
+
     public int QTEEnd()
     {
-        if (UI.instance.bossHealth != null)
-        {
-            UI.instance.bossHealth.coreHealth -= UI.instance.bossHealth.damageQTEcomplete;
-            UI.instance.bossHealth.coreHealth -= comboCount * UI.instance.bossHealth.damageQTEcomboMultiplier;
-            UI.instance.AfterQTE_UI(comboCount);
-        }
-
-        UI.instance.ToggleQTEScreen();
+        anim.SetBool("QTE_Playing", false);
 
         //Win QTE
         if (correctHits >= currentMap.beatsForWin)
-        {
-            if(UI.instance.bossHealth.gameObject.TryGetComponent<KarlBoss>(out KarlBoss karl)){ karl.NextPhase(); }
+        {           
+            if (UI.instance.bossHealth != null)
+            {
+                UI.instance.bossHealth.coreHealth -= UI.instance.bossHealth.damageQTEcomplete;
+                UI.instance.bossHealth.coreHealth -= comboCount * UI.instance.bossHealth.damageQTEcomboMultiplier;
+                UI.instance.AfterQTE_UI(comboCount);
+            }
+
+            if (UI.instance.bossHealth.gameObject.TryGetComponent<KarlBoss>(out KarlBoss karl))
+            { 
+                if(karl.currentPhase <= 1)
+                    karl.NextPhase(); 
+            }
         }
 
         //Lose - Repeat phase
         else 
         {
             Debug.LogWarning("too bad, repeat the phase");
-            //Reset phase
+            if (UI.instance.bossHealth != null)
+            {
+                UI.instance.AfterQTE_UI(comboCount);
+            }
+            if (UI.instance.bossHealth.gameObject.TryGetComponent<KarlBoss>(out KarlBoss karl)) { karl.RepeatPhase(); }
         }
 
-        correctHits = 0;
+        correctHits = 0;        
         return comboCount;
         //Score;
     }
@@ -266,13 +298,12 @@ public class QTEManager : MonoBehaviour
         playQTE = false;
         isPlaying = false;
 
-
-
         for (int i = 0; i < _skulls.Count; i++)
         {
             Destroy(_skulls[i].gameObject);
             _skulls.RemoveAt(i);
         }
+        UI.instance.ToggleQTEScreen();
     }
 
     //Scale up object over time
