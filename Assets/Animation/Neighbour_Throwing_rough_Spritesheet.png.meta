@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -165,7 +165,217 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Neighbour_Throwing_rough_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 650
+        width: 271
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c627e9cab8ceb4184d643ab772954d
+      internalID: -1407261332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neighbour_Throwing_rough_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 650
+        width: 271
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75494b1031cf1ba43b3d097693b2d6ae
+      internalID: -157146986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neighbour_Throwing_rough_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 650
+        width: 271
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6de499f17f5bb478c792b96ad5643b
+      internalID: -2104361063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neighbour_Throwing_rough_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 650
+        width: 271
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8c6821f1ddaf7489cb096e8ad3bc0d
+      internalID: -650170224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neighbour_Throwing_rough_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 650
+        width: 271
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af23d9f1b56af5459b4aa800255f3af
+      internalID: -394903861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neighbour_Throwing_rough_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 271
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d08da30e3826fe4d9cf1fb35c4c8923
+      internalID: -17326298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neighbour_Throwing_rough_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 0
+        width: 271
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73f70d8324b4674d93f9f78198227d6
+      internalID: -1925129544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neighbour_Throwing_rough_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 0
+        width: 271
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5be6be566014c449ac32de20c1c0888
+      internalID: -1714449489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neighbour_Throwing_rough_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 0
+        width: 271
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc0516f5e9410647b51257489efa4f6
+      internalID: -1009601714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neighbour_Throwing_rough_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 0
+        width: 271
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: befa9b5529c9d0e4fa8156788b37dbb9
+      internalID: 2123205574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -176,7 +386,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Neighbour_Throwing_rough_Spritesheet_9: 2123205574
+      Neighbour_Throwing_rough_Spritesheet_5: -17326298
+      Neighbour_Throwing_rough_Spritesheet_0: -1407261332
+      Neighbour_Throwing_rough_Spritesheet_8: -1009601714
+      Neighbour_Throwing_rough_Spritesheet_3: -650170224
+      Neighbour_Throwing_rough_Spritesheet_4: -394903861
+      Neighbour_Throwing_rough_Spritesheet_2: -2104361063
+      Neighbour_Throwing_rough_Spritesheet_6: -1925129544
+      Neighbour_Throwing_rough_Spritesheet_7: -1714449489
+      Neighbour_Throwing_rough_Spritesheet_1: -157146986
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
