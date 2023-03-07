@@ -83,7 +83,7 @@ public class UI : MonoBehaviour
     //Probably need a version that doesn't lock the movement and/or stops time (actually use pauseWhileRunning) - AV
     protected IEnumerator Typer(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning) //typing the text over time
     {
-        PlayerMovement.SetLockMovement();
+        PlayerMovement.instance.SetLockMovement();
 
 
 
@@ -140,7 +140,7 @@ public class UI : MonoBehaviour
         HideSpriteXLLilith();
         HideSpriteXLOther();
 
-        PlayerMovement.SetUnLockMovement();
+        PlayerMovement.instance.SetUnLockMovement();
     }
 
     private DSNodeSaveData GetChildNodeData() 
@@ -276,8 +276,8 @@ public class UI : MonoBehaviour
     public void ToggleHealthbar() { boxHealthbar.SetActive(!boxHealthbar.activeInHierarchy); }                              //Toggle the player healthbar display
     public void ToggleQTEScreen()                                                                                           //Toggle QTE screen and freeze player movement
     {
-        if(!boxQTE.activeInHierarchy) PlayerMovement.SetLockMovement();
-        else { PlayerMovement.SetUnLockMovement(); }
+        if(!boxQTE.activeInHierarchy) PlayerMovement.instance.SetLockMovement();
+        else { PlayerMovement.instance.SetUnLockMovement(); }
 
         boxQTE.SetActive(!boxQTE.activeInHierarchy); 
     }
