@@ -1,0 +1,22 @@
+{
+    "DialogueName": "1",
+    "SpeakerName": "Lilith",
+    "Text": "Karl, I think we both know how this is going to end.",
+    "SpritePath": "Lilith_Smug",
+    "Choices": [
+        {
+            "<Text>k__BackingField": "Next Dialogue",
+            "<NextDialogue>k__BackingField": {
+                "DialogueName": "",
+                "SpeakerName": "",
+                "Text": "",
+                "SpritePath": "",
+                "Choices": [],
+                "DialogueType": 0,
+                "IsStartingDialogue": false
+            }
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": true
+}

@@ -1,0 +1,1196 @@
+{
+    "FileName": "LILITHBACKSTORY",
+    "DialogueGroups": {
+        "list": []
+    },
+    "UngroupedDialogues": [
+        {
+            "DialogueName": "1",
+            "SpeakerName": "Lilith",
+            "Text": "You know, Karl, you remind me of someone…\nOr something…",
+            "SpritePath": "Lilith_Smug",
+            "Choices": [
+                {
+                    "<Text>k__BackingField": "Next Dialogue",
+                    "<NextDialogue>k__BackingField": {
+                        "DialogueName": "2",
+                        "SpeakerName": "Lilith",
+                        "Text": "My childhood. Back when I hadn’t yet met you and still felt happiness.\nIt was also because my parents were still alive.",
+                        "SpritePath": "Lilith_Sad",
+                        "Choices": [
+                            {
+                                "<Text>k__BackingField": "Next Dialogue",
+                                "<NextDialogue>k__BackingField": {
+                                    "DialogueName": "3",
+                                    "SpeakerName": "Lilith",
+                                    "Text": "They really liked to barbeque, too…",
+                                    "SpritePath": "Lilith_Unhappy",
+                                    "Choices": [
+                                        {
+                                            "<Text>k__BackingField": "Next Dialogue",
+                                            "<NextDialogue>k__BackingField": {
+                                                "DialogueName": "4",
+                                                "SpeakerName": "Lilith",
+                                                "Text": "They were fighting so much, they were always trying to grill each other. \nThey got really clever with it. And they got huge barbeque tongs just for that, and trained in gym to be able to pick them up.",
+                                                "SpritePath": "Lilith_Sad",
+                                                "Choices": [
+                                                    {
+                                                        "<Text>k__BackingField": "Next Dialogue",
+                                                        "<NextDialogue>k__BackingField": {
+                                                            "DialogueName": "5",
+                                                            "SpeakerName": "Lilith",
+                                                            "Text": "I still remember them running around with the huge barbeque tongs, trying to kill each other…\nAll the traps around the house…\r",
+                                                            "SpritePath": "Lilith_Happy",
+                                                            "Choices": [
+                                                                {
+                                                                    "<Text>k__BackingField": "Next Dialogue",
+                                                                    "<NextDialogue>k__BackingField": {
+                                                                        "DialogueName": "6",
+                                                                        "SpeakerName": "Lilith",
+                                                                        "Text": "But then, they went to marriage counsellor.",
+                                                                        "SpritePath": "Lilith_Unhappy",
+                                                                        "DialogueType": 0,
+                                                                        "IsStartingDialogue": false
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "DialogueType": 0,
+                                                            "IsStartingDialogue": false
+                                                        }
+                                                    }
+                                                ],
+                                                "DialogueType": 0,
+                                                "IsStartingDialogue": false
+                                            }
+                                        }
+                                    ],
+                                    "DialogueType": 0,
+                                    "IsStartingDialogue": false
+                                }
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": true
+        },
+        {
+            "DialogueName": "2",
+            "SpeakerName": "Lilith",
+            "Text": "My childhood. Back when I hadn’t yet met you and still felt happiness.\nIt was also because my parents were still alive.",
+            "SpritePath": "Lilith_Sad",
+            "Choices": [
+                {
+                    "<Text>k__BackingField": "Next Dialogue",
+                    "<NextDialogue>k__BackingField": {
+                        "DialogueName": "3",
+                        "SpeakerName": "Lilith",
+                        "Text": "They really liked to barbeque, too…",
+                        "SpritePath": "Lilith_Unhappy",
+                        "Choices": [
+                            {
+                                "<Text>k__BackingField": "Next Dialogue",
+                                "<NextDialogue>k__BackingField": {
+                                    "DialogueName": "4",
+                                    "SpeakerName": "Lilith",
+                                    "Text": "They were fighting so much, they were always trying to grill each other. \nThey got really clever with it. And they got huge barbeque tongs just for that, and trained in gym to be able to pick them up.",
+                                    "SpritePath": "Lilith_Sad",
+                                    "Choices": [
+                                        {
+                                            "<Text>k__BackingField": "Next Dialogue",
+                                            "<NextDialogue>k__BackingField": {
+                                                "DialogueName": "5",
+                                                "SpeakerName": "Lilith",
+                                                "Text": "I still remember them running around with the huge barbeque tongs, trying to kill each other…\nAll the traps around the house…\r",
+                                                "SpritePath": "Lilith_Happy",
+                                                "Choices": [
+                                                    {
+                                                        "<Text>k__BackingField": "Next Dialogue",
+                                                        "<NextDialogue>k__BackingField": {
+                                                            "DialogueName": "6",
+                                                            "SpeakerName": "Lilith",
+                                                            "Text": "But then, they went to marriage counsellor.",
+                                                            "SpritePath": "Lilith_Unhappy",
+                                                            "Choices": [
+                                                                {
+                                                                    "<Text>k__BackingField": "Next Dialogue",
+                                                                    "<NextDialogue>k__BackingField": {
+                                                                        "DialogueName": "7",
+                                                                        "SpeakerName": "Lilith",
+                                                                        "Text": "And they stopped wanting to kill each other.",
+                                                                        "SpritePath": "Lilith_Unhappy",
+                                                                        "DialogueType": 0,
+                                                                        "IsStartingDialogue": false
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "DialogueType": 0,
+                                                            "IsStartingDialogue": false
+                                                        }
+                                                    }
+                                                ],
+                                                "DialogueType": 0,
+                                                "IsStartingDialogue": false
+                                            }
+                                        }
+                                    ],
+                                    "DialogueType": 0,
+                                    "IsStartingDialogue": false
+                                }
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "3",
+            "SpeakerName": "Lilith",
+            "Text": "They really liked to barbeque, too…",
+            "SpritePath": "Lilith_Unhappy",
+            "Choices": [
+                {
+                    "<Text>k__BackingField": "Next Dialogue",
+                    "<NextDialogue>k__BackingField": {
+                        "DialogueName": "4",
+                        "SpeakerName": "Lilith",
+                        "Text": "They were fighting so much, they were always trying to grill each other. \nThey got really clever with it. And they got huge barbeque tongs just for that, and trained in gym to be able to pick them up.",
+                        "SpritePath": "Lilith_Sad",
+                        "Choices": [
+                            {
+                                "<Text>k__BackingField": "Next Dialogue",
+                                "<NextDialogue>k__BackingField": {
+                                    "DialogueName": "5",
+                                    "SpeakerName": "Lilith",
+                                    "Text": "I still remember them running around with the huge barbeque tongs, trying to kill each other…\nAll the traps around the house…\r",
+                                    "SpritePath": "Lilith_Happy",
+                                    "Choices": [
+                                        {
+                                            "<Text>k__BackingField": "Next Dialogue",
+                                            "<NextDialogue>k__BackingField": {
+                                                "DialogueName": "6",
+                                                "SpeakerName": "Lilith",
+                                                "Text": "But then, they went to marriage counsellor.",
+                                                "SpritePath": "Lilith_Unhappy",
+                                                "Choices": [
+                                                    {
+                                                        "<Text>k__BackingField": "Next Dialogue",
+                                                        "<NextDialogue>k__BackingField": {
+                                                            "DialogueName": "7",
+                                                            "SpeakerName": "Lilith",
+                                                            "Text": "And they stopped wanting to kill each other.",
+                                                            "SpritePath": "Lilith_Unhappy",
+                                                            "Choices": [
+                                                                {
+                                                                    "<Text>k__BackingField": "Next Dialogue",
+                                                                    "<NextDialogue>k__BackingField": {
+                                                                        "DialogueName": "8",
+                                                                        "SpeakerName": "Lilith",
+                                                                        "Text": "And all the frustration they used to feel for each other, they directed…\ntowards me.\r",
+                                                                        "SpritePath": "Lilith_Unhappy",
+                                                                        "DialogueType": 0,
+                                                                        "IsStartingDialogue": false
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "DialogueType": 0,
+                                                            "IsStartingDialogue": false
+                                                        }
+                                                    }
+                                                ],
+                                                "DialogueType": 0,
+                                                "IsStartingDialogue": false
+                                            }
+                                        }
+                                    ],
+                                    "DialogueType": 0,
+                                    "IsStartingDialogue": false
+                                }
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "4",
+            "SpeakerName": "Lilith",
+            "Text": "They were fighting so much, they were always trying to grill each other. \nThey got really clever with it. And they got huge barbeque tongs just for that, and trained in gym to be able to pick them up.",
+            "SpritePath": "Lilith_Sad",
+            "Choices": [
+                {
+                    "<Text>k__BackingField": "Next Dialogue",
+                    "<NextDialogue>k__BackingField": {
+                        "DialogueName": "5",
+                        "SpeakerName": "Lilith",
+                        "Text": "I still remember them running around with the huge barbeque tongs, trying to kill each other…\nAll the traps around the house…\r",
+                        "SpritePath": "Lilith_Happy",
+                        "Choices": [
+                            {
+                                "<Text>k__BackingField": "Next Dialogue",
+                                "<NextDialogue>k__BackingField": {
+                                    "DialogueName": "6",
+                                    "SpeakerName": "Lilith",
+                                    "Text": "But then, they went to marriage counsellor.",
+                                    "SpritePath": "Lilith_Unhappy",
+                                    "Choices": [
+                                        {
+                                            "<Text>k__BackingField": "Next Dialogue",
+                                            "<NextDialogue>k__BackingField": {
+                                                "DialogueName": "7",
+                                                "SpeakerName": "Lilith",
+                                                "Text": "And they stopped wanting to kill each other.",
+                                                "SpritePath": "Lilith_Unhappy",
+                                                "Choices": [
+                                                    {
+                                                        "<Text>k__BackingField": "Next Dialogue",
+                                                        "<NextDialogue>k__BackingField": {
+                                                            "DialogueName": "8",
+                                                            "SpeakerName": "Lilith",
+                                                            "Text": "And all the frustration they used to feel for each other, they directed…\ntowards me.\r",
+                                                            "SpritePath": "Lilith_Unhappy",
+                                                            "Choices": [
+                                                                {
+                                                                    "<Text>k__BackingField": "Next Dialogue",
+                                                                    "<NextDialogue>k__BackingField": {
+                                                                        "DialogueName": "9",
+                                                                        "SpeakerName": "Lilith",
+                                                                        "Text": "Running away from barbeque tongs, trying to keep out…\nI still remember it so clearly, mr Svensson.",
+                                                                        "SpritePath": "Lilith_Unhappy",
+                                                                        "DialogueType": 0,
+                                                                        "IsStartingDialogue": false
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "DialogueType": 0,
+                                                            "IsStartingDialogue": false
+                                                        }
+                                                    }
+                                                ],
+                                                "DialogueType": 0,
+                                                "IsStartingDialogue": false
+                                            }
+                                        }
+                                    ],
+                                    "DialogueType": 0,
+                                    "IsStartingDialogue": false
+                                }
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "5",
+            "SpeakerName": "Lilith",
+            "Text": "I still remember them running around with the huge barbeque tongs, trying to kill each other…\nAll the traps around the house…\r",
+            "SpritePath": "Lilith_Happy",
+            "Choices": [
+                {
+                    "<Text>k__BackingField": "Next Dialogue",
+                    "<NextDialogue>k__BackingField": {
+                        "DialogueName": "6",
+                        "SpeakerName": "Lilith",
+                        "Text": "But then, they went to marriage counsellor.",
+                        "SpritePath": "Lilith_Unhappy",
+                        "Choices": [
+                            {
+                                "<Text>k__BackingField": "Next Dialogue",
+                                "<NextDialogue>k__BackingField": {
+                                    "DialogueName": "7",
+                                    "SpeakerName": "Lilith",
+                                    "Text": "And they stopped wanting to kill each other.",
+                                    "SpritePath": "Lilith_Unhappy",
+                                    "Choices": [
+                                        {
+                                            "<Text>k__BackingField": "Next Dialogue",
+                                            "<NextDialogue>k__BackingField": {
+                                                "DialogueName": "8",
+                                                "SpeakerName": "Lilith",
+                                                "Text": "And all the frustration they used to feel for each other, they directed…\ntowards me.\r",
+                                                "SpritePath": "Lilith_Unhappy",
+                                                "Choices": [
+                                                    {
+                                                        "<Text>k__BackingField": "Next Dialogue",
+                                                        "<NextDialogue>k__BackingField": {
+                                                            "DialogueName": "9",
+                                                            "SpeakerName": "Lilith",
+                                                            "Text": "Running away from barbeque tongs, trying to keep out…\nI still remember it so clearly, mr Svensson.",
+                                                            "SpritePath": "Lilith_Unhappy",
+                                                            "Choices": [
+                                                                {
+                                                                    "<Text>k__BackingField": "Next Dialogue",
+                                                                    "<NextDialogue>k__BackingField": {
+                                                                        "DialogueName": "10",
+                                                                        "SpeakerName": "Lilith",
+                                                                        "Text": "And yet somehow, seeing you everyday is worse horror than my childhood could have ever been.",
+                                                                        "SpritePath": "Lilith_Unhappy",
+                                                                        "DialogueType": 0,
+                                                                        "IsStartingDialogue": false
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "DialogueType": 0,
+                                                            "IsStartingDialogue": false
+                                                        }
+                                                    }
+                                                ],
+                                                "DialogueType": 0,
+                                                "IsStartingDialogue": false
+                                            }
+                                        }
+                                    ],
+                                    "DialogueType": 0,
+                                    "IsStartingDialogue": false
+                                }
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "6",
+            "SpeakerName": "Lilith",
+            "Text": "But then, they went to marriage counsellor.",
+            "SpritePath": "Lilith_Unhappy",
+            "Choices": [
+                {
+                    "<Text>k__BackingField": "Next Dialogue",
+                    "<NextDialogue>k__BackingField": {
+                        "DialogueName": "7",
+                        "SpeakerName": "Lilith",
+                        "Text": "And they stopped wanting to kill each other.",
+                        "SpritePath": "Lilith_Unhappy",
+                        "Choices": [
+                            {
+                                "<Text>k__BackingField": "Next Dialogue",
+                                "<NextDialogue>k__BackingField": {
+                                    "DialogueName": "8",
+                                    "SpeakerName": "Lilith",
+                                    "Text": "And all the frustration they used to feel for each other, they directed…\ntowards me.\r",
+                                    "SpritePath": "Lilith_Unhappy",
+                                    "Choices": [
+                                        {
+                                            "<Text>k__BackingField": "Next Dialogue",
+                                            "<NextDialogue>k__BackingField": {
+                                                "DialogueName": "9",
+                                                "SpeakerName": "Lilith",
+                                                "Text": "Running away from barbeque tongs, trying to keep out…\nI still remember it so clearly, mr Svensson.",
+                                                "SpritePath": "Lilith_Unhappy",
+                                                "Choices": [
+                                                    {
+                                                        "<Text>k__BackingField": "Next Dialogue",
+                                                        "<NextDialogue>k__BackingField": {
+                                                            "DialogueName": "10",
+                                                            "SpeakerName": "Lilith",
+                                                            "Text": "And yet somehow, seeing you everyday is worse horror than my childhood could have ever been.",
+                                                            "SpritePath": "Lilith_Unhappy",
+                                                            "Choices": [
+                                                                {
+                                                                    "<Text>k__BackingField": "Next Dialogue",
+                                                                    "<NextDialogue>k__BackingField": {
+                                                                        "DialogueName": "11",
+                                                                        "SpeakerName": "Lilith",
+                                                                        "Text": "It’s weird I’ve not already killed you, really. Your crimes are numerous.\nThe eggs… The dog… Stealing away my girl…",
+                                                                        "SpritePath": "Lilith_Sad",
+                                                                        "DialogueType": 0,
+                                                                        "IsStartingDialogue": false
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "DialogueType": 0,
+                                                            "IsStartingDialogue": false
+                                                        }
+                                                    }
+                                                ],
+                                                "DialogueType": 0,
+                                                "IsStartingDialogue": false
+                                            }
+                                        }
+                                    ],
+                                    "DialogueType": 0,
+                                    "IsStartingDialogue": false
+                                }
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "7",
+            "SpeakerName": "Lilith",
+            "Text": "And they stopped wanting to kill each other.",
+            "SpritePath": "Lilith_Unhappy",
+            "Choices": [
+                {
+                    "<Text>k__BackingField": "Next Dialogue",
+                    "<NextDialogue>k__BackingField": {
+                        "DialogueName": "8",
+                        "SpeakerName": "Lilith",
+                        "Text": "And all the frustration they used to feel for each other, they directed…\ntowards me.\r",
+                        "SpritePath": "Lilith_Unhappy",
+                        "Choices": [
+                            {
+                                "<Text>k__BackingField": "Next Dialogue",
+                                "<NextDialogue>k__BackingField": {
+                                    "DialogueName": "9",
+                                    "SpeakerName": "Lilith",
+                                    "Text": "Running away from barbeque tongs, trying to keep out…\nI still remember it so clearly, mr Svensson.",
+                                    "SpritePath": "Lilith_Unhappy",
+                                    "Choices": [
+                                        {
+                                            "<Text>k__BackingField": "Next Dialogue",
+                                            "<NextDialogue>k__BackingField": {
+                                                "DialogueName": "10",
+                                                "SpeakerName": "Lilith",
+                                                "Text": "And yet somehow, seeing you everyday is worse horror than my childhood could have ever been.",
+                                                "SpritePath": "Lilith_Unhappy",
+                                                "Choices": [
+                                                    {
+                                                        "<Text>k__BackingField": "Next Dialogue",
+                                                        "<NextDialogue>k__BackingField": {
+                                                            "DialogueName": "11",
+                                                            "SpeakerName": "Lilith",
+                                                            "Text": "It’s weird I’ve not already killed you, really. Your crimes are numerous.\nThe eggs… The dog… Stealing away my girl…",
+                                                            "SpritePath": "Lilith_Sad",
+                                                            "Choices": [
+                                                                {
+                                                                    "<Text>k__BackingField": "Next Dialogue",
+                                                                    "<NextDialogue>k__BackingField": {
+                                                                        "DialogueName": "12",
+                                                                        "SpeakerName": "Lilith",
+                                                                        "Text": "And let’s not even get started on just who you are as a person, which is crime in and on itself.\nNobody should be like you.",
+                                                                        "SpritePath": "Lilith_Unhappy",
+                                                                        "DialogueType": 0,
+                                                                        "IsStartingDialogue": false
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "DialogueType": 0,
+                                                            "IsStartingDialogue": false
+                                                        }
+                                                    }
+                                                ],
+                                                "DialogueType": 0,
+                                                "IsStartingDialogue": false
+                                            }
+                                        }
+                                    ],
+                                    "DialogueType": 0,
+                                    "IsStartingDialogue": false
+                                }
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "8",
+            "SpeakerName": "Lilith",
+            "Text": "And all the frustration they used to feel for each other, they directed…\ntowards me.\r",
+            "SpritePath": "Lilith_Unhappy",
+            "Choices": [
+                {
+                    "<Text>k__BackingField": "Next Dialogue",
+                    "<NextDialogue>k__BackingField": {
+                        "DialogueName": "9",
+                        "SpeakerName": "Lilith",
+                        "Text": "Running away from barbeque tongs, trying to keep out…\nI still remember it so clearly, mr Svensson.",
+                        "SpritePath": "Lilith_Unhappy",
+                        "Choices": [
+                            {
+                                "<Text>k__BackingField": "Next Dialogue",
+                                "<NextDialogue>k__BackingField": {
+                                    "DialogueName": "10",
+                                    "SpeakerName": "Lilith",
+                                    "Text": "And yet somehow, seeing you everyday is worse horror than my childhood could have ever been.",
+                                    "SpritePath": "Lilith_Unhappy",
+                                    "Choices": [
+                                        {
+                                            "<Text>k__BackingField": "Next Dialogue",
+                                            "<NextDialogue>k__BackingField": {
+                                                "DialogueName": "11",
+                                                "SpeakerName": "Lilith",
+                                                "Text": "It’s weird I’ve not already killed you, really. Your crimes are numerous.\nThe eggs… The dog… Stealing away my girl…",
+                                                "SpritePath": "Lilith_Sad",
+                                                "Choices": [
+                                                    {
+                                                        "<Text>k__BackingField": "Next Dialogue",
+                                                        "<NextDialogue>k__BackingField": {
+                                                            "DialogueName": "12",
+                                                            "SpeakerName": "Lilith",
+                                                            "Text": "And let’s not even get started on just who you are as a person, which is crime in and on itself.\nNobody should be like you.",
+                                                            "SpritePath": "Lilith_Unhappy",
+                                                            "Choices": [
+                                                                {
+                                                                    "<Text>k__BackingField": "Next Dialogue",
+                                                                    "<NextDialogue>k__BackingField": {
+                                                                        "DialogueName": "13",
+                                                                        "SpeakerName": "Lilith",
+                                                                        "Text": "So it’s strange I’ve not gotten to you before this.\nI have so many reasons to take revenge on you.",
+                                                                        "SpritePath": "Lilith_Unhappy",
+                                                                        "DialogueType": 0,
+                                                                        "IsStartingDialogue": false
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "DialogueType": 0,
+                                                            "IsStartingDialogue": false
+                                                        }
+                                                    }
+                                                ],
+                                                "DialogueType": 0,
+                                                "IsStartingDialogue": false
+                                            }
+                                        }
+                                    ],
+                                    "DialogueType": 0,
+                                    "IsStartingDialogue": false
+                                }
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "9",
+            "SpeakerName": "Lilith",
+            "Text": "Running away from barbeque tongs, trying to keep out…\nI still remember it so clearly, mr Svensson.",
+            "SpritePath": "Lilith_Unhappy",
+            "Choices": [
+                {
+                    "<Text>k__BackingField": "Next Dialogue",
+                    "<NextDialogue>k__BackingField": {
+                        "DialogueName": "10",
+                        "SpeakerName": "Lilith",
+                        "Text": "And yet somehow, seeing you everyday is worse horror than my childhood could have ever been.",
+                        "SpritePath": "Lilith_Unhappy",
+                        "Choices": [
+                            {
+                                "<Text>k__BackingField": "Next Dialogue",
+                                "<NextDialogue>k__BackingField": {
+                                    "DialogueName": "11",
+                                    "SpeakerName": "Lilith",
+                                    "Text": "It’s weird I’ve not already killed you, really. Your crimes are numerous.\nThe eggs… The dog… Stealing away my girl…",
+                                    "SpritePath": "Lilith_Sad",
+                                    "Choices": [
+                                        {
+                                            "<Text>k__BackingField": "Next Dialogue",
+                                            "<NextDialogue>k__BackingField": {
+                                                "DialogueName": "12",
+                                                "SpeakerName": "Lilith",
+                                                "Text": "And let’s not even get started on just who you are as a person, which is crime in and on itself.\nNobody should be like you.",
+                                                "SpritePath": "Lilith_Unhappy",
+                                                "Choices": [
+                                                    {
+                                                        "<Text>k__BackingField": "Next Dialogue",
+                                                        "<NextDialogue>k__BackingField": {
+                                                            "DialogueName": "13",
+                                                            "SpeakerName": "Lilith",
+                                                            "Text": "So it’s strange I’ve not gotten to you before this.\nI have so many reasons to take revenge on you.",
+                                                            "SpritePath": "Lilith_Unhappy",
+                                                            "Choices": [
+                                                                {
+                                                                    "<Text>k__BackingField": "Next Dialogue",
+                                                                    "<NextDialogue>k__BackingField": {
+                                                                        "DialogueName": "14",
+                                                                        "SpeakerName": "Karl",
+                                                                        "Text": "Isn’t the best revenge a life well-lived?",
+                                                                        "SpritePath": "Neighbour_Friendly",
+                                                                        "DialogueType": 0,
+                                                                        "IsStartingDialogue": false
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "DialogueType": 0,
+                                                            "IsStartingDialogue": false
+                                                        }
+                                                    }
+                                                ],
+                                                "DialogueType": 0,
+                                                "IsStartingDialogue": false
+                                            }
+                                        }
+                                    ],
+                                    "DialogueType": 0,
+                                    "IsStartingDialogue": false
+                                }
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "10",
+            "SpeakerName": "Lilith",
+            "Text": "And yet somehow, seeing you everyday is worse horror than my childhood could have ever been.",
+            "SpritePath": "Lilith_Unhappy",
+            "Choices": [
+                {
+                    "<Text>k__BackingField": "Next Dialogue",
+                    "<NextDialogue>k__BackingField": {
+                        "DialogueName": "11",
+                        "SpeakerName": "Lilith",
+                        "Text": "It’s weird I’ve not already killed you, really. Your crimes are numerous.\nThe eggs… The dog… Stealing away my girl…",
+                        "SpritePath": "Lilith_Sad",
+                        "Choices": [
+                            {
+                                "<Text>k__BackingField": "Next Dialogue",
+                                "<NextDialogue>k__BackingField": {
+                                    "DialogueName": "12",
+                                    "SpeakerName": "Lilith",
+                                    "Text": "And let’s not even get started on just who you are as a person, which is crime in and on itself.\nNobody should be like you.",
+                                    "SpritePath": "Lilith_Unhappy",
+                                    "Choices": [
+                                        {
+                                            "<Text>k__BackingField": "Next Dialogue",
+                                            "<NextDialogue>k__BackingField": {
+                                                "DialogueName": "13",
+                                                "SpeakerName": "Lilith",
+                                                "Text": "So it’s strange I’ve not gotten to you before this.\nI have so many reasons to take revenge on you.",
+                                                "SpritePath": "Lilith_Unhappy",
+                                                "Choices": [
+                                                    {
+                                                        "<Text>k__BackingField": "Next Dialogue",
+                                                        "<NextDialogue>k__BackingField": {
+                                                            "DialogueName": "14",
+                                                            "SpeakerName": "Karl",
+                                                            "Text": "Isn’t the best revenge a life well-lived?",
+                                                            "SpritePath": "Neighbour_Friendly",
+                                                            "Choices": [
+                                                                {
+                                                                    "<Text>k__BackingField": "Next Dialogue",
+                                                                    "<NextDialogue>k__BackingField": {
+                                                                        "DialogueName": "15",
+                                                                        "SpeakerName": "Lilith",
+                                                                        "Text": "HAHAHAHAHAHAHAHA. ",
+                                                                        "SpritePath": "Lilith_Smug",
+                                                                        "DialogueType": 0,
+                                                                        "IsStartingDialogue": false
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "DialogueType": 0,
+                                                            "IsStartingDialogue": false
+                                                        }
+                                                    }
+                                                ],
+                                                "DialogueType": 0,
+                                                "IsStartingDialogue": false
+                                            }
+                                        }
+                                    ],
+                                    "DialogueType": 0,
+                                    "IsStartingDialogue": false
+                                }
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "11",
+            "SpeakerName": "Lilith",
+            "Text": "It’s weird I’ve not already killed you, really. Your crimes are numerous.\nThe eggs… The dog… Stealing away my girl…",
+            "SpritePath": "Lilith_Sad",
+            "Choices": [
+                {
+                    "<Text>k__BackingField": "Next Dialogue",
+                    "<NextDialogue>k__BackingField": {
+                        "DialogueName": "12",
+                        "SpeakerName": "Lilith",
+                        "Text": "And let’s not even get started on just who you are as a person, which is crime in and on itself.\nNobody should be like you.",
+                        "SpritePath": "Lilith_Unhappy",
+                        "Choices": [
+                            {
+                                "<Text>k__BackingField": "Next Dialogue",
+                                "<NextDialogue>k__BackingField": {
+                                    "DialogueName": "13",
+                                    "SpeakerName": "Lilith",
+                                    "Text": "So it’s strange I’ve not gotten to you before this.\nI have so many reasons to take revenge on you.",
+                                    "SpritePath": "Lilith_Unhappy",
+                                    "Choices": [
+                                        {
+                                            "<Text>k__BackingField": "Next Dialogue",
+                                            "<NextDialogue>k__BackingField": {
+                                                "DialogueName": "14",
+                                                "SpeakerName": "Karl",
+                                                "Text": "Isn’t the best revenge a life well-lived?",
+                                                "SpritePath": "Neighbour_Friendly",
+                                                "Choices": [
+                                                    {
+                                                        "<Text>k__BackingField": "Next Dialogue",
+                                                        "<NextDialogue>k__BackingField": {
+                                                            "DialogueName": "15",
+                                                            "SpeakerName": "Lilith",
+                                                            "Text": "HAHAHAHAHAHAHAHA. ",
+                                                            "SpritePath": "Lilith_Smug",
+                                                            "Choices": [
+                                                                {
+                                                                    "<Text>k__BackingField": "Next Dialogue",
+                                                                    "<NextDialogue>k__BackingField": {
+                                                                        "DialogueName": "16",
+                                                                        "SpeakerName": "Lilith",
+                                                                        "Text": "HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA.",
+                                                                        "SpritePath": "Lilith_Smug",
+                                                                        "DialogueType": 0,
+                                                                        "IsStartingDialogue": false
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "DialogueType": 0,
+                                                            "IsStartingDialogue": false
+                                                        }
+                                                    }
+                                                ],
+                                                "DialogueType": 0,
+                                                "IsStartingDialogue": false
+                                            }
+                                        }
+                                    ],
+                                    "DialogueType": 0,
+                                    "IsStartingDialogue": false
+                                }
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "12",
+            "SpeakerName": "Lilith",
+            "Text": "And let’s not even get started on just who you are as a person, which is crime in and on itself.\nNobody should be like you.",
+            "SpritePath": "Lilith_Unhappy",
+            "Choices": [
+                {
+                    "<Text>k__BackingField": "Next Dialogue",
+                    "<NextDialogue>k__BackingField": {
+                        "DialogueName": "13",
+                        "SpeakerName": "Lilith",
+                        "Text": "So it’s strange I’ve not gotten to you before this.\nI have so many reasons to take revenge on you.",
+                        "SpritePath": "Lilith_Unhappy",
+                        "Choices": [
+                            {
+                                "<Text>k__BackingField": "Next Dialogue",
+                                "<NextDialogue>k__BackingField": {
+                                    "DialogueName": "14",
+                                    "SpeakerName": "Karl",
+                                    "Text": "Isn’t the best revenge a life well-lived?",
+                                    "SpritePath": "Neighbour_Friendly",
+                                    "Choices": [
+                                        {
+                                            "<Text>k__BackingField": "Next Dialogue",
+                                            "<NextDialogue>k__BackingField": {
+                                                "DialogueName": "15",
+                                                "SpeakerName": "Lilith",
+                                                "Text": "HAHAHAHAHAHAHAHA. ",
+                                                "SpritePath": "Lilith_Smug",
+                                                "Choices": [
+                                                    {
+                                                        "<Text>k__BackingField": "Next Dialogue",
+                                                        "<NextDialogue>k__BackingField": {
+                                                            "DialogueName": "16",
+                                                            "SpeakerName": "Lilith",
+                                                            "Text": "HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA.",
+                                                            "SpritePath": "Lilith_Smug",
+                                                            "Choices": [
+                                                                {
+                                                                    "<Text>k__BackingField": "Next Dialogue",
+                                                                    "<NextDialogue>k__BackingField": {
+                                                                        "DialogueName": "17",
+                                                                        "SpeakerName": "Lilith",
+                                                                        "Text": "HA HA HA.",
+                                                                        "SpritePath": "Lilith_Unhappy",
+                                                                        "DialogueType": 0,
+                                                                        "IsStartingDialogue": false
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "DialogueType": 0,
+                                                            "IsStartingDialogue": false
+                                                        }
+                                                    }
+                                                ],
+                                                "DialogueType": 0,
+                                                "IsStartingDialogue": false
+                                            }
+                                        }
+                                    ],
+                                    "DialogueType": 0,
+                                    "IsStartingDialogue": false
+                                }
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "13",
+            "SpeakerName": "Lilith",
+            "Text": "So it’s strange I’ve not gotten to you before this.\nI have so many reasons to take revenge on you.",
+            "SpritePath": "Lilith_Unhappy",
+            "Choices": [
+                {
+                    "<Text>k__BackingField": "Next Dialogue",
+                    "<NextDialogue>k__BackingField": {
+                        "DialogueName": "14",
+                        "SpeakerName": "Karl",
+                        "Text": "Isn’t the best revenge a life well-lived?",
+                        "SpritePath": "Neighbour_Friendly",
+                        "Choices": [
+                            {
+                                "<Text>k__BackingField": "Next Dialogue",
+                                "<NextDialogue>k__BackingField": {
+                                    "DialogueName": "15",
+                                    "SpeakerName": "Lilith",
+                                    "Text": "HAHAHAHAHAHAHAHA. ",
+                                    "SpritePath": "Lilith_Smug",
+                                    "Choices": [
+                                        {
+                                            "<Text>k__BackingField": "Next Dialogue",
+                                            "<NextDialogue>k__BackingField": {
+                                                "DialogueName": "16",
+                                                "SpeakerName": "Lilith",
+                                                "Text": "HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA.",
+                                                "SpritePath": "Lilith_Smug",
+                                                "Choices": [
+                                                    {
+                                                        "<Text>k__BackingField": "Next Dialogue",
+                                                        "<NextDialogue>k__BackingField": {
+                                                            "DialogueName": "17",
+                                                            "SpeakerName": "Lilith",
+                                                            "Text": "HA HA HA.",
+                                                            "SpritePath": "Lilith_Unhappy",
+                                                            "Choices": [
+                                                                {
+                                                                    "<Text>k__BackingField": "Next Dialogue",
+                                                                    "<NextDialogue>k__BackingField": {
+                                                                        "DialogueName": "18",
+                                                                        "SpeakerName": "Lilith",
+                                                                        "Text": "Anyway…",
+                                                                        "SpritePath": "Lilith_Unhappy",
+                                                                        "DialogueType": 0,
+                                                                        "IsStartingDialogue": false
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "DialogueType": 0,
+                                                            "IsStartingDialogue": false
+                                                        }
+                                                    }
+                                                ],
+                                                "DialogueType": 0,
+                                                "IsStartingDialogue": false
+                                            }
+                                        }
+                                    ],
+                                    "DialogueType": 0,
+                                    "IsStartingDialogue": false
+                                }
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "14",
+            "SpeakerName": "Karl",
+            "Text": "Isn’t the best revenge a life well-lived?",
+            "SpritePath": "Neighbour_Friendly",
+            "Choices": [
+                {
+                    "<Text>k__BackingField": "Next Dialogue",
+                    "<NextDialogue>k__BackingField": {
+                        "DialogueName": "15",
+                        "SpeakerName": "Lilith",
+                        "Text": "HAHAHAHAHAHAHAHA. ",
+                        "SpritePath": "Lilith_Smug",
+                        "Choices": [
+                            {
+                                "<Text>k__BackingField": "Next Dialogue",
+                                "<NextDialogue>k__BackingField": {
+                                    "DialogueName": "16",
+                                    "SpeakerName": "Lilith",
+                                    "Text": "HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA.",
+                                    "SpritePath": "Lilith_Smug",
+                                    "Choices": [
+                                        {
+                                            "<Text>k__BackingField": "Next Dialogue",
+                                            "<NextDialogue>k__BackingField": {
+                                                "DialogueName": "17",
+                                                "SpeakerName": "Lilith",
+                                                "Text": "HA HA HA.",
+                                                "SpritePath": "Lilith_Unhappy",
+                                                "Choices": [
+                                                    {
+                                                        "<Text>k__BackingField": "Next Dialogue",
+                                                        "<NextDialogue>k__BackingField": {
+                                                            "DialogueName": "18",
+                                                            "SpeakerName": "Lilith",
+                                                            "Text": "Anyway…",
+                                                            "SpritePath": "Lilith_Unhappy",
+                                                            "Choices": [
+                                                                {
+                                                                    "<Text>k__BackingField": "Next Dialogue",
+                                                                    "<NextDialogue>k__BackingField": {
+                                                                        "DialogueName": "",
+                                                                        "SpeakerName": "",
+                                                                        "Text": "",
+                                                                        "SpritePath": "",
+                                                                        "DialogueType": 0,
+                                                                        "IsStartingDialogue": false
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "DialogueType": 0,
+                                                            "IsStartingDialogue": false
+                                                        }
+                                                    }
+                                                ],
+                                                "DialogueType": 0,
+                                                "IsStartingDialogue": false
+                                            }
+                                        }
+                                    ],
+                                    "DialogueType": 0,
+                                    "IsStartingDialogue": false
+                                }
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "15",
+            "SpeakerName": "Lilith",
+            "Text": "HAHAHAHAHAHAHAHA. ",
+            "SpritePath": "Lilith_Smug",
+            "Choices": [
+                {
+                    "<Text>k__BackingField": "Next Dialogue",
+                    "<NextDialogue>k__BackingField": {
+                        "DialogueName": "16",
+                        "SpeakerName": "Lilith",
+                        "Text": "HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA.",
+                        "SpritePath": "Lilith_Smug",
+                        "Choices": [
+                            {
+                                "<Text>k__BackingField": "Next Dialogue",
+                                "<NextDialogue>k__BackingField": {
+                                    "DialogueName": "17",
+                                    "SpeakerName": "Lilith",
+                                    "Text": "HA HA HA.",
+                                    "SpritePath": "Lilith_Unhappy",
+                                    "Choices": [
+                                        {
+                                            "<Text>k__BackingField": "Next Dialogue",
+                                            "<NextDialogue>k__BackingField": {
+                                                "DialogueName": "18",
+                                                "SpeakerName": "Lilith",
+                                                "Text": "Anyway…",
+                                                "SpritePath": "Lilith_Unhappy",
+                                                "Choices": [
+                                                    {
+                                                        "<Text>k__BackingField": "Next Dialogue",
+                                                        "<NextDialogue>k__BackingField": {
+                                                            "DialogueName": "",
+                                                            "SpeakerName": "",
+                                                            "Text": "",
+                                                            "SpritePath": "",
+                                                            "Choices": [],
+                                                            "DialogueType": 0,
+                                                            "IsStartingDialogue": false
+                                                        }
+                                                    }
+                                                ],
+                                                "DialogueType": 0,
+                                                "IsStartingDialogue": false
+                                            }
+                                        }
+                                    ],
+                                    "DialogueType": 0,
+                                    "IsStartingDialogue": false
+                                }
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "16",
+            "SpeakerName": "Lilith",
+            "Text": "HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA.",
+            "SpritePath": "Lilith_Smug",
+            "Choices": [
+                {
+                    "<Text>k__BackingField": "Next Dialogue",
+                    "<NextDialogue>k__BackingField": {
+                        "DialogueName": "17",
+                        "SpeakerName": "Lilith",
+                        "Text": "HA HA HA.",
+                        "SpritePath": "Lilith_Unhappy",
+                        "Choices": [
+                            {
+                                "<Text>k__BackingField": "Next Dialogue",
+                                "<NextDialogue>k__BackingField": {
+                                    "DialogueName": "18",
+                                    "SpeakerName": "Lilith",
+                                    "Text": "Anyway…",
+                                    "SpritePath": "Lilith_Unhappy",
+                                    "Choices": [
+                                        {
+                                            "<Text>k__BackingField": "Next Dialogue",
+                                            "<NextDialogue>k__BackingField": {
+                                                "DialogueName": "",
+                                                "SpeakerName": "",
+                                                "Text": "",
+                                                "SpritePath": "",
+                                                "Choices": [],
+                                                "DialogueType": 0,
+                                                "IsStartingDialogue": false
+                                            }
+                                        }
+                                    ],
+                                    "DialogueType": 0,
+                                    "IsStartingDialogue": false
+                                }
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "18",
+            "SpeakerName": "Lilith",
+            "Text": "Anyway…",
+            "SpritePath": "Lilith_Unhappy",
+            "Choices": [
+                {
+                    "<Text>k__BackingField": "Next Dialogue",
+                    "<NextDialogue>k__BackingField": {
+                        "DialogueName": "",
+                        "SpeakerName": "",
+                        "Text": "",
+                        "SpritePath": "",
+                        "Choices": [],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "17",
+            "SpeakerName": "Lilith",
+            "Text": "HA HA HA.",
+            "SpritePath": "Lilith_Unhappy",
+            "Choices": [
+                {
+                    "<Text>k__BackingField": "Next Dialogue",
+                    "<NextDialogue>k__BackingField": {
+                        "DialogueName": "18",
+                        "SpeakerName": "Lilith",
+                        "Text": "Anyway…",
+                        "SpritePath": "Lilith_Unhappy",
+                        "Choices": [
+                            {
+                                "<Text>k__BackingField": "Next Dialogue",
+                                "<NextDialogue>k__BackingField": {
+                                    "DialogueName": "",
+                                    "SpeakerName": "",
+                                    "Text": "",
+                                    "SpritePath": "",
+                                    "Choices": [],
+                                    "DialogueType": 0,
+                                    "IsStartingDialogue": false
+                                }
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        }
+    ]
+}

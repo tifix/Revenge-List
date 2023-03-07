@@ -1,0 +1,22 @@
+{
+    "DialogueName": "15",
+    "SpeakerName": "Karl",
+    "Text": "…TO GRILL!",
+    "SpritePath": "Neighbour_Laughing",
+    "Choices": [
+        {
+            "<Text>k__BackingField": "Next Dialogue",
+            "<NextDialogue>k__BackingField": {
+                "DialogueName": "",
+                "SpeakerName": "",
+                "Text": "",
+                "SpritePath": "",
+                "Choices": [],
+                "DialogueType": 0,
+                "IsStartingDialogue": false
+            }
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

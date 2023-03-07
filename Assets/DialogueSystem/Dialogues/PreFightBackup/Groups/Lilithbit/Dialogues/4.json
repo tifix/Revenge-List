@@ -1,0 +1,22 @@
+{
+    "DialogueName": "4",
+    "SpeakerName": "Lilith",
+    "Text": "I can’t even say it with a straight face!\\nAnyway…",
+    "SpritePath": "Lilith_Happy",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "NextDialogue": {
+                "DialogueName": "",
+                "SpeakerName": "",
+                "Text": "",
+                "SpritePath": "",
+                "Choices": [],
+                "DialogueType": 0,
+                "IsStartingDialogue": false
+            }
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

@@ -1,0 +1,22 @@
+{
+    "DialogueName": "8",
+    "SpeakerName": "Snuffles",
+    "Text": "... (Upset dog noises)",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "<Text>k__BackingField": "Next Dialogue",
+            "<NextDialogue>k__BackingField": {
+                "DialogueName": "",
+                "SpeakerName": "",
+                "Text": "",
+                "SpritePath": "",
+                "Choices": [],
+                "DialogueType": 0,
+                "IsStartingDialogue": false
+            }
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

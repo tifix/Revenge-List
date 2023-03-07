@@ -34,7 +34,6 @@ public class UI : MonoBehaviour
     [SerializeField]            Image XLPortraitLilith, XLPortraitOther;                            //Portraits which display Lilith and others as they tallk
     [SerializeField]            GameObject RevengeList, RevengeListTriggerer;                       //the gorgeous scrollable revenge list
 
-    
 
 
     public void Awake()                             //Ensuring single instance of the script
@@ -84,11 +83,7 @@ public class UI : MonoBehaviour
     //Probably need a version that doesn't lock the movement and/or stops time (actually use pauseWhileRunning) - AV
     protected IEnumerator Typer(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning) //typing the text over time
     {
-        //Debug.Log("Starting Display of "+_dialogue.textBody[0]);
-
         PlayerMovement.SetLockMovement();
-
-        //DSIOUtility.LoadFromJson();
 
 
 
@@ -132,7 +127,7 @@ public class UI : MonoBehaviour
             try 
             {
                 if (string.IsNullOrEmpty(NodeCurrent.ChildIDs[0])) { Debug.LogWarning("End of dialogue stream reached"); break; }
-                NodeCurrent = DSIOUtility.FindSaveDataID(NodeCurrent.ChildIDs[0], _dialogue);
+                NodeCurrent = FindSaveDataID(NodeCurrent.ChildIDs[0], _dialogue);
             }
             catch {Debug.LogWarning("End of dialogue stream reached"); break;  }
         }
@@ -148,16 +143,14 @@ public class UI : MonoBehaviour
         PlayerMovement.SetUnLockMovement();
     }
 
-    /*
-    public void TryToLoadTheDamnThing() 
+    private DSNodeSaveData GetChildNodeData() 
     {
-        
-        var asset = DSIOUtility.LoadAsset("Assets/DialogueSystem/Dialogues/", "KARL2PHASEOUCH");
+        DSNodeSaveData t = null;
+        //NodeCu
 
-        string text = asset.text;
-        Debug.LogWarning(text.Length);
-        Debug.LogWarning(text);
-    }*/
+        return t;
+    }
+
 
     public void Show(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning)                            //Call this with a dialogue structure to display it!
     {
@@ -260,6 +253,20 @@ public class UI : MonoBehaviour
    }
 
 
+    public static DSNodeSaveData FindSaveDataID(string ID, DSGraphSaveDataSO graph)
+    {
+        if (ID == null || ID == "") return null;
+
+        foreach (DSNodeSaveData node in graph.Nodes)
+        {
+            if (ID == node.ID)
+            {
+                return node;
+            }
+        }
+        return null;
+    }
+
 
     #region buttons and element toggles
     public void TogglePauseMenu() { boxPause.SetActive(!boxPause.activeInHierarchy); GameManager.instance.TogglePause(); }     //Toggle pause menu
@@ -291,6 +298,11 @@ public class UI : MonoBehaviour
     public void ShowSpriteXLLilith() { XLPortraitLilith.gameObject.SetActive(true); }
     public void ShowSpriteXLOther() { XLPortraitOther.gameObject.SetActive(true); }
 
+
+    public void LoadDialogueFromText() 
+    {
+    
+    }
 
     #endregion
 }

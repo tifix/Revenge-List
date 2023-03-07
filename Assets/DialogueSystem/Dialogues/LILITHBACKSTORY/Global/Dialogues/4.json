@@ -1,0 +1,22 @@
+{
+    "DialogueName": "4",
+    "SpeakerName": "Lilith",
+    "Text": "They were fighting so much, they were always trying to grill each other. \nThey got really clever with it. And they got huge barbeque tongs just for that, and trained in gym to be able to pick them up.",
+    "SpritePath": "Lilith_Sad",
+    "Choices": [
+        {
+            "<Text>k__BackingField": "Next Dialogue",
+            "<NextDialogue>k__BackingField": {
+                "DialogueName": "",
+                "SpeakerName": "",
+                "Text": "",
+                "SpritePath": "",
+                "Choices": [],
+                "DialogueType": 0,
+                "IsStartingDialogue": false
+            }
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

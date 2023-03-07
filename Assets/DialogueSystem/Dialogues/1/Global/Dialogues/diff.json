@@ -1,0 +1,22 @@
+{
+    "DialogueName": "diff",
+    "SpeakerName": "Gorg",
+    "Text": "sasasasasas",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "",
+            "NextDialogue": {
+                "DialogueName": "",
+                "SpeakerName": "",
+                "Text": "",
+                "SpritePath": "",
+                "Choices": [],
+                "DialogueType": 0,
+                "IsStartingDialogue": false
+            }
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

@@ -1,7 +1,7 @@
 {
     "DialogueName": "orphan",
-    "SpeakerName": "Character name.",
-    "Text": "Dialogue text.",
+    "SpeakerName": "Lilith (still)",
+    "Text": "I am still talking",
     "SpritePath": "Insert Sprite Path Here.",
     "Choices": [
         {

@@ -1,0 +1,22 @@
+{
+    "DialogueName": "13",
+    "SpeakerName": "Karl",
+    "Text": "That’s great, because I have a license…",
+    "SpritePath": "Neighbour_Friendly",
+    "Choices": [
+        {
+            "<Text>k__BackingField": "Next Dialogue",
+            "<NextDialogue>k__BackingField": {
+                "DialogueName": "",
+                "SpeakerName": "",
+                "Text": "",
+                "SpritePath": "",
+                "Choices": [],
+                "DialogueType": 0,
+                "IsStartingDialogue": false
+            }
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

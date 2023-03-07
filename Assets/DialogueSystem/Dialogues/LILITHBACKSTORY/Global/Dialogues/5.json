@@ -1,0 +1,22 @@
+{
+    "DialogueName": "5",
+    "SpeakerName": "Lilith",
+    "Text": "I still remember them running around with the huge barbeque tongs, trying to kill each other…\nAll the traps around the house…\r",
+    "SpritePath": "Lilith_Happy",
+    "Choices": [
+        {
+            "<Text>k__BackingField": "Next Dialogue",
+            "<NextDialogue>k__BackingField": {
+                "DialogueName": "",
+                "SpeakerName": "",
+                "Text": "",
+                "SpritePath": "",
+                "Choices": [],
+                "DialogueType": 0,
+                "IsStartingDialogue": false
+            }
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

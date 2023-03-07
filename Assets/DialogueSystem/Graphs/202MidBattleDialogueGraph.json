@@ -1,0 +1,30 @@
+{
+    "FileName": "202MidBattleDialogue",
+    "DialogueGroups": {
+        "list": []
+    },
+    "UngroupedDialogues": [
+        {
+            "DialogueName": "1",
+            "SpeakerName": "karl",
+            "Text": "Well that hurt",
+            "SpritePath": "Insert Sprite Path Here.",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "NextDialogue": {
+                        "DialogueName": "",
+                        "SpeakerName": "",
+                        "Text": "",
+                        "SpritePath": "",
+                        "Choices": [],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": true
+        }
+    ]
+}

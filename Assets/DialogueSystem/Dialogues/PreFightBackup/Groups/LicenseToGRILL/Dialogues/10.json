@@ -1,0 +1,22 @@
+{
+    "DialogueName": "10",
+    "SpeakerName": "Astrid",
+    "Text": "No Sweetheart! We just had barbecue this morning!\\nAsk Lily if she's hungry!",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "NextDialogue": {
+                "DialogueName": "",
+                "SpeakerName": "",
+                "Text": "",
+                "SpritePath": "",
+                "Choices": [],
+                "DialogueType": 0,
+                "IsStartingDialogue": false
+            }
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

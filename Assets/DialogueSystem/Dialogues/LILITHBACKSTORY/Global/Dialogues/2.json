@@ -1,0 +1,22 @@
+{
+    "DialogueName": "2",
+    "SpeakerName": "Lilith",
+    "Text": "My childhood. Back when I hadn’t yet met you and still felt happiness.\nIt was also because my parents were still alive.",
+    "SpritePath": "Lilith_Sad",
+    "Choices": [
+        {
+            "<Text>k__BackingField": "Next Dialogue",
+            "<NextDialogue>k__BackingField": {
+                "DialogueName": "",
+                "SpeakerName": "",
+                "Text": "",
+                "SpritePath": "",
+                "Choices": [],
+                "DialogueType": 0,
+                "IsStartingDialogue": false
+            }
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

@@ -1,0 +1,22 @@
+{
+    "DialogueName": "2",
+    "SpeakerName": "Lilith",
+    "Text": "It’s a pity, really, you’re sweet and I would have liked to keep you around…\npfft…\npffffff –",
+    "SpritePath": "Lilith_Happy",
+    "Choices": [
+        {
+            "<Text>k__BackingField": "Next Dialogue",
+            "<NextDialogue>k__BackingField": {
+                "DialogueName": "",
+                "SpeakerName": "",
+                "Text": "",
+                "SpritePath": "",
+                "Choices": [],
+                "DialogueType": 0,
+                "IsStartingDialogue": false
+            }
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

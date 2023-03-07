@@ -242,7 +242,7 @@ namespace DS.Utilities
                 SpeakerName = node.SpeakerName,
                 SpritePath = node.SpritePath,
                 GroupID = node.Group?.ID,
-                DialogueType = node.DialogueType,
+                //DialogueType = node.DialogueType,
                 Position = node.GetPosition().position,
                 isStartNode = node.IsStartingNode(),
                 ChildIDs = IDs
@@ -401,7 +401,7 @@ namespace DS.Utilities
         public static void Load()
         {
             DSGraphSaveDataSO graphData = LoadAsset<DSGraphSaveDataSO>("Assets/DialogueSystem/Graphs", graphFileName);
-            //graphData = LoadFromJson();
+           // graphData = LoadFromJson();
 
 
             if (graphData == null)
@@ -445,7 +445,7 @@ namespace DS.Utilities
             {
                
                 List<DSChoiceSaveData> choices = CloneNodeChoices(nodeData.Choices);
-                DSNode node = graphView.CreateNode(nodeData.Name, nodeData.DialogueType, nodeData.Position, false);
+                DSNode node = graphView.CreateNode(nodeData.Name, Enumerations.DSDialogueType.SingleChoice, nodeData.Position, false);      //disabled multiple choice for the time being
 
                 node.ID = nodeData.ID;
                 node.Choices = choices;

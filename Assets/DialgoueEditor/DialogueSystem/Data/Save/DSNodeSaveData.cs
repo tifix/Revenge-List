@@ -1,28 +1,28 @@
-#if (UNITY_EDITOR) 
+//#if (UNITY_EDITOR) 
 using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DS.Data.Save
-{
-    using DS.Elements;
-    using Enumerations;
+//namespace DS.Data.Save
+//{
+    //using DS.Elements;
+    //using Enumerations;
 
     [Serializable]
     public class DSNodeSaveData
     {
-        [field: SerializeField] public string ID { get; set; }
-        [field: SerializeField] public string Name { get; set; }
-        [field: SerializeField] public string SpeakerName { get; set; }
-        [field: SerializeField] public string Text { get; set; }
-        [field: SerializeField] public string SpritePath { get; set; }
-        [field: SerializeField] public List<DSChoiceSaveData> Choices { get; set; }
-        [field: SerializeField] public string GroupID { get; set; }
-        [field: SerializeField] public DSDialogueType DialogueType { get; set; }
-        [field: SerializeField] public Vector2 Position { get; set; }
-        [field: SerializeField] public bool isStartNode { get; set; } = false;
-        [field: SerializeField] public List<string> ChildIDs { get; set; }
+        [field: SerializeField] public string ID;// { get; set; }
+        [field: SerializeField] public string Name;// { get; set; }
+        [field: SerializeField] public string SpeakerName;// { get; set; }
+        [field: SerializeField] public string Text;// { get; set; }
+        [field: SerializeField] public string SpritePath;// { get; set; }
+        [field: SerializeField] public List<DSChoiceSaveData> Choices;// { get; set; }
+        [field: SerializeField] public string GroupID;// { get; set; }
+        //[field: SerializeField] public DSDialogueType DialogueType;// { get; set; }
+        [field: SerializeField] public Vector2 Position;// { get; set; }
+        [field: SerializeField] public bool isStartNode;// { get; set; } = false;
+        [field: SerializeField] public List<string> ChildIDs;// { get; set; }
     }
-}
+//}
 
-#endif
+//#endif

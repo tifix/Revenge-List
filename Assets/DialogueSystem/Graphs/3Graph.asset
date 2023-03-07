@@ -19,12 +19,26 @@ MonoBehaviour:
     <Position>k__BackingField: {x: 138, y: 139}
   - <ID>k__BackingField: fa15efaf-e63f-485b-8415-6499f3eed123
     <Name>k__BackingField: Group2
-    <Position>k__BackingField: {x: 889, y: 695}
+    <Position>k__BackingField: {x: 843, y: 670}
   <Nodes>k__BackingField:
+  - <ID>k__BackingField: 63a8b0d1-ca73-484d-9d83-a96147e0fd15
+    <Name>k__BackingField: orphan
+    <SpeakerName>k__BackingField: Lilith (still)
+    <Text>k__BackingField: I am still talking
+    <SpritePath>k__BackingField: Insert Sprite Path Here.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 667e5b3a-7075-4dff-8a8c-66349e5c649d
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 291, y: 574}
+    <isStartNode>k__BackingField: 0
+    <ChildIDs>k__BackingField:
+    - 667e5b3a-7075-4dff-8a8c-66349e5c649d
   - <ID>k__BackingField: a0b82691-824f-4588-9e1c-71415e129e9e
     <Name>k__BackingField: 1
-    <SpeakerName>k__BackingField: Character name.
-    <Text>k__BackingField: Dialogue text.
+    <SpeakerName>k__BackingField: Lilith
+    <Text>k__BackingField: Welcome to the game!
     <SpritePath>k__BackingField: Insert Sprite Path Here.
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
@@ -37,8 +51,8 @@ MonoBehaviour:
     - cb395f83-fef1-4d96-b2a7-d11e74112845
   - <ID>k__BackingField: cb395f83-fef1-4d96-b2a7-d11e74112845
     <Name>k__BackingField: 2
-    <SpeakerName>k__BackingField: Character name.
-    <Text>k__BackingField: Dialogue text.
+    <SpeakerName>k__BackingField: Lilith
+    <Text>k__BackingField: I am talking
     <SpritePath>k__BackingField: Insert Sprite Path Here.
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
@@ -49,45 +63,31 @@ MonoBehaviour:
     <isStartNode>k__BackingField: 0
     <ChildIDs>k__BackingField:
     - 63a8b0d1-ca73-484d-9d83-a96147e0fd15
-  - <ID>k__BackingField: 63a8b0d1-ca73-484d-9d83-a96147e0fd15
-    <Name>k__BackingField: orphan
-    <SpeakerName>k__BackingField: Character name.
-    <Text>k__BackingField: Dialogue text.
-    <SpritePath>k__BackingField: Insert Sprite Path Here.
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 667e5b3a-7075-4dff-8a8c-66349e5c649d
-    <GroupID>k__BackingField: 
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 291, y: 574}
-    <isStartNode>k__BackingField: 0
-    <ChildIDs>k__BackingField:
-    - 667e5b3a-7075-4dff-8a8c-66349e5c649d
   - <ID>k__BackingField: 667e5b3a-7075-4dff-8a8c-66349e5c649d
     <Name>k__BackingField: 3
-    <SpeakerName>k__BackingField: Character name.
-    <Text>k__BackingField: Dialogue text.
+    <SpeakerName>k__BackingField: Lilith (still)
+    <Text>k__BackingField: I have been talking for quite a while actually
     <SpritePath>k__BackingField: Insert Sprite Path Here.
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
       <NodeID>k__BackingField: 1c432a5c-8039-4408-b245-7905fc6cd9e2
     <GroupID>k__BackingField: fa15efaf-e63f-485b-8415-6499f3eed123
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 914, y: 754}
+    <Position>k__BackingField: {x: 868, y: 729}
     <isStartNode>k__BackingField: 0
     <ChildIDs>k__BackingField:
     - 1c432a5c-8039-4408-b245-7905fc6cd9e2
   - <ID>k__BackingField: 1c432a5c-8039-4408-b245-7905fc6cd9e2
     <Name>k__BackingField: 4
-    <SpeakerName>k__BackingField: Character name.
-    <Text>k__BackingField: Dialogue text.
+    <SpeakerName>k__BackingField: Lilith (still)
+    <Text>k__BackingField: Alright, alright, I'll shut up.
     <SpritePath>k__BackingField: Insert Sprite Path Here.
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Dialogue
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: fa15efaf-e63f-485b-8415-6499f3eed123
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1272, y: 858}
+    <Position>k__BackingField: {x: 1226, y: 833}
     <isStartNode>k__BackingField: 0
     <ChildIDs>k__BackingField:
     - 

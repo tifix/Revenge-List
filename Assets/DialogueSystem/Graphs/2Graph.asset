@@ -14,95 +14,90 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <FileName>k__BackingField: 2
   <Groups>k__BackingField:
-  - <ID>k__BackingField: 3237e031-cdde-44dc-a1b7-76de57b5c5e0
-    <Name>k__BackingField: Groupppp
-    <Position>k__BackingField: {x: 259, y: 63}
-  - <ID>k__BackingField: d1568193-dda3-4485-9e64-8a5cb8b9275f
-    <Name>k__BackingField: Dialogue Group
-    <Position>k__BackingField: {x: 952, y: 561}
+  - <ID>k__BackingField: 997dbe61-3104-4626-b7f3-df78a0e258e7
+    <Name>k__BackingField: G1
+    <Position>k__BackingField: {x: 72, y: 102}
+  - <ID>k__BackingField: 737289f9-e824-4ad5-ba01-7a1ec32f1bf3
+    <Name>k__BackingField: G2
+    <Position>k__BackingField: {x: 583.00006, y: 170.99998}
   <Nodes>k__BackingField:
-  - <ID>k__BackingField: d5e8082a-badb-453b-bc64-66754a88c16a
-    <Name>k__BackingField: 1
-    <SpeakerName>k__BackingField: Character name.
-    <Text>k__BackingField: Dialogue text.
-    <SpritePath>k__BackingField: Insert Sprite Path Here.
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 797a5569-8a40-4663-92d3-575d8b14acb9
-    <GroupID>k__BackingField: 3237e031-cdde-44dc-a1b7-76de57b5c5e0
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 284, y: 122}
-    <isStartNode>k__BackingField: 1
-    <ChildIDs>k__BackingField:
-    - 797a5569-8a40-4663-92d3-575d8b14acb9
-  - <ID>k__BackingField: 797a5569-8a40-4663-92d3-575d8b14acb9
-    <Name>k__BackingField: 2
-    <SpeakerName>k__BackingField: Character name.
-    <Text>k__BackingField: Dialogue text.
-    <SpritePath>k__BackingField: Insert Sprite Path Here.
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 48abcdcb-589c-42bd-95ab-845a49789b5f
-    <GroupID>k__BackingField: 3237e031-cdde-44dc-a1b7-76de57b5c5e0
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 640, y: 226}
-    <isStartNode>k__BackingField: 0
-    <ChildIDs>k__BackingField:
-    - 48abcdcb-589c-42bd-95ab-845a49789b5f
-  - <ID>k__BackingField: 48abcdcb-589c-42bd-95ab-845a49789b5f
-    <Name>k__BackingField: 3
-    <SpeakerName>k__BackingField: Character name.
-    <Text>k__BackingField: Dialogue text.
-    <SpritePath>k__BackingField: Insert Sprite Path Here.
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 4658b4e9-4f18-4a29-8d58-183c6be41ba1
-    <GroupID>k__BackingField: 
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 521, y: 516}
-    <isStartNode>k__BackingField: 0
-    <ChildIDs>k__BackingField:
-    - 4658b4e9-4f18-4a29-8d58-183c6be41ba1
-  - <ID>k__BackingField: 4658b4e9-4f18-4a29-8d58-183c6be41ba1
-    <Name>k__BackingField: 4
-    <SpeakerName>k__BackingField: Character name.
-    <Text>k__BackingField: Dialogue text.
-    <SpritePath>k__BackingField: Insert Sprite Path Here.
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: d50e649f-44de-41cf-8c2f-42643b595b1a
-    <GroupID>k__BackingField: d1568193-dda3-4485-9e64-8a5cb8b9275f
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 977, y: 620}
-    <isStartNode>k__BackingField: 0
-    <ChildIDs>k__BackingField:
-    - d50e649f-44de-41cf-8c2f-42643b595b1a
-  - <ID>k__BackingField: d50e649f-44de-41cf-8c2f-42643b595b1a
-    <Name>k__BackingField: 5
-    <SpeakerName>k__BackingField: Character name.
-    <Text>k__BackingField: Dialogue text.
-    <SpritePath>k__BackingField: Insert Sprite Path Here.
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue
-      <NodeID>k__BackingField: 
-    <GroupID>k__BackingField: d1568193-dda3-4485-9e64-8a5cb8b9275f
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1293, y: 723}
-    <isStartNode>k__BackingField: 0
-    <ChildIDs>k__BackingField:
+  - ID: 3230546e-a875-4cd8-9060-f7f19920c121
+    Name: 1
+    SpeakerName: Char A
+    Text: asdasdasdas
+    SpritePath: Insert Sprite Path Here.
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 222264f0-a4a5-449c-b828-4af5f8b9ba02
+    GroupID: 997dbe61-3104-4626-b7f3-df78a0e258e7
+    Position: {x: 97, y: 161}
+    isStartNode: 1
+    ChildIDs:
+    - 222264f0-a4a5-449c-b828-4af5f8b9ba02
+  - ID: 222264f0-a4a5-449c-b828-4af5f8b9ba02
+    Name: 2
+    SpeakerName: Char B
+    Text: asdasdasd
+    SpritePath: Insert Sprite Path Here.
+    Choices:
+    - Text: Next Dialogue
+      NodeID: eda20f46-4a70-453b-85c9-b43b4610cb0f
+    GroupID: 737289f9-e824-4ad5-ba01-7a1ec32f1bf3
+    Position: {x: 608, y: 230}
+    isStartNode: 0
+    ChildIDs:
+    - eda20f46-4a70-453b-85c9-b43b4610cb0f
+  - ID: eda20f46-4a70-453b-85c9-b43b4610cb0f
+    Name: 3
+    SpeakerName: Char A
+    Text: asdasdas
+    SpritePath: Insert Sprite Path Here.
+    Choices:
+    - Text: Next Dialogue
+      NodeID: eee79fac-9e30-45ad-a26a-7cc42bff253e
+    GroupID: 737289f9-e824-4ad5-ba01-7a1ec32f1bf3
+    Position: {x: 952, y: 286}
+    isStartNode: 0
+    ChildIDs:
+    - eee79fac-9e30-45ad-a26a-7cc42bff253e
+  - ID: eee79fac-9e30-45ad-a26a-7cc42bff253e
+    Name: DialogueName
+    SpeakerName: Char B
+    Text: zxczxczxc
+    SpritePath: Insert Sprite Path Here.
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 5fd5d94b-b1f9-44b4-9454-b2df5c7f1bff
+    GroupID: 737289f9-e824-4ad5-ba01-7a1ec32f1bf3
+    Position: {x: 1332, y: 415}
+    isStartNode: 0
+    ChildIDs:
+    - 5fd5d94b-b1f9-44b4-9454-b2df5c7f1bff
+  - ID: 5fd5d94b-b1f9-44b4-9454-b2df5c7f1bff
+    Name: endinggg
+    SpeakerName: Character name.
+    Text: Dialogue text.
+    SpritePath: Insert Sprite Path Here.
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 
+    GroupID: 
+    Position: {x: 1690, y: 535}
+    isStartNode: 0
+    ChildIDs:
     - 
   <OldGroupNames>k__BackingField:
-  - Groupppp
-  - Dialogue Group
+  - G1
+  - G2
   <OldUngroupedNodeNames>k__BackingField:
-  - 3
+  - endinggg
   <OldGroupNodeNames>k__BackingField:
     list:
-    - Key: Groupppp
+    - Key: G1
       Value:
       - 1
-      - 2
-    - Key: Dialogue Group
+    - Key: G2
       Value:
-      - 4
-      - 5
+      - 2
+      - 3
+      - DialogueName

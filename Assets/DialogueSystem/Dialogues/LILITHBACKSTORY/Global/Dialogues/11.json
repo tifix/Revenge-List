@@ -1,0 +1,22 @@
+{
+    "DialogueName": "11",
+    "SpeakerName": "Lilith",
+    "Text": "It’s weird I’ve not already killed you, really. Your crimes are numerous.\nThe eggs… The dog… Stealing away my girl…",
+    "SpritePath": "Lilith_Sad",
+    "Choices": [
+        {
+            "<Text>k__BackingField": "Next Dialogue",
+            "<NextDialogue>k__BackingField": {
+                "DialogueName": "",
+                "SpeakerName": "",
+                "Text": "",
+                "SpritePath": "",
+                "Choices": [],
+                "DialogueType": 0,
+                "IsStartingDialogue": false
+            }
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

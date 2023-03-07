@@ -1,0 +1,122 @@
+{
+    "FileName": "4",
+    "DialogueGroups": {
+        "list": [
+            {
+                "Key": "Groupdie",
+                "Value": []
+            },
+            {
+                "Key": "2b00cbb1-ffc0-4334-8002-12fc32f0921b",
+                "Value": [
+                    {
+                        "DialogueName": "1",
+                        "SpeakerName": "Not Lilith",
+                        "Text": "boo",
+                        "SpritePath": "Insert Sprite Path Here.",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "NextDialogue": {
+                                    "DialogueName": "2",
+                                    "SpeakerName": "Lilith",
+                                    "Text": "BOOOOO",
+                                    "SpritePath": "Insert Sprite Path Here.",
+                                    "Choices": [
+                                        {
+                                            "Text": "Next Dialogue",
+                                            "NextDialogue": {
+                                                "DialogueName": "3",
+                                                "SpeakerName": "Not Lilith",
+                                                "Text": "Get spook'd",
+                                                "SpritePath": "Insert Sprite Path Here.",
+                                                "Choices": [
+                                                    {
+                                                        "Text": "Next Dialogue",
+                                                        "NextDialogue": {
+                                                            "DialogueName": "",
+                                                            "SpeakerName": "",
+                                                            "Text": "",
+                                                            "SpritePath": "",
+                                                            "Choices": [],
+                                                            "DialogueType": 0,
+                                                            "IsStartingDialogue": false
+                                                        }
+                                                    }
+                                                ],
+                                                "DialogueType": 0,
+                                                "IsStartingDialogue": false
+                                            }
+                                        }
+                                    ],
+                                    "DialogueType": 0,
+                                    "IsStartingDialogue": false
+                                }
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": true
+                    },
+                    {
+                        "DialogueName": "3",
+                        "SpeakerName": "Not Lilith",
+                        "Text": "Get spook'd",
+                        "SpritePath": "Insert Sprite Path Here.",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "NextDialogue": {
+                                    "DialogueName": "",
+                                    "SpeakerName": "",
+                                    "Text": "",
+                                    "SpritePath": "",
+                                    "Choices": [],
+                                    "DialogueType": 0,
+                                    "IsStartingDialogue": false
+                                }
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "2",
+                        "SpeakerName": "Lilith",
+                        "Text": "BOOOOO",
+                        "SpritePath": "Insert Sprite Path Here.",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "NextDialogue": {
+                                    "DialogueName": "3",
+                                    "SpeakerName": "Not Lilith",
+                                    "Text": "Get spook'd",
+                                    "SpritePath": "Insert Sprite Path Here.",
+                                    "Choices": [
+                                        {
+                                            "Text": "Next Dialogue",
+                                            "NextDialogue": {
+                                                "DialogueName": "",
+                                                "SpeakerName": "",
+                                                "Text": "",
+                                                "SpritePath": "",
+                                                "Choices": [],
+                                                "DialogueType": 0,
+                                                "IsStartingDialogue": false
+                                            }
+                                        }
+                                    ],
+                                    "DialogueType": 0,
+                                    "IsStartingDialogue": false
+                                }
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                ]
+            }
+        ]
+    },
+    "UngroupedDialogues": []
+}

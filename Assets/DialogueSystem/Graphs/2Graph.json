@@ -3,50 +3,50 @@
     "DialogueGroups": {
         "list": [
             {
-                "Key": "Groupppp",
+                "Key": "G1",
                 "Value": []
             },
             {
-                "Key": "Dialogue Group",
+                "Key": "G2",
                 "Value": []
             },
             {
-                "Key": "3237e031-cdde-44dc-a1b7-76de57b5c5e0",
+                "Key": "997dbe61-3104-4626-b7f3-df78a0e258e7",
                 "Value": [
                     {
                         "DialogueName": "1",
-                        "SpeakerName": "Character name.",
-                        "Text": "Dialogue text.",
+                        "SpeakerName": "Char A",
+                        "Text": "asdasdasdas",
                         "SpritePath": "Insert Sprite Path Here.",
                         "Choices": [
                             {
-                                "<Text>k__BackingField": "Next Dialogue",
-                                "<NextDialogue>k__BackingField": {
+                                "Text": "Next Dialogue",
+                                "NextDialogue": {
                                     "DialogueName": "2",
-                                    "SpeakerName": "Character name.",
-                                    "Text": "Dialogue text.",
+                                    "SpeakerName": "Char B",
+                                    "Text": "asdasdasd",
                                     "SpritePath": "Insert Sprite Path Here.",
                                     "Choices": [
                                         {
-                                            "<Text>k__BackingField": "Next Dialogue",
-                                            "<NextDialogue>k__BackingField": {
+                                            "Text": "Next Dialogue",
+                                            "NextDialogue": {
                                                 "DialogueName": "3",
-                                                "SpeakerName": "Character name.",
-                                                "Text": "Dialogue text.",
+                                                "SpeakerName": "Char A",
+                                                "Text": "asdasdas",
                                                 "SpritePath": "Insert Sprite Path Here.",
                                                 "Choices": [
                                                     {
-                                                        "<Text>k__BackingField": "Next Dialogue",
-                                                        "<NextDialogue>k__BackingField": {
-                                                            "DialogueName": "4",
-                                                            "SpeakerName": "Character name.",
-                                                            "Text": "Dialogue text.",
+                                                        "Text": "Next Dialogue",
+                                                        "NextDialogue": {
+                                                            "DialogueName": "DialogueName",
+                                                            "SpeakerName": "Char B",
+                                                            "Text": "zxczxczxc",
                                                             "SpritePath": "Insert Sprite Path Here.",
                                                             "Choices": [
                                                                 {
-                                                                    "<Text>k__BackingField": "Next Dialogue",
-                                                                    "<NextDialogue>k__BackingField": {
-                                                                        "DialogueName": "5",
+                                                                    "Text": "Next Dialogue",
+                                                                    "NextDialogue": {
+                                                                        "DialogueName": "endinggg",
                                                                         "SpeakerName": "Character name.",
                                                                         "Text": "Dialogue text.",
                                                                         "SpritePath": "Insert Sprite Path Here.",
@@ -72,40 +72,45 @@
                         ],
                         "DialogueType": 0,
                         "IsStartingDialogue": true
-                    },
+                    }
+                ]
+            },
+            {
+                "Key": "737289f9-e824-4ad5-ba01-7a1ec32f1bf3",
+                "Value": [
                     {
                         "DialogueName": "2",
-                        "SpeakerName": "Character name.",
-                        "Text": "Dialogue text.",
+                        "SpeakerName": "Char B",
+                        "Text": "asdasdasd",
                         "SpritePath": "Insert Sprite Path Here.",
                         "Choices": [
                             {
-                                "<Text>k__BackingField": "Next Dialogue",
-                                "<NextDialogue>k__BackingField": {
+                                "Text": "Next Dialogue",
+                                "NextDialogue": {
                                     "DialogueName": "3",
-                                    "SpeakerName": "Character name.",
-                                    "Text": "Dialogue text.",
+                                    "SpeakerName": "Char A",
+                                    "Text": "asdasdas",
                                     "SpritePath": "Insert Sprite Path Here.",
                                     "Choices": [
                                         {
-                                            "<Text>k__BackingField": "Next Dialogue",
-                                            "<NextDialogue>k__BackingField": {
-                                                "DialogueName": "4",
-                                                "SpeakerName": "Character name.",
-                                                "Text": "Dialogue text.",
+                                            "Text": "Next Dialogue",
+                                            "NextDialogue": {
+                                                "DialogueName": "DialogueName",
+                                                "SpeakerName": "Char B",
+                                                "Text": "zxczxczxc",
                                                 "SpritePath": "Insert Sprite Path Here.",
                                                 "Choices": [
                                                     {
-                                                        "<Text>k__BackingField": "Next Dialogue",
-                                                        "<NextDialogue>k__BackingField": {
-                                                            "DialogueName": "5",
+                                                        "Text": "Next Dialogue",
+                                                        "NextDialogue": {
+                                                            "DialogueName": "endinggg",
                                                             "SpeakerName": "Character name.",
                                                             "Text": "Dialogue text.",
                                                             "SpritePath": "Insert Sprite Path Here.",
                                                             "Choices": [
                                                                 {
-                                                                    "<Text>k__BackingField": "Next Dialogue",
-                                                                    "<NextDialogue>k__BackingField": {
+                                                                    "Text": "Next Dialogue",
+                                                                    "NextDialogue": {
                                                                         "DialogueName": "",
                                                                         "SpeakerName": "",
                                                                         "Text": "",
@@ -132,34 +137,42 @@
                         ],
                         "DialogueType": 0,
                         "IsStartingDialogue": false
-                    }
-                ]
-            },
-            {
-                "Key": "d1568193-dda3-4485-9e64-8a5cb8b9275f",
-                "Value": [
+                    },
                     {
-                        "DialogueName": "4",
-                        "SpeakerName": "Character name.",
-                        "Text": "Dialogue text.",
+                        "DialogueName": "3",
+                        "SpeakerName": "Char A",
+                        "Text": "asdasdas",
                         "SpritePath": "Insert Sprite Path Here.",
                         "Choices": [
                             {
-                                "<Text>k__BackingField": "Next Dialogue",
-                                "<NextDialogue>k__BackingField": {
-                                    "DialogueName": "5",
-                                    "SpeakerName": "Character name.",
-                                    "Text": "Dialogue text.",
+                                "Text": "Next Dialogue",
+                                "NextDialogue": {
+                                    "DialogueName": "DialogueName",
+                                    "SpeakerName": "Char B",
+                                    "Text": "zxczxczxc",
                                     "SpritePath": "Insert Sprite Path Here.",
                                     "Choices": [
                                         {
-                                            "<Text>k__BackingField": "Next Dialogue",
-                                            "<NextDialogue>k__BackingField": {
-                                                "DialogueName": "",
-                                                "SpeakerName": "",
-                                                "Text": "",
-                                                "SpritePath": "",
-                                                "Choices": [],
+                                            "Text": "Next Dialogue",
+                                            "NextDialogue": {
+                                                "DialogueName": "endinggg",
+                                                "SpeakerName": "Character name.",
+                                                "Text": "Dialogue text.",
+                                                "SpritePath": "Insert Sprite Path Here.",
+                                                "Choices": [
+                                                    {
+                                                        "Text": "Next Dialogue",
+                                                        "NextDialogue": {
+                                                            "DialogueName": "",
+                                                            "SpeakerName": "",
+                                                            "Text": "",
+                                                            "SpritePath": "",
+                                                            "Choices": [],
+                                                            "DialogueType": 0,
+                                                            "IsStartingDialogue": false
+                                                        }
+                                                    }
+                                                ],
                                                 "DialogueType": 0,
                                                 "IsStartingDialogue": false
                                             }
@@ -174,57 +187,22 @@
                         "IsStartingDialogue": false
                     },
                     {
-                        "DialogueName": "5",
-                        "SpeakerName": "Character name.",
-                        "Text": "Dialogue text.",
+                        "DialogueName": "DialogueName",
+                        "SpeakerName": "Char B",
+                        "Text": "zxczxczxc",
                         "SpritePath": "Insert Sprite Path Here.",
                         "Choices": [
                             {
-                                "<Text>k__BackingField": "Next Dialogue",
-                                "<NextDialogue>k__BackingField": {
-                                    "DialogueName": "",
-                                    "SpeakerName": "",
-                                    "Text": "",
-                                    "SpritePath": "",
-                                    "Choices": [],
-                                    "DialogueType": 0,
-                                    "IsStartingDialogue": false
-                                }
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    }
-                ]
-            }
-        ]
-    },
-    "UngroupedDialogues": [
-        {
-            "DialogueName": "3",
-            "SpeakerName": "Character name.",
-            "Text": "Dialogue text.",
-            "SpritePath": "Insert Sprite Path Here.",
-            "Choices": [
-                {
-                    "<Text>k__BackingField": "Next Dialogue",
-                    "<NextDialogue>k__BackingField": {
-                        "DialogueName": "4",
-                        "SpeakerName": "Character name.",
-                        "Text": "Dialogue text.",
-                        "SpritePath": "Insert Sprite Path Here.",
-                        "Choices": [
-                            {
-                                "<Text>k__BackingField": "Next Dialogue",
-                                "<NextDialogue>k__BackingField": {
-                                    "DialogueName": "5",
+                                "Text": "Next Dialogue",
+                                "NextDialogue": {
+                                    "DialogueName": "endinggg",
                                     "SpeakerName": "Character name.",
                                     "Text": "Dialogue text.",
                                     "SpritePath": "Insert Sprite Path Here.",
                                     "Choices": [
                                         {
-                                            "<Text>k__BackingField": "Next Dialogue",
-                                            "<NextDialogue>k__BackingField": {
+                                            "Text": "Next Dialogue",
+                                            "NextDialogue": {
                                                 "DialogueName": "",
                                                 "SpeakerName": "",
                                                 "Text": "",
@@ -240,6 +218,28 @@
                                 }
                             }
                         ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                ]
+            }
+        ]
+    },
+    "UngroupedDialogues": [
+        {
+            "DialogueName": "endinggg",
+            "SpeakerName": "Character name.",
+            "Text": "Dialogue text.",
+            "SpritePath": "Insert Sprite Path Here.",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "NextDialogue": {
+                        "DialogueName": "",
+                        "SpeakerName": "",
+                        "Text": "",
+                        "SpritePath": "",
+                        "Choices": [],
                         "DialogueType": 0,
                         "IsStartingDialogue": false
                     }

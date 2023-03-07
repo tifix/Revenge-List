@@ -1,0 +1,22 @@
+{
+    "DialogueName": "6",
+    "SpeakerName": "Karl",
+    "Text": "Did you say grill?",
+    "SpritePath": "Neighbour_Friendly",
+    "Choices": [
+        {
+            "<Text>k__BackingField": "Next Dialogue",
+            "<NextDialogue>k__BackingField": {
+                "DialogueName": "",
+                "SpeakerName": "",
+                "Text": "",
+                "SpritePath": "",
+                "Choices": [],
+                "DialogueType": 0,
+                "IsStartingDialogue": false
+            }
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

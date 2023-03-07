@@ -1,7 +1,7 @@
 {
     "DialogueName": "2",
-    "SpeakerName": "Character name.",
-    "Text": "Dialogue text.",
+    "SpeakerName": "Lilith",
+    "Text": "I am talking",
     "SpritePath": "Insert Sprite Path Here.",
     "Choices": [
         {

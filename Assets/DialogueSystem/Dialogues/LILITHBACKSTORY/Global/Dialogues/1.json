@@ -1,0 +1,22 @@
+{
+    "DialogueName": "1",
+    "SpeakerName": "Lilith",
+    "Text": "You know, Karl, you remind me of someone…\nOr something…",
+    "SpritePath": "Lilith_Smug",
+    "Choices": [
+        {
+            "<Text>k__BackingField": "Next Dialogue",
+            "<NextDialogue>k__BackingField": {
+                "DialogueName": "",
+                "SpeakerName": "",
+                "Text": "",
+                "SpritePath": "",
+                "Choices": [],
+                "DialogueType": 0,
+                "IsStartingDialogue": false
+            }
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": true
+}

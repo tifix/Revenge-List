@@ -1,0 +1,132 @@
+{
+    "FileName": "1",
+    "DialogueGroups": {
+        "list": [
+            {
+                "Key": "group",
+                "Value": []
+            },
+            {
+                "Key": "g2",
+                "Value": []
+            },
+            {
+                "Key": "86b193bf-7233-4ca9-abb7-83a2ed5394b3",
+                "Value": [
+                    {
+                        "DialogueName": "2",
+                        "SpeakerName": "Character name.",
+                        "Text": "Dialogue text.",
+                        "SpritePath": "Insert Sprite Path Here.",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "NextDialogue": {
+                                    "DialogueName": "3",
+                                    "SpeakerName": "Character name.",
+                                    "Text": "Dialogue text.",
+                                    "SpritePath": "Insert Sprite Path Here.",
+                                    "Choices": [
+                                        {
+                                            "Text": "Next Dialogue",
+                                            "NextDialogue": {
+                                                "DialogueName": "",
+                                                "SpeakerName": "",
+                                                "Text": "",
+                                                "SpritePath": "",
+                                                "Choices": [],
+                                                "DialogueType": 0,
+                                                "IsStartingDialogue": false
+                                            }
+                                        }
+                                    ],
+                                    "DialogueType": 0,
+                                    "IsStartingDialogue": false
+                                }
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                ]
+            },
+            {
+                "Key": "83997272-a3c3-46a6-9c4c-c03a698f4c83",
+                "Value": [
+                    {
+                        "DialogueName": "1",
+                        "SpeakerName": "Character name.",
+                        "Text": "Dialogue text.",
+                        "SpritePath": "Insert Sprite Path Here.",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "NextDialogue": {
+                                    "DialogueName": "2",
+                                    "SpeakerName": "Character name.",
+                                    "Text": "Dialogue text.",
+                                    "SpritePath": "Insert Sprite Path Here.",
+                                    "Choices": [
+                                        {
+                                            "Text": "Next Dialogue",
+                                            "NextDialogue": {
+                                                "DialogueName": "3",
+                                                "SpeakerName": "Character name.",
+                                                "Text": "Dialogue text.",
+                                                "SpritePath": "Insert Sprite Path Here.",
+                                                "Choices": [
+                                                    {
+                                                        "Text": "Next Dialogue",
+                                                        "NextDialogue": {
+                                                            "DialogueName": "",
+                                                            "SpeakerName": "",
+                                                            "Text": "",
+                                                            "SpritePath": "",
+                                                            "Choices": [],
+                                                            "DialogueType": 0,
+                                                            "IsStartingDialogue": false
+                                                        }
+                                                    }
+                                                ],
+                                                "DialogueType": 0,
+                                                "IsStartingDialogue": false
+                                            }
+                                        }
+                                    ],
+                                    "DialogueType": 0,
+                                    "IsStartingDialogue": false
+                                }
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": true
+                    }
+                ]
+            }
+        ]
+    },
+    "UngroupedDialogues": [
+        {
+            "DialogueName": "3",
+            "SpeakerName": "Character name.",
+            "Text": "Dialogue text.",
+            "SpritePath": "Insert Sprite Path Here.",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "NextDialogue": {
+                        "DialogueName": "",
+                        "SpeakerName": "",
+                        "Text": "",
+                        "SpritePath": "",
+                        "Choices": [],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        }
+    ]
+}
