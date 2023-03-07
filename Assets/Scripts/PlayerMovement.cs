@@ -19,6 +19,9 @@ public class PlayerMovement : MonoBehaviour
 
     SpriteRenderer sprite;
 
+    bool bossFightBind { get; set; } = false;
+    Transform left, right;
+
     [Header("Locks"), Tooltip("for example when player is in dialogue or in QTE")]
     public static bool isMovementLocked = false;
 
@@ -47,11 +50,11 @@ public class PlayerMovement : MonoBehaviour
     [Range(1f, 10f), Tooltip("Gravity for the player")]
     public float gravityScale = 1f;
     float gravityForce = 0;
+    public bool IsGrounded { get; private set; }
 
     [Header("Screen Limits")]
     [Tooltip("Max depth and minimun depth")]
     public Vector2 zLimits;
-    public bool IsGrounded { get; private set; }
 
     void Awake()
     {
@@ -119,7 +122,7 @@ public class PlayerMovement : MonoBehaviour
     void ProcessInput()
     {     
         if (IsGrounded) 
-        { 
+        {
             //Movement
             rb.velocity= Vector3.zero;
             rb.velocity += new Vector3(dir.x, 0, dir.y * verticalSpeedBoost) * moveSpeed;
@@ -133,6 +136,16 @@ public class PlayerMovement : MonoBehaviour
 
         if (transform.position.z > zLimits.x || transform.position.z < zLimits.y)
             transform.position = transform.position.z > 0 ? new Vector3(transform.position.x, transform.position.y, zLimits.x) : new Vector3(transform.position.x, transform.position.y, zLimits.y);
+
+        if(bossFightBind)
+        {
+            //Max to the right
+            if (transform.position.x > right.position.x)
+                transform.position = new Vector3(right.position.x, transform.position.y, transform.position.z);
+            //Max to the left
+            else if (transform.position.x < left.position.x)
+                transform.position = new Vector3(left.position.x, transform.position.y, transform.position.z);
+        }
     }
 
     void DoJump(InputAction.CallbackContext obj)
@@ -151,7 +164,9 @@ public class PlayerMovement : MonoBehaviour
         if (IsGrounded && !isMovementLocked && dashTime + dashCoolDown < Time.time)
         {
             Debug.Log("Dash");
+            PlayerCombat.instance.canBeDamaged = false;
             dashTime = Time.time;
+            GetComponentInChildren<SpriteTrail>().CallTrail(dashLenght);
             //Dash
             StartCoroutine("Dash");
         }
@@ -160,12 +175,15 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator Dash()
     {
         float t = dashLenght;
+        Vector3 dashDir = new Vector3((dir.y != 0 ? dir.x : (sprite.flipX ? -1 : 1)) * dashStrenght, 0, dir.y * dashStrenght * verticalSpeedBoost);
         while (t > 0) 
         {
             //Controller can do shorter dashes, diagonal dashes are a bit longer
-            rb.velocity = rb.velocity + new Vector3(dir.x * dashStrenght, 0, dir.y * dashStrenght * verticalSpeedBoost);
+            rb.velocity = rb.velocity + dashDir;
             t -= Time.deltaTime;
             yield return new WaitForEndOfFrame();
+            PlayerCombat.instance.canBeDamaged = true;
+            GetComponentInChildren<SpriteTrail>().StopTrail();
         }
     }
 
@@ -184,6 +202,22 @@ public class PlayerMovement : MonoBehaviour
         input.Ground.Jump.Disable();
     }
 
-    public static void SetLockMovement() { isMovementLocked = true; }   //Globally accessible movement locks
-    public static void SetUnLockMovement() { isMovementLocked = false; }
+    public void SetLockMovement() { isMovementLocked = true; movement.Disable(); input.Ground.Disable(); PlayerCombat.instance.DisableAttack(); }   //Globally accessible movement locks
+    public void SetUnLockMovement() { isMovementLocked = false; movement.Enable(); input.Ground.Enable(); PlayerCombat.instance.EnableAttack(); }
+    public void PauseMovement() { isMovementLocked = true; }
+    public void UnPauseMovement() { isMovementLocked = false; }
+
+    public void BossFightBinding(Transform t)
+    {
+        bossFightBind = true;
+        left = t.GetChild(0).transform;
+        right = t.GetChild(1).transform;
+    }
+
+    public void ReleaseBind()
+    {
+        bossFightBind = false;
+        left = null;
+        right = null;
+    }
 }
