@@ -123,17 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &62222873 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 62222873, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
-  m_PrefabInstance: {fileID: 4133116104034574441}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &123555918
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1738,6 +1727,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Global Volume
       objectReference: {fileID: 0}
+    - target: {fileID: 7780584626273123984, guid: 7f97abb25a63bb04db071feb24a24119, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7780584626273123998, guid: 7f97abb25a63bb04db071feb24a24119, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1785,11 +1778,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f97abb25a63bb04db071feb24a24119, type: 3}
---- !u!4 &878521035 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7780584626273123998, guid: 7f97abb25a63bb04db071feb24a24119, type: 3}
-  m_PrefabInstance: {fileID: 878521034}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &938134239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2544,11 +2532,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1250582534}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: 54.677334, y: 19.510761, z: -43.011013}
+  m_LocalPosition: {x: 54.67732, y: 19.510761, z: -43.011013}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 878521035}
+  - {fileID: 7780584627139433556}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 16.997, y: 0, z: 0}
@@ -4409,7 +4397,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2014099277}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: 54.677334, y: 19.510761, z: -43.011013}
+  m_LocalPosition: {x: 54.67732, y: 19.510761, z: -43.011013}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4773,6 +4761,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1298446756, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1298446756, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
@@ -4903,7 +4895,7 @@ PrefabInstance:
     - target: {fileID: 8966028112275244301, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: playerPortrait
       value: 
-      objectReference: {fileID: 62222873}
+      objectReference: {fileID: 0}
     - target: {fileID: 8966028112275244301, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: playerHealthBar
       value: 
@@ -5001,3 +4993,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: b17b3ffd523c1fe4c9ac4119f8a512a5, type: 3}
+--- !u!4 &7780584627139433556 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7780584626273123998, guid: 7f97abb25a63bb04db071feb24a24119, type: 3}
+  m_PrefabInstance: {fileID: 878521034}
+  m_PrefabAsset: {fileID: 0}

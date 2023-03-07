@@ -2462,6 +2462,7 @@ GameObject:
   - component: {fileID: 897402306}
   - component: {fileID: 897402305}
   - component: {fileID: 897402304}
+  - component: {fileID: 897402307}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -2503,7 +2504,7 @@ MonoBehaviour:
   m_Follow: {fileID: 259458313}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 5.199999
+    OrthographicSize: 4
     NearClipPlane: 0.001
     FarClipPlane: 1000
     Dutch: 0
@@ -2527,7 +2528,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897402303}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: -29.462484, y: 19.878286, z: -43.14893}
+  m_LocalPosition: {x: -29.452679, y: 19.65276, z: -43.231014}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2535,6 +2536,18 @@ Transform:
   m_Father: {fileID: 1646971544}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
+--- !u!114 &897402307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897402303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 729aad4491e915a41bda2b8325cf757a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &900091279
 GameObject:
   m_ObjectHideFlags: 0
@@ -3087,7 +3100,7 @@ Camera:
   m_GameObject: {fileID: 1162723989}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.4481132, g: 0.8798361, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -3105,7 +3118,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.199999
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3204,7 +3217,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162723989}
   m_LocalRotation: {x: 0.17364816, y: -0, z: -0, w: 0.9848078}
-  m_LocalPosition: {x: -29.462484, y: 19.878286, z: -43.14893}
+  m_LocalPosition: {x: -29.452679, y: 19.65276, z: -43.231014}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3541,6 +3554,18 @@ PrefabInstance:
     - target: {fileID: 7780584626273123984, guid: 7f97abb25a63bb04db071feb24a24119, type: 3}
       propertyPath: m_Name
       value: Global Volume
+      objectReference: {fileID: 0}
+    - target: {fileID: 7780584626273123985, guid: 7f97abb25a63bb04db071feb24a24119, type: 3}
+      propertyPath: weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7780584626273123985, guid: 7f97abb25a63bb04db071feb24a24119, type: 3}
+      propertyPath: priority
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7780584626273123985, guid: 7f97abb25a63bb04db071feb24a24119, type: 3}
+      propertyPath: m_IsGlobal
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7780584626273123998, guid: 7f97abb25a63bb04db071feb24a24119, type: 3}
       propertyPath: m_RootOrder
@@ -4302,8 +4327,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 509309130719358499, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -212.99994
+      objectReference: {fileID: 0}
+    - target: {fileID: 509309130719358499, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 102.203125
+      value: 102.20311
       objectReference: {fileID: 0}
     - target: {fileID: 509309131088968244, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_IsActive
@@ -4415,7 +4444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4133116104773976055, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1.9999981
+      value: -1.999999
       objectReference: {fileID: 0}
     - target: {fileID: 6315438857974447595, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_AnchoredPosition.x
