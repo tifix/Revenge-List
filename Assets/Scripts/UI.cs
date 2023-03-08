@@ -5,6 +5,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using TMPro;
 
 
 
@@ -27,7 +28,7 @@ public class UI : MonoBehaviour
     [SerializeField]            GameObject boxTextDisplay, boxPause, boxSettings;                   //the pause menu, the settings menu and the prompt to interact with an object
     [SerializeField]            GameObject boxWon, boxLost;                                         //VictoryScreen and Death screen respectively
     [SerializeField]            GameObject boxHealthbar, boxBossBar;                                 //PLAYER AND BOSS healthbars respectively
-    [SerializeField]            Text txtMain, txtSpeaker;                                           //the text that displays the dialogue in UI.   Aaaand the caption of WHO is speaking
+    [SerializeField]            TextMeshProUGUI txtMain, txtSpeaker;                                           //the text that displays the dialogue in UI.   Aaaand the caption of WHO is speaking
     [SerializeField]            Slider playerHealthBar, bossHealthBar, bossShieldBar;
     [SerializeField]            Image   playerPortrait;                                             //Displayer of player portrait
     [SerializeField]            Sprite[] playerPortraits = new Sprite[5];                           //Images to display as player looses health
