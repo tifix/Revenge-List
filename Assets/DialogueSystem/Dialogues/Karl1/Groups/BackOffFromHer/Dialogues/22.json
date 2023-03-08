@@ -1,0 +1,15 @@
+{
+    "DialogueName": "22",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "Killing him will be natural selection.\nTo make sure no genes that annoying pass to the next generation.",
+    "SpritePath": "Lilith_Smug",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

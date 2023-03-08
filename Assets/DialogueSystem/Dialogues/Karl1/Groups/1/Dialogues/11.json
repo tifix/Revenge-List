@@ -1,0 +1,15 @@
+{
+    "DialogueName": "11",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "Please never say that again about him.\nHe's my hound.",
+    "SpritePath": "Lilith_Unhappy",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

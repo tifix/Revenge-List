@@ -1,0 +1,15 @@
+{
+    "DialogueName": "30",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "I’d be glad to take Snuffles to the park – alone.",
+    "SpritePath": "Lilith_Smug",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": true
+}

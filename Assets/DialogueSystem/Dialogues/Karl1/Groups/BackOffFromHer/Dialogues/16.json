@@ -1,0 +1,15 @@
+{
+    "DialogueName": "16",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "She doesn’t even like you. \nWhat reason would she have to like you?",
+    "SpritePath": "Lilith_Unhappy",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": true
+}

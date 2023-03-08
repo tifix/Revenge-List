@@ -1,0 +1,15 @@
+{
+    "DialogueName": "43",
+    "nodeID": "",
+    "SpeakerName": "Karl",
+    "Text": "I’m sure they’re funny among the other kids, but adults don’t always have such a good humour.",
+    "SpritePath": "Neighbour_Friendly",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": true
+}
