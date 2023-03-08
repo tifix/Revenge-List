@@ -14,6 +14,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] public float DeathReloadTime;                                      //time in seconds(realtime) before menu reloads on game over.
     CinemachineVirtualCamera cam;
     CinemachineBasicMultiChannelPerlin perlin;
+    bool isCurrentlyShaking = false;    //is the camera shaking at the moment - used for removing multiple shakes at once
+
+    [SerializeField] bool cheat_WarpToKarl = false;
+    public bool cheat_SkipBossPhase = false;
+    public bool cheat_FastForwardDialogue = false;
 
     public void Awake()
     {
@@ -39,7 +44,10 @@ public class GameManager : MonoBehaviour
     {
         testScore += Time.fixedDeltaTime;
     }
-
+    private void Update()
+    {
+        if (cheat_WarpToKarl) { PlayerMovement.instance.gameObject.transform.position = new Vector3(12.7f, 1.6f, -5.2f); cheat_WarpToKarl = false; }
+    }
     public void TogglePause() => SetPause(!isGamePaused);
     public void SetPause(bool targetState)
     {
@@ -109,9 +117,14 @@ public class GameManager : MonoBehaviour
 
     IEnumerator ScreenShake(float shakeIntensity = 5f, float shakeTiming = 0.5f)
     {
+        if (isCurrentlyShaking) yield break;
+        isCurrentlyShaking = true;
+
         Noise(1, shakeIntensity);
         yield return new WaitForSeconds(shakeTiming);
         Noise(0, 0);
+
+        isCurrentlyShaking = false;
     }
 
     IEnumerator IncreaseCamSize(int x)

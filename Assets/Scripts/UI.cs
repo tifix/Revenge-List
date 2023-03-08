@@ -110,15 +110,18 @@ public class UI : MonoBehaviour
             pageText = NodeCurrent.Text;
             SetBigSpriteForDialogue("DialogueSprites/" + NodeCurrent.SpritePath);
 
-                Debug.Log(pageText);
+            Debug.Log(pageText);
 
             //Slowly display the page text
             for (int j = 0; j < (pageText.Length + 1); j++)
             {
                 txtMain.text = pageText.Substring(0, j);               //slice the text 
+                if (GameManager.instance.cheat_FastForwardDialogue) { GameManager.instance.cheat_FastForwardDialogue= false; goto endOfDialogue; }
                 yield return new WaitForSecondsRealtime(typingWait);
                 if (!runCoroutine) break;
             }
+            if (GameManager.instance.cheat_FastForwardDialogue) { GameManager.instance.cheat_FastForwardDialogue=false; break; }
+
             txtMain.text = pageText;
             isWaiting = true;
             while (isWaiting == true) yield return null;
@@ -132,6 +135,7 @@ public class UI : MonoBehaviour
             catch {Debug.LogWarning("End of dialogue stream reached"); break;  }
         }
 
+        endOfDialogue:
         yield return 1;
         Time.timeScale = 1;
         runCoroutine = false;                                          //Disable once finished

@@ -100,6 +100,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b10ac846c951d9c4cbdf8361c9c0bf15, type: 2}
   - {fileID: 11400000, guid: 83ac4bcb91d29244f96343ceb4495d36, type: 2}
   camCenter: {fileID: 0}
+  anim: {fileID: 0}
+  flipAnimationDelay: 1
+  throwAnimationDelay: 0.8
 --- !u!114 &5668457906109925841
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -36,6 +36,9 @@ public class KarlBoss : MonoBehaviour
     [SerializeField]
     Transform camCenter;
     public Animator anim;
+    [Tooltip("the projectiles are spawned this many s after the animation starts playing"),Range(0,1),SerializeField] float flipAnimationDelay;
+    [Tooltip("the projectiles are spawned this many s after the animation starts playing"),Range(0,1),SerializeField] float throwAnimationDelay;
+
     private void OnEnable()
     {
         player = FindObjectOfType<PlayerMovement>();
@@ -48,10 +51,13 @@ public class KarlBoss : MonoBehaviour
     {
         if (canAttack)
         {
+            
             attackTimer += Time.deltaTime;
             if (attackTimer >= phases[currentPhase].attacks[currentAttack].waitTime)
             {
-                GameManager.instance.CallShake(5, 0.5f);
+                if (GameManager.instance.cheat_SkipBossPhase) { goto endOfPhase;  }
+
+                //GameManager.instance.CallShake(5, 0.5f);
                 //Burst attack
                 if (phases[currentPhase].attacks[currentAttack].style == BossAttacks.ProjectileStyle.BURST)
                 {
@@ -62,7 +68,8 @@ public class KarlBoss : MonoBehaviour
                         extraTimer += Time.deltaTime;
                         if (extraTimer >= phases[currentPhase].attacks[currentAttack].delay)
                         {
-                            Attack(phases[currentPhase].attacks[currentAttack]);
+                            //Attack(phases[currentPhase].attacks[currentAttack]);
+                            StartCoroutine(DelayedAttack(phases[currentPhase].attacks[currentAttack]));
                             extraTimer = 0;
                             count--;
                         }
@@ -72,15 +79,18 @@ public class KarlBoss : MonoBehaviour
                 //Single attack
                 else if (phases[currentPhase].attacks[currentAttack].style == BossAttacks.ProjectileStyle.SINGLE)
                 {
-                    Attack(phases[currentPhase].attacks[currentAttack]);
+                    //Attack(phases[currentPhase].attacks[currentAttack]);
+                    StartCoroutine(DelayedAttack(phases[currentPhase].attacks[currentAttack]));
                 }
 
                 //Attacked
                 attackTimer = 0;
                 currentAttack++;
 
-                if (currentAttack >= phases[currentPhase].attacks.Count)
+                endOfPhase:
+                if (currentAttack >= phases[currentPhase].attacks.Count || GameManager.instance.cheat_SkipBossPhase)
                 {
+                    
                     //End phase
                     EndPhase();
                     //Wait for shield to break
@@ -88,9 +98,35 @@ public class KarlBoss : MonoBehaviour
                     //update Dialogue and QTE
                     SetQTEandDialogueForRound(currentPhase);
                     //After QTE success, call NextPhase()
+
+                    GameManager.instance.cheat_SkipBossPhase = false;
                 }
             }
         }
+    }
+    IEnumerator DelayedAttack(BossAttacks a)
+    {
+        float animCookTime = 1;
+        switch (a.type) 
+        {
+            case (BossAttacks.ProjectileType.OVERHEAD):
+                {
+                    //Show the throwing animation for overhead attacks
+                    anim.SetTrigger("attackFlipping");
+                    animCookTime = flipAnimationDelay;
+                    break; 
+                }
+            case (BossAttacks.ProjectileType.STRAIGHT):
+                {
+                    //Show the throwing animation for overhead attacks
+                    anim.SetTrigger("attackThrowing");
+                    animCookTime = throwAnimationDelay;
+                    break;
+                }
+
+        }
+        yield return new WaitForSeconds(animCookTime);
+        Attack(a);
     }
 
     void Attack(BossAttacks a)
@@ -103,9 +139,6 @@ public class KarlBoss : MonoBehaviour
             GameObject temp = Instantiate<GameObject>(steak, player.transform.position + new Vector3(xOffset, 10, zOffset), Quaternion.identity);
             temp.GetComponent<BossProjectile>().SetSpeed(a.speed + 1);
             temp.GetComponent<BossProjectile>().SetDistance(a.timeAlive * 2);
-
-            //Show the throwing animation for overhead attacks
-            anim.SetTrigger("attackFlipping");
         }
 
         else if(a.type == BossAttacks.ProjectileType.STRAIGHT)
@@ -120,9 +153,6 @@ public class KarlBoss : MonoBehaviour
             dir.z += zOffset;
             dir.x += zOffset;
             temp.GetComponent<BossProjectile>().SetDirection(dir.normalized);
-
-            //Show the throwing animation for overhead attacks
-            anim.SetTrigger("attackThrowing");
         }
 
         else if (a.type == BossAttacks.ProjectileType.GNOME)

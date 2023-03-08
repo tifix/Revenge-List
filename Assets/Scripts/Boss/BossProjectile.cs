@@ -8,6 +8,7 @@ public class BossProjectile : MonoBehaviour
     float timeAlive = 5;
     float t = 0;
     [Range(1,50),SerializeField]private float damage = 8;
+    [SerializeField]bool isShakingCameraOnHit = false;
 
     public Vector3 dir = new Vector3(-1,0,0);
     public GameObject destroyVFX;
@@ -18,13 +19,14 @@ public class BossProjectile : MonoBehaviour
 
         if(t>timeAlive)
         {
-            Instantiate<GameObject>(destroyVFX, transform.position, Quaternion.identity);
+            Instantiate<GameObject>(destroyVFX, transform.position, Quaternion.identity);   //despawning after time expires
             Destroy(gameObject);
         }
 
-        else if(transform.position.y <= transform.GetChild(1).GetComponent<Transform>().position.y)
+        else if(transform.position.y <= transform.GetChild(1).GetComponent<Transform>().position.y) //despawning after hitting the floor
         {
             Instantiate<GameObject>(destroyVFX, transform.position, Quaternion.identity);
+            if(isShakingCameraOnHit)GameManager.instance.CallShake(5, 0.5f);
             Destroy(gameObject);
         }
 
