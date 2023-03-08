@@ -35,11 +35,13 @@ public class KarlBoss : MonoBehaviour
     private Vector3 knockbackPosition = Vector3.zero; //to avoid player spam-attacking when behind the firewall, knock the player behind the firewall;
     [SerializeField]
     Transform camCenter;
+    public Animator anim;
     private void OnEnable()
     {
         player = FindObjectOfType<PlayerMovement>();
         knockbackPosition = new Vector3(camCenter.position.x, player.transform.position.y, camCenter.position.z);
         StartParticles();
+        if (anim == null) anim = GetComponentInChildren<Animator>();
     }
 
     void Update()
@@ -101,6 +103,9 @@ public class KarlBoss : MonoBehaviour
             GameObject temp = Instantiate<GameObject>(steak, player.transform.position + new Vector3(xOffset, 10, zOffset), Quaternion.identity);
             temp.GetComponent<BossProjectile>().SetSpeed(a.speed + 1);
             temp.GetComponent<BossProjectile>().SetDistance(a.timeAlive * 2);
+
+            //Show the throwing animation for overhead attacks
+            anim.SetTrigger("attackFlipping");
         }
 
         else if(a.type == BossAttacks.ProjectileType.STRAIGHT)
@@ -115,6 +120,9 @@ public class KarlBoss : MonoBehaviour
             dir.z += zOffset;
             dir.x += zOffset;
             temp.GetComponent<BossProjectile>().SetDirection(dir.normalized);
+
+            //Show the throwing animation for overhead attacks
+            anim.SetTrigger("attackThrowing");
         }
 
         else if (a.type == BossAttacks.ProjectileType.GNOME)
