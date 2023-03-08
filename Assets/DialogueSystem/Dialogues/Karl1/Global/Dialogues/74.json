@@ -1,0 +1,15 @@
+{
+    "DialogueName": "74",
+    "nodeID": "",
+    "SpeakerName": "Karl",
+    "Text": "I thought you liked them so much that you still eat them when I make them.",
+    "SpritePath": "Neighbour_Sad",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

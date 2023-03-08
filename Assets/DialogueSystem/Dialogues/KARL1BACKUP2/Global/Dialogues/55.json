@@ -1,0 +1,15 @@
+{
+    "DialogueName": "55",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "No! I want to… \n(This is my chance to hurt him mentally, before going for the physical damage.)",
+    "SpritePath": "Lilith_Unhappy",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

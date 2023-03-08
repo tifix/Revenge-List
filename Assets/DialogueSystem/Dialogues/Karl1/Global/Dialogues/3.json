@@ -1,0 +1,15 @@
+{
+    "DialogueName": "3",
+    "nodeID": "",
+    "SpeakerName": "Karl",
+    "Text": "Pardon?",
+    "SpritePath": "Neighbour_Friendly",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

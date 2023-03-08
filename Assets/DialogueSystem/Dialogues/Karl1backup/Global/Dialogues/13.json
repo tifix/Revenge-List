@@ -1,0 +1,15 @@
+{
+    "DialogueName": "13",
+    "nodeID": "",
+    "SpeakerName": "Karl",
+    "Text": "But if you want to walk him sometimes, I won’t be saying no to having a day off! Ha ha! ",
+    "SpritePath": "Neighbour_Laughing",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

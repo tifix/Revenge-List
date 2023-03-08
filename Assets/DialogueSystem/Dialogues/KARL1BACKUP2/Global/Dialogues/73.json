@@ -1,0 +1,15 @@
+{
+    "DialogueName": "73",
+    "nodeID": "",
+    "SpeakerName": "Astrid",
+    "Text": "I don’t eat meat! ",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

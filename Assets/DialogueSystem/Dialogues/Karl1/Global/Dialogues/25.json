@@ -1,0 +1,15 @@
+{
+    "DialogueName": "25",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "How thick can he get?",
+    "SpritePath": "Lilith_Unhappy",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

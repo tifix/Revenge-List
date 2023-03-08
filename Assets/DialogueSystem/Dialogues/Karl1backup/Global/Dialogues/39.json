@@ -1,0 +1,19 @@
+{
+    "DialogueName": "39",
+    "nodeID": "",
+    "SpeakerName": "Karl",
+    "Text": "So what do you say? Lay off the killing jokes?",
+    "SpritePath": "Neighbour_Laughing",
+    "Choices": [
+        {
+            "Text": "You really think they’re jokes?",
+            "nextID": ""
+        },
+        {
+            "Text": "Fine, I will.",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 1,
+    "IsStartingDialogue": false
+}

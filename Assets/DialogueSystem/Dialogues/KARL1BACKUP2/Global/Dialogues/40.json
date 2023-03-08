@@ -1,0 +1,15 @@
+{
+    "DialogueName": "40",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "You are absolutely right. I will stop joking about it.",
+    "SpritePath": "Lilith_Unhappy",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

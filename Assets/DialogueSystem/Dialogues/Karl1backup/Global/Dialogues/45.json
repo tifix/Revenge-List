@@ -1,0 +1,15 @@
+{
+    "DialogueName": "45",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "This cannot continue…\nThis is why he made it to the list… I’m ending this now…",
+    "SpritePath": "Lilith_Unhappy",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": true
+}

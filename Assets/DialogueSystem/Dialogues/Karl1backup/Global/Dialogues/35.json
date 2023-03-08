@@ -1,0 +1,15 @@
+{
+    "DialogueName": "35",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "*I want to know what Astrid talked about with this swine…*",
+    "SpritePath": "Lilith_Unhappy",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

@@ -1,0 +1,19 @@
+{
+    "DialogueName": "15",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "...",
+    "SpritePath": "Lilith_Unhappy",
+    "Choices": [
+        {
+            "Text": "Do take her out…",
+            "nextID": ""
+        },
+        {
+            "Text": "Back off from Astrid.",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

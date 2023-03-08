@@ -1,0 +1,15 @@
+{
+    "DialogueName": "5",
+    "nodeID": "",
+    "SpeakerName": "Karl",
+    "Text": "Darkness? Isn’t that rather glum? \nTo me, you look more like Lilith, the Queen of…",
+    "SpritePath": "Neighbour_Laughing",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

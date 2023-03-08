@@ -1,0 +1,15 @@
+{
+    "DialogueName": "70",
+    "nodeID": "",
+    "SpeakerName": "Karl",
+    "Text": "I can’t believe this!",
+    "SpritePath": "Neighbour_Sad",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}
