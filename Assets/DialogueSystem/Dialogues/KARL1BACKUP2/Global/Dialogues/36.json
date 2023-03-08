@@ -1,0 +1,15 @@
+{
+    "DialogueName": "36",
+    "nodeID": "",
+    "SpeakerName": "Karl",
+    "Text": "We really think you shouldn’t joke about killing people so much.",
+    "SpritePath": "Neighbour_Sad",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

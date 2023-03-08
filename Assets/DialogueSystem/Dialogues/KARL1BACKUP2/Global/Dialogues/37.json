@@ -1,0 +1,15 @@
+{
+    "DialogueName": "37",
+    "nodeID": "",
+    "SpeakerName": "Karl",
+    "Text": "Me and Astrid know that you’re joking, but especially since you’re carrying that sword around, other people might not understand your… sense of humour… as well as we do.\r",
+    "SpritePath": "Neighbour_Sad",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": true
+}

@@ -1,0 +1,15 @@
+{
+    "DialogueName": "88",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "Okay. But the point is. He doesn’t like you.",
+    "SpritePath": "Lilith_Smug",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

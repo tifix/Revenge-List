@@ -1,0 +1,15 @@
+{
+    "DialogueName": "65",
+    "nodeID": "",
+    "SpeakerName": "Astrid",
+    "Text": "Is what true?",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

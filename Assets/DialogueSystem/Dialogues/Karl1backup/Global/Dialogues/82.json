@@ -1,0 +1,15 @@
+{
+    "DialogueName": "82",
+    "nodeID": "",
+    "SpeakerName": "Character name.",
+    "Text": "Yes. The fight is good. Because I have a licence…",
+    "SpritePath": "Neighbour_Laughing",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

@@ -1,0 +1,15 @@
+{
+    "DialogueName": "23",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "Do take her out. I’ll walk the dog. See what happens.",
+    "SpritePath": "Lilith_Smug",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

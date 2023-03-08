@@ -1,0 +1,19 @@
+{
+    "DialogueName": "9",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "...",
+    "SpritePath": "Lilith_Unhappy",
+    "Choices": [
+        {
+            "Text": "I’d rather die. Or you should.",
+            "nextID": ""
+        },
+        {
+            "Text": "He's not called Snuffles.",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 1,
+    "IsStartingDialogue": true
+}

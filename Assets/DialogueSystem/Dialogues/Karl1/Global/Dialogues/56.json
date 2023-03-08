@@ -1,0 +1,19 @@
+{
+    "DialogueName": "56",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "(What should I say…)",
+    "SpritePath": "Lilith_Unhappy",
+    "Choices": [
+        {
+            "Text": "“Your” dog doesn’t even like you",
+            "nextID": ""
+        },
+        {
+            "Text": "Astrid doesn’t enjoy your barbeque",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

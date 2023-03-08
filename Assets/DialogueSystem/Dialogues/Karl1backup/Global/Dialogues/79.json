@@ -1,0 +1,15 @@
+{
+    "DialogueName": "79",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "And now I will fight you!",
+    "SpritePath": "Lilith_Smug",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

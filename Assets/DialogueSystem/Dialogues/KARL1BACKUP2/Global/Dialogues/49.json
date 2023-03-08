@@ -1,0 +1,15 @@
+{
+    "DialogueName": "49",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "I can’t even say it with a straight face!",
+    "SpritePath": "Lilith_Happy",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

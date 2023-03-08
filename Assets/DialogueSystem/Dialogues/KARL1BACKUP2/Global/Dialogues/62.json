@@ -1,0 +1,15 @@
+{
+    "DialogueName": "62",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "She doesn’t actually enjoy your barbeque.\nShe just says she does to not hurt your feelings.",
+    "SpritePath": "Lilith_Smug",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}
