@@ -246,7 +246,7 @@ public class QTEManager : MonoBehaviour
 
             if (UI.instance.bossHealth.gameObject.TryGetComponent<KarlBoss>(out KarlBoss karl))
             { 
-                if(karl.currentPhase <= 1)
+                if(UI.instance.bossHealth.coreHealth > 0)
                     karl.NextPhase(); 
             }
         }
@@ -303,7 +303,6 @@ public class QTEManager : MonoBehaviour
             Destroy(_skulls[i].gameObject);
             _skulls.RemoveAt(i);
         }
-        UI.instance.ToggleQTEScreen();
     }
 
     //Scale up object over time
