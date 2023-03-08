@@ -110,7 +110,7 @@ public class UI : MonoBehaviour
             txtSpeaker.text = NodeCurrent.SpeakerName;
             pageText = NodeCurrent.Text;
             SetBigSpriteForDialogue("DialogueSprites/" + NodeCurrent.SpritePath);
-
+            runCoroutine=true;
             Debug.Log(pageText);
 
             //Slowly display the page text
