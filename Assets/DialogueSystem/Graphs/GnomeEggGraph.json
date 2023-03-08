@@ -1,0 +1,83 @@
+{
+    "FileName": "GnomeEgg",
+    "DialogueGroups": {
+        "list": []
+    },
+    "UngroupedDialogues": [
+        {
+            "DialogueName": "2",
+            "nodeID": "",
+            "SpeakerName": "GnomeDev",
+            "Text": "Stop going to the left...",
+            "SpritePath": "regular_gnome 1",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "3",
+            "nodeID": "",
+            "SpeakerName": "GnomeDev",
+            "Text": "We want you to experience the game so, please, go right :)",
+            "SpritePath": "regular_gnome 1",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "4",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "...",
+            "SpritePath": "Lilith_Unhappy",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "1",
+            "nodeID": "",
+            "SpeakerName": "GnomeDev",
+            "Text": "Hey you!!!",
+            "SpritePath": "regular_gnome 1",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": true
+        },
+        {
+            "DialogueName": "5",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "Fine, I'll comply... Just this once",
+            "SpritePath": "Lilith_Smug",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        }
+    ]
+}

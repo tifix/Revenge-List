@@ -1,0 +1,15 @@
+{
+    "DialogueName": "DialogueName",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "Fine, I'll comply... Just this once",
+    "SpritePath": "Lilith_Smug",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}
