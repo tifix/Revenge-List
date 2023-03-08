@@ -120,7 +120,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void ProcessInput()
-    {     
+    {
         if (IsGrounded) 
         {
             //Movement
@@ -204,8 +204,8 @@ public class PlayerMovement : MonoBehaviour
 
     public void SetLockMovement() { isMovementLocked = true; movement.Disable(); input.Ground.Disable(); PlayerCombat.instance.DisableAttack(); }   //Globally accessible movement locks
     public void SetUnLockMovement() { isMovementLocked = false; movement.Enable(); input.Ground.Enable(); PlayerCombat.instance.EnableAttack(); GetComponent<Collider>().enabled = true; }
-    public void PauseMovement() { isMovementLocked = true; }
-    public void UnPauseMovement() { isMovementLocked = false; }
+    public void PauseMovement() { isMovementLocked = true; PlayerCombat.instance.DisableAttack(); }
+    public void UnPauseMovement() { isMovementLocked = false; PlayerCombat.instance.EnableAttack(); }
 
     public void BossFightBinding(Transform t)
     {

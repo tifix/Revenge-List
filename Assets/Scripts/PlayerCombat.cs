@@ -20,6 +20,10 @@ public class PlayerCombat : ObjectScript
     public LayerMask enemyLayers;
     public bool canBeDamaged = true;
 
+    bool canAttack = true;
+    //Check if player wants to continue the combo
+    bool comboAttackBuffer = false;
+
     protected override void Awake()                             //Ensuring single instance of the script
     {
         base.Awake();
@@ -60,16 +64,18 @@ public class PlayerCombat : ObjectScript
     public void DisableAttack()
     {
         input.Ground.Disable();
+        canAttack = false;
     }
 
     public void EnableAttack()
     {
         input.Ground.Enable();
+        canAttack = true;
     }
 
     public void Attack(InputAction.CallbackContext obj)
     {
-        if(stamina >= 10.0f)
+        if(stamina >= 10.0f && canAttack)
         {
             stamina -= 5.0f;
             Debug.Log("Attacking now. Stamina: %f" + stamina);
@@ -84,7 +90,9 @@ public class PlayerCombat : ObjectScript
                 Debug.Log("Enemy hit: " + enemy.name);
                 enemy.GetComponent<ObjectScript>().ApplyDamage(10.0f);
             }
+            comboAttackBuffer = false;
         }
+        else if(!canAttack) { comboAttackBuffer = true; };
     }
 
     // For applying healing to the player

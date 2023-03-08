@@ -89,7 +89,7 @@ public class QTEManager : MonoBehaviour
     void Update()
     {       
         if (playQTE)
-        {
+        {          
             beatTimer += Time.deltaTime;
             BeatUI.transform.Rotate(new Vector3(0, 0, -100 * Time.deltaTime));
             if (beatTimer >= currentMap.delay)
@@ -200,10 +200,11 @@ public class QTEManager : MonoBehaviour
     public void QTEStart()
     {
         QTECleanUp();
-
+        PlayerMovement.instance.PauseMovement();
         anim.SetTrigger("QTE_entered");
 
         GameManager.instance.SetPause(false);
+        PlayerMovement.instance.SetLockMovement();        
 
         if (currentMap == null)
             currentMap = defaultMap;
@@ -212,6 +213,7 @@ public class QTEManager : MonoBehaviour
         FillSong.fillAmount = 0;
 
         anim.SetBool("QTE_Playing", true);
+        PlayerMovement.instance.PauseMovement();
         StartCoroutine(QTECountDown());
     }
 
@@ -223,9 +225,11 @@ public class QTEManager : MonoBehaviour
         for (int i = 3; i > 0 ; i--)
         {
             countDownUI.SetText(i.ToString());
+            PlayerMovement.instance.PauseMovement();
             yield return new WaitForSeconds(1);
         }
         countDownUI.gameObject.SetActive(false);
+        PlayerMovement.instance.PauseMovement();
         playQTE = true;
         isPlaying = true;
     }
@@ -246,7 +250,7 @@ public class QTEManager : MonoBehaviour
 
             if (UI.instance.bossHealth.gameObject.TryGetComponent<KarlBoss>(out KarlBoss karl))
             { 
-                if(karl.currentPhase <= 1)
+                if(UI.instance.bossHealth.coreHealth > 0)
                     karl.NextPhase(); 
             }
         }
@@ -303,7 +307,6 @@ public class QTEManager : MonoBehaviour
             Destroy(_skulls[i].gameObject);
             _skulls.RemoveAt(i);
         }
-        UI.instance.ToggleQTEScreen();
     }
 
     //Scale up object over time
