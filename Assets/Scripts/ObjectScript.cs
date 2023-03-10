@@ -15,6 +15,8 @@ public class ObjectScript : MonoBehaviour
     //I'd recommend health being int - AV
     [SerializeField] protected float maxHealth = 1;            // The maximum health the Object can have, defaults to 1 for Props.
     [SerializeField] protected float health;
+    public bool knockBackWhenHit = false;
+    public float explosionStrength = 3;
 
     // Start is called before the first frame update
     protected virtual void Awake()
@@ -52,12 +54,38 @@ public class ObjectScript : MonoBehaviour
     public virtual void ApplyDamage(float _value)
     {
         health -= _value;
+
+        if(knockBackWhenHit) Knockback();
+        if (health < 1)   DeleteObject();
+        if(knockBackWhenHit && health < 1)  StartCoroutine(ShrinkAndVanish(.5f)); 
+    }
+
+    protected void Knockback() 
+    {
+        Vector3 kickOrigin = PlayerMovement.instance.transform.position;
+        kickOrigin -= new Vector3(0, 3f, 0);
+        Vector3 direction = transform.position - kickOrigin;
+        direction = new Vector3(direction.x, direction.y, 0);                                   //removing z component
+        GetComponent<Rigidbody>().AddForceAtPosition(direction.normalized* explosionStrength, transform.position, ForceMode.Impulse);
+        Debug.DrawLine(kickOrigin, transform.position, Color.red, 1);
     }
 
     // Destroy the object
     protected void DeleteObject()
     {
         Destroy(this.gameObject);
+    }
+    protected IEnumerator ShrinkAndVanish(float time) 
+    {
+        Vector3 initScale=transform.localScale;
+        float norm = 0;
+        while (norm<1)
+        {
+            transform.localScale = Vector3.Lerp(initScale, Vector3.zero, norm);
+            yield return new WaitForEndOfFrame();
+            norm += Time.deltaTime / time;
+        }
+        Destroy(gameObject);
     }
 
     public float GetHealth() { return health; }
