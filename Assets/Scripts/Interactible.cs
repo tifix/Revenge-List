@@ -28,9 +28,12 @@ public class Interactible : MonoBehaviour
         //input.Ground.Interact.Enable();
         input.Ground.Interact.performed += DoInteraction;
 
-        isInRange = true;
-        if(!isAutoUse) UI.instance.boxInteractPrompt.SetActive(true);
-        if (isAutoUse) { Interaction(); }  //Forbidden magiks resonate deep within
+        if(other.CompareTag("Player"))
+        {
+            isInRange = true;
+            if(!isAutoUse) UI.instance.boxInteractPrompt.SetActive(true);
+            if (isAutoUse) { Interaction(); }  //Forbidden magiks resonate deep within
+        }
     }
     
 
