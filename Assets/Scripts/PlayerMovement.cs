@@ -40,18 +40,6 @@ public class PlayerMovement : MonoBehaviour
     public float dashCoolDown = 1.0f;
     float dashTime = 0;
 
-    [Header("Jump")]
-    [Range(1f, 100f), Tooltip("Jump height")]
-    public float jumpStrenght = 4f;
-    [Range(0f,1f), Tooltip("Ground check ray lenght")]
-    public float groundCheckDistance = 0.5f;
-
-    [Header("Gravity")]
-    [Range(1f, 10f), Tooltip("Gravity for the player")]
-    public float gravityScale = 1f;
-    float gravityForce = 0;
-    public bool IsGrounded { get; private set; }
-
     [Header("Screen Limits")]
     [Tooltip("Max depth and minimun depth")]
     public Vector2 zLimits;
@@ -70,10 +58,7 @@ public class PlayerMovement : MonoBehaviour
         movement = input.Ground.Move;
         movement.Enable();
 
-        //Bind jump to a function
-        input.Ground.Jump.performed += DoJump;
-        input.Ground.Jump.Enable();
-
+        //Bind dash to a function
         input.Ground.Dash.performed += DoDash;
         input.Ground.Dash.Enable();
     }
@@ -88,7 +73,6 @@ public class PlayerMovement : MonoBehaviour
                 sprite.flipX = true;
             else if (dir.x > 0)
                 sprite.flipX = false;
-            CheckGround();
             ProcessInput();
             GetComponent<Animator>().SetFloat("walkDirection", dir.x);
         }
@@ -98,42 +82,13 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void CheckGround()
-    {
-        //Find bottom of box collision in World Space
-        Vector3 bottom = transform.TransformPoint(boxCol.center);
-        bottom.y -= boxCol.size.y / 2;
-        
-        //Create ray pointing down
-        Ray ray = new Ray(bottom + transform.up * .01f, -transform.up);
-        RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, groundCheckDistance))
-        {
-            if (hit.distance < groundCheckDistance)
-            {
-                IsGrounded = true;
-                gravityForce = 0;
-                return;
-            }
-        }
-        IsGrounded = false;
-    }
-
     void ProcessInput()
     {
-        if (IsGrounded) 
-        {
-            //Movement
-            rb.velocity= Vector3.zero;
-            rb.velocity += new Vector3(dir.x, 0, dir.y * verticalSpeedBoost) * moveSpeed;
-        }     
-        else
-        {
-            //Stop X-Z movement
-            rb.velocity = new Vector3(0, rb.velocity.y - gravityForce, 0);
-            gravityForce += gravityScale * Time.deltaTime;
-        }
+        //Movement
+        rb.velocity= Vector3.zero;
+        rb.velocity += new Vector3(dir.x, 0, dir.y * verticalSpeedBoost) * moveSpeed;   
 
+        //Depth limits
         if (transform.position.z > zLimits.x || transform.position.z < zLimits.y)
             transform.position = transform.position.z > 0 ? new Vector3(transform.position.x, transform.position.y, zLimits.x) : new Vector3(transform.position.x, transform.position.y, zLimits.y);
 
@@ -148,20 +103,9 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void DoJump(InputAction.CallbackContext obj)
-    {
-        if(IsGrounded && !isMovementLocked)
-        {
-            Debug.Log("Jump");
-            //Jump up
-            rb.velocity = Vector3.zero;
-            rb.AddForce(Vector3.up* jumpStrenght,ForceMode.Impulse);
-        }
-    }
-
     void DoDash(InputAction.CallbackContext obj)
     {
-        if (IsGrounded && !isMovementLocked && dashTime + dashCoolDown < Time.time)
+        if (!isMovementLocked && dashTime + dashCoolDown < Time.time)
         {
             Debug.Log("Dash");
             PlayerCombat.instance.canBeDamaged = false;
@@ -189,8 +133,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawLine(transform.position - new Vector3(0,0.5f,0), transform.position - new Vector3(0, 0.5f + groundCheckDistance, 0));
         Gizmos.color = Color.blue;
         Gizmos.DrawLine(new Vector3(transform.position.x, 0, 0), new Vector3(transform.position.x, 0, zLimits.x));
         Gizmos.DrawLine(new Vector3(transform.position.x, 0, 0), new Vector3(transform.position.x, 0, zLimits.y));
@@ -199,7 +141,6 @@ public class PlayerMovement : MonoBehaviour
     private void OnDestroy()
     {
         movement.Disable();
-        input.Ground.Jump.Disable();
     }
 
     public void SetLockMovement() { isMovementLocked = true; movement.Disable(); input.Ground.Disable(); PlayerCombat.instance.DisableAttack(); }   //Globally accessible movement locks

@@ -37,15 +37,6 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Jump"",
-                    ""type"": ""Button"",
-                    ""id"": ""aeea7691-09bc-4c00-ba3d-0181eb64e2c4"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""Attack"",
                     ""type"": ""Button"",
                     ""id"": ""bdec341b-767b-4d34-bfa2-410eed1cc201"",
@@ -83,28 +74,6 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 }
             ],
             ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""8c419484-1c3c-42aa-8473-1529ef9b7988"",
-                    ""path"": ""<Keyboard>/space"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Jump"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""2ac71f0f-1266-4641-aed9-71ce8a8fd4bd"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Jump"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
                 {
                     ""name"": """",
                     ""id"": ""cc70bb23-8b84-473a-b8bf-85e7957f6503"",
@@ -557,7 +526,6 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         // Ground
         m_Ground = asset.FindActionMap("Ground", throwIfNotFound: true);
         m_Ground_Move = m_Ground.FindAction("Move", throwIfNotFound: true);
-        m_Ground_Jump = m_Ground.FindAction("Jump", throwIfNotFound: true);
         m_Ground_Attack = m_Ground.FindAction("Attack", throwIfNotFound: true);
         m_Ground_Dash = m_Ground.FindAction("Dash", throwIfNotFound: true);
         m_Ground_Interact = m_Ground.FindAction("Interact", throwIfNotFound: true);
@@ -632,7 +600,6 @@ public partial class @Controls : IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Ground;
     private IGroundActions m_GroundActionsCallbackInterface;
     private readonly InputAction m_Ground_Move;
-    private readonly InputAction m_Ground_Jump;
     private readonly InputAction m_Ground_Attack;
     private readonly InputAction m_Ground_Dash;
     private readonly InputAction m_Ground_Interact;
@@ -642,7 +609,6 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         private @Controls m_Wrapper;
         public GroundActions(@Controls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Ground_Move;
-        public InputAction @Jump => m_Wrapper.m_Ground_Jump;
         public InputAction @Attack => m_Wrapper.m_Ground_Attack;
         public InputAction @Dash => m_Wrapper.m_Ground_Dash;
         public InputAction @Interact => m_Wrapper.m_Ground_Interact;
@@ -659,9 +625,6 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @Move.started -= m_Wrapper.m_GroundActionsCallbackInterface.OnMove;
                 @Move.performed -= m_Wrapper.m_GroundActionsCallbackInterface.OnMove;
                 @Move.canceled -= m_Wrapper.m_GroundActionsCallbackInterface.OnMove;
-                @Jump.started -= m_Wrapper.m_GroundActionsCallbackInterface.OnJump;
-                @Jump.performed -= m_Wrapper.m_GroundActionsCallbackInterface.OnJump;
-                @Jump.canceled -= m_Wrapper.m_GroundActionsCallbackInterface.OnJump;
                 @Attack.started -= m_Wrapper.m_GroundActionsCallbackInterface.OnAttack;
                 @Attack.performed -= m_Wrapper.m_GroundActionsCallbackInterface.OnAttack;
                 @Attack.canceled -= m_Wrapper.m_GroundActionsCallbackInterface.OnAttack;
@@ -681,9 +644,6 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @Move.started += instance.OnMove;
                 @Move.performed += instance.OnMove;
                 @Move.canceled += instance.OnMove;
-                @Jump.started += instance.OnJump;
-                @Jump.performed += instance.OnJump;
-                @Jump.canceled += instance.OnJump;
                 @Attack.started += instance.OnAttack;
                 @Attack.performed += instance.OnAttack;
                 @Attack.canceled += instance.OnAttack;
@@ -801,7 +761,6 @@ public partial class @Controls : IInputActionCollection2, IDisposable
     public interface IGroundActions
     {
         void OnMove(InputAction.CallbackContext context);
-        void OnJump(InputAction.CallbackContext context);
         void OnAttack(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
