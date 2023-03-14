@@ -34,8 +34,10 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
-        GetCamera();
-        CamFollowPlayer();
+        if(GetCamera())             //Find the camera object. If found and valid, track player
+            CamFollowPlayer();
+
+
     }
 
     // Update is called once per frame
@@ -59,10 +61,16 @@ public class GameManager : MonoBehaviour
         else Time.timeScale = 1;
     }
 
-    public void GetCamera() 
+    public bool GetCamera() 
     {
-        cam = FindObjectOfType<CinemachineVirtualCamera>();
-        cam.m_Lens.OrthographicSize = 4;
+        try 
+        { 
+            cam = FindObjectOfType<CinemachineVirtualCamera>(); 
+            cam.m_Lens.OrthographicSize = 4; 
+        }
+        catch { return false; }             
+        
+        
 
         perlin = cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
         perlin.m_AmplitudeGain = 0;
@@ -70,6 +78,8 @@ public class GameManager : MonoBehaviour
 
         frame = cam.GetCinemachineComponent<CinemachineFramingTransposer>();
         frame.m_DeadZoneHeight = deadZone;
+
+        return true;
     }
 
     public static void StartQuickTimeEventEverything() 
