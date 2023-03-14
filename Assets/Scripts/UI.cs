@@ -324,7 +324,11 @@ public class UI : MonoBehaviour
 
     #region buttons and element toggles
     public void TogglePauseMenu() { boxPause.SetActive(!boxPause.activeInHierarchy); GameManager.instance.TogglePause(); }     //Toggle pause menu
-    public void BackToMenu() { GameManager.LoadMenu(); }
+    public void BackToMenu() 
+    {
+        AudioManager.instance.Play("MenuClick");
+        GameManager.LoadMenu(); 
+    }
     public void InputPause(InputAction.CallbackContext obj) => TogglePauseMenu();
     public void ToggleSettings()                                                                                            //Toggle settings menu
     {
@@ -347,7 +351,11 @@ public class UI : MonoBehaviour
 
     public void ToggleRevengeList() => RevengeList.SetActive(!RevengeList.activeInHierarchy);
 
-    public void QuitToWindows() { Application.Quit(); }
+    public void QuitToWindows() 
+    {
+        AudioManager.instance.Play("MenuClick");
+        Application.Quit(); 
+    }
 
     public void SetSpriteXLLilith(Sprite s) { XLPortraitLilith.gameObject.SetActive(true); XLPortraitLilith.sprite = s; }
     public void SetSpriteXLOther(Sprite s) { XLPortraitOther.gameObject.SetActive(true); XLPortraitOther.sprite = s; }
