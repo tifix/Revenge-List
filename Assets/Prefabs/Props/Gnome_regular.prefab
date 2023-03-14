@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3597187429904547503}
   - component: {fileID: 5286027922017925057}
   - component: {fileID: 8453137599644665725}
+  - component: {fileID: 733942541384790841}
   m_Layer: 8
   m_Name: Gnome_regular
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 3597187429904547500}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.726, y: 0.726, z: 0.726}
+  m_LocalScale: {x: 0.52, y: 0.52, z: 0.52}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -108,7 +109,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3597187429904547500}
   serializedVersion: 2
-  m_Mass: 5
+  m_Mass: 9
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -128,7 +129,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08ce82e816f41634295d648b12097f70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 30
-  health: 30
+  maxHealth: 5
+  health: 5
   knockBackWhenHit: 1
-  explosionStrength: 40
+  explosionStrength: 90
+--- !u!114 &733942541384790841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3597187429904547500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0450f90768c63bb4386330267cc2efe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 3597187429904547502}
+  parentPos: {fileID: 3597187429904547497}
+  clonesPerSec: 10
+  colourOverride: {r: 0, g: 0, b: 0, a: 1}
+  scaleOverTime: {x: 1, y: 1, z: 1}
+  colourOverTime: {r: 1, g: 1, b: 1, a: 1}
+  fadeSpeed: 10

@@ -207,9 +207,6 @@ MonoBehaviour:
   dashStrenght: 20
   dashLenght: 0.2
   dashCoolDown: 0.5
-  jumpStrenght: 8
-  groundCheckDistance: 0.1
-  gravityScale: 1
   zLimits: {x: 8, y: -10}
 --- !u!114 &3395993812505339147
 MonoBehaviour:
@@ -225,13 +222,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   health: 100
+  knockBackWhenHit: 0
+  explosionStrength: 3
   staminaRegenPerSec: 2
   stamina: 0
   attackOrg: {fileID: 3395993812620112224}
   attackRange: 2
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 320
   canBeDamaged: 1
 --- !u!65 &3395993812505339142
 BoxCollider:

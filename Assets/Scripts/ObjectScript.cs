@@ -55,9 +55,12 @@ public class ObjectScript : MonoBehaviour
     {
         health -= _value;
 
-        if(knockBackWhenHit) Knockback();
-        if (health < 1)   DeleteObject();
-        if(knockBackWhenHit && health < 1)  StartCoroutine(ShrinkAndVanish(.5f)); 
+        if (knockBackWhenHit) 
+        {
+            Knockback();
+            if(health < 0) StartCoroutine(ShrinkAndVanish(1.5f));
+        } 
+        else if (health < 1)   DeleteObject();
     }
 
     protected void Knockback() 

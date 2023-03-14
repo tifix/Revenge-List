@@ -192,6 +192,7 @@ GameObject:
   - component: {fileID: 1337283920656425531}
   - component: {fileID: 1337283920656425508}
   - component: {fileID: 3664027229894171687}
+  - component: {fileID: 3621302242855956144}
   m_Layer: 6
   m_Name: Gnome
   m_TagString: Untagged
@@ -229,6 +230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 25
+  isShakingCameraOnHit: 0
   dir: {x: 0, y: -1, z: 0}
   destroyVFX: {fileID: 8083233970450910706, guid: d454ee8b73a9607428fe332e218baa54, type: 3}
 --- !u!65 &3664027229894171687
@@ -244,3 +246,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.6037389, z: 1}
   m_Center: {x: 0, y: 0.30186945, z: 0}
+--- !u!114 &3621302242855956144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337283920656425530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0450f90768c63bb4386330267cc2efe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 1337283919670149645}
+  parentPos: {fileID: 1337283920656425531}
+  clonesPerSec: 10
+  colourOverride: {r: 0, g: 0, b: 0, a: 1}
+  scaleOverTime: {x: 1, y: 1, z: 1}
+  colourOverTime: {r: 1, g: 1, b: 1, a: 1}
+  fadeSpeed: 10
