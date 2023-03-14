@@ -212,9 +212,9 @@ namespace DS.Elements
 
         public bool IsStartingNode()
         {
-            Port inputPort = (Port) inputContainer.Children().First();
+            if (DialogueName == "1" || DialogueName == "start" || DialogueName == "Start" || DialogueName == "START" || DialogueName == "0" ) return true;
 
-            return !inputPort.connected;
+            return false;
         }
 
         public void SetErrorStyle(Color color)

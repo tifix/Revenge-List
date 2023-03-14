@@ -1,0 +1,15 @@
+{
+    "DialogueName": "24",
+    "nodeID": "",
+    "SpeakerName": "Karl",
+    "Text": "You are so kind! Thank you!",
+    "SpritePath": "Neighbour_Friendly",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

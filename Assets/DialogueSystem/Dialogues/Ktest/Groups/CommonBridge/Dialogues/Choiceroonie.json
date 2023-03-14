@@ -1,0 +1,19 @@
+{
+    "DialogueName": "Choiceroonie",
+    "nodeID": "",
+    "SpeakerName": "Character name.",
+    "Text": "Dialogue text.",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "I want you to know that “your” dog doesn’t even like you.",
+            "nextID": ""
+        },
+        {
+            "Text": "I want you to know that “your” dog doesn’t even like you.",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 1,
+    "IsStartingDialogue": false
+}

@@ -1,0 +1,15 @@
+{
+    "DialogueName": "7",
+    "nodeID": "",
+    "SpeakerName": "Karl",
+    "Text": "Suit yourself.",
+    "SpritePath": "Neighbour_Sad",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}
