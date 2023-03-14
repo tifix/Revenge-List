@@ -1,5 +1,5 @@
+using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -61,6 +61,7 @@ public class PlayerMovement : MonoBehaviour
         //Bind dash to a function
         input.Ground.Dash.performed += DoDash;
         input.Ground.Dash.Enable();
+
     }
 
     void Update()
@@ -85,8 +86,8 @@ public class PlayerMovement : MonoBehaviour
     void ProcessInput()
     {
         //Movement
-        rb.velocity= Vector3.zero;
-        rb.velocity += new Vector3(dir.x, 0, dir.y * verticalSpeedBoost) * moveSpeed;   
+        rb.velocity = Vector3.zero;
+        rb.velocity += new Vector3(dir.x, 0, dir.y * verticalSpeedBoost) * moveSpeed;
 
         //Depth limits
         if (transform.position.z > zLimits.x || transform.position.z < zLimits.y)
@@ -118,6 +119,15 @@ public class PlayerMovement : MonoBehaviour
 
     IEnumerator Dash()
     {
+        try
+        {
+            AudioManager.instance.Play("DashMC");
+        }
+        catch(Exception e)
+        {
+            print("sfx fail");
+        }
+
         float t = dashLenght;
         Vector3 dashDir = new Vector3((dir.y != 0 ? dir.x : (sprite.flipX ? -1 : 1)) * dashStrenght, 0, dir.y * dashStrenght * verticalSpeedBoost);
         while (t > 0) 
@@ -160,5 +170,10 @@ public class PlayerMovement : MonoBehaviour
         bossFightBind = false;
         left = null;
         right = null;
+    }
+
+    public void Play(AudioClip clip)
+    {
+        AudioManager.instance.Play(clip);
     }
 }

@@ -45,6 +45,7 @@ public class KarlBoss : MonoBehaviour
         knockbackPosition = new Vector3(camCenter.position.x, player.transform.position.y, camCenter.position.z);
         StartParticles();
         if (anim == null) anim = GetComponentInChildren<Animator>();
+        AudioManager.instance.Play("BossTrack");
     }
 
     void Update()

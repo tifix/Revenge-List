@@ -36,8 +36,7 @@ public class GameManager : MonoBehaviour
     {
         if(GetCamera())             //Find the camera object. If found and valid, track player
             CamFollowPlayer();
-
-
+        AudioManager.instance.Play("BgMusic");
     }
 
     // Update is called once per frame
