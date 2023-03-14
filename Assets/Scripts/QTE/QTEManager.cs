@@ -236,7 +236,7 @@ public class QTEManager : MonoBehaviour
 
     public int QTEEnd()
     {
-        anim.SetBool("QTE_Playing", false);
+        
 
         //Win QTE
         if (correctHits >= currentMap.beatsForWin)
@@ -253,6 +253,10 @@ public class QTEManager : MonoBehaviour
                 if(UI.instance.bossHealth.coreHealth > 0)
                     karl.NextPhase(); 
             }
+
+            //Play the QTE won animation
+            anim.SetBool("QTE_Playing", false);
+            anim.SetBool("QTE_Won", true);
         }
 
         //Lose - Repeat phase
@@ -264,6 +268,11 @@ public class QTEManager : MonoBehaviour
                 UI.instance.AfterQTE_UI(comboCount);
             }
             if (UI.instance.bossHealth.gameObject.TryGetComponent<KarlBoss>(out KarlBoss karl)) { karl.RepeatPhase(); }
+
+
+            //Play the QTE won animation
+            anim.SetBool("QTE_Playing", false);
+            anim.SetBool("QTE_Won", false);
         }
 
         correctHits = 0;        

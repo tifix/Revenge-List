@@ -7339,6 +7339,20 @@ MonoBehaviour:
   XLPortraitOther: {fileID: 3640916071015081630}
   RevengeList: {fileID: 3665701568203247820}
   RevengeListTriggerer: {fileID: 0}
+  choiceA_ID: 
+  choiceB_ID: 
+  NodeCurrent:
+    ID: 
+    Name: 
+    SpeakerName: 
+    Text: 
+    SpritePath: 
+    Choices: []
+    GroupID: 
+    Position: {x: 0, y: 0}
+    isStartNode: 0
+    ChildIDs: []
+  dataTemp: {fileID: 0}
 --- !u!1 &9010496361218702514
 GameObject:
   m_ObjectHideFlags: 0
@@ -7557,6 +7571,38 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 4133116104273043939}
     m_Modifications:
+    - target: {fileID: 6987555418043451265, guid: 8f990c0081324cb4199d9b4fd76c227b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8594872308605828382, guid: 8f990c0081324cb4199d9b4fd76c227b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.9458
+      objectReference: {fileID: 0}
+    - target: {fileID: 8594872308605828382, guid: 8f990c0081324cb4199d9b4fd76c227b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.9458
+      objectReference: {fileID: 0}
+    - target: {fileID: 8594872308723275362, guid: 8f990c0081324cb4199d9b4fd76c227b, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8594872308723275362, guid: 8f990c0081324cb4199d9b4fd76c227b, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8594872308723275362, guid: 8f990c0081324cb4199d9b4fd76c227b, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8594872308840196360, guid: 8f990c0081324cb4199d9b4fd76c227b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -213
+      objectReference: {fileID: 0}
+    - target: {fileID: 8594872308840196360, guid: 8f990c0081324cb4199d9b4fd76c227b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 102.20288
+      objectReference: {fileID: 0}
     - target: {fileID: 8594872309033769970, guid: 8f990c0081324cb4199d9b4fd76c227b, type: 3}
       propertyPath: m_Pivot.x
       value: 0
