@@ -17,6 +17,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip DashMC;
     public AudioClip BgMusic;
     public AudioClip BossTrack;
+    public AudioClip MenuClick;
 
 
     private void Awake()
@@ -65,6 +66,9 @@ public class AudioManager : MonoBehaviour
         {
             case "WalkMC":
                 sfxSource.clip = WalkMC;
+                break;
+            case "MenuClick":
+                sfxSource.clip = MenuClick;
                 break;
             case "Dash":
                 sfxSource.clip = DashMC;

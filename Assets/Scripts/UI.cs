@@ -326,7 +326,11 @@ public class UI : MonoBehaviour
     public void TogglePauseMenu() { boxPause.SetActive(!boxPause.activeInHierarchy); GameManager.instance.TogglePause(); }     //Toggle pause menu
     public void BackToMenu() { GameManager.LoadMenu(); }
     public void InputPause(InputAction.CallbackContext obj) => TogglePauseMenu();
-    public void ToggleSettings() { boxSettings.SetActive(!boxSettings.activeInHierarchy); }                                 //Toggle settings menu
+    public void ToggleSettings()                                                                                            //Toggle settings menu
+    {
+        AudioManager.instance.Play("MenuClick");
+        boxSettings.SetActive(!boxSettings.activeInHierarchy); 
+    }                                 
     public void ToggleHealthbar() { boxHealthbar.SetActive(!boxHealthbar.activeInHierarchy); }                              //Toggle the player healthbar display
     public void ToggleQTEScreen()                                                                                           //Toggle QTE screen and freeze player movement
     {
