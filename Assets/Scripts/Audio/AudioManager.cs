@@ -8,10 +8,16 @@ public class AudioManager : MonoBehaviour
     public AudioSource musicSource;
     public AudioSource sfxSource;
 
-    private float lowPitchRange = .95f;
-    private float highPitchRange = 1.05f;
+    //private float lowPitchRange = .95f;
+    //private float highPitchRange = 1.05f;
 
     public static AudioManager instance = null;
+
+    public AudioClip WalkMC;
+    public AudioClip DashMC;
+    public AudioClip BgMusic;
+    public AudioClip BossTrack;
+
 
     private void Awake()
     {
@@ -35,6 +41,10 @@ public class AudioManager : MonoBehaviour
     // Plays a clip through the sfxSource
     public void Play(AudioClip clip)
     {
+        if (sfxSource.isPlaying)
+        {
+            sfxSource.Stop();
+        }
         sfxSource.clip = clip;
         sfxSource.Play();
     }
@@ -42,8 +52,37 @@ public class AudioManager : MonoBehaviour
     // Plays a clip through the musicSource
     public void PlayMusic(AudioClip clip)
     {
+        if (musicSource.isPlaying)
+        {
+            musicSource.Stop();
+        }
         musicSource.clip = clip;
         musicSource.Play();
     }
+    public void Play(String name)
+    {
+        switch (name)
+        {
+            case "WalkMC":
+                sfxSource.clip = WalkMC;
+                break;
+            case "Dash":
+                sfxSource.clip = DashMC;
+                break;
+            case "BossTrack":
+                musicSource.volume = 1f;
+                musicSource.clip = BossTrack;
+                break;
+            case "BgMusic":
+                musicSource.volume = 0.5f;
+                musicSource.clip = BgMusic;
+                break;
+            default:
+                Debug.LogWarning("Incorrect name " + name + " check spelling");
+                break;
+        }
 
+        musicSource.Play();
+        sfxSource.Play();
+    }
 }

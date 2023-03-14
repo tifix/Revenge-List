@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
+        AudioManager.instance.Play("BgMusic");
         GetCamera();
         CamFollowPlayer();
     }
