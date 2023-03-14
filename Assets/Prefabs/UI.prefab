@@ -4343,7 +4343,7 @@ RectTransform:
   - {fileID: 8966028112275244300}
   - {fileID: 509309130409614553}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7313,7 +7313,7 @@ MonoBehaviour:
   isShowingBossHealth: 0
   bossHealth: {fileID: 0}
   runCoroutine: 0
-  typingWait: 0.05
+  typingWait: 0.02
   boxInteractPrompt: {fileID: 4133116103567569644}
   boxQTE: {fileID: 1202104339048890538}
   boxTextDisplay: {fileID: 4133116103927074960}
@@ -7339,6 +7339,20 @@ MonoBehaviour:
   XLPortraitOther: {fileID: 3640916071015081630}
   RevengeList: {fileID: 3665701568203247820}
   RevengeListTriggerer: {fileID: 0}
+  choiceA_ID: 
+  choiceB_ID: 
+  NodeCurrent:
+    ID: 
+    Name: 
+    SpeakerName: 
+    Text: 
+    SpritePath: 
+    Choices: []
+    GroupID: 
+    Position: {x: 0, y: 0}
+    isStartNode: 0
+    ChildIDs: []
+  dataTemp: {fileID: 0}
 --- !u!1 &9010496361218702514
 GameObject:
   m_ObjectHideFlags: 0

@@ -47,7 +47,7 @@ MonoBehaviour:
   sr: {fileID: 3395993813611527099}
   parentPos: {fileID: 3395993813611527096}
   clonesPerSec: 10
-  colourOverride: {r: 0, g: 0, b: 0, a: 1}
+  colourOverride: {r: 0.26605096, g: 0, b: 0.3207547, a: 1}
   scaleOverTime: {x: 1, y: 1, z: 1}
   colourOverTime: {r: 1, g: 1, b: 1, a: 1}
   fadeSpeed: 10
@@ -188,7 +188,7 @@ Transform:
   - {fileID: 3395993811860920323}
   - {fileID: 3395993812620112224}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3395993812505339143
 MonoBehaviour:
@@ -207,9 +207,6 @@ MonoBehaviour:
   dashStrenght: 20
   dashLenght: 0.2
   dashCoolDown: 0.5
-  jumpStrenght: 8
-  groundCheckDistance: 0.1
-  gravityScale: 1
   zLimits: {x: 8, y: -10}
 --- !u!114 &3395993812505339147
 MonoBehaviour:
@@ -225,6 +222,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   health: 100
+  knockBackWhenHit: 0
+  explosionStrength: 3
   staminaRegenPerSec: 2
   stamina: 0
   attackOrg: {fileID: 3395993812620112224}
