@@ -29,6 +29,7 @@ public class UI : MonoBehaviour
     [SerializeField]            GameObject boxWon, boxLost;                                         //VictoryScreen and Death screen respectively
     [SerializeField]            GameObject boxHealthbar, boxBossBar;                                 //PLAYER AND BOSS healthbars respectively
     [SerializeField]            TextMeshProUGUI txtMain, txtSpeaker;                                           //the text that displays the dialogue in UI.   Aaaand the caption of WHO is speaking
+    [SerializeField]            TextMeshProUGUI txtChoiceA, txtChoiceB;                                           //the text that displays the dialogue in UI.   Aaaand the caption of WHO is speaking
     [SerializeField]            Slider playerHealthBar, bossHealthBar, bossShieldBar;
     [SerializeField]            Image   playerPortrait;                                             //Displayer of player portrait
     [SerializeField]            Sprite[] playerPortraits = new Sprite[5];                           //Images to display as player looses health
@@ -272,6 +273,32 @@ public class UI : MonoBehaviour
         }
         return null;
     }
+
+
+
+    public void SetDialogueChoicesTest(string text) => SetDialogueChoices(text, text);
+    public void SetDialogueChoices(string textA, string textB) 
+    {
+
+        Debug.Log("Dialogue Choices set to");
+        Debug.Log(textA+ " : " + textB);
+        txtChoiceA.text = textA;
+        txtChoiceB.text = textB;
+
+
+        //enabling the choice displays once set
+        if (!boxTextDisplay.gameObject.activeInHierarchy) boxTextDisplay.gameObject.SetActive(true);
+        txtChoiceA.transform.parent.parent.gameObject.SetActive(true);
+    }
+    public void SetDialogueChoiceHidden()=> txtChoiceA.transform.parent.parent.gameObject.SetActive(false);
+
+    public void OnDialogueChoiceA() => OnDialogueChoice(true);
+    public void OnDialogueChoiceB() => OnDialogueChoice(false);
+    public void OnDialogueChoice(bool isA) 
+    {
+    
+    }
+
 
 
     #region buttons and element toggles

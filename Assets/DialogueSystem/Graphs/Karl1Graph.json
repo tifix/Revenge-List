@@ -142,7 +142,7 @@
                             }
                         ],
                         "DialogueType": 0,
-                        "IsStartingDialogue": true
+                        "IsStartingDialogue": false
                     },
                     {
                         "DialogueName": "31",
@@ -247,7 +247,7 @@
                             }
                         ],
                         "DialogueType": 0,
-                        "IsStartingDialogue": true
+                        "IsStartingDialogue": false
                     },
                     {
                         "DialogueName": "38",
@@ -672,7 +672,7 @@
                             }
                         ],
                         "DialogueType": 0,
-                        "IsStartingDialogue": true
+                        "IsStartingDialogue": false
                     },
                     {
                         "DialogueName": "17",
@@ -782,7 +782,7 @@
                             }
                         ],
                         "DialogueType": 0,
-                        "IsStartingDialogue": true
+                        "IsStartingDialogue": false
                     },
                     {
                         "DialogueName": "84",
@@ -1477,7 +1477,7 @@
                             }
                         ],
                         "DialogueType": 0,
-                        "IsStartingDialogue": true
+                        "IsStartingDialogue": false
                     },
                     {
                         "DialogueName": "44",
@@ -1507,7 +1507,7 @@
                             }
                         ],
                         "DialogueType": 0,
-                        "IsStartingDialogue": true
+                        "IsStartingDialogue": false
                     }
                 ]
             }

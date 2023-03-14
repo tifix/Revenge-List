@@ -31,7 +31,7 @@ MonoBehaviour:
     Position: {x: 6120, y: -19}
   - ID: 2e8a6e81-953e-4d0e-8986-bbcce50e9e3c
     Name: BackOffFromHer
-    Position: {x: 6207.9995, y: -410}
+    Position: {x: 6208, y: -410}
   - ID: 60b93be0-7818-48be-8b9d-b993fe281240
     Name: YourDogDoesnLikeYou
     Position: {x: 13030, y: 581}
@@ -127,7 +127,7 @@ MonoBehaviour:
       NodeID: 000ee4f4-bc86-44a9-a8ad-a341fc01eef4
     GroupID: e77da036-dcc1-451e-b77a-f3252c33d5e3
     Position: {x: 3496, y: 628}
-    isStartNode: 1
+    isStartNode: 0
     ChildIDs:
     - 000ee4f4-bc86-44a9-a8ad-a341fc01eef4
   - ID: 000ee4f4-bc86-44a9-a8ad-a341fc01eef4
@@ -540,7 +540,7 @@ MonoBehaviour:
       NodeID: de36f801-3e4e-4332-b53e-acbf24d39716
     GroupID: 2e8a6e81-953e-4d0e-8986-bbcce50e9e3c
     Position: {x: 6233, y: -350}
-    isStartNode: 1
+    isStartNode: 0
     ChildIDs:
     - de36f801-3e4e-4332-b53e-acbf24d39716
   - ID: de36f801-3e4e-4332-b53e-acbf24d39716
@@ -634,7 +634,7 @@ MonoBehaviour:
       NodeID: 54e76a75-9d99-4e00-b010-ff26a03cf181
     GroupID: 60b93be0-7818-48be-8b9d-b993fe281240
     Position: {x: 13055, y: 640}
-    isStartNode: 1
+    isStartNode: 0
     ChildIDs:
     - 54e76a75-9d99-4e00-b010-ff26a03cf181
   - ID: 54e76a75-9d99-4e00-b010-ff26a03cf181
@@ -1209,7 +1209,7 @@ MonoBehaviour:
       NodeID: 922c451c-b587-464a-8c54-fbc1e28e6fef
     GroupID: e77da036-dcc1-451e-b77a-f3252c33d5e3
     Position: {x: 5933, y: 688}
-    isStartNode: 1
+    isStartNode: 0
     ChildIDs:
     - 922c451c-b587-464a-8c54-fbc1e28e6fef
   - ID: 922c451c-b587-464a-8c54-fbc1e28e6fef
@@ -1275,7 +1275,7 @@ MonoBehaviour:
       NodeID: 4974225b-0ee1-407e-a991-5c735cd9d864
     GroupID: 71f675ee-d7c6-4a2b-b341-ca23cf0f0dc4
     Position: {x: 7627, y: 968}
-    isStartNode: 1
+    isStartNode: 0
     ChildIDs:
     - 4974225b-0ee1-407e-a991-5c735cd9d864
   - ID: 4974225b-0ee1-407e-a991-5c735cd9d864
@@ -1302,7 +1302,7 @@ MonoBehaviour:
       NodeID: 
     GroupID: 71f675ee-d7c6-4a2b-b341-ca23cf0f0dc4
     Position: {x: 8566, y: 964}
-    isStartNode: 1
+    isStartNode: 0
     ChildIDs:
     - 
   OldGroupNames:
