@@ -12,8 +12,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] private bool isGameWon = false;
     [SerializeField] private bool isGameLost = false;
     [SerializeField] public float DeathReloadTime;                                      //time in seconds(realtime) before menu reloads on game over.
+    
     CinemachineVirtualCamera cam;
     CinemachineBasicMultiChannelPerlin perlin;
+    CinemachineFramingTransposer frame;
+    float deadZone = 0.2f;
     bool isCurrentlyShaking = false;    //is the camera shaking at the moment - used for removing multiple shakes at once
 
     [SerializeField] bool cheat_WarpToKarl = false;
@@ -64,6 +67,9 @@ public class GameManager : MonoBehaviour
         perlin = cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
         perlin.m_AmplitudeGain = 0;
         perlin.m_FrequencyGain = 0;
+
+        frame = cam.GetCinemachineComponent<CinemachineFramingTransposer>();
+        frame.m_DeadZoneHeight = deadZone;
     }
 
     public static void StartQuickTimeEventEverything() 
@@ -91,12 +97,16 @@ public class GameManager : MonoBehaviour
 
     public void LockCamera(Transform pos)
     {
+        frame.m_DeadZoneHeight = 0;
+        frame.m_DeadZoneWidth = 0;
         cam.Follow = pos;
         StartCoroutine(IncreaseCamSize(5));
     }
 
     public void CamFollowPlayer()
     {
+        frame.m_DeadZoneHeight = deadZone;
+        frame.m_DeadZoneWidth = deadZone;
         cam.Follow = FindObjectOfType<PlayerMovement>().transform;
         StartCoroutine(DecreaseCamSize(4));
     }
