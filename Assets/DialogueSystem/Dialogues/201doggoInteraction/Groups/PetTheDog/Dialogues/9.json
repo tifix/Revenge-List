@@ -1,0 +1,15 @@
+{
+    "DialogueName": "9",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "I must, must, do this now.",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

@@ -179,3 +179,12 @@ public class GameManager : MonoBehaviour
 
     #endregion
 }
+
+
+public class GameChoices 
+{
+    public bool didInsultDog = false;
+    public bool didInsultBarbeque = false;
+
+
+}

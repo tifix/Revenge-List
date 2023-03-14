@@ -1,0 +1,15 @@
+{
+    "DialogueName": "60",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "Anyway, me and Astrid had a chat. You know, woman to woman.\nHas she not told you?",
+    "SpritePath": "Lilith_Smug",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

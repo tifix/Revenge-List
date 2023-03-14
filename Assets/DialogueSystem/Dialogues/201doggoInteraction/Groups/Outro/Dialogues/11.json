@@ -1,0 +1,15 @@
+{
+    "DialogueName": "11",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "That’s right. Now, dear Hellhound, we shall be taking revenge on….",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

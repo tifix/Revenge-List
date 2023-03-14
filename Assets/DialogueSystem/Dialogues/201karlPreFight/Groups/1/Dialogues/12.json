@@ -1,0 +1,15 @@
+{
+    "DialogueName": "12",
+    "nodeID": "",
+    "SpeakerName": "Karl",
+    "Text": "As much as Snuffles loves you, neighbour, he has my name in his collar.",
+    "SpritePath": "Neighbour_Friendly",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

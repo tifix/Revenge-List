@@ -21,7 +21,8 @@ public class Inter_TextTrigger : Interactible
 
     protected override void Interaction()  
     {
-        if(!isRunning)StartCoroutine(executionWait());   
+        if(isSingleUse) UI.instance.boxInteractPrompt.SetActive(false);
+        if (!isRunning)StartCoroutine(executionWait());   
        // base.Interaction();
     }
     public IEnumerator executionWait() 

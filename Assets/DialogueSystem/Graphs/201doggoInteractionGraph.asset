@@ -1,0 +1,183 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330ce6680441e444f96079c0bb98687a, type: 3}
+  m_Name: 201doggoInteractionGraph
+  m_EditorClassIdentifier: 
+  FileName: 201doggoInteraction
+  Groups:
+  - ID: f1ad1020-f3e8-4c58-a6a5-6687ba446b56
+    Name: Doggo
+    Position: {x: 2725.9998, y: -463.99994}
+  - ID: 3a58ca9e-e798-4361-ad49-050447c63fe4
+    Name: PetTheDog
+    Position: {x: 5267.9995, y: -444.99994}
+  - ID: 68cd7151-ef79-4eea-b89d-8f6f96aaebde
+    Name: Outro
+    Position: {x: 5624, y: -437.00006}
+  Nodes:
+  - ID: 4fd16a4d-e6c7-49fd-90e1-8e67f366ab36
+    Name: 1
+    SpeakerName: Lilith
+    Text: Ah yes, my dear Hellhound, we meet again.
+    SpritePath: Insert Sprite Path Here.
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 321b973c-ac47-4d76-a016-56626cccbbaa
+    GroupID: f1ad1020-f3e8-4c58-a6a5-6687ba446b56
+    Position: {x: 2751, y: -405}
+    isStartNode: 1
+    ChildIDs:
+    - 321b973c-ac47-4d76-a016-56626cccbbaa
+  - ID: 321b973c-ac47-4d76-a016-56626cccbbaa
+    Name: 2
+    SpeakerName: Lilith
+    Text: I understand you have to have your hellish freedom, and I see that you
+      benefit from it.
+    SpritePath: Insert Sprite Path Here.
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 5324391a-6574-4fa2-a6fd-0a26255b8fb6
+    GroupID: f1ad1020-f3e8-4c58-a6a5-6687ba446b56
+    Position: {x: 3061, y: -400}
+    isStartNode: 0
+    ChildIDs:
+    - 5324391a-6574-4fa2-a6fd-0a26255b8fb6
+  - ID: 5324391a-6574-4fa2-a6fd-0a26255b8fb6
+    Name: 3
+    SpeakerName: Lilith
+    Text: That pigeon, what did he do?
+    SpritePath: Insert Sprite Path Here.
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 8db7990f-a3c4-4fb5-9f0e-83658cd896c1
+    GroupID: f1ad1020-f3e8-4c58-a6a5-6687ba446b56
+    Position: {x: 3611, y: -402}
+    isStartNode: 0
+    ChildIDs:
+    - 8db7990f-a3c4-4fb5-9f0e-83658cd896c1
+  - ID: 8db7990f-a3c4-4fb5-9f0e-83658cd896c1
+    Name: 4
+    SpeakerName: Smuffles
+    Text: '*Dog noises*'
+    SpritePath: Insert Sprite Path Here.
+    Choices:
+    - Text: Next Dialogue
+      NodeID: ce97f9db-c627-49d4-af42-1865b90747fd
+    GroupID: f1ad1020-f3e8-4c58-a6a5-6687ba446b56
+    Position: {x: 3901, y: -396}
+    isStartNode: 0
+    ChildIDs:
+    - ce97f9db-c627-49d4-af42-1865b90747fd
+  - ID: 8aae9e00-56ab-493d-84b2-ff0db8df6745
+    Name: 6
+    SpeakerName: Lilith
+    Text: "I\u2019m proud of you, Hellhound. You seem to have the spirit not unlike
+      mine. "
+    SpritePath: Insert Sprite Path Here.
+    Choices:
+    - Text: Next Dialogue
+      NodeID: d887d461-14c9-499d-ae62-4b7172d48d3c
+    GroupID: f1ad1020-f3e8-4c58-a6a5-6687ba446b56
+    Position: {x: 4783, y: -390}
+    isStartNode: 0
+    ChildIDs:
+    - d887d461-14c9-499d-ae62-4b7172d48d3c
+  - ID: ce97f9db-c627-49d4-af42-1865b90747fd
+    Name: 5
+    SpeakerName: Lilith
+    Text: Ah yes, I understand. I would have wanted to take revenge on him too. What
+      a bastard.
+    SpritePath: Insert Sprite Path Here.
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 8aae9e00-56ab-493d-84b2-ff0db8df6745
+    GroupID: f1ad1020-f3e8-4c58-a6a5-6687ba446b56
+    Position: {x: 4210, y: -395}
+    isStartNode: 0
+    ChildIDs:
+    - 8aae9e00-56ab-493d-84b2-ff0db8df6745
+  - ID: d887d461-14c9-499d-ae62-4b7172d48d3c
+    Name: 9
+    SpeakerName: Lilith
+    Text: I must, must, do this now.
+    SpritePath: Insert Sprite Path Here.
+    Choices:
+    - Text: Next Dialogue
+      NodeID: ae48f3df-f2fd-4055-bdd2-9dce6f09f439
+    GroupID: 3a58ca9e-e798-4361-ad49-050447c63fe4
+    Position: {x: 5293, y: -386}
+    isStartNode: 0
+    ChildIDs:
+    - ae48f3df-f2fd-4055-bdd2-9dce6f09f439
+  - ID: ae48f3df-f2fd-4055-bdd2-9dce6f09f439
+    Name: 10
+    SpeakerName: Smuffles
+    Text: '*Happy dog noises*'
+    SpritePath: Insert Sprite Path Here.
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 369dcbbe-9114-4d24-8cb2-f8a17632e790
+    GroupID: 68cd7151-ef79-4eea-b89d-8f6f96aaebde
+    Position: {x: 5649, y: -378}
+    isStartNode: 0
+    ChildIDs:
+    - 369dcbbe-9114-4d24-8cb2-f8a17632e790
+  - ID: 369dcbbe-9114-4d24-8cb2-f8a17632e790
+    Name: 11
+    SpeakerName: Lilith
+    Text: "That\u2019s right. Now, dear Hellhound, we shall be taking revenge on\u2026."
+    SpritePath: Insert Sprite Path Here.
+    Choices:
+    - Text: Next Dialogue
+      NodeID: a2b1e89b-ba1d-4bbc-b608-d15268c43207
+    GroupID: 68cd7151-ef79-4eea-b89d-8f6f96aaebde
+    Position: {x: 5964, y: -376}
+    isStartNode: 0
+    ChildIDs:
+    - a2b1e89b-ba1d-4bbc-b608-d15268c43207
+  - ID: a2b1e89b-ba1d-4bbc-b608-d15268c43207
+    Name: 12
+    SpeakerName: Karl
+    Text: "Haha! I see you\u2019ve found my dog! Little rascal, always going off
+      on his own!"
+    SpritePath: Insert Sprite Path Here.
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 
+    GroupID: 68cd7151-ef79-4eea-b89d-8f6f96aaebde
+    Position: {x: 6403, y: -370}
+    isStartNode: 0
+    ChildIDs:
+    - 
+  OldGroupNames:
+  - Doggo
+  - PetTheDog
+  - Outro
+  OldUngroupedNodeNames: []
+  OldGroupNodeNames:
+    list:
+    - Key: Doggo
+      Value:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 6
+      - 5
+    - Key: PetTheDog
+      Value:
+      - 9
+    - Key: Outro
+      Value:
+      - 10
+      - 11
+      - 12

@@ -1,0 +1,15 @@
+{
+    "DialogueName": "76",
+    "nodeID": "",
+    "SpeakerName": "Karl",
+    "Text": "No, don’t “älskling” your way out of this!\nWe are still cuddling later when we watch the ten o’clock news but just know that I am very, very upset!",
+    "SpritePath": "Neighbour_Sad",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

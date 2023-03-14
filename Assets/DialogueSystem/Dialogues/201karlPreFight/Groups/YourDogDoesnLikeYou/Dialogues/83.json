@@ -1,0 +1,15 @@
+{
+    "DialogueName": "83",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "I want you to know that “your” dog doesn’t even like you.",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

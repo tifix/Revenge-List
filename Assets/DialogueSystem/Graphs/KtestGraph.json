@@ -185,7 +185,7 @@
                                 "nextID": ""
                             }
                         ],
-                        "DialogueType": 1,
+                        "DialogueType": 0,
                         "IsStartingDialogue": false
                     }
                 ]
@@ -503,7 +503,7 @@
                                 "nextID": ""
                             }
                         ],
-                        "DialogueType": 1,
+                        "DialogueType": 0,
                         "IsStartingDialogue": false
                     }
                 ]

@@ -1,0 +1,15 @@
+{
+    "DialogueName": "90",
+    "nodeID": "",
+    "SpeakerName": "Karl",
+    "Text": "We’ll both call him. Let’s see which one he picks.",
+    "SpritePath": "Neighbour_Friendly",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

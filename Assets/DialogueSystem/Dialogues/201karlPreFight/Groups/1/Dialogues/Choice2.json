@@ -1,0 +1,19 @@
+{
+    "DialogueName": "Choice2",
+    "nodeID": "",
+    "SpeakerName": "CHOICE",
+    "Text": "Dialogue text.",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "Do take her out…",
+            "nextID": ""
+        },
+        {
+            "Text": "Back off from Astrid.",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

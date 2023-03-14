@@ -168,6 +168,7 @@ public class KarlBoss : MonoBehaviour
     {
         ChangeAttack();
         StopParticles();
+        anim.SetBool("Vulnerable", true);
     }
 
     public void NextPhase()
@@ -176,6 +177,7 @@ public class KarlBoss : MonoBehaviour
         currentAttack = 0;
         currentPhase++;
         ChangeAttack();
+        anim.SetBool("Vulnerable", false);
     }
 
     public void RepeatPhase()

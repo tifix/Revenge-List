@@ -1,0 +1,185 @@
+{
+    "FileName": "201doggoInteraction",
+    "DialogueGroups": {
+        "list": [
+            {
+                "Key": "Doggo",
+                "Value": []
+            },
+            {
+                "Key": "PetTheDog",
+                "Value": []
+            },
+            {
+                "Key": "Outro",
+                "Value": []
+            },
+            {
+                "Key": "f1ad1020-f3e8-4c58-a6a5-6687ba446b56",
+                "Value": [
+                    {
+                        "DialogueName": "1",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": "Ah yes, my dear Hellhound, we meet again.",
+                        "SpritePath": "Insert Sprite Path Here.",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": true
+                    },
+                    {
+                        "DialogueName": "2",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": "I understand you have to have your hellish freedom, and I see that you benefit from it.",
+                        "SpritePath": "Insert Sprite Path Here.",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "3",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": "That pigeon, what did he do?",
+                        "SpritePath": "Insert Sprite Path Here.",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "4",
+                        "nodeID": "",
+                        "SpeakerName": "Smuffles",
+                        "Text": "*Dog noises*",
+                        "SpritePath": "Insert Sprite Path Here.",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "6",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": "I’m proud of you, Hellhound. You seem to have the spirit not unlike mine. ",
+                        "SpritePath": "Insert Sprite Path Here.",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "5",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": "Ah yes, I understand. I would have wanted to take revenge on him too. What a bastard.",
+                        "SpritePath": "Insert Sprite Path Here.",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                ]
+            },
+            {
+                "Key": "3a58ca9e-e798-4361-ad49-050447c63fe4",
+                "Value": [
+                    {
+                        "DialogueName": "9",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": "I must, must, do this now.",
+                        "SpritePath": "Insert Sprite Path Here.",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                ]
+            },
+            {
+                "Key": "68cd7151-ef79-4eea-b89d-8f6f96aaebde",
+                "Value": [
+                    {
+                        "DialogueName": "10",
+                        "nodeID": "",
+                        "SpeakerName": "Smuffles",
+                        "Text": "*Happy dog noises*",
+                        "SpritePath": "Insert Sprite Path Here.",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "11",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": "That’s right. Now, dear Hellhound, we shall be taking revenge on….",
+                        "SpritePath": "Insert Sprite Path Here.",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "12",
+                        "nodeID": "",
+                        "SpeakerName": "Karl",
+                        "Text": "Haha! I see you’ve found my dog! Little rascal, always going off on his own!",
+                        "SpritePath": "Insert Sprite Path Here.",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                ]
+            }
+        ]
+    },
+    "UngroupedDialogues": []
+}

@@ -1,0 +1,15 @@
+{
+    "DialogueName": "6",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "I’m proud of you, Hellhound. You seem to have the spirit not unlike mine. ",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

@@ -1,0 +1,15 @@
+{
+    "DialogueName": "12",
+    "nodeID": "",
+    "SpeakerName": "Karl",
+    "Text": "Haha! I see you’ve found my dog! Little rascal, always going off on his own!",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

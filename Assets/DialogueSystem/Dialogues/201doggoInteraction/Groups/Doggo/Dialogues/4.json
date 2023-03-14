@@ -1,0 +1,15 @@
+{
+    "DialogueName": "4",
+    "nodeID": "",
+    "SpeakerName": "Smuffles",
+    "Text": "*Dog noises*",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

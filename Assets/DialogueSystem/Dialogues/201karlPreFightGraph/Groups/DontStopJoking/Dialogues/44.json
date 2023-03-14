@@ -1,0 +1,15 @@
+{
+    "DialogueName": "44",
+    "nodeID": "",
+    "SpeakerName": "Karl",
+    "Text": "Except the cool ones such as Astrid and myself! Hahaha!",
+    "SpritePath": "Neighbour_Laughing",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

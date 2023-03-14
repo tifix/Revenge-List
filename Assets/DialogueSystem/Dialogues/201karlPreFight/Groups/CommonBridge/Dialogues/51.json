@@ -1,0 +1,15 @@
+{
+    "DialogueName": "51",
+    "nodeID": "",
+    "SpeakerName": "Karl",
+    "Text": "Did you say grill?\nNever mind the dog park, there is always time for some barbeque!",
+    "SpritePath": "Neighbour_Laughing",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

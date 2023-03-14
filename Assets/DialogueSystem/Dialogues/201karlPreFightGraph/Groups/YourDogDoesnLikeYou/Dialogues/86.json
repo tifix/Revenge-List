@@ -1,0 +1,15 @@
+{
+    "DialogueName": "86",
+    "nodeID": "",
+    "SpeakerName": "Karl",
+    "Text": "Spider sense.",
+    "SpritePath": "Neighbour_Friendly",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}
