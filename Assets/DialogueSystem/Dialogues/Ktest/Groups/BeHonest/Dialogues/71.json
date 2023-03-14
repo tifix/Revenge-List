@@ -1,0 +1,15 @@
+{
+    "DialogueName": "71",
+    "nodeID": "",
+    "SpeakerName": "Astrid",
+    "Text": "I just didn’t want to say anything!\nYou seem so into it, and you seem so happy while doing it, so…",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

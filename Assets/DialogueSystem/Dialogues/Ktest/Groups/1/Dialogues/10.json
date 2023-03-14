@@ -1,0 +1,15 @@
+{
+    "DialogueName": "10",
+    "nodeID": "",
+    "SpeakerName": "Karl",
+    "Text": "What is he called then? Snuftelius, the Guard of the Abyss?",
+    "SpritePath": "Neighbour_Laughing",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

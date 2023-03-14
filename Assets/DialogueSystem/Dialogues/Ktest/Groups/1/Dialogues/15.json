@@ -1,0 +1,19 @@
+{
+    "DialogueName": "15",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "Dialogue text.",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "She doesn’t even like you.  What reason would she have to like you?",
+            "nextID": ""
+        },
+        {
+            "Text": "Do take her out. I’ll walk the dog. See what happens.",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

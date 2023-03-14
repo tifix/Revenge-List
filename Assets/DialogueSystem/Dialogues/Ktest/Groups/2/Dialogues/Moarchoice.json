@@ -1,0 +1,19 @@
+{
+    "DialogueName": "Moarchoice",
+    "nodeID": "",
+    "SpeakerName": "Character name.",
+    "Text": "Dialogue text.",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "I’m sure they’re funny among the other kids, but adults don’t always have such a good humour.",
+            "nextID": ""
+        },
+        {
+            "Text": "You are absolutely right. I will stop joking about it.",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 1,
+    "IsStartingDialogue": false
+}

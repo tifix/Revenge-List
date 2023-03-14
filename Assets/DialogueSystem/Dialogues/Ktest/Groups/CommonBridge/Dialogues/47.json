@@ -1,0 +1,15 @@
+{
+    "DialogueName": "47",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "It’s a pity, really, you’re sweet and I would have liked to keep you around… pfft… pffffff –",
+    "SpritePath": "Lilith_Happy",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

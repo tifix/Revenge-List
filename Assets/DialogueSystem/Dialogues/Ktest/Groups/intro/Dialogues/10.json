@@ -1,0 +1,19 @@
+{
+    "DialogueName": "10",
+    "nodeID": "",
+    "SpeakerName": "Character name.",
+    "Text": "Dialogue text.",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "I’d be glad to take Snuffles to the park – alone.",
+            "nextID": ""
+        },
+        {
+            "Text": "What is he called then? Snuftelius, the Guard of the Abyss?",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

@@ -36,6 +36,9 @@ public class UI : MonoBehaviour
     [SerializeField]            Image XLPortraitLilith, XLPortraitOther;                            //Portraits which display Lilith and others as they tallk
     [SerializeField]            GameObject RevengeList, RevengeListTriggerer;                       //the gorgeous scrollable revenge list
 
+    [SerializeField] private string choiceA_ID = null, choiceB_ID = null;
+    [SerializeField] private DSNodeSaveData NodeCurrent;
+    [SerializeField] private DSGraphSaveDataSO dataTemp;
 
 
     public void Awake()                             //Ensuring single instance of the script
@@ -94,7 +97,7 @@ public class UI : MonoBehaviour
         Time.timeScale = 0;
 
         //retrieve START node
-        DSNodeSaveData NodeCurrent = null;
+        NodeCurrent = null;
         foreach (DSNodeSaveData n in dialogueCur.Nodes)
         {
             if (n.isStartNode) 
@@ -114,7 +117,22 @@ public class UI : MonoBehaviour
             runCoroutine=true;
             Debug.Log(pageText);
 
-            //Slowly display the page text
+            //Choice node special functionality HERE!
+            if (NodeCurrent.Choices.Count > 1) 
+            {
+                Debug.LogWarning("A wild chocie appeared!");
+                Debug.Log("A: " + NodeCurrent.Choices[0].Text);
+                Debug.Log("B: " + NodeCurrent.Choices[1].Text);
+
+                dataTemp = _dialogue;
+                SetDialogueChoices(NodeCurrent.Choices[0].Text, NodeCurrent.Choices[1].Text, NodeCurrent.ChildIDs[0], NodeCurrent.ChildIDs[1]);
+                isWaiting = true;
+                while (isWaiting == true) yield return new WaitForEndOfFrame();
+                Debug.LogWarning("Option setting SHOULD be complete. Emphasis on should/");
+                continue;
+            }
+
+            //For regular nodes Slowly display the page text
             for (int j = 0; j < (pageText.Length + 1); j++)
             {
                 txtMain.text = pageText.Substring(0, j);               //slice the text 
@@ -124,8 +142,8 @@ public class UI : MonoBehaviour
             }
             if (GameManager.instance.cheat_FastForwardDialogue) { GameManager.instance.cheat_FastForwardDialogue=false; break; }
 
-            txtMain.text = pageText;
-            isWaiting = true;
+            //Show full text once done and wait for input to proceed;
+            txtMain.text = pageText; isWaiting = true;
             while (isWaiting == true) yield return null;
 
             //Final node detection - break the loop if the node has no children
@@ -276,15 +294,14 @@ public class UI : MonoBehaviour
 
 
 
-    public void SetDialogueChoicesTest(string text) => SetDialogueChoices(text, text);
-    public void SetDialogueChoices(string textA, string textB) 
+    public void SetDialogueChoicesTest(string text) => SetDialogueChoices(text, text, "DebugA","DebugB");
+    public void SetDialogueChoices(string textA, string textB, string AAddress, string BAddress) 
     {
 
         Debug.Log("Dialogue Choices set to");
         Debug.Log(textA+ " : " + textB);
-        txtChoiceA.text = textA;
-        txtChoiceB.text = textB;
-
+        txtChoiceA.text = textA;    txtChoiceB.text = textB;
+        choiceA_ID = AAddress;      choiceB_ID = BAddress;
 
         //enabling the choice displays once set
         if (!boxTextDisplay.gameObject.activeInHierarchy) boxTextDisplay.gameObject.SetActive(true);
@@ -296,7 +313,11 @@ public class UI : MonoBehaviour
     public void OnDialogueChoiceB() => OnDialogueChoice(false);
     public void OnDialogueChoice(bool isA) 
     {
-    
+        if(isA) NodeCurrent=FindSaveDataID(choiceA_ID, dataTemp);
+        else NodeCurrent =FindSaveDataID(choiceB_ID, dataTemp);
+
+        SetDialogueChoiceHidden();
+        isWaiting = false;
     }
 
 
