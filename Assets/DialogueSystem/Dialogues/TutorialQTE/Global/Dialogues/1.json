@@ -1,0 +1,15 @@
+{
+    "DialogueName": "1",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "By impaling the manifestation of a soul: Sacred Skulls, I can erase bits of someone's being until they are obliterated and sent to the shadow realm.",
+    "SpritePath": "Lilith_Smug",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": true
+}

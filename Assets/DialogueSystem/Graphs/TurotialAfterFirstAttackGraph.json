@@ -1,0 +1,68 @@
+{
+    "FileName": "TurotialAfterFirstAttack",
+    "DialogueGroups": {
+        "list": []
+    },
+    "UngroupedDialogues": [
+        {
+            "DialogueName": "0",
+            "nodeID": "",
+            "SpeakerName": "Boss",
+            "Text": "Muahahahaaaaaaa",
+            "SpritePath": "regular_gnome 1",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": true
+        },
+        {
+            "DialogueName": "1",
+            "nodeID": "",
+            "SpeakerName": "Boss",
+            "Text": "Tremble in fear.\nI am far too powerful for you",
+            "SpritePath": "regular_gnome 1",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": true
+        },
+        {
+            "DialogueName": "3",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "In your dreams bitch",
+            "SpritePath": "Lilith_Angry",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "2",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "...",
+            "SpritePath": "Lilith_Unhappy",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        }
+    ]
+}

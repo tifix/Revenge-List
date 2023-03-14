@@ -19,11 +19,14 @@ public class bossHealth : ObjectScript
 
     public override void ApplyDamage(float _value)
     {
-        health -= _value;
-
-        if (health <= 0.0f)
+        if(canTakeDamage)
         {
-            OnShieldDepleted();
+            health -= _value;
+
+            if (health <= 0.0f)
+            {
+                OnShieldDepleted();
+            }
         }
     }
 

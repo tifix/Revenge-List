@@ -1,0 +1,15 @@
+{
+    "DialogueName": "1",
+    "nodeID": "",
+    "SpeakerName": "Boss",
+    "Text": "Tremble in fear.\nI am far too powerful for you",
+    "SpritePath": "regular_gnome 1",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": true
+}

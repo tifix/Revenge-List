@@ -20,7 +20,13 @@ public class Interactible : MonoBehaviour
         //input.Ground.Interact.performed +=DoInteraction;
     }
 
-    
+    private void OnEnable()
+    {
+        if(isInRange && isAutoUse) 
+        {
+            Interaction();
+        }
+    }
 
     void OnTriggerEnter(Collider other)
     {

@@ -17,6 +17,7 @@ public class ObjectScript : MonoBehaviour
     [SerializeField] protected float health;
     public bool knockBackWhenHit = false;
     public float explosionStrength = 3;
+    public bool canTakeDamage = true;
 
     // Start is called before the first frame update
     protected virtual void Awake()

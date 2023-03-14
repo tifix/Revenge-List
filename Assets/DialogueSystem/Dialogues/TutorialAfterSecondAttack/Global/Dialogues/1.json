@@ -1,0 +1,15 @@
+{
+    "DialogueName": "1",
+    "nodeID": "",
+    "SpeakerName": "Boss",
+    "Text": "This isn't over.\nCheck out my overhead attacks.\nThey home in on you.\nNo way for you to dodge them hahaha.",
+    "SpritePath": "regular_gnome 1",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": true
+}

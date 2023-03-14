@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330ce6680441e444f96079c0bb98687a, type: 3}
+  m_Name: TutorialGetListGraph
+  m_EditorClassIdentifier: 
+  FileName: TutorialGetList
+  Groups: []
+  Nodes:
+  - ID: d35ec4f8-a9f7-4f08-a195-7d0f114bf07a
+    Name: 0
+    SpeakerName: Lilith
+    Text: I should find my Revenge List
+    SpritePath: Lilith_Happy
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 
+    GroupID: 
+    Position: {x: 278, y: 352}
+    isStartNode: 1
+    ChildIDs:
+    - 
+  OldGroupNames: []
+  OldUngroupedNodeNames:
+  - 0
+  OldGroupNodeNames:
+    list: []

@@ -2417,7 +2417,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 867993404}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1182.3528, y: 665.71454, z: -753.0405}
+  m_LocalPosition: {x: 1336.5844, y: 753.69867, z: -852.8806}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2744,6 +2744,14 @@ PrefabInstance:
       propertyPath: camCenter
       value: 
       objectReference: {fileID: 1371212802}
+    - target: {fileID: 3615865189927272334, guid: cb8d011301534e14a84915a63758380d, type: 3}
+      propertyPath: overHeadAttack
+      value: 
+      objectReference: {fileID: 1337283920656425530, guid: 0dbf1de66fe8f2a4690d47d2c58d26a1, type: 3}
+    - target: {fileID: 3615865189927272334, guid: cb8d011301534e14a84915a63758380d, type: 3}
+      propertyPath: straightAttack
+      value: 
+      objectReference: {fileID: 1337283920656425530, guid: b76e09703fb7abd4d9ad9207b3bad724, type: 3}
     - target: {fileID: 3615865190073122274, guid: cb8d011301534e14a84915a63758380d, type: 3}
       propertyPath: m_Center.x
       value: 0.44
@@ -2845,7 +2853,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897402303}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: -29.46253, y: 19.878286, z: -43.14893}
+  m_LocalPosition: {x: -29.462475, y: 19.878286, z: -43.14893}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3455,7 +3463,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1080672949}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1107.7692, y: 689.4975, z: -753.1405}
+  m_LocalPosition: {x: 1258.9866, y: 779.4909, z: -852.9806}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3815,7 +3823,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162723989}
   m_LocalRotation: {x: 0.17364816, y: -0, z: -0, w: 0.9848078}
-  m_LocalPosition: {x: -29.46253, y: 19.878286, z: -43.14893}
+  m_LocalPosition: {x: -29.462475, y: 19.878286, z: -43.14893}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5549,8 +5557,8 @@ MonoBehaviour:
   m_ScreenX: 0.5022988
   m_ScreenY: 0.6
   m_CameraDistance: 50
-  m_DeadZoneWidth: 0.3
-  m_DeadZoneHeight: 0.3
+  m_DeadZoneWidth: 0
+  m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
   m_SoftZoneWidth: 0.441

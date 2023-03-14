@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330ce6680441e444f96079c0bb98687a, type: 3}
+  m_Name: TutorialAfterThirdAttackGraph
+  m_EditorClassIdentifier: 
+  FileName: TutorialAfterThirdAttack
+  Groups: []
+  Nodes:
+  - ID: 7ef43a50-3fff-49a1-b0f3-f4a194c44f08
+    Name: 0
+    SpeakerName: Boss
+    Text: 'No, no, no, noooooooooo!!!!!!!
+
+      This can''t be it.'
+    SpritePath: regular_gnome 1
+    Choices:
+    - Text: Next Dialogue
+      NodeID: f8524d68-1548-4352-bb81-e8ea2bddb11a
+    GroupID: 
+    Position: {x: 307, y: 267}
+    isStartNode: 1
+    ChildIDs:
+    - f8524d68-1548-4352-bb81-e8ea2bddb11a
+  - ID: f8524d68-1548-4352-bb81-e8ea2bddb11a
+    Name: 1
+    SpeakerName: Boss
+    Text: 'This is my final attack Lilith...
+
+      Dodge if you can'
+    SpritePath: regular_gnome 1
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 5c5b5c80-44ca-4895-86b3-105fe4bdd829
+    GroupID: 
+    Position: {x: 590, y: 267}
+    isStartNode: 1
+    ChildIDs:
+    - 5c5b5c80-44ca-4895-86b3-105fe4bdd829
+  - ID: 5c5b5c80-44ca-4895-86b3-105fe4bdd829
+    Name: 2
+    SpeakerName: Lilith
+    Text: 'Seems like it''s about to be a pretty wide attack...
+
+      If I dash
+      through it, I should be able to evade it just fine.'
+    SpritePath: Lilith_Happy
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 
+    GroupID: 
+    Position: {x: 883, y: 267}
+    isStartNode: 0
+    ChildIDs:
+    - 
+  OldGroupNames: []
+  OldUngroupedNodeNames:
+  - 0
+  - 1
+  - 2
+  OldGroupNodeNames:
+    list: []

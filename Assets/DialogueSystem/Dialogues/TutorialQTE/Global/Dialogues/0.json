@@ -1,0 +1,15 @@
+{
+    "DialogueName": "0",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "Time to purge your sould.",
+    "SpritePath": "Lilith_Angry",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": true
+}

@@ -17,7 +17,7 @@ public class BossAttacks : ScriptableObject
    
     public enum ProjectileType
     {
-        OVERHEAD, STRAIGHT, GNOME
+        OVERHEAD, STRAIGHT, LINE
     }
 
     public ProjectileStyle style;
