@@ -257,6 +257,7 @@ public class QTEManager : MonoBehaviour
             //Play the QTE won animation
             anim.SetBool("QTE_Playing", false);
             anim.SetBool("QTE_Won", true);
+            AudioManager.instance.PlayMusic("BossTrack");
         }
 
         //Lose - Repeat phase

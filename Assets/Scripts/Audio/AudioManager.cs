@@ -18,6 +18,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip BgMusic;
     public AudioClip BossTrack;
     public AudioClip MenuClick;
+    public AudioClip QteTrack;
 
 
     private void Awake()
@@ -60,7 +61,7 @@ public class AudioManager : MonoBehaviour
         musicSource.clip = clip;
         musicSource.Play();
     }
-    public void Play(String name)
+    public void PlaySFX(String name)
     {
         switch (name)
         {
@@ -73,6 +74,17 @@ public class AudioManager : MonoBehaviour
             case "Dash":
                 sfxSource.clip = DashMC;
                 break;
+            default:
+                Debug.LogWarning("Incorrect name " + name + " check spelling");
+                break;
+        }
+
+        sfxSource.Play();
+    }
+    public void PlayMusic(String name)
+    {
+        switch (name)
+        {
             case "BossTrack":
                 musicSource.volume = 1f;
                 musicSource.clip = BossTrack;
@@ -81,12 +93,15 @@ public class AudioManager : MonoBehaviour
                 musicSource.volume = 0.5f;
                 musicSource.clip = BgMusic;
                 break;
+            case "QteTrack":
+                musicSource.volume = 1.0f;
+                musicSource.clip = QteTrack;
+                break;
             default:
                 Debug.LogWarning("Incorrect name " + name + " check spelling");
                 break;
         }
 
         musicSource.Play();
-        sfxSource.Play();
     }
 }

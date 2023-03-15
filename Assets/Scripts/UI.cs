@@ -326,13 +326,13 @@ public class UI : MonoBehaviour
     public void TogglePauseMenu() { boxPause.SetActive(!boxPause.activeInHierarchy); GameManager.instance.TogglePause(); }     //Toggle pause menu
     public void BackToMenu() 
     {
-        AudioManager.instance.Play("MenuClick");
+        AudioManager.instance.PlaySFX("MenuClick");
         GameManager.LoadMenu(); 
     }
     public void InputPause(InputAction.CallbackContext obj) => TogglePauseMenu();
     public void ToggleSettings()                                                                                            //Toggle settings menu
     {
-        AudioManager.instance.Play("MenuClick");
+        AudioManager.instance.PlaySFX("MenuClick");
         boxSettings.SetActive(!boxSettings.activeInHierarchy); 
     }                                 
     public void ToggleHealthbar() { boxHealthbar.SetActive(!boxHealthbar.activeInHierarchy); }                              //Toggle the player healthbar display
@@ -353,7 +353,7 @@ public class UI : MonoBehaviour
 
     public void QuitToWindows() 
     {
-        AudioManager.instance.Play("MenuClick");
+        AudioManager.instance.PlaySFX("MenuClick");
         Application.Quit(); 
     }
 

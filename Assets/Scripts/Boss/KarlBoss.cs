@@ -13,7 +13,7 @@ public class KarlBoss : BossClass
         base.OnEnable();
         StartParticles();
         if (anim == null) anim = GetComponentInChildren<Animator>();
-        AudioManager.instance.Play("BossTrack");
+        AudioManager.instance.PlayMusic("BossTrack");
     }
 
     protected override void Update()

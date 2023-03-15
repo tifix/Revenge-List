@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
     {
         if(GetCamera())             //Find the camera object. If found and valid, track player
             CamFollowPlayer();
-        AudioManager.instance.Play("BgMusic");
+        AudioManager.instance.PlayMusic("BgMusic");
     }
 
     // Update is called once per frame
@@ -83,8 +83,13 @@ public class GameManager : MonoBehaviour
 
     public static void StartQuickTimeEventEverything() 
     {
+        
         UI.instance.ToggleQTEScreen();
         QTEManager.instance.QTEStart();
+
+        instance.Invoke("StartMusic", 3);
+
+        
     }
 
     // Set win State
@@ -163,6 +168,8 @@ public class GameManager : MonoBehaviour
             yield return null;
         }
     }
+
+    public void StartMusic() => AudioManager.instance.PlayMusic("QteTrack");
 
     //I recommend looking into async loading of scenes, this would allow us to have a scene for transitioning (loading screen)
     //When loading a scene, you can choose the mode to load it in, a pretty cool one is "Additive", which basically just allows
