@@ -1,0 +1,23 @@
+{
+    "FileName": "TutorialGotList",
+    "DialogueGroups": {
+        "list": []
+    },
+    "UngroupedDialogues": [
+        {
+            "DialogueName": "0",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "Now I can go out and get them",
+            "SpritePath": "Lilith_Smug",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": true
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "DialogueName": "0",
+    "nodeID": "",
+    "SpeakerName": "Boss",
+    "Text": "...",
+    "SpritePath": "regular_gnome 1",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": true
+}

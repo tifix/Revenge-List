@@ -1,0 +1,53 @@
+{
+    "FileName": "TutorialQTE",
+    "DialogueGroups": {
+        "list": []
+    },
+    "UngroupedDialogues": [
+        {
+            "DialogueName": "0",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "Time to purge your sould.",
+            "SpritePath": "Lilith_Angry",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": true
+        },
+        {
+            "DialogueName": "1",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "By impaling the manifestation of a soul: Sacred Skulls, I can erase bits of someone's being until they are obliterated and sent to the shadow realm.",
+            "SpritePath": "Lilith_Smug",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": true
+        },
+        {
+            "DialogueName": "2",
+            "nodeID": "",
+            "SpeakerName": "Boss",
+            "Text": "Maaaaaaaaaaaan...\nThis some bullshit fr fr.",
+            "SpritePath": "regular_gnome 1",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        }
+    ]
+}

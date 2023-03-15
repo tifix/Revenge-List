@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330ce6680441e444f96079c0bb98687a, type: 3}
+  m_Name: TurotialAfterFirstAttackGraph
+  m_EditorClassIdentifier: 
+  FileName: TurotialAfterFirstAttack
+  Groups: []
+  Nodes:
+  - ID: 9f16cf91-54f0-4653-ab31-afc9d3a7420d
+    Name: 0
+    SpeakerName: Boss
+    Text: Muahahahaaaaaaa
+    SpritePath: regular_gnome 1
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 758ea584-b308-4fa1-b33d-c3cf1018df84
+    GroupID: 
+    Position: {x: 355, y: 158}
+    isStartNode: 1
+    ChildIDs:
+    - 758ea584-b308-4fa1-b33d-c3cf1018df84
+  - ID: 758ea584-b308-4fa1-b33d-c3cf1018df84
+    Name: 1
+    SpeakerName: Boss
+    Text: 'Tremble in fear.
+
+      I am far too powerful for you'
+    SpritePath: regular_gnome 1
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 67ae2808-de1c-42a3-b396-804c73d2feed
+    GroupID: 
+    Position: {x: 640, y: 158}
+    isStartNode: 1
+    ChildIDs:
+    - 67ae2808-de1c-42a3-b396-804c73d2feed
+  - ID: dc04dc8e-205b-487e-8dc1-04ca9afe7cd6
+    Name: 3
+    SpeakerName: Lilith
+    Text: In your dreams bitch
+    SpritePath: Lilith_Angry
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 
+    GroupID: 
+    Position: {x: 1213, y: 158}
+    isStartNode: 0
+    ChildIDs:
+    - 
+  - ID: 67ae2808-de1c-42a3-b396-804c73d2feed
+    Name: 2
+    SpeakerName: Lilith
+    Text: ...
+    SpritePath: Lilith_Unhappy
+    Choices:
+    - Text: Next Dialogue
+      NodeID: dc04dc8e-205b-487e-8dc1-04ca9afe7cd6
+    GroupID: 
+    Position: {x: 930, y: 158}
+    isStartNode: 0
+    ChildIDs:
+    - dc04dc8e-205b-487e-8dc1-04ca9afe7cd6
+  OldGroupNames: []
+  OldUngroupedNodeNames:
+  - 0
+  - 1
+  - 3
+  - 2
+  OldGroupNodeNames:
+    list: []

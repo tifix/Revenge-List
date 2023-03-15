@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330ce6680441e444f96079c0bb98687a, type: 3}
+  m_Name: TutorialGotListGraph
+  m_EditorClassIdentifier: 
+  FileName: TutorialGotList
+  Groups: []
+  Nodes:
+  - ID: 8850f47a-eee3-4419-8f73-5616865ec5b1
+    Name: 0
+    SpeakerName: Lilith
+    Text: Now I can go out and get them
+    SpritePath: Lilith_Smug
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 
+    GroupID: 
+    Position: {x: 308, y: 232}
+    isStartNode: 1
+    ChildIDs:
+    - 
+  OldGroupNames: []
+  OldUngroupedNodeNames:
+  - 0
+  OldGroupNodeNames:
+    list: []

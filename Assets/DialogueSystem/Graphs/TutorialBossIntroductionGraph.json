@@ -1,0 +1,38 @@
+{
+    "FileName": "TutorialBossIntroduction",
+    "DialogueGroups": {
+        "list": []
+    },
+    "UngroupedDialogues": [
+        {
+            "DialogueName": "1",
+            "nodeID": "",
+            "SpeakerName": "Boss",
+            "Text": "Come here so i can beat you up",
+            "SpritePath": "regular_gnome 1",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": true
+        },
+        {
+            "DialogueName": "0",
+            "nodeID": "",
+            "SpeakerName": "Boss",
+            "Text": "Well, well, well... If it isn't little Lilith...",
+            "SpritePath": "regular_gnome 1",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": true
+        }
+    ]
+}

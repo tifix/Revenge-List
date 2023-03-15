@@ -178,6 +178,11 @@ public class GameManager : MonoBehaviour
     public void QuitToWindows() { Application.Quit(); }
 
     #endregion
+
+    public void Log(string text)
+    {
+        Debug.LogWarning(text);
+    }
 }
 
 

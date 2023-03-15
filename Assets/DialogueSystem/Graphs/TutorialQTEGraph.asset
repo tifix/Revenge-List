@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330ce6680441e444f96079c0bb98687a, type: 3}
+  m_Name: TutorialQTEGraph
+  m_EditorClassIdentifier: 
+  FileName: TutorialQTE
+  Groups: []
+  Nodes:
+  - ID: b922909a-cb95-40ca-9298-2c5d8a5a8ade
+    Name: 0
+    SpeakerName: Lilith
+    Text: Time to purge your sould.
+    SpritePath: Lilith_Angry
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 6b89b6ba-8ac1-4349-bb42-ff30e2a2ff4f
+    GroupID: 
+    Position: {x: 308, y: 210}
+    isStartNode: 1
+    ChildIDs:
+    - 6b89b6ba-8ac1-4349-bb42-ff30e2a2ff4f
+  - ID: 6b89b6ba-8ac1-4349-bb42-ff30e2a2ff4f
+    Name: 1
+    SpeakerName: Lilith
+    Text: 'By impaling the manifestation of a soul: Sacred Skulls, I can erase bits
+      of someone''s being until they are obliterated and sent to the shadow realm.'
+    SpritePath: Lilith_Smug
+    Choices:
+    - Text: Next Dialogue
+      NodeID: b5d1f8a7-f80c-40f1-b6ad-790d07069a0a
+    GroupID: 
+    Position: {x: 606, y: 210}
+    isStartNode: 1
+    ChildIDs:
+    - b5d1f8a7-f80c-40f1-b6ad-790d07069a0a
+  - ID: b5d1f8a7-f80c-40f1-b6ad-790d07069a0a
+    Name: 2
+    SpeakerName: Boss
+    Text: 'Maaaaaaaaaaaan...
+
+      This some bullshit fr fr.'
+    SpritePath: regular_gnome 1
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 
+    GroupID: 
+    Position: {x: 1448, y: 210}
+    isStartNode: 0
+    ChildIDs:
+    - 
+  OldGroupNames: []
+  OldUngroupedNodeNames:
+  - 0
+  - 1
+  - 2
+  OldGroupNodeNames:
+    list: []

@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330ce6680441e444f96079c0bb98687a, type: 3}
+  m_Name: TutorialAfterSecondAttackGraph
+  m_EditorClassIdentifier: 
+  FileName: TutorialAfterSecondAttack
+  Groups: []
+  Nodes:
+  - ID: 0904cefe-c3cb-4b5e-8c8a-3b7198da0b19
+    Name: 0
+    SpeakerName: Boss
+    Text: "How... \nHow did you do that????!!!!!"
+    SpritePath: regular_gnome 1
+    Choices:
+    - Text: Next Dialogue
+      NodeID: bb7a130d-b71c-43a1-ada6-6daa224f06fa
+    GroupID: 
+    Position: {x: 317, y: 170}
+    isStartNode: 1
+    ChildIDs:
+    - bb7a130d-b71c-43a1-ada6-6daa224f06fa
+  - ID: bb7a130d-b71c-43a1-ada6-6daa224f06fa
+    Name: 1
+    SpeakerName: Boss
+    Text: 'This isn''t over.
+
+      Check out my overhead attacks.
+
+      They home
+      in on you.
+
+      No way for you to dodge them hahaha.'
+    SpritePath: regular_gnome 1
+    Choices:
+    - Text: Next Dialogue
+      NodeID: b3457fb2-68d5-4211-bc4f-24f24bfe497c
+    GroupID: 
+    Position: {x: 601, y: 170}
+    isStartNode: 1
+    ChildIDs:
+    - b3457fb2-68d5-4211-bc4f-24f24bfe497c
+  - ID: b3457fb2-68d5-4211-bc4f-24f24bfe497c
+    Name: 2
+    SpeakerName: Lilith
+    Text: Check me out bozo.
+    SpritePath: Lilith_Smug
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 
+    GroupID: 
+    Position: {x: 890, y: 170}
+    isStartNode: 0
+    ChildIDs:
+    - 
+  OldGroupNames: []
+  OldUngroupedNodeNames:
+  - 0
+  - 1
+  - 2
+  OldGroupNodeNames:
+    list: []

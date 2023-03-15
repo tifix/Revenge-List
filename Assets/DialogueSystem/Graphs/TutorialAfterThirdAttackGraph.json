@@ -1,0 +1,53 @@
+{
+    "FileName": "TutorialAfterThirdAttack",
+    "DialogueGroups": {
+        "list": []
+    },
+    "UngroupedDialogues": [
+        {
+            "DialogueName": "0",
+            "nodeID": "",
+            "SpeakerName": "Boss",
+            "Text": "No, no, no, noooooooooo!!!!!!!\nThis can't be it.",
+            "SpritePath": "regular_gnome 1",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": true
+        },
+        {
+            "DialogueName": "1",
+            "nodeID": "",
+            "SpeakerName": "Boss",
+            "Text": "This is my final attack Lilith...\nDodge if you can",
+            "SpritePath": "regular_gnome 1",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": true
+        },
+        {
+            "DialogueName": "2",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "Seems like it's about to be a pretty wide attack...\nIf I dash through it, I should be able to evade it just fine.",
+            "SpritePath": "Lilith_Happy",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        }
+    ]
+}
