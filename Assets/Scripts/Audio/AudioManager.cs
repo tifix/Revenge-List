@@ -24,6 +24,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip KickSFX;
     public AudioClip FlipSFX;
     public AudioClip DogBark;
+    public AudioClip CreditsTrack;
 
 
     private void Awake()
@@ -113,6 +114,10 @@ public class AudioManager : MonoBehaviour
             case "QteTrack":
                 musicSource.volume = 1f;
                 musicSource.clip = QteTrack;
+                break;
+            case "CreditsTrack":
+                musicSource.volume = 1f;
+                musicSource.clip = CreditsTrack;
                 break;
             default:
                 Debug.LogWarning("Incorrect name " + name + " check spelling");
