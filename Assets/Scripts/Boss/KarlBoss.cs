@@ -80,12 +80,14 @@ public class KarlBoss : BossClass
                     //Show the throwing animation for overhead attacks
                     anim.SetTrigger("attackFlipping");
                     animCookTime = overHeadAnimationDelay;
+                    //AudioManager.instance.PlaySFX("Flip");
                     break; 
                 }
             case (BossAttacks.ProjectileType.STRAIGHT):
                 {
                     //Show the throwing animation for overhead attacks
                     anim.SetTrigger("attackThrowing");
+                    AudioManager.instance.PlaySFX("Throw");
                     animCookTime = straightAnimationDelay;
                     break;
                 }

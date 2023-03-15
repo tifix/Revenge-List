@@ -1,4 +1,3 @@
-using UnityEngine.Audio;
 using System;
 using UnityEngine;
 
@@ -19,6 +18,9 @@ public class AudioManager : MonoBehaviour
     public AudioClip BossTrack;
     public AudioClip MenuClick;
     public AudioClip QteTrack;
+    public AudioClip EnvelopeThrow;
+    public AudioClip KickSFX;
+    public AudioClip FlipSFX;
 
 
     private void Awake()
@@ -73,6 +75,15 @@ public class AudioManager : MonoBehaviour
                 break;
             case "Dash":
                 sfxSource.clip = DashMC;
+                break;
+            case "Throw":
+                sfxSource.clip = EnvelopeThrow;
+                break;
+            case "Flip":
+                sfxSource.clip = FlipSFX;
+                break;
+            case "Kick":
+                sfxSource.clip = KickSFX;
                 break;
             default:
                 Debug.LogWarning("Incorrect name " + name + " check spelling");

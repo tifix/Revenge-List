@@ -2425,7 +2425,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 867993404}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1464.3108, y: 826.3363, z: -936.0807}
+  m_LocalPosition: {x: 1606.3851, y: 906.4316, z: -1027.6007}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2865,7 +2865,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897402303}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: -29.462519, y: 19.878286, z: -43.14893}
+  m_LocalPosition: {x: -29.462502, y: 19.878286, z: -43.14893}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3496,7 +3496,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1080672949}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1384.8044, y: 853.89984, z: -936.18066}
+  m_LocalPosition: {x: 1523.669, y: 936.12085, z: -1027.7007}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3855,7 +3855,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162723989}
   m_LocalRotation: {x: 0.17364816, y: -0, z: -0, w: 0.9848078}
-  m_LocalPosition: {x: -29.462519, y: 19.878286, z: -43.14893}
+  m_LocalPosition: {x: -29.462502, y: 19.878286, z: -43.14893}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5125,6 +5125,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1162723990}
     - target: {fileID: 509309130719358499, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -213
+      objectReference: {fileID: 0}
+    - target: {fileID: 509309130719358499, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 102.20288
       objectReference: {fileID: 0}
@@ -5643,6 +5647,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 187923d23c5501244872ef08785e528a, type: 3}
     - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
+      propertyPath: FlipSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 19f8b1ada518edb46b28aa7b8bb1983e, type: 3}
+    - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
+      propertyPath: KickSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: b24c529f65e1d4c4f84bdb2ef51b986f, type: 3}
+    - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
+      propertyPath: QteTrack
+      value: 
+      objectReference: {fileID: 8300000, guid: 61da71e1b34077f4697398d922c00935, type: 3}
+    - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
       propertyPath: BossTrack
       value: 
       objectReference: {fileID: 8300000, guid: a6653b98998f6cf439cc8f4b3f79fbcb, type: 3}
@@ -5658,6 +5674,10 @@ PrefabInstance:
       propertyPath: musicSource
       value: 
       objectReference: {fileID: 1988843776}
+    - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
+      propertyPath: EnvelopeThrow
+      value: 
+      objectReference: {fileID: 8300000, guid: 372bbd149e23e8e4e862b6631909ad85, type: 3}
     - target: {fileID: 8476623665672524406, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
       propertyPath: m_Name
       value: AudioManager

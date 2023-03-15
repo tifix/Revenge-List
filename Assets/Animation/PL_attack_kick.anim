@@ -186,7 +186,7 @@ AnimationClip:
   m_Events:
   - time: 0.05
     functionName: Play
-    data: 
+    data: Kick
     objectReferenceParameter: {fileID: 8300000, guid: b24c529f65e1d4c4f84bdb2ef51b986f, type: 3}
     floatParameter: 0
     intParameter: 0
