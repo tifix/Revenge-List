@@ -19,6 +19,7 @@ public class PlayerCombat : ObjectScript
     public float attackRange = 2.0f;
     public LayerMask enemyLayers;
     public bool canBeDamaged = true;
+    public float invincivilityTime = 1f;
 
     bool canAttack = true;
     //Check if player wants to continue the combo
@@ -107,11 +108,20 @@ public class PlayerCombat : ObjectScript
         if (!canBeDamaged)
             return;
         health -= _value;
+        canBeDamaged = false;
+        StartCoroutine(Invincible(invincivilityTime));
+
 
         if (health <= 0.0f)
         {
             OnDeath();
         }
+    }
+
+    IEnumerator Invincible(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        canBeDamaged = true;
     }
 
     private void OnDrawGizmosSelected()

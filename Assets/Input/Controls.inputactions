@@ -49,6 +49,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "List",
+                    "type": "Button",
+                    "id": "d97ad2b8-f7df-4e19-bb1c-f84abf4f606f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -187,7 +196,7 @@
                 {
                     "name": "",
                     "id": "33f79ddb-b640-4567-8322-f0e61ece8b18",
-                    "path": "<Keyboard>/l",
+                    "path": "<Keyboard>/k",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -214,6 +223,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "38c31b09-c5e4-4b94-9cdb-b9b1851ddcd9",
+                    "path": "<Keyboard>/l",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "List",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ba64db1d-eb64-4a8f-9361-1d4d4eef8de6",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "List",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

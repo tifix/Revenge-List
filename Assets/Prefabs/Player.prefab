@@ -224,6 +224,7 @@ MonoBehaviour:
   health: 100
   knockBackWhenHit: 0
   explosionStrength: 3
+  canTakeDamage: 1
   staminaRegenPerSec: 2
   stamina: 0
   attackOrg: {fileID: 3395993812620112224}
@@ -243,7 +244,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.90677875, y: 0.7167803, z: 1.4252503}
+  m_Size: {x: 1.46, y: 0.7167803, z: 1.4252503}
   m_Center: {x: -0.046610624, y: -1.0841808, z: 0.23140061}
 --- !u!54 &3395993812505339145
 Rigidbody:

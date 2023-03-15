@@ -62,6 +62,9 @@ public class PlayerMovement : MonoBehaviour
         input.Ground.Dash.performed += DoDash;
         input.Ground.Dash.Enable();
 
+        input.Ground.List.performed += RevengeList;
+        input.Ground.List.Enable();
+
     }
 
     void Update()
@@ -175,5 +178,10 @@ public class PlayerMovement : MonoBehaviour
     public void Play(String name)
     {
         AudioManager.instance.PlaySFX(name);
+    }
+
+    void RevengeList(InputAction.CallbackContext obj)
+    {
+        UI.instance.ToggleRevengeList();
     }
 }
