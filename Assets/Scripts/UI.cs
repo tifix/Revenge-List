@@ -17,6 +17,7 @@ using TMPro;
 public class UI : MonoBehaviour
 {
     Controls input;
+    [SerializeField] Animator anim;
     public static UI instance;                                                                      //globally accessible reference to this script to remotely invoke it's public methods
     [Tooltip("Drop Dialogue Data here to be displayed")] public DSGraphSaveDataSO dialogueCur;      //Dialogue data to be displayed
 
@@ -34,27 +35,27 @@ public class UI : MonoBehaviour
     //                                            
     [SerializeField] private bool isShowingBossHealth = false;                                      //is the boss healthbar being displayed?
     public bossHealth bossHealth;                                                                   // the data for a boss. SHOULD auto assign when a boss spawns
-                                                                          
+
     //
     [Space, Header("Object references for UI objects")]
     //
     public GameObject boxInteractPrompt; public GameObject boxQTE;                                  //object that displays dialogue and the quick time event parent
-    [SerializeField]            GameObject boxTextDisplay, boxPause, boxSettings;                   //the pause menu, the settings menu and the prompt to interact with an object
-    [SerializeField]            GameObject boxWon, boxLost;                                         //VictoryScreen and Death screen respectively
-    [SerializeField]            GameObject boxHealthbar, boxBossBar;                                //PLAYER AND BOSS healthbars respectively
+    [SerializeField] GameObject boxTextDisplay, boxPause, boxSettings;                   //the pause menu, the settings menu and the prompt to interact with an object
+    [SerializeField] GameObject boxWon, boxLost;                                         //VictoryScreen and Death screen respectively
+    [SerializeField] GameObject boxHealthbar, boxBossBar;                                //PLAYER AND BOSS healthbars respectively
     [Space(10)]
-    [SerializeField]            TextMeshProUGUI txtMain;                                            //the text that displays the dialogue in UI.  
-    [SerializeField]            TextMeshProUGUI txtSpeaker;                                         //The caption of WHO is speaking
-    [SerializeField]            TextMeshProUGUI txtChoiceA, txtChoiceB;                             //dialogue choice button texts
+    [SerializeField] TextMeshProUGUI txtMain;                                            //the text that displays the dialogue in UI.  
+    [SerializeField] TextMeshProUGUI txtSpeaker;                                         //The caption of WHO is speaking
+    [SerializeField] TextMeshProUGUI txtChoiceA, txtChoiceB;                             //dialogue choice button texts
     [Space(10)]
-    [SerializeField]            Slider playerHealthBar;
-    [SerializeField]            Image playerPortrait;                                               //Displayer of player portrait
-    [SerializeField]            Sprite[] playerPortraits = new Sprite[5];                           //Images to display as player looses health
-    [SerializeField]            Slider bossHealthBar, bossShieldBar;
-    [SerializeField]            Image XLPortraitLilith, XLPortraitOther;                            //Portraits which display Lilith and others as they tallk
+    [SerializeField] Slider playerHealthBar;
+    [SerializeField] Image playerPortrait;                                               //Displayer of player portrait
+    [SerializeField] Sprite[] playerPortraits = new Sprite[5];                           //Images to display as player looses health
+    [SerializeField] Slider bossHealthBar, bossShieldBar;
+    [SerializeField] Image XLPortraitLilith, XLPortraitOther;                            //Portraits which display Lilith and others as they tallk
     [Space(10)]
-    [SerializeField]            GameObject RevengeList;                                             //the gorgeous scrollable revenge list
-    [SerializeField]            GameObject RevengeListTriggerer;                                    //the buton triggering the revenge lsit display
+    [SerializeField] GameObject RevengeList;                                             //the gorgeous scrollable revenge list
+    [SerializeField] GameObject RevengeListTriggerer;                                    //the buton triggering the revenge lsit display
 
     //
     //Node typing data retrieval
@@ -69,8 +70,6 @@ public class UI : MonoBehaviour
         if (instance == null) instance = this;
         else Destroy(this);
 
-        
-
         input = new Controls();                         //Initialising inputs
         input.Menu.Pause.performed += InputPause;
         input.Menu.Pause.Enable();
@@ -82,7 +81,7 @@ public class UI : MonoBehaviour
         playerHealthBar.maxValue = PlayerCombat.instance.GetMaxHealth();    //Scaling healthbar automatically
 
         GameObject boss = GameObject.FindGameObjectWithTag("Boss");
-        if (boss!=null && boss.TryGetComponent<bossHealth>(out bossHealth healthData)) InitialiseHealthBoss(healthData);
+        if (boss != null && boss.TryGetComponent<bossHealth>(out bossHealth healthData)) InitialiseHealthBoss(healthData);
     }
 
     public void OnDestroy()
@@ -114,18 +113,18 @@ public class UI : MonoBehaviour
     //Probably need a version that doesn't lock the movement and/or stops time (actually use pauseWhileRunning) - AV
     protected IEnumerator DialogueTyper(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning) //typing the text over time
     {
-        NodeCurrent = DialogueInitialise(_dialogue,pauseWhileRunning);
+        NodeCurrent = DialogueInitialise(_dialogue, pauseWhileRunning);
 
         //Main dialogue loop - repeat until the next one has no children
-        while (true) 
+        while (true)
         {
             txtSpeaker.text = NodeCurrent.SpeakerName;
             pageText = NodeCurrent.Text;
             SetBigSpriteForDialogue("DialogueSprites/" + NodeCurrent.SpritePath);
-            runCoroutine=true;
+            runCoroutine = true;
 
             //Choice node special functionality HERE!
-            if (NodeCurrent.Choices.Count > 1) 
+            if (NodeCurrent.Choices.Count > 1)
             {
                 dataTemp = _dialogue;
                 SetDialogueChoices(NodeCurrent.Choices[0].Text, NodeCurrent.Choices[1].Text, NodeCurrent.ChildIDs[0], NodeCurrent.ChildIDs[1]);
@@ -138,23 +137,23 @@ public class UI : MonoBehaviour
             for (int j = 0; j < (pageText.Length + 1); j++)
             {
                 txtMain.text = pageText.Substring(0, j);               //slice the text 
-                if (GameManager.instance.cheat_FastForwardDialogue) { GameManager.instance.cheat_FastForwardDialogue= false; goto endOfDialogue; }
+                if (GameManager.instance.cheat_FastForwardDialogue) { GameManager.instance.cheat_FastForwardDialogue = false; goto endOfDialogue; }
                 yield return new WaitForSecondsRealtime(typingWait);
                 if (!runCoroutine) break;
             }
-            if (GameManager.instance.cheat_FastForwardDialogue) { GameManager.instance.cheat_FastForwardDialogue=false; break; }
+            if (GameManager.instance.cheat_FastForwardDialogue) { GameManager.instance.cheat_FastForwardDialogue = false; break; }
 
             //Show full text once done and wait for input to proceed;
             txtMain.text = pageText; isWaiting = true;
             while (isWaiting == true) yield return null;
 
             //Final node detection - break the loop if the node has no children
-            try 
+            try
             {
                 if (string.IsNullOrEmpty(NodeCurrent.ChildIDs[0])) { Debug.LogWarning("End of dialogue stream reached"); break; }
                 NodeCurrent = FindSaveDataID(NodeCurrent.ChildIDs[0], _dialogue);
             }
-            catch {Debug.LogWarning("End of dialogue stream reached"); break;  }
+            catch { Debug.LogWarning("End of dialogue stream reached"); break; }
         }
 
         endOfDialogue:
@@ -164,7 +163,7 @@ public class UI : MonoBehaviour
         DialogueCleanup(pauseWhileRunning);
     }
 
-    public DSNodeSaveData DialogueInitialise(DSGraphSaveDataSO _dialogue,bool pauseWhileRunning) //Find the start node values
+    public DSNodeSaveData DialogueInitialise(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning) //Find the start node values
     {
         if (pauseWhileRunning) PlayerMovement.instance.SetLockMovement();
         dialogueCur = _dialogue;
@@ -203,7 +202,7 @@ public class UI : MonoBehaviour
         Debug.Log("initialising text");
         if (!runCoroutine)
         {
-            StartCoroutine(DialogueTyper(_dialogue,pauseWhileRunning));
+            StartCoroutine(DialogueTyper(_dialogue, pauseWhileRunning));
             runCoroutine = true;
         }
     }
@@ -263,14 +262,14 @@ public class UI : MonoBehaviour
     {
         UpdateHealthPlayer();
         UpdateHealthBoss();
-    }                                   
+    }
     public void UpdateHealthPlayer()
     {
         playerHealthBar.value = PlayerCombat.instance.GetHealth();
         SetPlayerPortrait(PlayerCombat.instance.GetHealth(), PlayerCombat.instance.GetMaxHealth()); //setting the player portrait from the base of avalible health-reflecting portraits
 
     }
-    public void UpdateHealthBoss() 
+    public void UpdateHealthBoss()
     {
         if (bossHealth != null)
         {
@@ -281,7 +280,7 @@ public class UI : MonoBehaviour
     public void CleanupHealthBoss(int count)                                //After the QTE - if the boss is dead hide the healthbars, deal damage otherwise 
     {
         //Hide healthbars upon boss death
-        if (bossHealth.coreHealth < 1)  
+        if (bossHealth.coreHealth < 1)
         {
             Debug.LogWarning("Boss defeated!");
             bossHealth.gameObject.SetActive(false);
@@ -303,7 +302,7 @@ public class UI : MonoBehaviour
         float hp_normalised = health / maxHealth;
         int whichPortrait = (int)Mathf.Round(Mathf.Lerp(0, playerPortraits.Length - 1, hp_normalised));  //from the list of portraits, grab an apropriate one
         playerPortrait.sprite = playerPortraits[whichPortrait];
-    }       
+    }
 
     #endregion
 
@@ -312,33 +311,45 @@ public class UI : MonoBehaviour
 
     #region Dialogue Choices
 
-    public void SetDialogueChoicesTest(string text) => SetDialogueChoices(text, text, "DebugA","DebugB");
-    public void SetDialogueChoices(string textA, string textB, string AAddress, string BAddress) 
+    public void SetDialogueChoicesTest(string text) => SetDialogueChoices(text, text, "DebugA", "DebugB");
+    public void SetDialogueChoices(string textA, string textB, string AAddress, string BAddress)
     {
 
         Debug.Log("Dialogue Choices set to");
-        Debug.Log(textA+ " : " + textB);
-        txtChoiceA.text = textA;    txtChoiceB.text = textB;
-        choiceA_ID = AAddress;      choiceB_ID = BAddress;
+        Debug.Log(textA + " : " + textB);
+        txtChoiceA.text = textA; txtChoiceB.text = textB;
+        choiceA_ID = AAddress; choiceB_ID = BAddress;
 
         //enabling the choice displays once set
         if (!boxTextDisplay.gameObject.activeInHierarchy) boxTextDisplay.gameObject.SetActive(true);
         txtChoiceA.transform.parent.parent.gameObject.SetActive(true);
     }
-    public void SetDialogueChoiceHidden()=> txtChoiceA.transform.parent.parent.gameObject.SetActive(false);
+    public void SetDialogueChoiceHidden() => txtChoiceA.transform.parent.parent.gameObject.SetActive(false);
 
     public void OnDialogueChoiceA() => OnDialogueChoice(true);
     public void OnDialogueChoiceB() => OnDialogueChoice(false);
-    public void OnDialogueChoice(bool isA) 
+    public void OnDialogueChoice(bool isA)
     {
-        if(isA) NodeCurrent=FindSaveDataID(choiceA_ID, dataTemp);
-        else NodeCurrent =FindSaveDataID(choiceB_ID, dataTemp);
+        if (isA) NodeCurrent = FindSaveDataID(choiceA_ID, dataTemp);
+        else NodeCurrent = FindSaveDataID(choiceB_ID, dataTemp);
 
         SetDialogueChoiceHidden();
         isWaiting = false;
     }
 
+
+
     #endregion
+
+    public void FadeOut()
+    {
+        anim.SetTrigger("Out");
+    }
+
+    public void FadeIn()
+    {
+        anim.SetTrigger("In");
+    }
 
     public void QuitToWindows() 
     {

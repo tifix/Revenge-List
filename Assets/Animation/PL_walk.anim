@@ -178,7 +178,7 @@ AnimationClip:
     messageOptions: 0
   - time: 0.5833333
     functionName: Play
-    data: 
+    data: WalkMC
     objectReferenceParameter: {fileID: 8300000, guid: bd517989c06eeae419eccd37dab481eb, type: 3}
     floatParameter: 0
     intParameter: 0

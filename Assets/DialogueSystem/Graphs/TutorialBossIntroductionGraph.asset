@@ -15,22 +15,9 @@ MonoBehaviour:
   FileName: TutorialBossIntroduction
   Groups: []
   Nodes:
-  - ID: d75aa42f-9996-433c-bc53-9bc709d8b2a7
-    Name: 1
-    SpeakerName: Boss
-    Text: Come here so i can beat you up
-    SpritePath: regular_gnome 1
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 
-    GroupID: 
-    Position: {x: 543, y: 199}
-    isStartNode: 1
-    ChildIDs:
-    - 
   - ID: 0f3ac656-a522-4f8b-ae72-5fad7439c72e
     Name: 0
-    SpeakerName: Boss
+    SpeakerName: Microwave
     Text: Well, well, well... If it isn't little Lilith...
     SpritePath: regular_gnome 1
     Choices:
@@ -41,9 +28,22 @@ MonoBehaviour:
     isStartNode: 1
     ChildIDs:
     - d75aa42f-9996-433c-bc53-9bc709d8b2a7
+  - ID: d75aa42f-9996-433c-bc53-9bc709d8b2a7
+    Name: 1
+    SpeakerName: Microwave
+    Text: Come here so i can beat you up
+    SpritePath: regular_gnome 1
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 
+    GroupID: 
+    Position: {x: 543, y: 199}
+    isStartNode: 1
+    ChildIDs:
+    - 
   OldGroupNames: []
   OldUngroupedNodeNames:
-  - 1
   - 0
+  - 1
   OldGroupNodeNames:
     list: []

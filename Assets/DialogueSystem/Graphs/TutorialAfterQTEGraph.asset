@@ -10,54 +10,49 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 330ce6680441e444f96079c0bb98687a, type: 3}
-  m_Name: TutorialAfterSecondAttackGraph
+  m_Name: TutorialAfterQTEGraph
   m_EditorClassIdentifier: 
-  FileName: TutorialAfterSecondAttack
+  FileName: TutorialAfterQTE
   Groups: []
   Nodes:
-  - ID: 0904cefe-c3cb-4b5e-8c8a-3b7198da0b19
+  - ID: 02fc2572-9286-4b55-82f1-1fc02731a983
     Name: 0
     SpeakerName: Microwave
-    Text: "How... \nHow did you do that????!!!!!"
+    Text: 'Ugh...
+
+      This isn''t the last you''ll see of me... bitch.'
     SpritePath: regular_gnome 1
     Choices:
     - Text: Next Dialogue
-      NodeID: bb7a130d-b71c-43a1-ada6-6daa224f06fa
+      NodeID: 2fadb91e-9404-4352-a1ab-e122258c5cee
     GroupID: 
-    Position: {x: 317, y: 170}
+    Position: {x: 294, y: 269}
     isStartNode: 1
     ChildIDs:
-    - bb7a130d-b71c-43a1-ada6-6daa224f06fa
-  - ID: bb7a130d-b71c-43a1-ada6-6daa224f06fa
+    - 2fadb91e-9404-4352-a1ab-e122258c5cee
+  - ID: 2fadb91e-9404-4352-a1ab-e122258c5cee
     Name: 1
-    SpeakerName: Microwave
-    Text: 'This isn''t over.
-
-      Check out my overhead attacks.
-
-      They home
-      in on you.
-
-      No way for you to dodge them hahaha.'
-    SpritePath: regular_gnome 1
+    SpeakerName: Lilith
+    Text: What are you doing??!!
+    SpritePath: Lilith_Angry
     Choices:
     - Text: Next Dialogue
-      NodeID: b3457fb2-68d5-4211-bc4f-24f24bfe497c
+      NodeID: ee9f2b49-1d61-4675-86b5-cabc162d1ea7
     GroupID: 
-    Position: {x: 601, y: 170}
+    Position: {x: 633, y: 269}
     isStartNode: 1
     ChildIDs:
-    - b3457fb2-68d5-4211-bc4f-24f24bfe497c
-  - ID: b3457fb2-68d5-4211-bc4f-24f24bfe497c
+    - ee9f2b49-1d61-4675-86b5-cabc162d1ea7
+  - ID: ee9f2b49-1d61-4675-86b5-cabc162d1ea7
     Name: 2
     SpeakerName: Lilith
-    Text: Check me out bozo.
-    SpritePath: Lilith_Smug
+    Text: Agh!
+    SpritePath: Lilith_Angry
     Choices:
     - Text: Next Dialogue
       NodeID: 
     GroupID: 
-    Position: {x: 890, y: 170}
+    Position: {x: 920, y: 269}
     isStartNode: 0
     ChildIDs:
     - 

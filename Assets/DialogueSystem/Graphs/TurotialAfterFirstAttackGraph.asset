@@ -17,7 +17,7 @@ MonoBehaviour:
   Nodes:
   - ID: 9f16cf91-54f0-4653-ab31-afc9d3a7420d
     Name: 0
-    SpeakerName: Boss
+    SpeakerName: Microwave
     Text: Muahahahaaaaaaa
     SpritePath: regular_gnome 1
     Choices:
@@ -30,7 +30,7 @@ MonoBehaviour:
     - 758ea584-b308-4fa1-b33d-c3cf1018df84
   - ID: 758ea584-b308-4fa1-b33d-c3cf1018df84
     Name: 1
-    SpeakerName: Boss
+    SpeakerName: Microwave
     Text: 'Tremble in fear.
 
       I am far too powerful for you'

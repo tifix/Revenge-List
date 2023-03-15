@@ -1,9 +1,9 @@
 {
-    "DialogueName": "0",
+    "DialogueName": "2",
     "nodeID": "",
-    "SpeakerName": "Microwave",
-    "Text": "...",
-    "SpritePath": "regular_gnome 1",
+    "SpeakerName": "Lilith",
+    "Text": "Agh!",
+    "SpritePath": "Lilith_Angry",
     "Choices": [
         {
             "Text": "Next Dialogue",
@@ -11,5 +11,5 @@
         }
     ],
     "DialogueType": 0,
-    "IsStartingDialogue": true
+    "IsStartingDialogue": false
 }
