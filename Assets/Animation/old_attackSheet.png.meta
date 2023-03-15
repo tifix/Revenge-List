@@ -167,7 +167,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_0
+      name: lil_Attack_Full_Spritesheet_rough_0
       rect:
         serializedVersion: 2
         x: 0
@@ -181,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9356980dd167f5849a8fe89188dbe8d6
-      internalID: -957354251
+      spriteID: dd7042a9809bebe44a80cbb93701a95f
+      internalID: 222530294
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_1
+      name: lil_Attack_Full_Spritesheet_rough_1
       rect:
         serializedVersion: 2
         x: 1149
@@ -202,14 +202,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca5d19f86b0258a4e8954c25a9cdda61
-      internalID: -1073946362
+      spriteID: 78e45bd7ceb91914ca36a4cbc4b162a7
+      internalID: -1948981001
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_2
+      name: lil_Attack_Full_Spritesheet_rough_2
       rect:
         serializedVersion: 2
         x: 2298
@@ -223,14 +223,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22777fc3c1ca7b8449909ac6bda4176c
-      internalID: 1387170409
+      spriteID: e9b91c4b3a42fca45af46933dc9b64c6
+      internalID: -1527615303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_3
+      name: lil_Attack_Full_Spritesheet_rough_3
       rect:
         serializedVersion: 2
         x: 3447
@@ -244,14 +244,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46aaefb28ff23864abde508de7e87529
-      internalID: 959467760
+      spriteID: 10f3a23101f6da04d8399c685e8cac7c
+      internalID: 4247425
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_4
+      name: lil_Attack_Full_Spritesheet_rough_4
       rect:
         serializedVersion: 2
         x: 4596
@@ -265,14 +265,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1eaffe9805c57304c9a7d82209e822a0
-      internalID: -470126127
+      spriteID: 3dc3de046b2665844aac5fb32dee4452
+      internalID: 2120263623
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_5
+      name: lil_Attack_Full_Spritesheet_rough_5
       rect:
         serializedVersion: 2
         x: 5745
@@ -286,14 +286,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7fa3e5d3fd91a740a83161e99aad004
-      internalID: -837972011
+      spriteID: 97b1d1c0f16773845a61104396e9607e
+      internalID: -1831055102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_6
+      name: lil_Attack_Full_Spritesheet_rough_6
       rect:
         serializedVersion: 2
         x: 0
@@ -307,14 +307,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11dd16504df68814da396262e7a55973
-      internalID: -958496890
+      spriteID: bc3f6f073659d6f48b1fe04e92ee2d7f
+      internalID: -992450787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_7
+      name: lil_Attack_Full_Spritesheet_rough_7
       rect:
         serializedVersion: 2
         x: 1149
@@ -328,14 +328,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68ac39f1123d3e84b8d3855aeebe9724
-      internalID: -61435674
+      spriteID: 8febb2f5b5c5e614f982be284c0dced2
+      internalID: -168429476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_8
+      name: lil_Attack_Full_Spritesheet_rough_8
       rect:
         serializedVersion: 2
         x: 2298
@@ -349,14 +349,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f62866cd9d645c649a5b487579b4a712
-      internalID: -693916600
+      spriteID: efe2e06205d52c741884528c27ad8459
+      internalID: -1441386943
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_9
+      name: lil_Attack_Full_Spritesheet_rough_9
       rect:
         serializedVersion: 2
         x: 3447
@@ -370,14 +370,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 157484201b1c9624f9efbb86949622e3
-      internalID: 1258860174
+      spriteID: 83c92f611ba6f6d42b66e3c00a459ad4
+      internalID: -22892773
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_10
+      name: lil_Attack_Full_Spritesheet_rough_10
       rect:
         serializedVersion: 2
         x: 4596
@@ -391,14 +391,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a2167b63ce3d384282e8445a4c1867f
-      internalID: 1039282254
+      spriteID: 7b862704b9357dc448cbcd238b09e7f9
+      internalID: 1140024636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_11
+      name: lil_Attack_Full_Spritesheet_rough_11
       rect:
         serializedVersion: 2
         x: 5745
@@ -412,14 +412,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63c2f275e6a4edd438db62d4c13955ed
-      internalID: -1890250645
+      spriteID: 1b348d10f2149c64aae1bd0691aeb0d0
+      internalID: 1116115353
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_12
+      name: lil_Attack_Full_Spritesheet_rough_12
       rect:
         serializedVersion: 2
         x: 0
@@ -433,14 +433,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1407af7dacaaee4eb9a05b7127f1151
-      internalID: 1055455635
+      spriteID: 5d851d390bdc8dc4eb83785a9fa098bb
+      internalID: 1235317070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_13
+      name: lil_Attack_Full_Spritesheet_rough_13
       rect:
         serializedVersion: 2
         x: 1149
@@ -454,14 +454,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 355bfca40d0af2146b06738f2b140f06
-      internalID: -1445019237
+      spriteID: d5466ac7c71b3124fb7ef0cc97fe1e0e
+      internalID: -890901793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_14
+      name: lil_Attack_Full_Spritesheet_rough_14
       rect:
         serializedVersion: 2
         x: 2298
@@ -475,14 +475,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc097ed573f15554395bbd20fd00cbad
-      internalID: 1634719118
+      spriteID: 5525ff7a2e901564582bf27f0212a782
+      internalID: 75963978
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_15
+      name: lil_Attack_Full_Spritesheet_rough_15
       rect:
         serializedVersion: 2
         x: 3447
@@ -496,14 +496,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16de03e5042bf064b85712073a460e26
-      internalID: 1364967929
+      spriteID: 11713a553b1b69b44bf4fec8cb7c1451
+      internalID: 226396806
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_16
+      name: lil_Attack_Full_Spritesheet_rough_16
       rect:
         serializedVersion: 2
         x: 4596
@@ -517,14 +517,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee667bf1f128be244b96383d9614e16d
-      internalID: -275790172
+      spriteID: c1ccf51c92a8da941af41fe356e8a8f1
+      internalID: -494069435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_17
+      name: lil_Attack_Full_Spritesheet_rough_17
       rect:
         serializedVersion: 2
         x: 5745
@@ -538,14 +538,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd0a03831d60c3649a6f4e336443f18b
-      internalID: 1965105617
+      spriteID: c59594ddfdd4fb64a9b9d01ca53d74df
+      internalID: -315877453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_18
+      name: lil_Attack_Full_Spritesheet_rough_18
       rect:
         serializedVersion: 2
         x: 0
@@ -559,14 +559,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41ccd6ec1578c6348a47f86fbde5944b
-      internalID: -1105566594
+      spriteID: 944610f63354d4a4480abe9fa81e5907
+      internalID: -398135352
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_19
+      name: lil_Attack_Full_Spritesheet_rough_19
       rect:
         serializedVersion: 2
         x: 1149
@@ -580,14 +580,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1cb555bd7be7fea4187729e8f86387ac
-      internalID: 1098148248
+      spriteID: 83fbd1d135a6240489b2bb10b0462692
+      internalID: -45453152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_20
+      name: lil_Attack_Full_Spritesheet_rough_20
       rect:
         serializedVersion: 2
         x: 2298
@@ -601,14 +601,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cf6b93db3fc36a46a644f1ef687abb7
-      internalID: -2030321171
+      spriteID: cb8da74e6ef92a149a1dc8e2c0cfc166
+      internalID: -555854909
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_21
+      name: lil_Attack_Full_Spritesheet_rough_21
       rect:
         serializedVersion: 2
         x: 3447
@@ -622,14 +622,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb8c9399ea8b3b145a512e70a2a78ac8
-      internalID: -119520270
+      spriteID: ae7a5b33d194a624ba8389c5ed46b467
+      internalID: -1773689562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_22
+      name: lil_Attack_Full_Spritesheet_rough_22
       rect:
         serializedVersion: 2
         x: 4596
@@ -643,14 +643,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70d594701d43c2e43add2c2bc04249a5
-      internalID: -1511691743
+      spriteID: 6237bbd974a8c014ca248128f95c4c85
+      internalID: 1743248506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_23
+      name: lil_Attack_Full_Spritesheet_rough_23
       rect:
         serializedVersion: 2
         x: 5745
@@ -664,14 +664,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e200d601411bbbc4cb2ad7ace785b9bf
-      internalID: 1535421136
+      spriteID: abbb6a2db627d6949b111649721b4e8f
+      internalID: -746563733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_24
+      name: lil_Attack_Full_Spritesheet_rough_24
       rect:
         serializedVersion: 2
         x: 0
@@ -685,14 +685,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a2cbd442c9c0dd4db1b341984844069
-      internalID: 1512131222
+      spriteID: bcf0460e7ad62d54fb8495df45a8d0d1
+      internalID: -1228247457
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_25
+      name: lil_Attack_Full_Spritesheet_rough_25
       rect:
         serializedVersion: 2
         x: 1149
@@ -706,14 +706,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b21ed2a7b85b39e4ca119b2e4ee840b2
-      internalID: -538018564
+      spriteID: 24e827e82ba457c4baadf021bcc46a4d
+      internalID: -1390387124
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_26
+      name: lil_Attack_Full_Spritesheet_rough_26
       rect:
         serializedVersion: 2
         x: 2298
@@ -727,14 +727,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be766636812a58d4a881936ae30a4a7d
-      internalID: -673886541
+      spriteID: 7a2c241561b7f1541b000598c1b2b93c
+      internalID: 490443716
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_27
+      name: lil_Attack_Full_Spritesheet_rough_27
       rect:
         serializedVersion: 2
         x: 3447
@@ -748,14 +748,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11c4bace44f45f9429ea1d0c6b11cc18
-      internalID: -37390755
+      spriteID: b8d50fea2e28bfd418c90004101f75d9
+      internalID: 561538281
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_28
+      name: lil_Attack_Full_Spritesheet_rough_28
       rect:
         serializedVersion: 2
         x: 4596
@@ -769,14 +769,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b116359cfd322044f9a39e8fe0cc9a57
-      internalID: -1089779299
+      spriteID: 6be8b003bd73d494ba2b414c4c0d8878
+      internalID: -1122680122
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_29
+      name: lil_Attack_Full_Spritesheet_rough_29
       rect:
         serializedVersion: 2
         x: 5745
@@ -790,14 +790,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2d98e38826542844989821d0964a28e
-      internalID: -2098341158
+      spriteID: 8dc27cef8a7b4f14e80d3ff8970a0a8b
+      internalID: -450701697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_30
+      name: lil_Attack_Full_Spritesheet_rough_30
       rect:
         serializedVersion: 2
         x: 0
@@ -811,14 +811,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a815d3876bcb08479307a18192f66ca
-      internalID: 988817771
+      spriteID: bda1eb07b50b6904a915cde5dbca8982
+      internalID: -1442108629
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_31
+      name: lil_Attack_Full_Spritesheet_rough_31
       rect:
         serializedVersion: 2
         x: 1149
@@ -832,14 +832,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb7eeaea5fa4dca45b03da18ef0b2ab2
-      internalID: -1039991115
+      spriteID: 9e10637d7e73a1a47a728f3ba54d665c
+      internalID: -1575137773
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_32
+      name: lil_Attack_Full_Spritesheet_rough_32
       rect:
         serializedVersion: 2
         x: 2298
@@ -853,14 +853,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2b763b8e26ac5f49a530857936a1aa0
-      internalID: 1297962323
+      spriteID: eda0826e72879f441a4361dccabc135c
+      internalID: 1450777584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_33
+      name: lil_Attack_Full_Spritesheet_rough_33
       rect:
         serializedVersion: 2
         x: 3447
@@ -874,14 +874,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1e6313610444f244b648b772faca3bc
-      internalID: 1625581262
+      spriteID: d0b24e77ea04a9f4ca27d15ff82e9bb0
+      internalID: 1123050372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_34
+      name: lil_Attack_Full_Spritesheet_rough_34
       rect:
         serializedVersion: 2
         x: 4596
@@ -895,14 +895,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a0a9e7941303d947ad4e4cf11aff32e
-      internalID: -1411316308
+      spriteID: cb8fea60cf298584cb746b52d81c8d6b
+      internalID: 1306530321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_35
+      name: lil_Attack_Full_Spritesheet_rough_35
       rect:
         serializedVersion: 2
         x: 0
@@ -916,14 +916,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b90d24244ffa5be46a3aaca904d2acdc
-      internalID: -2112849355
+      spriteID: 316db6d39c065914ba247d6704370bd3
+      internalID: 116120681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_36
+      name: lil_Attack_Full_Spritesheet_rough_36
       rect:
         serializedVersion: 2
         x: 1149
@@ -937,14 +937,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55960a06702ff8146b0ff852b071ffe9
-      internalID: 853773635
+      spriteID: 431540b78cd40f540977efa1289f89cf
+      internalID: 856269950
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_37
+      name: lil_Attack_Full_Spritesheet_rough_37
       rect:
         serializedVersion: 2
         x: 2298
@@ -958,14 +958,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96f69a456103ad4459e64556b65f8bd6
-      internalID: -1398783711
+      spriteID: a96ea8f43bec4474bafb178267694559
+      internalID: 1657122936
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_38
+      name: lil_Attack_Full_Spritesheet_rough_38
       rect:
         serializedVersion: 2
         x: 3447
@@ -979,14 +979,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ade04dc1865133a499e6eab2f426df0d
-      internalID: 1821533024
+      spriteID: 253c7ca5759ab424b8d216e231382933
+      internalID: 638965561
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_39
+      name: lil_Attack_Full_Spritesheet_rough_39
       rect:
         serializedVersion: 2
         x: 4596
@@ -1000,14 +1000,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a48f0a77e5990fe4c9d923a24901f383
-      internalID: -1066267100
+      spriteID: 74fd36e650b3be44b9fb3520800d21a4
+      internalID: 1824993265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_40
+      name: lil_Attack_Full_Spritesheet_rough_40
       rect:
         serializedVersion: 2
         x: 0
@@ -1021,14 +1021,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8930291ac568802489c63e8dd70ac5f9
-      internalID: -105207839
+      spriteID: fcb6435bffc86a149bef454907731dae
+      internalID: 116491777
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_41
+      name: lil_Attack_Full_Spritesheet_rough_41
       rect:
         serializedVersion: 2
         x: 1149
@@ -1042,14 +1042,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2347c842d8bc314cb9207134928211b
-      internalID: -446308216
+      spriteID: a13fc8dd5e7298447aa8cd68ebc7b362
+      internalID: -591032126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_42
+      name: lil_Attack_Full_Spritesheet_rough_42
       rect:
         serializedVersion: 2
         x: 2298
@@ -1063,14 +1063,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb50a5aef5caf184d84de2ae679919a7
-      internalID: 374430974
+      spriteID: 638f68b3313a4684b9c1f41f8af9fed0
+      internalID: 844190210
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_43
+      name: lil_Attack_Full_Spritesheet_rough_43
       rect:
         serializedVersion: 2
         x: 3447
@@ -1084,14 +1084,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acd0e04b0cdea9f44bfb5cbca6d3aafa
-      internalID: 1583309628
+      spriteID: 05b5e04ea4cd9514ebe0368f34ed4a6c
+      internalID: -428928385
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Full_Spritesheet_rough_44
+      name: lil_Attack_Full_Spritesheet_rough_44
       rect:
         serializedVersion: 2
         x: 4596
@@ -1105,8 +1105,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba2f32d219688b34b8b3773a8d5e37d6
-      internalID: -480197615
+      spriteID: 77f2579adc0ec2a4784205535a3d1384
+      internalID: -2005826736
       vertices: []
       indices: 
       edges: []
@@ -1122,51 +1122,51 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Attack_Full_Spritesheet_rough_43: 1583309628
-      Attack_Full_Spritesheet_rough_41: -446308216
-      Attack_Full_Spritesheet_rough_15: 1364967929
-      Attack_Full_Spritesheet_rough_27: -37390755
-      Attack_Full_Spritesheet_rough_9: 1258860174
-      Attack_Full_Spritesheet_rough_1: -1073946362
-      Attack_Full_Spritesheet_rough_24: 1512131222
-      Attack_Full_Spritesheet_rough_6: -958496890
-      Attack_Full_Spritesheet_rough_35: -2112849355
-      Attack_Full_Spritesheet_rough_18: -1105566594
-      Attack_Full_Spritesheet_rough_7: -61435674
-      Attack_Full_Spritesheet_rough_28: -1089779299
-      Attack_Full_Spritesheet_rough_32: 1297962323
-      Attack_Full_Spritesheet_rough_4: -470126127
-      Attack_Full_Spritesheet_rough_12: 1055455635
-      Attack_Full_Spritesheet_rough_34: -1411316308
-      Attack_Full_Spritesheet_rough_25: -538018564
-      Attack_Full_Spritesheet_rough_37: -1398783711
-      Attack_Full_Spritesheet_rough_33: 1625581262
-      Attack_Full_Spritesheet_rough_20: -2030321171
-      Attack_Full_Spritesheet_rough_22: -1511691743
-      Attack_Full_Spritesheet_rough_29: -2098341158
-      Attack_Full_Spritesheet_rough_3: 959467760
-      Attack_Full_Spritesheet_rough_11: -1890250645
-      Attack_Full_Spritesheet_rough_42: 374430974
-      Attack_Full_Spritesheet_rough_26: -673886541
-      Attack_Full_Spritesheet_rough_17: 1965105617
-      Attack_Full_Spritesheet_rough_8: -693916600
-      Attack_Full_Spritesheet_rough_23: 1535421136
-      Attack_Full_Spritesheet_rough_44: -480197615
-      Attack_Full_Spritesheet_rough_40: -105207839
-      Attack_Full_Spritesheet_rough_38: 1821533024
-      Attack_Full_Spritesheet_rough_19: 1098148248
-      Attack_Full_Spritesheet_rough_39: -1066267100
-      Attack_Full_Spritesheet_rough_10: 1039282254
-      Attack_Full_Spritesheet_rough_0: -957354251
-      Attack_Full_Spritesheet_rough_5: -837972011
-      Attack_Full_Spritesheet_rough_21: -119520270
-      Attack_Full_Spritesheet_rough_13: -1445019237
-      Attack_Full_Spritesheet_rough_16: -275790172
-      Attack_Full_Spritesheet_rough_36: 853773635
-      Attack_Full_Spritesheet_rough_14: 1634719118
-      Attack_Full_Spritesheet_rough_31: -1039991115
-      Attack_Full_Spritesheet_rough_2: 1387170409
-      Attack_Full_Spritesheet_rough_30: 988817771
+      lil_Attack_Full_Spritesheet_rough_34: 1306530321
+      lil_Attack_Full_Spritesheet_rough_42: 844190210
+      lil_Attack_Full_Spritesheet_rough_41: -591032126
+      lil_Attack_Full_Spritesheet_rough_31: -1575137773
+      lil_Attack_Full_Spritesheet_rough_15: 226396806
+      lil_Attack_Full_Spritesheet_rough_43: -428928385
+      lil_Attack_Full_Spritesheet_rough_11: 1116115353
+      lil_Attack_Full_Spritesheet_rough_12: 1235317070
+      lil_Attack_Full_Spritesheet_rough_40: 116491777
+      lil_Attack_Full_Spritesheet_rough_23: -746563733
+      lil_Attack_Full_Spritesheet_rough_25: -1390387124
+      lil_Attack_Full_Spritesheet_rough_21: -1773689562
+      lil_Attack_Full_Spritesheet_rough_27: 561538281
+      lil_Attack_Full_Spritesheet_rough_0: 222530294
+      lil_Attack_Full_Spritesheet_rough_39: 1824993265
+      lil_Attack_Full_Spritesheet_rough_44: -2005826736
+      lil_Attack_Full_Spritesheet_rough_22: 1743248506
+      lil_Attack_Full_Spritesheet_rough_24: -1228247457
+      lil_Attack_Full_Spritesheet_rough_20: -555854909
+      lil_Attack_Full_Spritesheet_rough_28: -1122680122
+      lil_Attack_Full_Spritesheet_rough_10: 1140024636
+      lil_Attack_Full_Spritesheet_rough_33: 1123050372
+      lil_Attack_Full_Spritesheet_rough_26: 490443716
+      lil_Attack_Full_Spritesheet_rough_8: -1441386943
+      lil_Attack_Full_Spritesheet_rough_30: -1442108629
+      lil_Attack_Full_Spritesheet_rough_32: 1450777584
+      lil_Attack_Full_Spritesheet_rough_5: -1831055102
+      lil_Attack_Full_Spritesheet_rough_1: -1948981001
+      lil_Attack_Full_Spritesheet_rough_13: -890901793
+      lil_Attack_Full_Spritesheet_rough_35: 116120681
+      lil_Attack_Full_Spritesheet_rough_19: -45453152
+      lil_Attack_Full_Spritesheet_rough_38: 638965561
+      lil_Attack_Full_Spritesheet_rough_3: 4247425
+      lil_Attack_Full_Spritesheet_rough_14: 75963978
+      lil_Attack_Full_Spritesheet_rough_29: -450701697
+      lil_Attack_Full_Spritesheet_rough_17: -315877453
+      lil_Attack_Full_Spritesheet_rough_16: -494069435
+      lil_Attack_Full_Spritesheet_rough_37: 1657122936
+      lil_Attack_Full_Spritesheet_rough_9: -22892773
+      lil_Attack_Full_Spritesheet_rough_6: -992450787
+      lil_Attack_Full_Spritesheet_rough_4: 2120263623
+      lil_Attack_Full_Spritesheet_rough_2: -1527615303
+      lil_Attack_Full_Spritesheet_rough_36: 856269950
+      lil_Attack_Full_Spritesheet_rough_7: -168429476
+      lil_Attack_Full_Spritesheet_rough_18: -398135352
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

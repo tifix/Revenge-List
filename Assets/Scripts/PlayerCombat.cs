@@ -10,19 +10,16 @@ public class PlayerCombat : ObjectScript
     Controls input;
     public static PlayerCombat instance;
 
-    //I'd recommend most stamina stuff to be int - AV
-    const float maxStamina = 100.0f;                                                                // The maximum stamina of the Player
-    [SerializeField, Tooltip("Stamina Regen Per Second")]float staminaRegenPerSec = 2.0f;           // Stamina regen rate *MAKE CONST WHEN FINALISED*
-    [SerializeField, Tooltip("current stamina of the Player")]float stamina;                        // The current stamina of the Player
 
+    [Range(0,1)] public float attackIntervalMinimum;
+    [Range(0f,1)] public float attackToIdleInterval;
+    public float attackLastTimestamp=0;
     public Transform attackOrg;
     public float attackRange = 2.0f;
     public LayerMask enemyLayers;
     public bool canBeDamaged = true;
 
-    bool canAttack = true;
-    //Check if player wants to continue the combo
-    bool comboAttackBuffer = false;
+    public bool canAttack = true;
 
     protected override void Awake()                             //Ensuring single instance of the script
     {
@@ -37,27 +34,29 @@ public class PlayerCombat : ObjectScript
         this.isAlive = true;
         this.maxHealth = 100.0f;
         this.health = this.maxHealth;
-        stamina = maxStamina;
 
         input.Ground.Attack.performed += Attack;
         input.Ground.Attack.Enable();
 
         input.Ground.KillSelf.performed += KillSelf;
         input.Ground.KillSelf.Enable();
+        canAttack= true;
     }
 
     //Now the ApplyDamage function is virtual, so this object gets called directly for the damage check only when necessary - AV
 
     private void FixedUpdate()
     {
-        if(stamina < maxStamina)
+
+        if (Time.time > attackLastTimestamp + attackToIdleInterval)
         {
-            stamina += staminaRegenPerSec * Time.fixedDeltaTime;
-            //Debug.Log("Stamina: %f" + stamina);
-        }
-        else if(stamina > maxStamina)
-        {
-            stamina = maxStamina;
+            if (PlayerMovement.isMovementLocked) 
+            {
+                GetComponent<Animator>().SetBool("isAttacking", false);
+                PlayerMovement.instance.UnPauseMovement();
+                Debug.LogWarning("Attack Chain broken! "+ (Time.time - attackLastTimestamp).ToString()+"s from "+ attackLastTimestamp);
+            }
+            
         }
     }
 
@@ -75,25 +74,46 @@ public class PlayerCombat : ObjectScript
 
     public void Attack(InputAction.CallbackContext obj)
     {
-        if(stamina >= 10.0f && canAttack)
+        //Debug.Log("T diff:" + (Time.time - attackLastTimestamp).ToString());
+
+        if (canAttack)
         {
-            stamina -= 5.0f;
-            Debug.Log("Attacking now. Stamina: %f" + stamina);
-            GetComponent<Animator>().SetTrigger("attack");
-
-            // Detect enemies in range
-            Collider[] hitEnemies = Physics.OverlapSphere(attackOrg.position, attackRange, enemyLayers);
-
-            // Damage destructibles hit by collider
-            foreach(Collider enemy in hitEnemies)
+            
+            if (Time.time>attackLastTimestamp + attackIntervalMinimum) //if attack off cooldown
             {
-                Debug.Log("Enemy hit: " + enemy.name);
-                enemy.GetComponent<ObjectScript>().ApplyDamage(10.0f);
+                attackLastTimestamp= Time.time;
+                Debug.LogWarning("Timestamp set! " + attackLastTimestamp);
+                GetComponent<Animator>().SetBool("isAttacking", true);
+                PlayerMovement.instance.PauseMovement();
+                //StartCoroutine(AttackAnimationChaining());
+
+                // Detect enemies in range
+                Collider[] hitEnemies = Physics.OverlapSphere(attackOrg.position, attackRange, enemyLayers);
+
+                // Damage destructibles hit by collider
+                foreach (Collider enemy in hitEnemies)
+                {
+                    Debug.Log("Enemy hit: " + enemy.name);
+                    enemy.GetComponent<ObjectScript>().ApplyDamage(10.0f);
+                }
+            }            
+            //if attack ON cooldown
+            else
+            {
+                Debug.Log("Attacking on cooldown!");
             }
-            comboAttackBuffer = false;
+
         }
-        else if(!canAttack) { comboAttackBuffer = true; };
     }
+
+    /*
+    IEnumerator AttackAnimationChaining()
+    {
+        GetComponent<Animator>().SetBool("isAttacking", true);
+        //if(GetComponent<Animator>().GetBool("isAttacking"))
+        yield return new WaitForSeconds(1);
+        GetComponent<Animator>().SetBool("isAttacking", false);
+    }*/
 
     // For applying healing to the player
     void ApplyHealing(float _value)
@@ -107,6 +127,7 @@ public class PlayerCombat : ObjectScript
         if (!canBeDamaged)
             return;
         health -= _value;
+        GetComponentInChildren<Animator>().SetTrigger("takeDamage");
 
         if (health <= 0.0f)
         {

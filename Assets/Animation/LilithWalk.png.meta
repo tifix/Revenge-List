@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c9c63ee5f489b2a498042ee57a63f73a
+guid: de1e1ab0b080ce5428f1008db9769f7e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -167,211 +167,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Neighbour_Throwing_rough_Spritesheet_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 650
-        width: 271
-        height: 650
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e2c627e9cab8ceb4184d643ab772954d
-      internalID: -1407261332
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Neighbour_Throwing_rough_Spritesheet_1
-      rect:
-        serializedVersion: 2
-        x: 271
-        y: 650
-        width: 271
-        height: 650
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75494b1031cf1ba43b3d097693b2d6ae
-      internalID: -157146986
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Neighbour_Throwing_rough_Spritesheet_2
-      rect:
-        serializedVersion: 2
-        x: 542
-        y: 650
-        width: 271
-        height: 650
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ff6de499f17f5bb478c792b96ad5643b
-      internalID: -2104361063
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Neighbour_Throwing_rough_Spritesheet_3
-      rect:
-        serializedVersion: 2
-        x: 813
-        y: 650
-        width: 271
-        height: 650
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bd8c6821f1ddaf7489cb096e8ad3bc0d
-      internalID: -650170224
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Neighbour_Throwing_rough_Spritesheet_4
-      rect:
-        serializedVersion: 2
-        x: 1084
-        y: 650
-        width: 271
-        height: 650
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7af23d9f1b56af5459b4aa800255f3af
-      internalID: -394903861
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Neighbour_Throwing_rough_Spritesheet_5
+      name: LilithWalk1
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 271
-        height: 650
+        width: 398
+        height: 563
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d08da30e3826fe4d9cf1fb35c4c8923
-      internalID: -17326298
+      spriteID: c168237e0dc1c244f83f51e1f70b7842
+      internalID: 324829144
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Neighbour_Throwing_rough_Spritesheet_6
+      name: LilithWalk2
       rect:
         serializedVersion: 2
-        x: 271
+        x: 398
         y: 0
-        width: 271
-        height: 650
+        width: 398
+        height: 563
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f73f70d8324b4674d93f9f78198227d6
-      internalID: -1925129544
+      spriteID: 86639a02189fe6f49b4cadc356b37207
+      internalID: -950647559
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Neighbour_Throwing_rough_Spritesheet_7
+      name: LilithWalk3
       rect:
         serializedVersion: 2
-        x: 542
+        x: 796
         y: 0
-        width: 271
-        height: 650
+        width: 398
+        height: 563
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5be6be566014c449ac32de20c1c0888
-      internalID: -1714449489
+      spriteID: 94e821f953e9c104d817dbd5352bf181
+      internalID: -845845254
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Neighbour_Throwing_rough_Spritesheet_8
+      name: LilithWalk4
       rect:
         serializedVersion: 2
-        x: 813
+        x: 1194
         y: 0
-        width: 271
-        height: 650
+        width: 398
+        height: 563
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bc0516f5e9410647b51257489efa4f6
-      internalID: -1009601714
+      spriteID: 238d618108968ae4392c41d600e62f62
+      internalID: -2130452131
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Neighbour_Throwing_rough_Spritesheet_9
+      name: LilithWalk5
       rect:
         serializedVersion: 2
-        x: 1084
+        x: 1592
         y: 0
-        width: 271
-        height: 650
+        width: 398
+        height: 563
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: befa9b5529c9d0e4fa8156788b37dbb9
-      internalID: 2123205574
+      spriteID: d041e20076becbc4db87741117182808
+      internalID: 682114622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilithWalk6
+      rect:
+        serializedVersion: 2
+        x: 1990
+        y: 0
+        width: 398
+        height: 563
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10251f886cce7e543b9760141bb70a8f
+      internalID: -389873795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilithWalk7
+      rect:
+        serializedVersion: 2
+        x: 2388
+        y: 0
+        width: 398
+        height: 563
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f99d0b18de610e74baa16ebfdf4df301
+      internalID: -1761423596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LilithWalk8
+      rect:
+        serializedVersion: 2
+        x: 2786
+        y: 0
+        width: 398
+        height: 563
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ef3a03de2a73f847b343f35ee235908
+      internalID: 2034301952
       vertices: []
       indices: 
       edges: []
@@ -387,16 +345,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Neighbour_Throwing_rough_Spritesheet_9: 2123205574
-      Neighbour_Throwing_rough_Spritesheet_5: -17326298
-      Neighbour_Throwing_rough_Spritesheet_0: -1407261332
-      Neighbour_Throwing_rough_Spritesheet_8: -1009601714
-      Neighbour_Throwing_rough_Spritesheet_3: -650170224
-      Neighbour_Throwing_rough_Spritesheet_4: -394903861
-      Neighbour_Throwing_rough_Spritesheet_2: -2104361063
-      Neighbour_Throwing_rough_Spritesheet_6: -1925129544
-      Neighbour_Throwing_rough_Spritesheet_7: -1714449489
-      Neighbour_Throwing_rough_Spritesheet_1: -157146986
+      LilithWalk5: 682114622
+      LilithWalk6: -389873795
+      LilithWalk1: 324829144
+      LilithWalk2: -950647559
+      LilithWalk7: -1761423596
+      LilithWalk8: 2034301952
+      LilithWalk4: -2130452131
+      LilithWalk3: -845845254
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

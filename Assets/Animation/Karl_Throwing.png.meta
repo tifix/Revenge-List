@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: de1e1ab0b080ce5428f1008db9769f7e
+guid: c9c63ee5f489b2a498042ee57a63f73a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -167,13 +167,118 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UPDATED_Walk_Rough_Spritesheet_0
+      name: Karl_Throwing_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 650
+        width: 271
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716c44f8ae1b1f24ebb694930dce8561
+      internalID: -272655993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karl_Throwing_1
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 650
+        width: 271
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 014de85b9611b2e44b813510b58b221c
+      internalID: 490023110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karl_Throwing_2
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 650
+        width: 271
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68d591150c367a4fa7109cd875fac0b
+      internalID: -1904502016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karl_Throwing_3
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 650
+        width: 271
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301f107d1f8e60141822370a441823b7
+      internalID: 989966487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karl_Throwing_4
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 650
+        width: 271
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2957f56e27989624da21701481326b6a
+      internalID: 467495689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karl_Throwing_5
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 398
-        height: 563
+        width: 271
+        height: 650
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +286,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c168237e0dc1c244f83f51e1f70b7842
-      internalID: 324829144
+      spriteID: 437eee677998f9244a039a29ffb05c00
+      internalID: 362221928
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UPDATED_Walk_Rough_Spritesheet_1
+      name: Karl_Throwing_6
       rect:
         serializedVersion: 2
-        x: 398
+        x: 271
         y: 0
-        width: 398
-        height: 563
+        width: 271
+        height: 650
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +307,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86639a02189fe6f49b4cadc356b37207
-      internalID: -950647559
+      spriteID: ea0aac7376f503541aecd05b12c414bf
+      internalID: -1454935283
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UPDATED_Walk_Rough_Spritesheet_2
+      name: Karl_Throwing_7
       rect:
         serializedVersion: 2
-        x: 796
+        x: 542
         y: 0
-        width: 398
-        height: 563
+        width: 271
+        height: 650
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,20 +328,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94e821f953e9c104d817dbd5352bf181
-      internalID: -845845254
+      spriteID: a5d10ff48d66c7f489cb9c787eb6796d
+      internalID: -1555959691
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UPDATED_Walk_Rough_Spritesheet_3
+      name: Karl_Throwing_8
       rect:
         serializedVersion: 2
-        x: 1194
+        x: 813
         y: 0
-        width: 398
-        height: 563
+        width: 271
+        height: 650
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +349,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 238d618108968ae4392c41d600e62f62
-      internalID: -2130452131
+      spriteID: f2ca99b547b55644bbad244e0bed48d9
+      internalID: -1001995040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UPDATED_Walk_Rough_Spritesheet_4
+      name: Karl_Throwing_9
       rect:
         serializedVersion: 2
-        x: 1592
+        x: 1084
         y: 0
-        width: 398
-        height: 563
+        width: 271
+        height: 650
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,71 +370,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d041e20076becbc4db87741117182808
-      internalID: 682114622
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UPDATED_Walk_Rough_Spritesheet_5
-      rect:
-        serializedVersion: 2
-        x: 1990
-        y: 0
-        width: 398
-        height: 563
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 10251f886cce7e543b9760141bb70a8f
-      internalID: -389873795
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UPDATED_Walk_Rough_Spritesheet_6
-      rect:
-        serializedVersion: 2
-        x: 2388
-        y: 0
-        width: 398
-        height: 563
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f99d0b18de610e74baa16ebfdf4df301
-      internalID: -1761423596
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UPDATED_Walk_Rough_Spritesheet_7
-      rect:
-        serializedVersion: 2
-        x: 2786
-        y: 0
-        width: 398
-        height: 563
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ef3a03de2a73f847b343f35ee235908
-      internalID: 2034301952
+      spriteID: 11bc5cf8de347a44393f60019772cbc5
+      internalID: -896318978
       vertices: []
       indices: 
       edges: []
@@ -345,14 +387,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      UPDATED_Walk_Rough_Spritesheet_5: -389873795
-      UPDATED_Walk_Rough_Spritesheet_7: 2034301952
-      UPDATED_Walk_Rough_Spritesheet_6: -1761423596
-      UPDATED_Walk_Rough_Spritesheet_1: -950647559
-      UPDATED_Walk_Rough_Spritesheet_4: 682114622
-      UPDATED_Walk_Rough_Spritesheet_0: 324829144
-      UPDATED_Walk_Rough_Spritesheet_2: -845845254
-      UPDATED_Walk_Rough_Spritesheet_3: -2130452131
+      Karl_Throwing_3: 989966487
+      Karl_Throwing_5: 362221928
+      Karl_Throwing_4: 467495689
+      Karl_Throwing_0: -272655993
+      Karl_Throwing_1: 490023110
+      Karl_Throwing_2: -1904502016
+      Karl_Throwing_9: -896318978
+      Karl_Throwing_6: -1454935283
+      Karl_Throwing_7: -1555959691
+      Karl_Throwing_8: -1001995040
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

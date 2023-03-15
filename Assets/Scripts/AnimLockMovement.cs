@@ -6,6 +6,6 @@ public class AnimLockMovement : StateMachineBehaviour
 {
     public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        PlayerMovement.instance.UnPauseMovement();
+        PlayerMovement.instance.PauseMovement();
     }
 }
