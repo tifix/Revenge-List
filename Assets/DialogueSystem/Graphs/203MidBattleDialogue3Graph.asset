@@ -19,7 +19,7 @@ MonoBehaviour:
     Name: 2
     SpeakerName: Lilith
     Text: "And this\u2026 is for thinking you\u2019re good enough for Astrid!"
-    SpritePath: Insert Sprite Path Here.
+    SpritePath: Lilith_Angry
     Choices:
     - Text: Next Dialogue
       NodeID: a4093534-d8fb-4873-b0cb-b71e4ea700fa
@@ -30,9 +30,9 @@ MonoBehaviour:
     - a4093534-d8fb-4873-b0cb-b71e4ea700fa
   - ID: a4093534-d8fb-4873-b0cb-b71e4ea700fa
     Name: 3
-    SpeakerName: karl
+    SpeakerName: Karl
     Text: What?
-    SpritePath: Insert Sprite Path Here.
+    SpritePath: Neighbour_Sad
     Choices:
     - Text: Next Dialogue
       NodeID: 
@@ -43,9 +43,9 @@ MonoBehaviour:
     - 
   - ID: b0ea595f-9c29-41fd-a531-d7fdac793a97
     Name: 1
-    SpeakerName: karl
+    SpeakerName: Karl
     Text: Easy there, tiger.
-    SpritePath: Insert Sprite Path Here.
+    SpritePath: Neighbour_Happy
     Choices:
     - Text: Next Dialogue
       NodeID: bcbe09ec-77c4-4a17-b2b9-3cb8ac541e60

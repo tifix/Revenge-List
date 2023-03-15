@@ -22,7 +22,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "Ah yes, my dear Hellhound, we meet again.",
-                        "SpritePath": "Insert Sprite Path Here.",
+                        "SpritePath": "Lilith_Smug",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -37,7 +37,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "I understand you have to have your hellish freedom, and I see that you benefit from it.",
-                        "SpritePath": "Insert Sprite Path Here.",
+                        "SpritePath": "Lilith_Happy",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -52,7 +52,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "That pigeon, what did he do?",
-                        "SpritePath": "Insert Sprite Path Here.",
+                        "SpritePath": "Lilith_Unhappy",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -67,7 +67,7 @@
                         "nodeID": "",
                         "SpeakerName": "Smuffles",
                         "Text": "*Dog noises*",
-                        "SpritePath": "Insert Sprite Path Here.",
+                        "SpritePath": "Dog",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -82,7 +82,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "I’m proud of you, Hellhound. You seem to have the spirit not unlike mine. ",
-                        "SpritePath": "Insert Sprite Path Here.",
+                        "SpritePath": "Lilith_Happy",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -97,7 +97,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "Ah yes, I understand. I would have wanted to take revenge on him too. What a bastard.",
-                        "SpritePath": "Insert Sprite Path Here.",
+                        "SpritePath": "Lilith_Unhappy",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -117,7 +117,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "I must, must, do this now.",
-                        "SpritePath": "Insert Sprite Path Here.",
+                        "SpritePath": "Lilith_Unhappy",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -137,7 +137,7 @@
                         "nodeID": "",
                         "SpeakerName": "Smuffles",
                         "Text": "*Happy dog noises*",
-                        "SpritePath": "Insert Sprite Path Here.",
+                        "SpritePath": "Dog",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -152,7 +152,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "That’s right. Now, dear Hellhound, we shall be taking revenge on….",
-                        "SpritePath": "Insert Sprite Path Here.",
+                        "SpritePath": "Lilith_Unhappy",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -167,7 +167,7 @@
                         "nodeID": "",
                         "SpeakerName": "Karl",
                         "Text": "Haha! I see you’ve found my dog! Little rascal, always going off on his own!",
-                        "SpritePath": "Insert Sprite Path Here.",
+                        "SpritePath": "Neighbour_Friendly",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",

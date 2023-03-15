@@ -3,7 +3,7 @@
     "nodeID": "",
     "SpeakerName": "Lilith",
     "Text": "I’m proud of you, Hellhound. You seem to have the spirit not unlike mine. ",
-    "SpritePath": "Insert Sprite Path Here.",
+    "SpritePath": "Lilith_Happy",
     "Choices": [
         {
             "Text": "Next Dialogue",

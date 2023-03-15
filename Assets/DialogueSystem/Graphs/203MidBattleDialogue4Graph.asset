@@ -17,9 +17,9 @@ MonoBehaviour:
   Nodes:
   - ID: b0ea595f-9c29-41fd-a531-d7fdac793a97
     Name: 1
-    SpeakerName: karl
+    SpeakerName: Karl
     Text: "Could you stop? You\u2019re actually hurting me!"
-    SpritePath: Insert Sprite Path Here.
+    SpritePath: Neighbour_Sad
     Choices:
     - Text: Next Dialogue
       NodeID: bcbe09ec-77c4-4a17-b2b9-3cb8ac541e60
@@ -30,10 +30,10 @@ MonoBehaviour:
     - bcbe09ec-77c4-4a17-b2b9-3cb8ac541e60
   - ID: bcbe09ec-77c4-4a17-b2b9-3cb8ac541e60
     Name: 2
-    SpeakerName: karl
+    SpeakerName: Karl
     Text: "You know what, come to the party! Have the steaks! You\u2019re still my
       neighbour after all!"
-    SpritePath: Insert Sprite Path Here.
+    SpritePath: Neighbour_Friendly
     Choices:
     - Text: Next Dialogue
       NodeID: 

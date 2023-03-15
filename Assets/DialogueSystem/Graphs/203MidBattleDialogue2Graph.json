@@ -7,9 +7,9 @@
         {
             "DialogueName": "2",
             "nodeID": "",
-            "SpeakerName": "karl",
+            "SpeakerName": "Karl",
             "Text": "I told you, you should come to the next one! It’s this Thursday! It’s gonna be crab-ulous!",
-            "SpritePath": "Insert Sprite Path Here.",
+            "SpritePath": "Neighbour_Friendly",
             "Choices": [
                 {
                     "Text": "Next Dialogue",
@@ -22,9 +22,9 @@
         {
             "DialogueName": "1",
             "nodeID": "",
-            "SpeakerName": "karl",
+            "SpeakerName": "Karl",
             "Text": "Lily, be honest. Is this about that crayfish party we didn’t invite you to?",
-            "SpritePath": "Insert Sprite Path Here.",
+            "SpritePath": "Neighbour_Sad",
             "Choices": [
                 {
                     "Text": "Next Dialogue",

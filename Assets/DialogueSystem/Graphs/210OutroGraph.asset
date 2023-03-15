@@ -15,25 +15,11 @@ MonoBehaviour:
   FileName: 210Outro
   Groups: []
   Nodes:
-  - ID: b0ea595f-9c29-41fd-a531-d7fdac793a97
-    Name: 1
-    SpeakerName: Lilith
-    Text: Okay, Karl. Maybe you were right. Maybe he really is your dog. But you're
-      my bitch.
-    SpritePath: Insert Sprite Path Here.
-    Choices:
-    - Text: Next Dialogue
-      NodeID: bcbe09ec-77c4-4a17-b2b9-3cb8ac541e60
-    GroupID: 
-    Position: {x: 1607, y: -374}
-    isStartNode: 1
-    ChildIDs:
-    - bcbe09ec-77c4-4a17-b2b9-3cb8ac541e60
   - ID: 841c949b-fea0-4ec6-851d-bd0703a36104
     Name: DialogueName
     SpeakerName: Lilith
     Text: QUIET!
-    SpritePath: Insert Sprite Path Here.
+    SpritePath: Lilith_Angry
     Choices:
     - Text: Next Dialogue
       NodeID: 14ac2da1-9c35-4a48-ae7d-35ba3fdfac60
@@ -44,9 +30,9 @@ MonoBehaviour:
     - 14ac2da1-9c35-4a48-ae7d-35ba3fdfac60
   - ID: bcbe09ec-77c4-4a17-b2b9-3cb8ac541e60
     Name: 2
-    SpeakerName: karl
+    SpeakerName: Karl
     Text: That's not a nice thing to say.
-    SpritePath: Insert Sprite Path Here.
+    SpritePath: Neighbour_Sad
     Choices:
     - Text: Next Dialogue
       NodeID: 841c949b-fea0-4ec6-851d-bd0703a36104
@@ -57,9 +43,9 @@ MonoBehaviour:
     - 841c949b-fea0-4ec6-851d-bd0703a36104
   - ID: 14ac2da1-9c35-4a48-ae7d-35ba3fdfac60
     Name: 4
-    SpeakerName: karl
+    SpeakerName: Karl
     Text: ...
-    SpritePath: Insert Sprite Path Here.
+    SpritePath: Neighbour_Sad
     Choices:
     - Text: Next Dialogue
       NodeID: 
@@ -68,11 +54,25 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - 
+  - ID: b0ea595f-9c29-41fd-a531-d7fdac793a97
+    Name: 1
+    SpeakerName: Lilith
+    Text: Okay, Karl. Maybe you were right. Maybe he really is your dog. But you're
+      my bitch.
+    SpritePath: Lilith_Smug
+    Choices:
+    - Text: Next Dialogue
+      NodeID: bcbe09ec-77c4-4a17-b2b9-3cb8ac541e60
+    GroupID: 
+    Position: {x: 1607, y: -374}
+    isStartNode: 1
+    ChildIDs:
+    - bcbe09ec-77c4-4a17-b2b9-3cb8ac541e60
   OldGroupNames: []
   OldUngroupedNodeNames:
-  - 1
   - DialogueName
   - 2
   - 4
+  - 1
   OldGroupNodeNames:
     list: []
