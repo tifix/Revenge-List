@@ -23,6 +23,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip EnvelopeThrow;
     public AudioClip KickSFX;
     public AudioClip FlipSFX;
+    public AudioClip DogBark;
 
 
     private void Awake()
@@ -87,6 +88,9 @@ public class AudioManager : MonoBehaviour
             case "Kick":
                 sfxSource.clip = KickSFX;
                 break;
+            case "Bark":
+                sfxSource.clip = DogBark;
+                break;
             default:
                 Debug.LogWarning("Incorrect name " + name + " check spelling");
                 break;
@@ -103,11 +107,11 @@ public class AudioManager : MonoBehaviour
                 musicSource.clip = BossTrack;
                 break;
             case "BgMusic":
-                musicSource.volume = 0.5f;
+                musicSource.volume = 1f;
                 musicSource.clip = BgMusic;
                 break;
             case "QteTrack":
-                musicSource.volume = 1.0f;
+                musicSource.volume = 1f;
                 musicSource.clip = QteTrack;
                 break;
             default:
@@ -118,20 +122,23 @@ public class AudioManager : MonoBehaviour
         musicSource.Play();
     }
 
+    // NYI - Work in Porgress - function is for fading out current track and into the track we want next
     public void SwapMusic(String name)
     {
+        musicSource2.volume = 0;
+
         switch (name)
         {
             case "BossTrack":
-                musicSource2.volume = 1f;
+                //musicSource2.volume = 1f;
                 musicSource.clip = BossTrack;
                 break;
             case "BgMusic":
-                musicSource2.volume = 0.5f;
+                //musicSource2.volume = 1f;
                 musicSource.clip = BgMusic;
                 break;
             case "QteTrack":
-                musicSource2.volume = 1.0f;
+                //musicSource2.volume = 1f;
                 musicSource.clip = QteTrack;
                 break;
             default:
@@ -139,7 +146,13 @@ public class AudioManager : MonoBehaviour
                 break;
         }
 
-        musicSource.Stop();
+
         musicSource2.Play();
+
+        musicSource.volume = Mathf.Lerp(musicSource.volume, 0f, 0f * Time.deltaTime);
+
+        musicSource2.volume = Mathf.Lerp(musicSource2.volume, 1f, 0f * Time.deltaTime);
+
+        musicSource.Stop();
     }
 }
