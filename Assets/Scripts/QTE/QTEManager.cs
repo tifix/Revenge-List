@@ -245,7 +245,7 @@ public class QTEManager : MonoBehaviour
             {
                 UI.instance.bossHealth.coreHealth -= UI.instance.bossHealth.damageQTEcomplete;
                 UI.instance.bossHealth.coreHealth -= comboCount * UI.instance.bossHealth.damageQTEcomboMultiplier;
-                UI.instance.AfterQTE_UI(comboCount);
+                UI.instance.CleanupHealthBoss(comboCount);
             }
 
             if (UI.instance.bossHealth.gameObject.TryGetComponent<KarlBoss>(out KarlBoss karl))
@@ -265,7 +265,7 @@ public class QTEManager : MonoBehaviour
             Debug.LogWarning("too bad, repeat the phase");
             if (UI.instance.bossHealth != null)
             {
-                UI.instance.AfterQTE_UI(comboCount);
+                UI.instance.CleanupHealthBoss(comboCount);
             }
             if (UI.instance.bossHealth.gameObject.TryGetComponent<KarlBoss>(out KarlBoss karl)) { karl.RepeatPhase(); }
 
