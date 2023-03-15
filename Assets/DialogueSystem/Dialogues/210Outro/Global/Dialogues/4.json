@@ -1,9 +1,9 @@
 {
     "DialogueName": "4",
     "nodeID": "",
-    "SpeakerName": "karl",
+    "SpeakerName": "Karl",
     "Text": "...",
-    "SpritePath": "Insert Sprite Path Here.",
+    "SpritePath": "Neighbour_Sad",
     "Choices": [
         {
             "Text": "Next Dialogue",

@@ -3,7 +3,7 @@
     "nodeID": "",
     "SpeakerName": "Lilith",
     "Text": "I understand you have to have your hellish freedom, and I see that you benefit from it.",
-    "SpritePath": "Insert Sprite Path Here.",
+    "SpritePath": "Lilith_Happy",
     "Choices": [
         {
             "Text": "Next Dialogue",

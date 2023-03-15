@@ -3,7 +3,7 @@
     "nodeID": "",
     "SpeakerName": "Lilith",
     "Text": "This is for not returning those eggs you borrowed!",
-    "SpritePath": "Insert Sprite Path Here.",
+    "SpritePath": "Lilith_Angry",
     "Choices": [
         {
             "Text": "Next Dialogue",

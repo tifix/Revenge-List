@@ -1,9 +1,9 @@
 {
     "DialogueName": "2",
     "nodeID": "",
-    "SpeakerName": "karl",
+    "SpeakerName": "Karl",
     "Text": "You know what, come to the party! Have the steaks! You’re still my neighbour after all!",
-    "SpritePath": "Insert Sprite Path Here.",
+    "SpritePath": "Neighbour_Friendly",
     "Choices": [
         {
             "Text": "Next Dialogue",

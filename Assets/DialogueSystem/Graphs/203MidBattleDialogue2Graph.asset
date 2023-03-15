@@ -17,10 +17,10 @@ MonoBehaviour:
   Nodes:
   - ID: bcbe09ec-77c4-4a17-b2b9-3cb8ac541e60
     Name: 2
-    SpeakerName: karl
+    SpeakerName: Karl
     Text: "I told you, you should come to the next one! It\u2019s this Thursday!
       It\u2019s gonna be crab-ulous!"
-    SpritePath: Insert Sprite Path Here.
+    SpritePath: Neighbour_Friendly
     Choices:
     - Text: Next Dialogue
       NodeID: 
@@ -31,10 +31,10 @@ MonoBehaviour:
     - 
   - ID: b0ea595f-9c29-41fd-a531-d7fdac793a97
     Name: 1
-    SpeakerName: karl
+    SpeakerName: Karl
     Text: "Lily, be honest. Is this about that crayfish party we didn\u2019t invite
       you to?"
-    SpritePath: Insert Sprite Path Here.
+    SpritePath: Neighbour_Sad
     Choices:
     - Text: Next Dialogue
       NodeID: bcbe09ec-77c4-4a17-b2b9-3cb8ac541e60

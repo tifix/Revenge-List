@@ -3,7 +3,7 @@
     "nodeID": "",
     "SpeakerName": "Lilith",
     "Text": "That pigeon, what did he do?",
-    "SpritePath": "Insert Sprite Path Here.",
+    "SpritePath": "Lilith_Unhappy",
     "Choices": [
         {
             "Text": "Next Dialogue",

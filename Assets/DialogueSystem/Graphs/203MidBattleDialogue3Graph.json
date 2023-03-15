@@ -9,7 +9,7 @@
             "nodeID": "",
             "SpeakerName": "Lilith",
             "Text": "And this… is for thinking you’re good enough for Astrid!",
-            "SpritePath": "Insert Sprite Path Here.",
+            "SpritePath": "Lilith_Angry",
             "Choices": [
                 {
                     "Text": "Next Dialogue",
@@ -22,9 +22,9 @@
         {
             "DialogueName": "3",
             "nodeID": "",
-            "SpeakerName": "karl",
+            "SpeakerName": "Karl",
             "Text": "What?",
-            "SpritePath": "Insert Sprite Path Here.",
+            "SpritePath": "Neighbour_Sad",
             "Choices": [
                 {
                     "Text": "Next Dialogue",
@@ -37,9 +37,9 @@
         {
             "DialogueName": "1",
             "nodeID": "",
-            "SpeakerName": "karl",
+            "SpeakerName": "Karl",
             "Text": "Easy there, tiger.",
-            "SpritePath": "Insert Sprite Path Here.",
+            "SpritePath": "Neighbour_Happy",
             "Choices": [
                 {
                     "Text": "Next Dialogue",

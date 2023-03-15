@@ -3,7 +3,7 @@
     "nodeID": "",
     "SpeakerName": "Lilith",
     "Text": "Ah yes, my dear Hellhound, we meet again.",
-    "SpritePath": "Insert Sprite Path Here.",
+    "SpritePath": "Lilith_Smug",
     "Choices": [
         {
             "Text": "Next Dialogue",

@@ -3,7 +3,7 @@
     "nodeID": "",
     "SpeakerName": "Lilith",
     "Text": "And this… is for thinking you’re good enough for Astrid!",
-    "SpritePath": "Insert Sprite Path Here.",
+    "SpritePath": "Lilith_Angry",
     "Choices": [
         {
             "Text": "Next Dialogue",
