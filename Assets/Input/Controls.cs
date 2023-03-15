@@ -71,6 +71,15 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""List"",
+                    ""type"": ""Button"",
+                    ""id"": ""d97ad2b8-f7df-4e19-bb1c-f84abf4f606f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -209,7 +218,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""33f79ddb-b640-4567-8322-f0e61ece8b18"",
-                    ""path"": ""<Keyboard>/l"",
+                    ""path"": ""<Keyboard>/k"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -236,6 +245,28 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""38c31b09-c5e4-4b94-9cdb-b9b1851ddcd9"",
+                    ""path"": ""<Keyboard>/l"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""List"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ba64db1d-eb64-4a8f-9361-1d4d4eef8de6"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""List"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -530,6 +561,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         m_Ground_Dash = m_Ground.FindAction("Dash", throwIfNotFound: true);
         m_Ground_Interact = m_Ground.FindAction("Interact", throwIfNotFound: true);
         m_Ground_KillSelf = m_Ground.FindAction("KillSelf", throwIfNotFound: true);
+        m_Ground_List = m_Ground.FindAction("List", throwIfNotFound: true);
         // Menu
         m_Menu = asset.FindActionMap("Menu", throwIfNotFound: true);
         m_Menu_Pause = m_Menu.FindAction("Pause", throwIfNotFound: true);
@@ -604,6 +636,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
     private readonly InputAction m_Ground_Dash;
     private readonly InputAction m_Ground_Interact;
     private readonly InputAction m_Ground_KillSelf;
+    private readonly InputAction m_Ground_List;
     public struct GroundActions
     {
         private @Controls m_Wrapper;
@@ -613,6 +646,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         public InputAction @Dash => m_Wrapper.m_Ground_Dash;
         public InputAction @Interact => m_Wrapper.m_Ground_Interact;
         public InputAction @KillSelf => m_Wrapper.m_Ground_KillSelf;
+        public InputAction @List => m_Wrapper.m_Ground_List;
         public InputActionMap Get() { return m_Wrapper.m_Ground; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -637,6 +671,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @KillSelf.started -= m_Wrapper.m_GroundActionsCallbackInterface.OnKillSelf;
                 @KillSelf.performed -= m_Wrapper.m_GroundActionsCallbackInterface.OnKillSelf;
                 @KillSelf.canceled -= m_Wrapper.m_GroundActionsCallbackInterface.OnKillSelf;
+                @List.started -= m_Wrapper.m_GroundActionsCallbackInterface.OnList;
+                @List.performed -= m_Wrapper.m_GroundActionsCallbackInterface.OnList;
+                @List.canceled -= m_Wrapper.m_GroundActionsCallbackInterface.OnList;
             }
             m_Wrapper.m_GroundActionsCallbackInterface = instance;
             if (instance != null)
@@ -656,6 +693,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @KillSelf.started += instance.OnKillSelf;
                 @KillSelf.performed += instance.OnKillSelf;
                 @KillSelf.canceled += instance.OnKillSelf;
+                @List.started += instance.OnList;
+                @List.performed += instance.OnList;
+                @List.canceled += instance.OnList;
             }
         }
     }
@@ -765,6 +805,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         void OnDash(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
         void OnKillSelf(InputAction.CallbackContext context);
+        void OnList(InputAction.CallbackContext context);
     }
     public interface IMenuActions
     {

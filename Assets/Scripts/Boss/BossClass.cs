@@ -12,6 +12,7 @@ public class BossClass : MonoBehaviour
 
     public GameObject overHeadAttack;
     public GameObject straightAttack;
+    public GameObject lineAttack;
 
     public bossHealth health;
 
@@ -109,7 +110,7 @@ public class BossClass : MonoBehaviour
             float xOffset = Random.Range(-playerRadius, playerRadius);
             float zOffset = Random.Range(-playerRadius, playerRadius);
 
-            GameObject temp = Instantiate<GameObject>(overHeadAttack, player.transform.position + new Vector3(xOffset, 10, zOffset), Quaternion.identity);
+            GameObject temp = Instantiate<GameObject>(overHeadAttack, player.transform.position + new Vector3(xOffset, 10, zOffset), Quaternion.identity, transform);
             temp.GetComponent<BossProjectile>().SetSpeed(a.speed + 1);
             temp.GetComponent<BossProjectile>().SetDistance(a.timeAlive * 2);
         }
@@ -118,7 +119,7 @@ public class BossClass : MonoBehaviour
         {
             float zOffset = Random.Range(-10, 10);
 
-            GameObject temp = Instantiate<GameObject>(straightAttack, transform.position/* + new Vector3(0, 2, 0)*/, Quaternion.identity);    //previous spawn position spawned them underground and insta-despawned
+            GameObject temp = Instantiate<GameObject>(straightAttack, transform.position + new Vector3(0, 2, 0), Quaternion.identity, transform);    //previous spawn position spawned them underground and insta-despawned
             temp.GetComponent<BossProjectile>().SetSpeed(a.speed + 5);
             temp.GetComponent<BossProjectile>().SetDistance(a.timeAlive);
             Vector3 dir = player.transform.position - temp.transform.position;
@@ -126,6 +127,13 @@ public class BossClass : MonoBehaviour
             dir.z += zOffset;
             dir.x += zOffset;
             temp.GetComponent<BossProjectile>().SetDirection(dir.normalized);
+        }
+
+        else if(a.type == BossAttacks.ProjectileType.LINE)
+        {
+            GameObject temp = Instantiate<GameObject>(lineAttack, transform.position, Quaternion.identity, transform);    //previous spawn position spawned them underground and insta-despawned
+            temp.GetComponent<BossProjectile>().SetSpeed(a.speed + 5);
+            temp.GetComponent<BossProjectile>().SetDistance(a.timeAlive);
         }
     }
 
@@ -136,7 +144,7 @@ public class BossClass : MonoBehaviour
             float xOffset = offset;
             float zOffset = offset;
 
-            GameObject temp = Instantiate<GameObject>(overHeadAttack, player.transform.position + new Vector3(xOffset, 10, zOffset), Quaternion.identity);
+            GameObject temp = Instantiate<GameObject>(overHeadAttack, player.transform.position + new Vector3(xOffset, 10, zOffset), Quaternion.identity, transform);
             temp.GetComponent<BossProjectile>().SetSpeed(a.speed + 1);
             temp.GetComponent<BossProjectile>().SetDistance(a.timeAlive * 2);
         }
@@ -145,7 +153,7 @@ public class BossClass : MonoBehaviour
         {
             float zOffset = offset;
 
-            GameObject temp = Instantiate<GameObject>(straightAttack, transform.position/* + new Vector3(0, 2, 0)*/, Quaternion.identity);    //previous spawn position spawned them underground and insta-despawned
+            GameObject temp = Instantiate<GameObject>(straightAttack, transform.position + new Vector3(0, 2, 0), Quaternion.identity, transform);    //previous spawn position spawned them underground and insta-despawned
             temp.GetComponent<BossProjectile>().SetSpeed(a.speed + 5);
             temp.GetComponent<BossProjectile>().SetDistance(a.timeAlive);
             Vector3 dir = player.transform.position - temp.transform.position;
@@ -153,6 +161,13 @@ public class BossClass : MonoBehaviour
             dir.z += zOffset;
             dir.x += zOffset;
             temp.GetComponent<BossProjectile>().SetDirection(dir.normalized);
+        }
+
+        else if (a.type == BossAttacks.ProjectileType.LINE)
+        {
+            GameObject temp = Instantiate<GameObject>(lineAttack, transform.position, Quaternion.identity, transform);    //previous spawn position spawned them underground and insta-despawned
+            temp.GetComponent<BossProjectile>().SetSpeed(a.speed + 5);
+            temp.GetComponent<BossProjectile>().SetDistance(a.timeAlive);
         }
     }
 

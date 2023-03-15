@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1337283918968851369}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.063484, y: 0.08, z: 0.04}
+  m_LocalScale: {x: 0.075, y: 0.075, z: 0.075}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1337283920656425531}
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1f6378ddb688cc44eadb0c90eb6e5ec6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6b35964d6c5e3a84ca75e2a80769dc8e, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -135,14 +135,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1337283919670149635}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.27343908, y: -0, z: -0, w: 0.9618893}
   m_LocalPosition: {x: 0.057, y: 0.29, z: 0}
-  m_LocalScale: {x: 0.063484, y: 0.04, z: 0.04}
+  m_LocalScale: {x: 0.0666666, y: 0.44329956, z: 0.0666666}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1337283920656425531}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 31.738, y: 0, z: 0}
 --- !u!212 &1337283919670149645
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -184,7 +184,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1f6378ddb688cc44eadb0c90eb6e5ec6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6b35964d6c5e3a84ca75e2a80769dc8e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 1337283920656425508}
   - component: {fileID: 6450113446644680082}
   m_Layer: 6
-  m_Name: Steak
+  m_Name: Wide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -243,9 +243,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
-  isShakingCameraOnHit: 1
-  imOverHead: 1
-  dir: {x: 0, y: -1, z: 0}
+  isShakingCameraOnHit: 0
+  dir: {x: -1, y: 0, z: 0}
   destroyVFX: {fileID: 8083233970450910706, guid: d454ee8b73a9607428fe332e218baa54, type: 3}
 --- !u!65 &6450113446644680082
 BoxCollider:
@@ -258,5 +257,5 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.42, y: 0.6110236, z: 1.51}
+  m_Size: {x: 1.42, y: 0.6110236, z: 50}
   m_Center: {x: 0, y: 0.3, z: 0}

@@ -114,7 +114,7 @@ public class GameManager : MonoBehaviour
         frame.m_DeadZoneHeight = 0;
         frame.m_DeadZoneWidth = 0;
         cam.Follow = pos;
-        StartCoroutine(IncreaseCamSize(5));
+        StartCoroutine(IncreaseCamSize(6));
     }
 
     public void CamFollowPlayer()

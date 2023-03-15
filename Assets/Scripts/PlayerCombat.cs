@@ -18,6 +18,7 @@ public class PlayerCombat : ObjectScript
     public float attackRange = 2.0f;
     public LayerMask enemyLayers;
     public bool canBeDamaged = true;
+    public float invincivilityTime = 1f;
 
     public bool canAttack = true;
 
@@ -128,11 +129,19 @@ public class PlayerCombat : ObjectScript
             return;
         health -= _value;
         GetComponentInChildren<Animator>().SetTrigger("takeDamage");
+        canBeDamaged = false;
+        StartCoroutine(Invincible(invincivilityTime));
 
         if (health <= 0.0f)
         {
             OnDeath();
         }
+    }
+
+    IEnumerator Invincible(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        canBeDamaged = true;
     }
 
     private void OnDrawGizmosSelected()
