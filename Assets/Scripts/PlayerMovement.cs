@@ -172,8 +172,8 @@ public class PlayerMovement : MonoBehaviour
         right = null;
     }
 
-    public void Play(AudioClip clip)
+    public void Play(String name)
     {
-        AudioManager.instance.Play(clip);
+        AudioManager.instance.Play(name);
     }
 }

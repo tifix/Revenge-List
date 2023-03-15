@@ -7,7 +7,7 @@
         {
             "DialogueName": "0",
             "nodeID": "",
-            "SpeakerName": "Boss",
+            "SpeakerName": "Microwave",
             "Text": "...",
             "SpritePath": "regular_gnome 1",
             "Choices": [
@@ -22,7 +22,7 @@
         {
             "DialogueName": "1",
             "nodeID": "",
-            "SpeakerName": "Boss",
+            "SpeakerName": "Microwave",
             "Text": "\n\n\nFuck.",
             "SpritePath": "regular_gnome 1",
             "Choices": [

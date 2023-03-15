@@ -7,7 +7,7 @@
         {
             "DialogueName": "0",
             "nodeID": "",
-            "SpeakerName": "Boss",
+            "SpeakerName": "Microwave",
             "Text": "How... \nHow did you do that????!!!!!",
             "SpritePath": "regular_gnome 1",
             "Choices": [
@@ -22,7 +22,7 @@
         {
             "DialogueName": "1",
             "nodeID": "",
-            "SpeakerName": "Boss",
+            "SpeakerName": "Microwave",
             "Text": "This isn't over.\nCheck out my overhead attacks.\nThey home in on you.\nNo way for you to dodge them hahaha.",
             "SpritePath": "regular_gnome 1",
             "Choices": [

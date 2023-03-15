@@ -5,10 +5,10 @@
     },
     "UngroupedDialogues": [
         {
-            "DialogueName": "1",
+            "DialogueName": "0",
             "nodeID": "",
-            "SpeakerName": "Boss",
-            "Text": "Come here so i can beat you up",
+            "SpeakerName": "Microwave",
+            "Text": "Well, well, well... If it isn't little Lilith...",
             "SpritePath": "regular_gnome 1",
             "Choices": [
                 {
@@ -20,10 +20,10 @@
             "IsStartingDialogue": true
         },
         {
-            "DialogueName": "0",
+            "DialogueName": "1",
             "nodeID": "",
-            "SpeakerName": "Boss",
-            "Text": "Well, well, well... If it isn't little Lilith...",
+            "SpeakerName": "Microwave",
+            "Text": "Come here so i can beat you up",
             "SpritePath": "regular_gnome 1",
             "Choices": [
                 {

@@ -229,6 +229,7 @@ public class QTEManager : MonoBehaviour
             yield return new WaitForSeconds(1);
         }
         countDownUI.gameObject.SetActive(false);
+        countDownUI.SetText("");
         PlayerMovement.instance.PauseMovement();
         playQTE = true;
         isPlaying = true;
@@ -248,10 +249,10 @@ public class QTEManager : MonoBehaviour
                 UI.instance.AfterQTE_UI(comboCount);
             }
 
-            if (UI.instance.bossHealth.gameObject.TryGetComponent<KarlBoss>(out KarlBoss karl))
+            if (UI.instance.bossHealth.gameObject.TryGetComponent<BossClass>(out BossClass boss))
             { 
                 if(UI.instance.bossHealth.coreHealth > 0)
-                    karl.NextPhase(); 
+                    boss.NextPhase(); 
             }
 
             //Play the QTE won animation
@@ -267,7 +268,7 @@ public class QTEManager : MonoBehaviour
             {
                 UI.instance.AfterQTE_UI(comboCount);
             }
-            if (UI.instance.bossHealth.gameObject.TryGetComponent<KarlBoss>(out KarlBoss karl)) { karl.RepeatPhase(); }
+            if (UI.instance.bossHealth.gameObject.TryGetComponent<BossClass>(out BossClass boss)) { boss.RepeatPhase(); }
 
 
             //Play the QTE won animation

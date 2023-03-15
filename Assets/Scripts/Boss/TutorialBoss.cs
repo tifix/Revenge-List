@@ -8,6 +8,9 @@ public class TutorialBoss : BossClass
     public GameObject afterSecondAttackDialoguePrompt;
     public GameObject afterThirdAttackDialoguePrompt;
     public GameObject afterFourthAttackDialoguePrompt;
+    public GameObject afterFifthAttackDialoguePrompt;
+
+    public GameObject exitToNextScene;
 
     protected override void OnEnable()
     {
@@ -15,6 +18,7 @@ public class TutorialBoss : BossClass
         canAttack = false;
         StartCoroutine(FirstAttack());
         GetComponent<bossHealth>().canTakeDamage = false;
+        SetQTEandDialogueForRound(0);
     }
 
     protected override void Update()
@@ -84,6 +88,27 @@ public class TutorialBoss : BossClass
         {
             StartCoroutine(ThirdAttack());
         }
+
+        //After succesful QTE
+        if(currentPhase == 3)
+        {
+            StartCoroutine(base.Woosh(1f));
+            StartCoroutine(FourthAttack());
+        }
+    }
+
+    public override void NextPhase()
+    {
+        currentAttack = 0;
+        canAttack = false;
+        currentPhase = 3;
+        EndPhase();
+    }
+
+    public override void RepeatPhase()
+    {
+        currentAttack = 0;
+        canAttack = true;
     }
 
     //Throw 1 envelope and go to second phase
@@ -122,9 +147,36 @@ public class TutorialBoss : BossClass
         attackTimer = 0;
         yield return new WaitForSeconds(1f);
         base.Attack(phases[currentPhase].attacks[0], 0);
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
+        //ToDo- check if player took damage, if so repeat the attack
+        yield return new WaitForSeconds(2f);
         //After Screen-Wide attack
         afterFourthAttackDialoguePrompt.SetActive(true);
         GetComponent<bossHealth>().canTakeDamage = true;
+    }
+
+    IEnumerator FourthAttack()
+    {
+        yield return new WaitForSeconds(2f);
+        afterFifthAttackDialoguePrompt.SetActive(true);
+        player.SetLockMovement();
+        GameManager.instance.CallShake(1, 0.5f);
+        yield return new WaitForSeconds(1f);
+        //Fade to black, anim in UI
+        GameManager.instance.CallShake(1, 0.5f);
+        UI.instance.FadeOut();
+        yield return new WaitForSeconds(1f);
+        //SFX broken glass
+        GameManager.instance.CallShake(1, 0.5f);
+        //AudioManager.instance.Play("GlassSfx");
+        //Activate trigger to leave to next scene
+        exitToNextScene.SetActive(true);
+        //Fade in, anim in UI
+        UI.instance.FadeIn();
+        GameManager.instance.LockCamera(player.transform);
+        player.ReleaseBind();
+        player.SetUnLockMovement();
+        //Remove boss
+        gameObject.SetActive(false);
     }
 }

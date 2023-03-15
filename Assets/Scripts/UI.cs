@@ -12,6 +12,7 @@ using TMPro;
 public class UI : MonoBehaviour
 {
     Controls input;
+    [SerializeField]Animator anim;
     public static UI instance;                                                                      //globally accessible reference to this script to remotely invoke it's public methods
     
     [Tooltip("Drop Dialogue Data here to be displayed")] public DSGraphSaveDataSO dialogueCur;               //Dialogue data to be displayed
@@ -45,8 +46,6 @@ public class UI : MonoBehaviour
     {
         if (instance == null) instance = this;
         else Destroy(this);
-
-        
 
         input = new Controls();                         //Initialising inputs
         input.Menu.Pause.performed += InputPause;
@@ -320,7 +319,15 @@ public class UI : MonoBehaviour
         isWaiting = false;
     }
 
+    public void FadeOut()
+    {
+        anim.SetTrigger("Out");
+    }
 
+    public void FadeIn()
+    {
+        anim.SetTrigger("In");
+    }
 
     #region buttons and element toggles
     public void TogglePauseMenu() { boxPause.SetActive(!boxPause.activeInHierarchy); GameManager.instance.TogglePause(); }     //Toggle pause menu

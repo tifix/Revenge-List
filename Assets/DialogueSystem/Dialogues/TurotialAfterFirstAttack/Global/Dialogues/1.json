@@ -1,7 +1,7 @@
 {
     "DialogueName": "1",
     "nodeID": "",
-    "SpeakerName": "Boss",
+    "SpeakerName": "Microwave",
     "Text": "Tremble in fear.\nI am far too powerful for you",
     "SpritePath": "regular_gnome 1",
     "Choices": [

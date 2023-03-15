@@ -17,7 +17,7 @@ MonoBehaviour:
   Nodes:
   - ID: 7ef43a50-3fff-49a1-b0f3-f4a194c44f08
     Name: 0
-    SpeakerName: Boss
+    SpeakerName: Microwave
     Text: 'No, no, no, noooooooooo!!!!!!!
 
       This can''t be it.'
@@ -32,7 +32,7 @@ MonoBehaviour:
     - f8524d68-1548-4352-bb81-e8ea2bddb11a
   - ID: f8524d68-1548-4352-bb81-e8ea2bddb11a
     Name: 1
-    SpeakerName: Boss
+    SpeakerName: Microwave
     Text: 'This is my final attack Lilith...
 
       Dodge if you can'

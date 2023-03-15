@@ -1,7 +1,7 @@
 {
     "DialogueName": "1",
     "nodeID": "",
-    "SpeakerName": "Boss",
+    "SpeakerName": "Microwave",
     "Text": "Come here so i can beat you up",
     "SpritePath": "regular_gnome 1",
     "Choices": [
