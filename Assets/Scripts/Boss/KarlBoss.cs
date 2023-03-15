@@ -11,7 +11,7 @@ public class KarlBoss : BossClass
     protected override void OnEnable()
     {
         base.OnEnable();
-        StartParticles();
+        Invoke("StartParticles", 0.5f); //Tiny delay so animations are in sync
     }
 
     protected override void Update()
@@ -97,12 +97,14 @@ public class KarlBoss : BossClass
     {
         base.EndPhase();
         StopParticles();
+        anim.SetBool("Vulnerable", true);
     }
 
     public override void NextPhase()
     {
         base.NextPhase();
         ChangeAttack();
+        anim.SetBool("Vulnerable", false);
     }
 
     public override void RepeatPhase()
