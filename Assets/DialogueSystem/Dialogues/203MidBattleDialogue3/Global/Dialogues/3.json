@@ -1,8 +1,8 @@
 {
-    "DialogueName": "1",
+    "DialogueName": "3",
     "nodeID": "",
     "SpeakerName": "karl",
-    "Text": "Ouch, that hurts.",
+    "Text": "What?",
     "SpritePath": "Insert Sprite Path Here.",
     "Choices": [
         {
@@ -11,5 +11,5 @@
         }
     ],
     "DialogueType": 0,
-    "IsStartingDialogue": true
+    "IsStartingDialogue": false
 }

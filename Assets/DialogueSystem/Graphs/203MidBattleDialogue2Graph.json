@@ -1,5 +1,5 @@
 {
-    "FileName": "202MidBattleDialogue",
+    "FileName": "203MidBattleDialogue2",
     "DialogueGroups": {
         "list": []
     },
@@ -7,8 +7,8 @@
         {
             "DialogueName": "2",
             "nodeID": "",
-            "SpeakerName": "Lilith",
-            "Text": "This is for not returning those eggs you borrowed!",
+            "SpeakerName": "karl",
+            "Text": "I told you, you should come to the next one! It’s this Thursday! It’s gonna be crab-ulous!",
             "SpritePath": "Insert Sprite Path Here.",
             "Choices": [
                 {
@@ -23,7 +23,7 @@
             "DialogueName": "1",
             "nodeID": "",
             "SpeakerName": "karl",
-            "Text": "Ouch, that hurts.",
+            "Text": "Lily, be honest. Is this about that crayfish party we didn’t invite you to?",
             "SpritePath": "Insert Sprite Path Here.",
             "Choices": [
                 {
@@ -33,21 +33,6 @@
             ],
             "DialogueType": 0,
             "IsStartingDialogue": true
-        },
-        {
-            "DialogueName": "3",
-            "nodeID": "",
-            "SpeakerName": "karl",
-            "Text": "What?",
-            "SpritePath": "Insert Sprite Path Here.",
-            "Choices": [
-                {
-                    "Text": "Next Dialogue",
-                    "nextID": ""
-                }
-            ],
-            "DialogueType": 0,
-            "IsStartingDialogue": false
         }
     ]
 }

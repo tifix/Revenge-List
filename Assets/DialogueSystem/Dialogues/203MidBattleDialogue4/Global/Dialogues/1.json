@@ -2,7 +2,7 @@
     "DialogueName": "1",
     "nodeID": "",
     "SpeakerName": "karl",
-    "Text": "Ouch, that hurts.",
+    "Text": "Could you stop? You’re actually hurting me!",
     "SpritePath": "Insert Sprite Path Here.",
     "Choices": [
         {

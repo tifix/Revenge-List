@@ -10,54 +10,42 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 330ce6680441e444f96079c0bb98687a, type: 3}
-  m_Name: 202MidBattleDialogueGraph
+  m_Name: 203MidBattleDialogue2Graph
   m_EditorClassIdentifier: 
-  FileName: 202MidBattleDialogue
+  FileName: 203MidBattleDialogue2
   Groups: []
   Nodes:
   - ID: bcbe09ec-77c4-4a17-b2b9-3cb8ac541e60
     Name: 2
-    SpeakerName: Lilith
-    Text: This is for not returning those eggs you borrowed!
-    SpritePath: Insert Sprite Path Here.
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 6997305e-4280-4afa-a197-41f9385d02f5
-    GroupID: 
-    Position: {x: 2050, y: -378}
-    isStartNode: 0
-    ChildIDs:
-    - 6997305e-4280-4afa-a197-41f9385d02f5
-  - ID: b0ea595f-9c29-41fd-a531-d7fdac793a97
-    Name: 1
     SpeakerName: karl
-    Text: Ouch, that hurts.
-    SpritePath: Insert Sprite Path Here.
-    Choices:
-    - Text: Next Dialogue
-      NodeID: bcbe09ec-77c4-4a17-b2b9-3cb8ac541e60
-    GroupID: 
-    Position: {x: 1772, y: -383}
-    isStartNode: 1
-    ChildIDs:
-    - bcbe09ec-77c4-4a17-b2b9-3cb8ac541e60
-  - ID: 6997305e-4280-4afa-a197-41f9385d02f5
-    Name: 3
-    SpeakerName: karl
-    Text: What?
+    Text: "I told you, you should come to the next one! It\u2019s this Thursday!
+      It\u2019s gonna be crab-ulous!"
     SpritePath: Insert Sprite Path Here.
     Choices:
     - Text: Next Dialogue
       NodeID: 
     GroupID: 
-    Position: {x: 2390, y: -372}
+    Position: {x: 2050, y: -378}
     isStartNode: 0
     ChildIDs:
     - 
+  - ID: b0ea595f-9c29-41fd-a531-d7fdac793a97
+    Name: 1
+    SpeakerName: karl
+    Text: "Lily, be honest. Is this about that crayfish party we didn\u2019t invite
+      you to?"
+    SpritePath: Insert Sprite Path Here.
+    Choices:
+    - Text: Next Dialogue
+      NodeID: bcbe09ec-77c4-4a17-b2b9-3cb8ac541e60
+    GroupID: 
+    Position: {x: 1607, y: -374}
+    isStartNode: 1
+    ChildIDs:
+    - bcbe09ec-77c4-4a17-b2b9-3cb8ac541e60
   OldGroupNames: []
   OldUngroupedNodeNames:
   - 2
   - 1
-  - 3
   OldGroupNodeNames:
     list: []

@@ -1,5 +1,5 @@
 {
-    "FileName": "202MidBattleDialogue",
+    "FileName": "203MidBattleDialogue3",
     "DialogueGroups": {
         "list": []
     },
@@ -8,7 +8,7 @@
             "DialogueName": "2",
             "nodeID": "",
             "SpeakerName": "Lilith",
-            "Text": "This is for not returning those eggs you borrowed!",
+            "Text": "And this… is for thinking you’re good enough for Astrid!",
             "SpritePath": "Insert Sprite Path Here.",
             "Choices": [
                 {
@@ -18,21 +18,6 @@
             ],
             "DialogueType": 0,
             "IsStartingDialogue": false
-        },
-        {
-            "DialogueName": "1",
-            "nodeID": "",
-            "SpeakerName": "karl",
-            "Text": "Ouch, that hurts.",
-            "SpritePath": "Insert Sprite Path Here.",
-            "Choices": [
-                {
-                    "Text": "Next Dialogue",
-                    "nextID": ""
-                }
-            ],
-            "DialogueType": 0,
-            "IsStartingDialogue": true
         },
         {
             "DialogueName": "3",
@@ -48,6 +33,21 @@
             ],
             "DialogueType": 0,
             "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "1",
+            "nodeID": "",
+            "SpeakerName": "karl",
+            "Text": "Easy there, tiger.",
+            "SpritePath": "Insert Sprite Path Here.",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": true
         }
     ]
 }

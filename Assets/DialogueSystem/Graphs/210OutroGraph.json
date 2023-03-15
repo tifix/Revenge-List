@@ -1,29 +1,14 @@
 {
-    "FileName": "202MidBattleDialogue",
+    "FileName": "210Outro",
     "DialogueGroups": {
         "list": []
     },
     "UngroupedDialogues": [
         {
-            "DialogueName": "2",
-            "nodeID": "",
-            "SpeakerName": "Lilith",
-            "Text": "This is for not returning those eggs you borrowed!",
-            "SpritePath": "Insert Sprite Path Here.",
-            "Choices": [
-                {
-                    "Text": "Next Dialogue",
-                    "nextID": ""
-                }
-            ],
-            "DialogueType": 0,
-            "IsStartingDialogue": false
-        },
-        {
             "DialogueName": "1",
             "nodeID": "",
-            "SpeakerName": "karl",
-            "Text": "Ouch, that hurts.",
+            "SpeakerName": "Lilith",
+            "Text": "Okay, Karl. Maybe you were right. Maybe he really is your dog. But you're my bitch.",
             "SpritePath": "Insert Sprite Path Here.",
             "Choices": [
                 {
@@ -35,10 +20,40 @@
             "IsStartingDialogue": true
         },
         {
-            "DialogueName": "3",
+            "DialogueName": "DialogueName",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "QUIET!",
+            "SpritePath": "Insert Sprite Path Here.",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "2",
             "nodeID": "",
             "SpeakerName": "karl",
-            "Text": "What?",
+            "Text": "That's not a nice thing to say.",
+            "SpritePath": "Insert Sprite Path Here.",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "4",
+            "nodeID": "",
+            "SpeakerName": "karl",
+            "Text": "...",
             "SpritePath": "Insert Sprite Path Here.",
             "Choices": [
                 {
