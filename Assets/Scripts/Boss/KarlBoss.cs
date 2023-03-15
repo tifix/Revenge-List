@@ -11,7 +11,9 @@ public class KarlBoss : BossClass
     protected override void OnEnable()
     {
         base.OnEnable();
-        StartParticles();
+        if (anim == null) anim = GetComponentInChildren<Animator>();
+        AudioManager.instance.PlayMusic("BossTrack");
+        Invoke("StartParticles", 0.5f); //Tiny delay so animations are in sync
     }
 
     protected override void Update()
@@ -78,12 +80,14 @@ public class KarlBoss : BossClass
                     //Show the throwing animation for overhead attacks
                     anim.SetTrigger("attackFlipping");
                     animCookTime = overHeadAnimationDelay;
+                    //AudioManager.instance.PlaySFX("Flip");
                     break; 
                 }
             case (BossAttacks.ProjectileType.STRAIGHT):
                 {
                     //Show the throwing animation for overhead attacks
                     anim.SetTrigger("attackThrowing");
+                    AudioManager.instance.PlaySFX("Throw");
                     animCookTime = straightAnimationDelay;
                     break;
                 }
@@ -97,12 +101,14 @@ public class KarlBoss : BossClass
     {
         base.EndPhase();
         StopParticles();
+        anim.SetBool("Vulnerable", true);
     }
 
     public override void NextPhase()
     {
         base.NextPhase();
         ChangeAttack();
+        anim.SetBool("Vulnerable", false);
     }
 
     public override void RepeatPhase()

@@ -121,7 +121,7 @@ public class PlayerMovement : MonoBehaviour
     {
         try
         {
-            AudioManager.instance.Play("DashMC");
+            AudioManager.instance.PlaySFX("DashMC");
         }
         catch(Exception e)
         {
@@ -174,6 +174,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void Play(String name)
     {
-        AudioManager.instance.Play(name);
+        AudioManager.instance.PlaySFX(name);
     }
 }

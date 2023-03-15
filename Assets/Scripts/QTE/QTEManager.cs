@@ -246,7 +246,7 @@ public class QTEManager : MonoBehaviour
             {
                 UI.instance.bossHealth.coreHealth -= UI.instance.bossHealth.damageQTEcomplete;
                 UI.instance.bossHealth.coreHealth -= comboCount * UI.instance.bossHealth.damageQTEcomboMultiplier;
-                UI.instance.AfterQTE_UI(comboCount);
+                UI.instance.CleanupHealthBoss(comboCount);
             }
 
             if (UI.instance.bossHealth.gameObject.TryGetComponent<BossClass>(out BossClass boss))
@@ -258,6 +258,7 @@ public class QTEManager : MonoBehaviour
             //Play the QTE won animation
             anim.SetBool("QTE_Playing", false);
             anim.SetBool("QTE_Won", true);
+            AudioManager.instance.PlayMusic("BossTrack");
         }
 
         //Lose - Repeat phase
@@ -266,7 +267,7 @@ public class QTEManager : MonoBehaviour
             Debug.LogWarning("too bad, repeat the phase");
             if (UI.instance.bossHealth != null)
             {
-                UI.instance.AfterQTE_UI(comboCount);
+                UI.instance.CleanupHealthBoss(comboCount);
             }
             if (UI.instance.bossHealth.gameObject.TryGetComponent<BossClass>(out BossClass boss)) { boss.RepeatPhase(); }
 

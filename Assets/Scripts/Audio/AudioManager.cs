@@ -1,11 +1,12 @@
-using UnityEngine.Audio;
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
 
     public AudioSource musicSource;
+    public AudioSource musicSource2;
     public AudioSource sfxSource;
 
     //private float lowPitchRange = .95f;
@@ -18,6 +19,10 @@ public class AudioManager : MonoBehaviour
     public AudioClip BgMusic;
     public AudioClip BossTrack;
     public AudioClip MenuClick;
+    public AudioClip QteTrack;
+    public AudioClip EnvelopeThrow;
+    public AudioClip KickSFX;
+    public AudioClip FlipSFX;
 
 
     private void Awake()
@@ -60,7 +65,7 @@ public class AudioManager : MonoBehaviour
         musicSource.clip = clip;
         musicSource.Play();
     }
-    public void Play(String name)
+    public void PlaySFX(String name)
     {
         switch (name)
         {
@@ -73,6 +78,26 @@ public class AudioManager : MonoBehaviour
             case "Dash":
                 sfxSource.clip = DashMC;
                 break;
+            case "Throw":
+                sfxSource.clip = EnvelopeThrow;
+                break;
+            case "Flip":
+                sfxSource.clip = FlipSFX;
+                break;
+            case "Kick":
+                sfxSource.clip = KickSFX;
+                break;
+            default:
+                Debug.LogWarning("Incorrect name " + name + " check spelling");
+                break;
+        }
+
+        sfxSource.Play();
+    }
+    public void PlayMusic(String name)
+    {
+        switch (name)
+        {
             case "BossTrack":
                 musicSource.volume = 1f;
                 musicSource.clip = BossTrack;
@@ -81,12 +106,40 @@ public class AudioManager : MonoBehaviour
                 musicSource.volume = 0.5f;
                 musicSource.clip = BgMusic;
                 break;
+            case "QteTrack":
+                musicSource.volume = 1.0f;
+                musicSource.clip = QteTrack;
+                break;
             default:
                 Debug.LogWarning("Incorrect name " + name + " check spelling");
                 break;
         }
 
         musicSource.Play();
-        sfxSource.Play();
+    }
+
+    public void SwapMusic(String name)
+    {
+        switch (name)
+        {
+            case "BossTrack":
+                musicSource2.volume = 1f;
+                musicSource.clip = BossTrack;
+                break;
+            case "BgMusic":
+                musicSource2.volume = 0.5f;
+                musicSource.clip = BgMusic;
+                break;
+            case "QteTrack":
+                musicSource2.volume = 1.0f;
+                musicSource.clip = QteTrack;
+                break;
+            default:
+                Debug.LogWarning("Incorrect name " + name + " check spelling");
+                break;
+        }
+
+        musicSource.Stop();
+        musicSource2.Play();
     }
 }
