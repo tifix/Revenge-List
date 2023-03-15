@@ -1,10 +1,12 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
 
     public AudioSource musicSource;
+    public AudioSource musicSource2;
     public AudioSource sfxSource;
 
     //private float lowPitchRange = .95f;
@@ -114,5 +116,30 @@ public class AudioManager : MonoBehaviour
         }
 
         musicSource.Play();
+    }
+
+    public void SwapMusic(String name)
+    {
+        switch (name)
+        {
+            case "BossTrack":
+                musicSource2.volume = 1f;
+                musicSource.clip = BossTrack;
+                break;
+            case "BgMusic":
+                musicSource2.volume = 0.5f;
+                musicSource.clip = BgMusic;
+                break;
+            case "QteTrack":
+                musicSource2.volume = 1.0f;
+                musicSource.clip = QteTrack;
+                break;
+            default:
+                Debug.LogWarning("Incorrect name " + name + " check spelling");
+                break;
+        }
+
+        musicSource.Stop();
+        musicSource2.Play();
     }
 }
