@@ -1253,9 +1253,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Production, writing, \t\tMilla Keski-Santti\r\nArt Lead, game design,
-    writing\tAlessandro Brillo\r\nProgramming lead, game design\tMikolaj Czarnecki\nProgramming\t\t\tDave
-    Burns\nProgramming, marketing\t\tAntonio Villalta Isidro\r\nEnvironment art\t\tMairi
-    Angiolini\r\nCharacter Art\r\t\t\tShiyuan Jiao\r\nAnimations\t\t\tRachel Brown\r\n"
+    writing\tAlessandro Brillo\r\nProgramming lead, game design\tMikolaj Czarnecki\nProgramming,
+    audio design\t\tDave Burns\nProgramming, marketing\t\tAntonio Villalta Isidro\r\nEnvironment
+    art\t\tMairi Angiolini\r\nCharacter Art\r\t\t\tShiyuan Jiao\r\nAnimations\t\t\tRachel
+    Brown\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 11bc8c858a99c7c4683b0067f24b967a, type: 2}
   m_sharedMaterial: {fileID: 3522528611470643922, guid: 11bc8c858a99c7c4683b0067f24b967a, type: 2}
