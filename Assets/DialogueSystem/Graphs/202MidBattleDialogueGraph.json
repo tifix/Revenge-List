@@ -5,10 +5,25 @@
     },
     "UngroupedDialogues": [
         {
+            "DialogueName": "2",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "This is for not returning those eggs you borrowed!",
+            "SpritePath": "Insert Sprite Path Here.",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
             "DialogueName": "1",
             "nodeID": "",
             "SpeakerName": "karl",
-            "Text": "Well that hurt",
+            "Text": "Ouch, that hurts.",
             "SpritePath": "Insert Sprite Path Here.",
             "Choices": [
                 {
@@ -18,6 +33,21 @@
             ],
             "DialogueType": 0,
             "IsStartingDialogue": true
+        },
+        {
+            "DialogueName": "3",
+            "nodeID": "",
+            "SpeakerName": "karl",
+            "Text": "What?",
+            "SpritePath": "Insert Sprite Path Here.",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
         }
     ]
 }

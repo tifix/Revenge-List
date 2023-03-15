@@ -11,9 +11,9 @@ public class KarlBoss : BossClass
     protected override void OnEnable()
     {
         base.OnEnable();
-        StartParticles();
         if (anim == null) anim = GetComponentInChildren<Animator>();
         AudioManager.instance.PlayMusic("BossTrack");
+        Invoke("StartParticles", 0.5f); //Tiny delay so animations are in sync
     }
 
     protected override void Update()

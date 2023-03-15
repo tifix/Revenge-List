@@ -1,0 +1,15 @@
+{
+    "DialogueName": "3",
+    "nodeID": "",
+    "SpeakerName": "karl",
+    "Text": "What?",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

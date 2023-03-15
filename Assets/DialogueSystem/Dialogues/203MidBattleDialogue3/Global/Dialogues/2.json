@@ -1,0 +1,15 @@
+{
+    "DialogueName": "2",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "And this… is for thinking you’re good enough for Astrid!",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

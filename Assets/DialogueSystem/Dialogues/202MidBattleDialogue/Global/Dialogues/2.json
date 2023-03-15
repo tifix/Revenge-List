@@ -1,0 +1,15 @@
+{
+    "DialogueName": "2",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "This is for not returning those eggs you borrowed!",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

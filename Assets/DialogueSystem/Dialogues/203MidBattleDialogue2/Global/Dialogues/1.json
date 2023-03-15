@@ -1,0 +1,15 @@
+{
+    "DialogueName": "1",
+    "nodeID": "",
+    "SpeakerName": "karl",
+    "Text": "Lily, be honest. Is this about that crayfish party we didn’t invite you to?",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": true
+}

@@ -1,0 +1,38 @@
+{
+    "FileName": "203MidBattleDialogue4",
+    "DialogueGroups": {
+        "list": []
+    },
+    "UngroupedDialogues": [
+        {
+            "DialogueName": "1",
+            "nodeID": "",
+            "SpeakerName": "karl",
+            "Text": "Could you stop? You’re actually hurting me!",
+            "SpritePath": "Insert Sprite Path Here.",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": true
+        },
+        {
+            "DialogueName": "2",
+            "nodeID": "",
+            "SpeakerName": "karl",
+            "Text": "You know what, come to the party! Have the steaks! You’re still my neighbour after all!",
+            "SpritePath": "Insert Sprite Path Here.",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        }
+    ]
+}

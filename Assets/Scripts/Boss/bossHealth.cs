@@ -14,7 +14,7 @@ public class bossHealth : ObjectScript
     {
         base.OnEnable();
         UI.instance.bossHealth = this;
-        UI.instance.BossInitialiseHealthBar(this);
+        UI.instance.InitialiseHealthBoss(this);
     }
 
     public override void ApplyDamage(float _value)

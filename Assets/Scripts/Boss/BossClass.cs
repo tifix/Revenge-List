@@ -42,6 +42,7 @@ public class BossClass : MonoBehaviour
         player = FindObjectOfType<PlayerMovement>();
         knockbackPosition = new Vector3(camCenter.position.x, player.transform.position.y, camCenter.position.z);
         if (anim == null) anim = GetComponentInChildren<Animator>();
+        AudioManager.instance.Play("BossTrack");
     }
 
     protected virtual void Update()
