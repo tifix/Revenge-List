@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class KarlBoss : BossClass
 {
-    public GameObject comeHere;
     public GameObject fireWall;
 
     protected override void OnEnable()
