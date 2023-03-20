@@ -1,0 +1,15 @@
+{
+    "DialogueName": "50",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "Anyway…\nYou give me no choice but to kill…",
+    "SpritePath": "Lilith_Smug",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

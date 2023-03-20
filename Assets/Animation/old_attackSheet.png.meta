@@ -1,0 +1,1174 @@
+fileFormatVersion: 2
+guid: d0e03511605dcdb4fae94a9fcbba94f4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5600
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd7042a9809bebe44a80cbb93701a95f
+      internalID: 222530294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_1
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 5600
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e45bd7ceb91914ca36a4cbc4b162a7
+      internalID: -1948981001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_2
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 5600
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b91c4b3a42fca45af46933dc9b64c6
+      internalID: -1527615303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_3
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 5600
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f3a23101f6da04d8399c685e8cac7c
+      internalID: 4247425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_4
+      rect:
+        serializedVersion: 2
+        x: 4596
+        y: 5600
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc3de046b2665844aac5fb32dee4452
+      internalID: 2120263623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_5
+      rect:
+        serializedVersion: 2
+        x: 5745
+        y: 5600
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b1d1c0f16773845a61104396e9607e
+      internalID: -1831055102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4800
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3f6f073659d6f48b1fe04e92ee2d7f
+      internalID: -992450787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_7
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 4800
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8febb2f5b5c5e614f982be284c0dced2
+      internalID: -168429476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_8
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 4800
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe2e06205d52c741884528c27ad8459
+      internalID: -1441386943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_9
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 4800
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c92f611ba6f6d42b66e3c00a459ad4
+      internalID: -22892773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_10
+      rect:
+        serializedVersion: 2
+        x: 4596
+        y: 4800
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b862704b9357dc448cbcd238b09e7f9
+      internalID: 1140024636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_11
+      rect:
+        serializedVersion: 2
+        x: 5745
+        y: 4800
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b348d10f2149c64aae1bd0691aeb0d0
+      internalID: 1116115353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4000
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d851d390bdc8dc4eb83785a9fa098bb
+      internalID: 1235317070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_13
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 4000
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5466ac7c71b3124fb7ef0cc97fe1e0e
+      internalID: -890901793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_14
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 4000
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5525ff7a2e901564582bf27f0212a782
+      internalID: 75963978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_15
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 4000
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11713a553b1b69b44bf4fec8cb7c1451
+      internalID: 226396806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_16
+      rect:
+        serializedVersion: 2
+        x: 4596
+        y: 4000
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ccf51c92a8da941af41fe356e8a8f1
+      internalID: -494069435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_17
+      rect:
+        serializedVersion: 2
+        x: 5745
+        y: 4000
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59594ddfdd4fb64a9b9d01ca53d74df
+      internalID: -315877453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3200
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 944610f63354d4a4480abe9fa81e5907
+      internalID: -398135352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_19
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 3200
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83fbd1d135a6240489b2bb10b0462692
+      internalID: -45453152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_20
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 3200
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8da74e6ef92a149a1dc8e2c0cfc166
+      internalID: -555854909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_21
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 3200
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae7a5b33d194a624ba8389c5ed46b467
+      internalID: -1773689562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_22
+      rect:
+        serializedVersion: 2
+        x: 4596
+        y: 3200
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6237bbd974a8c014ca248128f95c4c85
+      internalID: 1743248506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_23
+      rect:
+        serializedVersion: 2
+        x: 5745
+        y: 3200
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abbb6a2db627d6949b111649721b4e8f
+      internalID: -746563733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2400
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf0460e7ad62d54fb8495df45a8d0d1
+      internalID: -1228247457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_25
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 2400
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e827e82ba457c4baadf021bcc46a4d
+      internalID: -1390387124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_26
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 2400
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a2c241561b7f1541b000598c1b2b93c
+      internalID: 490443716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_27
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 2400
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d50fea2e28bfd418c90004101f75d9
+      internalID: 561538281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_28
+      rect:
+        serializedVersion: 2
+        x: 4596
+        y: 2400
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be8b003bd73d494ba2b414c4c0d8878
+      internalID: -1122680122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_29
+      rect:
+        serializedVersion: 2
+        x: 5745
+        y: 2400
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc27cef8a7b4f14e80d3ff8970a0a8b
+      internalID: -450701697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1600
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda1eb07b50b6904a915cde5dbca8982
+      internalID: -1442108629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_31
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 1600
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e10637d7e73a1a47a728f3ba54d665c
+      internalID: -1575137773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_32
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 1600
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eda0826e72879f441a4361dccabc135c
+      internalID: 1450777584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_33
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 1600
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b24e77ea04a9f4ca27d15ff82e9bb0
+      internalID: 1123050372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_34
+      rect:
+        serializedVersion: 2
+        x: 4596
+        y: 1600
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8fea60cf298584cb746b52d81c8d6b
+      internalID: 1306530321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316db6d39c065914ba247d6704370bd3
+      internalID: 116120681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_36
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 800
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 431540b78cd40f540977efa1289f89cf
+      internalID: 856269950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_37
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 800
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a96ea8f43bec4474bafb178267694559
+      internalID: 1657122936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_38
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 800
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 253c7ca5759ab424b8d216e231382933
+      internalID: 638965561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_39
+      rect:
+        serializedVersion: 2
+        x: 4596
+        y: 800
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74fd36e650b3be44b9fb3520800d21a4
+      internalID: 1824993265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb6435bffc86a149bef454907731dae
+      internalID: 116491777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_41
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 0
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13fc8dd5e7298447aa8cd68ebc7b362
+      internalID: -591032126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_42
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 0
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638f68b3313a4684b9c1f41f8af9fed0
+      internalID: 844190210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_43
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 0
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b5e04ea4cd9514ebe0368f34ed4a6c
+      internalID: -428928385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lil_Attack_Full_Spritesheet_rough_44
+      rect:
+        serializedVersion: 2
+        x: 4596
+        y: 0
+        width: 1149
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f2579adc0ec2a4784205535a3d1384
+      internalID: -2005826736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      lil_Attack_Full_Spritesheet_rough_34: 1306530321
+      lil_Attack_Full_Spritesheet_rough_42: 844190210
+      lil_Attack_Full_Spritesheet_rough_41: -591032126
+      lil_Attack_Full_Spritesheet_rough_31: -1575137773
+      lil_Attack_Full_Spritesheet_rough_15: 226396806
+      lil_Attack_Full_Spritesheet_rough_43: -428928385
+      lil_Attack_Full_Spritesheet_rough_11: 1116115353
+      lil_Attack_Full_Spritesheet_rough_12: 1235317070
+      lil_Attack_Full_Spritesheet_rough_40: 116491777
+      lil_Attack_Full_Spritesheet_rough_23: -746563733
+      lil_Attack_Full_Spritesheet_rough_25: -1390387124
+      lil_Attack_Full_Spritesheet_rough_21: -1773689562
+      lil_Attack_Full_Spritesheet_rough_27: 561538281
+      lil_Attack_Full_Spritesheet_rough_0: 222530294
+      lil_Attack_Full_Spritesheet_rough_39: 1824993265
+      lil_Attack_Full_Spritesheet_rough_44: -2005826736
+      lil_Attack_Full_Spritesheet_rough_22: 1743248506
+      lil_Attack_Full_Spritesheet_rough_24: -1228247457
+      lil_Attack_Full_Spritesheet_rough_20: -555854909
+      lil_Attack_Full_Spritesheet_rough_28: -1122680122
+      lil_Attack_Full_Spritesheet_rough_10: 1140024636
+      lil_Attack_Full_Spritesheet_rough_33: 1123050372
+      lil_Attack_Full_Spritesheet_rough_26: 490443716
+      lil_Attack_Full_Spritesheet_rough_8: -1441386943
+      lil_Attack_Full_Spritesheet_rough_30: -1442108629
+      lil_Attack_Full_Spritesheet_rough_32: 1450777584
+      lil_Attack_Full_Spritesheet_rough_5: -1831055102
+      lil_Attack_Full_Spritesheet_rough_1: -1948981001
+      lil_Attack_Full_Spritesheet_rough_13: -890901793
+      lil_Attack_Full_Spritesheet_rough_35: 116120681
+      lil_Attack_Full_Spritesheet_rough_19: -45453152
+      lil_Attack_Full_Spritesheet_rough_38: 638965561
+      lil_Attack_Full_Spritesheet_rough_3: 4247425
+      lil_Attack_Full_Spritesheet_rough_14: 75963978
+      lil_Attack_Full_Spritesheet_rough_29: -450701697
+      lil_Attack_Full_Spritesheet_rough_17: -315877453
+      lil_Attack_Full_Spritesheet_rough_16: -494069435
+      lil_Attack_Full_Spritesheet_rough_37: 1657122936
+      lil_Attack_Full_Spritesheet_rough_9: -22892773
+      lil_Attack_Full_Spritesheet_rough_6: -992450787
+      lil_Attack_Full_Spritesheet_rough_4: 2120263623
+      lil_Attack_Full_Spritesheet_rough_2: -1527615303
+      lil_Attack_Full_Spritesheet_rough_36: 856269950
+      lil_Attack_Full_Spritesheet_rough_7: -168429476
+      lil_Attack_Full_Spritesheet_rough_18: -398135352
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

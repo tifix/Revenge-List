@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330ce6680441e444f96079c0bb98687a, type: 3}
+  m_Name: 211OutroGraph
+  m_EditorClassIdentifier: 
+  FileName: 211Outro
+  Groups: []
+  Nodes:
+  - ID: 981c9927-e1d3-4d5c-9100-ef63e4228ca9
+    Name: 2
+    SpeakerName: karl
+    Text: "It seems I did both\u2026"
+    SpritePath: Neighbour_Laughing
+    Choices:
+    - Text: Next Dialogue
+      NodeID: fe4e0406-3edd-4505-8177-b48e849c639c
+    GroupID: 
+    Position: {x: 246, y: 273}
+    isStartNode: 0
+    ChildIDs:
+    - fe4e0406-3edd-4505-8177-b48e849c639c
+  - ID: fe4e0406-3edd-4505-8177-b48e849c639c
+    Name: 3
+    SpeakerName: karl
+    Text: ...
+    SpritePath: Neighbour_Sad
+    Choices:
+    - Text: Next Dialogue
+      NodeID: b24464bf-068d-4517-ab88-969dc4d5851f
+    GroupID: 
+    Position: {x: 543, y: 273}
+    isStartNode: 0
+    ChildIDs:
+    - b24464bf-068d-4517-ab88-969dc4d5851f
+  - ID: b24464bf-068d-4517-ab88-969dc4d5851f
+    Name: 4
+    SpeakerName: karl
+    Text: "Please, Lily, tell Astrid that\u2026"
+    SpritePath: Neighbour_Sad
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 
+    GroupID: 
+    Position: {x: 857, y: 268}
+    isStartNode: 0
+    ChildIDs:
+    - 
+  - ID: aebe3097-b244-4517-bb64-53fe0210402d
+    Name: 1
+    SpeakerName: karl
+    Text: "Well, they did tell me that only mandatory things in life are death and
+      taxes\u2026"
+    SpritePath: Neighbour_Sad
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 981c9927-e1d3-4d5c-9100-ef63e4228ca9
+    GroupID: 
+    Position: {x: -232, y: 268}
+    isStartNode: 1
+    ChildIDs:
+    - 981c9927-e1d3-4d5c-9100-ef63e4228ca9
+  OldGroupNames: []
+  OldUngroupedNodeNames:
+  - 2
+  - 3
+  - 4
+  - 1
+  OldGroupNodeNames:
+    list: []

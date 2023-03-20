@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330ce6680441e444f96079c0bb98687a, type: 3}
+  m_Name: 205battle3Graph
+  m_EditorClassIdentifier: 
+  FileName: 205battle3
+  Groups: []
+  Nodes:
+  - ID: bcbe09ec-77c4-4a17-b2b9-3cb8ac541e60
+    Name: 2
+    SpeakerName: Karl
+    Text: "I told you, you should come to the next one! It\u2019s this Thursday!
+      It\u2019s gonna be crab-ulous!"
+    SpritePath: Neighbour_Friendly
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 
+    GroupID: 
+    Position: {x: 2050, y: -378}
+    isStartNode: 0
+    ChildIDs:
+    - 
+  - ID: b0ea595f-9c29-41fd-a531-d7fdac793a97
+    Name: 1
+    SpeakerName: Karl
+    Text: "Lily, be honest. Is this about that crayfish party we didn\u2019t invite
+      you to?"
+    SpritePath: Neighbour_Sad
+    Choices:
+    - Text: Next Dialogue
+      NodeID: bcbe09ec-77c4-4a17-b2b9-3cb8ac541e60
+    GroupID: 
+    Position: {x: 1607, y: -374}
+    isStartNode: 1
+    ChildIDs:
+    - bcbe09ec-77c4-4a17-b2b9-3cb8ac541e60
+  OldGroupNames: []
+  OldUngroupedNodeNames:
+  - 2
+  - 1
+  OldGroupNodeNames:
+    list: []

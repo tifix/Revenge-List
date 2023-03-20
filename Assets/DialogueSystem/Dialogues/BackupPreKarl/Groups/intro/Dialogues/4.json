@@ -1,0 +1,15 @@
+{
+    "DialogueName": "4",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "Lilith. The Queen. Of Darkness.",
+    "SpritePath": "Lilith_Unhappy",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

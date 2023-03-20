@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+/*
+ * Handles the boss health, invulnerability and such lovelies.
+ */
 
 public class bossHealth : ObjectScript
 {
@@ -22,11 +25,7 @@ public class bossHealth : ObjectScript
         if(canTakeDamage)
         {
             health -= _value;
-
-            if (health <= 0.0f)
-            {
-                OnShieldDepleted();
-            }
+            if (health <= 0.0f)OnShieldDepleted();         
         }
     }
 
@@ -36,6 +35,7 @@ public class bossHealth : ObjectScript
         {
             isCoreExposed = true;
             Debug.Log("shield down, QTE time");
+            GetComponent<BossClass>().ShowDialogueRoundEnd();       //Display the dialogue before the QTE
             QTEtriggerPrompt.SetActive(true);
         }
     }

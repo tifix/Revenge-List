@@ -122,6 +122,8 @@ public class PlayerMovement : MonoBehaviour
 
     IEnumerator Dash()
     {
+        //Dash animation starting
+        GetComponent<Animator>().SetBool("isDashing", true);
         try
         {
             AudioManager.instance.PlaySFX("DashMC");
@@ -141,6 +143,8 @@ public class PlayerMovement : MonoBehaviour
             yield return new WaitForEndOfFrame();
             GetComponentInChildren<SpriteTrail>().StopTrail();
         }
+        //dash animation ending
+        GetComponent<Animator>().SetBool("isDashing", false);
     }
 
     private void OnDrawGizmos()
@@ -157,8 +161,8 @@ public class PlayerMovement : MonoBehaviour
 
     public void SetLockMovement() { isMovementLocked = true; movement.Disable(); input.Ground.Disable(); PlayerCombat.instance.DisableAttack(); }   //Globally accessible movement locks
     public void SetUnLockMovement() { isMovementLocked = false; movement.Enable(); input.Ground.Enable(); PlayerCombat.instance.EnableAttack(); GetComponent<Collider>().enabled = true; }
-    public void PauseMovement() { isMovementLocked = true; PlayerCombat.instance.DisableAttack(); }
-    public void UnPauseMovement() { isMovementLocked = false; PlayerCombat.instance.EnableAttack(); }
+    public void PauseMovement() { isMovementLocked = true; }//PlayerCombat.instance.DisableAttack();
+    public void UnPauseMovement() { isMovementLocked = false; }// PlayerCombat.instance.EnableAttack();
 
     public void BossFightBinding(Transform t)
     {

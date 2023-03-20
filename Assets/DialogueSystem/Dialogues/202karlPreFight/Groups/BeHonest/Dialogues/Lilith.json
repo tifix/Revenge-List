@@ -1,0 +1,15 @@
+{
+    "DialogueName": "Lilith",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "I want to tell you something honest. I feel like a friend would tell you.",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

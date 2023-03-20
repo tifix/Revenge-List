@@ -1,0 +1,15 @@
+{
+    "DialogueName": "8",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "And let’s not even get started on just who you are as a person, which is crime in and on itself. Nobody should be like you.",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

@@ -1,0 +1,15 @@
+{
+    "DialogueName": "84",
+    "nodeID": "",
+    "SpeakerName": "Karl",
+    "Text": "Why did you say it in quotation marks?",
+    "SpritePath": "Neighbour_Friendly",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

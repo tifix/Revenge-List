@@ -1,0 +1,15 @@
+{
+    "DialogueName": "7",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "They really liked to barbeque, too…",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

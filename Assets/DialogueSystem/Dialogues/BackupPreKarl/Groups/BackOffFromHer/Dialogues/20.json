@@ -1,0 +1,15 @@
+{
+    "DialogueName": "20",
+    "nodeID": "",
+    "SpeakerName": "Karl",
+    "Text": "*Humming Single Ladies*",
+    "SpritePath": "Neighbour_Laughing",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

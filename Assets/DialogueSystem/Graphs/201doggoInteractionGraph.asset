@@ -16,19 +16,19 @@ MonoBehaviour:
   Groups:
   - ID: f1ad1020-f3e8-4c58-a6a5-6687ba446b56
     Name: Doggo
-    Position: {x: 2725.9998, y: -463.99994}
+    Position: {x: 2726, y: -464}
   - ID: 3a58ca9e-e798-4361-ad49-050447c63fe4
     Name: PetTheDog
-    Position: {x: 5267.9995, y: -444.99994}
+    Position: {x: 5268, y: -445}
   - ID: 68cd7151-ef79-4eea-b89d-8f6f96aaebde
     Name: Outro
-    Position: {x: 5624, y: -437.00006}
+    Position: {x: 5624, y: -437}
   Nodes:
   - ID: 4fd16a4d-e6c7-49fd-90e1-8e67f366ab36
     Name: 1
     SpeakerName: Lilith
     Text: Ah yes, my dear Hellhound, we meet again.
-    SpritePath: Insert Sprite Path Here.
+    SpritePath: Lilith_Smug
     Choices:
     - Text: Next Dialogue
       NodeID: 321b973c-ac47-4d76-a016-56626cccbbaa
@@ -42,7 +42,7 @@ MonoBehaviour:
     SpeakerName: Lilith
     Text: I understand you have to have your hellish freedom, and I see that you
       benefit from it.
-    SpritePath: Insert Sprite Path Here.
+    SpritePath: Lilith_Happy
     Choices:
     - Text: Next Dialogue
       NodeID: 5324391a-6574-4fa2-a6fd-0a26255b8fb6
@@ -55,7 +55,7 @@ MonoBehaviour:
     Name: 3
     SpeakerName: Lilith
     Text: That pigeon, what did he do?
-    SpritePath: Insert Sprite Path Here.
+    SpritePath: Lilith_Unhappy
     Choices:
     - Text: Next Dialogue
       NodeID: 8db7990f-a3c4-4fb5-9f0e-83658cd896c1
@@ -68,7 +68,7 @@ MonoBehaviour:
     Name: 4
     SpeakerName: Smuffles
     Text: '*Dog noises*'
-    SpritePath: Insert Sprite Path Here.
+    SpritePath: Dog
     Choices:
     - Text: Next Dialogue
       NodeID: ce97f9db-c627-49d4-af42-1865b90747fd
@@ -82,7 +82,7 @@ MonoBehaviour:
     SpeakerName: Lilith
     Text: "I\u2019m proud of you, Hellhound. You seem to have the spirit not unlike
       mine. "
-    SpritePath: Insert Sprite Path Here.
+    SpritePath: Lilith_Happy
     Choices:
     - Text: Next Dialogue
       NodeID: d887d461-14c9-499d-ae62-4b7172d48d3c
@@ -96,7 +96,7 @@ MonoBehaviour:
     SpeakerName: Lilith
     Text: Ah yes, I understand. I would have wanted to take revenge on him too. What
       a bastard.
-    SpritePath: Insert Sprite Path Here.
+    SpritePath: Lilith_Unhappy
     Choices:
     - Text: Next Dialogue
       NodeID: 8aae9e00-56ab-493d-84b2-ff0db8df6745
@@ -109,7 +109,7 @@ MonoBehaviour:
     Name: 9
     SpeakerName: Lilith
     Text: I must, must, do this now.
-    SpritePath: Insert Sprite Path Here.
+    SpritePath: Lilith_Unhappy
     Choices:
     - Text: Next Dialogue
       NodeID: ae48f3df-f2fd-4055-bdd2-9dce6f09f439
@@ -122,7 +122,7 @@ MonoBehaviour:
     Name: 10
     SpeakerName: Smuffles
     Text: '*Happy dog noises*'
-    SpritePath: Insert Sprite Path Here.
+    SpritePath: Dog
     Choices:
     - Text: Next Dialogue
       NodeID: 369dcbbe-9114-4d24-8cb2-f8a17632e790
@@ -135,7 +135,7 @@ MonoBehaviour:
     Name: 11
     SpeakerName: Lilith
     Text: "That\u2019s right. Now, dear Hellhound, we shall be taking revenge on\u2026."
-    SpritePath: Insert Sprite Path Here.
+    SpritePath: Lilith_Unhappy
     Choices:
     - Text: Next Dialogue
       NodeID: a2b1e89b-ba1d-4bbc-b608-d15268c43207
@@ -149,7 +149,7 @@ MonoBehaviour:
     SpeakerName: Karl
     Text: "Haha! I see you\u2019ve found my dog! Little rascal, always going off
       on his own!"
-    SpritePath: Insert Sprite Path Here.
+    SpritePath: Neighbour_Friendly
     Choices:
     - Text: Next Dialogue
       NodeID: 

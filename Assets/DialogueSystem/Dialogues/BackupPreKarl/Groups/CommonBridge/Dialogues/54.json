@@ -1,0 +1,15 @@
+{
+    "DialogueName": "54",
+    "nodeID": "",
+    "SpeakerName": "Karl",
+    "Text": "Lily, want anything? I make scrumptious steak.",
+    "SpritePath": "Neighbour_Barbecue",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

@@ -42,7 +42,7 @@ public class UI : MonoBehaviour
     public GameObject boxInteractPrompt; public GameObject boxQTE;                                  //object that displays dialogue and the quick time event parent
     [SerializeField] GameObject boxTextDisplay, boxPause, boxSettings;                   //the pause menu, the settings menu and the prompt to interact with an object
     [SerializeField] GameObject boxWon, boxLost;                                         //VictoryScreen and Death screen respectively
-    [SerializeField] GameObject boxHealthbar, boxBossBar;                                //PLAYER AND BOSS healthbars respectively
+    public           GameObject boxHealthbar, boxBossBar;                                //PLAYER AND BOSS healthbars respectively
     [Space(10)]
     [SerializeField] TextMeshProUGUI txtMain;                                            //the text that displays the dialogue in UI.  
     [SerializeField] TextMeshProUGUI txtSpeaker;                                         //The caption of WHO is speaking
@@ -137,11 +137,11 @@ public class UI : MonoBehaviour
             for (int j = 0; j < (pageText.Length + 1); j++)
             {
                 txtMain.text = pageText.Substring(0, j);               //slice the text 
-                if (GameManager.instance.cheat_FastForwardDialogue) { GameManager.instance.cheat_FastForwardDialogue = false; goto endOfDialogue; }
+                if (GameManager.instance.cheat_FastForwardDialogue) {  goto endOfDialogue; }
                 yield return new WaitForSecondsRealtime(typingWait);
                 if (!runCoroutine) break;
             }
-            if (GameManager.instance.cheat_FastForwardDialogue) { GameManager.instance.cheat_FastForwardDialogue = false; break; }
+            if (GameManager.instance.cheat_FastForwardDialogue) {  break; }
 
             //Show full text once done and wait for input to proceed;
             txtMain.text = pageText; isWaiting = true;
@@ -207,6 +207,7 @@ public class UI : MonoBehaviour
         }
     }
     public void DialogueShow(DSGraphSaveDataSO _dialogue) => DialogueShow(_dialogue, false); //by default - pause world time while showing dialogue
+    public static void Dialogue(DSGraphSaveDataSO _dialogue) => instance.DialogueShow(_dialogue, false); //by default - pause world time while showing dialogue. Shorthand for those who can't type or wanna grab from weird places
 
 
     public Sprite SetBigSpriteForDialogue(string fileName)
@@ -277,23 +278,23 @@ public class UI : MonoBehaviour
             bossShieldBar.value = bossHealth.GetHealth();
         }
     }
-    public void CleanupHealthBoss(int count)                                //After the QTE - if the boss is dead hide the healthbars, deal damage otherwise 
+    public void CleanupHealthBoss(bool isBossKilled)                                //After the QTE - if the boss is dead hide the healthbars, deal damage otherwise 
     {
         //Hide healthbars upon boss death
-        if (bossHealth.coreHealth < 1)
+        if (isBossKilled)
         {
-            Debug.LogWarning("Boss defeated!");
+            //Debug.LogWarning("Boss defeated!");
             bossHealth.gameObject.SetActive(false);
             boxBossBar.SetActive(false);
-            PlayerMovement.instance.ReleaseBind();
-            PlayerMovement.instance.SetUnLockMovement();
-            GameManager.instance.CamFollowPlayer();
         }
-        //Refill shieldbar and main health
-        bossHealth.isCoreExposed = false;
-        bossHealth.SetHealth(bossHealth.GetMaxHealth());
-        bossShieldBar.value = bossShieldBar.maxValue;
-        bossHealthBar.value = bossHealth.coreHealth;
+        else 
+        {
+            //Refill shieldbar and main health
+            bossHealth.isCoreExposed = false;
+            bossHealth.SetHealth(bossHealth.GetMaxHealth());
+            bossShieldBar.value = bossShieldBar.maxValue;
+            bossHealthBar.value = bossHealth.coreHealth;
+        }
     }
 
 

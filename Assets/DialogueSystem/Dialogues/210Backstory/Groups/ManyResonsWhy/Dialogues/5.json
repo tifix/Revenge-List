@@ -1,0 +1,15 @@
+{
+    "DialogueName": "5",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "And yet somehow, seeing you everyday is worse horror than my childhood could have ever been.",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

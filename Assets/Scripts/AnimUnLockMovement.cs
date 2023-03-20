@@ -6,6 +6,10 @@ public class AnimUnLockMovement : StateMachineBehaviour
 {
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        PlayerMovement.instance.PauseMovement();
+        try
+        {
+            PlayerMovement.instance.UnPauseMovement();
+        }
+        catch { Debug.Log("player movement instance not set yet"); }
     }
 }

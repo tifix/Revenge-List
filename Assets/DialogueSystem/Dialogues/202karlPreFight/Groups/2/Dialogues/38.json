@@ -1,0 +1,15 @@
+{
+    "DialogueName": "38",
+    "nodeID": "",
+    "SpeakerName": "Karl",
+    "Text": "I’m just looking out for you, eh?",
+    "SpritePath": "Neighbour_Friendly",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

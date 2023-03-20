@@ -21,9 +21,13 @@ public class GameManager : MonoBehaviour
     float deadZone = 0.2f;
     bool isCurrentlyShaking = false;    //is the camera shaking at the moment - used for removing multiple shakes at once
 
-    [SerializeField] bool cheat_WarpToKarl = false;
-    public bool cheat_SkipBossPhase = false;
-    public bool cheat_FastForwardDialogue = false;
+    [Header("Cheats")]
+    [Tooltip("enable to warp to Karl arena")] [SerializeField] bool cheat_WarpToKarl = false;
+    [Tooltip("enable to instantly complete a boss phase")] public bool cheat_SkipBossPhase = false;
+    [Tooltip("enable to skip every dialogue encountered")] public bool cheat_FastForwardDialogue = false;
+    //[Tooltip("enable to instantly kill Karl. :(")] public bool cheat_KillBoss = false;
+    [Tooltip("enable to stop taking damage")] public bool cheat_GodMode = false;
+    [Tooltip("enable to make QTEs impossible to lose")] public bool cheat_QTEAlwaysWin = false;
 
     //public GameObject loadingScreen;
     //public Slider slider;

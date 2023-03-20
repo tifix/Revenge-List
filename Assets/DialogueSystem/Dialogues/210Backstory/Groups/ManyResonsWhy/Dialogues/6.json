@@ -1,0 +1,15 @@
+{
+    "DialogueName": "6",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "It’s weird I’ve not already killed you, really. Your crimes are numerous. The eggs… The dog…",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

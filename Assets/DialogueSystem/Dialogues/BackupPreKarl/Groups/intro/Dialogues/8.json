@@ -1,0 +1,15 @@
+{
+    "DialogueName": "8",
+    "nodeID": "",
+    "SpeakerName": "Karl",
+    "Text": "Anyway, I was just about to collect Snuffles. We’re going to the park, aren’t we, Snuffie?",
+    "SpritePath": "Neighbour_Friendly",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

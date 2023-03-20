@@ -1,0 +1,15 @@
+{
+    "DialogueName": "13",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "HA HA HA.",
+    "SpritePath": "Lilith_Happy",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}
