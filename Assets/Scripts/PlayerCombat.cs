@@ -107,6 +107,7 @@ public class PlayerCombat : ObjectScript
     {
         if (!canBeDamaged)
             return;
+
         health -= _value;
         canBeDamaged = false;
         StartCoroutine(Invincible(invincivilityTime));
@@ -118,7 +119,7 @@ public class PlayerCombat : ObjectScript
         }
     }
 
-    IEnumerator Invincible(float duration)
+    public IEnumerator Invincible(float duration)
     {
         yield return new WaitForSeconds(duration);
         canBeDamaged = true;

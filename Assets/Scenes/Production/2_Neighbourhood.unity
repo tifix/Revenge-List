@@ -2425,7 +2425,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 867993404}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1774.1367, y: 1001.06586, z: -1135.76}
+  m_LocalPosition: {x: 1786.9706, y: 1008.628, z: -1144.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2756,6 +2756,10 @@ PrefabInstance:
       propertyPath: camCenter
       value: 
       objectReference: {fileID: 1371212802}
+    - target: {fileID: 3615865189927272334, guid: cb8d011301534e14a84915a63758380d, type: 3}
+      propertyPath: lineAttack
+      value: 
+      objectReference: {fileID: 1337283920656425530, guid: 2e9db506ff48775438b63b40dd5f5b6b, type: 3}
     - target: {fileID: 3615865189927272334, guid: cb8d011301534e14a84915a63758380d, type: 3}
       propertyPath: overHeadAttack
       value: 
@@ -3496,7 +3500,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1080672949}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1435.4005, y: 883.9459, z: -969.4607}
+  m_LocalPosition: {x: 1448.1058, y: 891.2504, z: -977.7807}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

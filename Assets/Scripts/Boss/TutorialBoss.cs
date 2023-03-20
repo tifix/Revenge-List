@@ -14,7 +14,7 @@ public class TutorialBoss : BossClass
 
     protected override void OnEnable()
     {
-        player = FindObjectOfType<PlayerMovement>();
+        base.OnEnable();
         canAttack = false;
         StartCoroutine(FirstAttack());
         GetComponent<bossHealth>().canTakeDamage = false;

@@ -112,7 +112,7 @@ public class PlayerMovement : MonoBehaviour
         if (!isMovementLocked && dashTime + dashCoolDown < Time.time)
         {
             Debug.Log("Dash");
-            PlayerCombat.instance.canBeDamaged = false;
+            StartCoroutine(PlayerCombat.instance.Invincible(dashLenght));
             dashTime = Time.time;
             GetComponentInChildren<SpriteTrail>().CallTrail(dashLenght);
             //Dash
@@ -139,7 +139,6 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = rb.velocity + dashDir;
             t -= Time.deltaTime;
             yield return new WaitForEndOfFrame();
-            PlayerCombat.instance.canBeDamaged = true;
             GetComponentInChildren<SpriteTrail>().StopTrail();
         }
     }

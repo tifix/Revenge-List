@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+//using UnityEngine.UI;
+//using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,6 +24,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] bool cheat_WarpToKarl = false;
     public bool cheat_SkipBossPhase = false;
     public bool cheat_FastForwardDialogue = false;
+
+    //public GameObject loadingScreen;
+    //public Slider slider;
+    //public TextMeshProUGUI progressText;  
 
     public void Awake()
     {
@@ -134,6 +140,12 @@ public class GameManager : MonoBehaviour
         perlin.m_FrequencyGain = frequency;
     }
 
+    public void StopNoise()
+    {
+        perlin.m_AmplitudeGain = 0;
+        perlin.m_FrequencyGain = 0;
+    }
+
     public void CallShake(float shakeIntensity, float shakeTiming)
     {
         StartCoroutine(ScreenShake(shakeIntensity, shakeTiming));
@@ -180,7 +192,30 @@ public class GameManager : MonoBehaviour
     public static void LoadScene(int _SceneNumber) => SceneManager.LoadScene(_SceneNumber);
     public static void LoadScene(string _SceneName) => SceneManager.LoadScene(_SceneName);
     public static void LoadMenu() => SceneManager.LoadScene("Menu");
-    //public void LoadGame() => LoadScene();
+    
+    public void LoadLevel(int index)
+    {
+        StartCoroutine(LoadLevelAsync(index));
+    }
+
+    IEnumerator LoadLevelAsync(int index)
+    {
+        //Loads in the background i.e. doesn't stop the game loop
+        AsyncOperation op = SceneManager.LoadSceneAsync(index, LoadSceneMode.Additive);
+
+        //loadingScreen.SetActive(true);
+
+        while (!op.isDone)
+        {
+            float progress = Mathf.Clamp01(op.progress / 0.9f);
+            
+            //Percentage loaded
+            //slider.value = progress;
+            //progressText.text = progress * 100f + "%";
+            
+            yield return null;
+        }
+    }
 
     public void QuitToWindows() { Application.Quit(); }
 
