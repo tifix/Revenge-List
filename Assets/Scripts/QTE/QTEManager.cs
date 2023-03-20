@@ -245,14 +245,19 @@ public class QTEManager : MonoBehaviour
             if (UI.instance.bossHealth != null)
             {
                 UI.instance.bossHealth.coreHealth -= UI.instance.bossHealth.damageQTEcomplete;
-                UI.instance.bossHealth.coreHealth -= comboCount * UI.instance.bossHealth.damageQTEcomboMultiplier;
-                UI.instance.CleanupHealthBoss(comboCount);
-            }
 
-            if (UI.instance.bossHealth.gameObject.TryGetComponent<BossClass>(out BossClass boss))
-            { 
-                if(UI.instance.bossHealth.coreHealth > 0)
-                    boss.NextPhase(); 
+                //Check if the boss is completelly killed, if so, invoke the boss death stuffs
+                if(UI.instance.bossHealth.gameObject.TryGetComponent<BossClass>(out BossClass boss)) 
+                {
+                    if (UI.instance.bossHealth.coreHealth > 0)
+                        boss.NextPhase();
+                    else boss.BossDefeated();
+                }
+
+
+                //clean-up health bars as well :)
+                if (UI.instance.bossHealth.coreHealth < 1) UI.instance.CleanupHealthBoss(true);
+                else UI.instance.CleanupHealthBoss(false);
             }
 
             //Play the QTE won animation
@@ -267,7 +272,7 @@ public class QTEManager : MonoBehaviour
             Debug.LogWarning("too bad, repeat the phase");
             if (UI.instance.bossHealth != null)
             {
-                UI.instance.CleanupHealthBoss(comboCount);
+                UI.instance.CleanupHealthBoss(false);
             }
             if (UI.instance.bossHealth.gameObject.TryGetComponent<BossClass>(out BossClass boss)) { boss.RepeatPhase(); }
 

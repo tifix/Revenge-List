@@ -16,6 +16,7 @@ public class BossClass : MonoBehaviour
     public GameObject lineAttack;
 
     public bossHealth health;
+    public GameObject executableSprite; //for stability sake - the karl you kill, much like the karl you approach are different sprites without boss logic. Activates on boss death.
 
     public float playerRadius;
 
@@ -51,6 +52,7 @@ public class BossClass : MonoBehaviour
 
     protected virtual void Update()
     {
+        if (GameManager.instance.cheat_KillBoss) BossDefeated();
         if (canAttack)
         {
             attackTimer += Time.deltaTime;
@@ -231,5 +233,17 @@ public class BossClass : MonoBehaviour
         try { UI.instance.DialogueShow(roundEndDialogues[currentPhase], true); }
         catch { Debug.LogWarning("Invalid round dialogue at: " + currentPhase); }   //Display dialogue prompt to attack Karl
     }
+
+    public void BossDefeated()
+    {
+        Debug.LogWarning(gameObject.name + "has been defeated. Congrats!");
+        PlayerMovement.instance.ReleaseBind();
+        PlayerMovement.instance.SetUnLockMovement();
+        GameManager.instance.CamFollowPlayer();
+        if (UI.instance.boxBossBar.activeInHierarchy) UI.instance.CleanupHealthBoss(true);
+
+
+        if (executableSprite != null) executableSprite.SetActive(true);
+}
 
 }

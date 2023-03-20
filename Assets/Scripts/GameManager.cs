@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] bool cheat_WarpToKarl = false;
     public bool cheat_SkipBossPhase = false;
     public bool cheat_FastForwardDialogue = false;
+    public bool cheat_KillBoss = false;
 
     public void Awake()
     {

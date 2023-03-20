@@ -75,7 +75,7 @@ public class ObjectScript : MonoBehaviour
     }
 
     // Destroy the object
-    protected void DeleteObject()
+    protected virtual void DeleteObject()
     {
         Destroy(this.gameObject);
     }
@@ -89,7 +89,7 @@ public class ObjectScript : MonoBehaviour
             yield return new WaitForEndOfFrame();
             norm += Time.deltaTime / time;
         }
-        Destroy(gameObject);
+        DeleteObject();
     }
 
     public float GetHealth() { return health; }
