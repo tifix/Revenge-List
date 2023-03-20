@@ -1,0 +1,15 @@
+{
+    "DialogueName": "58",
+    "nodeID": "",
+    "SpeakerName": "Karl",
+    "Text": "I’ve always wanted us to be friends.",
+    "SpritePath": "Neighbour_Friendly",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

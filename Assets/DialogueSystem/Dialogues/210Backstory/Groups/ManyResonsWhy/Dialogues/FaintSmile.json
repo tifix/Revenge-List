@@ -1,0 +1,15 @@
+{
+    "DialogueName": "FaintSmile",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "*She faintly smiles to herself.*",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

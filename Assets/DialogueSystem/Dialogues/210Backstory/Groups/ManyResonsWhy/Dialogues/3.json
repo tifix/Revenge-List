@@ -1,0 +1,15 @@
+{
+    "DialogueName": "3",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "And all the frustration they used to feel for each other, they directed… towards me.",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

@@ -1,0 +1,19 @@
+{
+    "DialogueName": "FinalCHoice",
+    "nodeID": "",
+    "SpeakerName": "CHOICE",
+    "Text": "Dialogue text.",
+    "SpritePath": "Lilith_Unhappy",
+    "Choices": [
+        {
+            "Text": "“Your” dog doesn’t even like you",
+            "nextID": ""
+        },
+        {
+            "Text": "Astrid doesn’t enjoy your barbeque",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

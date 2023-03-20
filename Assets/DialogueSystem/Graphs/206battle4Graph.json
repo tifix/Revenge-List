@@ -1,0 +1,53 @@
+{
+    "FileName": "206battle4",
+    "DialogueGroups": {
+        "list": []
+    },
+    "UngroupedDialogues": [
+        {
+            "DialogueName": "2",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "And this… is for thinking you’re good enough for Astrid!",
+            "SpritePath": "Lilith_Angry",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "3",
+            "nodeID": "",
+            "SpeakerName": "Karl",
+            "Text": "What?",
+            "SpritePath": "Neighbour_Sad",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "1",
+            "nodeID": "",
+            "SpeakerName": "Karl",
+            "Text": "Easy there, tiger.",
+            "SpritePath": "Neighbour_Happy",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": true
+        }
+    ]
+}

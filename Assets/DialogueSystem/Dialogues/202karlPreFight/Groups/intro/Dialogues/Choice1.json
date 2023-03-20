@@ -1,0 +1,19 @@
+{
+    "DialogueName": "Choice1",
+    "nodeID": "",
+    "SpeakerName": "CHOICE",
+    "Text": "Dialogue text.",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "I’d rather die. Or you should.",
+            "nextID": ""
+        },
+        {
+            "Text": "He’s not called Snuffles.",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

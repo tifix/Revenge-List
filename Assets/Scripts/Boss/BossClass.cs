@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DS.Data.Save;
 
 public class BossClass : MonoBehaviour
 {
@@ -24,7 +25,8 @@ public class BossClass : MonoBehaviour
     protected bool canAttack = true;
 
     public List<Phases> phases = new List<Phases>();
-
+    public List<DSGraphSaveDataSO> roundStartDialogues = new List<DSGraphSaveDataSO>();
+    public List<DSGraphSaveDataSO> roundEndDialogues = new List<DSGraphSaveDataSO>();
     [Space(3)]
     [Tooltip("each phase is to have a different QTE, set them here"), SerializeField] protected List<QTEObject> phase_QTEs;
     // [Tooltip("each phase will have different dialogue, set it here"), SerializeField] List<DSGraphSaveDataSO> phase_Dialogues;
@@ -91,10 +93,6 @@ public class BossClass : MonoBehaviour
 
                     //End phase
                     EndPhase();
-                    //Wait for shield to break
-
-                    //update Dialogue and QTE
-                    SetQTEandDialogueForRound(currentPhase);
                     //After QTE success, call NextPhase()
 
                     GameManager.instance.cheat_SkipBossPhase = false;
@@ -178,10 +176,11 @@ public class BossClass : MonoBehaviour
 
     public virtual void NextPhase()
     {
-        StartCoroutine(Woosh(1f)); //Knocks the player back into their position when the phase attacks ended right after going out of QTE 
+        Invoke("ShowDialogueRoundStart", 1.05f);
+        StartCoroutine(Woosh(1f)); //Knocks the player back into their position when the phase attacks ended right after going out of QTE & Shows start of phase dialogue
         currentAttack = 0;
         currentPhase++;
-    }
+        }
 
     public virtual void RepeatPhase()
     {
@@ -216,7 +215,20 @@ public class BossClass : MonoBehaviour
             player.transform.position = Vector3.Lerp(init, knockbackPosition, progress);
             progress += Time.fixedDeltaTime / duration;
         }
+
+
         player.SetUnLockMovement();
         player.GetComponent<Collider>().enabled = true;
     }
+    public void ShowDialogueRoundStart() //When the next round starts, some flavour dialogue is shown. It should NOT pause the game
+    {
+        try { UI.instance.DialogueShow(roundStartDialogues[currentPhase], false); }
+        catch { Debug.LogWarning("Invalid round dialogue at: " + currentPhase); }   //Display dialogue at the start of the new round
+    }
+    public void ShowDialogueRoundEnd()  //Invoked from boss health - when the boss is hit, before entering QTE display dialogue!
+    {
+        try { UI.instance.DialogueShow(roundEndDialogues[currentPhase], true); }
+        catch { Debug.LogWarning("Invalid round dialogue at: " + currentPhase); }   //Display dialogue prompt to attack Karl
+    }
+
 }

@@ -1,0 +1,38 @@
+{
+    "FileName": "203battle1",
+    "DialogueGroups": {
+        "list": []
+    },
+    "UngroupedDialogues": [
+        {
+            "DialogueName": "2",
+            "nodeID": "",
+            "SpeakerName": "Astrid",
+            "Text": "In my heart they are, honey!",
+            "SpritePath": "Insert Sprite Path Here.",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "1",
+            "nodeID": "",
+            "SpeakerName": "Karl",
+            "Text": "My steaks are world famous! ",
+            "SpritePath": "Insert Sprite Path Here.",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": true
+        }
+    ]
+}

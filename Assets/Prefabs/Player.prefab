@@ -225,14 +225,17 @@ MonoBehaviour:
   knockBackWhenHit: 0
   explosionStrength: 3
   canTakeDamage: 1
-  staminaRegenPerSec: 2
-  stamina: 0
+  attackIntervalMinimum: 0.15
+  attackToIdleInterval: 0.3
+  attackLastTimestamp: 0
   attackOrg: {fileID: 3395993812620112224}
   attackRange: 2
   enemyLayers:
     serializedVersion: 2
     m_Bits: 320
   canBeDamaged: 1
+  invincivilityTime: 1
+  canAttack: 1
 --- !u!65 &3395993812505339142
 BoxCollider:
   m_ObjectHideFlags: 0

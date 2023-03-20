@@ -1,0 +1,19 @@
+{
+    "DialogueName": "Choicaroonie",
+    "nodeID": "",
+    "SpeakerName": "CHOICE",
+    "Text": "Dialogue text.",
+    "SpritePath": "Lilith_Smug",
+    "Choices": [
+        {
+            "Text": "You really think they’re jokes?",
+            "nextID": ""
+        },
+        {
+            "Text": "Fine, I will.",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

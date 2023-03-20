@@ -1,0 +1,15 @@
+{
+    "DialogueName": "66",
+    "nodeID": "",
+    "SpeakerName": "Karl",
+    "Text": "That you don’t like my barbeque…?",
+    "SpritePath": "Neighbour_Sad",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

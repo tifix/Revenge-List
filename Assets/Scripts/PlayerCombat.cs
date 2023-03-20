@@ -11,8 +11,8 @@ public class PlayerCombat : ObjectScript
     public static PlayerCombat instance;
 
 
-    [Range(0,1)] public float attackIntervalMinimum;
-    [Range(0f,1)] public float attackToIdleInterval;
+    [Range(0,1)] public float attackIntervalMinimum=0.4f;
+    [Range(0f,1)] public float attackToIdleInterval=0.7f;
     public float attackLastTimestamp=0;
     public Transform attackOrg;
     public float attackRange = 2.0f;
@@ -95,7 +95,7 @@ public class PlayerCombat : ObjectScript
                 foreach (Collider enemy in hitEnemies)
                 {
                     Debug.Log("Enemy hit: " + enemy.name);
-                    enemy.GetComponent<ObjectScript>().ApplyDamage(10.0f);
+                    if(enemy.TryGetComponent<ObjectScript>(out ObjectScript OS)) OS.ApplyDamage(10.0f);     //Fixed error where kicking boss proectiles crashed the game -MC
                 }
             }            
             //if attack ON cooldown

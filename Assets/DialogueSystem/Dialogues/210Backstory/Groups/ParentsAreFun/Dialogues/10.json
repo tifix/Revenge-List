@@ -1,0 +1,15 @@
+{
+    "DialogueName": "10",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "I still remember them running around with the huge barbeque tongs, trying to kill each other… All the traps around the house…",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

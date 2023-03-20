@@ -1,0 +1,15 @@
+{
+    "DialogueName": "8",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "They were fighting so much, they were always trying to grill each other. They got really clever with it. ",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

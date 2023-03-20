@@ -1,0 +1,15 @@
+{
+    "DialogueName": "2",
+    "nodeID": "",
+    "SpeakerName": "Karl",
+    "Text": "You know what, come to the party! Have the steaks! You’re still my neighbour after all!",
+    "SpritePath": "Neighbour_Friendly",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}
