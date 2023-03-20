@@ -27,6 +27,7 @@ public class BossClass : MonoBehaviour
     public List<Phases> phases = new List<Phases>();
     public List<DSGraphSaveDataSO> roundStartDialogues = new List<DSGraphSaveDataSO>();
     public List<DSGraphSaveDataSO> roundEndDialogues = new List<DSGraphSaveDataSO>();
+    [Range(0,3f)]public float dialogueDelay = 1.1f;                                     //After round starts, display the dialogue X time after 
     [Space(3)]
     [Tooltip("each phase is to have a different QTE, set them here"), SerializeField] protected List<QTEObject> phase_QTEs;
     // [Tooltip("each phase will have different dialogue, set it here"), SerializeField] List<DSGraphSaveDataSO> phase_Dialogues;
@@ -176,7 +177,7 @@ public class BossClass : MonoBehaviour
 
     public virtual void NextPhase()
     {
-        Invoke("ShowDialogueRoundStart", 1.05f);
+        Invoke("ShowDialogueRoundStart", dialogueDelay);
         StartCoroutine(Woosh(1f)); //Knocks the player back into their position when the phase attacks ended right after going out of QTE & Shows start of phase dialogue
         currentAttack = 0;
         currentPhase++;
