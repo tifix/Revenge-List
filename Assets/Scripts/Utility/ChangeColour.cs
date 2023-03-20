@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Utilities : MonoBehaviour
+public class ChangeColour : MonoBehaviour
 {
-
     // Update is called once per frame
     static Color GenerateRandomColour()
     {

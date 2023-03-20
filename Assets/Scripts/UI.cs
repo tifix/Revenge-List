@@ -137,11 +137,11 @@ public class UI : MonoBehaviour
             for (int j = 0; j < (pageText.Length + 1); j++)
             {
                 txtMain.text = pageText.Substring(0, j);               //slice the text 
-                if (GameManager.instance.cheat_FastForwardDialogue) { GameManager.instance.cheat_FastForwardDialogue = false; goto endOfDialogue; }
+                if (GameManager.instance.cheat_FastForwardDialogue) {  goto endOfDialogue; }
                 yield return new WaitForSecondsRealtime(typingWait);
                 if (!runCoroutine) break;
             }
-            if (GameManager.instance.cheat_FastForwardDialogue) { GameManager.instance.cheat_FastForwardDialogue = false; break; }
+            if (GameManager.instance.cheat_FastForwardDialogue) {  break; }
 
             //Show full text once done and wait for input to proceed;
             txtMain.text = pageText; isWaiting = true;

@@ -11,7 +11,7 @@ public class EventObject : ObjectScript
     protected override void DeleteObject() 
     {
         whenKilledDo.Invoke();
-        Destroy(gameObject);
+        Destroy(gameObject,0.2f);
     }
 
     public override void ApplyDamage(float _value)

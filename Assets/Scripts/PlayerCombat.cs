@@ -125,7 +125,7 @@ public class PlayerCombat : ObjectScript
 
     public override void ApplyDamage(float _value)
     {
-        if (!canBeDamaged)
+        if (!canBeDamaged || GameManager.instance.cheat_GodMode)
             return;
         health -= _value;
         GetComponentInChildren<Animator>().SetTrigger("takeDamage");

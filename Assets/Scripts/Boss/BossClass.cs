@@ -52,7 +52,6 @@ public class BossClass : MonoBehaviour
 
     protected virtual void Update()
     {
-        if (GameManager.instance.cheat_KillBoss) BossDefeated();
         if (canAttack)
         {
             attackTimer += Time.deltaTime;

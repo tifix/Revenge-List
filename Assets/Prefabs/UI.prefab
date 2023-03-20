@@ -8828,11 +8828,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8594872308840196360, guid: 8f990c0081324cb4199d9b4fd76c227b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -213
+      value: -213.00015
       objectReference: {fileID: 0}
     - target: {fileID: 8594872308840196360, guid: 8f990c0081324cb4199d9b4fd76c227b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 102.20288
+      value: 102.20285
       objectReference: {fileID: 0}
     - target: {fileID: 8594872309033769970, guid: 8f990c0081324cb4199d9b4fd76c227b, type: 3}
       propertyPath: m_Pivot.x

@@ -240,7 +240,7 @@ public class QTEManager : MonoBehaviour
         
 
         //Win QTE
-        if (correctHits >= currentMap.beatsForWin)
+        if (correctHits >= currentMap.beatsForWin || GameManager.instance.cheat_QTEAlwaysWin)
         {           
             if (UI.instance.bossHealth != null)
             {
