@@ -22,21 +22,8 @@ MonoBehaviour:
     Position: {x: 5268, y: -445}
   - ID: 68cd7151-ef79-4eea-b89d-8f6f96aaebde
     Name: Outro
-    Position: {x: 5624, y: -437}
+    Position: {x: 5938, y: -451}
   Nodes:
-  - ID: 4fd16a4d-e6c7-49fd-90e1-8e67f366ab36
-    Name: 1
-    SpeakerName: Lilith
-    Text: Ah yes, my dear Hellhound, we meet again.
-    SpritePath: Lilith_Smug
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 321b973c-ac47-4d76-a016-56626cccbbaa
-    GroupID: f1ad1020-f3e8-4c58-a6a5-6687ba446b56
-    Position: {x: 2751, y: -405}
-    isStartNode: 1
-    ChildIDs:
-    - 321b973c-ac47-4d76-a016-56626cccbbaa
   - ID: 321b973c-ac47-4d76-a016-56626cccbbaa
     Name: 2
     SpeakerName: Lilith
@@ -67,7 +54,7 @@ MonoBehaviour:
   - ID: 8db7990f-a3c4-4fb5-9f0e-83658cd896c1
     Name: 4
     SpeakerName: Smuffles
-    Text: '*Dog noises*'
+    Text: Bark!
     SpritePath: Dog
     Choices:
     - Text: Next Dialogue
@@ -80,8 +67,7 @@ MonoBehaviour:
   - ID: 8aae9e00-56ab-493d-84b2-ff0db8df6745
     Name: 6
     SpeakerName: Lilith
-    Text: "I\u2019m proud of you, Hellhound. You seem to have the spirit not unlike
-      mine. "
+    Text: "I\u2019m proud of you, Hellhound. You seem to have spirit not unlike mine. "
     SpritePath: Lilith_Happy
     Choices:
     - Text: Next Dialogue
@@ -91,25 +77,11 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - d887d461-14c9-499d-ae62-4b7172d48d3c
-  - ID: ce97f9db-c627-49d4-af42-1865b90747fd
-    Name: 5
-    SpeakerName: Lilith
-    Text: Ah yes, I understand. I would have wanted to take revenge on him too. What
-      a bastard.
-    SpritePath: Lilith_Unhappy
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 8aae9e00-56ab-493d-84b2-ff0db8df6745
-    GroupID: f1ad1020-f3e8-4c58-a6a5-6687ba446b56
-    Position: {x: 4210, y: -395}
-    isStartNode: 0
-    ChildIDs:
-    - 8aae9e00-56ab-493d-84b2-ff0db8df6745
   - ID: d887d461-14c9-499d-ae62-4b7172d48d3c
     Name: 9
     SpeakerName: Lilith
-    Text: I must, must, do this now.
-    SpritePath: Lilith_Unhappy
+    Text: I must, must, pet you now.
+    SpritePath: Lilith_Smug
     Choices:
     - Text: Next Dialogue
       NodeID: ae48f3df-f2fd-4055-bdd2-9dce6f09f439
@@ -118,16 +90,43 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - ae48f3df-f2fd-4055-bdd2-9dce6f09f439
+  - ID: 4fd16a4d-e6c7-49fd-90e1-8e67f366ab36
+    Name: 1
+    SpeakerName: Lilith
+    Text: Ah yes, my dear Hellhound, we meet again.
+    SpritePath: Lilith_Smug
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 321b973c-ac47-4d76-a016-56626cccbbaa
+    GroupID: f1ad1020-f3e8-4c58-a6a5-6687ba446b56
+    Position: {x: 2751, y: -405}
+    isStartNode: 1
+    ChildIDs:
+    - 321b973c-ac47-4d76-a016-56626cccbbaa
+  - ID: ce97f9db-c627-49d4-af42-1865b90747fd
+    Name: 5
+    SpeakerName: Lilith
+    Text: Ah yes, I understand. I would have wanted to take revenge on him too. What
+      a bastard.
+    SpritePath: Lilith_Unhappy2
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 8aae9e00-56ab-493d-84b2-ff0db8df6745
+    GroupID: f1ad1020-f3e8-4c58-a6a5-6687ba446b56
+    Position: {x: 4210, y: -395}
+    isStartNode: 0
+    ChildIDs:
+    - 8aae9e00-56ab-493d-84b2-ff0db8df6745
   - ID: ae48f3df-f2fd-4055-bdd2-9dce6f09f439
     Name: 10
     SpeakerName: Smuffles
-    Text: '*Happy dog noises*'
+    Text: Bark!
     SpritePath: Dog
     Choices:
     - Text: Next Dialogue
       NodeID: 369dcbbe-9114-4d24-8cb2-f8a17632e790
     GroupID: 68cd7151-ef79-4eea-b89d-8f6f96aaebde
-    Position: {x: 5649, y: -378}
+    Position: {x: 5963, y: -392}
     isStartNode: 0
     ChildIDs:
     - 369dcbbe-9114-4d24-8cb2-f8a17632e790
@@ -135,12 +134,12 @@ MonoBehaviour:
     Name: 11
     SpeakerName: Lilith
     Text: "That\u2019s right. Now, dear Hellhound, we shall be taking revenge on\u2026."
-    SpritePath: Lilith_Unhappy
+    SpritePath: Lilith_Unhappy2
     Choices:
     - Text: Next Dialogue
       NodeID: a2b1e89b-ba1d-4bbc-b608-d15268c43207
     GroupID: 68cd7151-ef79-4eea-b89d-8f6f96aaebde
-    Position: {x: 5964, y: -376}
+    Position: {x: 6278, y: -390}
     isStartNode: 0
     ChildIDs:
     - a2b1e89b-ba1d-4bbc-b608-d15268c43207
@@ -154,7 +153,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: 
     GroupID: 68cd7151-ef79-4eea-b89d-8f6f96aaebde
-    Position: {x: 6403, y: -370}
+    Position: {x: 6717, y: -384}
     isStartNode: 0
     ChildIDs:
     - 
@@ -167,11 +166,11 @@ MonoBehaviour:
     list:
     - Key: Doggo
       Value:
-      - 1
       - 2
       - 3
       - 4
       - 6
+      - 1
       - 5
     - Key: PetTheDog
       Value:

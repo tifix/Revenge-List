@@ -3,7 +3,7 @@
     "nodeID": "",
     "SpeakerName": "Lilith",
     "Text": "How can you tell it’s in quotation marks?",
-    "SpritePath": "Lilith_Unhappy",
+    "SpritePath": "Lilith_tear",
     "Choices": [
         {
             "Text": "Next Dialogue",

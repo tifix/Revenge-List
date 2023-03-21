@@ -3,7 +3,7 @@
     "nodeID": "",
     "SpeakerName": "Karl",
     "Text": "Would you like to join us, … Lilith?",
-    "SpritePath": "Insert Sprite Path Here.",
+    "SpritePath": "Neighbour_Friendly",
     "Choices": [
         {
             "Text": "Next Dialogue",

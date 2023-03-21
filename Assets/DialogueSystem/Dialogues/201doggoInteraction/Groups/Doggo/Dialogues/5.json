@@ -3,7 +3,7 @@
     "nodeID": "",
     "SpeakerName": "Lilith",
     "Text": "Ah yes, I understand. I would have wanted to take revenge on him too. What a bastard.",
-    "SpritePath": "Lilith_Unhappy",
+    "SpritePath": "Lilith_Unhappy2",
     "Choices": [
         {
             "Text": "Next Dialogue",

@@ -140,21 +140,6 @@
                         "IsStartingDialogue": false
                     },
                     {
-                        "DialogueName": "37",
-                        "nodeID": "",
-                        "SpeakerName": "Karl",
-                        "Text": "Me and Astrid know that you’re joking, but especially since you’re carrying that sword around, other people might not understand your… sense of humour… as well as we do.\r",
-                        "SpritePath": "Neighbour_Sad",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
                         "DialogueName": "38",
                         "nodeID": "",
                         "SpeakerName": "Karl",
@@ -187,6 +172,36 @@
                         ],
                         "DialogueType": 0,
                         "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "37",
+                        "nodeID": "",
+                        "SpeakerName": "Karl",
+                        "Text": "Me and Astrid know that you’re joking, but especially since you’re carrying that sword around, other people might not understand your… \r",
+                        "SpritePath": "Neighbour_Sad",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "DialogueName",
+                        "nodeID": "",
+                        "SpeakerName": "Character name.",
+                        "Text": "...as well as we do.",
+                        "SpritePath": "Neighbour_Sad",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
                     }
                 ]
             },
@@ -198,7 +213,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "Lilith, the Queen of Darkness.",
-                        "SpritePath": "Lilith_Unhappy",
+                        "SpritePath": "Lilith_Happy",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -239,21 +254,6 @@
                         "IsStartingDialogue": false
                     },
                     {
-                        "DialogueName": "4",
-                        "nodeID": "",
-                        "SpeakerName": "Lilith",
-                        "Text": "Lilith. The Queen. Of Darkness.",
-                        "SpritePath": "Lilith_Unhappy",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
                         "DialogueName": "5",
                         "nodeID": "",
                         "SpeakerName": "Karl",
@@ -273,7 +273,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "Don’t.",
-                        "SpritePath": "Lilith_Unhappy",
+                        "SpritePath": "Lilith_Unhappy2",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -289,6 +289,40 @@
                         "SpeakerName": "Karl",
                         "Text": "Suit yourself.",
                         "SpritePath": "Neighbour_Sad",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "Choice1",
+                        "nodeID": "",
+                        "SpeakerName": "CHOICE",
+                        "Text": "Dialogue text.",
+                        "SpritePath": "Lilith_Happy",
+                        "Choices": [
+                            {
+                                "Text": "I’d rather die. Or you should.",
+                                "nextID": ""
+                            },
+                            {
+                                "Text": "He’s not called Snuffles.",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "4",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": "Lilith. The Queen. Of Darkness.",
+                        "SpritePath": "Lilith_Unhappy2",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -318,29 +352,10 @@
                         "nodeID": "",
                         "SpeakerName": "Karl",
                         "Text": "Would you like to join us, … Lilith?",
-                        "SpritePath": "Insert Sprite Path Here.",
+                        "SpritePath": "Neighbour_Friendly",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
-                        "DialogueName": "Choice1",
-                        "nodeID": "",
-                        "SpeakerName": "CHOICE",
-                        "Text": "Dialogue text.",
-                        "SpritePath": "Insert Sprite Path Here.",
-                        "Choices": [
-                            {
-                                "Text": "I’d rather die. Or you should.",
-                                "nextID": ""
-                            },
-                            {
-                                "Text": "He’s not called Snuffles.",
                                 "nextID": ""
                             }
                         ],
@@ -510,7 +525,7 @@
                         "DialogueName": "55",
                         "nodeID": "",
                         "SpeakerName": "Lilith",
-                        "Text": "No! I want to… \n(This is my chance to hurt him mentally, before going for the physical damage.)",
+                        "Text": "No! I want to fight you!\nBesides...\n(This is my chance to hurt him mentally, before going for the physical damage.)",
                         "SpritePath": "Lilith_Unhappy",
                         "Choices": [
                             {
@@ -546,22 +561,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "How thick can he get?",
-                        "SpritePath": "Lilith_Unhappy",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
-                        "DialogueName": "26",
-                        "nodeID": "",
-                        "SpeakerName": "Lilith",
-                        "Text": "These kinds of people shouldn’t be allowed to live and reproduce…\nEspecially with someone like…",
-                        "SpritePath": "Lilith_Unhappy",
+                        "SpritePath": "Lilith_tear",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -587,26 +587,11 @@
                         "IsStartingDialogue": false
                     },
                     {
-                        "DialogueName": "28",
-                        "nodeID": "",
-                        "SpeakerName": "Lilith",
-                        "Text": "Better I don’t think about that.",
-                        "SpritePath": "Lilith_Unhappy",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
                         "DialogueName": "29",
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "Anyway, it seems I’ll have to do the world a favour…",
-                        "SpritePath": "Lilith_Happy",
+                        "SpritePath": "Lilith_Unhappy2",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -622,6 +607,36 @@
                         "SpeakerName": "Lilith",
                         "Text": "Do take her out. I’ll walk the dog. See what happens.",
                         "SpritePath": "Lilith_Smug",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "26",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": "These kinds of people shouldn’t be allowed to live and reproduce…\nEspecially with someone like…",
+                        "SpritePath": "Lilith_Unhappy2",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "28",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": "Better I don’t think about that.",
+                        "SpritePath": "Lilith_tear",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -682,21 +697,6 @@
                         "IsStartingDialogue": false
                     },
                     {
-                        "DialogueName": "19",
-                        "nodeID": "",
-                        "SpeakerName": "Lilith",
-                        "Text": "Don't.",
-                        "SpritePath": "Lilith_Unhappy",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
                         "DialogueName": "20",
                         "nodeID": "",
                         "SpeakerName": "Karl",
@@ -716,7 +716,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "I can’t allow this to continue… ",
-                        "SpritePath": "Lilith_Unhappy",
+                        "SpritePath": "Lilith_Unhappy2",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -740,6 +740,21 @@
                         ],
                         "DialogueType": 0,
                         "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "19",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": "Don't.",
+                        "SpritePath": "Lilith_tear",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
                     }
                 ]
             },
@@ -751,7 +766,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "How can you tell it’s in quotation marks?",
-                        "SpritePath": "Lilith_Unhappy",
+                        "SpritePath": "Lilith_tear",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -781,7 +796,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "Oh my Satan…",
-                        "SpritePath": "Lilith_Unhappy",
+                        "SpritePath": "Lilith_Unhappy2",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -867,66 +882,6 @@
                         "IsStartingDialogue": false
                     },
                     {
-                        "DialogueName": "93",
-                        "nodeID": "",
-                        "SpeakerName": "Karl",
-                        "Text": "Snuffles!",
-                        "SpritePath": "Neighbour_Friendly",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
-                        "DialogueName": "94",
-                        "nodeID": "",
-                        "SpeakerName": "Lilith",
-                        "Text": "That's cheating.",
-                        "SpritePath": "Lilith_Unhappy",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
-                        "DialogueName": "95",
-                        "nodeID": "",
-                        "SpeakerName": "Karl",
-                        "Text": "How is it cheating?",
-                        "SpritePath": "Karl_Friendly",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
-                        "DialogueName": "96",
-                        "nodeID": "",
-                        "SpeakerName": "Lilith",
-                        "Text": "It just is! And now you will die!\nI will fight you!",
-                        "SpritePath": "Lilith_Unhappy",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
                         "DialogueName": "84",
                         "nodeID": "",
                         "SpeakerName": "Karl",
@@ -946,7 +901,97 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "I want you to know that “your” dog doesn’t even like you.",
-                        "SpritePath": "Insert Sprite Path Here.",
+                        "SpritePath": "Lilith_Happy",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "95",
+                        "nodeID": "",
+                        "SpeakerName": "Karl",
+                        "Text": "How is it cheating?",
+                        "SpritePath": "Neighbour_Friendly",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "94",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": "That's cheating.",
+                        "SpritePath": "Lilith_Unhappy2",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "vjhvh",
+                        "nodeID": "",
+                        "SpeakerName": "Snuffles",
+                        "Text": "...",
+                        "SpritePath": "Dog",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "93",
+                        "nodeID": "",
+                        "SpeakerName": "Karl",
+                        "Text": "Snuffles!",
+                        "SpritePath": "Neighbour_Friendly",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "96",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": "It just is! And now you will die!\nI will fight you!",
+                        "SpritePath": "Lilith_Angry",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "bkjvj",
+                        "nodeID": "",
+                        "SpeakerName": "Snuffles",
+                        "Text": "Bark!",
+                        "SpritePath": "Dog",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -967,21 +1012,6 @@
                         "SpeakerName": "Karl",
                         "Text": "I’ve always wanted us to be friends.",
                         "SpritePath": "Neighbour_Friendly",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
-                        "DialogueName": "59",
-                        "nodeID": "",
-                        "SpeakerName": "Lilith",
-                        "Text": "Don’t speak over me.",
-                        "SpritePath": "Lilith_Unhappy",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -1326,27 +1356,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "I want to tell you something honest. I feel like a friend would tell you.",
-                        "SpritePath": "Insert Sprite Path Here.",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    }
-                ]
-            },
-            {
-                "Key": "4a1038fd-6bc4-4993-9390-28a8a8ff1145",
-                "Value": [
-                    {
-                        "DialogueName": "82",
-                        "nodeID": "",
-                        "SpeakerName": "Karl",
-                        "Text": "Yes. The fight is good. Because I have a licence…",
-                        "SpritePath": "Neighbour_Laughing",
+                        "SpritePath": "Lilith_Happy",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -1357,26 +1367,11 @@
                         "IsStartingDialogue": false
                     },
                     {
-                        "DialogueName": "97",
+                        "DialogueName": "59",
                         "nodeID": "",
                         "SpeakerName": "Lilith",
-                        "Text": "DON’T SAY IT – ",
-                        "SpritePath": "Lilith_Unhappy",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
-                        "DialogueName": "98",
-                        "nodeID": "",
-                        "SpeakerName": "Karl",
-                        "Text": "…TO GRILL!",
-                        "SpritePath": "Neighbour_Laughing",
+                        "Text": "Don’t speak over me.",
+                        "SpritePath": "Lilith_Unhappy2",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -1396,7 +1391,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "Please never say that again about him.\nHe's my hound.",
-                        "SpritePath": "Lilith_Unhappy",
+                        "SpritePath": "Lilith_Unhappy2",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -1456,7 +1451,7 @@
                         "nodeID": "",
                         "SpeakerName": "Karl",
                         "Text": "What is he called then? Snuftelius, the Guard of the Abyss?",
-                        "SpritePath": "Insert Sprite Path Here.",
+                        "SpritePath": "Neighbour_Laughing",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -1471,7 +1466,7 @@
                         "nodeID": "",
                         "SpeakerName": "CHOICE",
                         "Text": "Dialogue text.",
-                        "SpritePath": "Insert Sprite Path Here.",
+                        "SpritePath": "Lilith_Unhappy2",
                         "Choices": [
                             {
                                 "Text": "Do take her out…",
@@ -1586,8 +1581,74 @@
                         "IsStartingDialogue": false
                     }
                 ]
+            },
+            {
+                "Key": "4a1038fd-6bc4-4993-9390-28a8a8ff1145",
+                "Value": [
+                    {
+                        "DialogueName": "82",
+                        "nodeID": "",
+                        "SpeakerName": "Karl",
+                        "Text": "Yes. The fight is good. Because I have a licence…",
+                        "SpritePath": "Neighbour_Laughing",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "98",
+                        "nodeID": "",
+                        "SpeakerName": "Karl",
+                        "Text": "…TO GRILL!",
+                        "SpritePath": "Neighbour_Laughing",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "97",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": "DON’T SAY IT – ",
+                        "SpritePath": "Lilith_Angry",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                ]
             }
         ]
     },
-    "UngroupedDialogues": []
+    "UngroupedDialogues": [
+        {
+            "DialogueName": "DialogueName",
+            "nodeID": "",
+            "SpeakerName": "Karl",
+            "Text": "...sense of humour… ",
+            "SpritePath": "Neighbour_Sad",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        }
+    ]
 }

@@ -34,6 +34,7 @@ public class AudioManager : MonoBehaviour
         {
             // set it to this.
             instance = this;
+            //DontDestroyOnLoad(gameObject);
         }
         // If an instance already exists
         else if (instance != this)
@@ -43,7 +44,6 @@ public class AudioManager : MonoBehaviour
         }
 
         //Set AudioManager to DontDestroyOnLoad, ensuring that it won't be destroyed when reloading our scene.
-        DontDestroyOnLoad(gameObject);
     }
 
     // Plays a clip through the sfxSource

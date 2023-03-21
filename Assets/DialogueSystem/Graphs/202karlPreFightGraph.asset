@@ -28,19 +28,19 @@ MonoBehaviour:
     Position: {x: 8974, y: 242}
   - ID: 8241f30b-0095-4892-b2fe-3118633b011e
     Name: DoTakeHerOUt
-    Position: {x: 6120, y: -19}
+    Position: {x: 6120, y: -22}
   - ID: 2e8a6e81-953e-4d0e-8986-bbcce50e9e3c
     Name: BackOffFromHer
     Position: {x: 6208, y: -410}
   - ID: 60b93be0-7818-48be-8b9d-b993fe281240
     Name: YourDogDoesnLikeYou
-    Position: {x: 13048, y: 582}
+    Position: {x: 13048, y: 574}
   - ID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
     Name: BeHonest
     Position: {x: 13109, y: 61}
   - ID: 4a1038fd-6bc4-4993-9390-28a8a8ff1145
     Name: Ending
-    Position: {x: 21206, y: 344}
+    Position: {x: 21364, y: 319}
   - ID: afd3a3a2-ff97-4a67-b4e0-6067903143ff
     Name: StopJoking
     Position: {x: 7740, y: 424}
@@ -118,7 +118,7 @@ MonoBehaviour:
     Name: 2
     SpeakerName: Lilith
     Text: Lilith, the Queen of Darkness.
-    SpritePath: Lilith_Unhappy
+    SpritePath: Lilith_Happy
     Choices:
     - Text: Next Dialogue
       NodeID: 26961df2-0611-4ac5-8818-1906cba0f82d
@@ -153,19 +153,6 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - 09444052-aba6-49d4-a4e5-435f95ffab3b
-  - ID: 09444052-aba6-49d4-a4e5-435f95ffab3b
-    Name: 4
-    SpeakerName: Lilith
-    Text: Lilith. The Queen. Of Darkness.
-    SpritePath: Lilith_Unhappy
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 41012066-d710-46a7-a834-44af46c9d4be
-    GroupID: e0646b45-1205-45f0-9830-876688562027
-    Position: {x: 696, y: 227}
-    isStartNode: 0
-    ChildIDs:
-    - 41012066-d710-46a7-a834-44af46c9d4be
   - ID: 41012066-d710-46a7-a834-44af46c9d4be
     Name: 5
     SpeakerName: Karl
@@ -184,7 +171,7 @@ MonoBehaviour:
     Name: 6
     SpeakerName: Lilith
     Text: "Don\u2019t."
-    SpritePath: Lilith_Unhappy
+    SpritePath: Lilith_Unhappy2
     Choices:
     - Text: Next Dialogue
       NodeID: f88f4931-c384-450b-83d3-9295a85a5aa9
@@ -206,20 +193,6 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - 698bdeb2-ad5d-42ad-8e27-c9136ae8f359
-  - ID: 698bdeb2-ad5d-42ad-8e27-c9136ae8f359
-    Name: 8
-    SpeakerName: Karl
-    Text: "Anyway, I was just about to collect Snuffles. We\u2019re going to the
-      park, aren\u2019t we, Snuffie?"
-    SpritePath: Neighbour_Friendly
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 46f2739e-db47-45d6-adfc-178ec690f8d9
-    GroupID: e0646b45-1205-45f0-9830-876688562027
-    Position: {x: 1857, y: 229}
-    isStartNode: 0
-    ChildIDs:
-    - 46f2739e-db47-45d6-adfc-178ec690f8d9
   - ID: e21fd5f2-d3f0-4e57-9445-3c658da1ab55
     Name: 46
     SpeakerName: Lilith
@@ -359,7 +332,7 @@ MonoBehaviour:
     Name: 25
     SpeakerName: Lilith
     Text: How thick can he get?
-    SpritePath: Lilith_Unhappy
+    SpritePath: Lilith_tear
     Choices:
     - Text: Next Dialogue
       NodeID: 757bbeb1-fa3e-4c85-b632-6d76236e2daf
@@ -368,20 +341,6 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - 757bbeb1-fa3e-4c85-b632-6d76236e2daf
-  - ID: 757bbeb1-fa3e-4c85-b632-6d76236e2daf
-    Name: 26
-    SpeakerName: Lilith
-    Text: "These kinds of people shouldn\u2019t be allowed to live and reproduce\u2026\nEspecially
-      with someone like\u2026"
-    SpritePath: Lilith_Unhappy
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 74eea43f-9ab3-44bc-9758-d4f17d1eb54e
-    GroupID: 8241f30b-0095-4892-b2fe-3118633b011e
-    Position: {x: 7046, y: 40}
-    isStartNode: 0
-    ChildIDs:
-    - 74eea43f-9ab3-44bc-9758-d4f17d1eb54e
   - ID: 74eea43f-9ab3-44bc-9758-d4f17d1eb54e
     Name: 27
     SpeakerName: Lilith
@@ -395,24 +354,11 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - fd21265e-d734-4229-8a76-b9d3cdd5e47d
-  - ID: fd21265e-d734-4229-8a76-b9d3cdd5e47d
-    Name: 28
-    SpeakerName: Lilith
-    Text: "Better I don\u2019t think about that."
-    SpritePath: Lilith_Unhappy
-    Choices:
-    - Text: Next Dialogue
-      NodeID: c063f2d6-04d6-46d7-92d0-c4312d09d1ed
-    GroupID: 8241f30b-0095-4892-b2fe-3118633b011e
-    Position: {x: 7737, y: 43}
-    isStartNode: 0
-    ChildIDs:
-    - c063f2d6-04d6-46d7-92d0-c4312d09d1ed
   - ID: c063f2d6-04d6-46d7-92d0-c4312d09d1ed
     Name: 29
     SpeakerName: Lilith
     Text: "Anyway, it seems I\u2019ll have to do the world a favour\u2026"
-    SpritePath: Lilith_Happy
+    SpritePath: Lilith_Unhappy2
     Choices:
     - Text: Next Dialogue
       NodeID: e21fd5f2-d3f0-4e57-9445-3c658da1ab55
@@ -460,19 +406,6 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - 2c55c018-01c9-4b0d-a7f3-2b6e10c575aa
-  - ID: 2c55c018-01c9-4b0d-a7f3-2b6e10c575aa
-    Name: 19
-    SpeakerName: Lilith
-    Text: Don't.
-    SpritePath: Lilith_Unhappy
-    Choices:
-    - Text: Next Dialogue
-      NodeID: cfa6e3c8-cfad-4268-9dff-bfe859321165
-    GroupID: 2e8a6e81-953e-4d0e-8986-bbcce50e9e3c
-    Position: {x: 7091, y: -350}
-    isStartNode: 0
-    ChildIDs:
-    - cfa6e3c8-cfad-4268-9dff-bfe859321165
   - ID: cfa6e3c8-cfad-4268-9dff-bfe859321165
     Name: 20
     SpeakerName: Karl
@@ -490,7 +423,7 @@ MonoBehaviour:
     Name: 21
     SpeakerName: Lilith
     Text: "I can\u2019t allow this to continue\u2026 "
-    SpritePath: Lilith_Unhappy
+    SpritePath: Lilith_Unhappy2
     Choices:
     - Text: Next Dialogue
       NodeID: 4b0455bd-d7da-4a86-8329-919f908a4788
@@ -519,7 +452,7 @@ MonoBehaviour:
     Name: 85
     SpeakerName: Lilith
     Text: "How can you tell it\u2019s in quotation marks?"
-    SpritePath: Lilith_Unhappy
+    SpritePath: Lilith_tear
     Choices:
     - Text: Next Dialogue
       NodeID: 4ef6c57a-0c19-42fa-b80c-502af37d51a7
@@ -545,7 +478,7 @@ MonoBehaviour:
     Name: 87
     SpeakerName: Lilith
     Text: "Oh my Satan\u2026"
-    SpritePath: Lilith_Unhappy
+    SpritePath: Lilith_Unhappy2
     Choices:
     - Text: Next Dialogue
       NodeID: 2cf41f4c-2bdf-4dd6-be3e-bce666abf22a
@@ -613,51 +546,12 @@ MonoBehaviour:
     SpritePath: Lilith_Happy
     Choices:
     - Text: Next Dialogue
-      NodeID: be5a8f45-2f47-431c-8d33-58a712931de2
+      NodeID: c633ab77-ac5d-4f4d-bec3-994a4faaef12
     GroupID: 60b93be0-7818-48be-8b9d-b993fe281240
     Position: {x: 15713, y: 664}
     isStartNode: 0
     ChildIDs:
-    - be5a8f45-2f47-431c-8d33-58a712931de2
-  - ID: be5a8f45-2f47-431c-8d33-58a712931de2
-    Name: 93
-    SpeakerName: Karl
-    Text: Snuffles!
-    SpritePath: Neighbour_Friendly
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 2cd00df3-1b5e-4203-a7e5-54f7d7ae0e19
-    GroupID: 60b93be0-7818-48be-8b9d-b993fe281240
-    Position: {x: 15982, y: 662}
-    isStartNode: 0
-    ChildIDs:
-    - 2cd00df3-1b5e-4203-a7e5-54f7d7ae0e19
-  - ID: 2cd00df3-1b5e-4203-a7e5-54f7d7ae0e19
-    Name: 94
-    SpeakerName: Lilith
-    Text: That's cheating.
-    SpritePath: Lilith_Unhappy
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 67b48cef-5bad-4420-a6c6-8cd576657735
-    GroupID: 60b93be0-7818-48be-8b9d-b993fe281240
-    Position: {x: 16256, y: 662}
-    isStartNode: 0
-    ChildIDs:
-    - 67b48cef-5bad-4420-a6c6-8cd576657735
-  - ID: 67b48cef-5bad-4420-a6c6-8cd576657735
-    Name: 95
-    SpeakerName: Karl
-    Text: How is it cheating?
-    SpritePath: Karl_Friendly
-    Choices:
-    - Text: Next Dialogue
-      NodeID: d62a07f8-42ea-4978-bfba-367d2f9f817d
-    GroupID: 60b93be0-7818-48be-8b9d-b993fe281240
-    Position: {x: 16531, y: 659}
-    isStartNode: 0
-    ChildIDs:
-    - d62a07f8-42ea-4978-bfba-367d2f9f817d
+    - c633ab77-ac5d-4f4d-bec3-994a4faaef12
   - ID: ebd810bb-0581-471e-8c86-a2596d25ff3a
     Name: 58
     SpeakerName: Karl
@@ -671,19 +565,6 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - 7acc91ec-d955-4043-83e3-6914a2835f5b
-  - ID: 7acc91ec-d955-4043-83e3-6914a2835f5b
-    Name: 59
-    SpeakerName: Lilith
-    Text: "Don\u2019t speak over me."
-    SpritePath: Lilith_Unhappy
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 2b5c986f-6c67-47a4-87c1-20fce6c4f4e2
-    GroupID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
-    Position: {x: 13847, y: 123}
-    isStartNode: 0
-    ChildIDs:
-    - 2b5c986f-6c67-47a4-87c1-20fce6c4f4e2
   - ID: 2b5c986f-6c67-47a4-87c1-20fce6c4f4e2
     Name: 60
     SpeakerName: Lilith
@@ -979,60 +860,6 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - f11aefb1-9260-4d22-ae66-a6140e03984f
-  - ID: d62a07f8-42ea-4978-bfba-367d2f9f817d
-    Name: 96
-    SpeakerName: Lilith
-    Text: 'It just is! And now you will die!
-
-      I will fight you!'
-    SpritePath: Lilith_Unhappy
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 
-    GroupID: 60b93be0-7818-48be-8b9d-b993fe281240
-    Position: {x: 16950, y: 662}
-    isStartNode: 0
-    ChildIDs:
-    - 
-  - ID: f11aefb1-9260-4d22-ae66-a6140e03984f
-    Name: 82
-    SpeakerName: Karl
-    Text: "Yes. The fight is good. Because I have a licence\u2026"
-    SpritePath: Neighbour_Laughing
-    Choices:
-    - Text: Next Dialogue
-      NodeID: f83ad49b-7e4c-4313-a934-c4252f702700
-    GroupID: 4a1038fd-6bc4-4993-9390-28a8a8ff1145
-    Position: {x: 21231, y: 403}
-    isStartNode: 0
-    ChildIDs:
-    - f83ad49b-7e4c-4313-a934-c4252f702700
-  - ID: f83ad49b-7e4c-4313-a934-c4252f702700
-    Name: 97
-    SpeakerName: Lilith
-    Text: "DON\u2019T SAY IT \u2013 "
-    SpritePath: Lilith_Unhappy
-    Choices:
-    - Text: Next Dialogue
-      NodeID: adfe88b2-e19c-4885-b67f-9c1bb68f3824
-    GroupID: 4a1038fd-6bc4-4993-9390-28a8a8ff1145
-    Position: {x: 21563, y: 404}
-    isStartNode: 0
-    ChildIDs:
-    - adfe88b2-e19c-4885-b67f-9c1bb68f3824
-  - ID: adfe88b2-e19c-4885-b67f-9c1bb68f3824
-    Name: 98
-    SpeakerName: Karl
-    Text: "\u2026TO GRILL!"
-    SpritePath: Neighbour_Laughing
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 
-    GroupID: 4a1038fd-6bc4-4993-9390-28a8a8ff1145
-    Position: {x: 21837, y: 404}
-    isStartNode: 0
-    ChildIDs:
-    - 
   - ID: cdb1f5e2-9493-4467-8579-d12b84b98a95
     Name: 36
     SpeakerName: Karl
@@ -1046,21 +873,6 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - b696c158-232f-4612-893e-48f56a6c4c0e
-  - ID: b696c158-232f-4612-893e-48f56a6c4c0e
-    Name: 37
-    SpeakerName: Karl
-    Text: "Me and Astrid know that you\u2019re joking, but especially since you\u2019re
-      carrying that sword around, other people might not understand your\u2026 sense
-      of humour\u2026 as well as we do.\r"
-    SpritePath: Neighbour_Sad
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 922c451c-b587-464a-8c54-fbc1e28e6fef
-    GroupID: e77da036-dcc1-451e-b77a-f3252c33d5e3
-    Position: {x: 5933, y: 688}
-    isStartNode: 0
-    ChildIDs:
-    - 922c451c-b587-464a-8c54-fbc1e28e6fef
   - ID: 922c451c-b587-464a-8c54-fbc1e28e6fef
     Name: 38
     SpeakerName: Karl
@@ -1093,7 +905,7 @@ MonoBehaviour:
     Text: 'Please never say that again about him.
 
       He''s my hound.'
-    SpritePath: Lilith_Unhappy
+    SpritePath: Lilith_Unhappy2
     Choices:
     - Text: Next Dialogue
       NodeID: da8bfdc1-986c-417f-9088-4a12f71b518d
@@ -1156,24 +968,11 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - a945ea8b-8891-43f1-ab89-f85e6bc912db
-  - ID: 46f2739e-db47-45d6-adfc-178ec690f8d9
-    Name: 10
-    SpeakerName: Karl
-    Text: "Would you like to join us, \u2026 Lilith?"
-    SpritePath: Insert Sprite Path Here.
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 716a77af-e413-4fe2-a9a6-59509c13a8d2
-    GroupID: e0646b45-1205-45f0-9830-876688562027
-    Position: {x: 2431, y: 231}
-    isStartNode: 0
-    ChildIDs:
-    - 716a77af-e413-4fe2-a9a6-59509c13a8d2
   - ID: 716a77af-e413-4fe2-a9a6-59509c13a8d2
     Name: Choice1
     SpeakerName: CHOICE
     Text: Dialogue text.
-    SpritePath: Insert Sprite Path Here.
+    SpritePath: Lilith_Happy
     Choices:
     - Text: "I\u2019d rather die. Or you should."
       NodeID: 000ee4f4-bc86-44a9-a8ad-a341fc01eef4
@@ -1189,7 +988,7 @@ MonoBehaviour:
     Name: 10
     SpeakerName: Karl
     Text: What is he called then? Snuftelius, the Guard of the Abyss?
-    SpritePath: Insert Sprite Path Here.
+    SpritePath: Neighbour_Laughing
     Choices:
     - Text: Next Dialogue
       NodeID: fd8929bc-226e-4365-802a-e834f6c90220
@@ -1202,7 +1001,7 @@ MonoBehaviour:
     Name: Choice2
     SpeakerName: CHOICE
     Text: Dialogue text.
-    SpritePath: Insert Sprite Path Here.
+    SpritePath: Lilith_Unhappy2
     Choices:
     - Text: "Do take her out\u2026"
       NodeID: 0658adaa-35c4-4537-b7aa-d749052dee1e
@@ -1250,12 +1049,12 @@ MonoBehaviour:
     SpritePath: Neighbour_Laughing
     Choices:
     - Text: Next Dialogue
-      NodeID: 
+      NodeID: 36b01315-748d-4c26-87bb-f161ea00760a
     GroupID: 71f675ee-d7c6-4a2b-b341-ca23cf0f0dc4
     Position: {x: 8190, y: 825}
     isStartNode: 0
     ChildIDs:
-    - 
+    - 36b01315-748d-4c26-87bb-f161ea00760a
   - ID: 36b01315-748d-4c26-87bb-f161ea00760a
     Name: 45
     SpeakerName: Lilith
@@ -1330,7 +1129,7 @@ MonoBehaviour:
     Name: Lilith
     SpeakerName: Lilith
     Text: I want to tell you something honest. I feel like a friend would tell you.
-    SpritePath: Insert Sprite Path Here.
+    SpritePath: Lilith_Happy
     Choices:
     - Text: Next Dialogue
       NodeID: ebd810bb-0581-471e-8c86-a2596d25ff3a
@@ -1343,7 +1142,7 @@ MonoBehaviour:
     Name: 83
     SpeakerName: Lilith
     Text: "I want you to know that \u201Cyour\u201D dog doesn\u2019t even like you."
-    SpritePath: Insert Sprite Path Here.
+    SpritePath: Lilith_Happy
     Choices:
     - Text: Next Dialogue
       NodeID: 54e76a75-9d99-4e00-b010-ff26a03cf181
@@ -1352,11 +1151,267 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - 54e76a75-9d99-4e00-b010-ff26a03cf181
+  - ID: 09444052-aba6-49d4-a4e5-435f95ffab3b
+    Name: 4
+    SpeakerName: Lilith
+    Text: Lilith. The Queen. Of Darkness.
+    SpritePath: Lilith_Unhappy2
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 41012066-d710-46a7-a834-44af46c9d4be
+    GroupID: e0646b45-1205-45f0-9830-876688562027
+    Position: {x: 696, y: 227}
+    isStartNode: 0
+    ChildIDs:
+    - 41012066-d710-46a7-a834-44af46c9d4be
+  - ID: 698bdeb2-ad5d-42ad-8e27-c9136ae8f359
+    Name: 8
+    SpeakerName: Karl
+    Text: "Anyway, I was just about to collect Snuffles. We\u2019re going to the
+      park, aren\u2019t we, Snuffie?"
+    SpritePath: Neighbour_Friendly
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 46f2739e-db47-45d6-adfc-178ec690f8d9
+    GroupID: e0646b45-1205-45f0-9830-876688562027
+    Position: {x: 1857, y: 229}
+    isStartNode: 0
+    ChildIDs:
+    - 46f2739e-db47-45d6-adfc-178ec690f8d9
+  - ID: 46f2739e-db47-45d6-adfc-178ec690f8d9
+    Name: 10
+    SpeakerName: Karl
+    Text: "Would you like to join us, \u2026 Lilith?"
+    SpritePath: Neighbour_Friendly
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 716a77af-e413-4fe2-a9a6-59509c13a8d2
+    GroupID: e0646b45-1205-45f0-9830-876688562027
+    Position: {x: 2431, y: 231}
+    isStartNode: 0
+    ChildIDs:
+    - 716a77af-e413-4fe2-a9a6-59509c13a8d2
+  - ID: 757bbeb1-fa3e-4c85-b632-6d76236e2daf
+    Name: 26
+    SpeakerName: Lilith
+    Text: "These kinds of people shouldn\u2019t be allowed to live and reproduce\u2026\nEspecially
+      with someone like\u2026"
+    SpritePath: Lilith_Unhappy2
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 74eea43f-9ab3-44bc-9758-d4f17d1eb54e
+    GroupID: 8241f30b-0095-4892-b2fe-3118633b011e
+    Position: {x: 7046, y: 40}
+    isStartNode: 0
+    ChildIDs:
+    - 74eea43f-9ab3-44bc-9758-d4f17d1eb54e
+  - ID: 2c55c018-01c9-4b0d-a7f3-2b6e10c575aa
+    Name: 19
+    SpeakerName: Lilith
+    Text: Don't.
+    SpritePath: Lilith_tear
+    Choices:
+    - Text: Next Dialogue
+      NodeID: cfa6e3c8-cfad-4268-9dff-bfe859321165
+    GroupID: 2e8a6e81-953e-4d0e-8986-bbcce50e9e3c
+    Position: {x: 7098, y: -344}
+    isStartNode: 0
+    ChildIDs:
+    - cfa6e3c8-cfad-4268-9dff-bfe859321165
+  - ID: a76c8a3b-93cf-4766-aae2-b03541ceff29
+    Name: DialogueName
+    SpeakerName: Karl
+    Text: "...sense of humour\u2026 "
+    SpritePath: Neighbour_Sad
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 60c1079d-0a78-4a3c-9e7e-9fabecf17602
+    GroupID: 
+    Position: {x: 6396, y: 941}
+    isStartNode: 0
+    ChildIDs:
+    - 60c1079d-0a78-4a3c-9e7e-9fabecf17602
+  - ID: b696c158-232f-4612-893e-48f56a6c4c0e
+    Name: 37
+    SpeakerName: Karl
+    Text: "Me and Astrid know that you\u2019re joking, but especially since you\u2019re
+      carrying that sword around, other people might not understand your\u2026 \r"
+    SpritePath: Neighbour_Sad
+    Choices:
+    - Text: Next Dialogue
+      NodeID: a76c8a3b-93cf-4766-aae2-b03541ceff29
+    GroupID: e77da036-dcc1-451e-b77a-f3252c33d5e3
+    Position: {x: 5384, y: 957}
+    isStartNode: 0
+    ChildIDs:
+    - a76c8a3b-93cf-4766-aae2-b03541ceff29
+  - ID: 60c1079d-0a78-4a3c-9e7e-9fabecf17602
+    Name: DialogueName
+    SpeakerName: Character name.
+    Text: ...as well as we do.
+    SpritePath: Neighbour_Sad
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 922c451c-b587-464a-8c54-fbc1e28e6fef
+    GroupID: e77da036-dcc1-451e-b77a-f3252c33d5e3
+    Position: {x: 6628, y: 945}
+    isStartNode: 0
+    ChildIDs:
+    - 922c451c-b587-464a-8c54-fbc1e28e6fef
+  - ID: 67b48cef-5bad-4420-a6c6-8cd576657735
+    Name: 95
+    SpeakerName: Karl
+    Text: How is it cheating?
+    SpritePath: Neighbour_Friendly
+    Choices:
+    - Text: Next Dialogue
+      NodeID: d62a07f8-42ea-4978-bfba-367d2f9f817d
+    GroupID: 60b93be0-7818-48be-8b9d-b993fe281240
+    Position: {x: 17098, y: 647}
+    isStartNode: 0
+    ChildIDs:
+    - d62a07f8-42ea-4978-bfba-367d2f9f817d
+  - ID: 2cd00df3-1b5e-4203-a7e5-54f7d7ae0e19
+    Name: 94
+    SpeakerName: Lilith
+    Text: That's cheating.
+    SpritePath: Lilith_Unhappy2
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 67b48cef-5bad-4420-a6c6-8cd576657735
+    GroupID: 60b93be0-7818-48be-8b9d-b993fe281240
+    Position: {x: 16822, y: 646}
+    isStartNode: 0
+    ChildIDs:
+    - 67b48cef-5bad-4420-a6c6-8cd576657735
+  - ID: c633ab77-ac5d-4f4d-bec3-994a4faaef12
+    Name: vjhvh
+    SpeakerName: Snuffles
+    Text: ...
+    SpritePath: Dog
+    Choices:
+    - Text: Next Dialogue
+      NodeID: be5a8f45-2f47-431c-8d33-58a712931de2
+    GroupID: 60b93be0-7818-48be-8b9d-b993fe281240
+    Position: {x: 15992, y: 657}
+    isStartNode: 0
+    ChildIDs:
+    - be5a8f45-2f47-431c-8d33-58a712931de2
+  - ID: be5a8f45-2f47-431c-8d33-58a712931de2
+    Name: 93
+    SpeakerName: Karl
+    Text: Snuffles!
+    SpritePath: Neighbour_Friendly
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 0a05873c-edb0-4754-9f06-bb2f40d2cec0
+    GroupID: 60b93be0-7818-48be-8b9d-b993fe281240
+    Position: {x: 16274, y: 656}
+    isStartNode: 0
+    ChildIDs:
+    - 0a05873c-edb0-4754-9f06-bb2f40d2cec0
+  - ID: 7acc91ec-d955-4043-83e3-6914a2835f5b
+    Name: 59
+    SpeakerName: Lilith
+    Text: "Don\u2019t speak over me."
+    SpritePath: Lilith_Unhappy2
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 2b5c986f-6c67-47a4-87c1-20fce6c4f4e2
+    GroupID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
+    Position: {x: 13847, y: 123}
+    isStartNode: 0
+    ChildIDs:
+    - 2b5c986f-6c67-47a4-87c1-20fce6c4f4e2
+  - ID: fd21265e-d734-4229-8a76-b9d3cdd5e47d
+    Name: 28
+    SpeakerName: Lilith
+    Text: "Better I don\u2019t think about that."
+    SpritePath: Lilith_tear
+    Choices:
+    - Text: Next Dialogue
+      NodeID: c063f2d6-04d6-46d7-92d0-c4312d09d1ed
+    GroupID: 8241f30b-0095-4892-b2fe-3118633b011e
+    Position: {x: 7737, y: 37}
+    isStartNode: 0
+    ChildIDs:
+    - c063f2d6-04d6-46d7-92d0-c4312d09d1ed
+  - ID: f11aefb1-9260-4d22-ae66-a6140e03984f
+    Name: 82
+    SpeakerName: Karl
+    Text: "Yes. The fight is good. Because I have a licence\u2026"
+    SpritePath: Neighbour_Laughing
+    Choices:
+    - Text: Next Dialogue
+      NodeID: f83ad49b-7e4c-4313-a934-c4252f702700
+    GroupID: 4a1038fd-6bc4-4993-9390-28a8a8ff1145
+    Position: {x: 21389, y: 378}
+    isStartNode: 0
+    ChildIDs:
+    - f83ad49b-7e4c-4313-a934-c4252f702700
+  - ID: adfe88b2-e19c-4885-b67f-9c1bb68f3824
+    Name: 98
+    SpeakerName: Karl
+    Text: "\u2026TO GRILL!"
+    SpritePath: Neighbour_Laughing
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 
+    GroupID: 4a1038fd-6bc4-4993-9390-28a8a8ff1145
+    Position: {x: 21995, y: 379}
+    isStartNode: 0
+    ChildIDs:
+    - 
+  - ID: f83ad49b-7e4c-4313-a934-c4252f702700
+    Name: 97
+    SpeakerName: Lilith
+    Text: "DON\u2019T SAY IT \u2013 "
+    SpritePath: Lilith_Angry
+    Choices:
+    - Text: Next Dialogue
+      NodeID: adfe88b2-e19c-4885-b67f-9c1bb68f3824
+    GroupID: 4a1038fd-6bc4-4993-9390-28a8a8ff1145
+    Position: {x: 21721, y: 379}
+    isStartNode: 0
+    ChildIDs:
+    - adfe88b2-e19c-4885-b67f-9c1bb68f3824
+  - ID: d62a07f8-42ea-4978-bfba-367d2f9f817d
+    Name: 96
+    SpeakerName: Lilith
+    Text: 'It just is! And now you will die!
+
+      I will fight you!'
+    SpritePath: Lilith_Angry
+    Choices:
+    - Text: Next Dialogue
+      NodeID: ae3221c1-c4ad-4fe4-80bf-f83d4a93c7e2
+    GroupID: 60b93be0-7818-48be-8b9d-b993fe281240
+    Position: {x: 17395, y: 633}
+    isStartNode: 0
+    ChildIDs:
+    - ae3221c1-c4ad-4fe4-80bf-f83d4a93c7e2
+  - ID: 0a05873c-edb0-4754-9f06-bb2f40d2cec0
+    Name: bkjvj
+    SpeakerName: Snuffles
+    Text: Bark!
+    SpritePath: Dog
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 2cd00df3-1b5e-4203-a7e5-54f7d7ae0e19
+    GroupID: 60b93be0-7818-48be-8b9d-b993fe281240
+    Position: {x: 16549, y: 655}
+    isStartNode: 0
+    ChildIDs:
+    - 2cd00df3-1b5e-4203-a7e5-54f7d7ae0e19
   - ID: 725b822d-ddc8-4eef-bb14-f2eef433c095
     Name: 55
     SpeakerName: Lilith
-    Text: "No! I want to\u2026 \n(This is my chance to hurt him mentally, before
-      going for the physical damage.)"
+    Text: 'No! I want to fight you!
+
+      Besides...
+
+      (This is my chance to
+      hurt him mentally, before going for the physical damage.)'
     SpritePath: Lilith_Unhappy
     Choices:
     - Text: Next Dialogue
@@ -1378,7 +1433,8 @@ MonoBehaviour:
   - Ending
   - StopJoking
   - DontStopJoking
-  OldUngroupedNodeNames: []
+  OldUngroupedNodeNames:
+  - DialogueName
   OldGroupNodeNames:
     list:
     - Key: 2
@@ -1389,21 +1445,22 @@ MonoBehaviour:
       - 34
       - 35
       - 36
-      - 37
       - 38
       - Choicaroonie
+      - 37
+      - DialogueName
     - Key: intro
       Value:
       - 2
       - 1
       - 3
-      - 4
       - 5
       - 6
       - 7
+      - Choice1
+      - 4
       - 8
       - 10
-      - Choice1
     - Key: CommonBridge
       Value:
       - 46
@@ -1421,20 +1478,20 @@ MonoBehaviour:
       Value:
       - 24
       - 25
-      - 26
       - 27
-      - 28
       - 29
       - 23
+      - 26
+      - 28
     - Key: BackOffFromHer
       Value:
       - 16
       - 17
       - 18
-      - 19
       - 20
       - 21
       - 22
+      - 19
     - Key: YourDogDoesnLikeYou
       Value:
       - 85
@@ -1445,16 +1502,17 @@ MonoBehaviour:
       - 90
       - 91
       - 92
-      - 93
-      - 94
-      - 95
-      - 96
       - 84
       - 83
+      - 95
+      - 94
+      - vjhvh
+      - 93
+      - 96
+      - bkjvj
     - Key: BeHonest
       Value:
       - 58
-      - 59
       - 60
       - 61
       - 63
@@ -1478,11 +1536,7 @@ MonoBehaviour:
       - 80
       - 81
       - Lilith
-    - Key: Ending
-      Value:
-      - 82
-      - 97
-      - 98
+      - 59
     - Key: 1
       Value:
       - 11
@@ -1501,3 +1555,8 @@ MonoBehaviour:
       - 44
       - 45
       - DialogueName
+    - Key: Ending
+      Value:
+      - 82
+      - 98
+      - 97

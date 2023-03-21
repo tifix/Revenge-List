@@ -1,9 +1,9 @@
 {
-    "DialogueName": "94",
+    "DialogueName": "bkjvj",
     "nodeID": "",
-    "SpeakerName": "Lilith",
-    "Text": "That's cheating.",
-    "SpritePath": "Lilith_Unhappy2",
+    "SpeakerName": "Snuffles",
+    "Text": "Bark!",
+    "SpritePath": "Dog",
     "Choices": [
         {
             "Text": "Next Dialogue",
