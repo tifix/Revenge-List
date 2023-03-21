@@ -2,7 +2,7 @@
     "DialogueName": "55",
     "nodeID": "",
     "SpeakerName": "Lilith",
-    "Text": "No! I want to… \n(This is my chance to hurt him mentally, before going for the physical damage.)",
+    "Text": "No! I want to fight you!\nBesides...\n(This is my chance to hurt him mentally, before going for the physical damage.)",
     "SpritePath": "Lilith_Unhappy",
     "Choices": [
         {

@@ -197,8 +197,8 @@ public class QTEManager : MonoBehaviour
     public void QTEStart()
     {
         QTECleanUp();
-        PlayerMovement.instance.PauseMovement();
         anim.SetTrigger("QTE_entered");
+        PlayerMovement.instance.PauseMovement();
 
         GameManager.instance.SetPause(false);
         PlayerMovement.instance.SetLockMovement();        

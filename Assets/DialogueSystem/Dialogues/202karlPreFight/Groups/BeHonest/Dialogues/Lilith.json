@@ -3,7 +3,7 @@
     "nodeID": "",
     "SpeakerName": "Lilith",
     "Text": "I want to tell you something honest. I feel like a friend would tell you.",
-    "SpritePath": "Insert Sprite Path Here.",
+    "SpritePath": "Lilith_Happy",
     "Choices": [
         {
             "Text": "Next Dialogue",

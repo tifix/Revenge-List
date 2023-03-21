@@ -1,9 +1,9 @@
 {
-    "DialogueName": "94",
+    "DialogueName": "DialogueName",
     "nodeID": "",
-    "SpeakerName": "Lilith",
-    "Text": "That's cheating.",
-    "SpritePath": "Lilith_Unhappy2",
+    "SpeakerName": "Karl",
+    "Text": "...sense of humour… ",
+    "SpritePath": "Neighbour_Sad",
     "Choices": [
         {
             "Text": "Next Dialogue",

@@ -3,7 +3,7 @@
     "nodeID": "",
     "SpeakerName": "CHOICE",
     "Text": "Dialogue text.",
-    "SpritePath": "Insert Sprite Path Here.",
+    "SpritePath": "Lilith_Happy",
     "Choices": [
         {
             "Text": "I’d rather die. Or you should.",

@@ -2,7 +2,7 @@
     "DialogueName": "4",
     "nodeID": "",
     "SpeakerName": "Smuffles",
-    "Text": "*Dog noises*",
+    "Text": "Bark!",
     "SpritePath": "Dog",
     "Choices": [
         {
