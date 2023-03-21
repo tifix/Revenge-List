@@ -462,8 +462,6 @@ MonoBehaviour:
   isPausedWhileShowingA: 1
   preUseDialogue: {fileID: 11400000, guid: 0615f1bb4898a3943876a298c67d0667, type: 2}
   waitAfterPreDialogue: 0.1
-  isPausedWhileShowingB: 0
-  postUsedialogue: {fileID: 0}
   waitAfterInteract: 0
 --- !u!65 &137844976
 BoxCollider:
@@ -533,8 +531,6 @@ MonoBehaviour:
   isPausedWhileShowingA: 1
   preUseDialogue: {fileID: 11400000, guid: d7e3f7adf425c23449910a22f0f20f8a, type: 2}
   waitAfterPreDialogue: 0.1
-  isPausedWhileShowingB: 0
-  postUsedialogue: {fileID: 0}
   waitAfterInteract: 0
 --- !u!65 &246104504
 BoxCollider:
@@ -1021,8 +1017,6 @@ MonoBehaviour:
   isPausedWhileShowingA: 1
   preUseDialogue: {fileID: 11400000, guid: 57ff88abcdd10414fb8cda70c1e10ed4, type: 2}
   waitAfterPreDialogue: 0.1
-  isPausedWhileShowingB: 0
-  postUsedialogue: {fileID: 0}
   waitAfterInteract: 0
 --- !u!65 &765600778
 BoxCollider:
@@ -1120,7 +1114,7 @@ PrefabInstance:
     - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
       propertyPath: BossTrack
       value: 
-      objectReference: {fileID: 8300000, guid: 1025539e30207ea469bb4616b1494201, type: 3}
+      objectReference: {fileID: 8300000, guid: a6653b98998f6cf439cc8f4b3f79fbcb, type: 3}
     - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
       propertyPath: MenuClick
       value: 
@@ -1536,7 +1530,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897402303}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: -8.890705, y: 20.066225, z: -41.310528}
+  m_LocalPosition: {x: -8.890686, y: 20.066225, z: -41.310528}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1909,7 +1903,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162723989}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: -8.890705, y: 20.066225, z: -41.310528}
+  m_LocalPosition: {x: -8.890686, y: 20.066225, z: -41.310528}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2218,8 +2212,6 @@ MonoBehaviour:
   isPausedWhileShowingA: 1
   preUseDialogue: {fileID: 11400000, guid: a16cf6b8cf0cac542bca744759df342f, type: 2}
   waitAfterPreDialogue: 0.1
-  isPausedWhileShowingB: 0
-  postUsedialogue: {fileID: 0}
   waitAfterInteract: 0
 --- !u!65 &1387884610
 BoxCollider:
@@ -3735,8 +3727,6 @@ MonoBehaviour:
   isPausedWhileShowingA: 1
   preUseDialogue: {fileID: 11400000, guid: d7a823581e5999e4c89d065ebcba9cad, type: 2}
   waitAfterPreDialogue: 0.1
-  isPausedWhileShowingB: 0
-  postUsedialogue: {fileID: 0}
   waitAfterInteract: 0
 --- !u!65 &2078551480
 BoxCollider:
@@ -4380,8 +4370,6 @@ MonoBehaviour:
   isPausedWhileShowingA: 1
   preUseDialogue: {fileID: 11400000, guid: d4488d1dc73b45d46b98adfd771dd998, type: 2}
   waitAfterPreDialogue: 0.3
-  isPausedWhileShowingB: 0
-  postUsedialogue: {fileID: 0}
   waitAfterInteract: 0
 --- !u!65 &4814028220154755164
 BoxCollider:
@@ -4512,8 +4500,6 @@ MonoBehaviour:
   isPausedWhileShowingA: 1
   preUseDialogue: {fileID: 11400000, guid: 5f6d223fcd9aa0947855da606c90d064, type: 2}
   waitAfterPreDialogue: 0
-  isPausedWhileShowingB: 0
-  postUsedialogue: {fileID: 0}
   waitAfterInteract: 0
 --- !u!1 &4814028221092203615
 GameObject:
@@ -4597,8 +4583,6 @@ MonoBehaviour:
   isPausedWhileShowingA: 1
   preUseDialogue: {fileID: 0}
   waitAfterPreDialogue: 0
-  isPausedWhileShowingB: 0
-  postUsedialogue: {fileID: 0}
   waitAfterInteract: 0
 --- !u!65 &4814028221133972364
 BoxCollider:
@@ -4651,8 +4635,6 @@ MonoBehaviour:
   isPausedWhileShowingA: 1
   preUseDialogue: {fileID: 11400000, guid: 0542c5cd0f8d4ac4a9a5100ee7703202, type: 2}
   waitAfterPreDialogue: 0.1
-  isPausedWhileShowingB: 0
-  postUsedialogue: {fileID: 0}
   waitAfterInteract: 0
 --- !u!65 &4814028221261374981
 BoxCollider:
@@ -4876,6 +4858,7 @@ MonoBehaviour:
   straightAttack: {fileID: 1295236842262852007, guid: b76e09703fb7abd4d9ad9207b3bad724, type: 3}
   lineAttack: {fileID: 1337283920656425530, guid: 2e9db506ff48775438b63b40dd5f5b6b, type: 3}
   health: {fileID: 5668457905372125320}
+  executableSprite: {fileID: 0}
   playerRadius: 2
   currentPhase: 0
   phases:
@@ -4895,6 +4878,9 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 58cdb0da6873caa4586f5a02caa897e2, type: 2}
   - attacks:
     - {fileID: 11400000, guid: 10d9e04e3e916d340810fa497ffcd983, type: 2}
+  roundStartDialogues: []
+  roundEndDialogues: []
+  dialogueDelay: 1.1
   phase_QTEs:
   - {fileID: 11400000, guid: bbfd62af9cfd19b4b94847ae0d5f913c, type: 2}
   overHeadAnimationDelay: 0
@@ -5021,8 +5007,6 @@ MonoBehaviour:
   isPausedWhileShowingA: 1
   preUseDialogue: {fileID: 11400000, guid: 2ca64cae7635e844c93c6e63a4ecb07a, type: 2}
   waitAfterPreDialogue: 0.1
-  isPausedWhileShowingB: 0
-  postUsedialogue: {fileID: 0}
   waitAfterInteract: 0.1
 --- !u!65 &8133781384042086453
 BoxCollider:

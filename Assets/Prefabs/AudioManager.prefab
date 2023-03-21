@@ -32,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1100812460807905419
 AudioSource:
@@ -45,10 +45,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_PlayOnAwake: 0
+  m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -141,7 +141,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -239,4 +239,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicSource: {fileID: 1100812460807905419}
+  musicSource2: {fileID: 0}
   sfxSource: {fileID: 6679982221434791165}
+  WalkMC: {fileID: 8300000, guid: bd517989c06eeae419eccd37dab481eb, type: 3}
+  DashMC: {fileID: 8300000, guid: fbf4f06ea5035db4cbc84c3f7e936093, type: 3}
+  BgMusic: {fileID: 8300000, guid: 187923d23c5501244872ef08785e528a, type: 3}
+  BossTrack: {fileID: 8300000, guid: a6653b98998f6cf439cc8f4b3f79fbcb, type: 3}
+  MenuClick: {fileID: 8300000, guid: cce2c1953b0b39743a62b8b6a3d3d514, type: 3}
+  QteTrack: {fileID: 8300000, guid: 61da71e1b34077f4697398d922c00935, type: 3}
+  EnvelopeThrow: {fileID: 8300000, guid: 372bbd149e23e8e4e862b6631909ad85, type: 3}
+  KickSFX: {fileID: 8300000, guid: b24c529f65e1d4c4f84bdb2ef51b986f, type: 3}
+  FlipSFX: {fileID: 8300000, guid: 19f8b1ada518edb46b28aa7b8bb1983e, type: 3}
+  DogBark: {fileID: 8300000, guid: 37d5fe5501944fb468950cc9025afbb7, type: 3}
+  CreditsTrack: {fileID: 8300000, guid: f3796ed598912f74b93b68b4e7232d00, type: 3}
