@@ -307,9 +307,6 @@ public class UI : MonoBehaviour
 
     #endregion
 
-
-
-
     #region Dialogue Choices
 
     public void SetDialogueChoicesTest(string text) => SetDialogueChoices(text, text, "DebugA", "DebugB");

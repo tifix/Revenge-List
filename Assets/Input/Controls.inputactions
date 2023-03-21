@@ -49,15 +49,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "List",
-                    "type": "Button",
-                    "id": "d97ad2b8-f7df-4e19-bb1c-f84abf4f606f",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -225,28 +216,6 @@
                     "action": "Dash",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "38c31b09-c5e4-4b94-9cdb-b9b1851ddcd9",
-                    "path": "<Keyboard>/l",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "List",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "ba64db1d-eb64-4a8f-9361-1d4d4eef8de6",
-                    "path": "<Gamepad>/buttonNorth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "List",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         },
@@ -267,6 +236,15 @@
                     "name": "Confirm",
                     "type": "Button",
                     "id": "8e9d79fd-4905-4659-adee-3780c80bdf20",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "List",
+                    "type": "Button",
+                    "id": "93ecea44-9034-479b-aa58-9aafd3380b59",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -348,6 +326,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Confirm",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d61b95d1-0f0b-40c5-8f6b-fe33055eb2d1",
+                    "path": "<Keyboard>/l",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "List",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d570d888-b27b-413e-878e-c6bbee420efb",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "List",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
