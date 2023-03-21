@@ -33,7 +33,7 @@ public class QTEManager : MonoBehaviour
     public List<BeatItem> beatObjects; 
     List<SkullController> _skulls;
 
-    [SerializeField] float percentagePerSkull;
+    float percentagePerSkull;
 
     Animator anim;
 
@@ -99,6 +99,7 @@ public class QTEManager : MonoBehaviour
                 {
                     SpawnSkull();
                     beatCounter++;
+                    FillSong.fillAmount += percentagePerSkull;
                 }
                 beatTimer = 0;
             }
@@ -126,11 +127,8 @@ public class QTEManager : MonoBehaviour
                         Instantiate<GameObject>(skullVFX, _skulls[i].transform.position, Quaternion.identity);
                         Debug.Log("miss! Going red");
                         _skulls[i].gameObject.GetComponentInChildren<Animator>().SetTrigger("Miss");
-                        anim.SetTrigger("QTE_MissCircle");  //playing the miss animation on the qte ring itself
-                        
                         Destroy(_skulls[i].gameObject, 0.2f);
                         _skulls.RemoveAt(i);
-                        //FillSong.fillAmount += percentagePerSkull;
 
                         healthQTE--;
                         //Fail QTE
@@ -154,7 +152,6 @@ public class QTEManager : MonoBehaviour
                         Destroy(_skulls[i].gameObject,0.2f);
                         _skulls.RemoveAt(i);
                         correctHits++;
-                        FillSong.fillAmount += percentagePerSkull;
                         break;
                     }
 
@@ -166,7 +163,6 @@ public class QTEManager : MonoBehaviour
                         _skulls[i].gameObject.GetComponentInChildren<Animator>().SetTrigger("Hit");
                         Destroy(_skulls[i].gameObject, 0.2f);
                         _skulls.RemoveAt(i);
-                        FillSong.fillAmount += percentagePerSkull;
                     }
                 }
                 
@@ -206,7 +202,7 @@ public class QTEManager : MonoBehaviour
         if (currentMap == null)
             currentMap = defaultMap;
 
-        percentagePerSkull = (float)(1.0f / (currentMap.beats.Count-healthQTE+1));      //for fill you need
+        percentagePerSkull = (float)(1.0f / currentMap.beats.Count);
         FillSong.fillAmount = 0;
 
         anim.SetBool("QTE_Playing", true);
@@ -287,7 +283,7 @@ public class QTEManager : MonoBehaviour
     public void SetBeatMap(QTEObject map)
     {
         currentMap = map;
-        percentagePerSkull = (float)(1.0f / (currentMap.beats.Count - healthQTE+1));
+        percentagePerSkull = (float)(1.0f / currentMap.beats.Count);
         FillSong.fillAmount = 0;
     }
 
@@ -295,14 +291,14 @@ public class QTEManager : MonoBehaviour
     public void SetDefaultMap()
     {
         currentMap = defaultMap;
-        percentagePerSkull = (float)(1.0f / (currentMap.beats.Count - healthQTE + 1));
+        percentagePerSkull = (float)(1.0f / currentMap.beats.Count);
         FillSong.fillAmount = 0;
     }
 
     public void QTECleanUp()
     {
         //currentMap = defaultMap;
-        percentagePerSkull = (float)(1.0f / (currentMap.beats.Count - healthQTE + 1));
+        percentagePerSkull = (float)(1.0f / currentMap.beats.Count);
         FillSong.fillAmount = 0;
 
         beatCounter = 0;
