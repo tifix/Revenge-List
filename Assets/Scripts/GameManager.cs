@@ -195,7 +195,7 @@ public class GameManager : MonoBehaviour
     #region Scene Switching
     public static void LoadScene(int _SceneNumber) => SceneManager.LoadScene(_SceneNumber);
     public static void LoadScene(string _SceneName) => SceneManager.LoadScene(_SceneName);
-    public static void LoadMenu() => SceneManager.LoadScene("Menu");
+    public static void LoadMenu() => SceneManager.LoadScene("0_Menu");
     
     public void LoadLevel(int index)
     {
