@@ -18,7 +18,6 @@ public class QTEManager : MonoBehaviour
     bool isPlaying;
     float beatTimer;
     int beatCounter;
-    int comboCount;
     int correctHits;
 
     [SerializeField] private Sprite skullPerfect, skullMiss;
@@ -28,7 +27,6 @@ public class QTEManager : MonoBehaviour
     public Image FillSong;
     [Range(0.1f,1.0f)]
     public float beatScale;
-    public TMP_Text comboUI;
     public TMP_Text countDownUI;
     public Transform up, down, left, right;
 
@@ -71,7 +69,6 @@ public class QTEManager : MonoBehaviour
 
         beatCounter = 0;
         correctHits = 0;
-        comboUI.text = "";
 
         _skulls = new List<SkullController>();
 
@@ -132,8 +129,6 @@ public class QTEManager : MonoBehaviour
                         _skulls[i].gameObject.GetComponentInChildren<Animator>().SetTrigger("Miss");
                         Destroy(_skulls[i].gameObject, 0.2f);
                         _skulls.RemoveAt(i);
-                        comboCount = 0;
-                        comboUI.text = "";
 
                         healthQTE--;
                         //Fail QTE
@@ -156,9 +151,7 @@ public class QTEManager : MonoBehaviour
                         _skulls[i].gameObject.GetComponentInChildren<Animator>().SetTrigger("Perfect");  //GetComponentInChildren<SpriteRenderer>().sprite = skullPerfect;
                         Destroy(_skulls[i].gameObject,0.2f);
                         _skulls.RemoveAt(i);
-                        comboCount += 1;
                         correctHits++;
-                        comboUI.text = "Combo " + comboCount.ToString();
                         break;
                     }
 
@@ -235,7 +228,7 @@ public class QTEManager : MonoBehaviour
         isPlaying = true;
     }
 
-    public int QTEEnd()
+    public void QTEEnd()
     {
         
 
@@ -283,7 +276,6 @@ public class QTEManager : MonoBehaviour
         }
 
         correctHits = 0;        
-        return comboCount;
         //Score;
     }
 
@@ -311,7 +303,6 @@ public class QTEManager : MonoBehaviour
 
         beatCounter = 0;
         beatTimer = 0;
-        comboCount = 0;
         correctHits = 0;
         healthQTE = 3;
         
