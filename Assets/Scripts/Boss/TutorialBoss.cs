@@ -9,7 +9,6 @@ public class TutorialBoss : BossClass
     public GameObject afterThirdAttackDialoguePrompt;
     public GameObject afterFourthAttackDialoguePrompt;
     public GameObject afterFifthAttackDialoguePrompt;
-
     public GameObject exitToNextScene;
 
     protected override void OnEnable()
@@ -19,6 +18,7 @@ public class TutorialBoss : BossClass
         StartCoroutine(FirstAttack());
         GetComponent<bossHealth>().canTakeDamage = false;
         SetQTEandDialogueForRound(0);
+        AudioManager.instance.PlayMusic("BossTrack");
     }
 
     protected override void Update()
