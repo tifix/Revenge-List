@@ -2,8 +2,8 @@
     "DialogueName": "9",
     "nodeID": "",
     "SpeakerName": "Lilith",
-    "Text": "I must, must, do this now.",
-    "SpritePath": "Lilith_Unhappy",
+    "Text": "I must, must, pet you now.",
+    "SpritePath": "Lilith_Smug",
     "Choices": [
         {
             "Text": "Next Dialogue",

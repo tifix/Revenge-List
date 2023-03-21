@@ -3,7 +3,7 @@
     "nodeID": "",
     "SpeakerName": "Lilith",
     "Text": "I want you to know that “your” dog doesn’t even like you.",
-    "SpritePath": "Insert Sprite Path Here.",
+    "SpritePath": "Lilith_Happy",
     "Choices": [
         {
             "Text": "Next Dialogue",

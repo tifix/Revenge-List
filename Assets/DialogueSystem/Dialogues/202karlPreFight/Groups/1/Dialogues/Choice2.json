@@ -3,7 +3,7 @@
     "nodeID": "",
     "SpeakerName": "CHOICE",
     "Text": "Dialogue text.",
-    "SpritePath": "Insert Sprite Path Here.",
+    "SpritePath": "Lilith_Unhappy2",
     "Choices": [
         {
             "Text": "Do take her out…",
