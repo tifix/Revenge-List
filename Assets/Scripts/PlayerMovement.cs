@@ -44,6 +44,7 @@ public class PlayerMovement : MonoBehaviour
     [Tooltip("Max depth and minimun depth")]
     public Vector2 zLimits;
 
+    public bool hasList { get; set; } = true;
     void Awake()
     {
         if (instance == null) instance = this;
@@ -62,9 +63,8 @@ public class PlayerMovement : MonoBehaviour
         input.Ground.Dash.performed += DoDash;
         input.Ground.Dash.Enable();
 
-        input.Ground.List.performed += RevengeList;
-        input.Ground.List.Enable();
-
+        input.Menu.List.performed += RevengeList;
+        input.Menu.List.Enable();
     }
 
     void Update()
@@ -185,6 +185,7 @@ public class PlayerMovement : MonoBehaviour
 
     void RevengeList(InputAction.CallbackContext obj)
     {
-        UI.instance.ToggleRevengeList();
+        if(hasList)
+            UI.instance.ToggleRevengeList();
     }
 }
