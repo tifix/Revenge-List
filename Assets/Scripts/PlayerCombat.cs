@@ -174,7 +174,7 @@ public class PlayerCombat : ObjectScript
 
         if (health <= 0.0f)
         {
-            StartCoroutine(OnDeath());
+            GameManager.instance.SetLost(true);
         }
     }
 
