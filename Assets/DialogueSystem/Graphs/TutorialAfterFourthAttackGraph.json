@@ -5,26 +5,11 @@
     },
     "UngroupedDialogues": [
         {
-            "DialogueName": "0",
-            "nodeID": "",
-            "SpeakerName": "Microwave",
-            "Text": "...",
-            "SpritePath": "regular_gnome 1",
-            "Choices": [
-                {
-                    "Text": "Next Dialogue",
-                    "nextID": ""
-                }
-            ],
-            "DialogueType": 0,
-            "IsStartingDialogue": true
-        },
-        {
             "DialogueName": "1",
             "nodeID": "",
             "SpeakerName": "Microwave",
             "Text": "\n\n\nFuck.",
-            "SpritePath": "regular_gnome 1",
+            "SpritePath": "Microwave2",
             "Choices": [
                 {
                     "Text": "Next Dialogue",
@@ -48,6 +33,21 @@
             ],
             "DialogueType": 0,
             "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "0",
+            "nodeID": "",
+            "SpeakerName": "Microwave",
+            "Text": "...",
+            "SpritePath": "Microwave1",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": true
         }
     ]
 }

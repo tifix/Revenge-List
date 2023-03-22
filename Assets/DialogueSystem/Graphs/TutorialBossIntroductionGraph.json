@@ -9,7 +9,7 @@
             "nodeID": "",
             "SpeakerName": "Microwave",
             "Text": "Well, well, well... If it isn't little Lilith...",
-            "SpritePath": "regular_gnome 1",
+            "SpritePath": "Microwave1",
             "Choices": [
                 {
                     "Text": "Next Dialogue",
@@ -24,7 +24,7 @@
             "nodeID": "",
             "SpeakerName": "Microwave",
             "Text": "Come here so i can beat you up",
-            "SpritePath": "regular_gnome 1",
+            "SpritePath": "Microwave2",
             "Choices": [
                 {
                     "Text": "Next Dialogue",

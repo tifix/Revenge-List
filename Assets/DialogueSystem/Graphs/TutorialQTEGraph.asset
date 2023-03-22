@@ -48,7 +48,7 @@ MonoBehaviour:
     Text: 'Maaaaaaaaaaaan...
 
       This some bullshit fr fr.'
-    SpritePath: regular_gnome 1
+    SpritePath: Microwave2
     Choices:
     - Text: Next Dialogue
       NodeID: 
