@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TutorialBoss : BossClass
 {
+    public GameObject shield;
+
     public GameObject afterFirstAttackDialoguePrompt;
     public GameObject afterSecondAttackDialoguePrompt;
     public GameObject afterThirdAttackDialoguePrompt;
@@ -153,6 +155,7 @@ public class TutorialBoss : BossClass
         //After Screen-Wide attack
         afterFourthAttackDialoguePrompt.SetActive(true);
         GetComponent<bossHealth>().canTakeDamage = true;
+        shield.SetActive(false);
     }
 
     IEnumerator FourthAttack()

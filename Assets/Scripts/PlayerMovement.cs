@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
     [Tooltip("Max depth and minimun depth")]
     public Vector2 zLimits;
 
-    public bool hasList { get; set; } = true;
+    public bool hasList = true;
     void Awake()
     {
         if (instance == null) instance = this;
@@ -187,5 +187,10 @@ public class PlayerMovement : MonoBehaviour
     {
         if(hasList)
             UI.instance.ToggleRevengeList();
+    }
+
+    public void SetList()
+    {
+        hasList = true;
     }
 }

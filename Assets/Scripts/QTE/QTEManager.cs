@@ -234,8 +234,6 @@ public class QTEManager : MonoBehaviour
 
     public void QTEEnd()
     {
-        
-
         //Win QTE
         if (correctHits >= currentMap.beatsForWin || GameManager.instance.cheat_QTEAlwaysWin)
         {           
@@ -307,7 +305,6 @@ public class QTEManager : MonoBehaviour
 
         beatCounter = 0;
         beatTimer = 0;
-        correctHits = 0;
         healthQTE = 3;
         
         playQTE = false;
