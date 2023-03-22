@@ -25,6 +25,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip FlipSFX;
     public AudioClip DogBark;
     public AudioClip CreditsTrack;
+    public AudioClip HitSFX;
 
 
     private void Awake()
@@ -91,6 +92,9 @@ public class AudioManager : MonoBehaviour
                 break;
             case "Bark":
                 sfxSource.clip = DogBark;
+                break;
+            case "Hit":
+                sfxSource.clip = HitSFX;
                 break;
             default:
                 Debug.LogWarning("Incorrect name " + name + " check spelling");
