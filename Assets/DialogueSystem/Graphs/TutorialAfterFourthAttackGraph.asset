@@ -15,19 +15,6 @@ MonoBehaviour:
   FileName: TutorialAfterFourthAttack
   Groups: []
   Nodes:
-  - ID: fbca8903-e7a9-4f48-b278-a8acc6bd2600
-    Name: 0
-    SpeakerName: Microwave
-    Text: ...
-    SpritePath: regular_gnome 1
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 9e1ac755-7060-42cf-aa0c-854d140121a5
-    GroupID: 
-    Position: {x: 218, y: 299}
-    isStartNode: 1
-    ChildIDs:
-    - 9e1ac755-7060-42cf-aa0c-854d140121a5
   - ID: 9e1ac755-7060-42cf-aa0c-854d140121a5
     Name: 1
     SpeakerName: Microwave
@@ -36,7 +23,7 @@ MonoBehaviour:
 
 
       Fuck.'
-    SpritePath: regular_gnome 1
+    SpritePath: Microwave2
     Choices:
     - Text: Next Dialogue
       NodeID: 2be164c9-4d1c-423f-b33e-37d4c5c9267f
@@ -58,10 +45,23 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - 
+  - ID: fbca8903-e7a9-4f48-b278-a8acc6bd2600
+    Name: 0
+    SpeakerName: Microwave
+    Text: ...
+    SpritePath: Microwave1
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 9e1ac755-7060-42cf-aa0c-854d140121a5
+    GroupID: 
+    Position: {x: 218, y: 299}
+    isStartNode: 1
+    ChildIDs:
+    - 9e1ac755-7060-42cf-aa0c-854d140121a5
   OldGroupNames: []
   OldUngroupedNodeNames:
-  - 0
   - 1
   - 2
+  - 0
   OldGroupNodeNames:
     list: []

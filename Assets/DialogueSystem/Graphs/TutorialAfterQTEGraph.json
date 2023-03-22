@@ -5,21 +5,6 @@
     },
     "UngroupedDialogues": [
         {
-            "DialogueName": "0",
-            "nodeID": "",
-            "SpeakerName": "Microwave",
-            "Text": "Ugh...\nThis isn't the last you'll see of me... bitch.",
-            "SpritePath": "regular_gnome 1",
-            "Choices": [
-                {
-                    "Text": "Next Dialogue",
-                    "nextID": ""
-                }
-            ],
-            "DialogueType": 0,
-            "IsStartingDialogue": true
-        },
-        {
             "DialogueName": "1",
             "nodeID": "",
             "SpeakerName": "Lilith",
@@ -48,6 +33,21 @@
             ],
             "DialogueType": 0,
             "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "0",
+            "nodeID": "",
+            "SpeakerName": "Microwave",
+            "Text": "Ugh...\nThis isn't the last you'll see of me... bitch.",
+            "SpritePath": "Microwave1",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": true
         }
     ]
 }
