@@ -1,0 +1,642 @@
+fileFormatVersion: 2
+guid: 083aa8e402ddea944a0d7aae0c5c320f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lilith Walk Spritesheet FINAL_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1040
+        width: 329
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1ad04cb52f7a844087a26fad78aa1be
+      internalID: 858191351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Walk Spritesheet FINAL_1
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1040
+        width: 329
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e1a62f55e29f24aaebf625bb994380
+      internalID: -1716534303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Walk Spritesheet FINAL_2
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 1040
+        width: 329
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea2eaf372f4e534a8a2c4ab3435ac97
+      internalID: -1509891487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Walk Spritesheet FINAL_3
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 1040
+        width: 329
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f2178efef89f44da3aba258eb76b51
+      internalID: -1083524241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Walk Spritesheet FINAL_4
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 1040
+        width: 329
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89de6c2d2b0fa3e4aaf3caa3c7bf2116
+      internalID: -1903038092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Walk Spritesheet FINAL_5
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 1040
+        width: 329
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3db7e5f8414094fbc8b99d00478d5d
+      internalID: -1384268774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Walk Spritesheet FINAL_6
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 1040
+        width: 329
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0678c92ee3930c46a761311f4d86752
+      internalID: 528226653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Walk Spritesheet FINAL_7
+      rect:
+        serializedVersion: 2
+        x: 2303
+        y: 1040
+        width: 329
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919c7573db96c9c4ea47dae49a87082c
+      internalID: 1245541015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Walk Spritesheet FINAL_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 520
+        width: 329
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ad522c118b48d4286d5deefd3ce23d
+      internalID: -2080179219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Walk Spritesheet FINAL_9
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 520
+        width: 329
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c00112593c89bd44fb831e3a63fa9f7f
+      internalID: 1673161162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Walk Spritesheet FINAL_10
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 520
+        width: 329
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88db83060bcc5ac428c249cb2f571ad0
+      internalID: 2144736064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Walk Spritesheet FINAL_11
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 520
+        width: 329
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af13a8402a4630946bdd6ba2b00e6ca9
+      internalID: 653802277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Walk Spritesheet FINAL_12
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 520
+        width: 329
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a9768b83157804ba910a7578c9e30b
+      internalID: 2069152325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Walk Spritesheet FINAL_13
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 520
+        width: 329
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ceaaf12ce1b0e4c97deb7c3740698d
+      internalID: -411633650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Walk Spritesheet FINAL_14
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 520
+        width: 329
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb24ff66097ab9747b699094316b7e00
+      internalID: 443495398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Walk Spritesheet FINAL_15
+      rect:
+        serializedVersion: 2
+        x: 2303
+        y: 520
+        width: 329
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a7ab5013a746ea489589c24a365c277
+      internalID: -1127895165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Walk Spritesheet FINAL_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 329
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6dcd1e407c80c449b5a58b07b26a970
+      internalID: 1567668950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Walk Spritesheet FINAL_17
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 0
+        width: 329
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34fab74c003a6944da7d91d1a68f2ab1
+      internalID: 1703746804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Walk Spritesheet FINAL_18
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 0
+        width: 329
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2edb4356c85d5494ebf7531e12699120
+      internalID: -517945375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Walk Spritesheet FINAL_19
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 0
+        width: 329
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8924cd0fe3f962549b8d1bb6f5e31fe8
+      internalID: 529671124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Walk Spritesheet FINAL_20
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 0
+        width: 329
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e870c0c40d8a317499b91f9c676794d4
+      internalID: 1837836093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Walk Spritesheet FINAL_21
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 0
+        width: 329
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6818959d66e38f4eb195f23b16e1ae8
+      internalID: 94020793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Walk Spritesheet FINAL_22
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 0
+        width: 329
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc0d8f86cf3c354a907636d2146e3ca
+      internalID: -979926019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Lilith Walk Spritesheet FINAL_20: 1837836093
+      Lilith Walk Spritesheet FINAL_5: -1384268774
+      Lilith Walk Spritesheet FINAL_4: -1903038092
+      Lilith Walk Spritesheet FINAL_16: 1567668950
+      Lilith Walk Spritesheet FINAL_7: 1245541015
+      Lilith Walk Spritesheet FINAL_21: 94020793
+      Lilith Walk Spritesheet FINAL_9: 1673161162
+      Lilith Walk Spritesheet FINAL_2: -1509891487
+      Lilith Walk Spritesheet FINAL_13: -411633650
+      Lilith Walk Spritesheet FINAL_22: -979926019
+      Lilith Walk Spritesheet FINAL_15: -1127895165
+      Lilith Walk Spritesheet FINAL_10: 2144736064
+      Lilith Walk Spritesheet FINAL_14: 443495398
+      Lilith Walk Spritesheet FINAL_12: 2069152325
+      Lilith Walk Spritesheet FINAL_19: 529671124
+      Lilith Walk Spritesheet FINAL_3: -1083524241
+      Lilith Walk Spritesheet FINAL_8: -2080179219
+      Lilith Walk Spritesheet FINAL_11: 653802277
+      Lilith Walk Spritesheet FINAL_0: 858191351
+      Lilith Walk Spritesheet FINAL_17: 1703746804
+      Lilith Walk Spritesheet FINAL_18: -517945375
+      Lilith Walk Spritesheet FINAL_6: 528226653
+      Lilith Walk Spritesheet FINAL_1: -1716534303
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
