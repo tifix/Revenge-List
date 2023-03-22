@@ -197,8 +197,8 @@ public class PlayerCombat : ObjectScript
         //Debug.Log("PLAYER DEAD... [WIP]");
         UI.instance.FadeOut();
         yield return new WaitForSeconds(1f);
-        GameManager.instance.SetLost(true);
         UI.instance.FadeIn();
+        GameManager.instance.SetLost(true);
     }
 
     void KillSelf(InputAction.CallbackContext obj)
