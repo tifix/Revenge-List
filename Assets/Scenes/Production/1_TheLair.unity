@@ -5766,8 +5766,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c67a58bff6b434249b22bcc022028e4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  overHeadAttack: {fileID: 1337283920656425530, guid: 0dbf1de66fe8f2a4690d47d2c58d26a1, type: 3}
-  straightAttack: {fileID: 1337283920656425530, guid: 7a1430103fcf3ba4192d52860124cd00, type: 3}
+  overHeadAttack: {fileID: 1337283920656425530, guid: 7a1430103fcf3ba4192d52860124cd00, type: 3}
+  straightAttack: {fileID: 1295236842262852007, guid: 5b274b9f853d89c4db4ee53085ee2f4c, type: 3}
   lineAttack: {fileID: 1337283920656425530, guid: 866cf803ced1b8545a9b723d6231a00a, type: 3}
   health: {fileID: 5668457905372125320}
   executableSprite: {fileID: 0}
