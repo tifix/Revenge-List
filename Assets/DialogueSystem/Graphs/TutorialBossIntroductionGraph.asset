@@ -19,7 +19,7 @@ MonoBehaviour:
     Name: 0
     SpeakerName: Microwave
     Text: Well, well, well... If it isn't little Lilith...
-    SpritePath: regular_gnome 1
+    SpritePath: Microwave1
     Choices:
     - Text: Next Dialogue
       NodeID: d75aa42f-9996-433c-bc53-9bc709d8b2a7
@@ -32,7 +32,7 @@ MonoBehaviour:
     Name: 1
     SpeakerName: Microwave
     Text: Come here so i can beat you up
-    SpritePath: regular_gnome 1
+    SpritePath: Microwave2
     Choices:
     - Text: Next Dialogue
       NodeID: 

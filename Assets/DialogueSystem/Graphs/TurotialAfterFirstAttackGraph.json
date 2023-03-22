@@ -9,7 +9,7 @@
             "nodeID": "",
             "SpeakerName": "Microwave",
             "Text": "Muahahahaaaaaaa",
-            "SpritePath": "regular_gnome 1",
+            "SpritePath": "Microwave1",
             "Choices": [
                 {
                     "Text": "Next Dialogue",
@@ -24,7 +24,7 @@
             "nodeID": "",
             "SpeakerName": "Microwave",
             "Text": "Tremble in fear.\nI am far too powerful for you",
-            "SpritePath": "regular_gnome 1",
+            "SpritePath": "Microwave2",
             "Choices": [
                 {
                     "Text": "Next Dialogue",

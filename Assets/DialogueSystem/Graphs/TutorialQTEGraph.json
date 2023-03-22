@@ -39,7 +39,7 @@
             "nodeID": "",
             "SpeakerName": "Microwave",
             "Text": "Maaaaaaaaaaaan...\nThis some bullshit fr fr.",
-            "SpritePath": "regular_gnome 1",
+            "SpritePath": "Microwave2",
             "Choices": [
                 {
                     "Text": "Next Dialogue",

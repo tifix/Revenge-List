@@ -19,7 +19,7 @@ MonoBehaviour:
     Name: 0
     SpeakerName: Microwave
     Text: "How... \nHow did you do that????!!!!!"
-    SpritePath: regular_gnome 1
+    SpritePath: Microwave1
     Choices:
     - Text: Next Dialogue
       NodeID: bb7a130d-b71c-43a1-ada6-6daa224f06fa
@@ -39,7 +39,7 @@ MonoBehaviour:
       in on you.
 
       No way for you to dodge them hahaha.'
-    SpritePath: regular_gnome 1
+    SpritePath: Microwave2
     Choices:
     - Text: Next Dialogue
       NodeID: b3457fb2-68d5-4211-bc4f-24f24bfe497c

@@ -19,7 +19,7 @@ MonoBehaviour:
     Name: 0
     SpeakerName: Microwave
     Text: Muahahahaaaaaaa
-    SpritePath: regular_gnome 1
+    SpritePath: Microwave1
     Choices:
     - Text: Next Dialogue
       NodeID: 758ea584-b308-4fa1-b33d-c3cf1018df84
@@ -34,7 +34,7 @@ MonoBehaviour:
     Text: 'Tremble in fear.
 
       I am far too powerful for you'
-    SpritePath: regular_gnome 1
+    SpritePath: Microwave2
     Choices:
     - Text: Next Dialogue
       NodeID: 67ae2808-de1c-42a3-b396-804c73d2feed

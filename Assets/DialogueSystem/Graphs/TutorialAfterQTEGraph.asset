@@ -15,21 +15,6 @@ MonoBehaviour:
   FileName: TutorialAfterQTE
   Groups: []
   Nodes:
-  - ID: 02fc2572-9286-4b55-82f1-1fc02731a983
-    Name: 0
-    SpeakerName: Microwave
-    Text: 'Ugh...
-
-      This isn''t the last you''ll see of me... bitch.'
-    SpritePath: regular_gnome 1
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 2fadb91e-9404-4352-a1ab-e122258c5cee
-    GroupID: 
-    Position: {x: 294, y: 269}
-    isStartNode: 1
-    ChildIDs:
-    - 2fadb91e-9404-4352-a1ab-e122258c5cee
   - ID: 2fadb91e-9404-4352-a1ab-e122258c5cee
     Name: 1
     SpeakerName: Lilith
@@ -56,10 +41,25 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - 
+  - ID: 02fc2572-9286-4b55-82f1-1fc02731a983
+    Name: 0
+    SpeakerName: Microwave
+    Text: 'Ugh...
+
+      This isn''t the last you''ll see of me... bitch.'
+    SpritePath: Microwave1
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 2fadb91e-9404-4352-a1ab-e122258c5cee
+    GroupID: 
+    Position: {x: 294, y: 269}
+    isStartNode: 1
+    ChildIDs:
+    - 2fadb91e-9404-4352-a1ab-e122258c5cee
   OldGroupNames: []
   OldUngroupedNodeNames:
-  - 0
   - 1
   - 2
+  - 0
   OldGroupNodeNames:
     list: []

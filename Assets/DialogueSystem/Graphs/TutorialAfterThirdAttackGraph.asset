@@ -21,7 +21,7 @@ MonoBehaviour:
     Text: 'No, no, no, noooooooooo!!!!!!!
 
       This can''t be it.'
-    SpritePath: regular_gnome 1
+    SpritePath: Microwave1
     Choices:
     - Text: Next Dialogue
       NodeID: f8524d68-1548-4352-bb81-e8ea2bddb11a
@@ -36,7 +36,7 @@ MonoBehaviour:
     Text: 'This is my final attack Lilith...
 
       Dodge if you can'
-    SpritePath: regular_gnome 1
+    SpritePath: Microwave2
     Choices:
     - Text: Next Dialogue
       NodeID: 5c5b5c80-44ca-4895-86b3-105fe4bdd829
