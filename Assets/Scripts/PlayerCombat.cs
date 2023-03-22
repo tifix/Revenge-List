@@ -134,7 +134,7 @@ public class PlayerCombat : ObjectScript
 
         if (health <= 0.0f)
         {
-            OnDeath();
+            StartCoroutine(OnDeath());
         }
     }
 
@@ -151,11 +151,13 @@ public class PlayerCombat : ObjectScript
         Gizmos.DrawWireSphere(attackOrg.position, attackRange);
     }
 
-    void OnDeath()
+    IEnumerator OnDeath()
     {
         //Debug.Log("PLAYER DEAD... [WIP]");
-
+        UI.instance.FadeOut();
+        yield return new WaitForSeconds(1f);
         GameManager.instance.SetLost(true);
+        UI.instance.FadeIn();
     }
 
     void KillSelf(InputAction.CallbackContext obj)

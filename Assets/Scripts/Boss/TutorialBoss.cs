@@ -147,7 +147,7 @@ public class TutorialBoss : BossClass
         attackTimer = 0;
         yield return new WaitForSeconds(1f);
         base.Attack(phases[currentPhase].attacks[0], 0);
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
         //ToDo- check if player took damage, if so repeat the attack
         yield return new WaitForSeconds(2f);
         //After Screen-Wide attack
@@ -173,7 +173,7 @@ public class TutorialBoss : BossClass
         exitToNextScene.SetActive(true);
         //Fade in, anim in UI
         UI.instance.FadeIn();
-        GameManager.instance.LockCamera(player.transform);
+        GameManager.instance.CamFollowPlayer();
         player.ReleaseBind();
         player.SetUnLockMovement();
         //Remove boss

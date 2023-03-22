@@ -25,8 +25,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2056068209}
   m_LocalRotation: {x: 0.70710677, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -1.95, z: 0}
-  m_LocalScale: {x: 3.0619094, y: 1.8629216, z: 2.05565}
+  m_LocalPosition: {x: 0, y: -0.906, z: 0}
+  m_LocalScale: {x: 1.5309545, y: 0.931461, z: 1.027825}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3615865189927272333}
@@ -135,13 +135,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88fe5c74cc6058f40837696ea562651f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  overHeadAttack: {fileID: 1337283920656425530, guid: 0dbf1de66fe8f2a4690d47d2c58d26a1, type: 3}
+  straightAttack: {fileID: 1295236842262852007, guid: b76e09703fb7abd4d9ad9207b3bad724, type: 3}
+  lineAttack: {fileID: 1337283920656425530, guid: 2e9db506ff48775438b63b40dd5f5b6b, type: 3}
   health: {fileID: 5668457906109925841}
-  currentPhase: 0
-  steak: {fileID: 1337283920656425530, guid: 0dbf1de66fe8f2a4690d47d2c58d26a1, type: 3}
-  envelope: {fileID: 1337283920656425530, guid: b76e09703fb7abd4d9ad9207b3bad724, type: 3}
-  gnome: {fileID: 1337283920656425530, guid: 9d223fbd625d2f64e844980bbb13131b, type: 3}
-  fireWall: {fileID: 7954562019768154657}
+  executableSprite: {fileID: 0}
   playerRadius: 2
+  currentPhase: 0
   phases:
   - attacks:
     - {fileID: 11400000, guid: e8fc09fcea783204c90e119069f47b7a, type: 2}
@@ -179,14 +179,24 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 58cdb0da6873caa4586f5a02caa897e2, type: 2}
     - {fileID: 11400000, guid: f29460c219e796942bea76ef423c5df7, type: 2}
     - {fileID: 11400000, guid: 58cdb0da6873caa4586f5a02caa897e2, type: 2}
+  roundStartDialogues:
+  - {fileID: 11400000, guid: 92febacc78ec06744bf93c9b17c1bc41, type: 2}
+  - {fileID: 11400000, guid: 6035d5401b2cdd44a9d2e078dc129ddd, type: 2}
+  - {fileID: 11400000, guid: 890799e7b7fbc924cb56e4302cb039c1, type: 2}
+  roundEndDialogues:
+  - {fileID: 11400000, guid: 000c975b20276fd4cb445ba314fef4eb, type: 2}
+  - {fileID: 11400000, guid: 3359bfea37c55e34189506400796a112, type: 2}
+  - {fileID: 11400000, guid: cf7ed02e8d5fc2149bdaa26b611ef0be, type: 2}
+  dialogueDelay: 1.2
   phase_QTEs:
   - {fileID: 11400000, guid: bbfd62af9cfd19b4b94847ae0d5f913c, type: 2}
   - {fileID: 11400000, guid: b10ac846c951d9c4cbdf8361c9c0bf15, type: 2}
   - {fileID: 11400000, guid: 83ac4bcb91d29244f96343ceb4495d36, type: 2}
+  overHeadAnimationDelay: 0
+  straightAnimationDelay: 0
   camCenter: {fileID: 0}
   anim: {fileID: 0}
-  flipAnimationDelay: 1
-  throwAnimationDelay: 0.7
+  fireWall: {fileID: 7954562019768154657}
 --- !u!114 &5668457906109925841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,9 +213,10 @@ MonoBehaviour:
   health: 25
   knockBackWhenHit: 0
   explosionStrength: 3
+  canTakeDamage: 1
   isCoreExposed: 0
   coreHealth: 150
-  damageQTEcomplete: 40
+  damageQTEcomplete: 50
   damageQTEcomboMultiplier: 2
   QTEtriggerPrompt: {fileID: 8133781382231593314}
 --- !u!65 &458392176
@@ -219,8 +230,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.1782513, y: 2.8021107, z: 1.9651853}
-  m_Center: {x: 0, y: 0.3571372, z: -0.036962092}
+  m_Size: {x: 1.5772209, y: 1.3204008, z: 1.9651853}
+  m_Center: {x: 0.015274048, y: -0.38371772, z: -0.036962092}
 --- !u!54 &458392175
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -248,8 +259,9 @@ GameObject:
   - component: {fileID: 3615865191426516607}
   - component: {fileID: 3615865191426516544}
   - component: {fileID: 7595340045865485996}
+  - component: {fileID: 1255864449}
   m_Layer: 6
-  m_Name: Sprite
+  m_Name: KarlBossSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -343,6 +355,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1255864449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3615865191426516606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1c217c781477bd42bdf88da92f3276d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3615865190291010943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -676,6 +700,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 6650244591728607643, guid: 7deee093173aea944af8e83e3a61c76d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 7deee093173aea944af8e83e3a61c76d, type: 3}
@@ -701,7 +729,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 3.12, y: 1, z: 36.13}
-  m_Center: {x: -1, y: 0, z: 0}
+  m_Center: {x: 0.44, y: 0, z: 0}
 --- !u!1001 &5169621267480021316
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -781,6 +809,10 @@ PrefabInstance:
     - target: {fileID: 3447579505725359455, guid: 5dd8b7bcc3c5f8347ae4c9d62e1c433d, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5351345246538638163, guid: 5dd8b7bcc3c5f8347ae4c9d62e1c433d, type: 3}
+      propertyPath: lengthInSec
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
