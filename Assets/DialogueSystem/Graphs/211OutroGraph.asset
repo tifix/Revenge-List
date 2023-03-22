@@ -17,7 +17,7 @@ MonoBehaviour:
   Nodes:
   - ID: 981c9927-e1d3-4d5c-9100-ef63e4228ca9
     Name: 2
-    SpeakerName: karl
+    SpeakerName: Karl
     Text: "It seems I did both\u2026"
     SpritePath: Neighbour_Laughing
     Choices:
@@ -28,22 +28,9 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - fe4e0406-3edd-4505-8177-b48e849c639c
-  - ID: fe4e0406-3edd-4505-8177-b48e849c639c
-    Name: 3
-    SpeakerName: karl
-    Text: ...
-    SpritePath: Neighbour_Sad
-    Choices:
-    - Text: Next Dialogue
-      NodeID: b24464bf-068d-4517-ab88-969dc4d5851f
-    GroupID: 
-    Position: {x: 543, y: 273}
-    isStartNode: 0
-    ChildIDs:
-    - b24464bf-068d-4517-ab88-969dc4d5851f
   - ID: b24464bf-068d-4517-ab88-969dc4d5851f
     Name: 4
-    SpeakerName: karl
+    SpeakerName: Karl
     Text: "Please, Lily, tell Astrid that\u2026"
     SpritePath: Neighbour_Sad
     Choices:
@@ -56,7 +43,7 @@ MonoBehaviour:
     - 
   - ID: aebe3097-b244-4517-bb64-53fe0210402d
     Name: 1
-    SpeakerName: karl
+    SpeakerName: Karl
     Text: "Well, they did tell me that only mandatory things in life are death and
       taxes\u2026"
     SpritePath: Neighbour_Sad
@@ -68,11 +55,24 @@ MonoBehaviour:
     isStartNode: 1
     ChildIDs:
     - 981c9927-e1d3-4d5c-9100-ef63e4228ca9
+  - ID: fe4e0406-3edd-4505-8177-b48e849c639c
+    Name: 3
+    SpeakerName: Karl
+    Text: ...
+    SpritePath: Neighbour_Sad
+    Choices:
+    - Text: Next Dialogue
+      NodeID: b24464bf-068d-4517-ab88-969dc4d5851f
+    GroupID: 
+    Position: {x: 543, y: 273}
+    isStartNode: 0
+    ChildIDs:
+    - b24464bf-068d-4517-ab88-969dc4d5851f
   OldGroupNames: []
   OldUngroupedNodeNames:
   - 2
-  - 3
   - 4
   - 1
+  - 3
   OldGroupNodeNames:
     list: []

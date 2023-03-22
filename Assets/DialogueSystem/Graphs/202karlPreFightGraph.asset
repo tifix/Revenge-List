@@ -36,8 +36,8 @@ MonoBehaviour:
     Name: YourDogDoesnLikeYou
     Position: {x: 13048, y: 574}
   - ID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
-    Name: BeHonest
-    Position: {x: 13109, y: 61}
+    Name: AstridDoesntLikeYourBbq
+    Position: {x: 13125, y: 70}
   - ID: 4a1038fd-6bc4-4993-9390-28a8a8ff1145
     Name: Ending
     Position: {x: 21364, y: 319}
@@ -220,61 +220,6 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - 08e28eca-a395-474f-9181-bc6b7efd65a1
-  - ID: 08e28eca-a395-474f-9181-bc6b7efd65a1
-    Name: 48
-    SpeakerName: Lilith
-    Text: 'HAHAHAHAHAHA! '
-    SpritePath: Lilith_Smug
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 35c3cf7a-cdcd-4e5d-b970-19453c0443c9
-    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
-    Position: {x: 9882, y: 303}
-    isStartNode: 0
-    ChildIDs:
-    - 35c3cf7a-cdcd-4e5d-b970-19453c0443c9
-  - ID: 35c3cf7a-cdcd-4e5d-b970-19453c0443c9
-    Name: 49
-    SpeakerName: Lilith
-    Text: "I can\u2019t even say it with a straight face!"
-    SpritePath: Lilith_Happy
-    Choices:
-    - Text: Next Dialogue
-      NodeID: ed5f39f6-dff9-4600-9f35-64d7add17a73
-    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
-    Position: {x: 10152, y: 304}
-    isStartNode: 0
-    ChildIDs:
-    - ed5f39f6-dff9-4600-9f35-64d7add17a73
-  - ID: ed5f39f6-dff9-4600-9f35-64d7add17a73
-    Name: 50
-    SpeakerName: Lilith
-    Text: "Anyway\u2026\nYou give me no choice but to kill\u2026"
-    SpritePath: Lilith_Smug
-    Choices:
-    - Text: Next Dialogue
-      NodeID: ffb2b259-2dc3-4f5b-9eee-9ea71c401dc6
-    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
-    Position: {x: 10421, y: 305}
-    isStartNode: 0
-    ChildIDs:
-    - ffb2b259-2dc3-4f5b-9eee-9ea71c401dc6
-  - ID: ffb2b259-2dc3-4f5b-9eee-9ea71c401dc6
-    Name: 51
-    SpeakerName: Karl
-    Text: 'Did you say grill?
-
-      Never mind the dog park, there is always time
-      for some barbeque!'
-    SpritePath: Neighbour_Laughing
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 2d23a5fe-273b-4162-a27a-88697c449fad
-    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
-    Position: {x: 10710, y: 313}
-    isStartNode: 0
-    ChildIDs:
-    - 2d23a5fe-273b-4162-a27a-88697c449fad
   - ID: 2d23a5fe-273b-4162-a27a-88697c449fad
     Name: 52
     SpeakerName: Karl
@@ -561,7 +506,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: 7acc91ec-d955-4043-83e3-6914a2835f5b
     GroupID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
-    Position: {x: 13572, y: 125}
+    Position: {x: 13588, y: 134}
     isStartNode: 0
     ChildIDs:
     - 7acc91ec-d955-4043-83e3-6914a2835f5b
@@ -577,7 +522,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: e5a93ad4-387d-49c3-adb7-b5f517b3df70
     GroupID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
-    Position: {x: 14128, y: 125}
+    Position: {x: 14144, y: 134}
     isStartNode: 0
     ChildIDs:
     - e5a93ad4-387d-49c3-adb7-b5f517b3df70
@@ -590,7 +535,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: bfda13bc-1f22-4ed9-940d-a0fd432aca8a
     GroupID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
-    Position: {x: 14539, y: 131}
+    Position: {x: 14555, y: 140}
     isStartNode: 0
     ChildIDs:
     - bfda13bc-1f22-4ed9-940d-a0fd432aca8a
@@ -603,7 +548,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: 1bcb1898-f5b8-4406-be3e-32a57db5e641
     GroupID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
-    Position: {x: 15125, y: 134}
+    Position: {x: 15141, y: 143}
     isStartNode: 0
     ChildIDs:
     - 1bcb1898-f5b8-4406-be3e-32a57db5e641
@@ -616,7 +561,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: f91a5f3c-c09d-44e3-8c97-6c63e9b0b9f4
     GroupID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
-    Position: {x: 15389, y: 138}
+    Position: {x: 15405, y: 147}
     isStartNode: 0
     ChildIDs:
     - f91a5f3c-c09d-44e3-8c97-6c63e9b0b9f4
@@ -629,7 +574,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: 14b912d9-2e69-4053-a946-e8eb783df9e5
     GroupID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
-    Position: {x: 15670, y: 137}
+    Position: {x: 15686, y: 146}
     isStartNode: 0
     ChildIDs:
     - 14b912d9-2e69-4053-a946-e8eb783df9e5
@@ -642,7 +587,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: 784dc7bf-b557-4a1b-960f-f78cdc043dae
     GroupID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
-    Position: {x: 15952, y: 138}
+    Position: {x: 15968, y: 147}
     isStartNode: 0
     ChildIDs:
     - 784dc7bf-b557-4a1b-960f-f78cdc043dae
@@ -655,7 +600,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: 6c6cdaa1-9fc4-4da2-9703-32d97e4d4ae0
     GroupID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
-    Position: {x: 16229, y: 135}
+    Position: {x: 16245, y: 144}
     isStartNode: 0
     ChildIDs:
     - 6c6cdaa1-9fc4-4da2-9703-32d97e4d4ae0
@@ -668,7 +613,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: 403077c2-2259-44a6-8700-ff685b5a89e2
     GroupID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
-    Position: {x: 16503, y: 136}
+    Position: {x: 16519, y: 145}
     isStartNode: 0
     ChildIDs:
     - 403077c2-2259-44a6-8700-ff685b5a89e2
@@ -683,7 +628,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: cf2db881-9064-4e2d-b7a2-a73601595db4
     GroupID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
-    Position: {x: 16790, y: 132}
+    Position: {x: 16806, y: 141}
     isStartNode: 0
     ChildIDs:
     - cf2db881-9064-4e2d-b7a2-a73601595db4
@@ -696,7 +641,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: d6924b6c-0019-4e45-9a1e-a625d1c164bc
     GroupID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
-    Position: {x: 17065, y: 132}
+    Position: {x: 17081, y: 141}
     isStartNode: 0
     ChildIDs:
     - d6924b6c-0019-4e45-9a1e-a625d1c164bc
@@ -710,7 +655,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: 958de43f-35c1-4d50-bcdd-4e3b4f6c436a
     GroupID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
-    Position: {x: 17346, y: 133}
+    Position: {x: 17362, y: 142}
     isStartNode: 0
     ChildIDs:
     - 958de43f-35c1-4d50-bcdd-4e3b4f6c436a
@@ -724,7 +669,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: 6ad2bff1-ba68-4f70-a597-d9e62f8a12a2
     GroupID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
-    Position: {x: 14808, y: 126}
+    Position: {x: 14824, y: 135}
     isStartNode: 0
     ChildIDs:
     - 6ad2bff1-ba68-4f70-a597-d9e62f8a12a2
@@ -737,7 +682,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: 8b936938-0ceb-4611-857c-0987fb650c65
     GroupID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
-    Position: {x: 17798, y: 128}
+    Position: {x: 17814, y: 137}
     isStartNode: 0
     ChildIDs:
     - 8b936938-0ceb-4611-857c-0987fb650c65
@@ -750,7 +695,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: af0f70b8-c802-48a6-a428-bac934279239
     GroupID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
-    Position: {x: 18082, y: 129}
+    Position: {x: 18098, y: 138}
     isStartNode: 0
     ChildIDs:
     - af0f70b8-c802-48a6-a428-bac934279239
@@ -763,7 +708,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: 842d946c-9230-488b-a98c-c477d7df7182
     GroupID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
-    Position: {x: 18357, y: 131}
+    Position: {x: 18373, y: 140}
     isStartNode: 0
     ChildIDs:
     - 842d946c-9230-488b-a98c-c477d7df7182
@@ -776,7 +721,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: 3526203d-ba63-4fc3-9417-49f329d86253
     GroupID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
-    Position: {x: 18827, y: 133}
+    Position: {x: 18843, y: 142}
     isStartNode: 0
     ChildIDs:
     - 3526203d-ba63-4fc3-9417-49f329d86253
@@ -791,7 +736,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: d21467e0-84bc-4878-b369-f79ffd23ab5c
     GroupID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
-    Position: {x: 19116, y: 136}
+    Position: {x: 19132, y: 145}
     isStartNode: 0
     ChildIDs:
     - d21467e0-84bc-4878-b369-f79ffd23ab5c
@@ -799,12 +744,12 @@ MonoBehaviour:
     Name: 77
     SpeakerName: Lilith
     Text: Good!
-    SpritePath: Lilith_Unhappy
+    SpritePath: Lilith_Happy
     Choices:
     - Text: Next Dialogue
       NodeID: c0f168fb-4a6a-4926-a77f-4b53c355dc8c
     GroupID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
-    Position: {x: 19736, y: 146}
+    Position: {x: 19752, y: 155}
     isStartNode: 0
     ChildIDs:
     - c0f168fb-4a6a-4926-a77f-4b53c355dc8c
@@ -817,7 +762,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: a506c2ac-dbc9-491b-bd9a-15b1d7b046f9
     GroupID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
-    Position: {x: 20046, y: 130}
+    Position: {x: 20062, y: 139}
     isStartNode: 0
     ChildIDs:
     - a506c2ac-dbc9-491b-bd9a-15b1d7b046f9
@@ -830,7 +775,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: ae3221c1-c4ad-4fe4-80bf-f83d4a93c7e2
     GroupID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
-    Position: {x: 20321, y: 129}
+    Position: {x: 20337, y: 138}
     isStartNode: 0
     ChildIDs:
     - ae3221c1-c4ad-4fe4-80bf-f83d4a93c7e2
@@ -843,7 +788,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: c083e0ce-4f8f-48d4-b2f7-e8c75ea2f7bb
     GroupID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
-    Position: {x: 20611, y: 151}
+    Position: {x: 20627, y: 160}
     isStartNode: 0
     ChildIDs:
     - c083e0ce-4f8f-48d4-b2f7-e8c75ea2f7bb
@@ -856,7 +801,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: f11aefb1-9260-4d22-ae66-a6140e03984f
     GroupID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
-    Position: {x: 20891, y: 138}
+    Position: {x: 20907, y: 147}
     isStartNode: 0
     ChildIDs:
     - f11aefb1-9260-4d22-ae66-a6140e03984f
@@ -1134,7 +1079,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: ebd810bb-0581-471e-8c86-a2596d25ff3a
     GroupID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
-    Position: {x: 13134, y: 120}
+    Position: {x: 13150, y: 129}
     isStartNode: 0
     ChildIDs:
     - ebd810bb-0581-471e-8c86-a2596d25ff3a
@@ -1246,7 +1191,7 @@ MonoBehaviour:
     ChildIDs:
     - a76c8a3b-93cf-4766-aae2-b03541ceff29
   - ID: 60c1079d-0a78-4a3c-9e7e-9fabecf17602
-    Name: DialogueName
+    Name: ytut
     SpeakerName: Character name.
     Text: ...as well as we do.
     SpritePath: Neighbour_Sad
@@ -1288,7 +1233,7 @@ MonoBehaviour:
     Name: vjhvh
     SpeakerName: Snuffles
     Text: ...
-    SpritePath: Dog
+    SpritePath: Doghappy2
     Choices:
     - Text: Next Dialogue
       NodeID: be5a8f45-2f47-431c-8d33-58a712931de2
@@ -1319,7 +1264,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: 2b5c986f-6c67-47a4-87c1-20fce6c4f4e2
     GroupID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
-    Position: {x: 13847, y: 123}
+    Position: {x: 13863, y: 132}
     isStartNode: 0
     ChildIDs:
     - 2b5c986f-6c67-47a4-87c1-20fce6c4f4e2
@@ -1394,7 +1339,7 @@ MonoBehaviour:
     Name: bkjvj
     SpeakerName: Snuffles
     Text: Bark!
-    SpritePath: Dog
+    SpritePath: Doghappy2
     Choices:
     - Text: Next Dialogue
       NodeID: 2cd00df3-1b5e-4203-a7e5-54f7d7ae0e19
@@ -1421,6 +1366,74 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - 41e6a9f5-a701-47ab-8454-8894bd1c5940
+  - ID: 08e28eca-a395-474f-9181-bc6b7efd65a1
+    Name: 48
+    SpeakerName: Lilith
+    Text: 'HAHAHAHAHAHA! '
+    SpritePath: Lilith_Smug
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 35c3cf7a-cdcd-4e5d-b970-19453c0443c9
+    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
+    Position: {x: 9358, y: 556}
+    isStartNode: 0
+    ChildIDs:
+    - 35c3cf7a-cdcd-4e5d-b970-19453c0443c9
+  - ID: 35c3cf7a-cdcd-4e5d-b970-19453c0443c9
+    Name: 49
+    SpeakerName: Lilith
+    Text: "I can\u2019t even say it with a straight face!"
+    SpritePath: Lilith_Happy
+    Choices:
+    - Text: Next Dialogue
+      NodeID: ed5f39f6-dff9-4600-9f35-64d7add17a73
+    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
+    Position: {x: 9628, y: 557}
+    isStartNode: 0
+    ChildIDs:
+    - ed5f39f6-dff9-4600-9f35-64d7add17a73
+  - ID: ed5f39f6-dff9-4600-9f35-64d7add17a73
+    Name: 50
+    SpeakerName: Lilith
+    Text: "Anyway\u2026\nYou give me no choice but to kill\u2026"
+    SpritePath: Lilith_Smug
+    Choices:
+    - Text: Next Dialogue
+      NodeID: ffb2b259-2dc3-4f5b-9eee-9ea71c401dc6
+    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
+    Position: {x: 9897, y: 558}
+    isStartNode: 0
+    ChildIDs:
+    - ffb2b259-2dc3-4f5b-9eee-9ea71c401dc6
+  - ID: ffb2b259-2dc3-4f5b-9eee-9ea71c401dc6
+    Name: 51
+    SpeakerName: Karl
+    Text: 'Did you say grill?
+
+      Never mind the dog park, there is always time
+      for some barbeque!'
+    SpritePath: Neighbour_Laughing
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 4c5ce2c7-dc10-4a42-be6f-3836ea00d894
+    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
+    Position: {x: 10186, y: 566}
+    isStartNode: 0
+    ChildIDs:
+    - 4c5ce2c7-dc10-4a42-be6f-3836ea00d894
+  - ID: 4c5ce2c7-dc10-4a42-be6f-3836ea00d894
+    Name: DialogueName
+    SpeakerName: Snuffles
+    Text: ...
+    SpritePath: Dogsad
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 2d23a5fe-273b-4162-a27a-88697c449fad
+    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
+    Position: {x: 10710, y: 563}
+    isStartNode: 0
+    ChildIDs:
+    - 2d23a5fe-273b-4162-a27a-88697c449fad
   OldGroupNames:
   - 1
   - 2
@@ -1429,7 +1442,7 @@ MonoBehaviour:
   - DoTakeHerOUt
   - BackOffFromHer
   - YourDogDoesnLikeYou
-  - BeHonest
+  - AstridDoesntLikeYourBbq
   - Ending
   - StopJoking
   - DontStopJoking
@@ -1448,7 +1461,7 @@ MonoBehaviour:
       - 38
       - Choicaroonie
       - 37
-      - DialogueName
+      - ytut
     - Key: intro
       Value:
       - 2
@@ -1465,15 +1478,16 @@ MonoBehaviour:
       Value:
       - 46
       - 47
-      - 48
-      - 49
-      - 50
-      - 51
       - 52
       - 53
       - 54
       - FinalCHoice
       - 55
+      - 48
+      - 49
+      - 50
+      - 51
+      - DialogueName
     - Key: DoTakeHerOUt
       Value:
       - 24
@@ -1510,7 +1524,7 @@ MonoBehaviour:
       - 93
       - 96
       - bkjvj
-    - Key: BeHonest
+    - Key: AstridDoesntLikeYourBbq
       Value:
       - 58
       - 60

@@ -3,7 +3,7 @@
     "nodeID": "",
     "SpeakerName": "Lilith",
     "Text": "And yet somehow, seeing you everyday is worse horror than my childhood could have ever been.",
-    "SpritePath": "Insert Sprite Path Here.",
+    "SpritePath": "Lilith_Unhappy2",
     "Choices": [
         {
             "Text": "Next Dialogue",

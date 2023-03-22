@@ -48,21 +48,6 @@
                         "IsStartingDialogue": false
                     },
                     {
-                        "DialogueName": "4",
-                        "nodeID": "",
-                        "SpeakerName": "Smuffles",
-                        "Text": "Bark!",
-                        "SpritePath": "Dog",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
                         "DialogueName": "6",
                         "nodeID": "",
                         "SpeakerName": "Lilith",
@@ -106,6 +91,21 @@
                         ],
                         "DialogueType": 0,
                         "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "4",
+                        "nodeID": "",
+                        "SpeakerName": "Smuffles",
+                        "Text": "Bark!",
+                        "SpritePath": "Doghappy",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
                     }
                 ]
             },
@@ -137,7 +137,7 @@
                         "nodeID": "",
                         "SpeakerName": "Smuffles",
                         "Text": "Bark!",
-                        "SpritePath": "Dog",
+                        "SpritePath": "Doghappy",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",

@@ -32,7 +32,7 @@ MonoBehaviour:
     Name: 1
     SpeakerName: Karl
     Text: 'My steaks are world famous! '
-    SpritePath: Insert Sprite Path Here.
+    SpritePath: Neighbour_Laughing
     Choices:
     - Text: Next Dialogue
       NodeID: c0b084c4-f64e-4618-b6f3-640d2be974da

@@ -18,8 +18,8 @@ MonoBehaviour:
   - ID: 764ebb46-7d1b-4bf2-a5bd-dd294c2e485b
     Name: 1
     SpeakerName: Karl
-    Text: Sjutton
-    SpritePath: Insert Sprite Path Here.
+    Text: Sjutton!
+    SpritePath: Neighbour_Sad
     Choices:
     - Text: Next Dialogue
       NodeID: 

@@ -45,7 +45,7 @@ MonoBehaviour:
     Name: 1
     SpeakerName: Karl
     Text: Easy there, tiger.
-    SpritePath: Neighbour_Happy
+    SpritePath: Neighbour_Friendly
     Choices:
     - Text: Next Dialogue
       NodeID: bcbe09ec-77c4-4a17-b2b9-3cb8ac541e60

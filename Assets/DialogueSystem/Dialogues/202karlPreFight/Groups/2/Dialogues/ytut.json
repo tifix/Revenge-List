@@ -1,0 +1,15 @@
+{
+    "DialogueName": "ytut",
+    "nodeID": "",
+    "SpeakerName": "Character name.",
+    "Text": "...as well as we do.",
+    "SpritePath": "Neighbour_Sad",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

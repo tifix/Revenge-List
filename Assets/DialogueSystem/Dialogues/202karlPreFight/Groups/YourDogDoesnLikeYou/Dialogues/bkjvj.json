@@ -3,7 +3,7 @@
     "nodeID": "",
     "SpeakerName": "Snuffles",
     "Text": "Bark!",
-    "SpritePath": "Dog",
+    "SpritePath": "Doghappy2",
     "Choices": [
         {
             "Text": "Next Dialogue",

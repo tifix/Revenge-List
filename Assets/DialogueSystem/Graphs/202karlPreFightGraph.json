@@ -31,7 +31,7 @@
                 "Value": []
             },
             {
-                "Key": "BeHonest",
+                "Key": "AstridDoesntLikeYourBbq",
                 "Value": []
             },
             {
@@ -189,7 +189,7 @@
                         "IsStartingDialogue": false
                     },
                     {
-                        "DialogueName": "DialogueName",
+                        "DialogueName": "ytut",
                         "nodeID": "",
                         "SpeakerName": "Character name.",
                         "Text": "...as well as we do.",
@@ -398,66 +398,6 @@
                         "IsStartingDialogue": false
                     },
                     {
-                        "DialogueName": "48",
-                        "nodeID": "",
-                        "SpeakerName": "Lilith",
-                        "Text": "HAHAHAHAHAHA! ",
-                        "SpritePath": "Lilith_Smug",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
-                        "DialogueName": "49",
-                        "nodeID": "",
-                        "SpeakerName": "Lilith",
-                        "Text": "I can’t even say it with a straight face!",
-                        "SpritePath": "Lilith_Happy",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
-                        "DialogueName": "50",
-                        "nodeID": "",
-                        "SpeakerName": "Lilith",
-                        "Text": "Anyway…\nYou give me no choice but to kill…",
-                        "SpritePath": "Lilith_Smug",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
-                        "DialogueName": "51",
-                        "nodeID": "",
-                        "SpeakerName": "Karl",
-                        "Text": "Did you say grill?\nNever mind the dog park, there is always time for some barbeque!",
-                        "SpritePath": "Neighbour_Laughing",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
                         "DialogueName": "52",
                         "nodeID": "",
                         "SpeakerName": "Karl",
@@ -527,6 +467,81 @@
                         "SpeakerName": "Lilith",
                         "Text": "No! I want to fight you!\nBesides...\n(This is my chance to hurt him mentally, before going for the physical damage.)",
                         "SpritePath": "Lilith_Unhappy",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "48",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": "HAHAHAHAHAHA! ",
+                        "SpritePath": "Lilith_Smug",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "49",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": "I can’t even say it with a straight face!",
+                        "SpritePath": "Lilith_Happy",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "50",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": "Anyway…\nYou give me no choice but to kill…",
+                        "SpritePath": "Lilith_Smug",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "51",
+                        "nodeID": "",
+                        "SpeakerName": "Karl",
+                        "Text": "Did you say grill?\nNever mind the dog park, there is always time for some barbeque!",
+                        "SpritePath": "Neighbour_Laughing",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "DialogueName",
+                        "nodeID": "",
+                        "SpeakerName": "Snuffles",
+                        "Text": "...",
+                        "SpritePath": "Dogsad",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -946,7 +961,7 @@
                         "nodeID": "",
                         "SpeakerName": "Snuffles",
                         "Text": "...",
-                        "SpritePath": "Dog",
+                        "SpritePath": "Doghappy2",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -991,7 +1006,7 @@
                         "nodeID": "",
                         "SpeakerName": "Snuffles",
                         "Text": "Bark!",
-                        "SpritePath": "Dog",
+                        "SpritePath": "Doghappy2",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -1281,7 +1296,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "Good!",
-                        "SpritePath": "Lilith_Unhappy",
+                        "SpritePath": "Lilith_Happy",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",

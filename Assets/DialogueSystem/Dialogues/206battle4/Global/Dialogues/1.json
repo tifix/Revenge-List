@@ -3,7 +3,7 @@
     "nodeID": "",
     "SpeakerName": "Karl",
     "Text": "Easy there, tiger.",
-    "SpritePath": "Neighbour_Happy",
+    "SpritePath": "Neighbour_Friendly",
     "Choices": [
         {
             "Text": "Next Dialogue",

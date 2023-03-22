@@ -1,0 +1,15 @@
+{
+    "DialogueName": "DialogueName",
+    "nodeID": "",
+    "SpeakerName": "Snuffles",
+    "Text": "...",
+    "SpritePath": "Dogsad",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

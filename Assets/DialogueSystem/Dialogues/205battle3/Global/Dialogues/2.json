@@ -3,7 +3,7 @@
     "nodeID": "",
     "SpeakerName": "Karl",
     "Text": "I told you, you should come to the next one! It’s this Thursday! It’s gonna be crab-ulous!",
-    "SpritePath": "Neighbour_Friendly",
+    "SpritePath": "Neighbour_Laughing",
     "Choices": [
         {
             "Text": "Next Dialogue",

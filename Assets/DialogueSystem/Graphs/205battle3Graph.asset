@@ -20,7 +20,7 @@ MonoBehaviour:
     SpeakerName: Karl
     Text: "I told you, you should come to the next one! It\u2019s this Thursday!
       It\u2019s gonna be crab-ulous!"
-    SpritePath: Neighbour_Friendly
+    SpritePath: Neighbour_Laughing
     Choices:
     - Text: Next Dialogue
       NodeID: 

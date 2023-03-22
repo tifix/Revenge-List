@@ -3,7 +3,7 @@
     "nodeID": "",
     "SpeakerName": "Karl",
     "Text": "Isn’t the best revenge a life well-lived?",
-    "SpritePath": "Insert Sprite Path Here.",
+    "SpritePath": "Neighbour_Sad",
     "Choices": [
         {
             "Text": "Next Dialogue",
