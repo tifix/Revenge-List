@@ -10,8 +10,9 @@ public class PlayerCombat : ObjectScript
     Controls input;
     public static PlayerCombat instance;
 
-    [Range(0,1)] public float attackIntervalMinimum=0.4f;
-    [Range(0f,1)] public float attackToIdleInterval=0.7f;
+    [Range(0,1)] public float attackBuffer=0.4f;          //Buffer
+    [Range(0,1)] public float attackIntervalMinimum=0.6f; //Can attack again
+    [Range(0f,1)] public float attackToIdleInterval=0.7f; //Back to idle to late
     public float attackLastTimestamp=0;
     public Transform attackOrg;
     public float attackRange = 2.0f;
@@ -19,7 +20,10 @@ public class PlayerCombat : ObjectScript
     public bool canBeDamaged = true;
     public float invincivilityTime = 1f;
 
-    public bool canAttack = true;
+    public bool hasAttacked = false;
+    //Check if player wants to continue the combo
+    bool comboAttackBuffer = false;
+
     protected override void Awake()                             //Ensuring single instance of the script
     {
         base.Awake();
@@ -34,13 +38,13 @@ public class PlayerCombat : ObjectScript
         this.maxHealth = 100.0f;
         this.health = this.maxHealth;
 
-        input.Ground.Attack.performed += Attack;
+        input.Ground.Attack.started += Attack;
         input.Ground.Attack.Enable();
 
         input.Ground.KillSelf.performed += KillSelf;
         input.Ground.KillSelf.Enable();
 
-        canAttack= true;
+        hasAttacked = false;
     }
 
     //Now the ApplyDamage function is virtual, so this object gets called directly for the damage check only when necessary - AV
@@ -48,7 +52,14 @@ public class PlayerCombat : ObjectScript
     private void FixedUpdate()
     {
 
-        if (Time.time > attackLastTimestamp + attackToIdleInterval)
+        //Player wants to attack
+        if(comboAttackBuffer && Time.time > attackLastTimestamp + attackIntervalMinimum)
+        {
+            comboAttackBuffer = false;
+            Attack();
+        }
+        
+        else if (Time.time > attackLastTimestamp + attackToIdleInterval)
         {
             if (PlayerMovement.isMovementLocked) 
             {
@@ -63,57 +74,86 @@ public class PlayerCombat : ObjectScript
     public void DisableAttack()
     {
         input.Ground.Disable();
-        canAttack = false;
+        hasAttacked = false;
     }
 
     public void EnableAttack()
     {
         input.Ground.Enable();
-        canAttack = true;
+        hasAttacked = true;
+    }
+
+    //Overloaded
+    public void Attack()
+    {
+        //If attack is pressed before the end of the anim
+        if (hasAttacked && Time.time > attackLastTimestamp + attackBuffer)
+        {
+            comboAttackBuffer = true;
+            hasAttacked = false;
+            return;
+        }
+
+        else if (Time.time > attackLastTimestamp + attackIntervalMinimum)
+        {
+            hasAttacked = true;
+            attackLastTimestamp = Time.time;
+            Debug.LogWarning("Timestamp set! " + attackLastTimestamp);
+            GetComponent<Animator>().SetBool("isAttacking", true);
+            PlayerMovement.instance.PauseMovement();
+            //StartCoroutine(AttackAnimationChaining());
+
+            // Detect enemies in range
+            Collider[] hitEnemies = Physics.OverlapSphere(attackOrg.position, attackRange, enemyLayers);
+
+            // Damage destructibles hit by collider
+            foreach (Collider enemy in hitEnemies)
+            {
+                Debug.Log("Enemy hit: " + enemy.name);
+                if (enemy.TryGetComponent<ObjectScript>(out ObjectScript OS)) OS.ApplyDamage(10.0f);     //Fixed error where kicking boss proectiles crashed the game -MC
+            }
+        }
+        //if attack ON cooldown
+        else
+        {
+            Debug.Log("Attacking on cooldown!");
+        }
     }
 
     public void Attack(InputAction.CallbackContext obj)
     {
-        //Debug.Log("T diff:" + (Time.time - attackLastTimestamp).ToString());
-
-        if (canAttack)
+        //If attack is pressed before the end of the anim
+        if (hasAttacked && Time.time > attackLastTimestamp + attackBuffer)
         {
-            
-            if (Time.time>attackLastTimestamp + attackIntervalMinimum) //if attack off cooldown
-            {
-                attackLastTimestamp= Time.time;
-                Debug.LogWarning("Timestamp set! " + attackLastTimestamp);
-                GetComponent<Animator>().SetBool("isAttacking", true);
-                PlayerMovement.instance.PauseMovement();
-                //StartCoroutine(AttackAnimationChaining());
+            comboAttackBuffer = true;
+            hasAttacked = false;
+        }
 
-                // Detect enemies in range
-                Collider[] hitEnemies = Physics.OverlapSphere(attackOrg.position, attackRange, enemyLayers);
+        else if (Time.time > attackLastTimestamp + attackIntervalMinimum)
+        {
+            hasAttacked = true;
+            attackLastTimestamp = Time.time;
+            Debug.LogWarning("Timestamp set! " + attackLastTimestamp);
+            GetComponent<Animator>().SetBool("isAttacking", true);
+            PlayerMovement.instance.PauseMovement();
+            //StartCoroutine(AttackAnimationChaining());
 
-                // Damage destructibles hit by collider
-                foreach (Collider enemy in hitEnemies)
-                {
-                    Debug.Log("Enemy hit: " + enemy.name);
-                    if(enemy.TryGetComponent<ObjectScript>(out ObjectScript OS)) OS.ApplyDamage(10.0f);     //Fixed error where kicking boss proectiles crashed the game -MC
-                }
-            }            
-            //if attack ON cooldown
-            else
+            // Detect enemies in range
+            Collider[] hitEnemies = Physics.OverlapSphere(attackOrg.position, attackRange, enemyLayers);
+
+            // Damage destructibles hit by collider
+            foreach (Collider enemy in hitEnemies)
             {
-                Debug.Log("Attacking on cooldown!");
+                Debug.Log("Enemy hit: " + enemy.name);
+                if (enemy.TryGetComponent<ObjectScript>(out ObjectScript OS)) OS.ApplyDamage(10.0f);     //Fixed error where kicking boss proectiles crashed the game -MC
             }
-
+        }
+        //if attack ON cooldown
+        else
+        {
+            Debug.Log("Attacking on cooldown!");
         }
     }
-
-    /*
-    IEnumerator AttackAnimationChaining()
-    {
-        GetComponent<Animator>().SetBool("isAttacking", true);
-        //if(GetComponent<Animator>().GetBool("isAttacking"))
-        yield return new WaitForSeconds(1);
-        GetComponent<Animator>().SetBool("isAttacking", false);
-    }*/
 
     // For applying healing to the player
     void ApplyHealing(float _value)
@@ -140,6 +180,7 @@ public class PlayerCombat : ObjectScript
 
     public IEnumerator Invincible(float duration)
     {
+        canBeDamaged = false;
         yield return new WaitForSeconds(duration);
         canBeDamaged = true;
     }
