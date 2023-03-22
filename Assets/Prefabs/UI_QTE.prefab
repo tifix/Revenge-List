@@ -25,7 +25,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824067890}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: -0.00000058114523}
+  m_LocalRotation: {x: -0, y: -0, z: 1, w: -0.00000058114534}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
@@ -101,7 +101,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3336000627169054809}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 173
+    rgba: 4278190253
   m_fontColor: {r: 0.6792453, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -305,7 +305,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2266498786259866250
 RectTransform:
   m_ObjectHideFlags: 0
@@ -319,9 +319,9 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5275645539075210766}
+  - {fileID: 8594872308723275363}
   - {fileID: 8594872308754345628}
   - {fileID: 8594872308582212104}
-  - {fileID: 8594872308723275363}
   - {fileID: 8594872308605828382}
   - {fileID: 824067891}
   - {fileID: 8594872308982154456}
@@ -908,7 +908,7 @@ RectTransform:
   m_GameObject: {fileID: 8594872308723275364}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 130.56999, y: 130.56999, z: 130.56999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2266498786259866250}
@@ -1075,9 +1075,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8594872308982154457}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: -0.00000058114523}
+  m_LocalRotation: {x: -0, y: -0, z: 1, w: -0.0000005811455}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2266498786259866250}
@@ -1161,7 +1161,7 @@ RectTransform:
   m_Children:
   - {fileID: 2266498786259866250}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1253,7 +1253,6 @@ MonoBehaviour:
   BeatUI: {fileID: 8594872308723275364}
   FillSong: {fileID: 8594872308982154439}
   beatScale: 0.2
-  comboUI: {fileID: 0}
   countDownUI: {fileID: 4317415928667482776}
   up: {fileID: 8594872307667226923}
   down: {fileID: 8594872307769436641}
@@ -1263,6 +1262,7 @@ MonoBehaviour:
   - obj: {fileID: 0}
   - obj: {fileID: 8594872308982154457}
   - obj: {fileID: 3336000627169054809}
+  percentagePerSkull: 0
 --- !u!95 &1609018082
 Animator:
   serializedVersion: 4

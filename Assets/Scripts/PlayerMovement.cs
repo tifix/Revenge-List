@@ -112,7 +112,7 @@ public class PlayerMovement : MonoBehaviour
         if (!isMovementLocked && dashTime + dashCoolDown < Time.time)
         {
             Debug.Log("Dash");
-            StartCoroutine(PlayerCombat.instance.Invincible(dashLenght));
+            StartCoroutine(PlayerCombat.instance.Invincible(dashLenght + 0.5f));
             dashTime = Time.time;
             GetComponentInChildren<SpriteTrail>().CallTrail(dashLenght);
             //Dash

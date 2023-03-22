@@ -20,7 +20,7 @@ MonoBehaviour:
   d: 0
   e: 0
   waitTime: 0.2
-  speed: 6
+  speed: 3
   timeAlive: 10
   amount: 1
   delay: 0.1

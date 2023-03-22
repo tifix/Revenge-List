@@ -192,13 +192,16 @@ public class UI : MonoBehaviour
         boxTextDisplay.SetActive(false);
         HideSpriteXLLilith();
         HideSpriteXLOther();
+        RevengeListTriggerer.SetActive(true);
 
         if (pauseWhileRunning) PlayerMovement.instance.SetUnLockMovement();
     }
 
-    public void DialogueShow(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning)                            //Call this with a dialogue structure to display it!
+    public void DialogueShow(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning)                    //Call this with a dialogue structure to display it!
     {
         boxTextDisplay.SetActive(true);
+        RevengeListTriggerer.SetActive(false);
+        PlayerCombat.instance.gameObject.GetComponent<Animator>().SetBool("isAttacking", false);    //Interupting attack combos- M
         Debug.Log("initialising text");
         if (!runCoroutine)
         {
@@ -357,9 +360,16 @@ public class UI : MonoBehaviour
 
     #region buttons and element toggles
     public void TogglePauseMenu() //Toggle pause menu
-    { 
-        boxPause.SetActive(!boxPause.activeInHierarchy); 
-        GameManager.instance.TogglePause();
+    {
+        boxPause.SetActive(!boxPause.activeInHierarchy);
+        PlayerCombat.instance.gameObject.GetComponent<Animator>().SetBool("isAttacking", false);    //Interupting attack combos- M
+
+        //Pausing game inputs and game time
+        if (boxPause.activeInHierarchy) PlayerMovement.instance.SetLockMovement();
+        else { PlayerMovement.instance.SetUnLockMovement(); }
+        GameManager.instance.SetPause(boxPause.activeInHierarchy);
+
+        //Hiding other UI elements while paused
         if (boxSettings.activeInHierarchy) boxSettings.SetActive(false);
         if (RevengeList.activeInHierarchy) RevengeList.SetActive(false);
     }     
@@ -388,7 +398,12 @@ public class UI : MonoBehaviour
         Invoke("BackToMenu", GameManager.instance.DeathReloadTime);
     }
 
-    public void ToggleRevengeList() => RevengeList.SetActive(!RevengeList.activeInHierarchy);
+    public void ToggleRevengeList()     //Added pausing when Revenge list shown
+    {
+        PlayerCombat.instance.gameObject.GetComponent<Animator>().SetBool("isAttacking", false);    //Interupting attack combos- M
+        RevengeList.SetActive(!RevengeList.activeInHierarchy);
+        GameManager.instance.SetPause(RevengeList.activeInHierarchy);
+    }
     public void SetSpriteXLLilith(Sprite s) { XLPortraitLilith.gameObject.SetActive(true); XLPortraitLilith.sprite = s; }
     public void SetSpriteXLOther(Sprite s) { XLPortraitOther.gameObject.SetActive(true); XLPortraitOther.sprite = s; }
     public void HideSpriteXLLilith() { XLPortraitLilith.gameObject.SetActive(false); }

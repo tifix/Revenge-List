@@ -8,7 +8,6 @@ using UnityEngine.InputSystem;
 public class PlayerCombat : ObjectScript
 {
     Controls input;
-    SpriteRenderer sr;
     public static PlayerCombat instance;
 
     [Range(0,1)] public float attackIntervalMinimum=0.4f;
@@ -21,7 +20,6 @@ public class PlayerCombat : ObjectScript
     public float invincivilityTime = 1f;
 
     public bool canAttack = true;
-    public Color damagedColour = Color.white - Color.red;
     protected override void Awake()                             //Ensuring single instance of the script
     {
         base.Awake();
@@ -41,8 +39,6 @@ public class PlayerCombat : ObjectScript
 
         input.Ground.KillSelf.performed += KillSelf;
         input.Ground.KillSelf.Enable();
-
-        sr = transform.GetChild(0).GetComponent<SpriteRenderer>();
 
         canAttack= true;
     }
@@ -132,14 +128,13 @@ public class PlayerCombat : ObjectScript
             return;
 
         health -= _value;
-        //GetComponentInChildren<Animator>().SetTrigger("takeDamage");
-        StartCoroutine(DamagedAnim());
+        GetComponentInChildren<Animator>().SetTrigger("takeDamage");
         canBeDamaged = false;
         StartCoroutine(Invincible(invincivilityTime));
 
         if (health <= 0.0f)
         {
-            OnDeath();
+            StartCoroutine(OnDeath());
         }
     }
 
@@ -149,22 +144,6 @@ public class PlayerCombat : ObjectScript
         canBeDamaged = true;
     }
 
-    IEnumerator DamagedAnim()
-    {
-        Color og = sr.color;
-        while(sr.color!=damagedColour)
-        {
-            sr.color -= damagedColour * Time.deltaTime;
-            yield return null;
-        }
-        yield return null;
-        while (sr.color != og)
-        {
-            sr.color += og * Time.deltaTime;
-            yield return null;
-        }
-    }
-
     private void OnDrawGizmosSelected()
     {
         if(attackOrg == null)
@@ -172,11 +151,13 @@ public class PlayerCombat : ObjectScript
         Gizmos.DrawWireSphere(attackOrg.position, attackRange);
     }
 
-    void OnDeath()
+    IEnumerator OnDeath()
     {
         //Debug.Log("PLAYER DEAD... [WIP]");
-
+        UI.instance.FadeOut();
+        yield return new WaitForSeconds(1f);
         GameManager.instance.SetLost(true);
+        UI.instance.FadeIn();
     }
 
     void KillSelf(InputAction.CallbackContext obj)

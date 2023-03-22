@@ -46,6 +46,7 @@ public class GameManager : MonoBehaviour
     {
         if(GetCamera())             //Find the camera object. If found and valid, track player
             CamFollowPlayer();
+        UI.instance.FadeIn();
         AudioManager.instance.PlayMusic("BgMusic");
     }
 

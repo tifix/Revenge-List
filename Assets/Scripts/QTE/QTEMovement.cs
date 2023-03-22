@@ -100,7 +100,7 @@ public class QTEMovement : MonoBehaviour
         for (float i = 0; i <= 1; i+= Time.fixedDeltaTime/time)
         {
             transform.rotation = Quaternion.Slerp(currentAngle, finalAngle, i);
-            yield return new WaitForFixedUpdate();
+            yield return null;
         }
         rotating = false;
     }

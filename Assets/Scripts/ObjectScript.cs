@@ -54,6 +54,7 @@ public class ObjectScript : MonoBehaviour
     // For applying damage to the object
     public virtual void ApplyDamage(float _value)
     {
+        AudioManager.instance.PlaySFX("Hit");
         health -= _value;
 
         if (knockBackWhenHit) 
