@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1337283920656425508}
   - component: {fileID: 6450113446644680082}
   m_Layer: 6
-  m_Name: Wide
+  m_Name: WideElectric
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -180,6 +180,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4960051629885345098, guid: 7deee093173aea944af8e83e3a61c76d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0c1f6d9c4b5d67c48af6f5cf8139ea0a, type: 2}
     - target: {fileID: 6650244591728607643, guid: 7deee093173aea944af8e83e3a61c76d, type: 3}
       propertyPath: m_Name
       value: FireWall

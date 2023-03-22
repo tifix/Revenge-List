@@ -5767,8 +5767,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   overHeadAttack: {fileID: 1337283920656425530, guid: 0dbf1de66fe8f2a4690d47d2c58d26a1, type: 3}
-  straightAttack: {fileID: 1295236842262852007, guid: b76e09703fb7abd4d9ad9207b3bad724, type: 3}
-  lineAttack: {fileID: 1337283920656425530, guid: 2e9db506ff48775438b63b40dd5f5b6b, type: 3}
+  straightAttack: {fileID: 1337283920656425530, guid: 7a1430103fcf3ba4192d52860124cd00, type: 3}
+  lineAttack: {fileID: 1337283920656425530, guid: 866cf803ced1b8545a9b723d6231a00a, type: 3}
   health: {fileID: 5668457905372125320}
   executableSprite: {fileID: 0}
   playerRadius: 2
@@ -5925,7 +5925,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1d3075382e22d7e469476194110ece51, type: 2}
+  - {fileID: 2100000, guid: 0c1f6d9c4b5d67c48af6f5cf8139ea0a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6284,7 +6284,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.19215687, g: 0.41568628, b: 1, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
