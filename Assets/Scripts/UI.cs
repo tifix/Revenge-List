@@ -29,7 +29,7 @@ public class UI : MonoBehaviour
     [SerializeField] private bool isWaiting = false;                                                            //is the dialogue paused after a page is completelly written
     [Tooltip("What part of the dialogue is displayed"), Range(0, 99)] public int txtPageNr = 0;                 //Which chunk / page / part of dialogue is currently displayed or being typed out
     private string pageText = "Warning: Unassigned text";
-    [Tooltip("time in s between each letter typed")] public float typingWait = 0.03f;                           //how much time passes between each letter typed
+    //[Tooltip("time in s between each letter typed")] public float typingWait = 0.03f;                           //how much time passes between each letter typed
     [Range(0, 2f), SerializeField, Tooltip("disable dialogue skipping at first")] float initSkipLock = 0.1f;    //for how long should the dialogue be unable to be skipped when it is shown 
     bool dialogueSkipLocked = true;                                                                
     //
@@ -54,6 +54,7 @@ public class UI : MonoBehaviour
     [SerializeField] Image playerPortrait;                                               //Displayer of player portrait
     [SerializeField] Sprite[] playerPortraits = new Sprite[5];                           //Images to display as player looses health
     [SerializeField] Slider bossHealthBar, bossShieldBar;
+    [SerializeField] Slider settingVolume, settingTypeSpeed;
     [SerializeField] Image XLPortraitLilith, XLPortraitOther;                            //Portraits which display Lilith and others as they tallk
     [Space(10)]
     [SerializeField] GameObject RevengeList;                                             //the gorgeous scrollable revenge list
@@ -80,6 +81,8 @@ public class UI : MonoBehaviour
         input.Menu.Pause.Enable();
         input.Menu.Confirm.performed += DialogueAdvance;
         input.Menu.Confirm.Enable();
+
+        ImportSettingsFromMenu();   //imports volume and typing speed settings from menu settings.
     }
     public void Start()
     {
@@ -118,7 +121,25 @@ public class UI : MonoBehaviour
         }
     }
 
-    //Probably need a version that doesn't lock the movement and/or stops time (actually use pauseWhileRunning) - AV
+    private void ImportSettingsFromMenu() 
+    {
+        try
+        {
+            if (Settings.instance != null) 
+            {
+                settingTypeSpeed.value = Settings.instance.typingWait;
+                settingVolume.value = Settings.instance.volume;
+            }
+           
+        }
+        catch
+        {
+
+            Debug.LogWarning("Error while importing settings from menu scene. Proceeding with defaults");
+        }
+    
+    }
+
     protected IEnumerator DialogueTyper(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning) //typing the text over time
     {
         NodeCurrent = DialogueInitialise(_dialogue, pauseWhileRunning);
@@ -146,7 +167,7 @@ public class UI : MonoBehaviour
             {
                 txtMain.text = pageText.Substring(0, j);               //slice the text 
                 if (GameManager.instance.cheat_FastForwardDialogue) {  goto endOfDialogue; }
-                yield return new WaitForSecondsRealtime(typingWait);
+                yield return new WaitForSecondsRealtime(Settings.instance.typingWait);
                 if (!runCoroutine) break;
             }
             if (GameManager.instance.cheat_FastForwardDialogue) {  break; }
@@ -454,8 +475,8 @@ public class UI : MonoBehaviour
     public void ShowSpriteXLLilith() { XLPortraitLilith.gameObject.SetActive(true); }
     public void ShowSpriteXLOther() { XLPortraitOther.gameObject.SetActive(true); }
 
-    public void SetTypingSpeed(float typeRate) => typingWait = Mathf.Lerp(0.04f,0.01f, typeRate); //left to slow, right to fast
-    public void SetVolume(float value) { float t = Mathf.Lerp(-80, 0, value); Debug.Log(t); AudioMixer.SetFloat("masterVolume", t); }  //left to mute, right to loud
+    public void SetTypingSpeed(float typeRate) => Settings.instance.typingWait = Mathf.Lerp(0.04f,0.01f, typeRate); //left to slow, right to fast
+    public void SetVolume(float value) { float t = Mathf.Lerp(-80, 0, value); Debug.Log(t); AudioMixer.SetFloat("masterVolume", t); Settings.instance.volume = t; }  //left to mute, right to loud
 
     public void PlayOutroSequence() => StartCoroutine("OutroSequenceWithTimings");
     

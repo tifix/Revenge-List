@@ -2,18 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * don't destroy with DATA ONLY for making menu settings and game settings persistent.
+ */
+
 public class Settings : MonoBehaviour
 {
+    public float typingWait=0.03f;
+    public float volume = 0;
+    public static Settings instance;
 
-    // Start is called before the first frame update
-    void Start()
+    public void Awake()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject); 
+        }
+        else Destroy(this);
     }
 }
