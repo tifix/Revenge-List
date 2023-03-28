@@ -56,6 +56,8 @@ public class UI : MonoBehaviour
     [Space(10)]
     [SerializeField] GameObject RevengeList;                                             //the gorgeous scrollable revenge list
     [SerializeField] GameObject RevengeListTriggerer;                                    //the buton triggering the revenge lsit display
+    [SerializeField] GameObject OutroCinematicObject;                                    //displays the outro pretties!
+    [SerializeField] DSGraphSaveDataSO OutroDialogue1, OutroDialogue2;                   //dialogue displayed in the outro sequence
 
     //
     //Node typing data retrieval
@@ -351,12 +353,40 @@ public class UI : MonoBehaviour
     {
         anim.SetTrigger("In");
     }
+    public void CutToBlack()
+    {
+        anim.SetTrigger("Cut");
+    }
+
 
     public void QuitToWindows() 
     {
         AudioManager.instance.PlaySFX("MenuClick");
         Application.Quit(); 
     }
+    //
+
+    public IEnumerator OutroSequenceWithTimings() 
+    {
+        ToggleHealthbar(false);
+        OutroCinematicObject.SetActive(true);
+        FadeIn();
+        yield return new WaitForSeconds(1);
+        if (OutroDialogue1 != null) DialogueShow(OutroDialogue1, true); else Debug.LogWarning("OutroDialogue with backstory not assigned in UI!");
+
+        while(dialogueCur!=null) yield return new WaitForEndOfFrame();   //waiting for the dialogue to finish, before proceeding
+        Debug.Log("Backstory speech finished");
+        CutToBlack();
+        if (OutroDialogue2 != null) DialogueShow(OutroDialogue2, true); else Debug.LogWarning("outro-most dialogue not assigned in UI!");
+
+        while (dialogueCur!=null) yield return new WaitForEndOfFrame();   //waiting for the dialogue to finish, before proceeding
+        Debug.Log("Karl finished talking about death and taxes, game finished!");
+
+        //this is where the scrolling credits will go!
+
+        GameManager.LoadMenu();
+    }
+
 
     #region buttons and element toggles
     public void TogglePauseMenu() //Toggle pause menu
@@ -376,8 +406,9 @@ public class UI : MonoBehaviour
     public void BackToMenu() 
     {
         AudioManager.instance.PlaySFX("MenuClick");
-        GameManager.LoadMenu(); 
+        GameManager.LoadMenu();
     }
+
     public void InputPause(InputAction.CallbackContext obj) => TogglePauseMenu();
     public void ToggleSettings()                                                                                            //Toggle settings menu
     {
@@ -385,6 +416,7 @@ public class UI : MonoBehaviour
         boxSettings.SetActive(!boxSettings.activeInHierarchy); 
     }                                 
     public void ToggleHealthbar() { boxHealthbar.SetActive(!boxHealthbar.activeInHierarchy); }                              //Toggle the player healthbar display
+    public void ToggleHealthbar(bool state) { boxHealthbar.SetActive(state); }                              //Toggle the player healthbar display
     public void ToggleQTEScreen()                                                                                           //Toggle QTE screen and freeze player movement
     {
         if(boxQTE.activeSelf) PlayerMovement.instance.SetLockMovement();
@@ -412,7 +444,11 @@ public class UI : MonoBehaviour
     public void ShowSpriteXLOther() { XLPortraitOther.gameObject.SetActive(true); }
 
     public void SetTypingSpeed(float typeRate) => typingWait = Mathf.Lerp(0.04f,0.01f, typeRate); //left to slow, right to fast
+
+    public void PlayOutroSequence() => StartCoroutine("OutroSequenceWithTimings");
     
+    
+
 
     #endregion
 }
