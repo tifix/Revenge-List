@@ -5,11 +5,71 @@
     },
     "UngroupedDialogues": [
         {
+            "DialogueName": "2",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "Astrid...",
+            "SpritePath": "Lilith_Unhappy2",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "3",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "Nancy Brown…",
+            "SpritePath": "Lilith_Unhappy2",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "1",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "Karl Svensson...",
+            "SpritePath": "Lilith_Unhappy2",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": true
+        },
+        {
+            "DialogueName": "4",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "I should find my revenge list.",
+            "SpritePath": "Lilith_Happy",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
             "DialogueName": "0",
             "nodeID": "",
             "SpeakerName": "Lilith",
-            "Text": "I should find my Revenge List",
-            "SpritePath": "Lilith_Happy",
+            "Text": "Karl Svensson...",
+            "SpritePath": "Lilith_Unhappy2",
             "Choices": [
                 {
                     "Text": "Next Dialogue",

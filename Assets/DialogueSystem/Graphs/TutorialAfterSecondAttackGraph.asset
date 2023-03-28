@@ -18,7 +18,7 @@ MonoBehaviour:
   - ID: 0904cefe-c3cb-4b5e-8c8a-3b7198da0b19
     Name: 0
     SpeakerName: Microwave
-    Text: "How... \nHow did you do that????!!!!!"
+    Text: ...
     SpritePath: Microwave1
     Choices:
     - Text: Next Dialogue
@@ -28,17 +28,23 @@ MonoBehaviour:
     isStartNode: 1
     ChildIDs:
     - bb7a130d-b71c-43a1-ada6-6daa224f06fa
+  - ID: b3457fb2-68d5-4211-bc4f-24f24bfe497c
+    Name: 2
+    SpeakerName: Lilith
+    Text: What do you mean overhead attacks that home in on me?
+    SpritePath: Lilith_Angry
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 
+    GroupID: 
+    Position: {x: 890, y: 170}
+    isStartNode: 0
+    ChildIDs:
+    - 
   - ID: bb7a130d-b71c-43a1-ada6-6daa224f06fa
     Name: 1
     SpeakerName: Microwave
-    Text: 'This isn''t over.
-
-      Check out my overhead attacks.
-
-      They home
-      in on you.
-
-      No way for you to dodge them hahaha.'
+    Text: Beep beep.
     SpritePath: Microwave2
     Choices:
     - Text: Next Dialogue
@@ -48,23 +54,10 @@ MonoBehaviour:
     isStartNode: 1
     ChildIDs:
     - b3457fb2-68d5-4211-bc4f-24f24bfe497c
-  - ID: b3457fb2-68d5-4211-bc4f-24f24bfe497c
-    Name: 2
-    SpeakerName: Lilith
-    Text: Check me out bozo.
-    SpritePath: Lilith_Smug
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 
-    GroupID: 
-    Position: {x: 890, y: 170}
-    isStartNode: 0
-    ChildIDs:
-    - 
   OldGroupNames: []
   OldUngroupedNodeNames:
   - 0
-  - 1
   - 2
+  - 1
   OldGroupNodeNames:
     list: []

@@ -2,8 +2,8 @@
     "DialogueName": "2",
     "nodeID": "",
     "SpeakerName": "Lilith",
-    "Text": "...",
-    "SpritePath": "Lilith_Unhappy",
+    "Text": "What do you mean I should \"dodge\" the attacks? ",
+    "SpritePath": "Lilith_Unhappy2",
     "Choices": [
         {
             "Text": "Next Dialogue",

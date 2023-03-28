@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330ce6680441e444f96079c0bb98687a, type: 3}
+  m_Name: AfterMicrowaveFleesGraph
+  m_EditorClassIdentifier: 
+  FileName: AfterMicrowaveFlees
+  Groups: []
+  Nodes:
+  - ID: 2b154384-0801-423a-981b-2cdcad8dc1e4
+    Name: 1
+    SpeakerName: Lilith
+    Text: That's it. He's going to the list.
+    SpritePath: Lilith_Unhappy2
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 
+    GroupID: 
+    Position: {x: 437, y: 388}
+    isStartNode: 1
+    ChildIDs:
+    - 
+  OldGroupNames: []
+  OldUngroupedNodeNames:
+  - 1
+  OldGroupNodeNames:
+    list: []

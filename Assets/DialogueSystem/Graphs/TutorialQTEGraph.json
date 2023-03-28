@@ -7,9 +7,9 @@
         {
             "DialogueName": "0",
             "nodeID": "",
-            "SpeakerName": "Lilith",
-            "Text": "Time to purge your sould.",
-            "SpritePath": "Lilith_Angry",
+            "SpeakerName": "Microwave",
+            "Text": "...",
+            "SpritePath": "Microwave",
             "Choices": [
                 {
                     "Text": "Next Dialogue",
@@ -23,8 +23,8 @@
             "DialogueName": "1",
             "nodeID": "",
             "SpeakerName": "Lilith",
-            "Text": "By impaling the manifestation of a soul: Sacred Skulls, I can erase bits of someone's being until they are obliterated and sent to the shadow realm.",
-            "SpritePath": "Lilith_Smug",
+            "Text": "I should impale the skulls with my sword?",
+            "SpritePath": "Lilith_Happy",
             "Choices": [
                 {
                     "Text": "Next Dialogue",
@@ -37,9 +37,24 @@
         {
             "DialogueName": "2",
             "nodeID": "",
-            "SpeakerName": "Microwave",
-            "Text": "Maaaaaaaaaaaan...\nThis some bullshit fr fr.",
-            "SpritePath": "Microwave2",
+            "SpeakerName": "Lilith",
+            "Text": "Don't tell me what to do.",
+            "SpritePath": "Lilith_Unhappy2",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "3",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "(I probably SHOULD impale the skulls with my sword.)",
+            "SpritePath": "Lilith_Unhappy2",
             "Choices": [
                 {
                     "Text": "Next Dialogue",

@@ -8,7 +8,7 @@
             "DialogueName": "0",
             "nodeID": "",
             "SpeakerName": "Microwave",
-            "Text": "No, no, no, noooooooooo!!!!!!!\nThis can't be it.",
+            "Text": "...",
             "SpritePath": "Microwave1",
             "Choices": [
                 {
@@ -23,7 +23,7 @@
             "DialogueName": "1",
             "nodeID": "",
             "SpeakerName": "Microwave",
-            "Text": "This is my final attack Lilith...\nDodge if you can",
+            "Text": "BEEP.",
             "SpritePath": "Microwave2",
             "Choices": [
                 {
@@ -38,8 +38,8 @@
             "DialogueName": "2",
             "nodeID": "",
             "SpeakerName": "Lilith",
-            "Text": "Seems like it's about to be a pretty wide attack...\nIf I dash through it, I should be able to evade it just fine.",
-            "SpritePath": "Lilith_Happy",
+            "Text": "So a wide attack?\nThat I should press \"left shift\" to \"dash\" through?\nThat's the best you got?",
+            "SpritePath": "Lilith_Unhappy2",
             "Choices": [
                 {
                     "Text": "Next Dialogue",

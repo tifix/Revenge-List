@@ -15,24 +15,11 @@ MonoBehaviour:
   FileName: TutorialAfterQTE
   Groups: []
   Nodes:
-  - ID: 2fadb91e-9404-4352-a1ab-e122258c5cee
-    Name: 1
-    SpeakerName: Lilith
-    Text: What are you doing??!!
-    SpritePath: Lilith_Angry
-    Choices:
-    - Text: Next Dialogue
-      NodeID: ee9f2b49-1d61-4675-86b5-cabc162d1ea7
-    GroupID: 
-    Position: {x: 633, y: 269}
-    isStartNode: 1
-    ChildIDs:
-    - ee9f2b49-1d61-4675-86b5-cabc162d1ea7
   - ID: ee9f2b49-1d61-4675-86b5-cabc162d1ea7
     Name: 2
-    SpeakerName: Lilith
-    Text: Agh!
-    SpritePath: Lilith_Angry
+    SpeakerName: Microwave
+    Text: ...
+    SpritePath: Microwave1
     Choices:
     - Text: Next Dialogue
       NodeID: 
@@ -43,23 +30,35 @@ MonoBehaviour:
     - 
   - ID: 02fc2572-9286-4b55-82f1-1fc02731a983
     Name: 0
-    SpeakerName: Microwave
-    Text: 'Ugh...
-
-      This isn''t the last you''ll see of me... bitch.'
-    SpritePath: Microwave1
+    SpeakerName: Lilith
+    Text: You know, when I was a little girl, and my parents tried to put me in the
+      microwave...
+    SpritePath: Lilith_tear
     Choices:
     - Text: Next Dialogue
       NodeID: 2fadb91e-9404-4352-a1ab-e122258c5cee
     GroupID: 
-    Position: {x: 294, y: 269}
+    Position: {x: 9, y: 269}
     isStartNode: 1
     ChildIDs:
     - 2fadb91e-9404-4352-a1ab-e122258c5cee
+  - ID: 2fadb91e-9404-4352-a1ab-e122258c5cee
+    Name: 1
+    SpeakerName: Lilith
+    Text: What are you doing?!
+    SpritePath: Lilith_Angry
+    Choices:
+    - Text: Next Dialogue
+      NodeID: ee9f2b49-1d61-4675-86b5-cabc162d1ea7
+    GroupID: 
+    Position: {x: 633, y: 269}
+    isStartNode: 1
+    ChildIDs:
+    - ee9f2b49-1d61-4675-86b5-cabc162d1ea7
   OldGroupNames: []
   OldUngroupedNodeNames:
-  - 1
   - 2
   - 0
+  - 1
   OldGroupNodeNames:
     list: []

@@ -17,9 +17,9 @@ MonoBehaviour:
   Nodes:
   - ID: b922909a-cb95-40ca-9298-2c5d8a5a8ade
     Name: 0
-    SpeakerName: Lilith
-    Text: Time to purge your sould.
-    SpritePath: Lilith_Angry
+    SpeakerName: Microwave
+    Text: ...
+    SpritePath: Microwave
     Choices:
     - Text: Next Dialogue
       NodeID: 6b89b6ba-8ac1-4349-bb42-ff30e2a2ff4f
@@ -31,9 +31,8 @@ MonoBehaviour:
   - ID: 6b89b6ba-8ac1-4349-bb42-ff30e2a2ff4f
     Name: 1
     SpeakerName: Lilith
-    Text: 'By impaling the manifestation of a soul: Sacred Skulls, I can erase bits
-      of someone''s being until they are obliterated and sent to the shadow realm.'
-    SpritePath: Lilith_Smug
+    Text: I should impale the skulls with my sword?
+    SpritePath: Lilith_Happy
     Choices:
     - Text: Next Dialogue
       NodeID: b5d1f8a7-f80c-40f1-b6ad-790d07069a0a
@@ -44,16 +43,27 @@ MonoBehaviour:
     - b5d1f8a7-f80c-40f1-b6ad-790d07069a0a
   - ID: b5d1f8a7-f80c-40f1-b6ad-790d07069a0a
     Name: 2
-    SpeakerName: Microwave
-    Text: 'Maaaaaaaaaaaan...
-
-      This some bullshit fr fr.'
-    SpritePath: Microwave2
+    SpeakerName: Lilith
+    Text: Don't tell me what to do.
+    SpritePath: Lilith_Unhappy2
+    Choices:
+    - Text: Next Dialogue
+      NodeID: dbffb8ed-7361-4cc9-a418-f747134366ad
+    GroupID: 
+    Position: {x: 909, y: 209}
+    isStartNode: 0
+    ChildIDs:
+    - dbffb8ed-7361-4cc9-a418-f747134366ad
+  - ID: dbffb8ed-7361-4cc9-a418-f747134366ad
+    Name: 3
+    SpeakerName: Lilith
+    Text: (I probably SHOULD impale the skulls with my sword.)
+    SpritePath: Lilith_Unhappy2
     Choices:
     - Text: Next Dialogue
       NodeID: 
     GroupID: 
-    Position: {x: 1448, y: 210}
+    Position: {x: 1168, y: 209}
     isStartNode: 0
     ChildIDs:
     - 
@@ -62,5 +72,6 @@ MonoBehaviour:
   - 0
   - 1
   - 2
+  - 3
   OldGroupNodeNames:
     list: []

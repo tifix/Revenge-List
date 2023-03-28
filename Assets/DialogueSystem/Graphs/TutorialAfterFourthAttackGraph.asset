@@ -15,27 +15,10 @@ MonoBehaviour:
   FileName: TutorialAfterFourthAttack
   Groups: []
   Nodes:
-  - ID: 9e1ac755-7060-42cf-aa0c-854d140121a5
-    Name: 1
-    SpeakerName: Microwave
-    Text: '
-
-
-
-      Fuck.'
-    SpritePath: Microwave2
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 2be164c9-4d1c-423f-b33e-37d4c5c9267f
-    GroupID: 
-    Position: {x: 506, y: 299}
-    isStartNode: 1
-    ChildIDs:
-    - 2be164c9-4d1c-423f-b33e-37d4c5c9267f
   - ID: 2be164c9-4d1c-423f-b33e-37d4c5c9267f
     Name: 2
     SpeakerName: Lilith
-    Text: Time to woop your ass with my awesome moves
+    Text: Now I got you.
     SpritePath: Lilith_Smug
     Choices:
     - Text: Next Dialogue
@@ -58,10 +41,23 @@ MonoBehaviour:
     isStartNode: 1
     ChildIDs:
     - 9e1ac755-7060-42cf-aa0c-854d140121a5
+  - ID: 9e1ac755-7060-42cf-aa0c-854d140121a5
+    Name: 1
+    SpeakerName: Microwave
+    Text: Beep...
+    SpritePath: Microwave2
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 2be164c9-4d1c-423f-b33e-37d4c5c9267f
+    GroupID: 
+    Position: {x: 506, y: 299}
+    isStartNode: 1
+    ChildIDs:
+    - 2be164c9-4d1c-423f-b33e-37d4c5c9267f
   OldGroupNames: []
   OldUngroupedNodeNames:
-  - 1
   - 2
   - 0
+  - 1
   OldGroupNodeNames:
     list: []

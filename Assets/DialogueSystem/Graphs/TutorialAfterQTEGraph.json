@@ -5,26 +5,11 @@
     },
     "UngroupedDialogues": [
         {
-            "DialogueName": "1",
-            "nodeID": "",
-            "SpeakerName": "Lilith",
-            "Text": "What are you doing??!!",
-            "SpritePath": "Lilith_Angry",
-            "Choices": [
-                {
-                    "Text": "Next Dialogue",
-                    "nextID": ""
-                }
-            ],
-            "DialogueType": 0,
-            "IsStartingDialogue": true
-        },
-        {
             "DialogueName": "2",
             "nodeID": "",
-            "SpeakerName": "Lilith",
-            "Text": "Agh!",
-            "SpritePath": "Lilith_Angry",
+            "SpeakerName": "Microwave",
+            "Text": "...",
+            "SpritePath": "Microwave1",
             "Choices": [
                 {
                     "Text": "Next Dialogue",
@@ -37,9 +22,24 @@
         {
             "DialogueName": "0",
             "nodeID": "",
-            "SpeakerName": "Microwave",
-            "Text": "Ugh...\nThis isn't the last you'll see of me... bitch.",
-            "SpritePath": "Microwave1",
+            "SpeakerName": "Lilith",
+            "Text": "You know, when I was a little girl, and my parents tried to put me in the microwave...",
+            "SpritePath": "Lilith_tear",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": true
+        },
+        {
+            "DialogueName": "1",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "What are you doing?!",
+            "SpritePath": "Lilith_Angry",
             "Choices": [
                 {
                     "Text": "Next Dialogue",

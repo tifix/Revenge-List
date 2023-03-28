@@ -18,9 +18,7 @@ MonoBehaviour:
   - ID: 7ef43a50-3fff-49a1-b0f3-f4a194c44f08
     Name: 0
     SpeakerName: Microwave
-    Text: 'No, no, no, noooooooooo!!!!!!!
-
-      This can''t be it.'
+    Text: ...
     SpritePath: Microwave1
     Choices:
     - Text: Next Dialogue
@@ -33,9 +31,7 @@ MonoBehaviour:
   - ID: f8524d68-1548-4352-bb81-e8ea2bddb11a
     Name: 1
     SpeakerName: Microwave
-    Text: 'This is my final attack Lilith...
-
-      Dodge if you can'
+    Text: BEEP.
     SpritePath: Microwave2
     Choices:
     - Text: Next Dialogue
@@ -48,11 +44,13 @@ MonoBehaviour:
   - ID: 5c5b5c80-44ca-4895-86b3-105fe4bdd829
     Name: 2
     SpeakerName: Lilith
-    Text: 'Seems like it''s about to be a pretty wide attack...
+    Text: 'So a wide attack?
 
-      If I dash
-      through it, I should be able to evade it just fine.'
-    SpritePath: Lilith_Happy
+      That I should press "left shift" to "dash" through?
+
+      That''s
+      the best you got?'
+    SpritePath: Lilith_Unhappy2
     Choices:
     - Text: Next Dialogue
       NodeID: 

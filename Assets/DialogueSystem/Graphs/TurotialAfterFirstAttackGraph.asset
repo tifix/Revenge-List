@@ -15,65 +15,49 @@ MonoBehaviour:
   FileName: TurotialAfterFirstAttack
   Groups: []
   Nodes:
-  - ID: 9f16cf91-54f0-4653-ab31-afc9d3a7420d
-    Name: 0
-    SpeakerName: Microwave
-    Text: Muahahahaaaaaaa
-    SpritePath: Microwave1
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 758ea584-b308-4fa1-b33d-c3cf1018df84
-    GroupID: 
-    Position: {x: 355, y: 158}
-    isStartNode: 1
-    ChildIDs:
-    - 758ea584-b308-4fa1-b33d-c3cf1018df84
   - ID: 758ea584-b308-4fa1-b33d-c3cf1018df84
-    Name: 1
-    SpeakerName: Microwave
-    Text: 'Tremble in fear.
-
-      I am far too powerful for you'
-    SpritePath: Microwave2
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 67ae2808-de1c-42a3-b396-804c73d2feed
-    GroupID: 
-    Position: {x: 640, y: 158}
-    isStartNode: 1
-    ChildIDs:
-    - 67ae2808-de1c-42a3-b396-804c73d2feed
-  - ID: dc04dc8e-205b-487e-8dc1-04ca9afe7cd6
-    Name: 3
+    Name: 2
     SpeakerName: Lilith
-    Text: In your dreams bitch
-    SpritePath: Lilith_Angry
+    Text: 'What do you mean I should "dodge" the attacks? '
+    SpritePath: Lilith_Unhappy2
     Choices:
     - Text: Next Dialogue
       NodeID: 
     GroupID: 
-    Position: {x: 1213, y: 158}
+    Position: {x: 475, y: 160}
     isStartNode: 0
     ChildIDs:
     - 
-  - ID: 67ae2808-de1c-42a3-b396-804c73d2feed
-    Name: 2
-    SpeakerName: Lilith
+  - ID: 9f16cf91-54f0-4653-ab31-afc9d3a7420d
+    Name: 0
+    SpeakerName: Microwave
     Text: ...
-    SpritePath: Lilith_Unhappy
+    SpritePath: Microwave1
     Choices:
     - Text: Next Dialogue
-      NodeID: dc04dc8e-205b-487e-8dc1-04ca9afe7cd6
+      NodeID: 4145cf14-a9fa-42be-9198-5ec4e5bbfd26
     GroupID: 
-    Position: {x: 930, y: 158}
-    isStartNode: 0
+    Position: {x: -108, y: 158}
+    isStartNode: 1
     ChildIDs:
-    - dc04dc8e-205b-487e-8dc1-04ca9afe7cd6
+    - 4145cf14-a9fa-42be-9198-5ec4e5bbfd26
+  - ID: 4145cf14-a9fa-42be-9198-5ec4e5bbfd26
+    Name: 1
+    SpeakerName: Microwave
+    Text: Beep.
+    SpritePath: Microwave2
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 758ea584-b308-4fa1-b33d-c3cf1018df84
+    GroupID: 
+    Position: {x: 178, y: 155}
+    isStartNode: 1
+    ChildIDs:
+    - 758ea584-b308-4fa1-b33d-c3cf1018df84
   OldGroupNames: []
   OldUngroupedNodeNames:
+  - 2
   - 0
   - 1
-  - 3
-  - 2
   OldGroupNodeNames:
     list: []

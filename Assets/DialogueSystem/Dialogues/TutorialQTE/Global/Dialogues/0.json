@@ -1,9 +1,9 @@
 {
     "DialogueName": "0",
     "nodeID": "",
-    "SpeakerName": "Lilith",
-    "Text": "Time to purge your sould.",
-    "SpritePath": "Lilith_Angry",
+    "SpeakerName": "Microwave",
+    "Text": "...",
+    "SpritePath": "Microwave",
     "Choices": [
         {
             "Text": "Next Dialogue",

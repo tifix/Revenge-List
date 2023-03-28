@@ -1,0 +1,15 @@
+{
+    "DialogueName": "4",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "I should find my revenge list.",
+    "SpritePath": "Lilith_Happy",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

@@ -1,9 +1,9 @@
 {
     "DialogueName": "0",
     "nodeID": "",
-    "SpeakerName": "Microwave",
-    "Text": "Ugh...\nThis isn't the last you'll see of me... bitch.",
-    "SpritePath": "Microwave1",
+    "SpeakerName": "Lilith",
+    "Text": "You know, when I was a little girl, and my parents tried to put me in the microwave...",
+    "SpritePath": "Lilith_tear",
     "Choices": [
         {
             "Text": "Next Dialogue",

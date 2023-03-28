@@ -15,21 +15,64 @@ MonoBehaviour:
   FileName: TutorialGotList
   Groups: []
   Nodes:
-  - ID: 8850f47a-eee3-4419-8f73-5616865ec5b1
-    Name: 0
+  - ID: 026b13e1-a0f0-4fc8-b507-e5baa750afad
+    Name: 1
     SpeakerName: Lilith
-    Text: Now I can go out and get them
+    Text: Karl Svensson... Astrid... Breakfast...
+    SpritePath: Lilith_Unhappy2
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 09fc30aa-3d0e-442b-b644-8235fa501b05
+    GroupID: 
+    Position: {x: 632, y: 239}
+    isStartNode: 1
+    ChildIDs:
+    - 09fc30aa-3d0e-442b-b644-8235fa501b05
+  - ID: 09fc30aa-3d0e-442b-b644-8235fa501b05
+    Name: 2
+    SpeakerName: Lilith
+    Text: "Breakfast? \nYou know what they say, evil doesn't work on an empty stomach.
+      \n\r"
     SpritePath: Lilith_Smug
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 1c6232dc-0df9-40a3-9c32-58ec2aa0774c
+    GroupID: 
+    Position: {x: 897, y: 239}
+    isStartNode: 0
+    ChildIDs:
+    - 1c6232dc-0df9-40a3-9c32-58ec2aa0774c
+  - ID: 1c6232dc-0df9-40a3-9c32-58ec2aa0774c
+    Name: 3
+    SpeakerName: Lilith
+    Text: My pineapple pasta waits for me in the microwave to my right.
+    SpritePath: Lilith_Unhappy2
     Choices:
     - Text: Next Dialogue
       NodeID: 
     GroupID: 
-    Position: {x: 308, y: 232}
-    isStartNode: 1
+    Position: {x: 1295, y: 239}
+    isStartNode: 0
     ChildIDs:
     - 
+  - ID: 8850f47a-eee3-4419-8f73-5616865ec5b1
+    Name: 0
+    SpeakerName: Lilith
+    Text: Now I can go get them.
+    SpritePath: Lilith_Smug
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 026b13e1-a0f0-4fc8-b507-e5baa750afad
+    GroupID: 
+    Position: {x: 370, y: 239}
+    isStartNode: 1
+    ChildIDs:
+    - 026b13e1-a0f0-4fc8-b507-e5baa750afad
   OldGroupNames: []
   OldUngroupedNodeNames:
+  - 1
+  - 2
+  - 3
   - 0
   OldGroupNodeNames:
     list: []

@@ -16,34 +16,77 @@ MonoBehaviour:
   Groups: []
   Nodes:
   - ID: 0f3ac656-a522-4f8b-ae72-5fad7439c72e
-    Name: 0
-    SpeakerName: Microwave
-    Text: Well, well, well... If it isn't little Lilith...
-    SpritePath: Microwave1
+    Name: 1
+    SpeakerName: Lilith
+    Text: BURNT?!
+    SpritePath: Lilith_Angry
     Choices:
     - Text: Next Dialogue
       NodeID: d75aa42f-9996-433c-bc53-9bc709d8b2a7
     GroupID: 
-    Position: {x: 220, y: 199}
+    Position: {x: 294, y: 196}
     isStartNode: 1
     ChildIDs:
     - d75aa42f-9996-433c-bc53-9bc709d8b2a7
-  - ID: d75aa42f-9996-433c-bc53-9bc709d8b2a7
-    Name: 1
-    SpeakerName: Microwave
-    Text: Come here so i can beat you up
-    SpritePath: Microwave2
+  - ID: eb9b8052-2026-4676-853d-225451c1cf63
+    Name: 4
+    SpeakerName: Lilith
+    Text: "Eight minutes, at LEAST! And it\u2019s BURNT! This is an insult! Offence!
+      It\u2019s personal! How do you call yourself a microwave!"
+    SpritePath: Lilith_Angry
     Choices:
     - Text: Next Dialogue
       NodeID: 
     GroupID: 
-    Position: {x: 543, y: 199}
-    isStartNode: 1
+    Position: {x: 1145, y: 199}
+    isStartNode: 0
     ChildIDs:
     - 
+  - ID: d75aa42f-9996-433c-bc53-9bc709d8b2a7
+    Name: 2
+    SpeakerName: Lilith
+    Text: Yes I can tell from here! Don't try me!
+    SpritePath: Lilith_Unhappy2
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 19ecfca4-4539-4814-9130-75b2e0891619
+    GroupID: 
+    Position: {x: 555, y: 198}
+    isStartNode: 0
+    ChildIDs:
+    - 19ecfca4-4539-4814-9130-75b2e0891619
+  - ID: 19ecfca4-4539-4814-9130-75b2e0891619
+    Name: 3
+    SpeakerName: Lilith
+    Text: Do you have any idea how long I spent cooking this?
+    SpritePath: Lilith_Unhappy2
+    Choices:
+    - Text: Next Dialogue
+      NodeID: eb9b8052-2026-4676-853d-225451c1cf63
+    GroupID: 
+    Position: {x: 816, y: 197}
+    isStartNode: 0
+    ChildIDs:
+    - eb9b8052-2026-4676-853d-225451c1cf63
+  - ID: 3a83710e-c41c-47d8-96a9-c843091aca11
+    Name: 0
+    SpeakerName: Lilith
+    Text: BURNT?!
+    SpritePath: Lilith_Angry
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 0f3ac656-a522-4f8b-ae72-5fad7439c72e
+    GroupID: 
+    Position: {x: 27, y: 224}
+    isStartNode: 1
+    ChildIDs:
+    - 0f3ac656-a522-4f8b-ae72-5fad7439c72e
   OldGroupNames: []
   OldUngroupedNodeNames:
-  - 0
   - 1
+  - 4
+  - 2
+  - 3
+  - 0
   OldGroupNodeNames:
     list: []

@@ -5,10 +5,55 @@
     },
     "UngroupedDialogues": [
         {
+            "DialogueName": "1",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "Karl Svensson... Astrid... Breakfast...",
+            "SpritePath": "Lilith_Unhappy2",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": true
+        },
+        {
+            "DialogueName": "2",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "Breakfast? \nYou know what they say, evil doesn't work on an empty stomach. \n\r",
+            "SpritePath": "Lilith_Smug",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "3",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "My pineapple pasta waits for me in the microwave to my right.",
+            "SpritePath": "Lilith_Unhappy2",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
             "DialogueName": "0",
             "nodeID": "",
             "SpeakerName": "Lilith",
-            "Text": "Now I can go out and get them",
+            "Text": "Now I can go get them.",
             "SpritePath": "Lilith_Smug",
             "Choices": [
                 {

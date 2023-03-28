@@ -2,8 +2,8 @@
     "DialogueName": "0",
     "nodeID": "",
     "SpeakerName": "Lilith",
-    "Text": "I should find my Revenge List",
-    "SpritePath": "Lilith_Happy",
+    "Text": "Karl Svensson...",
+    "SpritePath": "Lilith_Unhappy2",
     "Choices": [
         {
             "Text": "Next Dialogue",

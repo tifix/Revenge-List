@@ -5,10 +5,25 @@
     },
     "UngroupedDialogues": [
         {
+            "DialogueName": "2",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "What do you mean I should \"dodge\" the attacks? ",
+            "SpritePath": "Lilith_Unhappy2",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
             "DialogueName": "0",
             "nodeID": "",
             "SpeakerName": "Microwave",
-            "Text": "Muahahahaaaaaaa",
+            "Text": "...",
             "SpritePath": "Microwave1",
             "Choices": [
                 {
@@ -23,7 +38,7 @@
             "DialogueName": "1",
             "nodeID": "",
             "SpeakerName": "Microwave",
-            "Text": "Tremble in fear.\nI am far too powerful for you",
+            "Text": "Beep.",
             "SpritePath": "Microwave2",
             "Choices": [
                 {
@@ -33,36 +48,6 @@
             ],
             "DialogueType": 0,
             "IsStartingDialogue": true
-        },
-        {
-            "DialogueName": "3",
-            "nodeID": "",
-            "SpeakerName": "Lilith",
-            "Text": "In your dreams bitch",
-            "SpritePath": "Lilith_Angry",
-            "Choices": [
-                {
-                    "Text": "Next Dialogue",
-                    "nextID": ""
-                }
-            ],
-            "DialogueType": 0,
-            "IsStartingDialogue": false
-        },
-        {
-            "DialogueName": "2",
-            "nodeID": "",
-            "SpeakerName": "Lilith",
-            "Text": "...",
-            "SpritePath": "Lilith_Unhappy",
-            "Choices": [
-                {
-                    "Text": "Next Dialogue",
-                    "nextID": ""
-                }
-            ],
-            "DialogueType": 0,
-            "IsStartingDialogue": false
         }
     ]
 }

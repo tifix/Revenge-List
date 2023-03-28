@@ -5,11 +5,11 @@
     },
     "UngroupedDialogues": [
         {
-            "DialogueName": "0",
+            "DialogueName": "1",
             "nodeID": "",
-            "SpeakerName": "Microwave",
-            "Text": "Well, well, well... If it isn't little Lilith...",
-            "SpritePath": "Microwave1",
+            "SpeakerName": "Lilith",
+            "Text": "BURNT?!",
+            "SpritePath": "Lilith_Angry",
             "Choices": [
                 {
                     "Text": "Next Dialogue",
@@ -20,11 +20,56 @@
             "IsStartingDialogue": true
         },
         {
-            "DialogueName": "1",
+            "DialogueName": "4",
             "nodeID": "",
-            "SpeakerName": "Microwave",
-            "Text": "Come here so i can beat you up",
-            "SpritePath": "Microwave2",
+            "SpeakerName": "Lilith",
+            "Text": "Eight minutes, at LEAST! And it’s BURNT! This is an insult! Offence! It’s personal! How do you call yourself a microwave!",
+            "SpritePath": "Lilith_Angry",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "2",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "Yes I can tell from here! Don't try me!",
+            "SpritePath": "Lilith_Unhappy2",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "3",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "Do you have any idea how long I spent cooking this?",
+            "SpritePath": "Lilith_Unhappy2",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "0",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "BURNT?!",
+            "SpritePath": "Lilith_Angry",
             "Choices": [
                 {
                     "Text": "Next Dialogue",

@@ -1,9 +1,9 @@
 {
     "DialogueName": "1",
     "nodeID": "",
-    "SpeakerName": "Microwave",
-    "Text": "Come here so i can beat you up",
-    "SpritePath": "Microwave2",
+    "SpeakerName": "Lilith",
+    "Text": "BURNT?!",
+    "SpritePath": "Lilith_Angry",
     "Choices": [
         {
             "Text": "Next Dialogue",

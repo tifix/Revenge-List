@@ -15,21 +15,77 @@ MonoBehaviour:
   FileName: TutorialGetList
   Groups: []
   Nodes:
-  - ID: d35ec4f8-a9f7-4f08-a195-7d0f114bf07a
-    Name: 0
+  - ID: 13317bf6-1cd8-433c-8a05-cc8760df6b53
+    Name: 2
     SpeakerName: Lilith
-    Text: I should find my Revenge List
+    Text: Astrid...
+    SpritePath: Lilith_Unhappy2
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 5eb140fe-4924-4a0b-99e3-020d91bfc0d7
+    GroupID: 
+    Position: {x: 543, y: 351}
+    isStartNode: 0
+    ChildIDs:
+    - 5eb140fe-4924-4a0b-99e3-020d91bfc0d7
+  - ID: 5eb140fe-4924-4a0b-99e3-020d91bfc0d7
+    Name: 3
+    SpeakerName: Lilith
+    Text: "Nancy Brown\u2026"
+    SpritePath: Lilith_Unhappy2
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 495b4549-533e-4eca-99cb-74e9393e2e78
+    GroupID: 
+    Position: {x: 822, y: 350}
+    isStartNode: 0
+    ChildIDs:
+    - 495b4549-533e-4eca-99cb-74e9393e2e78
+  - ID: d35ec4f8-a9f7-4f08-a195-7d0f114bf07a
+    Name: 1
+    SpeakerName: Lilith
+    Text: Karl Svensson...
+    SpritePath: Lilith_Unhappy2
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 13317bf6-1cd8-433c-8a05-cc8760df6b53
+    GroupID: 
+    Position: {x: 262, y: 348}
+    isStartNode: 1
+    ChildIDs:
+    - 13317bf6-1cd8-433c-8a05-cc8760df6b53
+  - ID: 495b4549-533e-4eca-99cb-74e9393e2e78
+    Name: 4
+    SpeakerName: Lilith
+    Text: I should find my revenge list.
     SpritePath: Lilith_Happy
     Choices:
     - Text: Next Dialogue
       NodeID: 
     GroupID: 
-    Position: {x: 278, y: 352}
-    isStartNode: 1
+    Position: {x: 1091, y: 352}
+    isStartNode: 0
     ChildIDs:
     - 
+  - ID: f7a0e497-6c67-4931-83a8-cd07f1c4859a
+    Name: 0
+    SpeakerName: Lilith
+    Text: Karl Svensson...
+    SpritePath: Lilith_Unhappy2
+    Choices:
+    - Text: Next Dialogue
+      NodeID: d35ec4f8-a9f7-4f08-a195-7d0f114bf07a
+    GroupID: 
+    Position: {x: -20, y: 351}
+    isStartNode: 1
+    ChildIDs:
+    - d35ec4f8-a9f7-4f08-a195-7d0f114bf07a
   OldGroupNames: []
   OldUngroupedNodeNames:
+  - 2
+  - 3
+  - 1
+  - 4
   - 0
   OldGroupNodeNames:
     list: []

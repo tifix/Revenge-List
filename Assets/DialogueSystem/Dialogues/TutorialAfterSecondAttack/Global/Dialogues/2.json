@@ -2,8 +2,8 @@
     "DialogueName": "2",
     "nodeID": "",
     "SpeakerName": "Lilith",
-    "Text": "Check me out bozo.",
-    "SpritePath": "Lilith_Smug",
+    "Text": "What do you mean overhead attacks that home in on me?",
+    "SpritePath": "Lilith_Angry",
     "Choices": [
         {
             "Text": "Next Dialogue",
