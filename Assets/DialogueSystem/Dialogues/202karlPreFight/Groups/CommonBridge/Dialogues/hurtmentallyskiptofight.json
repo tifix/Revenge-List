@@ -1,0 +1,19 @@
+{
+    "DialogueName": "hurtmentallyskiptofight",
+    "nodeID": "",
+    "SpeakerName": "CHOICE",
+    "Text": "Dialogue text.",
+    "SpritePath": "Lilith_Unhappy2",
+    "Choices": [
+        {
+            "Text": "I want to hurt you with my words, then fight you!",
+            "nextID": ""
+        },
+        {
+            "Text": "No! I want to fight you!",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

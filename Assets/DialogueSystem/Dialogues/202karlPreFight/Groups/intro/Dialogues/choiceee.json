@@ -1,0 +1,19 @@
+{
+    "DialogueName": "choiceee",
+    "nodeID": "",
+    "SpeakerName": "CHOICE",
+    "Text": "Dialogue text.",
+    "SpritePath": "Lilith_Unhappy2",
+    "Choices": [
+        {
+            "Text": "Make conversation.",
+            "nextID": ""
+        },
+        {
+            "Text": "Cut to the chase.",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

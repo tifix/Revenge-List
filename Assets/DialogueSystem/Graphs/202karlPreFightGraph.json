@@ -239,85 +239,6 @@
                         "IsStartingDialogue": false
                     },
                     {
-                        "DialogueName": "52",
-                        "nodeID": "",
-                        "SpeakerName": "Karl",
-                        "Text": "HONEY DO YOU WANT ANYTHING?",
-                        "SpritePath": "Neighbour_Barbecue",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
-                        "DialogueName": "53",
-                        "nodeID": "",
-                        "SpeakerName": "Astrid",
-                        "Text": "No, sweetheart! We just had barbeque this morning! \nAsk Lily if she’s hungry!",
-                        "SpritePath": "Insert Sprite Path Here.",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
-                        "DialogueName": "54",
-                        "nodeID": "",
-                        "SpeakerName": "Karl",
-                        "Text": "Lily, want anything? I make scrumptious steak.",
-                        "SpritePath": "Neighbour_Barbecue",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
-                        "DialogueName": "FinalCHoice",
-                        "nodeID": "",
-                        "SpeakerName": "CHOICE",
-                        "Text": "Dialogue text.",
-                        "SpritePath": "Lilith_Unhappy",
-                        "Choices": [
-                            {
-                                "Text": "“Your” dog doesn’t even like you",
-                                "nextID": ""
-                            },
-                            {
-                                "Text": "Astrid doesn’t enjoy your barbeque",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
-                        "DialogueName": "55",
-                        "nodeID": "",
-                        "SpeakerName": "Lilith",
-                        "Text": "No! I want to fight you!\nBesides...\n(This is my chance to hurt him mentally, before going for the physical damage.)",
-                        "SpritePath": "Lilith_Unhappy",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
                         "DialogueName": "48",
                         "nodeID": "",
                         "SpeakerName": "Lilith",
@@ -383,6 +304,85 @@
                         "SpeakerName": "Snuffles",
                         "Text": "...",
                         "SpritePath": "Dogsad",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "52",
+                        "nodeID": "",
+                        "SpeakerName": "Karl",
+                        "Text": "HONEY DO YOU WANT ANYTHING?",
+                        "SpritePath": "Neighbour_Barbecue",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "54",
+                        "nodeID": "",
+                        "SpeakerName": "Karl",
+                        "Text": "Lily, want anything? I make scrumptious steak.",
+                        "SpritePath": "Neighbour_Barbecue",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "53",
+                        "nodeID": "",
+                        "SpeakerName": "Astrid",
+                        "Text": "No, sweetheart! We just had barbeque this morning! \nAsk Lily if she’s hungry!",
+                        "SpritePath": "Insert Sprite Path Here.",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "hurtmentallyskiptofight",
+                        "nodeID": "",
+                        "SpeakerName": "CHOICE",
+                        "Text": "Dialogue text.",
+                        "SpritePath": "Lilith_Unhappy2",
+                        "Choices": [
+                            {
+                                "Text": "I want to hurt you with my words, then fight you!",
+                                "nextID": ""
+                            },
+                            {
+                                "Text": "No! I want to fight you!",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "55",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": "(This is my chance to hurt him mentally, before going for the physical damage.)",
+                        "SpritePath": "Lilith_Unhappy2",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -1597,25 +1597,6 @@
                         "IsStartingDialogue": false
                     },
                     {
-                        "DialogueName": "choicee",
-                        "nodeID": "",
-                        "SpeakerName": "CHOICE",
-                        "Text": "Dialogue text.",
-                        "SpritePath": "Lilith_Unhappy2",
-                        "Choices": [
-                            {
-                                "Text": "Karl, I think we both know how this is going to end...",
-                                "nextID": ""
-                            },
-                            {
-                                "Text": "Make conversation.",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
                         "DialogueName": "8",
                         "nodeID": "",
                         "SpeakerName": "Karl",
@@ -1663,6 +1644,25 @@
                         ],
                         "DialogueType": 0,
                         "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "choiceee",
+                        "nodeID": "",
+                        "SpeakerName": "CHOICE",
+                        "Text": "Dialogue text.",
+                        "SpritePath": "Lilith_Unhappy2",
+                        "Choices": [
+                            {
+                                "Text": "Make conversation.",
+                                "nextID": ""
+                            },
+                            {
+                                "Text": "Cut to the chase.",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
                     }
                 ]
             }
@@ -1678,6 +1678,25 @@
             "Choices": [
                 {
                     "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "Finalchoiceee",
+            "nodeID": "",
+            "SpeakerName": "CHOICE",
+            "Text": "Dialogue text.",
+            "SpritePath": "Lilith_Smug",
+            "Choices": [
+                {
+                    "Text": "Astrid doesn't like your barbeque",
+                    "nextID": ""
+                },
+                {
+                    "Text": "\"Your\" dog doesn't even like you",
                     "nextID": ""
                 }
             ],
