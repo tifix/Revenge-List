@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Audio;
 
 /*
  * Main UI handler
@@ -59,6 +60,7 @@ public class UI : MonoBehaviour
     [SerializeField] GameObject RevengeListTriggerer;                                    //the buton triggering the revenge lsit display
     [SerializeField] GameObject OutroCinematicObject;                                    //displays the outro pretties!
     [SerializeField] DSGraphSaveDataSO OutroDialogue1, OutroDialogue2;                   //dialogue displayed in the outro sequence
+    [SerializeField] AudioMixer AudioMixer;                                              //audio mixer, volume of which we're changing
 
     //
     //Node typing data retrieval
@@ -453,6 +455,7 @@ public class UI : MonoBehaviour
     public void ShowSpriteXLOther() { XLPortraitOther.gameObject.SetActive(true); }
 
     public void SetTypingSpeed(float typeRate) => typingWait = Mathf.Lerp(0.04f,0.01f, typeRate); //left to slow, right to fast
+    public void SetVolume(float value) { float t = Mathf.Lerp(-80, 0, value); Debug.Log(t); AudioMixer.SetFloat("masterVolume", t); }  //left to mute, right to loud
 
     public void PlayOutroSequence() => StartCoroutine("OutroSequenceWithTimings");
     
