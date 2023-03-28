@@ -206,165 +206,6 @@
                 ]
             },
             {
-                "Key": "e0646b45-1205-45f0-9830-876688562027",
-                "Value": [
-                    {
-                        "DialogueName": "2",
-                        "nodeID": "",
-                        "SpeakerName": "Lilith",
-                        "Text": "Lilith, the Queen of Darkness.",
-                        "SpritePath": "Lilith_Happy",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
-                        "DialogueName": "1",
-                        "nodeID": "",
-                        "SpeakerName": "Karl",
-                        "Text": "Lily Brown! How nice to see you! ",
-                        "SpritePath": "Neighbour_Friendly",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": true
-                    },
-                    {
-                        "DialogueName": "3",
-                        "nodeID": "",
-                        "SpeakerName": "Karl",
-                        "Text": "Pardon?",
-                        "SpritePath": "Neighbour_Friendly",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
-                        "DialogueName": "5",
-                        "nodeID": "",
-                        "SpeakerName": "Karl",
-                        "Text": "Darkness? Isn’t that rather glum? \nTo me, you look more like Lilith, the Queen of…",
-                        "SpritePath": "Neighbour_Laughing",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
-                        "DialogueName": "6",
-                        "nodeID": "",
-                        "SpeakerName": "Lilith",
-                        "Text": "Don’t.",
-                        "SpritePath": "Lilith_Unhappy2",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
-                        "DialogueName": "7",
-                        "nodeID": "",
-                        "SpeakerName": "Karl",
-                        "Text": "Suit yourself.",
-                        "SpritePath": "Neighbour_Sad",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
-                        "DialogueName": "Choice1",
-                        "nodeID": "",
-                        "SpeakerName": "CHOICE",
-                        "Text": "Dialogue text.",
-                        "SpritePath": "Lilith_Happy",
-                        "Choices": [
-                            {
-                                "Text": "I’d rather die. Or you should.",
-                                "nextID": ""
-                            },
-                            {
-                                "Text": "He’s not called Snuffles.",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
-                        "DialogueName": "4",
-                        "nodeID": "",
-                        "SpeakerName": "Lilith",
-                        "Text": "Lilith. The Queen. Of Darkness.",
-                        "SpritePath": "Lilith_Unhappy2",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
-                        "DialogueName": "8",
-                        "nodeID": "",
-                        "SpeakerName": "Karl",
-                        "Text": "Anyway, I was just about to collect Snuffles. We’re going to the park, aren’t we, Snuffie?",
-                        "SpritePath": "Neighbour_Friendly",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
-                        "DialogueName": "10",
-                        "nodeID": "",
-                        "SpeakerName": "Karl",
-                        "Text": "Would you like to join us, … Lilith?",
-                        "SpritePath": "Neighbour_Friendly",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    }
-                ]
-            },
-            {
                 "Key": "d01246b4-8e40-46b1-a7b2-332560a06869",
                 "Value": [
                     {
@@ -1639,6 +1480,184 @@
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                ]
+            },
+            {
+                "Key": "e0646b45-1205-45f0-9830-876688562027",
+                "Value": [
+                    {
+                        "DialogueName": "2",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": "Lilith, the Queen of Darkness.",
+                        "SpritePath": "Lilith_Happy",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "1",
+                        "nodeID": "",
+                        "SpeakerName": "Karl",
+                        "Text": "Lily Brown! How nice to see you! ",
+                        "SpritePath": "Neighbour_Friendly",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": true
+                    },
+                    {
+                        "DialogueName": "3",
+                        "nodeID": "",
+                        "SpeakerName": "Karl",
+                        "Text": "Pardon?",
+                        "SpritePath": "Neighbour_Friendly",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "5",
+                        "nodeID": "",
+                        "SpeakerName": "Karl",
+                        "Text": "Darkness? Isn’t that rather glum? \nTo me, you look more like Lilith, the Queen of…",
+                        "SpritePath": "Neighbour_Laughing",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "6",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": "Don’t.",
+                        "SpritePath": "Lilith_Unhappy2",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "7",
+                        "nodeID": "",
+                        "SpeakerName": "Karl",
+                        "Text": "Suit yourself.",
+                        "SpritePath": "Neighbour_Sad",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "4",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": "Lilith. The Queen. Of Darkness.",
+                        "SpritePath": "Lilith_Unhappy2",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "choicee",
+                        "nodeID": "",
+                        "SpeakerName": "CHOICE",
+                        "Text": "Dialogue text.",
+                        "SpritePath": "Lilith_Unhappy2",
+                        "Choices": [
+                            {
+                                "Text": "Karl, I think we both know how this is going to end...",
+                                "nextID": ""
+                            },
+                            {
+                                "Text": "Make conversation.",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "8",
+                        "nodeID": "",
+                        "SpeakerName": "Karl",
+                        "Text": "Anyway, I was just about to collect Snuffles. We’re going to the park, aren’t we, Snuffie?",
+                        "SpritePath": "Neighbour_Friendly",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "10",
+                        "nodeID": "",
+                        "SpeakerName": "Karl",
+                        "Text": "Would you like to join us, … Lilith?",
+                        "SpritePath": "Neighbour_Friendly",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "Choice1",
+                        "nodeID": "",
+                        "SpeakerName": "CHOICE",
+                        "Text": "Dialogue text.",
+                        "SpritePath": "Lilith_Happy",
+                        "Choices": [
+                            {
+                                "Text": "I’d rather die. Or you should.",
+                                "nextID": ""
+                            },
+                            {
+                                "Text": "He’s not called Snuffles.",
                                 "nextID": ""
                             }
                         ],

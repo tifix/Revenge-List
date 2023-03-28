@@ -22,7 +22,7 @@ MonoBehaviour:
     Position: {x: 3811, y: 556}
   - ID: e0646b45-1205-45f0-9830-876688562027
     Name: intro
-    Position: {x: -195, y: 163}
+    Position: {x: -738, y: 168}
   - ID: d01246b4-8e40-46b1-a7b2-332560a06869
     Name: CommonBridge
     Position: {x: 8974, y: 242}
@@ -114,85 +114,6 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - cdb1f5e2-9493-4467-8579-d12b84b98a95
-  - ID: aab63e29-924e-4cdc-a70b-b12e6bc96965
-    Name: 2
-    SpeakerName: Lilith
-    Text: Lilith, the Queen of Darkness.
-    SpritePath: Lilith_Happy
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 26961df2-0611-4ac5-8818-1906cba0f82d
-    GroupID: e0646b45-1205-45f0-9830-876688562027
-    Position: {x: 124, y: 223}
-    isStartNode: 0
-    ChildIDs:
-    - 26961df2-0611-4ac5-8818-1906cba0f82d
-  - ID: 3d9cd679-f41f-4101-9aba-a0d6092a6229
-    Name: 1
-    SpeakerName: Karl
-    Text: 'Lily Brown! How nice to see you! '
-    SpritePath: Neighbour_Friendly
-    Choices:
-    - Text: Next Dialogue
-      NodeID: aab63e29-924e-4cdc-a70b-b12e6bc96965
-    GroupID: e0646b45-1205-45f0-9830-876688562027
-    Position: {x: -170, y: 222}
-    isStartNode: 1
-    ChildIDs:
-    - aab63e29-924e-4cdc-a70b-b12e6bc96965
-  - ID: 26961df2-0611-4ac5-8818-1906cba0f82d
-    Name: 3
-    SpeakerName: Karl
-    Text: Pardon?
-    SpritePath: Neighbour_Friendly
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 09444052-aba6-49d4-a4e5-435f95ffab3b
-    GroupID: e0646b45-1205-45f0-9830-876688562027
-    Position: {x: 409, y: 222}
-    isStartNode: 0
-    ChildIDs:
-    - 09444052-aba6-49d4-a4e5-435f95ffab3b
-  - ID: 41012066-d710-46a7-a834-44af46c9d4be
-    Name: 5
-    SpeakerName: Karl
-    Text: "Darkness? Isn\u2019t that rather glum? \nTo me, you look more like Lilith,
-      the Queen of\u2026"
-    SpritePath: Neighbour_Laughing
-    Choices:
-    - Text: Next Dialogue
-      NodeID: aa3f0da9-6a0f-4819-a39f-de36c17d2fa9
-    GroupID: e0646b45-1205-45f0-9830-876688562027
-    Position: {x: 974, y: 227}
-    isStartNode: 0
-    ChildIDs:
-    - aa3f0da9-6a0f-4819-a39f-de36c17d2fa9
-  - ID: aa3f0da9-6a0f-4819-a39f-de36c17d2fa9
-    Name: 6
-    SpeakerName: Lilith
-    Text: "Don\u2019t."
-    SpritePath: Lilith_Unhappy2
-    Choices:
-    - Text: Next Dialogue
-      NodeID: f88f4931-c384-450b-83d3-9295a85a5aa9
-    GroupID: e0646b45-1205-45f0-9830-876688562027
-    Position: {x: 1288, y: 226}
-    isStartNode: 0
-    ChildIDs:
-    - f88f4931-c384-450b-83d3-9295a85a5aa9
-  - ID: f88f4931-c384-450b-83d3-9295a85a5aa9
-    Name: 7
-    SpeakerName: Karl
-    Text: Suit yourself.
-    SpritePath: Neighbour_Sad
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 698bdeb2-ad5d-42ad-8e27-c9136ae8f359
-    GroupID: e0646b45-1205-45f0-9830-876688562027
-    Position: {x: 1586, y: 228}
-    isStartNode: 0
-    ChildIDs:
-    - 698bdeb2-ad5d-42ad-8e27-c9136ae8f359
   - ID: e21fd5f2-d3f0-4e57-9445-3c658da1ab55
     Name: 46
     SpeakerName: Lilith
@@ -913,22 +834,6 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - a945ea8b-8891-43f1-ab89-f85e6bc912db
-  - ID: 716a77af-e413-4fe2-a9a6-59509c13a8d2
-    Name: Choice1
-    SpeakerName: CHOICE
-    Text: Dialogue text.
-    SpritePath: Lilith_Happy
-    Choices:
-    - Text: "I\u2019d rather die. Or you should."
-      NodeID: 000ee4f4-bc86-44a9-a8ad-a341fc01eef4
-    - Text: "He\u2019s not called Snuffles."
-      NodeID: 9cfe03be-67b9-481a-a144-9e1ac67f0f0d
-    GroupID: e0646b45-1205-45f0-9830-876688562027
-    Position: {x: 2767, y: 233}
-    isStartNode: 0
-    ChildIDs:
-    - 000ee4f4-bc86-44a9-a8ad-a341fc01eef4
-    - 9cfe03be-67b9-481a-a144-9e1ac67f0f0d
   - ID: 9cfe03be-67b9-481a-a144-9e1ac67f0f0d
     Name: 10
     SpeakerName: Karl
@@ -1096,46 +1001,6 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - 54e76a75-9d99-4e00-b010-ff26a03cf181
-  - ID: 09444052-aba6-49d4-a4e5-435f95ffab3b
-    Name: 4
-    SpeakerName: Lilith
-    Text: Lilith. The Queen. Of Darkness.
-    SpritePath: Lilith_Unhappy2
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 41012066-d710-46a7-a834-44af46c9d4be
-    GroupID: e0646b45-1205-45f0-9830-876688562027
-    Position: {x: 696, y: 227}
-    isStartNode: 0
-    ChildIDs:
-    - 41012066-d710-46a7-a834-44af46c9d4be
-  - ID: 698bdeb2-ad5d-42ad-8e27-c9136ae8f359
-    Name: 8
-    SpeakerName: Karl
-    Text: "Anyway, I was just about to collect Snuffles. We\u2019re going to the
-      park, aren\u2019t we, Snuffie?"
-    SpritePath: Neighbour_Friendly
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 46f2739e-db47-45d6-adfc-178ec690f8d9
-    GroupID: e0646b45-1205-45f0-9830-876688562027
-    Position: {x: 1857, y: 229}
-    isStartNode: 0
-    ChildIDs:
-    - 46f2739e-db47-45d6-adfc-178ec690f8d9
-  - ID: 46f2739e-db47-45d6-adfc-178ec690f8d9
-    Name: 10
-    SpeakerName: Karl
-    Text: "Would you like to join us, \u2026 Lilith?"
-    SpritePath: Neighbour_Friendly
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 716a77af-e413-4fe2-a9a6-59509c13a8d2
-    GroupID: e0646b45-1205-45f0-9830-876688562027
-    Position: {x: 2431, y: 231}
-    isStartNode: 0
-    ChildIDs:
-    - 716a77af-e413-4fe2-a9a6-59509c13a8d2
   - ID: 757bbeb1-fa3e-4c85-b632-6d76236e2daf
     Name: 26
     SpeakerName: Lilith
@@ -1434,6 +1299,157 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - 2d23a5fe-273b-4162-a27a-88697c449fad
+  - ID: aab63e29-924e-4cdc-a70b-b12e6bc96965
+    Name: 2
+    SpeakerName: Lilith
+    Text: Lilith, the Queen of Darkness.
+    SpritePath: Lilith_Happy
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 26961df2-0611-4ac5-8818-1906cba0f82d
+    GroupID: e0646b45-1205-45f0-9830-876688562027
+    Position: {x: -419, y: 237}
+    isStartNode: 0
+    ChildIDs:
+    - 26961df2-0611-4ac5-8818-1906cba0f82d
+  - ID: 3d9cd679-f41f-4101-9aba-a0d6092a6229
+    Name: 1
+    SpeakerName: Karl
+    Text: 'Lily Brown! How nice to see you! '
+    SpritePath: Neighbour_Friendly
+    Choices:
+    - Text: Next Dialogue
+      NodeID: aab63e29-924e-4cdc-a70b-b12e6bc96965
+    GroupID: e0646b45-1205-45f0-9830-876688562027
+    Position: {x: -713, y: 236}
+    isStartNode: 1
+    ChildIDs:
+    - aab63e29-924e-4cdc-a70b-b12e6bc96965
+  - ID: 26961df2-0611-4ac5-8818-1906cba0f82d
+    Name: 3
+    SpeakerName: Karl
+    Text: Pardon?
+    SpritePath: Neighbour_Friendly
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 09444052-aba6-49d4-a4e5-435f95ffab3b
+    GroupID: e0646b45-1205-45f0-9830-876688562027
+    Position: {x: -134, y: 236}
+    isStartNode: 0
+    ChildIDs:
+    - 09444052-aba6-49d4-a4e5-435f95ffab3b
+  - ID: 41012066-d710-46a7-a834-44af46c9d4be
+    Name: 5
+    SpeakerName: Karl
+    Text: "Darkness? Isn\u2019t that rather glum? \nTo me, you look more like Lilith,
+      the Queen of\u2026"
+    SpritePath: Neighbour_Laughing
+    Choices:
+    - Text: Next Dialogue
+      NodeID: aa3f0da9-6a0f-4819-a39f-de36c17d2fa9
+    GroupID: e0646b45-1205-45f0-9830-876688562027
+    Position: {x: 431, y: 241}
+    isStartNode: 0
+    ChildIDs:
+    - aa3f0da9-6a0f-4819-a39f-de36c17d2fa9
+  - ID: aa3f0da9-6a0f-4819-a39f-de36c17d2fa9
+    Name: 6
+    SpeakerName: Lilith
+    Text: "Don\u2019t."
+    SpritePath: Lilith_Unhappy2
+    Choices:
+    - Text: Next Dialogue
+      NodeID: f88f4931-c384-450b-83d3-9295a85a5aa9
+    GroupID: e0646b45-1205-45f0-9830-876688562027
+    Position: {x: 745, y: 240}
+    isStartNode: 0
+    ChildIDs:
+    - f88f4931-c384-450b-83d3-9295a85a5aa9
+  - ID: f88f4931-c384-450b-83d3-9295a85a5aa9
+    Name: 7
+    SpeakerName: Karl
+    Text: Suit yourself.
+    SpritePath: Neighbour_Sad
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 79621bf9-59ad-410d-bbd1-66eacc280465
+    GroupID: e0646b45-1205-45f0-9830-876688562027
+    Position: {x: 1043, y: 242}
+    isStartNode: 0
+    ChildIDs:
+    - 79621bf9-59ad-410d-bbd1-66eacc280465
+  - ID: 09444052-aba6-49d4-a4e5-435f95ffab3b
+    Name: 4
+    SpeakerName: Lilith
+    Text: Lilith. The Queen. Of Darkness.
+    SpritePath: Lilith_Unhappy2
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 41012066-d710-46a7-a834-44af46c9d4be
+    GroupID: e0646b45-1205-45f0-9830-876688562027
+    Position: {x: 153, y: 241}
+    isStartNode: 0
+    ChildIDs:
+    - 41012066-d710-46a7-a834-44af46c9d4be
+  - ID: 79621bf9-59ad-410d-bbd1-66eacc280465
+    Name: choicee
+    SpeakerName: CHOICE
+    Text: Dialogue text.
+    SpritePath: Lilith_Unhappy2
+    Choices:
+    - Text: Karl, I think we both know how this is going to end...
+      NodeID: e21fd5f2-d3f0-4e57-9445-3c658da1ab55
+    - Text: Make conversation.
+      NodeID: 698bdeb2-ad5d-42ad-8e27-c9136ae8f359
+    GroupID: e0646b45-1205-45f0-9830-876688562027
+    Position: {x: 1327, y: 227}
+    isStartNode: 0
+    ChildIDs:
+    - e21fd5f2-d3f0-4e57-9445-3c658da1ab55
+    - 698bdeb2-ad5d-42ad-8e27-c9136ae8f359
+  - ID: 698bdeb2-ad5d-42ad-8e27-c9136ae8f359
+    Name: 8
+    SpeakerName: Karl
+    Text: "Anyway, I was just about to collect Snuffles. We\u2019re going to the
+      park, aren\u2019t we, Snuffie?"
+    SpritePath: Neighbour_Friendly
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 46f2739e-db47-45d6-adfc-178ec690f8d9
+    GroupID: e0646b45-1205-45f0-9830-876688562027
+    Position: {x: 1820, y: 347}
+    isStartNode: 0
+    ChildIDs:
+    - 46f2739e-db47-45d6-adfc-178ec690f8d9
+  - ID: 46f2739e-db47-45d6-adfc-178ec690f8d9
+    Name: 10
+    SpeakerName: Karl
+    Text: "Would you like to join us, \u2026 Lilith?"
+    SpritePath: Neighbour_Friendly
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 716a77af-e413-4fe2-a9a6-59509c13a8d2
+    GroupID: e0646b45-1205-45f0-9830-876688562027
+    Position: {x: 2347, y: 358}
+    isStartNode: 0
+    ChildIDs:
+    - 716a77af-e413-4fe2-a9a6-59509c13a8d2
+  - ID: 716a77af-e413-4fe2-a9a6-59509c13a8d2
+    Name: Choice1
+    SpeakerName: CHOICE
+    Text: Dialogue text.
+    SpritePath: Lilith_Happy
+    Choices:
+    - Text: "I\u2019d rather die. Or you should."
+      NodeID: 000ee4f4-bc86-44a9-a8ad-a341fc01eef4
+    - Text: "He\u2019s not called Snuffles."
+      NodeID: 9cfe03be-67b9-481a-a144-9e1ac67f0f0d
+    GroupID: e0646b45-1205-45f0-9830-876688562027
+    Position: {x: 2630, y: 347}
+    isStartNode: 0
+    ChildIDs:
+    - 000ee4f4-bc86-44a9-a8ad-a341fc01eef4
+    - 9cfe03be-67b9-481a-a144-9e1ac67f0f0d
   OldGroupNames:
   - 1
   - 2
@@ -1462,18 +1478,6 @@ MonoBehaviour:
       - Choicaroonie
       - 37
       - ytut
-    - Key: intro
-      Value:
-      - 2
-      - 1
-      - 3
-      - 5
-      - 6
-      - 7
-      - Choice1
-      - 4
-      - 8
-      - 10
     - Key: CommonBridge
       Value:
       - 46
@@ -1574,3 +1578,16 @@ MonoBehaviour:
       - 82
       - 98
       - 97
+    - Key: intro
+      Value:
+      - 2
+      - 1
+      - 3
+      - 5
+      - 6
+      - 7
+      - 4
+      - choicee
+      - 8
+      - 10
+      - Choice1
