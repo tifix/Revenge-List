@@ -78,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
             else if (dir.x > 0)
                 sprite.flipX = false;
             ProcessInput();
-            GetComponent<Animator>().SetFloat("walkDirection", dir.x);
+            GetComponent<Animator>().SetFloat("walkDirection", dir.magnitude);
         }
         else
         {
