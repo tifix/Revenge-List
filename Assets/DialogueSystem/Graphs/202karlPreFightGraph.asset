@@ -25,7 +25,7 @@ MonoBehaviour:
     Position: {x: -738, y: 177}
   - ID: d01246b4-8e40-46b1-a7b2-332560a06869
     Name: CommonBridge
-    Position: {x: 8974, y: -66}
+    Position: {x: 8974, y: -49}
   - ID: 8241f30b-0095-4892-b2fe-3118633b011e
     Name: DoTakeHerOUt
     Position: {x: 6120, y: -22}
@@ -1416,36 +1416,6 @@ MonoBehaviour:
     ChildIDs:
     - 725b822d-ddc8-4eef-bb14-f2eef433c095
     - ae3221c1-c4ad-4fe4-80bf-f83d4a93c7e2
-  - ID: e47a19f3-a225-4227-94d9-4828cfb6b144
-    Name: Finalchoiceee
-    SpeakerName: CHOICE
-    Text: Dialogue text.
-    SpritePath: Lilith_Smug
-    Choices:
-    - Text: Astrid doesn't like your barbeque
-      NodeID: f94451f9-4e85-4d16-84d8-30285defe992
-    - Text: '"Your" dog doesn''t even like you'
-      NodeID: d58b6947-6bbe-4169-903d-517f9340c3d2
-    GroupID: 
-    Position: {x: 12740, y: 19}
-    isStartNode: 0
-    ChildIDs:
-    - f94451f9-4e85-4d16-84d8-30285defe992
-    - d58b6947-6bbe-4169-903d-517f9340c3d2
-  - ID: 725b822d-ddc8-4eef-bb14-f2eef433c095
-    Name: 55
-    SpeakerName: Lilith
-    Text: (This is my chance to hurt him mentally, before going for the physical
-      damage.)
-    SpritePath: Lilith_Unhappy2
-    Choices:
-    - Text: Next Dialogue
-      NodeID: e47a19f3-a225-4227-94d9-4828cfb6b144
-    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
-    Position: {x: 12230, y: -7}
-    isStartNode: 0
-    ChildIDs:
-    - e47a19f3-a225-4227-94d9-4828cfb6b144
   - ID: f3662653-f54c-4860-b924-3db6425b71d0
     Name: choiceee
     SpeakerName: CHOICE
@@ -1462,6 +1432,36 @@ MonoBehaviour:
     ChildIDs:
     - 698bdeb2-ad5d-42ad-8e27-c9136ae8f359
     - e21fd5f2-d3f0-4e57-9445-3c658da1ab55
+  - ID: 725b822d-ddc8-4eef-bb14-f2eef433c095
+    Name: 55
+    SpeakerName: Lilith
+    Text: (This is my chance to hurt him mentally, before going for the physical
+      damage.)
+    SpritePath: Lilith_Unhappy2
+    Choices:
+    - Text: Next Dialogue
+      NodeID: d195460a-693d-4e87-9755-70a7bdd08264
+    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
+    Position: {x: 12214, y: 10}
+    isStartNode: 0
+    ChildIDs:
+    - d195460a-693d-4e87-9755-70a7bdd08264
+  - ID: d195460a-693d-4e87-9755-70a7bdd08264
+    Name: finalchoicee
+    SpeakerName: CHOICE
+    Text: Dialogue text.
+    SpritePath: Lilith_Smug
+    Choices:
+    - Text: Astrid doesn't like your barbeque.
+      NodeID: f94451f9-4e85-4d16-84d8-30285defe992
+    - Text: '"Your" dog doesn''t even like you.'
+      NodeID: d58b6947-6bbe-4169-903d-517f9340c3d2
+    GroupID: 
+    Position: {x: 12702, y: 101}
+    isStartNode: 0
+    ChildIDs:
+    - f94451f9-4e85-4d16-84d8-30285defe992
+    - d58b6947-6bbe-4169-903d-517f9340c3d2
   OldGroupNames:
   - 1
   - 2
@@ -1476,7 +1476,7 @@ MonoBehaviour:
   - DontStopJoking
   OldUngroupedNodeNames:
   - DialogueName
-  - Finalchoiceee
+  - finalchoicee
   OldGroupNodeNames:
     list:
     - Key: 2

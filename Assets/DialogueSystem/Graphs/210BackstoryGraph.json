@@ -23,6 +23,10 @@
                 "Value": []
             },
             {
+                "Key": "ParentsAreFunShorterVersion",
+                "Value": []
+            },
+            {
                 "Key": "ef3b572c-c9ef-421c-900c-d3c74f5018a5",
                 "Value": [
                     {
@@ -91,21 +95,6 @@
                 "Key": "212ecd01-8363-428e-b4db-d007090389f2",
                 "Value": [
                     {
-                        "DialogueName": "6",
-                        "nodeID": "",
-                        "SpeakerName": "Lilith",
-                        "Text": "My childhood. Back when I hadn’t yet met you and still felt happiness. It was also because my parents were still alive.",
-                        "SpritePath": "",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
                         "DialogueName": "7",
                         "nodeID": "",
                         "SpeakerName": "Lilith",
@@ -170,6 +159,21 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "I still remember them running around with the huge barbeque tongs, trying to kill each other… All the traps around the house…",
+                        "SpritePath": "",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "6",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": "My childhood. Back when I hadn’t yet met you and still felt happiness. It was also because my parents were still alive.",
                         "SpritePath": "",
                         "Choices": [
                             {
@@ -411,6 +415,86 @@
                         "SpeakerName": "Lilith",
                         "Text": " Stealing away my girl… ",
                         "SpritePath": "",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                ]
+            },
+            {
+                "Key": "45efe736-e91e-4f13-8dc4-bb3fb87e410e",
+                "Value": [
+                    {
+                        "DialogueName": "10",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": "You know, Karl, you remind me of someone… Of something…",
+                        "SpritePath": "Insert Sprite Path Here.",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "11",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": "My childhood. Back when I hadn’t yet met you and still felt happiness. It was also because my parents were still alive.",
+                        "SpritePath": "Insert Sprite Path Here.",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "12",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": "My parents....",
+                        "SpritePath": "Insert Sprite Path Here.",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "13",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": "They tried to kill me so many times when I was young. That was after they went to marriage counsellor and stopped wanting to kill each other, you see.",
+                        "SpritePath": "Insert Sprite Path Here.",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "14",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": "Coincidentally, they tried to grill me using a barbeque not unlike yours.\r",
+                        "SpritePath": "Insert Sprite Path Here.",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",

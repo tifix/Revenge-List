@@ -1,0 +1,15 @@
+{
+    "DialogueName": "12",
+    "nodeID": "",
+    "SpeakerName": "Lilith",
+    "Text": "My parents....",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "Next Dialogue",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}

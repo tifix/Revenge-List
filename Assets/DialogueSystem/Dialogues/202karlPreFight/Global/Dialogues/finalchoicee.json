@@ -1,0 +1,19 @@
+{
+    "DialogueName": "finalchoicee",
+    "nodeID": "",
+    "SpeakerName": "CHOICE",
+    "Text": "Dialogue text.",
+    "SpritePath": "Lilith_Smug",
+    "Choices": [
+        {
+            "Text": "Astrid doesn't like your barbeque.",
+            "nextID": ""
+        },
+        {
+            "Text": "\"Your\" dog doesn't even like you.",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 0,
+    "IsStartingDialogue": false
+}
