@@ -34,7 +34,7 @@ MonoBehaviour:
     Name: 3
     SpeakerName: Lilith
     Text: QUIET!
-    SpritePath: Lilith_Angry
+    SpritePath: 
     Choices:
     - Text: Next Dialogue
       NodeID: 14ac2da1-9c35-4a48-ae7d-35ba3fdfac60
@@ -47,7 +47,7 @@ MonoBehaviour:
     Name: 2
     SpeakerName: Karl
     Text: That's not a nice thing to say.
-    SpritePath: Neighbour_Sad
+    SpritePath: 
     Choices:
     - Text: Next Dialogue
       NodeID: 841c949b-fea0-4ec6-851d-bd0703a36104
@@ -60,7 +60,7 @@ MonoBehaviour:
     Name: 4
     SpeakerName: Karl
     Text: ...
-    SpritePath: Neighbour_Sad
+    SpritePath: 
     Choices:
     - Text: Next Dialogue
       NodeID: eaa1e8db-97c2-432d-a069-c765375fcb91
@@ -74,7 +74,7 @@ MonoBehaviour:
     SpeakerName: Lilith
     Text: Okay, Karl. Maybe you were right. Maybe he really is your dog. But you're
       my bitch.
-    SpritePath: Lilith_Smug
+    SpritePath: 
     Choices:
     - Text: Next Dialogue
       NodeID: bcbe09ec-77c4-4a17-b2b9-3cb8ac541e60
@@ -88,7 +88,7 @@ MonoBehaviour:
     SpeakerName: Lilith
     Text: "My childhood. Back when I hadn\u2019t yet met you and still felt happiness.
       It was also because my parents were still alive."
-    SpritePath: Lilith_tear
+    SpritePath: 
     Choices:
     - Text: Next Dialogue
       NodeID: 1471148f-217f-46e0-824a-b0860246e29b
@@ -101,7 +101,7 @@ MonoBehaviour:
     Name: 7
     SpeakerName: Lilith
     Text: "They really liked to barbeque, too\u2026"
-    SpritePath: Lilith_Unhappy
+    SpritePath: 
     Choices:
     - Text: Next Dialogue
       NodeID: a296859a-0d8f-4c4f-bf4d-8e803fe3f792
@@ -115,7 +115,7 @@ MonoBehaviour:
     SpeakerName: Lilith
     Text: 'They were fighting so much, they were always trying to grill each other.
       They got really clever with it. '
-    SpritePath: Lilith_tear
+    SpritePath: 
     Choices:
     - Text: Next Dialogue
       NodeID: 9b488fa4-e718-42ee-bd9d-d10109dd9277
@@ -129,7 +129,7 @@ MonoBehaviour:
     SpeakerName: Lilith
     Text: And they got huge barbeque tongs just for that, and trained in gym to be
       able to pick them up.
-    SpritePath: Lilith_Unhappy
+    SpritePath: 
     Choices:
     - Text: Next Dialogue
       NodeID: 5cb68e5c-cda6-4d65-9bfc-87654cd19285
@@ -138,24 +138,11 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - 5cb68e5c-cda6-4d65-9bfc-87654cd19285
-  - ID: bddb9703-df31-42e6-a633-0d4e0a4ca3dc
-    Name: 7
-    SpeakerName: Lilith
-    Text: " Stealing away my girl\u2026 "
-    SpritePath: Lilith_Unhappy2
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 9cd5ae66-61fb-43a5-84c4-2f6b6f58c042
-    GroupID: c463fb6a-9649-4c3b-af94-9b6addbc39ec
-    Position: {x: 9989, y: -303}
-    isStartNode: 0
-    ChildIDs:
-    - 9cd5ae66-61fb-43a5-84c4-2f6b6f58c042
   - ID: f83a5293-a8c0-4c83-b413-7036e9db2fa6
     Name: FaintSmile
     SpeakerName: Lilith
     Text: ...
-    SpritePath: Lilith_Happy
+    SpritePath: 
     Choices:
     - Text: Next Dialogue
       NodeID: aa2ee5c1-fb9c-4d8f-9092-a3c82306647d
@@ -168,7 +155,7 @@ MonoBehaviour:
     Name: 1
     SpeakerName: Lilith
     Text: But then, they went to a marriage counsellor.
-    SpritePath: Lilith_Unhappy2
+    SpritePath: 
     Choices:
     - Text: Next Dialogue
       NodeID: 71b3ee6e-17a5-4500-8577-44b78516c77d
@@ -181,7 +168,7 @@ MonoBehaviour:
     Name: 2
     SpeakerName: Lilith
     Text: And they stopped wanting to kill each other.
-    SpritePath: Lilith_Sad
+    SpritePath: 
     Choices:
     - Text: Next Dialogue
       NodeID: ebc40915-c8e2-4aa7-814d-3fb7a0259d0f
@@ -195,7 +182,7 @@ MonoBehaviour:
     SpeakerName: Lilith
     Text: And yet somehow, seeing you everyday is worse horror than my childhood
       could have ever been.
-    SpritePath: Lilith_Unhappy2
+    SpritePath: 
     Choices:
     - Text: Next Dialogue
       NodeID: 93e3ffa4-fb3d-456a-b16c-28e31a392333
@@ -209,7 +196,7 @@ MonoBehaviour:
     SpeakerName: Lilith
     Text: "It\u2019s weird I\u2019ve not already killed you, really. Your crimes
       are numerous. The eggs\u2026 The dog\u2026"
-    SpritePath: Lilith_Unhappy
+    SpritePath: 
     Choices:
     - Text: Next Dialogue
       NodeID: bddb9703-df31-42e6-a633-0d4e0a4ca3dc
@@ -223,7 +210,7 @@ MonoBehaviour:
     SpeakerName: Lilith
     Text: "And let\u2019s not even get started on just who you are as a person, which
       is crime in and on itself. Nobody should be like you."
-    SpritePath: Lilith_tear
+    SpritePath: 
     Choices:
     - Text: Next Dialogue
       NodeID: 86fdcf12-9cb0-4262-b9f5-5944f045f0ab
@@ -236,7 +223,7 @@ MonoBehaviour:
     Name: 10
     SpeakerName: Karl
     Text: "Isn\u2019t the best revenge a life well-lived?"
-    SpritePath: Neighbour_Sad
+    SpritePath: 
     Choices:
     - Text: Next Dialogue
       NodeID: adf5fff8-45a3-4b21-b583-28d4c1fb277b
@@ -250,7 +237,7 @@ MonoBehaviour:
     SpeakerName: Lilith
     Text: "So it\u2019s strange I\u2019ve not gotten to you before this. I have so
       many reasons to take revenge on you. "
-    SpritePath: Lilith_Happy
+    SpritePath: 
     Choices:
     - Text: Next Dialogue
       NodeID: d76a2601-17d1-4c83-b887-a207c7877892
@@ -263,7 +250,7 @@ MonoBehaviour:
     Name: 11
     SpeakerName: Lilith
     Text: 'HAHAHAHAHAHAHAHA. '
-    SpritePath: Lilith_Happy
+    SpritePath: 
     Choices:
     - Text: Next Dialogue
       NodeID: 9b9b8eb7-3fd5-49ac-ba82-28fefb3fade3
@@ -276,7 +263,7 @@ MonoBehaviour:
     Name: 12
     SpeakerName: Lilith
     Text: HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA.
-    SpritePath: Lilith_Smug
+    SpritePath: 
     Choices:
     - Text: Next Dialogue
       NodeID: 08e57bcd-7b65-4016-90d0-bed10e45b584
@@ -289,7 +276,7 @@ MonoBehaviour:
     Name: 13
     SpeakerName: Lilith
     Text: HA HA HA.
-    SpritePath: Lilith_Smug
+    SpritePath: 
     Choices:
     - Text: Next Dialogue
       NodeID: 861e91d4-7948-476c-a22a-a1e23c25b31a
@@ -298,24 +285,11 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - 861e91d4-7948-476c-a22a-a1e23c25b31a
-  - ID: 861e91d4-7948-476c-a22a-a1e23c25b31a
-    Name: 14
-    SpeakerName: Lilith
-    Text: "Anyway\u2026"
-    SpritePath: Lilith_Happy
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 
-    GroupID: ecaf045f-8d6d-4b47-8938-85139aa43c15
-    Position: {x: 13143, y: -310}
-    isStartNode: 0
-    ChildIDs:
-    - 
   - ID: eaa1e8db-97c2-432d-a069-c765375fcb91
     Name: 5
     SpeakerName: Lilith
     Text: "You know, Karl, you remind me of someone\u2026 Or something\u2026"
-    SpritePath: Lilith_Unhappy
+    SpritePath: 
     Choices:
     - Text: Next Dialogue
       NodeID: e0228849-2aff-439e-8d7a-11e0e76c69f9
@@ -329,7 +303,7 @@ MonoBehaviour:
     SpeakerName: Lilith
     Text: "I still remember them running around with the huge barbeque tongs, trying
       to kill each other\u2026 All the traps around the house\u2026"
-    SpritePath: Lilith_Unhappy
+    SpritePath: 
     Choices:
     - Text: Next Dialogue
       NodeID: f83a5293-a8c0-4c83-b413-7036e9db2fa6
@@ -343,7 +317,7 @@ MonoBehaviour:
     SpeakerName: Lilith
     Text: "And all the frustration they used to feel for each other, they directed\u2026
       towards me."
-    SpritePath: Lilith_Unhappy2
+    SpritePath: 
     Choices:
     - Text: Next Dialogue
       NodeID: 0f5d49bc-a7ac-4834-bbaf-63c24d6115be
@@ -357,7 +331,7 @@ MonoBehaviour:
     SpeakerName: Lilith
     Text: "Running away from barbeque tongs, trying to keep out\u2026 I still remember
       it so clearly, mr Svensson."
-    SpritePath: Lilith_Happy
+    SpritePath: 
     Choices:
     - Text: Next Dialogue
       NodeID: 7741eaf0-0bb2-4c73-8d29-5488b3ea5f46
@@ -366,6 +340,32 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - 7741eaf0-0bb2-4c73-8d29-5488b3ea5f46
+  - ID: bddb9703-df31-42e6-a633-0d4e0a4ca3dc
+    Name: 7
+    SpeakerName: Lilith
+    Text: " Stealing away my girl\u2026 "
+    SpritePath: 
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 9cd5ae66-61fb-43a5-84c4-2f6b6f58c042
+    GroupID: c463fb6a-9649-4c3b-af94-9b6addbc39ec
+    Position: {x: 9989, y: -303}
+    isStartNode: 0
+    ChildIDs:
+    - 9cd5ae66-61fb-43a5-84c4-2f6b6f58c042
+  - ID: 861e91d4-7948-476c-a22a-a1e23c25b31a
+    Name: 14
+    SpeakerName: Lilith
+    Text: "Anyway\u2026"
+    SpritePath: 
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 
+    GroupID: ecaf045f-8d6d-4b47-8938-85139aa43c15
+    Position: {x: 13143, y: -310}
+    isStartNode: 0
+    ChildIDs:
+    - 
   OldGroupNames:
   - Start
   - ParentsAreFun
@@ -389,9 +389,6 @@ MonoBehaviour:
       - 9
       - 5
       - 10
-    - Key: BestGirl
-      Value:
-      - 7
     - Key: ManyResonsWhy
       Value:
       - FaintSmile
@@ -410,3 +407,6 @@ MonoBehaviour:
       - 12
       - 13
       - 14
+    - Key: BestGirl
+      Value:
+      - 7

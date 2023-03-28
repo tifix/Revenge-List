@@ -3,7 +3,7 @@
     "nodeID": "",
     "SpeakerName": "Lilith",
     "Text": "So it’s strange I’ve not gotten to you before this. I have so many reasons to take revenge on you. ",
-    "SpritePath": "Lilith_Happy",
+    "SpritePath": "",
     "Choices": [
         {
             "Text": "Next Dialogue",

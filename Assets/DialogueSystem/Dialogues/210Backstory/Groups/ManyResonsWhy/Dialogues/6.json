@@ -3,7 +3,7 @@
     "nodeID": "",
     "SpeakerName": "Lilith",
     "Text": "It’s weird I’ve not already killed you, really. Your crimes are numerous. The eggs… The dog…",
-    "SpritePath": "Lilith_Unhappy",
+    "SpritePath": "",
     "Choices": [
         {
             "Text": "Next Dialogue",

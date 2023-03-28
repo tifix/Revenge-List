@@ -30,7 +30,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "QUIET!",
-                        "SpritePath": "Lilith_Angry",
+                        "SpritePath": "",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -45,7 +45,7 @@
                         "nodeID": "",
                         "SpeakerName": "Karl",
                         "Text": "That's not a nice thing to say.",
-                        "SpritePath": "Neighbour_Sad",
+                        "SpritePath": "",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -60,7 +60,7 @@
                         "nodeID": "",
                         "SpeakerName": "Karl",
                         "Text": "...",
-                        "SpritePath": "Neighbour_Sad",
+                        "SpritePath": "",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -75,7 +75,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "Okay, Karl. Maybe you were right. Maybe he really is your dog. But you're my bitch.",
-                        "SpritePath": "Lilith_Smug",
+                        "SpritePath": "",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -95,7 +95,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "My childhood. Back when I hadn’t yet met you and still felt happiness. It was also because my parents were still alive.",
-                        "SpritePath": "Lilith_tear",
+                        "SpritePath": "",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -110,7 +110,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "They really liked to barbeque, too…",
-                        "SpritePath": "Lilith_Unhappy",
+                        "SpritePath": "",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -125,7 +125,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "They were fighting so much, they were always trying to grill each other. They got really clever with it. ",
-                        "SpritePath": "Lilith_tear",
+                        "SpritePath": "",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -140,7 +140,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "And they got huge barbeque tongs just for that, and trained in gym to be able to pick them up.",
-                        "SpritePath": "Lilith_Unhappy",
+                        "SpritePath": "",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -155,7 +155,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "You know, Karl, you remind me of someone… Or something…",
-                        "SpritePath": "Lilith_Unhappy",
+                        "SpritePath": "",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -170,27 +170,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "I still remember them running around with the huge barbeque tongs, trying to kill each other… All the traps around the house…",
-                        "SpritePath": "Lilith_Unhappy",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    }
-                ]
-            },
-            {
-                "Key": "c463fb6a-9649-4c3b-af94-9b6addbc39ec",
-                "Value": [
-                    {
-                        "DialogueName": "7",
-                        "nodeID": "",
-                        "SpeakerName": "Lilith",
-                        "Text": " Stealing away my girl… ",
-                        "SpritePath": "Lilith_Unhappy2",
+                        "SpritePath": "",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -210,7 +190,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "...",
-                        "SpritePath": "Lilith_Happy",
+                        "SpritePath": "",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -225,7 +205,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "But then, they went to a marriage counsellor.",
-                        "SpritePath": "Lilith_Unhappy2",
+                        "SpritePath": "",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -240,7 +220,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "And they stopped wanting to kill each other.",
-                        "SpritePath": "Lilith_Sad",
+                        "SpritePath": "",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -255,7 +235,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "And yet somehow, seeing you everyday is worse horror than my childhood could have ever been.",
-                        "SpritePath": "Lilith_Unhappy2",
+                        "SpritePath": "",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -270,7 +250,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "It’s weird I’ve not already killed you, really. Your crimes are numerous. The eggs… The dog…",
-                        "SpritePath": "Lilith_Unhappy",
+                        "SpritePath": "",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -285,7 +265,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "And all the frustration they used to feel for each other, they directed… towards me.",
-                        "SpritePath": "Lilith_Unhappy2",
+                        "SpritePath": "",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -300,7 +280,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "Running away from barbeque tongs, trying to keep out… I still remember it so clearly, mr Svensson.",
-                        "SpritePath": "Lilith_Happy",
+                        "SpritePath": "",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -320,7 +300,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "And let’s not even get started on just who you are as a person, which is crime in and on itself. Nobody should be like you.",
-                        "SpritePath": "Lilith_tear",
+                        "SpritePath": "",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -335,7 +315,7 @@
                         "nodeID": "",
                         "SpeakerName": "Karl",
                         "Text": "Isn’t the best revenge a life well-lived?",
-                        "SpritePath": "Neighbour_Sad",
+                        "SpritePath": "",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -350,7 +330,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "So it’s strange I’ve not gotten to you before this. I have so many reasons to take revenge on you. ",
-                        "SpritePath": "Lilith_Happy",
+                        "SpritePath": "",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -365,7 +345,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "HAHAHAHAHAHAHAHA. ",
-                        "SpritePath": "Lilith_Happy",
+                        "SpritePath": "",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -380,7 +360,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA.",
-                        "SpritePath": "Lilith_Smug",
+                        "SpritePath": "",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -395,7 +375,7 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "HA HA HA.",
-                        "SpritePath": "Lilith_Smug",
+                        "SpritePath": "",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -410,7 +390,27 @@
                         "nodeID": "",
                         "SpeakerName": "Lilith",
                         "Text": "Anyway…",
-                        "SpritePath": "Lilith_Happy",
+                        "SpritePath": "",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                ]
+            },
+            {
+                "Key": "c463fb6a-9649-4c3b-af94-9b6addbc39ec",
+                "Value": [
+                    {
+                        "DialogueName": "7",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": " Stealing away my girl… ",
+                        "SpritePath": "",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",

@@ -3,7 +3,7 @@
     "nodeID": "",
     "SpeakerName": "Lilith",
     "Text": "I still remember them running around with the huge barbeque tongs, trying to kill each other… All the traps around the house…",
-    "SpritePath": "Lilith_Unhappy",
+    "SpritePath": "",
     "Choices": [
         {
             "Text": "Next Dialogue",

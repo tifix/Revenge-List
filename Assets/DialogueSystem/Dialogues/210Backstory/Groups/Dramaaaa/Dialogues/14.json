@@ -3,7 +3,7 @@
     "nodeID": "",
     "SpeakerName": "Lilith",
     "Text": "Anyway…",
-    "SpritePath": "Lilith_Happy",
+    "SpritePath": "",
     "Choices": [
         {
             "Text": "Next Dialogue",

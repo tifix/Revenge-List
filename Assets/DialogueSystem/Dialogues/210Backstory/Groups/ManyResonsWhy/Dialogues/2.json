@@ -3,7 +3,7 @@
     "nodeID": "",
     "SpeakerName": "Lilith",
     "Text": "And they stopped wanting to kill each other.",
-    "SpritePath": "Lilith_Sad",
+    "SpritePath": "",
     "Choices": [
         {
             "Text": "Next Dialogue",

@@ -3,7 +3,7 @@
     "nodeID": "",
     "SpeakerName": "Lilith",
     "Text": "QUIET!",
-    "SpritePath": "Lilith_Angry",
+    "SpritePath": "",
     "Choices": [
         {
             "Text": "Next Dialogue",

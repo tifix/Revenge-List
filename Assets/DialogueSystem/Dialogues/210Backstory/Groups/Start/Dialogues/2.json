@@ -3,7 +3,7 @@
     "nodeID": "",
     "SpeakerName": "Karl",
     "Text": "That's not a nice thing to say.",
-    "SpritePath": "Neighbour_Sad",
+    "SpritePath": "",
     "Choices": [
         {
             "Text": "Next Dialogue",

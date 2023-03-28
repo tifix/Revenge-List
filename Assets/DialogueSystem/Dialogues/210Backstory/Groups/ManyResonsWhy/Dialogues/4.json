@@ -3,7 +3,7 @@
     "nodeID": "",
     "SpeakerName": "Lilith",
     "Text": "Running away from barbeque tongs, trying to keep out… I still remember it so clearly, mr Svensson.",
-    "SpritePath": "Lilith_Happy",
+    "SpritePath": "",
     "Choices": [
         {
             "Text": "Next Dialogue",

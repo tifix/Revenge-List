@@ -3,7 +3,7 @@
     "nodeID": "",
     "SpeakerName": "Lilith",
     "Text": "But then, they went to a marriage counsellor.",
-    "SpritePath": "Lilith_Unhappy2",
+    "SpritePath": "",
     "Choices": [
         {
             "Text": "Next Dialogue",
