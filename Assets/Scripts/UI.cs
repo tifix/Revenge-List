@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Audio;
 
 /*
  * Main UI handler
@@ -24,12 +25,13 @@ public class UI : MonoBehaviour
     //
     [Space, Header("Dialogue Typing settings")]
     //
-    public bool runCoroutine;                                                                       //is the typer coroutine suspended?                                          
-    [SerializeField] private bool isWaiting = false;                                                //is the dialogue paused after a page is completelly written
-    [Tooltip("What part of the dialogue is displayed"), Range(0, 99)] public int txtPageNr = 0;     //Which chunk / page / part of dialogue is currently displayed or being typed out
+    public bool runCoroutine;                                                                                   //is the typer coroutine suspended?                                          
+    [SerializeField] private bool isWaiting = false;                                                            //is the dialogue paused after a page is completelly written
+    [Tooltip("What part of the dialogue is displayed"), Range(0, 99)] public int txtPageNr = 0;                 //Which chunk / page / part of dialogue is currently displayed or being typed out
     private string pageText = "Warning: Unassigned text";
-    [Tooltip("time in s between each letter typed")] public float typingWait = 0.03f;               //how much time passes between each letter typed
-
+    //[Tooltip("time in s between each letter typed")] public float typingWait = 0.03f;                           //how much time passes between each letter typed
+    [Range(0, 2f), SerializeField, Tooltip("disable dialogue skipping at first")] float initSkipLock = 0.1f;    //for how long should the dialogue be unable to be skipped when it is shown 
+    bool dialogueSkipLocked = true;                                                                
     //
     [Space, Header("Healthbar settings")]
     //                                            
@@ -52,12 +54,14 @@ public class UI : MonoBehaviour
     [SerializeField] Image playerPortrait;                                               //Displayer of player portrait
     [SerializeField] Sprite[] playerPortraits = new Sprite[5];                           //Images to display as player looses health
     [SerializeField] Slider bossHealthBar, bossShieldBar;
+    [SerializeField] Slider settingVolumeMusic, settingVolumeSFX,settingVolume, settingTypeSpeed;
     [SerializeField] Image XLPortraitLilith, XLPortraitOther;                            //Portraits which display Lilith and others as they tallk
     [Space(10)]
     [SerializeField] GameObject RevengeList;                                             //the gorgeous scrollable revenge list
     [SerializeField] GameObject RevengeListTriggerer;                                    //the buton triggering the revenge lsit display
     [SerializeField] GameObject OutroCinematicObject;                                    //displays the outro pretties!
     [SerializeField] DSGraphSaveDataSO OutroDialogue1, OutroDialogue2;                   //dialogue displayed in the outro sequence
+    [SerializeField] AudioMixer AudioMixer;                                              //audio mixer, volume of which we're changing
 
     //
     //Node typing data retrieval
@@ -77,6 +81,7 @@ public class UI : MonoBehaviour
         input.Menu.Pause.Enable();
         input.Menu.Confirm.performed += DialogueAdvance;
         input.Menu.Confirm.Enable();
+
     }
     public void Start()
     {
@@ -84,6 +89,7 @@ public class UI : MonoBehaviour
 
         GameObject boss = GameObject.FindGameObjectWithTag("Boss");
         if (boss != null && boss.TryGetComponent<bossHealth>(out bossHealth healthData)) InitialiseHealthBoss(healthData);
+        ImportSettingsFromMenu();   //imports volume and typing speed settings from menu settings.
     }
 
     public void OnDestroy()
@@ -108,11 +114,32 @@ public class UI : MonoBehaviour
         if (dialogueCur != null)
         {
             if (isWaiting) { txtPageNr++; isWaiting = false; }
-            else runCoroutine = false;
+            else if (!dialogueSkipLocked) runCoroutine = false;
+            //Debug.Log(Time.time+" > "+ (dilogueStartTimestamp+ initSkipLock).ToString());
+            //if (Time.time > dilogueStartTimestamp + initSkipLock)    // after a small initial delay, enable fast forwarding dialoge
+            //if(Time.time > dilogueStartTimestamp+initSkipLock) 
         }
     }
 
-    //Probably need a version that doesn't lock the movement and/or stops time (actually use pauseWhileRunning) - AV
+    private void ImportSettingsFromMenu() 
+    {
+            if (Settings.instance != null) 
+            {
+                settingTypeSpeed.value = Mathf.InverseLerp(-80, 0, Settings.instance.typingWait);
+                settingVolume.value = Mathf.InverseLerp(-80, 0, Settings.instance.volume);
+                settingVolumeMusic.value = Mathf.InverseLerp(-80, 0, Settings.instance.volumeMusic);
+                settingVolumeSFX.value = Mathf.InverseLerp(-80, 0, Settings.instance.volumeSFX);
+            }
+            else 
+            {
+                Debug.LogWarning("Error while importing settings from menu scene. Proceeding with defaults");
+                settingTypeSpeed.value = 1;
+                settingVolume.value = 1;
+                settingVolumeMusic.value = 1;
+                settingVolumeSFX.value = 0.03f;
+            }   
+    }
+
     protected IEnumerator DialogueTyper(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning) //typing the text over time
     {
         NodeCurrent = DialogueInitialise(_dialogue, pauseWhileRunning);
@@ -140,7 +167,7 @@ public class UI : MonoBehaviour
             {
                 txtMain.text = pageText.Substring(0, j);               //slice the text 
                 if (GameManager.instance.cheat_FastForwardDialogue) {  goto endOfDialogue; }
-                yield return new WaitForSecondsRealtime(typingWait);
+                yield return new WaitForSecondsRealtime(Settings.instance.typingWait);
                 if (!runCoroutine) break;
             }
             if (GameManager.instance.cheat_FastForwardDialogue) {  break; }
@@ -201,6 +228,7 @@ public class UI : MonoBehaviour
 
     public void DialogueShow(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning)                    //Call this with a dialogue structure to display it!
     {
+        StartCoroutine(DialogueSkipLock()); //locks the ability to skip for REALTIME duration
         boxTextDisplay.SetActive(true);
         RevengeListTriggerer.SetActive(false);
         PlayerCombat.instance.gameObject.GetComponent<Animator>().SetBool("isAttacking", false);    //Interupting attack combos- M
@@ -213,6 +241,13 @@ public class UI : MonoBehaviour
     }
     public void DialogueShow(DSGraphSaveDataSO _dialogue) => DialogueShow(_dialogue, false); //by default - pause world time while showing dialogue
     public static void Dialogue(DSGraphSaveDataSO _dialogue) => instance.DialogueShow(_dialogue, false); //by default - pause world time while showing dialogue. Shorthand for those who can't type or wanna grab from weird places
+
+    IEnumerator DialogueSkipLock() //as requested by R*, dialogue is not skippable for the first moment after showing up. Coroutine needed as realtime is paused
+    {
+        dialogueSkipLocked = true;
+        yield return new WaitForSecondsRealtime(initSkipLock);
+        dialogueSkipLocked = false;
+    }
 
 
     public Sprite SetBigSpriteForDialogue(string fileName)
@@ -348,7 +383,6 @@ public class UI : MonoBehaviour
     {
         anim.SetTrigger("Out");
     }
-
     public void FadeIn()
     {
         anim.SetTrigger("In");
@@ -364,8 +398,6 @@ public class UI : MonoBehaviour
         AudioManager.instance.PlaySFX("MenuClick");
         Application.Quit(); 
     }
-    //
-
     public IEnumerator OutroSequenceWithTimings() 
     {
         ToggleHealthbar(false);
@@ -376,7 +408,10 @@ public class UI : MonoBehaviour
 
         while(dialogueCur!=null) yield return new WaitForEndOfFrame();   //waiting for the dialogue to finish, before proceeding
         Debug.Log("Backstory speech finished");
-        CutToBlack();
+        CutToBlack(); //cut to black either too fast or glitched. TEST - Milla
+        //play stab sfx wiat till sfx finished
+        //play scream sfx
+        //once the scream done finished, show dialgoue
         if (OutroDialogue2 != null) DialogueShow(OutroDialogue2, true); else Debug.LogWarning("outro-most dialogue not assigned in UI!");
 
         while (dialogueCur!=null) yield return new WaitForEndOfFrame();   //waiting for the dialogue to finish, before proceeding
@@ -443,7 +478,10 @@ public class UI : MonoBehaviour
     public void ShowSpriteXLLilith() { XLPortraitLilith.gameObject.SetActive(true); }
     public void ShowSpriteXLOther() { XLPortraitOther.gameObject.SetActive(true); }
 
-    public void SetTypingSpeed(float typeRate) => typingWait = Mathf.Lerp(0.04f,0.01f, typeRate); //left to slow, right to fast
+    public void SetTypingSpeed(float typeRate) => Settings.instance.typingWait = Mathf.Lerp(0.04f,0.01f, typeRate); //left to slow, right to fast
+    public void SetVolume(float value) { float t = Mathf.Lerp(-80, 0, value); Debug.Log(t); AudioMixer.SetFloat("masterVolume", t); Settings.instance.volume = t; }  //left to mute, right to loud
+    public void SetVolumeMusic(float value) { float t = Mathf.Lerp(-80, 0, value); Debug.Log(t); AudioMixer.SetFloat("musicVolume", t); Settings.instance.volumeMusic = t; }  //left to mute, right to loud
+    public void SetVolumeSFX(float value) { float t = Mathf.Lerp(-80, 0, value); Debug.Log(t); AudioMixer.SetFloat("sfxVolume", t); Settings.instance.volumeSFX = t; }  //left to mute, right to loud
 
     public void PlayOutroSequence() => StartCoroutine("OutroSequenceWithTimings");
     
