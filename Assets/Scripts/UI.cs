@@ -123,23 +123,21 @@ public class UI : MonoBehaviour
 
     private void ImportSettingsFromMenu() 
     {
-        try
-        {
             if (Settings.instance != null) 
             {
-                settingTypeSpeed.value = Settings.instance.typingWait;
-                settingVolume.value = Settings.instance.volume;
-                settingVolumeMusic.value = Settings.instance.volumeMusic;
-                settingVolumeSFX.value = Settings.instance.volumeSFX;
+                settingTypeSpeed.value = Mathf.InverseLerp(-80, 0, Settings.instance.typingWait);
+                settingVolume.value = Mathf.InverseLerp(-80, 0, Settings.instance.volume);
+                settingVolumeMusic.value = Mathf.InverseLerp(-80, 0, Settings.instance.volumeMusic);
+                settingVolumeSFX.value = Mathf.InverseLerp(-80, 0, Settings.instance.volumeSFX);
             }
-           
-        }
-        catch
-        {
-
-            Debug.LogWarning("Error while importing settings from menu scene. Proceeding with defaults");
-        }
-    
+            else 
+            {
+                Debug.LogWarning("Error while importing settings from menu scene. Proceeding with defaults");
+                settingTypeSpeed.value = 1;
+                settingVolume.value = 1;
+                settingVolumeMusic.value = 1;
+                settingVolumeSFX.value = 0.03f;
+            }   
     }
 
     protected IEnumerator DialogueTyper(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning) //typing the text over time

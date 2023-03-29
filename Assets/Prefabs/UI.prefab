@@ -10670,8 +10670,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5ac70e784f54db1439aaffc13e1709bf, type: 3}
   bossHealthBar: {fileID: 6733791986622571051}
   bossShieldBar: {fileID: 2790873729474158643}
-  settingVolume: {fileID: 0}
-  settingTypeSpeed: {fileID: 0}
+  settingVolumeMusic: {fileID: 8984441075547964596}
+  settingVolumeSFX: {fileID: 8748911794684763476}
+  settingVolume: {fileID: 744694744516302819}
+  settingTypeSpeed: {fileID: 4906406618259172126}
   XLPortraitLilith: {fileID: 4763698780034001839}
   XLPortraitOther: {fileID: 3640916071015081630}
   RevengeList: {fileID: 3665701568203247820}
