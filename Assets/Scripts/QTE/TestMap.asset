@@ -12,31 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cbb69a79da924468fa76b531195156, type: 3}
   m_Name: TestMap
   m_EditorClassIdentifier: 
-  speed: 2
-  delay: 0.5
-  beatsForWin: 3
+  bpm: 120
+  startTime: 0
+  endTime: 0
   beats:
-  - myBeat: 1
-    speedMod: 1
-  - myBeat: 2
-    speedMod: 1
-  - myBeat: 3
-    speedMod: 1
-  - myBeat: 4
-    speedMod: 1
-  - myBeat: 1
-    speedMod: 2
-  - myBeat: 2
-    speedMod: 1
-  - myBeat: 2
-    speedMod: 1
-  - myBeat: 4
-    speedMod: 1
-  - myBeat: 4
-    speedMod: 3
-  - myBeat: 1
-    speedMod: 1
-  - myBeat: 3
-    speedMod: 1
-  - myBeat: 2
-    speedMod: 1
+  - timing: 0
+    myBeat: 0
+    speed: 0
+  beatsForWin: 3
