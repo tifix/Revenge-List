@@ -126,7 +126,7 @@ public class PlayerMovement : MonoBehaviour
         GetComponent<Animator>().SetBool("isDashing", true);
         try
         {
-            AudioManager.instance.PlaySFX("DashMC");
+            AudioManager.instance.PlaySFX("Dash");
         }
         catch(Exception e)
         {

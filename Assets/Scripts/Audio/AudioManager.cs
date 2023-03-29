@@ -19,6 +19,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip BgMusic;
     public AudioClip BossTrack;
     public AudioClip MenuClick;
+    public AudioClip MenuClickError;
     public AudioClip QteTrack;
     public AudioClip EnvelopeThrow;
     public AudioClip KickSFX;
@@ -26,6 +27,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip DogBark;
     public AudioClip CreditsTrack;
     public AudioClip HitSFX;
+    
 
 
     private void Awake()
