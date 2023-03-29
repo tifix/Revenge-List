@@ -32,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1100812460807905419
 AudioSource:
@@ -43,7 +43,7 @@ AudioSource:
   m_GameObject: {fileID: 8476623665672524406}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -2484207213860807925, guid: 3e5aac04f6592bf4e95cd98d34fe891b, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.5
@@ -139,7 +139,7 @@ AudioSource:
   m_GameObject: {fileID: 8476623665672524406}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -48364232895893799, guid: 3e5aac04f6592bf4e95cd98d34fe891b, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -252,3 +252,4 @@ MonoBehaviour:
   FlipSFX: {fileID: 8300000, guid: 19f8b1ada518edb46b28aa7b8bb1983e, type: 3}
   DogBark: {fileID: 8300000, guid: 37d5fe5501944fb468950cc9025afbb7, type: 3}
   CreditsTrack: {fileID: 8300000, guid: f3796ed598912f74b93b68b4e7232d00, type: 3}
+  HitSFX: {fileID: 0}
