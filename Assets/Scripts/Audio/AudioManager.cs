@@ -35,6 +35,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip MicroBeep;
     public AudioClip SteakLand;
     public AudioClip UnrollList;
+    public AudioClip FlyingGnome;
+    public AudioClip MicroHit;
     
     private void Awake()
     {
@@ -130,6 +132,12 @@ public class AudioManager : MonoBehaviour
                 break;
             case "UnrollList":
                 sfxSource.clip = UnrollList;
+                break;
+            case "Weee!":
+                sfxSource.clip = FlyingGnome;
+                break;
+            case "MicroHit":
+                sfxSource.clip = MicroHit;
                 break;
             default:
                 Debug.LogWarning("Incorrect name " + name + " check spelling");
