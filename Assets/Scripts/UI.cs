@@ -54,7 +54,7 @@ public class UI : MonoBehaviour
     [SerializeField] Image playerPortrait;                                               //Displayer of player portrait
     [SerializeField] Sprite[] playerPortraits = new Sprite[5];                           //Images to display as player looses health
     [SerializeField] Slider bossHealthBar, bossShieldBar;
-    [SerializeField] Slider settingVolume, settingTypeSpeed;
+    [SerializeField] Slider settingVolumeMusic, settingVolumeSFX,settingVolume, settingTypeSpeed;
     [SerializeField] Image XLPortraitLilith, XLPortraitOther;                            //Portraits which display Lilith and others as they tallk
     [Space(10)]
     [SerializeField] GameObject RevengeList;                                             //the gorgeous scrollable revenge list
@@ -82,7 +82,6 @@ public class UI : MonoBehaviour
         input.Menu.Confirm.performed += DialogueAdvance;
         input.Menu.Confirm.Enable();
 
-        ImportSettingsFromMenu();   //imports volume and typing speed settings from menu settings.
     }
     public void Start()
     {
@@ -90,6 +89,7 @@ public class UI : MonoBehaviour
 
         GameObject boss = GameObject.FindGameObjectWithTag("Boss");
         if (boss != null && boss.TryGetComponent<bossHealth>(out bossHealth healthData)) InitialiseHealthBoss(healthData);
+        ImportSettingsFromMenu();   //imports volume and typing speed settings from menu settings.
     }
 
     public void OnDestroy()
@@ -129,6 +129,8 @@ public class UI : MonoBehaviour
             {
                 settingTypeSpeed.value = Settings.instance.typingWait;
                 settingVolume.value = Settings.instance.volume;
+                settingVolumeMusic.value = Settings.instance.volumeMusic;
+                settingVolumeSFX.value = Settings.instance.volumeSFX;
             }
            
         }
@@ -408,7 +410,10 @@ public class UI : MonoBehaviour
 
         while(dialogueCur!=null) yield return new WaitForEndOfFrame();   //waiting for the dialogue to finish, before proceeding
         Debug.Log("Backstory speech finished");
-        CutToBlack();
+        CutToBlack(); //cut to black either too fast or glitched. TEST - Milla
+        //play stab sfx wiat till sfx finished
+        //play scream sfx
+        //once the scream done finished, show dialgoue
         if (OutroDialogue2 != null) DialogueShow(OutroDialogue2, true); else Debug.LogWarning("outro-most dialogue not assigned in UI!");
 
         while (dialogueCur!=null) yield return new WaitForEndOfFrame();   //waiting for the dialogue to finish, before proceeding
@@ -477,6 +482,8 @@ public class UI : MonoBehaviour
 
     public void SetTypingSpeed(float typeRate) => Settings.instance.typingWait = Mathf.Lerp(0.04f,0.01f, typeRate); //left to slow, right to fast
     public void SetVolume(float value) { float t = Mathf.Lerp(-80, 0, value); Debug.Log(t); AudioMixer.SetFloat("masterVolume", t); Settings.instance.volume = t; }  //left to mute, right to loud
+    public void SetVolumeMusic(float value) { float t = Mathf.Lerp(-80, 0, value); Debug.Log(t); AudioMixer.SetFloat("musicVolume", t); Settings.instance.volumeMusic = t; }  //left to mute, right to loud
+    public void SetVolumeSFX(float value) { float t = Mathf.Lerp(-80, 0, value); Debug.Log(t); AudioMixer.SetFloat("sfxVolume", t); Settings.instance.volumeSFX = t; }  //left to mute, right to loud
 
     public void PlayOutroSequence() => StartCoroutine("OutroSequenceWithTimings");
     
