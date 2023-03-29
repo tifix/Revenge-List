@@ -12,9 +12,11 @@ public class Interactible : MonoBehaviour
     [SerializeField, Tooltip("if true, the script is destroyed upon use")] protected bool isSingleUse = false;
     [SerializeField, Tooltip("if true, the script is disabled upon use")] protected bool isDisabledOnUse = false;
     public UnityEvent uponInteractionDo = new UnityEvent();
+    public Canvas PromptCanvas;
 
     public void Awake()
     {
+        try { PromptCanvas = GetComponentInChildren<Canvas>(); } catch { }
         input = new Controls();
         input.Ground.Interact.Enable();
         //input.Ground.Interact.performed +=DoInteraction;
@@ -22,7 +24,8 @@ public class Interactible : MonoBehaviour
 
     private void OnEnable()
     {
-        if(isInRange && isAutoUse) 
+        InitialisePrompt();
+        if (isInRange && isAutoUse) 
         {
             Interaction();
         }
@@ -38,6 +41,7 @@ public class Interactible : MonoBehaviour
         {
             isInRange = true;
             if(!isAutoUse) UI.instance.boxInteractPrompt.SetActive(true);
+            if(PromptCanvas!=null) PromptCanvas.gameObject.SetActive(true);
             if (isAutoUse) { Interaction(); }  //Forbidden magiks resonate deep within
         }
     }
@@ -47,6 +51,7 @@ public class Interactible : MonoBehaviour
     {
         isInRange = false;
         if (!isAutoUse) UI.instance.boxInteractPrompt.SetActive(false);
+        if (PromptCanvas != null) PromptCanvas.gameObject.SetActive(false);
         //input.Ground.Interact.ChangeBinding(0).Erase();//
         input.Ground.Interact.performed -= DoInteraction;
     }
@@ -60,5 +65,12 @@ public class Interactible : MonoBehaviour
         if (isDisabledOnUse) { UI.instance.boxInteractPrompt.SetActive(false); gameObject.SetActive(false); }
     }
 
-
+    protected virtual void InitialisePrompt() 
+    {
+        if(PromptCanvas != null) 
+        {
+            Debug.Log("Interactible canvas found, funky worldspace prompt added");
+            GetComponentInChildren<Canvas>().worldCamera = Camera.main;
+        }
+    }
 }
