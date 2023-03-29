@@ -10869,6 +10869,7 @@ MonoBehaviour:
   RevengeList: {fileID: 3665701568203247820}
   RevengeListTriggerer: {fileID: 6266727062991833003}
   OutroCinematicObject: {fileID: 5226367951376373762}
+  OutroCredits: {fileID: 8817213567968578392}
   OutroDialogue1: {fileID: 11400000, guid: a93364c27bfd17c48a15b4429213aa75, type: 2}
   OutroDialogue2: {fileID: 11400000, guid: 07048b609fe3c9048a9928f125cbb595, type: 2}
   AudioMixer: {fileID: 24100000, guid: 3e5aac04f6592bf4e95cd98d34fe891b, type: 2}

@@ -66,10 +66,10 @@ public class GameManager : MonoBehaviour
         if (cheat_SkipToOutro) 
         {
             GameObject.Find("Boss").transform.GetChild(1).gameObject.SetActive(true);
+            //KarlBoss K = GameObject.Find("Boss").GetComponentInChildren<KarlBoss>();
+            //K.BossDefeated();
             GameObject.Find("Boss").transform.GetChild(2).gameObject.SetActive(false);
             PlayerMovement.instance.gameObject.transform.position = new Vector3(24.0f, 1.6f, 1.2f);
-            KarlBoss K = GameObject.Find("Boss").GetComponentInChildren<KarlBoss>(); 
-            K.BossDefeated();
             cheat_SkipToOutro = false;
         }
     }

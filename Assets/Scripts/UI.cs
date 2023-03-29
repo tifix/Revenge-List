@@ -60,6 +60,7 @@ public class UI : MonoBehaviour
     [SerializeField] GameObject RevengeList;                                             //the gorgeous scrollable revenge list
     [SerializeField] GameObject RevengeListTriggerer;                                    //the buton triggering the revenge lsit display
     [SerializeField] GameObject OutroCinematicObject;                                    //displays the outro pretties!
+    [SerializeField] GameObject OutroCredits;                                            //credits scrolling canvas
     [SerializeField] DSGraphSaveDataSO OutroDialogue1, OutroDialogue2;                   //dialogue displayed in the outro sequence
     [SerializeField] AudioMixer AudioMixer;                                              //audio mixer, volume of which we're changing
 
@@ -417,16 +418,20 @@ public class UI : MonoBehaviour
         
         AudioManager.instance.PlaySFX("Hit");       //play stab sfx wiat till sfx finished
         yield return new WaitForSeconds(0.5f);
+        OutroCinematicObject.GetComponent<Image>().color = Color.black;
         AudioManager.instance.PlaySFX("KarlScream");       //play scream sfx
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1.5f);
         //once the scream done finished, show dialgoue
         if (OutroDialogue2 != null) DialogueShow(OutroDialogue2, true); else Debug.LogWarning("outro-most dialogue not assigned in UI!");
 
         while (dialogueCur!=null) yield return new WaitForEndOfFrame();   //waiting for the dialogue to finish, before proceeding
         Debug.Log("Karl finished talking about death and taxes, game finished!");
+        yield return new WaitForSeconds(2f);
 
         //this is where the scrolling credits will go!
-
+        if (OutroCredits != null) OutroCredits.SetActive(true);
+        float t = 0;
+        while (true) { t += Time.deltaTime; Debug.Log(t); yield return new WaitForEndOfFrame(); if (t > 8) break; }
         GameManager.LoadMenu();
     }
 
