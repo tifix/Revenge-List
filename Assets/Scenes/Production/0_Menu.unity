@@ -514,8 +514,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CreditsPanel: {fileID: 371397627}
-  SettingsPanel: {fileID: 0}
-  AudioMixer: {fileID: 0}
+  SettingsPanel: {fileID: 4168986748130279731}
+  AudioMixer: {fileID: 24100000, guid: 3e5aac04f6592bf4e95cd98d34fe891b, type: 2}
 --- !u!1 &540922628
 GameObject:
   m_ObjectHideFlags: 0
@@ -2556,7 +2556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07a855b8fac5e054595f7a752246cb4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movement: {x: 0.25, y: 0}
+  movement: {x: 1, y: 1}
 --- !u!224 &993961353529270429
 RectTransform:
   m_ObjectHideFlags: 0
