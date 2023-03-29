@@ -37,6 +37,9 @@ public class QTEManager : MonoBehaviour
 
     Animator anim;
 
+    float spawnRate = 0.5f;
+    int beatOffset = 0;
+
     [System.Serializable]
     public struct BeatItem
     {
@@ -89,7 +92,7 @@ public class QTEManager : MonoBehaviour
         {          
             beatTimer += Time.deltaTime;
             BeatUI.transform.Rotate(new Vector3(0, 0, -100 * Time.deltaTime));
-            if (beatTimer >= currentMap.delay)
+            if (beatTimer >= spawnRate)
             {
                 for (int i = 0; i < beatObjects.Count; i++)
                 {
@@ -191,7 +194,9 @@ public class QTEManager : MonoBehaviour
                 break;
             default: return;
         }       
-        _skulls.Last<SkullController>().SetSpeed(currentMap.speed * currentMap.beats[beatCounter].speedMod);
+        _skulls.Last<SkullController>().SetSpeed(currentMap.beats[beatCounter].speed);
+        beatObjects.Add(new BeatItem(_skulls.Last<SkullController>().gameObject));
+
     }
 
     public void QTEStart()

@@ -4,34 +4,34 @@ using UnityEngine;
 
 public enum Beats
 {
-    Pause, Up, Down, Left, Right
+    Up, Down, Left, Right
 }
 
 [System.Serializable]
 public struct BeatType
 {
+    public float timing;
     public Beats myBeat;
-    [Range(1,10)]
-    public int speedMod;   
+    public int speed;
 
-    public BeatType(Beats b, int s)
+    public BeatType(float t, Beats b, int s)
     {
+        timing = t;
         myBeat = b;
-        speedMod = s;
-    } 
+        speed = s;
+    }
 }
 
 [CreateAssetMenu(fileName = "beatMap", menuName = "QTE")]
 public class QTEObject : ScriptableObject
 {
-    [Range(0f, 10f)]
-    public int speed;
-    [Range(0f, 10f), Tooltip("Spwan rate")]
-    public float delay;
-    public int beatsForWin;
+    public int bpm = 120;
+    public float startTime;
+    public float endTime = 30;
     public List<BeatType> beats = new List<BeatType>();
+    public int beatsForWin;
 
-    public float GetDelay() { return delay; }
+    public float GetBpm() { return bpm; }
     public int GetBeatsForWin() { return beatsForWin; }
     public List<BeatType> GetBeats() { return beats; }
 }
