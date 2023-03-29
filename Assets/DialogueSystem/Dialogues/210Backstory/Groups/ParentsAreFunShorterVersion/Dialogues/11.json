@@ -1,9 +1,9 @@
 {
-    "DialogueName": "5",
+    "DialogueName": "11",
     "nodeID": "",
     "SpeakerName": "Lilith",
-    "Text": "Ah yes, I understand. I would have wanted to take revenge on him too.",
-    "SpritePath": "Lilith_Unhappy2",
+    "Text": "My childhood. Back when I hadn’t yet met you and still felt happiness. It was also because my parents were still alive.",
+    "SpritePath": "Insert Sprite Path Here.",
     "Choices": [
         {
             "Text": "Next Dialogue",

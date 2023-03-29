@@ -1,0 +1,23 @@
+{
+    "DialogueName": "Finalchoicee",
+    "nodeID": "",
+    "SpeakerName": "CHOICE",
+    "Text": "Dialogue text.",
+    "SpritePath": "Insert Sprite Path Here.",
+    "Choices": [
+        {
+            "Text": "You're not even worth my words. (Skip to fight)",
+            "nextID": ""
+        },
+        {
+            "Text": "Astrid doesn't like your barbeque",
+            "nextID": ""
+        },
+        {
+            "Text": "\"Your\" dog doesn't even like you",
+            "nextID": ""
+        }
+    ],
+    "DialogueType": 1,
+    "IsStartingDialogue": false
+}

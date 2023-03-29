@@ -22,10 +22,10 @@ MonoBehaviour:
     Position: {x: 3811, y: 556}
   - ID: e0646b45-1205-45f0-9830-876688562027
     Name: intro
-    Position: {x: -738, y: 168}
+    Position: {x: -738, y: 177}
   - ID: d01246b4-8e40-46b1-a7b2-332560a06869
     Name: CommonBridge
-    Position: {x: 8974, y: 242}
+    Position: {x: 8974, y: -49}
   - ID: 8241f30b-0095-4892-b2fe-3118633b011e
     Name: DoTakeHerOUt
     Position: {x: 6120, y: -22}
@@ -141,46 +141,6 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - 08e28eca-a395-474f-9181-bc6b7efd65a1
-  - ID: 2d23a5fe-273b-4162-a27a-88697c449fad
-    Name: 52
-    SpeakerName: Karl
-    Text: HONEY DO YOU WANT ANYTHING?
-    SpritePath: Neighbour_Barbecue
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 435352aa-f6f4-45b0-91f7-55ddb9477c8a
-    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
-    Position: {x: 11124, y: 318}
-    isStartNode: 0
-    ChildIDs:
-    - 435352aa-f6f4-45b0-91f7-55ddb9477c8a
-  - ID: 435352aa-f6f4-45b0-91f7-55ddb9477c8a
-    Name: 53
-    SpeakerName: Astrid
-    Text: "No, sweetheart! We just had barbeque this morning! \nAsk Lily if she\u2019s
-      hungry!"
-    SpritePath: Insert Sprite Path Here.
-    Choices:
-    - Text: Next Dialogue
-      NodeID: a0a7aed1-e7ed-494b-9ea4-6a0e415db28a
-    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
-    Position: {x: 11402, y: 319}
-    isStartNode: 0
-    ChildIDs:
-    - a0a7aed1-e7ed-494b-9ea4-6a0e415db28a
-  - ID: a0a7aed1-e7ed-494b-9ea4-6a0e415db28a
-    Name: 54
-    SpeakerName: Karl
-    Text: Lily, want anything? I make scrumptious steak.
-    SpritePath: Neighbour_Barbecue
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 725b822d-ddc8-4eef-bb14-f2eef433c095
-    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
-    Position: {x: 11739, y: 322}
-    isStartNode: 0
-    ChildIDs:
-    - 725b822d-ddc8-4eef-bb14-f2eef433c095
   - ID: 9fb725bf-6d54-4104-b20d-af817c618ee8
     Name: 24
     SpeakerName: Karl
@@ -959,22 +919,6 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - fe080893-98ab-4bc1-b0ca-a47d908a33cb
-  - ID: 41e6a9f5-a701-47ab-8454-8894bd1c5940
-    Name: FinalCHoice
-    SpeakerName: CHOICE
-    Text: Dialogue text.
-    SpritePath: Lilith_Unhappy
-    Choices:
-    - Text: "\u201CYour\u201D dog doesn\u2019t even like you"
-      NodeID: d58b6947-6bbe-4169-903d-517f9340c3d2
-    - Text: "Astrid doesn\u2019t enjoy your barbeque"
-      NodeID: f94451f9-4e85-4d16-84d8-30285defe992
-    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
-    Position: {x: 12619, y: 305}
-    isStartNode: 0
-    ChildIDs:
-    - d58b6947-6bbe-4169-903d-517f9340c3d2
-    - f94451f9-4e85-4d16-84d8-30285defe992
   - ID: f94451f9-4e85-4d16-84d8-30285defe992
     Name: Lilith
     SpeakerName: Lilith
@@ -1213,24 +1157,6 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - 2cd00df3-1b5e-4203-a7e5-54f7d7ae0e19
-  - ID: 725b822d-ddc8-4eef-bb14-f2eef433c095
-    Name: 55
-    SpeakerName: Lilith
-    Text: 'No! I want to fight you!
-
-      Besides...
-
-      (This is my chance to
-      hurt him mentally, before going for the physical damage.)'
-    SpritePath: Lilith_Unhappy
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 41e6a9f5-a701-47ab-8454-8894bd1c5940
-    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
-    Position: {x: 12060, y: 321}
-    isStartNode: 0
-    ChildIDs:
-    - 41e6a9f5-a701-47ab-8454-8894bd1c5940
   - ID: 08e28eca-a395-474f-9181-bc6b7efd65a1
     Name: 48
     SpeakerName: Lilith
@@ -1372,12 +1298,12 @@ MonoBehaviour:
     SpritePath: Neighbour_Sad
     Choices:
     - Text: Next Dialogue
-      NodeID: 79621bf9-59ad-410d-bbd1-66eacc280465
+      NodeID: f3662653-f54c-4860-b924-3db6425b71d0
     GroupID: e0646b45-1205-45f0-9830-876688562027
     Position: {x: 1043, y: 242}
     isStartNode: 0
     ChildIDs:
-    - 79621bf9-59ad-410d-bbd1-66eacc280465
+    - f3662653-f54c-4860-b924-3db6425b71d0
   - ID: 09444052-aba6-49d4-a4e5-435f95ffab3b
     Name: 4
     SpeakerName: Lilith
@@ -1391,22 +1317,6 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - 41012066-d710-46a7-a834-44af46c9d4be
-  - ID: 79621bf9-59ad-410d-bbd1-66eacc280465
-    Name: choicee
-    SpeakerName: CHOICE
-    Text: Dialogue text.
-    SpritePath: Lilith_Unhappy2
-    Choices:
-    - Text: Karl, I think we both know how this is going to end...
-      NodeID: e21fd5f2-d3f0-4e57-9445-3c658da1ab55
-    - Text: Make conversation.
-      NodeID: 698bdeb2-ad5d-42ad-8e27-c9136ae8f359
-    GroupID: e0646b45-1205-45f0-9830-876688562027
-    Position: {x: 1327, y: 227}
-    isStartNode: 0
-    ChildIDs:
-    - e21fd5f2-d3f0-4e57-9445-3c658da1ab55
-    - 698bdeb2-ad5d-42ad-8e27-c9136ae8f359
   - ID: 698bdeb2-ad5d-42ad-8e27-c9136ae8f359
     Name: 8
     SpeakerName: Karl
@@ -1450,6 +1360,108 @@ MonoBehaviour:
     ChildIDs:
     - 000ee4f4-bc86-44a9-a8ad-a341fc01eef4
     - 9cfe03be-67b9-481a-a144-9e1ac67f0f0d
+  - ID: 2d23a5fe-273b-4162-a27a-88697c449fad
+    Name: 52
+    SpeakerName: Karl
+    Text: HONEY DO YOU WANT ANYTHING?
+    SpritePath: Neighbour_Barbecue
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 435352aa-f6f4-45b0-91f7-55ddb9477c8a
+    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
+    Position: {x: 10979, y: 311}
+    isStartNode: 0
+    ChildIDs:
+    - 435352aa-f6f4-45b0-91f7-55ddb9477c8a
+  - ID: a0a7aed1-e7ed-494b-9ea4-6a0e415db28a
+    Name: 54
+    SpeakerName: Karl
+    Text: Lily, want anything? I make scrumptious steak.
+    SpritePath: Neighbour_Barbecue
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 3b65af16-29bd-4f1c-b239-bb4197f388b8
+    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
+    Position: {x: 11601, y: 300}
+    isStartNode: 0
+    ChildIDs:
+    - 3b65af16-29bd-4f1c-b239-bb4197f388b8
+  - ID: 435352aa-f6f4-45b0-91f7-55ddb9477c8a
+    Name: 53
+    SpeakerName: Astrid
+    Text: "No, sweetheart! We just had barbeque this morning! \nAsk Lily if she\u2019s
+      hungry!"
+    SpritePath: Insert Sprite Path Here.
+    Choices:
+    - Text: Next Dialogue
+      NodeID: a0a7aed1-e7ed-494b-9ea4-6a0e415db28a
+    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
+    Position: {x: 11280, y: 297}
+    isStartNode: 0
+    ChildIDs:
+    - a0a7aed1-e7ed-494b-9ea4-6a0e415db28a
+  - ID: 3b65af16-29bd-4f1c-b239-bb4197f388b8
+    Name: hurtmentallyskiptofight
+    SpeakerName: CHOICE
+    Text: Dialogue text.
+    SpritePath: Lilith_Unhappy2
+    Choices:
+    - Text: I want to hurt you with my words, then fight you!
+      NodeID: 725b822d-ddc8-4eef-bb14-f2eef433c095
+    - Text: No! I want to fight you!
+      NodeID: ae3221c1-c4ad-4fe4-80bf-f83d4a93c7e2
+    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
+    Position: {x: 11903, y: 303}
+    isStartNode: 0
+    ChildIDs:
+    - 725b822d-ddc8-4eef-bb14-f2eef433c095
+    - ae3221c1-c4ad-4fe4-80bf-f83d4a93c7e2
+  - ID: f3662653-f54c-4860-b924-3db6425b71d0
+    Name: choiceee
+    SpeakerName: CHOICE
+    Text: Dialogue text.
+    SpritePath: Lilith_Unhappy2
+    Choices:
+    - Text: Make conversation.
+      NodeID: 698bdeb2-ad5d-42ad-8e27-c9136ae8f359
+    - Text: Cut to the chase.
+      NodeID: e21fd5f2-d3f0-4e57-9445-3c658da1ab55
+    GroupID: e0646b45-1205-45f0-9830-876688562027
+    Position: {x: 1382, y: 300}
+    isStartNode: 0
+    ChildIDs:
+    - 698bdeb2-ad5d-42ad-8e27-c9136ae8f359
+    - e21fd5f2-d3f0-4e57-9445-3c658da1ab55
+  - ID: 725b822d-ddc8-4eef-bb14-f2eef433c095
+    Name: 55
+    SpeakerName: Lilith
+    Text: (This is my chance to hurt him mentally, before going for the physical
+      damage.)
+    SpritePath: Lilith_Unhappy2
+    Choices:
+    - Text: Next Dialogue
+      NodeID: d195460a-693d-4e87-9755-70a7bdd08264
+    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
+    Position: {x: 12214, y: 10}
+    isStartNode: 0
+    ChildIDs:
+    - d195460a-693d-4e87-9755-70a7bdd08264
+  - ID: d195460a-693d-4e87-9755-70a7bdd08264
+    Name: finalchoicee
+    SpeakerName: CHOICE
+    Text: Dialogue text.
+    SpritePath: Lilith_Smug
+    Choices:
+    - Text: Astrid doesn't like your barbeque.
+      NodeID: f94451f9-4e85-4d16-84d8-30285defe992
+    - Text: '"Your" dog doesn''t even like you.'
+      NodeID: d58b6947-6bbe-4169-903d-517f9340c3d2
+    GroupID: 
+    Position: {x: 12702, y: 101}
+    isStartNode: 0
+    ChildIDs:
+    - f94451f9-4e85-4d16-84d8-30285defe992
+    - d58b6947-6bbe-4169-903d-517f9340c3d2
   OldGroupNames:
   - 1
   - 2
@@ -1464,6 +1476,7 @@ MonoBehaviour:
   - DontStopJoking
   OldUngroupedNodeNames:
   - DialogueName
+  - finalchoicee
   OldGroupNodeNames:
     list:
     - Key: 2
@@ -1482,16 +1495,16 @@ MonoBehaviour:
       Value:
       - 46
       - 47
-      - 52
-      - 53
-      - 54
-      - FinalCHoice
-      - 55
       - 48
       - 49
       - 50
       - 51
       - DialogueName
+      - 52
+      - 54
+      - 53
+      - hurtmentallyskiptofight
+      - 55
     - Key: DoTakeHerOUt
       Value:
       - 24
@@ -1587,7 +1600,7 @@ MonoBehaviour:
       - 6
       - 7
       - 4
-      - choicee
       - 8
       - 10
       - Choice1
+      - choiceee

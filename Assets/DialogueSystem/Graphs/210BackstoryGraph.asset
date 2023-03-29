@@ -25,10 +25,13 @@ MonoBehaviour:
     Position: {x: 9964, y: -362}
   - ID: 461b308f-34b1-494c-8481-1d0ba9ea2b00
     Name: ManyResonsWhy
-    Position: {x: 6603, y: -384}
+    Position: {x: 6138, y: -755}
   - ID: ecaf045f-8d6d-4b47-8938-85139aa43c15
     Name: Dramaaaa
     Position: {x: 10299, y: -369}
+  - ID: 45efe736-e91e-4f13-8dc4-bb3fb87e410e
+    Name: ParentsAreFunShorterVersion
+    Position: {x: 3153, y: -32}
   Nodes:
   - ID: 841c949b-fea0-4ec6-851d-bd0703a36104
     Name: 3
@@ -63,12 +66,12 @@ MonoBehaviour:
     SpritePath: 
     Choices:
     - Text: Next Dialogue
-      NodeID: eaa1e8db-97c2-432d-a069-c765375fcb91
+      NodeID: bbcd9e48-14a7-4f5b-b681-88702fcd0e33
     GroupID: ef3b572c-c9ef-421c-900c-d3c74f5018a5
     Position: {x: 2753, y: -360}
     isStartNode: 0
     ChildIDs:
-    - eaa1e8db-97c2-432d-a069-c765375fcb91
+    - bbcd9e48-14a7-4f5b-b681-88702fcd0e33
   - ID: b0ea595f-9c29-41fd-a531-d7fdac793a97
     Name: 1
     SpeakerName: Lilith
@@ -83,20 +86,6 @@ MonoBehaviour:
     isStartNode: 1
     ChildIDs:
     - bcbe09ec-77c4-4a17-b2b9-3cb8ac541e60
-  - ID: e0228849-2aff-439e-8d7a-11e0e76c69f9
-    Name: 6
-    SpeakerName: Lilith
-    Text: "My childhood. Back when I hadn\u2019t yet met you and still felt happiness.
-      It was also because my parents were still alive."
-    SpritePath: 
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 1471148f-217f-46e0-824a-b0860246e29b
-    GroupID: 212ecd01-8363-428e-b4db-d007090389f2
-    Position: {x: 3577, y: -360}
-    isStartNode: 0
-    ChildIDs:
-    - 1471148f-217f-46e0-824a-b0860246e29b
   - ID: 1471148f-217f-46e0-824a-b0860246e29b
     Name: 7
     SpeakerName: Lilith
@@ -147,7 +136,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: aa2ee5c1-fb9c-4d8f-9092-a3c82306647d
     GroupID: 461b308f-34b1-494c-8481-1d0ba9ea2b00
-    Position: {x: 6628, y: -325}
+    Position: {x: 6163, y: -696}
     isStartNode: 0
     ChildIDs:
     - aa2ee5c1-fb9c-4d8f-9092-a3c82306647d
@@ -160,7 +149,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: 71b3ee6e-17a5-4500-8577-44b78516c77d
     GroupID: 461b308f-34b1-494c-8481-1d0ba9ea2b00
-    Position: {x: 6924, y: -322}
+    Position: {x: 6459, y: -693}
     isStartNode: 1
     ChildIDs:
     - 71b3ee6e-17a5-4500-8577-44b78516c77d
@@ -173,7 +162,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: ebc40915-c8e2-4aa7-814d-3fb7a0259d0f
     GroupID: 461b308f-34b1-494c-8481-1d0ba9ea2b00
-    Position: {x: 7249, y: -315}
+    Position: {x: 6784, y: -686}
     isStartNode: 0
     ChildIDs:
     - ebc40915-c8e2-4aa7-814d-3fb7a0259d0f
@@ -187,7 +176,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: 93e3ffa4-fb3d-456a-b16c-28e31a392333
     GroupID: 461b308f-34b1-494c-8481-1d0ba9ea2b00
-    Position: {x: 8700, y: -303}
+    Position: {x: 8235, y: -674}
     isStartNode: 0
     ChildIDs:
     - 93e3ffa4-fb3d-456a-b16c-28e31a392333
@@ -201,7 +190,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: bddb9703-df31-42e6-a633-0d4e0a4ca3dc
     GroupID: 461b308f-34b1-494c-8481-1d0ba9ea2b00
-    Position: {x: 9375, y: -303}
+    Position: {x: 8910, y: -674}
     isStartNode: 0
     ChildIDs:
     - bddb9703-df31-42e6-a633-0d4e0a4ca3dc
@@ -322,7 +311,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: 0f5d49bc-a7ac-4834-bbaf-63c24d6115be
     GroupID: 461b308f-34b1-494c-8481-1d0ba9ea2b00
-    Position: {x: 7569, y: -303}
+    Position: {x: 7104, y: -674}
     isStartNode: 0
     ChildIDs:
     - 0f5d49bc-a7ac-4834-bbaf-63c24d6115be
@@ -336,7 +325,7 @@ MonoBehaviour:
     - Text: Next Dialogue
       NodeID: 7741eaf0-0bb2-4c73-8d29-5488b3ea5f46
     GroupID: 461b308f-34b1-494c-8481-1d0ba9ea2b00
-    Position: {x: 8087, y: -302}
+    Position: {x: 7622, y: -673}
     isStartNode: 0
     ChildIDs:
     - 7741eaf0-0bb2-4c73-8d29-5488b3ea5f46
@@ -366,12 +355,94 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - 
+  - ID: bbcd9e48-14a7-4f5b-b681-88702fcd0e33
+    Name: 10
+    SpeakerName: Lilith
+    Text: "You know, Karl, you remind me of someone\u2026 Of something\u2026"
+    SpritePath: Insert Sprite Path Here.
+    Choices:
+    - Text: Next Dialogue
+      NodeID: b6beb2af-3cb2-497b-8e64-9a89d133c126
+    GroupID: 45efe736-e91e-4f13-8dc4-bb3fb87e410e
+    Position: {x: 3178, y: 36}
+    isStartNode: 0
+    ChildIDs:
+    - b6beb2af-3cb2-497b-8e64-9a89d133c126
+  - ID: e0228849-2aff-439e-8d7a-11e0e76c69f9
+    Name: 6
+    SpeakerName: Lilith
+    Text: "My childhood. Back when I hadn\u2019t yet met you and still felt happiness.
+      It was also because my parents were still alive."
+    SpritePath: 
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 1471148f-217f-46e0-824a-b0860246e29b
+    GroupID: 212ecd01-8363-428e-b4db-d007090389f2
+    Position: {x: 3577, y: -360}
+    isStartNode: 0
+    ChildIDs:
+    - 1471148f-217f-46e0-824a-b0860246e29b
+  - ID: b6beb2af-3cb2-497b-8e64-9a89d133c126
+    Name: 11
+    SpeakerName: Lilith
+    Text: "My childhood. Back when I hadn\u2019t yet met you and still felt happiness.
+      It was also because my parents were still alive."
+    SpritePath: Insert Sprite Path Here.
+    Choices:
+    - Text: Next Dialogue
+      NodeID: a3084bd0-f040-445a-9d02-c7c3e9f19679
+    GroupID: 45efe736-e91e-4f13-8dc4-bb3fb87e410e
+    Position: {x: 3527, y: 31}
+    isStartNode: 0
+    ChildIDs:
+    - a3084bd0-f040-445a-9d02-c7c3e9f19679
+  - ID: a3084bd0-f040-445a-9d02-c7c3e9f19679
+    Name: 12
+    SpeakerName: Lilith
+    Text: My parents....
+    SpritePath: Insert Sprite Path Here.
+    Choices:
+    - Text: Next Dialogue
+      NodeID: df1d83ad-3828-4b00-b2b5-1dc22ef58b19
+    GroupID: 45efe736-e91e-4f13-8dc4-bb3fb87e410e
+    Position: {x: 4200, y: 30}
+    isStartNode: 0
+    ChildIDs:
+    - df1d83ad-3828-4b00-b2b5-1dc22ef58b19
+  - ID: df1d83ad-3828-4b00-b2b5-1dc22ef58b19
+    Name: 13
+    SpeakerName: Lilith
+    Text: They tried to kill me so many times when I was young. That was after they
+      went to marriage counsellor and stopped wanting to kill each other, you see.
+    SpritePath: Insert Sprite Path Here.
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 3c1543c5-359e-44a7-80b5-5cca27d96518
+    GroupID: 45efe736-e91e-4f13-8dc4-bb3fb87e410e
+    Position: {x: 4495, y: 34}
+    isStartNode: 0
+    ChildIDs:
+    - 3c1543c5-359e-44a7-80b5-5cca27d96518
+  - ID: 3c1543c5-359e-44a7-80b5-5cca27d96518
+    Name: 14
+    SpeakerName: Lilith
+    Text: "Coincidentally, they tried to grill me using a barbeque not unlike yours.\r"
+    SpritePath: Insert Sprite Path Here.
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 0f5d49bc-a7ac-4834-bbaf-63c24d6115be
+    GroupID: 45efe736-e91e-4f13-8dc4-bb3fb87e410e
+    Position: {x: 5367, y: 27}
+    isStartNode: 0
+    ChildIDs:
+    - 0f5d49bc-a7ac-4834-bbaf-63c24d6115be
   OldGroupNames:
   - Start
   - ParentsAreFun
   - BestGirl
   - ManyResonsWhy
   - Dramaaaa
+  - ParentsAreFunShorterVersion
   OldUngroupedNodeNames: []
   OldGroupNodeNames:
     list:
@@ -383,12 +454,12 @@ MonoBehaviour:
       - 1
     - Key: ParentsAreFun
       Value:
-      - 6
       - 7
       - 8
       - 9
       - 5
       - 10
+      - 6
     - Key: ManyResonsWhy
       Value:
       - FaintSmile
@@ -410,3 +481,10 @@ MonoBehaviour:
     - Key: BestGirl
       Value:
       - 7
+    - Key: ParentsAreFunShorterVersion
+      Value:
+      - 10
+      - 11
+      - 12
+      - 13
+      - 14
