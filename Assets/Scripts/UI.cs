@@ -194,11 +194,14 @@ public class UI : MonoBehaviour
 
     public DSNodeSaveData DialogueInitialise(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning) //Find the start node values
     {
-        if (pauseWhileRunning) PlayerMovement.instance.SetLockMovement();
-        dialogueCur = _dialogue;
-        Time.timeScale = 0;
+        if (pauseWhileRunning) 
+        {
+            PlayerMovement.instance.SetLockMovement();
+            Time.timeScale = 0;
+        }
 
         //retrieve START node
+        dialogueCur = _dialogue;
         NodeCurrent = null;
         foreach (DSNodeSaveData n in dialogueCur.Nodes)
         {
@@ -409,9 +412,13 @@ public class UI : MonoBehaviour
 
         while(dialogueCur!=null) yield return new WaitForEndOfFrame();   //waiting for the dialogue to finish, before proceeding
         Debug.Log("Backstory speech finished");
+        Time.timeScale = 1;
         CutToBlack(); //cut to black either too fast or glitched. TEST - Milla
-        //play stab sfx wiat till sfx finished
-        //play scream sfx
+        
+        AudioManager.instance.PlaySFX("Hit");       //play stab sfx wiat till sfx finished
+        yield return new WaitForSeconds(0.5f);
+        AudioManager.instance.PlaySFX("KarlScream");       //play scream sfx
+        yield return new WaitForSeconds(0.5f);
         //once the scream done finished, show dialgoue
         if (OutroDialogue2 != null) DialogueShow(OutroDialogue2, true); else Debug.LogWarning("outro-most dialogue not assigned in UI!");
 
