@@ -5,7 +5,37 @@
     },
     "UngroupedDialogues": [
         {
-            "DialogueName": "2",
+            "DialogueName": "3",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "They thought it might help warm my soul a little.\nOr maybe they were trying to kill me. I never knew with them.",
+            "SpritePath": "Lilith_Unhappy",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "4",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "They are dead now. They tried to microwave themselves. That’s how sick of me they...",
+            "SpritePath": "Lilith_tear",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "7",
             "nodeID": "",
             "SpeakerName": "Microwave",
             "Text": "...",
@@ -20,22 +50,7 @@
             "IsStartingDialogue": false
         },
         {
-            "DialogueName": "0",
-            "nodeID": "",
-            "SpeakerName": "Lilith",
-            "Text": "You know, when I was a little girl, and my parents tried to put me in the microwave...",
-            "SpritePath": "Lilith_tear",
-            "Choices": [
-                {
-                    "Text": "Next Dialogue",
-                    "nextID": ""
-                }
-            ],
-            "DialogueType": 0,
-            "IsStartingDialogue": true
-        },
-        {
-            "DialogueName": "1",
+            "DialogueName": "6",
             "nodeID": "",
             "SpeakerName": "Lilith",
             "Text": "What are you doing?!",
@@ -47,7 +62,67 @@
                 }
             ],
             "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "2",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "When I was a little girl, my parents tried to put me in the microwave...",
+            "SpritePath": "Lilith_tear",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "1",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "Now that I got you, you might want to know...\nI wasn't always like this. ",
+            "SpritePath": "Lilith_Unhappy",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
             "IsStartingDialogue": true
+        },
+        {
+            "DialogueName": "0",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "Now that I got you, you might want to know...\nI wasn't always like this. ",
+            "SpritePath": "Lilith_Unhappy",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": true
+        },
+        {
+            "DialogueName": "5",
+            "nodeID": "",
+            "SpeakerName": "Character name.",
+            "Text": "Wait. I'm not finished yet!",
+            "SpritePath": "Lilith_Unhappy2",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
         }
     ]
 }

@@ -2,8 +2,8 @@
     "DialogueName": "1",
     "nodeID": "",
     "SpeakerName": "Lilith",
-    "Text": "What are you doing?!",
-    "SpritePath": "Lilith_Angry",
+    "Text": "Now that I got you, you might want to know...\nI wasn't always like this. ",
+    "SpritePath": "Lilith_Unhappy",
     "Choices": [
         {
             "Text": "Next Dialogue",

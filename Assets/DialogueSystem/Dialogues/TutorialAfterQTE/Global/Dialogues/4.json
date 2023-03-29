@@ -1,8 +1,8 @@
 {
-    "DialogueName": "2",
+    "DialogueName": "4",
     "nodeID": "",
     "SpeakerName": "Lilith",
-    "Text": "When I was a little girl, my parents tried to put me in the microwave...",
+    "Text": "They are dead now. They tried to microwave themselves. That’s how sick of me they...",
     "SpritePath": "Lilith_tear",
     "Choices": [
         {

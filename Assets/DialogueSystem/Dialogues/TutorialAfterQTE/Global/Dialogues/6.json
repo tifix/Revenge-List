@@ -1,9 +1,9 @@
 {
-    "DialogueName": "2",
+    "DialogueName": "6",
     "nodeID": "",
     "SpeakerName": "Lilith",
-    "Text": "When I was a little girl, my parents tried to put me in the microwave...",
-    "SpritePath": "Lilith_tear",
+    "Text": "What are you doing?!",
+    "SpritePath": "Lilith_Angry",
     "Choices": [
         {
             "Text": "Next Dialogue",
