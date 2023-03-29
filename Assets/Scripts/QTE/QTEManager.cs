@@ -131,7 +131,7 @@ public class QTEManager : MonoBehaviour
                         Destroy(_skulls[i].gameObject, 0.2f);
                         _skulls.RemoveAt(i);
                         //FillSong.fillAmount += percentagePerSkull;
-
+                        AudioManager.instance.PlaySFX("qteMiss");
                         healthQTE--;
                         //Fail QTE
                         if(healthQTE<=0 && isPlaying)
@@ -150,6 +150,7 @@ public class QTEManager : MonoBehaviour
                         //Debug.Log("Sword");
                         Instantiate<GameObject>(skullVFX, _skulls[i].transform.position, Quaternion.identity);
                         Debug.Log("perfect");
+                        AudioManager.instance.PlaySFX("qteHit");
                         _skulls[i].gameObject.GetComponentInChildren<Animator>().SetTrigger("Perfect");  //GetComponentInChildren<SpriteRenderer>().sprite = skullPerfect;
                         Destroy(_skulls[i].gameObject,0.2f);
                         _skulls.RemoveAt(i);

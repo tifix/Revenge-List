@@ -3546,7 +3546,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 867993404}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3525.8408, y: 1985.929, z: -2267.276}
+  m_LocalPosition: {x: 3525.9907, y: 1985.1768, z: -2267.276}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4620,7 +4620,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1080672949}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3148.188, y: 1902.2932, z: -2100.9746}
+  m_LocalPosition: {x: 3147.8599, y: 1902.5009, z: -2100.9746}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7105,6 +7105,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: a296d1656a467e841a76e380a4a1da1e, type: 3}
     - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
+      propertyPath: QteHit
+      value: 
+      objectReference: {fileID: 8300000, guid: 1bb1ff252622f8c488bdc8ec115dbbe4, type: 3}
+    - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
       propertyPath: WalkMC
       value: 
       objectReference: {fileID: 8300000, guid: bd517989c06eeae419eccd37dab481eb, type: 3}
@@ -7124,6 +7128,10 @@ PrefabInstance:
       propertyPath: KickSFX
       value: 
       objectReference: {fileID: 8300000, guid: b24c529f65e1d4c4f84bdb2ef51b986f, type: 3}
+    - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
+      propertyPath: QteMiss
+      value: 
+      objectReference: {fileID: 8300000, guid: 2cd4e0224fd3c5e448b62cc295e057c2, type: 3}
     - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
       propertyPath: QteTrack
       value: 

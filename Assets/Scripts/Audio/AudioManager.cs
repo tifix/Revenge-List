@@ -21,6 +21,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip MenuClick;
     public AudioClip MenuClickError;
     public AudioClip QteTrack;
+    public AudioClip QteHit;
+    public AudioClip QteMiss;
     public AudioClip EnvelopeThrow;
     public AudioClip KickSFX;
     public AudioClip FlipSFX;
@@ -86,6 +88,12 @@ public class AudioManager : MonoBehaviour
                 break;
             case "ClickError":
                 sfxSource.clip = MenuClickError;
+                break;
+            case "qteHit":
+                sfxSource.clip = QteHit;
+                break;
+            case "qteMiss":
+                sfxSource.clip = QteMiss;
                 break;
             case "Dash":
                 sfxSource.clip = DashMC;
