@@ -372,6 +372,7 @@ public class UI : MonoBehaviour
         else NodeCurrent = FindSaveDataID(choiceB_ID, dataTemp);
 
         SetDialogueChoiceHidden();
+        AudioManager.instance.PlaySFX("MenuClick");
         isWaiting = false;
     }
 

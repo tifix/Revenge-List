@@ -1146,7 +1146,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 33.8
+  m_fontSize: 32.5
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1281,7 +1281,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32.95
+  m_fontSize: 31.7
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1601,7 +1601,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.4
+  m_fontSize: 40.8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4119,49 +4119,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
-      propertyPath: DashMC
-      value: 
-      objectReference: {fileID: 8300000, guid: fbf4f06ea5035db4cbc84c3f7e936093, type: 3}
-    - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
-      propertyPath: WalkMC
-      value: 
-      objectReference: {fileID: 8300000, guid: bd517989c06eeae419eccd37dab481eb, type: 3}
-    - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
-      propertyPath: BgMusic
-      value: 
-      objectReference: {fileID: 8300000, guid: 01710705e87113b4381c2e9c1eda61dd, type: 3}
-    - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
-      propertyPath: DogBark
-      value: 
-      objectReference: {fileID: 8300000, guid: 37d5fe5501944fb468950cc9025afbb7, type: 3}
-    - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
-      propertyPath: FlipSFX
-      value: 
-      objectReference: {fileID: 8300000, guid: 19f8b1ada518edb46b28aa7b8bb1983e, type: 3}
-    - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
-      propertyPath: KickSFX
-      value: 
-      objectReference: {fileID: 8300000, guid: b24c529f65e1d4c4f84bdb2ef51b986f, type: 3}
-    - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
-      propertyPath: QteTrack
-      value: 
-      objectReference: {fileID: 8300000, guid: 61da71e1b34077f4697398d922c00935, type: 3}
-    - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
-      propertyPath: BossTrack
-      value: 
-      objectReference: {fileID: 8300000, guid: a6653b98998f6cf439cc8f4b3f79fbcb, type: 3}
-    - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
       propertyPath: MenuClick
       value: 
-      objectReference: {fileID: 8300000, guid: cce2c1953b0b39743a62b8b6a3d3d514, type: 3}
-    - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
-      propertyPath: CreditsTrack
-      value: 
-      objectReference: {fileID: 8300000, guid: f3796ed598912f74b93b68b4e7232d00, type: 3}
-    - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
-      propertyPath: EnvelopeThrow
-      value: 
-      objectReference: {fileID: 8300000, guid: 372bbd149e23e8e4e862b6631909ad85, type: 3}
+      objectReference: {fileID: 8300000, guid: 1bf88ef18f748a04ba7669c7f3a26924, type: 3}
     - target: {fileID: 8476623665672524406, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
       propertyPath: m_Name
       value: AudioManager
