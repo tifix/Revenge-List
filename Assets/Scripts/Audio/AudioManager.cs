@@ -25,9 +25,17 @@ public class AudioManager : MonoBehaviour
     public AudioClip KickSFX;
     public AudioClip FlipSFX;
     public AudioClip DogBark;
+    public AudioClip DogWhine;
     public AudioClip CreditsTrack;
     public AudioClip HitSFX;
+    public AudioClip KarlScream;
+    public AudioClip KarlHit;
+    public AudioClip MicroBeep;
+    public AudioClip SteakLand;
     
+
+
+
 
 
     private void Awake()
@@ -80,6 +88,9 @@ public class AudioManager : MonoBehaviour
             case "MenuClick":
                 sfxSource.clip = MenuClick;
                 break;
+            case "ClickError":
+                sfxSource.clip = MenuClickError;
+                break;
             case "Dash":
                 sfxSource.clip = DashMC;
                 break;
@@ -95,8 +106,23 @@ public class AudioManager : MonoBehaviour
             case "Bark":
                 sfxSource.clip = DogBark;
                 break;
+            case "DogWhine":
+                sfxSource.clip = DogWhine;
+                break;
             case "Hit":
                 sfxSource.clip = HitSFX;
+                break;
+            case "KarlScream":
+                sfxSource.clip = KarlScream;
+                break;
+            case "KarlHit":
+                sfxSource.clip = KarlHit;
+                break;
+            case "MicroBeep":
+                sfxSource.clip = MicroBeep;
+                break;
+            case "SteakLand":
+                sfxSource.clip = SteakLand;
                 break;
             default:
                 Debug.LogWarning("Incorrect name " + name + " check spelling");

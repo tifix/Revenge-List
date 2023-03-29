@@ -245,12 +245,17 @@ MonoBehaviour:
   DashMC: {fileID: 8300000, guid: fbf4f06ea5035db4cbc84c3f7e936093, type: 3}
   BgMusic: {fileID: 8300000, guid: 01710705e87113b4381c2e9c1eda61dd, type: 3}
   BossTrack: {fileID: 8300000, guid: a6653b98998f6cf439cc8f4b3f79fbcb, type: 3}
-  MenuClick: {fileID: 8300000, guid: 1ac15ae9c37978d47bc105e2f462e32d, type: 3}
+  MenuClick: {fileID: 8300000, guid: 1bf88ef18f748a04ba7669c7f3a26924, type: 3}
   MenuClickError: {fileID: 8300000, guid: 05fcf23fa242f2c46960a2be5b7c2224, type: 3}
   QteTrack: {fileID: 8300000, guid: 61da71e1b34077f4697398d922c00935, type: 3}
   EnvelopeThrow: {fileID: 8300000, guid: 372bbd149e23e8e4e862b6631909ad85, type: 3}
   KickSFX: {fileID: 8300000, guid: b24c529f65e1d4c4f84bdb2ef51b986f, type: 3}
   FlipSFX: {fileID: 8300000, guid: 19f8b1ada518edb46b28aa7b8bb1983e, type: 3}
   DogBark: {fileID: 8300000, guid: 37d5fe5501944fb468950cc9025afbb7, type: 3}
+  DogWhine: {fileID: 8300000, guid: 753fc2a41bece8a4a920d15804237975, type: 3}
   CreditsTrack: {fileID: 8300000, guid: f3796ed598912f74b93b68b4e7232d00, type: 3}
   HitSFX: {fileID: 8300000, guid: a296d1656a467e841a76e380a4a1da1e, type: 3}
+  KarlScream: {fileID: 8300000, guid: 058847d5c03d8f944a1c5e5f5fdafa28, type: 3}
+  KarlHit: {fileID: 8300000, guid: 67176e8c440406043b24d48610484d33, type: 3}
+  MicroBeep: {fileID: 8300000, guid: 31ec8b6c43bc47642ad3546104ce3b66, type: 3}
+  SteakLand: {fileID: 8300000, guid: e1fe14fb653ab7e4e8090fcd4bc1bdc4, type: 3}
