@@ -2166,7 +2166,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Placeholder text of button B dialogue option
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 11bc8c858a99c7c4683b0067f24b967a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3b8abdc865c659f43960d3e329fdf2a0, type: 2}
   m_sharedMaterial: {fileID: 3522528611470643922, guid: 11bc8c858a99c7c4683b0067f24b967a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2230,7 +2230,7 @@ MonoBehaviour:
   m_margin: {x: -1.1669617, y: 2.4506073, z: -0.92944336, w: -3.5008602}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &267718564157770349
@@ -4186,7 +4186,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Placeholder text of button A dialogue option
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 11bc8c858a99c7c4683b0067f24b967a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3b8abdc865c659f43960d3e329fdf2a0, type: 2}
   m_sharedMaterial: {fileID: 3522528611470643922, guid: 11bc8c858a99c7c4683b0067f24b967a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4250,7 +4250,7 @@ MonoBehaviour:
   m_margin: {x: -1.1669617, y: 2.4506073, z: -4.7339478, w: -3.5008602}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &3118106161836144765
@@ -4322,7 +4322,7 @@ MonoBehaviour:
   m_text: 'Dialogue text here. Dialogue text is being displayed right now. For Your
     eyes only (and possibly for people watching over Your shoulder). '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 11bc8c858a99c7c4683b0067f24b967a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3b8abdc865c659f43960d3e329fdf2a0, type: 2}
   m_sharedMaterial: {fileID: 3522528611470643922, guid: 11bc8c858a99c7c4683b0067f24b967a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4386,7 +4386,7 @@ MonoBehaviour:
   m_margin: {x: -497.65704, y: -72.314606, z: -519.56995, w: -71.71923}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &3168202864720568991
@@ -5542,7 +5542,7 @@ RectTransform:
   - {fileID: 8204241969349611972}
   - {fileID: 896510695595591209}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
