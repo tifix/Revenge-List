@@ -32,12 +32,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip KarlHit;
     public AudioClip MicroBeep;
     public AudioClip SteakLand;
+    public AudioClip UnrollList;
     
-
-
-
-
-
     private void Awake()
     {
         // If there is not already an instance of AudioManager
@@ -123,6 +119,9 @@ public class AudioManager : MonoBehaviour
                 break;
             case "SteakLand":
                 sfxSource.clip = SteakLand;
+                break;
+            case "UnrollList":
+                sfxSource.clip = UnrollList;
                 break;
             default:
                 Debug.LogWarning("Incorrect name " + name + " check spelling");
