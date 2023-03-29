@@ -25,6 +25,7 @@ public class bossHealth : ObjectScript
         if(canTakeDamage)
         {
             health -= _value;
+            AudioManager.instance.PlaySFX("KarlHit");
             if (health <= 0.0f)OnShieldDepleted();         
         }
     }
