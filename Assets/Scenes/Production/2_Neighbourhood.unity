@@ -3546,7 +3546,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 867993404}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3436.0215, y: 1934.9026, z: -2209.0354}
+  m_LocalPosition: {x: 3525.9907, y: 1985.1768, z: -2267.276}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3950,7 +3950,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897402303}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: -23.46079, y: 20.066225, z: -43.080524}
+  m_LocalPosition: {x: -23.460674, y: 20.066225, z: -43.080524}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4620,7 +4620,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1080672949}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3059.6692, y: 1849.951, z: -2042.7341}
+  m_LocalPosition: {x: 3147.8599, y: 1902.5009, z: -2100.9746}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5068,7 +5068,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162723989}
   m_LocalRotation: {x: 0.17364816, y: -0, z: -0, w: 0.9848078}
-  m_LocalPosition: {x: -23.46079, y: 20.066225, z: -43.080524}
+  m_LocalPosition: {x: -23.460674, y: 20.066225, z: -43.080524}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7105,6 +7105,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: a296d1656a467e841a76e380a4a1da1e, type: 3}
     - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
+      propertyPath: QteHit
+      value: 
+      objectReference: {fileID: 8300000, guid: 1bb1ff252622f8c488bdc8ec115dbbe4, type: 3}
+    - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
       propertyPath: WalkMC
       value: 
       objectReference: {fileID: 8300000, guid: bd517989c06eeae419eccd37dab481eb, type: 3}
@@ -7125,6 +7129,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: b24c529f65e1d4c4f84bdb2ef51b986f, type: 3}
     - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
+      propertyPath: QteMiss
+      value: 
+      objectReference: {fileID: 8300000, guid: 2cd4e0224fd3c5e448b62cc295e057c2, type: 3}
+    - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
       propertyPath: QteTrack
       value: 
       objectReference: {fileID: 8300000, guid: 61da71e1b34077f4697398d922c00935, type: 3}
@@ -7135,7 +7143,7 @@ PrefabInstance:
     - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
       propertyPath: MenuClick
       value: 
-      objectReference: {fileID: 8300000, guid: cce2c1953b0b39743a62b8b6a3d3d514, type: 3}
+      objectReference: {fileID: 8300000, guid: 1bf88ef18f748a04ba7669c7f3a26924, type: 3}
     - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
       propertyPath: sfxSource
       value: 

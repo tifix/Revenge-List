@@ -26,6 +26,7 @@ public class BossProjectile : MonoBehaviour
 
         else if(imOverHead && transform.position.y <= transform.GetChild(1).GetComponent<Transform>().position.y) //despawning after hitting the floor
         {
+            AudioManager.instance.PlaySFX("SteakLand");
             Instantiate<GameObject>(destroyVFX, transform.position, Quaternion.identity);
             if(isShakingCameraOnHit)GameManager.instance.CallShake(5, 0.5f);
             Destroy(gameObject);

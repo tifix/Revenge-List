@@ -21,6 +21,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip MenuClick;
     public AudioClip MenuClickError;
     public AudioClip QteTrack;
+    public AudioClip QteHit;
+    public AudioClip QteMiss;
     public AudioClip EnvelopeThrow;
     public AudioClip KickSFX;
     public AudioClip FlipSFX;
@@ -32,12 +34,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip KarlHit;
     public AudioClip MicroBeep;
     public AudioClip SteakLand;
+    public AudioClip UnrollList;
     
-
-
-
-
-
     private void Awake()
     {
         // If there is not already an instance of AudioManager
@@ -91,6 +89,12 @@ public class AudioManager : MonoBehaviour
             case "ClickError":
                 sfxSource.clip = MenuClickError;
                 break;
+            case "qteHit":
+                sfxSource.clip = QteHit;
+                break;
+            case "qteMiss":
+                sfxSource.clip = QteMiss;
+                break;
             case "Dash":
                 sfxSource.clip = DashMC;
                 break;
@@ -123,6 +127,9 @@ public class AudioManager : MonoBehaviour
                 break;
             case "SteakLand":
                 sfxSource.clip = SteakLand;
+                break;
+            case "UnrollList":
+                sfxSource.clip = UnrollList;
                 break;
             default:
                 Debug.LogWarning("Incorrect name " + name + " check spelling");
