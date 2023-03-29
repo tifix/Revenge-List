@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -15,19 +14,23 @@ public class QTEManager : MonoBehaviour
     public bool playQTE;
     public int healthQTE = 3;
 
-    bool isPlaying;
     float beatTimer;
     int beatCounter;
+    int beatProgress;
     int correctHits;
 
     [SerializeField] private Sprite skullPerfect, skullMiss;
     public GameObject skullPrefab;
     public GameObject skullVFX;
     public GameObject BeatUI;
+
     public Image FillSong;
+
     [Range(0.1f,1.0f)]
     public float beatScale;
+
     public TMP_Text countDownUI;
+
     public Transform up, down, left, right;
 
     public List<BeatItem> beatObjects; 
@@ -65,57 +68,100 @@ public class QTEManager : MonoBehaviour
         if (currentMap == null)
             currentMap = defaultMap;
 
-        percentagePerSkull = (float)(1.0f / currentMap.beats.Count);
+        percentagePerSkull = (float)(1.0f / (currentMap.beats.Count - healthQTE + 1));
 
         playQTE = false;
-        isPlaying = false;
 
         beatCounter = 0;
+        beatProgress = 0;
         correctHits = 0;
+        beatTimer = Time.time - 0.5f;
 
         _skulls = new List<SkullController>();
 
         for (int i = 0; i < beatObjects.Count; i++)
         {
+            //Force constructor
             beatObjects[i] = new BeatItem(beatObjects[i].GetObj());        
         }
         beatObjects.Add(new BeatItem(BeatUI));
+        beatOffset = beatObjects.Count();
 
         anim = GetComponent<Animator>();
 
         countDownUI.SetText("3");
     }
 
+    public void QTEStart()
+    {
+        QTECleanUp();
+        anim.SetTrigger("QTE_entered");
+        GameManager.instance.SetPause(false);
+        PlayerMovement.instance.SetLockMovement();
+
+        if (currentMap == null)
+            currentMap = defaultMap;
+
+        percentagePerSkull = (float)(1.0f / (currentMap.beats.Count - healthQTE + 1));      //for fill you need
+        FillSong.fillAmount = 0;
+
+        anim.SetBool("QTE_Playing", true);
+        StartCoroutine(QTECountDown());
+    }
+
+    IEnumerator QTECountDown()
+    {
+        countDownUI.gameObject.SetActive(true);
+        countDownUI.SetText("3");
+
+        for (int i = 3; i > 0; i--)
+        {
+            countDownUI.SetText(i.ToString());
+            PlayerMovement.instance.PauseMovement();
+            yield return new WaitForSeconds(1);
+        }
+        countDownUI.gameObject.SetActive(false);
+        countDownUI.SetText("");
+        PlayerMovement.instance.PauseMovement();
+        playQTE = true;
+    }
+
     void Update()
     {       
         if (playQTE)
         {          
-            beatTimer += Time.deltaTime;
-            BeatUI.transform.Rotate(new Vector3(0, 0, -100 * Time.deltaTime));
-            if (beatTimer >= spawnRate)
+            //BeatUI.transform.Rotate(new Vector3(0, 0, -100 * Time.deltaTime));
+            //Every 0.5s, assuming 120bpm
+            if (beatTimer + 0.5f <= Time.time)
             {
+                //Get beat time
+                beatTimer = Time.time;
+                beatCounter++;
+
+                //Animate objects
                 for (int i = 0; i < beatObjects.Count; i++)
                 {
                     StartCoroutine(PulseObject(beatObjects[i], beatScale));
                 }
-                if(isPlaying)
+
+                //Spawn skull if there is a beat in the current progress and beats should spawn
+                if(beatProgress < currentMap.beats.Count && beatCounter == currentMap.beats[beatProgress].timing)
                 {
+                    beatProgress++;
                     SpawnSkull();
-                    beatCounter++;
                 }
-                beatTimer = 0;
             }
 
-            //End of map
-            if (beatCounter >= currentMap.beats.Count && isPlaying)
+            //If there are no more beats
+            if (beatProgress >= currentMap.beats.Count)
             {
-                isPlaying = false;
-                beatTimer = 0;
-                beatCounter = 0;
-               
-                Debug.Log("skull track finished");
-                Invoke("QTEEnd",3);
-                Invoke("QTECleanUp", 3.1f);
+                //Wait until no more skulls
+                if(_skulls.Count<=0)
+                {
+                    beatTimer = Time.time - 0.5f; 
+                    Debug.Log("skull track finished");
+                    Invoke("QTEEnd", 0.5f);
+                }
             }
 
             if (_skulls.Count > 0)
@@ -125,7 +171,7 @@ public class QTEManager : MonoBehaviour
                     //Hit the player
                     if (Vector3.Distance(_skulls[i].transform.localPosition, Vector3.zero) <= _skulls[i].transform.localScale.x)
                     {
-                        //Debug.Log("Player");
+                        //Death VFX
                         Instantiate<GameObject>(skullVFX, _skulls[i].transform.position, Quaternion.identity);
                         Debug.Log("miss! Going red");
                         _skulls[i].gameObject.GetComponentInChildren<Animator>().SetTrigger("Miss");
@@ -133,30 +179,31 @@ public class QTEManager : MonoBehaviour
                         
                         Destroy(_skulls[i].gameObject, 0.2f);
                         _skulls.RemoveAt(i);
-                        //FillSong.fillAmount += percentagePerSkull;
+                        beatObjects.RemoveAt(i + beatOffset);
                         AudioManager.instance.PlaySFX("qteMiss");
                         healthQTE--;
+
                         //Fail QTE
-                        if(healthQTE<=0 && isPlaying)
+                        if(healthQTE <= 0)
                         {
                             //End QTE
                             correctHits = 0;
                             QTEEnd();
-                            QTECleanUp();
                         }
                         break;
                     }
 
                     //Hit the sword
-                    if (!_skulls[i].GetIsAlive())
+                    else if (!_skulls[i].GetIsAlive())
                     {
-                        //Debug.Log("Sword");
+                        //Death VFX
                         Instantiate<GameObject>(skullVFX, _skulls[i].transform.position, Quaternion.identity);
                         Debug.Log("perfect");
                         AudioManager.instance.PlaySFX("qteHit");
                         _skulls[i].gameObject.GetComponentInChildren<Animator>().SetTrigger("Perfect");  //GetComponentInChildren<SpriteRenderer>().sprite = skullPerfect;
                         Destroy(_skulls[i].gameObject,0.2f);
                         _skulls.RemoveAt(i);
+                        beatObjects.RemoveAt(i + beatOffset);
                         correctHits++;
                         FillSong.fillAmount += percentagePerSkull;
                         break;
@@ -165,25 +212,25 @@ public class QTEManager : MonoBehaviour
                     //Hit the sword while rotating
                     else if (_skulls[i].GetBadHit())
                     {
+                        //Death VFX
                         Instantiate<GameObject>(skullVFX, _skulls[i].transform.position, Quaternion.identity);
                         Debug.Log("meh hit");
                         _skulls[i].gameObject.GetComponentInChildren<Animator>().SetTrigger("Hit");
                         Destroy(_skulls[i].gameObject, 0.2f);
                         _skulls.RemoveAt(i);
+                        beatObjects.RemoveAt(i + beatOffset);
                         FillSong.fillAmount += percentagePerSkull;
                     }
                 }
                 
             }
-            //else if (!isPlaying)
-            //    playQTE = false;
         }
     }
 
     void SpawnSkull()
     {
-        Beats currentBeat = currentMap.beats[beatCounter].myBeat;
-        switch(currentBeat) 
+        Beats currentBeat = currentMap.beats[beatProgress].myBeat;
+        switch (currentBeat) 
         {
             case Beats.Up: _skulls.Add(Instantiate<GameObject>(skullPrefab, up.position, up.rotation, transform).GetComponent<SkullController>());
                 break;
@@ -195,53 +242,29 @@ public class QTEManager : MonoBehaviour
                 break;
             default: return;
         }       
-        _skulls.Last<SkullController>().SetSpeed(currentMap.beats[beatCounter].speed);
+        _skulls.Last<SkullController>().SetSpeed(currentMap.beats[beatProgress].speed);
         beatObjects.Add(new BeatItem(_skulls.Last<SkullController>().gameObject));
-
-    }
-
-    public void QTEStart()
-    {
-        QTECleanUp();
-        anim.SetTrigger("QTE_entered");
-        PlayerMovement.instance.PauseMovement();
-
-        GameManager.instance.SetPause(false);
-        PlayerMovement.instance.SetLockMovement();        
-
-        if (currentMap == null)
-            currentMap = defaultMap;
-
-        percentagePerSkull = (float)(1.0f / (currentMap.beats.Count-healthQTE+1));      //for fill you need
-        FillSong.fillAmount = 0;
-
-        anim.SetBool("QTE_Playing", true);
-        PlayerMovement.instance.PauseMovement();
-        StartCoroutine(QTECountDown());
-    }
-
-    IEnumerator QTECountDown()
-    {
-        countDownUI.gameObject.SetActive(true);
-        countDownUI.SetText("3");
-
-        for (int i = 3; i > 0 ; i--)
-        {
-            countDownUI.SetText(i.ToString());
-            PlayerMovement.instance.PauseMovement();
-            yield return new WaitForSeconds(1);
-        }
-        countDownUI.gameObject.SetActive(false);
-        countDownUI.SetText("");
-        PlayerMovement.instance.PauseMovement();
-        playQTE = true;
-        isPlaying = true;
     }
 
     public void QTEEnd()
     {
+        //Lose - Repeat phase
+        if(healthQTE <= 0 || correctHits < currentMap.beatsForWin)
+        {
+            Debug.LogWarning("too bad, repeat the phase");
+            if (UI.instance.bossHealth != null)
+            {
+                UI.instance.CleanupHealthBoss(false);
+            }
+            if (UI.instance.bossHealth.gameObject.TryGetComponent<BossClass>(out BossClass boss)) { boss.RepeatPhase(); }
+
+            //Play the QTE won animation
+            anim.SetBool("QTE_Playing", false);
+            anim.SetBool("QTE_Won", false);
+        }
+
         //Win QTE
-        if (correctHits >= currentMap.beatsForWin || GameManager.instance.cheat_QTEAlwaysWin)
+        else if (correctHits >= currentMap.beatsForWin || GameManager.instance.cheat_QTEAlwaysWin)
         {           
             if (UI.instance.bossHealth != null)
             {
@@ -255,7 +278,6 @@ public class QTEManager : MonoBehaviour
                     else boss.BossDefeated();
                 }
 
-
                 //clean-up health bars as well :)
                 if (UI.instance.bossHealth.coreHealth < 1) UI.instance.CleanupHealthBoss(true);
                 else UI.instance.CleanupHealthBoss(false);
@@ -267,24 +289,28 @@ public class QTEManager : MonoBehaviour
             AudioManager.instance.PlayMusic("BossTrack");
         }
 
-        //Lose - Repeat phase
-        else 
+        QTECleanUp();
+    }
+
+    public void QTECleanUp()
+    {
+        percentagePerSkull = (float)(1.0f / (currentMap.beats.Count - healthQTE + 1));
+        FillSong.fillAmount = 0;
+
+        correctHits = 0;
+        beatCounter = 0;
+        beatProgress = 0;
+        beatTimer = Time.time - 0.5f;
+        healthQTE = 3;
+
+        playQTE = false;
+
+        for (int i = 0; i < _skulls.Count; i++)
         {
-            Debug.LogWarning("too bad, repeat the phase");
-            if (UI.instance.bossHealth != null)
-            {
-                UI.instance.CleanupHealthBoss(false);
-            }
-            if (UI.instance.bossHealth.gameObject.TryGetComponent<BossClass>(out BossClass boss)) { boss.RepeatPhase(); }
-
-
-            //Play the QTE won animation
-            anim.SetBool("QTE_Playing", false);
-            anim.SetBool("QTE_Won", false);
+            Destroy(_skulls[i].gameObject);
+            _skulls.RemoveAt(i);
+            beatObjects.RemoveAt(i + beatOffset);
         }
-
-        correctHits = 0;        
-        //Score;
     }
 
     //Change the current beat map
@@ -301,26 +327,6 @@ public class QTEManager : MonoBehaviour
         currentMap = defaultMap;
         percentagePerSkull = (float)(1.0f / (currentMap.beats.Count - healthQTE + 1));
         FillSong.fillAmount = 0;
-    }
-
-    public void QTECleanUp()
-    {
-        //currentMap = defaultMap;
-        percentagePerSkull = (float)(1.0f / (currentMap.beats.Count - healthQTE + 1));
-        FillSong.fillAmount = 0;
-
-        beatCounter = 0;
-        beatTimer = 0;
-        healthQTE = 3;
-        
-        playQTE = false;
-        isPlaying = false;
-
-        for (int i = 0; i < _skulls.Count; i++)
-        {
-            Destroy(_skulls[i].gameObject);
-            _skulls.RemoveAt(i);
-        }
     }
 
     //Scale up object over time

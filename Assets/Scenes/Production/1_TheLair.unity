@@ -459,6 +459,7 @@ MonoBehaviour:
   uponInteractionDo:
     m_PersistentCalls:
       m_Calls: []
+  PromptCanvas: {fileID: 0}
   isPausedWhileShowingA: 1
   preUseDialogue: {fileID: 11400000, guid: 0615f1bb4898a3943876a298c67d0667, type: 2}
   waitAfterPreDialogue: 0.1
@@ -528,6 +529,7 @@ MonoBehaviour:
   uponInteractionDo:
     m_PersistentCalls:
       m_Calls: []
+  PromptCanvas: {fileID: 0}
   isPausedWhileShowingA: 1
   preUseDialogue: {fileID: 11400000, guid: d7e3f7adf425c23449910a22f0f20f8a, type: 2}
   waitAfterPreDialogue: 0.1
@@ -1425,6 +1427,7 @@ MonoBehaviour:
   uponInteractionDo:
     m_PersistentCalls:
       m_Calls: []
+  PromptCanvas: {fileID: 0}
   isPausedWhileShowingA: 1
   preUseDialogue: {fileID: 11400000, guid: 57ff88abcdd10414fb8cda70c1e10ed4, type: 2}
   waitAfterPreDialogue: 0.1
@@ -1889,7 +1892,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897402303}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: -8.872694, y: 19.65276, z: -43.451015}
+  m_LocalPosition: {x: -8.872713, y: 19.65276, z: -43.451015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2343,7 +2346,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162723989}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: -8.872694, y: 19.65276, z: -43.451015}
+  m_LocalPosition: {x: -8.872713, y: 19.65276, z: -43.451015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2736,6 +2739,7 @@ MonoBehaviour:
   uponInteractionDo:
     m_PersistentCalls:
       m_Calls: []
+  PromptCanvas: {fileID: 0}
   isPausedWhileShowingA: 1
   preUseDialogue: {fileID: 11400000, guid: a16cf6b8cf0cac542bca744759df342f, type: 2}
   waitAfterPreDialogue: 0.1
@@ -4517,6 +4521,7 @@ MonoBehaviour:
   uponInteractionDo:
     m_PersistentCalls:
       m_Calls: []
+  PromptCanvas: {fileID: 0}
   isPausedWhileShowingA: 1
   preUseDialogue: {fileID: 11400000, guid: d7a823581e5999e4c89d065ebcba9cad, type: 2}
   waitAfterPreDialogue: 0.1
@@ -5253,6 +5258,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  PromptCanvas: {fileID: 0}
   isPausedWhileShowingA: 1
   preUseDialogue: {fileID: 11400000, guid: d4488d1dc73b45d46b98adfd771dd998, type: 2}
   waitAfterPreDialogue: 0.3
@@ -5395,6 +5401,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  PromptCanvas: {fileID: 0}
   isPausedWhileShowingA: 0
   preUseDialogue: {fileID: 11400000, guid: 5f6d223fcd9aa0947855da606c90d064, type: 2}
   waitAfterPreDialogue: 0.1
@@ -5478,6 +5485,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  PromptCanvas: {fileID: 0}
   isPausedWhileShowingA: 1
   preUseDialogue: {fileID: 0}
   waitAfterPreDialogue: 0
@@ -5543,6 +5551,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  PromptCanvas: {fileID: 0}
   isPausedWhileShowingA: 1
   preUseDialogue: {fileID: 11400000, guid: 0542c5cd0f8d4ac4a9a5100ee7703202, type: 2}
   waitAfterPreDialogue: 0.01
@@ -6023,6 +6032,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  PromptCanvas: {fileID: 0}
   isPausedWhileShowingA: 1
   preUseDialogue: {fileID: 11400000, guid: 2ca64cae7635e844c93c6e63a4ecb07a, type: 2}
   waitAfterPreDialogue: 0.1

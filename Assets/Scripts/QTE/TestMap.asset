@@ -13,10 +13,53 @@ MonoBehaviour:
   m_Name: TestMap
   m_EditorClassIdentifier: 
   bpm: 120
-  startTime: 0
-  endTime: 0
+  startTime: 1
+  endTime: 1
   beats:
-  - timing: 0
+  - timing: 1
+    myBeat: 1
+    speed: 2
+  - timing: 2
+    myBeat: 2
+    speed: 2
+  - timing: 4
     myBeat: 0
-    speed: 0
+    speed: 2
+  - timing: 6
+    myBeat: 3
+    speed: 2
+  - timing: 8
+    myBeat: 1
+    speed: 2
+  - timing: 10
+    myBeat: 1
+    speed: 6
+  - timing: 12
+    myBeat: 3
+    speed: 2
+  - timing: 14
+    myBeat: 0
+    speed: 2
+  - timing: 16
+    myBeat: 1
+    speed: 2
+  - timing: 18
+    myBeat: 0
+    speed: 2
+  - timing: 20
+    myBeat: 3
+    speed: 2
+  - timing: 22
+    myBeat: 0
+    speed: 2
+  - timing: 26
+    myBeat: 3
+    speed: 2
+  - timing: 28
+    myBeat: 2
+    speed: 2
+  - timing: 30
+    myBeat: 1
+    speed: 2
   beatsForWin: 3
+  song: {fileID: 8300000, guid: a6653b98998f6cf439cc8f4b3f79fbcb, type: 3}
