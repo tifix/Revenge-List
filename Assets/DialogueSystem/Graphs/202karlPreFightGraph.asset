@@ -1001,7 +1001,7 @@ MonoBehaviour:
     - a76c8a3b-93cf-4766-aae2-b03541ceff29
   - ID: 60c1079d-0a78-4a3c-9e7e-9fabecf17602
     Name: ytut
-    SpeakerName: Character name.
+    SpeakerName: Karl
     Text: ...as well as we do.
     SpritePath: Neighbour_Sad
     Choices:

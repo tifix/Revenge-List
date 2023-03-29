@@ -1,7 +1,7 @@
 {
     "DialogueName": "ytut",
     "nodeID": "",
-    "SpeakerName": "Character name.",
+    "SpeakerName": "Karl",
     "Text": "...as well as we do.",
     "SpritePath": "Neighbour_Sad",
     "Choices": [
