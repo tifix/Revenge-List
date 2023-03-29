@@ -82,6 +82,7 @@ public class ObjectScript : MonoBehaviour
     }
     protected IEnumerator ShrinkAndVanish(float time) 
     {
+        AudioManager.instance.PlaySFX("Weee!");
         Vector3 initScale=transform.localScale;
         float norm = 0;
         while (norm<1)
