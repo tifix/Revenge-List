@@ -8,7 +8,9 @@ public class QTEMovement : MonoBehaviour
 {
     Controls input;
 
-    public GameObject up, down, left, right;
+    public GameObject up, down, left, right, fbck;
+
+    public float perfectMin, badMin;
 
     // Start is called before the first frame update
     void OnEnable()
@@ -70,29 +72,29 @@ public class QTEMovement : MonoBehaviour
             //If there is a skull
             if(col.CompareTag("Skull"))
             {
-                GameObject tx = SpawnFeedback(obj);
+                Debug.Log(Vector2.Distance(obj.transform.position, col.transform.position));
                 //Bad hit
-                if (Vector2.Distance(obj.transform.position, col.transform.position) > col.transform.localScale.x)
+                if (Vector2.Distance(obj.transform.position, col.transform.position) >= badMin)
                 {
-                    col.gameObject.GetComponent<SkullController>().Kill();
-                    tx.GetComponent<TextMeshPro>().text = "Bad";
-                    Destroy(tx, 1);
+                    col.gameObject.GetComponent<SkullController>().BadHit();
+                    GameObject temp = Instantiate(fbck, obj.transform.parent);
+                    temp.GetComponent<TMP_Text>().text = "Bad";
                     return;
                 }
                 //Good hit
-                else if (Vector2.Distance(obj.transform.position,col.transform.position) < col.transform.localScale.x/0.2f)
+                else if (Vector2.Distance(obj.transform.position,col.transform.position) < perfectMin)
                 {
                     col.gameObject.GetComponent<SkullController>().Kill();
-                    tx.GetComponent<TextMeshPro>().text = "Perfect";
-                    Destroy(tx, 1);
+                    GameObject temp = Instantiate(fbck, obj.transform.parent);
+                    temp.GetComponent<TMP_Text>().text = "Perfect";
                     return;
                 }
                 //Meh hit
                 else
                 {
                     col.gameObject.GetComponent<SkullController>().BadHit();
-                    tx.GetComponent<TextMeshPro>().text = "Good";
-                    Destroy(tx, 1);
+                    GameObject temp = Instantiate(fbck, obj.transform.parent);
+                    temp.GetComponent<TMP_Text>().text = "Good";
                     return;
                 }
             }
