@@ -72,7 +72,6 @@ public class QTEMovement : MonoBehaviour
             //If there is a skull
             if(col.CompareTag("Skull"))
             {
-                Debug.Log(Vector2.Distance(obj.transform.position, col.transform.position));
                 //Bad hit
                 if (Vector2.Distance(obj.transform.position, col.transform.position) >= badMin)
                 {
@@ -100,12 +99,5 @@ public class QTEMovement : MonoBehaviour
             }
         }
         //Check there is smth, check distance for perfect or good hit.
-    }
-
-    GameObject SpawnFeedback(GameObject obj)
-    {
-        GameObject temp = Instantiate(new GameObject(), obj.transform.position, Quaternion.identity);
-        temp.AddComponent<TextMeshPro>();
-        return temp;
     }
 }

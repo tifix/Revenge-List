@@ -147,8 +147,8 @@ public class QTEManager : MonoBehaviour
                 //Spawn skull if there is a beat in the current progress and beats should spawn
                 if(beatProgress < currentMap.beats.Count && beatCounter == currentMap.beats[beatProgress].timing)
                 {
-                    beatProgress++;
                     SpawnSkull();
+                    beatProgress++;
                 }
             }
 

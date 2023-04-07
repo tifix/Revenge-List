@@ -16,35 +16,35 @@ MonoBehaviour:
   startTime: 0
   endTime: 0
   beats:
-  - timing: 1
-    myBeat: 0
-    speed: 2
-  - timing: 3
+  - timing: 2
     myBeat: 0
     speed: 2
   - timing: 5
-    myBeat: 0
+    myBeat: 1
     speed: 2
-  - timing: 7
-    myBeat: 0
-    speed: 2
-  - timing: 9
-    myBeat: 0
-    speed: 2
-  - timing: 11
-    myBeat: 0
+  - timing: 10
+    myBeat: 3
     speed: 2
   - timing: 13
-    myBeat: 0
-    speed: 2
-  - timing: 15
-    myBeat: 0
+    myBeat: 2
     speed: 2
   - timing: 17
     myBeat: 0
     speed: 2
-  - timing: 19
+  - timing: 18
+    myBeat: 3
+    speed: 2
+  - timing: 22
+    myBeat: 1
+    speed: 2
+  - timing: 25
+    myBeat: 2
+    speed: 2
+  - timing: 30
+    myBeat: 3
+    speed: 2
+  - timing: 30
     myBeat: 0
     speed: 2
-  beatsForWin: 1
+  beatsForWin: 5
   song: {fileID: 8300000, guid: 01710705e87113b4381c2e9c1eda61dd, type: 3}
