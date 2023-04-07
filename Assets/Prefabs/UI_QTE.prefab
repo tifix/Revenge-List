@@ -335,7 +335,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 22, y: 22}
+m_Size: {x: 22, y: 22}
   m_EdgeRadius: 0
 --- !u!95 &6684386485198643896
 Animator:
@@ -557,7 +557,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 22, y: 22}
+m_Size: {x: 22, y: 22}
   m_EdgeRadius: 0
 --- !u!95 &9147310050237532935
 Animator:
@@ -703,7 +703,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 22, y: 22}
+m_Size: {x: 22, y: 22}
   m_EdgeRadius: 0
 --- !u!95 &6011664985731348531
 Animator:
@@ -849,7 +849,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 22, y: 22}
+m_Size: {x: 22, y: 22}
   m_EdgeRadius: 0
 --- !u!95 &7465801762353480164
 Animator:
@@ -1002,7 +1002,7 @@ Transform:
   - {fileID: 449165826402624276}
   - {fileID: 3379817748445781359}
   - {fileID: 219918691797973742}
-  m_Father: {fileID: 2266498786259866250}
+m_Father: {fileID: 2266498786259866250}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3324266105805166630
