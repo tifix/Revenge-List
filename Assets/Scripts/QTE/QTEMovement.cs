@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Rendering;
+using TMPro;
 
 public class QTEMovement : MonoBehaviour
 {
@@ -11,7 +10,6 @@ public class QTEMovement : MonoBehaviour
 
     public GameObject up, down, left, right;
 
-    bool rotating = false;
     // Start is called before the first frame update
     void OnEnable()
     {
@@ -29,7 +27,7 @@ public class QTEMovement : MonoBehaviour
         input.QTE.Right.performed += Right;
         input.QTE.Right.Enable();
     }
-    private void OnDisable()
+    void OnDisable()
     {
         input.QTE.Up.Disable();
         input.QTE.Down.Disable();
@@ -57,7 +55,7 @@ public class QTEMovement : MonoBehaviour
         BeatCheck(right);
     }
 
-    private void BeatCheck(GameObject obj)
+    void BeatCheck(GameObject obj)
     {
         //Trigger anim for obj
         obj.GetComponent<Animator>().SetTrigger("Scale");
@@ -72,20 +70,40 @@ public class QTEMovement : MonoBehaviour
             //If there is a skull
             if(col.CompareTag("Skull"))
             {
-                //Good hit
-                if(Vector2.Distance(obj.transform.position,col.transform.position) < col.transform.localScale.x/0.2f)
+                GameObject tx = SpawnFeedback(obj);
+                //Bad hit
+                if (Vector2.Distance(obj.transform.position, col.transform.position) > col.transform.localScale.x)
                 {
                     col.gameObject.GetComponent<SkullController>().Kill();
+                    tx.GetComponent<TextMeshPro>().text = "Bad";
+                    Destroy(tx, 1);
+                    return;
+                }
+                //Good hit
+                else if (Vector2.Distance(obj.transform.position,col.transform.position) < col.transform.localScale.x/0.2f)
+                {
+                    col.gameObject.GetComponent<SkullController>().Kill();
+                    tx.GetComponent<TextMeshPro>().text = "Perfect";
+                    Destroy(tx, 1);
                     return;
                 }
                 //Meh hit
                 else
                 {
                     col.gameObject.GetComponent<SkullController>().BadHit();
+                    tx.GetComponent<TextMeshPro>().text = "Good";
+                    Destroy(tx, 1);
                     return;
                 }
             }
         }
-        //Hit there is smth, check distance for perfect or good hit.
+        //Check there is smth, check distance for perfect or good hit.
+    }
+
+    GameObject SpawnFeedback(GameObject obj)
+    {
+        GameObject temp = Instantiate(new GameObject(), obj.transform.position, Quaternion.identity);
+        temp.AddComponent<TextMeshPro>();
+        return temp;
     }
 }

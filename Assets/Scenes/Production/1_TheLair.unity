@@ -943,6 +943,11 @@ Transform:
   m_Father: {fileID: 3615865191470378708}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &537016241 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8094783992697405465, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
+  m_PrefabInstance: {fileID: 1962407979}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &541984466
 GameObject:
   m_ObjectHideFlags: 0
@@ -1121,11 +1126,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 550803061}
   m_CullTransparentMesh: 1
---- !u!1 &638800682 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 509309130320118770, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
-  m_PrefabInstance: {fileID: 1962407979}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &727733501
 GameObject:
   m_ObjectHideFlags: 0
@@ -1572,6 +1572,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3702850953895804210, guid: 044178dd346668d49946ca50d8299ffb, type: 3}
+      propertyPath: cheat_SkipBossPhase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3702850953895804210, guid: 044178dd346668d49946ca50d8299ffb, type: 3}
       propertyPath: cheat_FastForwardDialogue
       value: 1
       objectReference: {fileID: 0}
@@ -1942,11 +1946,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &948923841 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8094783992697405465, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
-  m_PrefabInstance: {fileID: 1962407979}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1096807321
 GameObject:
   m_ObjectHideFlags: 0
@@ -3738,11 +3737,11 @@ PrefabInstance:
     - target: {fileID: 509309130409614554, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: beatObjects.Array.data[0].obj
       value: 
-      objectReference: {fileID: 948923841}
+      objectReference: {fileID: 2089287090}
     - target: {fileID: 509309130409614554, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: beatObjects.Array.data[1].obj
       value: 
-      objectReference: {fileID: 638800682}
+      objectReference: {fileID: 537016241}
     - target: {fileID: 509309130409614557, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -4185,8 +4184,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
   m_PivotOffset: {x: 0, y: 0, z: 0}
-  m_AmplitudeGain: 1
-  m_FrequencyGain: 1
+  m_AmplitudeGain: 0
+  m_FrequencyGain: 0
   mNoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!114 &2002066974
 MonoBehaviour:
@@ -4547,6 +4546,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &2089287090 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 509309130320118770, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
+  m_PrefabInstance: {fileID: 1962407979}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2093774091
 GameObject:
   m_ObjectHideFlags: 0
@@ -5827,7 +5831,7 @@ MonoBehaviour:
   roundEndDialogues: []
   dialogueDelay: 1.1
   phase_QTEs:
-  - {fileID: 11400000, guid: bbfd62af9cfd19b4b94847ae0d5f913c, type: 2}
+  - {fileID: 11400000, guid: da30cc44ffddd3a4cb2f99f0b522a5dd, type: 2}
   overHeadAnimationDelay: 0
   straightAnimationDelay: 0
   camCenter: {fileID: 754989060}
