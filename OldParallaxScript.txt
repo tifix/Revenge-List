@@ -9,11 +9,10 @@ using Unity.VisualScripting;
  * 
  */
 
-public class parallax : MonoBehaviour
+public class pl : MonoBehaviour
 {
     public float intensity;
     public GameObject playerTrack;
-    [SerializeField] Vector3 originPosition;
     public CinemachineVirtualCamera cam;
     [SerializeField] Vector3 camPosMemory;
 

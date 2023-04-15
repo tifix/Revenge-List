@@ -229,8 +229,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f78fc63bab133ea44ab21b8a7f2c1883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zDepthMax: 8
   damage: 25
   isShakingCameraOnHit: 0
+  imOverHead: 0
   dir: {x: 0, y: -1, z: 0}
   destroyVFX: {fileID: 8083233970450910706, guid: d454ee8b73a9607428fe332e218baa54, type: 3}
 --- !u!65 &3664027229894171687
