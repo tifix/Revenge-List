@@ -483,7 +483,8 @@ public class UI : MonoBehaviour
         PlayerCombat.instance.gameObject.GetComponent<Animator>().SetBool("isAttacking", false);    //Interupting attack combos- M
         RevengeList.SetActive(!RevengeList.activeInHierarchy);
         AudioManager.instance.PlaySFX("UnrollList");
-        GameManager.instance.SetPause(RevengeList.activeInHierarchy);
+        //GameManager.instance.SetPause(RevengeList.activeInHierarchy);
+        PlayerMovement.instance.SetConditionalLock(RevengeList.activeInHierarchy);
     }
     public void SetSpriteXLLilith(Sprite s) { XLPortraitLilith.gameObject.SetActive(true); XLPortraitLilith.sprite = s; }
     public void SetSpriteXLOther(Sprite s) { XLPortraitOther.gameObject.SetActive(true); XLPortraitOther.sprite = s; }

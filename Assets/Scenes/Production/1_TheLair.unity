@@ -1579,6 +1579,17 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 1100812460807905419, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
   m_PrefabInstance: {fileID: 801255018}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &828608215 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8966028112275244301, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
+  m_PrefabInstance: {fileID: 1962407979}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a54a794f812e043bd863eb667f13c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &833656597
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1593,7 +1604,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3702850953895804210, guid: 044178dd346668d49946ca50d8299ffb, type: 3}
       propertyPath: cheat_FastForwardDialogue
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3702850953895804211, guid: 044178dd346668d49946ca50d8299ffb, type: 3}
       propertyPath: m_RootOrder
@@ -1921,7 +1932,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897402303}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: -8.890681, y: 20.066225, z: -43.300526}
+  m_LocalPosition: {x: -8.890762, y: 20.066225, z: -43.300526}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2375,7 +2386,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162723989}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: -8.890681, y: 20.066225, z: -43.300526}
+  m_LocalPosition: {x: -8.890762, y: 20.066225, z: -43.300526}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3587,11 +3598,6 @@ Transform:
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 3395993811860920320, guid: 140465e8217c6d347a5bc5c7e0cd1573, type: 3}
   m_PrefabInstance: {fileID: 259458312}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1877665440 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3665701568203247820, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
-  m_PrefabInstance: {fileID: 1962407979}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1913627759
 GameObject:
@@ -5409,10 +5415,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1877665440}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 828608215}
+        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+        m_MethodName: ToggleRevengeList
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5434,9 +5440,9 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   PromptCanvas: {fileID: 0}
-  isPausedWhileShowingA: 0
+  isPausedWhileShowingA: 1
   preUseDialogue: {fileID: 11400000, guid: 5f6d223fcd9aa0947855da606c90d064, type: 2}
-  waitAfterPreDialogue: 0.1
+  waitAfterPreDialogue: 0.01
   waitAfterInteract: 0
 --- !u!1 &4814028221092203615
 GameObject:
