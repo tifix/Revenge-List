@@ -19,7 +19,6 @@ public class QTEManager : MonoBehaviour
     int beatProgress;
     int correctHits;
 
-    [SerializeField] private Sprite skullPerfect, skullMiss;
     public GameObject skullPrefab;
     public GameObject skullVFX;
     public GameObject BeatUI;
@@ -200,7 +199,7 @@ public class QTEManager : MonoBehaviour
                         Instantiate<GameObject>(skullVFX, _skulls[i].transform.position, Quaternion.identity);
                         Debug.Log("perfect");
                         AudioManager.instance.PlaySFX("qteHit");
-                        _skulls[i].gameObject.GetComponentInChildren<Animator>().SetTrigger("Perfect");  //GetComponentInChildren<SpriteRenderer>().sprite = skullPerfect;
+                        _skulls[i].gameObject.GetComponentInChildren<Animator>().SetTrigger("Perfect");  
                         Destroy(_skulls[i].gameObject,0.2f);
                         _skulls.RemoveAt(i);
                         beatObjects.RemoveAt(i + beatOffset);

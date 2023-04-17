@@ -23,9 +23,11 @@ public class GameManager : MonoBehaviour
 
     [Header("Cheats")]
     [Tooltip("enable to warp to Karl arena")] [SerializeField] bool cheat_WarpToKarl = false;
+    [Tooltip("enable to warp to Karl arena")] [SerializeField] bool cheat_WarpToMicrowave = false;
     [Tooltip("enable to instantly complete a boss phase")] public bool cheat_SkipBossPhase = false;
     [Tooltip("fast forward to when Karl is defeated")] public bool cheat_SkipToOutro = false;
     [Tooltip("enable to skip every dialogue encountered")] public bool cheat_FastForwardDialogue = false;
+    [Tooltip("adjust game speed to analyse details... in detail"),Range(0,2f)] public float cheat_TimeScale = 1;
     //[Tooltip("enable to instantly kill Karl. :(")] public bool cheat_KillBoss = false;
     [Tooltip("enable to stop taking damage")] public bool cheat_GodMode = false;
     [Tooltip("enable to make QTEs impossible to lose")] public bool cheat_QTEAlwaysWin = false;
@@ -63,6 +65,8 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         if (cheat_WarpToKarl) { PlayerMovement.instance.gameObject.transform.position = new Vector3(12.7f, 1.6f, -5.2f); cheat_WarpToKarl = false; }
+        if (cheat_WarpToMicrowave) { PlayerMovement.instance.gameObject.transform.position = new Vector3(6, 2, -0.13f); cheat_WarpToMicrowave = false; }
+        if (cheat_TimeScale!=1) { Time.timeScale = cheat_TimeScale; }
         if (cheat_SkipToOutro) 
         {
             GameObject.Find("Boss").transform.GetChild(1).gameObject.SetActive(true);
