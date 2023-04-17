@@ -8,7 +8,8 @@ public class QTEMovement : MonoBehaviour
 {
     Controls input;
 
-    public GameObject up, down, left, right, fbck;
+    public GameObject up, down, left, right;
+    public GameObject perfect, good, bad;
 
     public float perfectMin, badMin;
 
@@ -76,24 +77,24 @@ public class QTEMovement : MonoBehaviour
                 if (Vector2.Distance(obj.transform.position, col.transform.position) >= badMin)
                 {
                     col.gameObject.GetComponent<SkullController>().BadHit();
-                    GameObject temp = Instantiate(fbck, obj.transform.parent);
-                    temp.GetComponent<TMP_Text>().text = "Bad";
+                    GameObject temp = Instantiate(bad, obj.transform.parent);
+                    temp.transform.localScale = new Vector3(40, 40, 40);
                     return;
                 }
                 //Good hit
                 else if (Vector2.Distance(obj.transform.position,col.transform.position) < perfectMin)
                 {
                     col.gameObject.GetComponent<SkullController>().Kill();
-                    GameObject temp = Instantiate(fbck, obj.transform.parent);
-                    temp.GetComponent<TMP_Text>().text = "Perfect";
+                    GameObject temp = Instantiate(perfect, obj.transform.parent);
+                    temp.transform.localScale = new Vector3(40, 40, 40);
                     return;
                 }
                 //Meh hit
                 else
                 {
                     col.gameObject.GetComponent<SkullController>().BadHit();
-                    GameObject temp = Instantiate(fbck, obj.transform.parent);
-                    temp.GetComponent<TMP_Text>().text = "Good";
+                    GameObject temp = Instantiate(good, obj.transform.parent);
+                    temp.transform.localScale = new Vector3(40, 40, 40);
                     return;
                 }
             }

@@ -814,10 +814,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 8594872308605828382}
   - {fileID: 5275645539075210766}
   - {fileID: 8594872308723275363}
   - {fileID: 8594872308582212104}
-  - {fileID: 8594872308605828382}
   - {fileID: 824067891}
   - {fileID: 8594872308982154456}
   - {fileID: 8305667241361108923}
@@ -933,7 +933,9 @@ MonoBehaviour:
   down: {fileID: 5037445944673373158}
   left: {fileID: 4616211037664333041}
   right: {fileID: 3566826969114671262}
-  fbck: {fileID: 2846273570318322822, guid: 6c1c39cad0161b942bb88fb71fd700bf, type: 3}
+  perfect: {fileID: 5339739117810204693, guid: a411299e757ceaa4b9bb8d3f3c03fa45, type: 3}
+  good: {fileID: 119183615461286708, guid: 1eb35e2566ad6d24ea4541f3fb740b1e, type: 3}
+  bad: {fileID: 8433079331162208932, guid: 6242397e6c943d4438a0c3c482176f74, type: 3}
   perfectMin: 0.3
   badMin: 1
 --- !u!1 &8594872307667226924
@@ -1143,7 +1145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.85882354}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.34901962}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
