@@ -1146,7 +1146,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 33.8
+  m_fontSize: 29.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1281,7 +1281,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32.95
+  m_fontSize: 28.3
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1601,7 +1601,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.4
+  m_fontSize: 36.5
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4121,7 +4121,7 @@ PrefabInstance:
     - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
       propertyPath: MenuClick
       value: 
-      objectReference: {fileID: 8300000, guid: 1bf88ef18f748a04ba7669c7f3a26924, type: 3}
+      objectReference: {fileID: 8300000, guid: 637195b54182391448c78979467236cf, type: 3}
     - target: {fileID: 8476623665672524406, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
       propertyPath: m_Name
       value: AudioManager

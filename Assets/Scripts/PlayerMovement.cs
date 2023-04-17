@@ -159,6 +159,12 @@ public class PlayerMovement : MonoBehaviour
         movement.Disable();
     }
 
+    public void SetConditionalLock(bool b)
+    {
+        if (b) SetLockMovement();
+        else SetUnLockMovement();
+    }
+
     public void SetLockMovement() { isMovementLocked = true; movement.Disable(); input.Ground.Disable(); PlayerCombat.instance.DisableAttack(); }   //Globally accessible movement locks
     public void SetUnLockMovement() { isMovementLocked = false; movement.Enable(); input.Ground.Enable(); PlayerCombat.instance.EnableAttack(); GetComponent<Collider>().enabled = true; }
     public void PauseMovement() { isMovementLocked = true; }//PlayerCombat.instance.DisableAttack();
