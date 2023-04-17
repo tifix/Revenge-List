@@ -248,7 +248,7 @@ MonoBehaviour:
   isShakingCameraOnHit: 1
   imOverHead: 1
   dir: {x: 0, y: -1, z: 0}
-  destroyVFX: {fileID: 725748389856807714, guid: 4bda94453d2ca7444a0fff05b2d425f5, type: 3}
+  destroyVFX: {fileID: 725748389856807714, guid: 36c82900eae962849ae2a73d4ea0dfbf, type: 3}
 --- !u!65 &6450113446644680082
 BoxCollider:
   m_ObjectHideFlags: 0
