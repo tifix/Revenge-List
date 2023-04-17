@@ -5,6 +5,7 @@ using UnityEngine;
 public class TutorialBoss : BossClass
 {
     public GameObject shield;
+    public GameObject vulnerableIndicator;
 
     public GameObject afterFirstAttackDialoguePrompt;
     public GameObject afterSecondAttackDialoguePrompt;
@@ -157,6 +158,7 @@ public class TutorialBoss : BossClass
         afterFourthAttackDialoguePrompt.SetActive(true);
         GetComponent<bossHealth>().canTakeDamage = true;
         shield.SetActive(false);
+        vulnerableIndicator.SetActive(true);
     }
 
     IEnumerator FourthAttack()
