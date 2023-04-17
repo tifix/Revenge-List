@@ -3950,11 +3950,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897402303}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-<<<<<<< Updated upstream
   m_LocalPosition: {x: -23.460674, y: 20.066225, z: -43.080524}
-=======
-  m_LocalPosition: {x: -23.442701, y: 19.65276, z: -43.231014}
->>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4352,10 +4348,6 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 626a48eb4e143814b809269a8f7017d6, type: 2}
-    - target: {fileID: 4814028220940031641, guid: 90dde8105e9ba9141875eb0b44aa895c, type: 3}
-      propertyPath: PromptCanvas
-      value: 
-      objectReference: {fileID: 1826950276}
     - target: {fileID: 4814028220940031641, guid: 90dde8105e9ba9141875eb0b44aa895c, type: 3}
       propertyPath: uponInteractionDo.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
@@ -5076,11 +5068,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162723989}
   m_LocalRotation: {x: 0.17364816, y: -0, z: -0, w: 0.9848078}
-<<<<<<< Updated upstream
   m_LocalPosition: {x: -23.460674, y: 20.066225, z: -43.080524}
-=======
-  m_LocalPosition: {x: -23.442701, y: 19.65276, z: -43.231014}
->>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6514,18 +6502,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 833656598}
-    - target: {fileID: 1882817614, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1882817614, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1882817614, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 509309130409614552, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_Camera
       value: 
@@ -6626,10 +6602,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1162723990}
-    - target: {fileID: 8966028112275244303, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 9210855763754378973, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_Camera
       value: 
@@ -7868,16 +7840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43a54a794f812e043bd863eb667f13c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
 --- !u!1 &1889102407
-=======
---- !u!223 &1826950276 stripped
-Canvas:
-  m_CorrespondingSourceObject: {fileID: 8966028112275244296, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
-  m_PrefabInstance: {fileID: 1609018075}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1873660049
->>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

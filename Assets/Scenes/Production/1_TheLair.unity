@@ -1563,17 +1563,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-<<<<<<< Updated upstream
-=======
-    - target: {fileID: 3702850953895804210, guid: 044178dd346668d49946ca50d8299ffb, type: 3}
-      propertyPath: cheat_SkipBossPhase
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3702850953895804210, guid: 044178dd346668d49946ca50d8299ffb, type: 3}
-      propertyPath: cheat_FastForwardDialogue
-      value: 0
-      objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 3702850953895804211, guid: 044178dd346668d49946ca50d8299ffb, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1900,11 +1889,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897402303}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-<<<<<<< Updated upstream
   m_LocalPosition: {x: -8.872694, y: 19.65276, z: -43.451015}
-=======
-  m_LocalPosition: {x: -8.890694, y: 20.066225, z: -43.300526}
->>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2358,11 +2343,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162723989}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-<<<<<<< Updated upstream
   m_LocalPosition: {x: -8.872694, y: 19.65276, z: -43.451015}
-=======
-  m_LocalPosition: {x: -8.890694, y: 20.066225, z: -43.300526}
->>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
