@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3563482827816063170}
+  - component: {fileID: -3326932699372086341}
+  - component: {fileID: -5527396725365289648}
   m_Layer: 0
   m_Name: ElectricWall
   m_TagString: Untagged
@@ -37,6 +39,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-3326932699372086341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671061524966253686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f78fc63bab133ea44ab21b8a7f2c1883, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zDepthMax: 10
+  damage: 10
+  isShakingCameraOnHit: 0
+  imOverHead: 0
+  dir: {x: -1, y: 0, z: 0}
+  destroyVFX: {fileID: 8083233970450910706, guid: d454ee8b73a9607428fe332e218baa54, type: 3}
+--- !u!65 &-5527396725365289648
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671061524966253686}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.49973536, y: 0.6110236, z: 50}
+  m_Center: {x: -0.46013224, y: 0, z: 0}
 --- !u!1001 &399990556182374991
 PrefabInstance:
   m_ObjectHideFlags: 0
