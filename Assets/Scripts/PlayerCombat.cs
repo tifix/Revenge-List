@@ -65,7 +65,6 @@ public class PlayerCombat : ObjectScript
             {
                 GetComponent<Animator>().SetBool("isAttacking", false);
                 PlayerMovement.instance.UnPauseMovement();
-                Debug.LogWarning("Attack Chain broken! "+ (Time.time - attackLastTimestamp).ToString()+"s from "+ attackLastTimestamp);
             }
             
         }
@@ -98,10 +97,8 @@ public class PlayerCombat : ObjectScript
         {
             hasAttacked = true;
             attackLastTimestamp = Time.time;
-            Debug.LogWarning("Timestamp set! " + attackLastTimestamp);
             GetComponent<Animator>().SetBool("isAttacking", true);
             PlayerMovement.instance.PauseMovement();
-            //StartCoroutine(AttackAnimationChaining());
 
             // Detect enemies in range
             Collider[] hitEnemies = Physics.OverlapSphere(attackOrg.position, attackRange, enemyLayers);
@@ -133,10 +130,8 @@ public class PlayerCombat : ObjectScript
         {
             hasAttacked = true;
             attackLastTimestamp = Time.time;
-            Debug.LogWarning("Timestamp set! " + attackLastTimestamp);
             GetComponent<Animator>().SetBool("isAttacking", true);
             PlayerMovement.instance.PauseMovement();
-            //StartCoroutine(AttackAnimationChaining());
 
             // Detect enemies in range
             Collider[] hitEnemies = Physics.OverlapSphere(attackOrg.position, attackRange, enemyLayers);
