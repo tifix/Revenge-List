@@ -933,7 +933,7 @@ MonoBehaviour:
   down: {fileID: 5037445944673373158}
   left: {fileID: 4616211037664333041}
   right: {fileID: 3566826969114671262}
-  fbck: {fileID: 0}
+  fbck: {fileID: 2846273570318322822, guid: 6c1c39cad0161b942bb88fb71fd700bf, type: 3}
   perfectMin: 0.3
   badMin: 1
 --- !u!1 &8594872307667226924
@@ -1312,7 +1312,7 @@ RectTransform:
   m_GameObject: {fileID: 8594872308982154457}
   m_LocalRotation: {x: -0, y: -0, z: 1, w: -0.0000005811455}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2266498786259866250}
@@ -1481,8 +1481,6 @@ MonoBehaviour:
   currentMap: {fileID: 0}
   playQTE: 0
   healthQTE: 3
-  skullPerfect: {fileID: 0}
-  skullMiss: {fileID: 0}
   skullPrefab: {fileID: 1877277126013219022, guid: 3c851864ee85a9149af80144f605ebd2, type: 3}
   skullVFX: {fileID: 8083233970450910706, guid: d0db28c32d0b48448a3d53c23bc37c07, type: 3}
   BeatUI: {fileID: 8594872308723275364}

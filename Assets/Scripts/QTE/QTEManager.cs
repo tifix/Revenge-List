@@ -41,6 +41,7 @@ public class QTEManager : MonoBehaviour
 
     float spawnRate = 0.5f;
     int beatOffset = 0;
+    bool isFinishingQTE=false;    //qte outro is invoked multiple times, leading to issues. THis assures no multiple instances are run in parallel
 
     [System.Serializable]
     public struct BeatItem
@@ -157,9 +158,16 @@ public class QTEManager : MonoBehaviour
                 //Wait until no more skulls
                 if(_skulls.Count<=0)
                 {
-                    beatTimer = Time.time - 0.5f; 
-                    Debug.Log("skull track finished");
-                    Invoke("QTEEnd", 0.5f);
+                    if (!isFinishingQTE) 
+                    { 
+                        isFinishingQTE = true;
+                        beatTimer = Time.time - 0.5f;
+                        Debug.Log("skull track finished");
+                        Invoke("QTEEnd", 0.5f);
+                        //QTEEnd();
+                    }
+                    else { }
+
                 }
             }
 
@@ -230,14 +238,14 @@ public class QTEManager : MonoBehaviour
     {
         Beats currentBeat = currentMap.beats[beatProgress].myBeat;
         switch (currentBeat) 
-        {
-            case Beats.Up: _skulls.Add(Instantiate<GameObject>(skullPrefab, up.position, up.rotation, transform).GetComponent<SkullController>());
+        {   
+            case Beats.Up: _skulls.Add(Instantiate<GameObject>(skullPrefab, up.position, up.rotation, transform.GetChild(0)).GetComponent<SkullController>());              //Set skull parent to QTE child, so leftover skulls will be hidden along with the QTE UI -M
                 break;
-            case Beats.Down: _skulls.Add(Instantiate<GameObject>(skullPrefab, down.position, down.rotation, transform).GetComponent<SkullController>());
+            case Beats.Down: _skulls.Add(Instantiate<GameObject>(skullPrefab, down.position, down.rotation, transform.GetChild(0)).GetComponent<SkullController>());
                 break;
-            case Beats.Left: _skulls.Add(Instantiate<GameObject>(skullPrefab, left.position, left.rotation, transform).GetComponent<SkullController>());
+            case Beats.Left: _skulls.Add(Instantiate<GameObject>(skullPrefab, left.position, left.rotation, transform.GetChild(0)).GetComponent<SkullController>());
                 break;
-            case Beats.Right: _skulls.Add(Instantiate<GameObject>(skullPrefab, right.position, right.rotation, transform).GetComponent<SkullController>());
+            case Beats.Right: _skulls.Add(Instantiate<GameObject>(skullPrefab, right.position, right.rotation, transform.GetChild(0)).GetComponent<SkullController>());
                 break;
             default: return;
         }       
@@ -310,6 +318,7 @@ public class QTEManager : MonoBehaviour
             _skulls.RemoveAt(i);
             beatObjects.RemoveAt(i + beatOffset);
         }
+        isFinishingQTE = false; // - resetting the single outro checker for the next phase
     }
 
     //Change the current beat map
@@ -334,7 +343,8 @@ public class QTEManager : MonoBehaviour
         Vector3 finalScale = obj.GetDoubleScale();
         for (float i = 0; i <= 1; i += Time.fixedDeltaTime / rate)
         {
-            obj.GetObj().transform.localScale = Vector3.Slerp(obj.GetObj().transform.localScale, finalScale, rate);
+            try { obj.GetObj().transform.localScale = Vector3.Slerp(obj.GetObj().transform.localScale, finalScale, rate); }
+            catch { Debug.LogWarning("Pulsing object would continue pulsing past it's death"); }            
             yield return null;
         }
         StartCoroutine(EndPulseObject(obj, rate));
@@ -346,7 +356,11 @@ public class QTEManager : MonoBehaviour
         Vector3 finalScale = obj.GetScale();
         for (float i = 0; i <= 1; i += Time.fixedDeltaTime / rate)
         {
-            obj.GetObj().transform.localScale = Vector3.Slerp(obj.GetObj().transform.localScale, finalScale, rate);
+            try 
+            {
+                obj.GetObj().transform.localScale = Vector3.Slerp(obj.GetObj().transform.localScale, finalScale, rate);
+            }
+            catch { Debug.Log("Skull expired"); }
             yield return null;
         }
     }
