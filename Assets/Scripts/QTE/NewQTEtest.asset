@@ -43,8 +43,5 @@ MonoBehaviour:
   - timing: 30
     myBeat: 3
     speed: 2
-  - timing: 30
-    myBeat: 0
-    speed: 2
   beatsForWin: 5
   song: {fileID: 8300000, guid: 01710705e87113b4381c2e9c1eda61dd, type: 3}
