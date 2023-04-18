@@ -15,6 +15,9 @@ public class QTEMovement : MonoBehaviour
 
     public float perfectMin, badMin;
 
+    public float coolDown = 0.1f;
+    float lastPress = 0;
+
     void Awake()
     {
         if (instance == null) instance = this;
@@ -48,26 +51,31 @@ public class QTEMovement : MonoBehaviour
 
     void Up(InputAction.CallbackContext obj)
     {
-        BeatCheck(up);
+        if(Time.time >= lastPress + coolDown)
+            BeatCheck(up);
     }
 
     void Down(InputAction.CallbackContext obj)
     {
-        BeatCheck(down);
+        if (Time.time >= lastPress + coolDown)
+            BeatCheck(down);
     }
 
     void Left(InputAction.CallbackContext obj)
     {
-        BeatCheck(left);
+        if (Time.time >= lastPress + coolDown)
+            BeatCheck(left);
     }
 
     void Right(InputAction.CallbackContext obj)
     {
-        BeatCheck(right);
+        if (Time.time >= lastPress + coolDown)
+            BeatCheck(right);
     }
 
     void BeatCheck(GameObject obj)
     {
+        lastPress = Time.time;
         //Trigger anim for obj
         obj.GetComponent<Animator>().SetTrigger("Scale");
 
@@ -100,11 +108,25 @@ public class QTEMovement : MonoBehaviour
                 //Meh hit
                 else
                 {
-                    col.gameObject.GetComponent<SkullController>().BadHit();
+                    col.gameObject.GetComponent<SkullController>().Kill();
                     GameObject temp = Instantiate(good, obj.transform.parent);
                     temp.transform.localScale = new Vector3(40, 40, 40);
                     return;
                 }
+            }
+        }
+        //Nothing inside, check if hit too early/late
+        cols = new List<Collider2D>();
+        obj.transform.GetChild(0).GetComponent<BoxCollider2D>().OverlapCollider(new ContactFilter2D().NoFilter(), cols);
+        foreach (Collider2D col in cols)
+        {
+            //If there is a skull
+            if (col.CompareTag("Skull"))
+            {
+                col.gameObject.GetComponent<SkullController>().BadHit();
+                GameObject temp = Instantiate(bad, obj.transform.parent);
+                temp.transform.localScale = new Vector3(40, 40, 40);
+                return;
             }
         }
         //Check there is smth, check distance for perfect or good hit.
