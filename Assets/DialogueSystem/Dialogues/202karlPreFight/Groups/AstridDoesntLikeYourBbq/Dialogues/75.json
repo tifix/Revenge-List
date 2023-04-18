@@ -2,8 +2,8 @@
     "DialogueName": "75",
     "nodeID": "",
     "SpeakerName": "Astrid",
-    "Text": "Karl, älskling…",
-    "SpritePath": "Insert Sprite Path Here.",
+    "Text": "Karl, sockerbulle…",
+    "SpritePath": "Therapist_",
     "Choices": [
         {
             "Text": "Next Dialogue",

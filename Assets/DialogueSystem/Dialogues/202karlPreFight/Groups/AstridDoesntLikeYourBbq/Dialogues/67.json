@@ -3,7 +3,7 @@
     "nodeID": "",
     "SpeakerName": "Astrid",
     "Text": "…",
-    "SpritePath": "Insert Sprite Path Here.",
+    "SpritePath": "Therapist_",
     "Choices": [
         {
             "Text": "Next Dialogue",
