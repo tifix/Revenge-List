@@ -5582,6 +5582,7 @@ GameObject:
   - component: {fileID: 4814028220154755166}
   - component: {fileID: 4814028220154755164}
   - component: {fileID: 4814028220154755161}
+  - component: {fileID: 4814028220154755167}
   m_Layer: 7
   m_Name: Trigger_TutorialBossAutoDialogue
   m_TagString: Untagged
@@ -5670,7 +5671,7 @@ BoxCollider:
   m_GameObject: {fileID: 4814028220154755154}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1.583225, y: 4.2550726, z: 298.43372}
   m_Center: {x: -0.2940348, y: 0.677464, z: 46.73875}
@@ -5690,6 +5691,19 @@ Transform:
   m_Father: {fileID: 1503863653}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4814028220154755167
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4814028220154755154}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.583225, y: 4.2550726, z: 298.43372}
+  m_Center: {x: -0.02, y: 0.677464, z: 46.73875}
 --- !u!65 &4814028221092203601
 BoxCollider:
   m_ObjectHideFlags: 0

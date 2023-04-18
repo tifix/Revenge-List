@@ -119,6 +119,7 @@ public class TutorialBoss : BossClass
     IEnumerator FirstAttack()
     {
         player.SetLockMovement();
+        StartCoroutine(base.Woosh(1f));
         yield return new WaitForSeconds(1f);
         base.Attack(phases[currentPhase].attacks[0], 0);
         yield return new WaitForSeconds(2f);
