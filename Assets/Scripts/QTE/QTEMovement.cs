@@ -6,12 +6,20 @@ using TMPro;
 
 public class QTEMovement : MonoBehaviour
 {
+    public static QTEMovement instance;
+
     Controls input;
 
     public GameObject up, down, left, right;
     public GameObject perfect, good, bad;
 
     public float perfectMin, badMin;
+
+    void Awake()
+    {
+        if (instance == null) instance = this;
+        else Destroy(this);
+    }
 
     // Start is called before the first frame update
     void OnEnable()
@@ -100,5 +108,11 @@ public class QTEMovement : MonoBehaviour
             }
         }
         //Check there is smth, check distance for perfect or good hit.
+    }
+
+    public void SpawnBadFeedback()
+    {
+        GameObject temp = Instantiate(bad, transform.parent);
+        temp.transform.localScale = new Vector3(40, 40, 40);
     }
 }

@@ -8,6 +8,7 @@ public class BossProjectile : MonoBehaviour
     float timeAlive = 5;
     float t = 0;
     [SerializeField] float zDepthMax = 8;
+    [SerializeField] float xTravelMax = -12;
     [Range(1,50),SerializeField]float damage = 8;
     [SerializeField]bool isShakingCameraOnHit = false;
     [SerializeField] bool imOverHead = false;
@@ -19,7 +20,7 @@ public class BossProjectile : MonoBehaviour
     {
         t += Time.deltaTime;
 
-        if(t>timeAlive || transform.position.z >= zDepthMax)
+        if(t>timeAlive || transform.position.z >= zDepthMax || transform.localPosition.x <= xTravelMax)
         {
             Instantiate<GameObject>(destroyVFX, transform.position, Quaternion.identity);   //despawning after time expires
             Destroy(gameObject);
