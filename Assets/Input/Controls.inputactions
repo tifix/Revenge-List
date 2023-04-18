@@ -40,15 +40,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "KillSelf",
-                    "type": "Button",
-                    "id": "ad580bff-114a-47e2-b6be-b24b65b212a2",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -67,17 +58,6 @@
                     "name": "",
                     "id": "e1805e52-d3fe-42ba-acce-a2f059400fda",
                     "path": "<Gamepad>/buttonWest",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Attack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "f7144cd1-f987-4abb-9b24-afcafc8a597a",
-                    "path": "<Keyboard>/j",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -186,19 +166,19 @@
                 },
                 {
                     "name": "",
-                    "id": "33f79ddb-b640-4567-8322-f0e61ece8b18",
-                    "path": "<Keyboard>/k",
+                    "id": "ec5dd4e7-4b28-42ae-9fdb-32cdba7bb2c6",
+                    "path": "<Keyboard>/shift",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "KillSelf",
+                    "action": "Dash",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "ec5dd4e7-4b28-42ae-9fdb-32cdba7bb2c6",
-                    "path": "<Keyboard>/shift",
+                    "id": "331c0572-bc1c-48ae-8142-6fb583e17855",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

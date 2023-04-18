@@ -62,15 +62,6 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""KillSelf"",
-                    ""type"": ""Button"",
-                    ""id"": ""ad580bff-114a-47e2-b6be-b24b65b212a2"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -89,17 +80,6 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""e1805e52-d3fe-42ba-acce-a2f059400fda"",
                     ""path"": ""<Gamepad>/buttonWest"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Attack"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""f7144cd1-f987-4abb-9b24-afcafc8a597a"",
-                    ""path"": ""<Keyboard>/j"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -208,19 +188,19 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""33f79ddb-b640-4567-8322-f0e61ece8b18"",
-                    ""path"": ""<Keyboard>/k"",
+                    ""id"": ""ec5dd4e7-4b28-42ae-9fdb-32cdba7bb2c6"",
+                    ""path"": ""<Keyboard>/shift"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""KillSelf"",
+                    ""action"": ""Dash"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""ec5dd4e7-4b28-42ae-9fdb-32cdba7bb2c6"",
-                    ""path"": ""<Keyboard>/shift"",
+                    ""id"": ""331c0572-bc1c-48ae-8142-6fb583e17855"",
+                    ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -560,7 +540,6 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         m_Ground_Attack = m_Ground.FindAction("Attack", throwIfNotFound: true);
         m_Ground_Dash = m_Ground.FindAction("Dash", throwIfNotFound: true);
         m_Ground_Interact = m_Ground.FindAction("Interact", throwIfNotFound: true);
-        m_Ground_KillSelf = m_Ground.FindAction("KillSelf", throwIfNotFound: true);
         // Menu
         m_Menu = asset.FindActionMap("Menu", throwIfNotFound: true);
         m_Menu_Pause = m_Menu.FindAction("Pause", throwIfNotFound: true);
@@ -635,7 +614,6 @@ public partial class @Controls : IInputActionCollection2, IDisposable
     private readonly InputAction m_Ground_Attack;
     private readonly InputAction m_Ground_Dash;
     private readonly InputAction m_Ground_Interact;
-    private readonly InputAction m_Ground_KillSelf;
     public struct GroundActions
     {
         private @Controls m_Wrapper;
@@ -644,7 +622,6 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         public InputAction @Attack => m_Wrapper.m_Ground_Attack;
         public InputAction @Dash => m_Wrapper.m_Ground_Dash;
         public InputAction @Interact => m_Wrapper.m_Ground_Interact;
-        public InputAction @KillSelf => m_Wrapper.m_Ground_KillSelf;
         public InputActionMap Get() { return m_Wrapper.m_Ground; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -666,9 +643,6 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @Interact.started -= m_Wrapper.m_GroundActionsCallbackInterface.OnInteract;
                 @Interact.performed -= m_Wrapper.m_GroundActionsCallbackInterface.OnInteract;
                 @Interact.canceled -= m_Wrapper.m_GroundActionsCallbackInterface.OnInteract;
-                @KillSelf.started -= m_Wrapper.m_GroundActionsCallbackInterface.OnKillSelf;
-                @KillSelf.performed -= m_Wrapper.m_GroundActionsCallbackInterface.OnKillSelf;
-                @KillSelf.canceled -= m_Wrapper.m_GroundActionsCallbackInterface.OnKillSelf;
             }
             m_Wrapper.m_GroundActionsCallbackInterface = instance;
             if (instance != null)
@@ -685,9 +659,6 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @Interact.started += instance.OnInteract;
                 @Interact.performed += instance.OnInteract;
                 @Interact.canceled += instance.OnInteract;
-                @KillSelf.started += instance.OnKillSelf;
-                @KillSelf.performed += instance.OnKillSelf;
-                @KillSelf.canceled += instance.OnKillSelf;
             }
         }
     }
@@ -804,7 +775,6 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         void OnAttack(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
-        void OnKillSelf(InputAction.CallbackContext context);
     }
     public interface IMenuActions
     {

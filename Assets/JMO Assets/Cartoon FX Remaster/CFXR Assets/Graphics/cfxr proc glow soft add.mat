@@ -42,7 +42,7 @@ Material:
     - _CFXR_DITHERED_SHADOWS: 0
     - _CFXR_GLOW_POW: 0
     - _DissolveSmooth: 0.1
-    - _DstBlend: 1
+    - _DstBlend: 10
     - _GlowMax: 0.5
     - _GlowMid: 2
     - _GlowMin: 0

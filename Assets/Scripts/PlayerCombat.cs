@@ -44,9 +44,6 @@ public class PlayerCombat : ObjectScript
         input.Ground.Attack.started += Attack;
         input.Ground.Attack.Enable();
 
-        input.Ground.KillSelf.performed += KillSelf;
-        input.Ground.KillSelf.Enable();
-
         hasAttacked = false;
     }
 
@@ -195,11 +192,6 @@ public class PlayerCombat : ObjectScript
             Debug.Log("Enemy hit: " + enemy.name);
             if (enemy.TryGetComponent<ObjectScript>(out ObjectScript OS)) OS.ApplyDamage(10.0f);     //Fixed error where kicking boss proectiles crashed the game -MC
         }
-    }
-
-    void KillSelf(InputAction.CallbackContext obj)
-    {
-        this.ApplyDamage(maxHealth);
     }
 
     private void OnDestroy()    //Disabling attack input when exiting to menu
