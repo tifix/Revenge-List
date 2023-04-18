@@ -17,52 +17,56 @@ using UnityEngine.Audio;
 
 public class UI : MonoBehaviour
 {
-    Controls input;
-    [SerializeField] Animator anim;
-    public static UI instance;                                                                      //globally accessible reference to this script to remotely invoke it's public methods
-    [Tooltip("Drop Dialogue Data here to be displayed")] public DSGraphSaveDataSO dialogueCur;      //Dialogue data to be displayed
-
-    //
+                            Controls    input;
+    [SerializeField]        Animator    anim;
+                    public static UI    instance;                                   //globally accessible reference to this script to remotely invoke it's public methods
+    [Tooltip("Drop Dialogue Data here to be displayed")]                            //Dialogue data to be displayed
+            public  DSGraphSaveDataSO   dialogueCur;
+    /////////////////////////
     [Space, Header("Dialogue Typing settings")]
-    //
-    public bool runCoroutine;                                                                                   //is the typer coroutine suspended?                                          
-    [SerializeField] private bool isWaiting = false;                                                            //is the dialogue paused after a page is completelly written
-    [Tooltip("What part of the dialogue is displayed"), Range(0, 99)] public int txtPageNr = 0;                 //Which chunk / page / part of dialogue is currently displayed or being typed out
-    private string pageText = "Warning: Unassigned text";
-    //[Tooltip("time in s between each letter typed")] public float typingWait = 0.03f;                           //how much time passes between each letter typed
-    [Range(0, 2f), SerializeField, Tooltip("disable dialogue skipping at first")] float initSkipLock = 0.1f;    //for how long should the dialogue be unable to be skipped when it is shown 
-    bool dialogueSkipLocked = true;                                                                
-    //
+    /////////////////////////
+                        public  bool    runCoroutine;                               //is the typer coroutine suspended?                                          
+    [SerializeField]            bool    isWaiting = false;                          //is the dialogue paused after a page is completelly written
+    [Tooltip("What part of the dialogue is displayed"), Range(0, 99)] 
+                        public  int     txtPageNr = 0;                              //Which chunk / page / part of dialogue is currently displayed or being typed out
+                                string  pageText = "Warning: Unassigned text";      //how much time passes between each letter typed
+    [Range(0, 2f), SerializeField, Tooltip("disable dialogue skipping at first")] 
+                                float   initSkipLock = 0.1f;                        //for how long should the dialogue be unable to be skipped when it is shown 
+                                bool    dialogueSkipLocked = true;
+    /////////////////////////
     [Space, Header("Healthbar settings")]
-    //                                            
-    [SerializeField] private bool isShowingBossHealth = false;                                      //is the boss healthbar being displayed?
-    public bossHealth bossHealth;                                                                   // the data for a boss. SHOULD auto assign when a boss spawns
+    /////////////////////////                                          
+    [SerializeField]            bool    isShowingBossHealth = false;                //is the boss healthbar being displayed?
+                    public bossHealth   bossHealth;                                 // the data for a boss. SHOULD auto assign when a boss spawns
 
-    //
+    /////////////////////////
     [Space, Header("Object references for UI objects")]
-    //
-    public GameObject boxInteractPrompt; public GameObject boxQTE;                                  //object that displays dialogue and the quick time event parent
-    [SerializeField] GameObject boxTextDisplay, boxPause, boxSettings;                   //the pause menu, the settings menu and the prompt to interact with an object
-    [SerializeField] GameObject boxWon, boxLost;                                         //VictoryScreen and Death screen respectively
-    public           GameObject boxHealthbar, boxBossBar;                                //PLAYER AND BOSS healthbars respectively
+    /////////////////////////
+                    public GameObject   boxInteractPrompt; public GameObject boxQTE;        //object that displays dialogue and the quick time event parent
+    [SerializeField]       GameObject   boxTextDisplay, boxPause, boxSettings;              //the pause menu, the settings menu and the prompt to interact with an object
+    [SerializeField]       GameObject   boxWon, boxLost;                                    //VictoryScreen and Death screen respectively
+    public                 GameObject   boxHealthbar, boxBossBar;                           //PLAYER AND BOSS healthbars respectively
     [Space(10)]
-    [SerializeField] TextMeshProUGUI txtMain;                                            //the text that displays the dialogue in UI.  
-    [SerializeField] TextMeshProUGUI txtSpeaker;                                         //The caption of WHO is speaking
-    [SerializeField] TextMeshProUGUI txtChoiceA, txtChoiceB;                             //dialogue choice button texts
+    [SerializeField] TextMeshProUGUI    txtMain;                                            //the text that displays the dialogue in UI.  
+    [SerializeField] TextMeshProUGUI    txtSpeaker;                                         //The caption of WHO is speaking
+    [SerializeField] TextMeshProUGUI    txtChoiceA, txtChoiceB;                             //dialogue choice button texts
     [Space(10)]
-    [SerializeField] Slider playerHealthBar;
-    [SerializeField] Image playerPortrait;                                               //Displayer of player portrait
-    [SerializeField] Sprite[] playerPortraits = new Sprite[5];                           //Images to display as player looses health
-    [SerializeField] Slider bossHealthBar, bossShieldBar;
-    [SerializeField] Slider settingVolumeMusic, settingVolumeSFX,settingVolume, settingTypeSpeed;
-    [SerializeField] Image XLPortraitLilith, XLPortraitOther;                            //Portraits which display Lilith and others as they tallk
+    [SerializeField]        Slider      playerHealthBar;
+    [SerializeField]        Image       playerPortrait;                                     //Displayer of player portrait
+    [SerializeField]        Sprite[]    playerPortraits = new Sprite[5];                    //Images to display as player looses health
+    [SerializeField]        Slider      bossHealthBar, bossShieldBar;
+    [SerializeField]        Slider      settingVolumeMusic, settingVolumeSFX,settingVolume, settingTypeSpeed;
+    [SerializeField]        Image       XLPortraitLilith, XLPortraitOther;                  //Portraits which display Lilith and others as they tallk
     [Space(10)]
-    [SerializeField] GameObject RevengeList;                                             //the gorgeous scrollable revenge list
-    [SerializeField] GameObject RevengeListTriggerer;                                    //the buton triggering the revenge lsit display
-    [SerializeField] GameObject OutroCinematicObject;                                    //displays the outro pretties!
-    [SerializeField] GameObject OutroCredits;                                            //credits scrolling canvas
-    [SerializeField] DSGraphSaveDataSO OutroDialogue1, OutroDialogue2;                   //dialogue displayed in the outro sequence
-    [SerializeField] AudioMixer AudioMixer;                                              //audio mixer, volume of which we're changing
+    [SerializeField]    GameObject      RevengeList;                                        //the gorgeous scrollable revenge list
+    [SerializeField]    GameObject      RevengeListTriggerer;                               //the buton triggering the revenge lsit display
+    [SerializeField]    GameObject      OutroCinematicObject;                               //displays the outro pretties!
+    [SerializeField]    GameObject      OutroCredits;                                       //credits scrolling canvas
+    [SerializeField]DSGraphSaveDataSO   OutroDialogue1, OutroDialogue2;                     //dialogue displayed in the outro sequence
+    [SerializeField]    AudioMixer      AudioMixer;                                         //audio mixer, volume of which we're changing
+    [SerializeField]    Sprite          ListSpriteFull, ListSpriteNoMicro;    
+    [SerializeField]    GameObject      RevengeListImageDisplayer;    
+    
 
     //
     //Node typing data retrieval
@@ -116,9 +120,6 @@ public class UI : MonoBehaviour
         {
             if (isWaiting) { txtPageNr++; isWaiting = false; }
             else if (!dialogueSkipLocked) runCoroutine = false;
-            //Debug.Log(Time.time+" > "+ (dilogueStartTimestamp+ initSkipLock).ToString());
-            //if (Time.time > dilogueStartTimestamp + initSkipLock)    // after a small initial delay, enable fast forwarding dialoge
-            //if(Time.time > dilogueStartTimestamp+initSkipLock) 
         }
     }
 
@@ -195,15 +196,18 @@ public class UI : MonoBehaviour
 
     public DSNodeSaveData DialogueInitialise(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning) //Find the start node values
     {
-        if (pauseWhileRunning) 
+        //retrieve START node
+        dialogueCur = _dialogue;
+        NodeCurrent = null;
+
+        if (pauseWhileRunning)                          //Setting up pausing or auto-advancing apropriately
         {
             PlayerMovement.instance.SetLockMovement();
             Time.timeScale = 0;
         }
+        else StartCoroutine(DialogueAutoAdvanceInCombt(4));
 
-        //retrieve START node
-        dialogueCur = _dialogue;
-        NodeCurrent = null;
+
         foreach (DSNodeSaveData n in dialogueCur.Nodes)
         {
             if (n.isStartNode)
@@ -217,6 +221,8 @@ public class UI : MonoBehaviour
 
         return NodeCurrent;
     }
+
+
     public void DialogueCleanup(bool pauseWhileRunning) //Hide dialogue bits and resert values once done
     {
         Time.timeScale = 1;
@@ -252,7 +258,17 @@ public class UI : MonoBehaviour
         yield return new WaitForSecondsRealtime(initSkipLock);
         dialogueSkipLocked = false;
     }
-
+    IEnumerator DialogueAutoAdvanceInCombt(float timeShown)
+    {
+        while (dialogueCur != null)
+        {
+            //Time.timeScale = 0;
+            yield return new WaitForSecondsRealtime(timeShown);
+            DialogueAdvance(new InputAction.CallbackContext());
+        }
+        //Time.timeScale = 0;
+        yield return null;
+    }
 
     public Sprite SetBigSpriteForDialogue(string fileName)
     {
@@ -426,12 +442,13 @@ public class UI : MonoBehaviour
 
         while (dialogueCur!=null) yield return new WaitForEndOfFrame();   //waiting for the dialogue to finish, before proceeding
         Debug.Log("Karl finished talking about death and taxes, game finished!");
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
 
         //this is where the scrolling credits will go!
         if (OutroCredits != null) OutroCredits.SetActive(true);
+        AudioManager.instance.PlayMusic("CreditsTrack");
         float t = 0;
-        while (true) { t += Time.deltaTime; Debug.Log(t); yield return new WaitForEndOfFrame(); if (t > 8) break; }
+        while (true) { t += Time.deltaTime; Debug.Log(t); yield return new WaitForEndOfFrame(); if (t > 13) break; }
         GameManager.LoadMenu();
     }
 
@@ -450,6 +467,11 @@ public class UI : MonoBehaviour
         //Hiding other UI elements while paused
         if (boxSettings.activeInHierarchy) boxSettings.SetActive(false);
         if (RevengeList.activeInHierarchy) RevengeList.SetActive(false);
+
+        //Pausing and unpausing audio apropriately
+        if (boxPause.activeInHierarchy) { AudioManager.instance.musicSource.Pause(); AudioManager.instance.musicSource2.Pause(); }
+        else { AudioManager.instance.musicSource.UnPause(); AudioManager.instance.musicSource2.UnPause(); }
+
     }     
     public void BackToMenu() 
     {
@@ -480,6 +502,9 @@ public class UI : MonoBehaviour
 
     public void ToggleRevengeList()     //Added pausing when Revenge list shown
     {
+        if(Settings.isMicrowaveOnList) RevengeListImageDisplayer.GetComponent<Image>().sprite = ListSpriteFull;                    //Varying which version of RL is showings
+        else { RevengeListImageDisplayer.GetComponent<Image>().sprite = ListSpriteNoMicro; }
+
         PlayerCombat.instance.gameObject.GetComponent<Animator>().SetBool("isAttacking", false);    //Interupting attack combos- M
         RevengeList.SetActive(!RevengeList.activeInHierarchy);
         AudioManager.instance.PlaySFX("UnrollList");

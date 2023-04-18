@@ -10835,6 +10835,7 @@ MonoBehaviour:
   dialogueCur: {fileID: 0}
   runCoroutine: 0
   isWaiting: 0
+  isMicrowaveOnList: 0
   txtPageNr: 0
   initSkipLock: 1
   isShowingBossHealth: 0
@@ -10873,6 +10874,9 @@ MonoBehaviour:
   OutroDialogue1: {fileID: 11400000, guid: a93364c27bfd17c48a15b4429213aa75, type: 2}
   OutroDialogue2: {fileID: 11400000, guid: 07048b609fe3c9048a9928f125cbb595, type: 2}
   AudioMixer: {fileID: 24100000, guid: 3e5aac04f6592bf4e95cd98d34fe891b, type: 2}
+  ListSpriteFull: {fileID: 21300000, guid: 2df633565e557de418ea5cd40a42ea2b, type: 3}
+  ListSpriteNoMicro: {fileID: 21300000, guid: 4918d11f5e2e9ff4c9d16caedc8f31d4, type: 3}
+  RevengeListImageDisplayer: {fileID: 2584429807499578594}
 --- !u!1 &9010496361218702514
 GameObject:
   m_ObjectHideFlags: 0

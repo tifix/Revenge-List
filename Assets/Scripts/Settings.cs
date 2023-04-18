@@ -13,6 +13,7 @@ public class Settings : MonoBehaviour
     public float volumeSFX = 0;
     public float volumeMusic = 0;
     public static Settings instance;
+    public static bool isMicrowaveOnList = false;
 
     public void Awake()
     {
