@@ -34,7 +34,7 @@ public class QTEManager : MonoBehaviour
 
     public List<BeatItem> beatObjects; 
     List<SkullController> _skulls;
-
+    [SerializeField] float countInDelay=1;
     [SerializeField] float percentagePerSkull;
 
     Animator anim;
@@ -111,6 +111,7 @@ public class QTEManager : MonoBehaviour
 
     IEnumerator QTECountDown()
     {
+        yield return new WaitForSeconds(countInDelay);
         countDownUI.gameObject.SetActive(true);
         countDownUI.SetText("3");
 
