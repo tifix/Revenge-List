@@ -183,6 +183,7 @@ public class TutorialBoss : BossClass
         player.ReleaseBind();
         player.SetUnLockMovement();
         //Remove boss
+        UI.instance.CleanupHealthBoss(true);
         gameObject.SetActive(false);
     }
 }

@@ -181,6 +181,7 @@ public class QTEManager : MonoBehaviour
                         //Death VFX
                         Instantiate<GameObject>(skullVFX, _skulls[i].transform.position, Quaternion.identity);
                         Debug.Log("miss! Going red");
+                        QTEMovement.instance.SpawnBadFeedback();
                         _skulls[i].gameObject.GetComponentInChildren<Animator>().SetTrigger("Miss");
                         anim.SetTrigger("QTE_MissCircle");  //playing the miss animation on the qte ring itself
                         
@@ -200,7 +201,7 @@ public class QTEManager : MonoBehaviour
                         break;
                     }
 
-                    //Hit the sword
+                    //Perfect hit
                     else if (!_skulls[i].GetIsAlive())
                     {
                         //Death VFX
@@ -216,7 +217,7 @@ public class QTEManager : MonoBehaviour
                         break;
                     }
 
-                    //Hit the sword while rotating
+                    //Good hit
                     else if (_skulls[i].GetBadHit())
                     {
                         //Death VFX

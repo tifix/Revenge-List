@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 //Removed unused "usings" - AV
 
 [RequireComponent(typeof(Animator))]
@@ -24,6 +25,8 @@ public class PlayerCombat : ObjectScript
     //Check if player wants to continue the combo
     bool comboAttackBuffer = false;
 
+    string attackAnimId = "xd";
+    string currentAnim = "PL_idle";
     protected override void Awake()                             //Ensuring single instance of the script
     {
         base.Awake();
@@ -51,9 +54,9 @@ public class PlayerCombat : ObjectScript
 
     private void FixedUpdate()
     {
-
+        currentAnim = GetComponent<Animator>().GetCurrentAnimatorClipInfo(0)[0].clip.name;
         //Player wants to attack
-        if(comboAttackBuffer && Time.time > attackLastTimestamp + attackIntervalMinimum)
+        if (comboAttackBuffer && Time.time > attackLastTimestamp + attackIntervalMinimum)
         {
             comboAttackBuffer = false;
             Attack();
@@ -84,7 +87,7 @@ public class PlayerCombat : ObjectScript
 
     //Overloaded
     public void Attack()
-    {
+    { 
         //If attack is pressed before the end of the anim
         if (hasAttacked && Time.time > attackLastTimestamp + attackBuffer)
         {
@@ -95,20 +98,10 @@ public class PlayerCombat : ObjectScript
 
         else if (Time.time > attackLastTimestamp + attackIntervalMinimum)
         {
-            hasAttacked = true;
-            attackLastTimestamp = Time.time;
             GetComponent<Animator>().SetBool("isAttacking", true);
+            hasAttacked = true;
             PlayerMovement.instance.PauseMovement();
-
-            // Detect enemies in range
-            Collider[] hitEnemies = Physics.OverlapSphere(attackOrg.position, attackRange, enemyLayers);
-
-            // Damage destructibles hit by collider
-            foreach (Collider enemy in hitEnemies)
-            {
-                Debug.Log("Enemy hit: " + enemy.name);
-                if (enemy.TryGetComponent<ObjectScript>(out ObjectScript OS)) OS.ApplyDamage(10.0f);     //Fixed error where kicking boss proectiles crashed the game -MC
-            }
+            StartCoroutine(AnimCatchUp());
         }
         //if attack ON cooldown
         else
@@ -124,24 +117,15 @@ public class PlayerCombat : ObjectScript
         {
             comboAttackBuffer = true;
             hasAttacked = false;
+            return;
         }
 
         else if (Time.time > attackLastTimestamp + attackIntervalMinimum)
         {
-            hasAttacked = true;
-            attackLastTimestamp = Time.time;
             GetComponent<Animator>().SetBool("isAttacking", true);
+            hasAttacked = true;
             PlayerMovement.instance.PauseMovement();
-
-            // Detect enemies in range
-            Collider[] hitEnemies = Physics.OverlapSphere(attackOrg.position, attackRange, enemyLayers);
-
-            // Damage destructibles hit by collider
-            foreach (Collider enemy in hitEnemies)
-            {
-                Debug.Log("Enemy hit: " + enemy.name);
-                if (enemy.TryGetComponent<ObjectScript>(out ObjectScript OS)) OS.ApplyDamage(10.0f);     //Fixed error where kicking boss proectiles crashed the game -MC
-            }
+            StartCoroutine(AnimCatchUp());
         }
         //if attack ON cooldown
         else
@@ -194,6 +178,23 @@ public class PlayerCombat : ObjectScript
         yield return new WaitForSeconds(1f);
         UI.instance.FadeIn();
         GameManager.instance.SetLost(true);
+    }
+
+    IEnumerator AnimCatchUp()
+    {
+        yield return new WaitUntil(() => attackAnimId != currentAnim);
+        attackAnimId = currentAnim;        
+        attackLastTimestamp = Time.time;
+        yield return new WaitForSeconds(0.1f);
+        // Detect enemies in range
+        Collider[] hitEnemies = Physics.OverlapSphere(attackOrg.position, attackRange, enemyLayers);
+
+        // Damage destructibles hit by collider
+        foreach (Collider enemy in hitEnemies)
+        {
+            Debug.Log("Enemy hit: " + enemy.name);
+            if (enemy.TryGetComponent<ObjectScript>(out ObjectScript OS)) OS.ApplyDamage(10.0f);     //Fixed error where kicking boss proectiles crashed the game -MC
+        }
     }
 
     void KillSelf(InputAction.CallbackContext obj)
