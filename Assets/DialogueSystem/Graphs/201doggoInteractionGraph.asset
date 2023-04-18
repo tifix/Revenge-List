@@ -16,7 +16,7 @@ MonoBehaviour:
   Groups:
   - ID: f1ad1020-f3e8-4c58-a6a5-6687ba446b56
     Name: Doggo
-    Position: {x: 2726, y: -464}
+    Position: {x: 2726, y: -469.00006}
   - ID: 3a58ca9e-e798-4361-ad49-050447c63fe4
     Name: PetTheDog
     Position: {x: 5268, y: -445}
@@ -24,20 +24,6 @@ MonoBehaviour:
     Name: Outro
     Position: {x: 5938, y: -451}
   Nodes:
-  - ID: 321b973c-ac47-4d76-a016-56626cccbbaa
-    Name: 2
-    SpeakerName: Lilith
-    Text: I understand you have to have your hellish freedom, and I see that you
-      benefit from it.
-    SpritePath: Lilith_Happy
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 5324391a-6574-4fa2-a6fd-0a26255b8fb6
-    GroupID: f1ad1020-f3e8-4c58-a6a5-6687ba446b56
-    Position: {x: 3061, y: -400}
-    isStartNode: 0
-    ChildIDs:
-    - 5324391a-6574-4fa2-a6fd-0a26255b8fb6
   - ID: 5324391a-6574-4fa2-a6fd-0a26255b8fb6
     Name: 3
     SpeakerName: Lilith
@@ -54,7 +40,8 @@ MonoBehaviour:
   - ID: 8aae9e00-56ab-493d-84b2-ff0db8df6745
     Name: 6
     SpeakerName: Lilith
-    Text: "I\u2019m proud of you, Hellhound. You seem to have spirit not unlike mine. "
+    Text: "I\u2019m proud of you, Hellhound. You seem to have a spirit not unlike
+      mine. "
     SpritePath: Lilith_Happy
     Choices:
     - Text: Next Dialogue
@@ -64,19 +51,6 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - d887d461-14c9-499d-ae62-4b7172d48d3c
-  - ID: d887d461-14c9-499d-ae62-4b7172d48d3c
-    Name: 9
-    SpeakerName: Lilith
-    Text: I must, must, pet you now.
-    SpritePath: Lilith_Smug
-    Choices:
-    - Text: Next Dialogue
-      NodeID: ae48f3df-f2fd-4055-bdd2-9dce6f09f439
-    GroupID: 3a58ca9e-e798-4361-ad49-050447c63fe4
-    Position: {x: 5293, y: -386}
-    isStartNode: 0
-    ChildIDs:
-    - ae48f3df-f2fd-4055-bdd2-9dce6f09f439
   - ID: 4fd16a4d-e6c7-49fd-90e1-8e67f366ab36
     Name: 1
     SpeakerName: Lilith
@@ -156,6 +130,32 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - ce97f9db-c627-49d4-af42-1865b90747fd
+  - ID: d887d461-14c9-499d-ae62-4b7172d48d3c
+    Name: 9
+    SpeakerName: Lilith
+    Text: I will pet you now.
+    SpritePath: Lilith_Smug
+    Choices:
+    - Text: Next Dialogue
+      NodeID: ae48f3df-f2fd-4055-bdd2-9dce6f09f439
+    GroupID: 3a58ca9e-e798-4361-ad49-050447c63fe4
+    Position: {x: 5293, y: -386}
+    isStartNode: 0
+    ChildIDs:
+    - ae48f3df-f2fd-4055-bdd2-9dce6f09f439
+  - ID: 321b973c-ac47-4d76-a016-56626cccbbaa
+    Name: 2
+    SpeakerName: Lilith
+    Text: I see you have been up to no good. Good boy.
+    SpritePath: Lilith_Happy
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 5324391a-6574-4fa2-a6fd-0a26255b8fb6
+    GroupID: f1ad1020-f3e8-4c58-a6a5-6687ba446b56
+    Position: {x: 3157, y: -410}
+    isStartNode: 0
+    ChildIDs:
+    - 5324391a-6574-4fa2-a6fd-0a26255b8fb6
   OldGroupNames:
   - Doggo
   - PetTheDog
@@ -165,17 +165,17 @@ MonoBehaviour:
     list:
     - Key: Doggo
       Value:
-      - 2
       - 3
       - 6
       - 1
       - 5
       - 4
-    - Key: PetTheDog
-      Value:
-      - 9
+      - 2
     - Key: Outro
       Value:
       - 10
       - 11
       - 12
+    - Key: PetTheDog
+      Value:
+      - 9

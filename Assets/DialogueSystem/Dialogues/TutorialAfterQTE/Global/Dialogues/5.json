@@ -1,7 +1,7 @@
 {
     "DialogueName": "5",
     "nodeID": "",
-    "SpeakerName": "Character name.",
+    "SpeakerName": "Lilith",
     "Text": "Wait. I'm not finished yet!",
     "SpritePath": "Lilith_Unhappy2",
     "Choices": [

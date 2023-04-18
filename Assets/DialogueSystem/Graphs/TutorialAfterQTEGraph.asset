@@ -58,19 +58,6 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - 
-  - ID: 2fadb91e-9404-4352-a1ab-e122258c5cee
-    Name: 6
-    SpeakerName: Lilith
-    Text: What are you doing?!
-    SpritePath: Lilith_Angry
-    Choices:
-    - Text: Next Dialogue
-      NodeID: ee9f2b49-1d61-4675-86b5-cabc162d1ea7
-    GroupID: 
-    Position: {x: 796, y: 293}
-    isStartNode: 0
-    ChildIDs:
-    - ee9f2b49-1d61-4675-86b5-cabc162d1ea7
   - ID: a17f2f11-2c65-4235-b7ab-07f034b17339
     Name: 2
     SpeakerName: Lilith
@@ -116,9 +103,22 @@ MonoBehaviour:
     isStartNode: 1
     ChildIDs:
     - 02fc2572-9286-4b55-82f1-1fc02731a983
+  - ID: 2fadb91e-9404-4352-a1ab-e122258c5cee
+    Name: 6
+    SpeakerName: Lilith
+    Text: What are you doing?!
+    SpritePath: Lilith_Angry
+    Choices:
+    - Text: Next Dialogue
+      NodeID: ee9f2b49-1d61-4675-86b5-cabc162d1ea7
+    GroupID: 
+    Position: {x: 796, y: 293}
+    isStartNode: 0
+    ChildIDs:
+    - ee9f2b49-1d61-4675-86b5-cabc162d1ea7
   - ID: a9276d16-1ac0-4041-9e91-e867a1688d7f
     Name: 5
-    SpeakerName: Character name.
+    SpeakerName: Lilith
     Text: Wait. I'm not finished yet!
     SpritePath: Lilith_Unhappy2
     Choices:
@@ -134,10 +134,10 @@ MonoBehaviour:
   - 3
   - 4
   - 7
-  - 6
   - 2
   - 1
   - 0
+  - 6
   - 5
   OldGroupNodeNames:
     list: []

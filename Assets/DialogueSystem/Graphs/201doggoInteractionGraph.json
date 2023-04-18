@@ -18,21 +18,6 @@
                 "Key": "f1ad1020-f3e8-4c58-a6a5-6687ba446b56",
                 "Value": [
                     {
-                        "DialogueName": "2",
-                        "nodeID": "",
-                        "SpeakerName": "Lilith",
-                        "Text": "I understand you have to have your hellish freedom, and I see that you benefit from it.",
-                        "SpritePath": "Lilith_Happy",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
                         "DialogueName": "3",
                         "nodeID": "",
                         "SpeakerName": "Lilith",
@@ -51,7 +36,7 @@
                         "DialogueName": "6",
                         "nodeID": "",
                         "SpeakerName": "Lilith",
-                        "Text": "I’m proud of you, Hellhound. You seem to have spirit not unlike mine. ",
+                        "Text": "I’m proud of you, Hellhound. You seem to have a spirit not unlike mine. ",
                         "SpritePath": "Lilith_Happy",
                         "Choices": [
                             {
@@ -106,18 +91,13 @@
                         ],
                         "DialogueType": 0,
                         "IsStartingDialogue": false
-                    }
-                ]
-            },
-            {
-                "Key": "3a58ca9e-e798-4361-ad49-050447c63fe4",
-                "Value": [
+                    },
                     {
-                        "DialogueName": "9",
+                        "DialogueName": "2",
                         "nodeID": "",
                         "SpeakerName": "Lilith",
-                        "Text": "I must, must, pet you now.",
-                        "SpritePath": "Lilith_Smug",
+                        "Text": "I see you have been up to no good. Good boy.",
+                        "SpritePath": "Lilith_Happy",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -168,6 +148,26 @@
                         "SpeakerName": "Karl",
                         "Text": "Haha! I see you’ve found my dog! Little rascal, always going off on his own!",
                         "SpritePath": "Neighbour_Friendly",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    }
+                ]
+            },
+            {
+                "Key": "3a58ca9e-e798-4361-ad49-050447c63fe4",
+                "Value": [
+                    {
+                        "DialogueName": "9",
+                        "nodeID": "",
+                        "SpeakerName": "Lilith",
+                        "Text": "I will pet you now.",
+                        "SpritePath": "Lilith_Smug",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",

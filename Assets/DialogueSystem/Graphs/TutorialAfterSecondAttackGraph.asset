@@ -31,7 +31,9 @@ MonoBehaviour:
   - ID: b3457fb2-68d5-4211-bc4f-24f24bfe497c
     Name: 2
     SpeakerName: Lilith
-    Text: What do you mean overhead attacks that home in on me?
+    Text: 'Overhead attacks that home in on me?
+
+      Why?!'
     SpritePath: Lilith_Angry
     Choices:
     - Text: Next Dialogue

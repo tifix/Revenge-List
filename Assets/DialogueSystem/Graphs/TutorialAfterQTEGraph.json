@@ -50,21 +50,6 @@
             "IsStartingDialogue": false
         },
         {
-            "DialogueName": "6",
-            "nodeID": "",
-            "SpeakerName": "Lilith",
-            "Text": "What are you doing?!",
-            "SpritePath": "Lilith_Angry",
-            "Choices": [
-                {
-                    "Text": "Next Dialogue",
-                    "nextID": ""
-                }
-            ],
-            "DialogueType": 0,
-            "IsStartingDialogue": false
-        },
-        {
             "DialogueName": "2",
             "nodeID": "",
             "SpeakerName": "Lilith",
@@ -110,9 +95,24 @@
             "IsStartingDialogue": true
         },
         {
+            "DialogueName": "6",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "What are you doing?!",
+            "SpritePath": "Lilith_Angry",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
             "DialogueName": "5",
             "nodeID": "",
-            "SpeakerName": "Character name.",
+            "SpeakerName": "Lilith",
             "Text": "Wait. I'm not finished yet!",
             "SpritePath": "Lilith_Unhappy2",
             "Choices": [

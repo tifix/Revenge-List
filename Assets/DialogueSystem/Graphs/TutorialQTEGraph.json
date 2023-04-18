@@ -20,21 +20,6 @@
             "IsStartingDialogue": true
         },
         {
-            "DialogueName": "1",
-            "nodeID": "",
-            "SpeakerName": "Lilith",
-            "Text": "I should impale the skulls with my sword?",
-            "SpritePath": "Lilith_Happy",
-            "Choices": [
-                {
-                    "Text": "Next Dialogue",
-                    "nextID": ""
-                }
-            ],
-            "DialogueType": 0,
-            "IsStartingDialogue": true
-        },
-        {
             "DialogueName": "2",
             "nodeID": "",
             "SpeakerName": "Lilith",
@@ -50,11 +35,11 @@
             "IsStartingDialogue": false
         },
         {
-            "DialogueName": "3",
+            "DialogueName": "1",
             "nodeID": "",
             "SpeakerName": "Lilith",
-            "Text": "(I probably SHOULD impale the skulls with my sword.)",
-            "SpritePath": "Lilith_Unhappy2",
+            "Text": "I should hit the skulls in time?",
+            "SpritePath": "Lilith_Happy",
             "Choices": [
                 {
                     "Text": "Next Dialogue",
@@ -62,7 +47,7 @@
                 }
             ],
             "DialogueType": 0,
-            "IsStartingDialogue": false
+            "IsStartingDialogue": true
         }
     ]
 }

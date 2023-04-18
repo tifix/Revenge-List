@@ -16,37 +16,37 @@ MonoBehaviour:
   Groups:
   - ID: 9456e0c8-1f89-46f4-b651-1c8b1401babd
     Name: 1
-    Position: {x: 3222, y: -41}
+    Position: {x: 3222, y: -41.00007}
   - ID: e77da036-dcc1-451e-b77a-f3252c33d5e3
     Name: 2
     Position: {x: 3811, y: 556}
   - ID: e0646b45-1205-45f0-9830-876688562027
     Name: intro
-    Position: {x: -738, y: 177}
+    Position: {x: -737.99976, y: 177}
   - ID: d01246b4-8e40-46b1-a7b2-332560a06869
     Name: CommonBridge
-    Position: {x: 8974, y: -49}
+    Position: {x: 8974.001, y: -49.00006}
   - ID: 8241f30b-0095-4892-b2fe-3118633b011e
     Name: DoTakeHerOUt
-    Position: {x: 6120, y: -22}
+    Position: {x: 6120, y: -22.000069}
   - ID: 2e8a6e81-953e-4d0e-8986-bbcce50e9e3c
     Name: BackOffFromHer
-    Position: {x: 6208, y: -410}
+    Position: {x: 6208, y: -410.00012}
   - ID: 60b93be0-7818-48be-8b9d-b993fe281240
     Name: YourDogDoesnLikeYou
-    Position: {x: 13048, y: 574}
+    Position: {x: 13048.001, y: 574.0001}
   - ID: d3df9e75-c5e6-4384-81b6-18ff4afd03e0
     Name: AstridDoesntLikeYourBbq
-    Position: {x: 13175, y: 48.00003}
+    Position: {x: 13175.001, y: 47.99993}
   - ID: 4a1038fd-6bc4-4993-9390-28a8a8ff1145
     Name: Ending
-    Position: {x: 21364, y: 319}
+    Position: {x: 21364.002, y: 319}
   - ID: afd3a3a2-ff97-4a67-b4e0-6067903143ff
     Name: StopJoking
     Position: {x: 7740, y: 424}
   - ID: 71f675ee-d7c6-4a2b-b341-ca23cf0f0dc4
     Name: DontStopJoking
-    Position: {x: 7607, y: 766}
+    Position: {x: 7607.0005, y: 766}
   Nodes:
   - ID: 000ee4f4-bc86-44a9-a8ad-a341fc01eef4
     Name: 31
@@ -95,22 +95,9 @@ MonoBehaviour:
     SpritePath: Lilith_Unhappy
     Choices:
     - Text: Next Dialogue
-      NodeID: 91d92e3f-e281-4006-b02f-55220267f9b7
-    GroupID: e77da036-dcc1-451e-b77a-f3252c33d5e3
-    Position: {x: 4885, y: 615}
-    isStartNode: 0
-    ChildIDs:
-    - 91d92e3f-e281-4006-b02f-55220267f9b7
-  - ID: 91d92e3f-e281-4006-b02f-55220267f9b7
-    Name: 35
-    SpeakerName: Lilith
-    Text: "*I want to know what Astrid talked about with this swine\u2026*"
-    SpritePath: Lilith_Unhappy
-    Choices:
-    - Text: Next Dialogue
       NodeID: cdb1f5e2-9493-4467-8579-d12b84b98a95
     GroupID: e77da036-dcc1-451e-b77a-f3252c33d5e3
-    Position: {x: 5149, y: 661}
+    Position: {x: 4885, y: 615}
     isStartNode: 0
     ChildIDs:
     - cdb1f5e2-9493-4467-8579-d12b84b98a95
@@ -396,8 +383,8 @@ MonoBehaviour:
     SpeakerName: Lilith
     Text: 'Anyway, me and Astrid had a chat. You know, woman to woman.
 
-      Has
-      she not told you?'
+      Didn''t
+      she tell you?'
     SpritePath: Lilith_Smug
     Choices:
     - Text: Next Dialogue
@@ -410,7 +397,7 @@ MonoBehaviour:
   - ID: e5a93ad4-387d-49c3-adb7-b5f517b3df70
     Name: 61
     SpeakerName: Karl
-    Text: Told me what?
+    Text: Tell me what?
     SpritePath: Neighbour_Sad
     Choices:
     - Text: Next Dialogue
@@ -606,19 +593,6 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - 3526203d-ba63-4fc3-9417-49f329d86253
-  - ID: cdb1f5e2-9493-4467-8579-d12b84b98a95
-    Name: 36
-    SpeakerName: Karl
-    Text: "We really think you shouldn\u2019t joke about killing people so much."
-    SpritePath: Neighbour_Sad
-    Choices:
-    - Text: Next Dialogue
-      NodeID: b696c158-232f-4612-893e-48f56a6c4c0e
-    GroupID: e77da036-dcc1-451e-b77a-f3252c33d5e3
-    Position: {x: 5535, y: 675}
-    isStartNode: 0
-    ChildIDs:
-    - b696c158-232f-4612-893e-48f56a6c4c0e
   - ID: 922c451c-b587-464a-8c54-fbc1e28e6fef
     Name: 38
     SpeakerName: Karl
@@ -1474,6 +1448,19 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - d21467e0-84bc-4878-b369-f79ffd23ab5c
+  - ID: cdb1f5e2-9493-4467-8579-d12b84b98a95
+    Name: 36
+    SpeakerName: Karl
+    Text: "We really think you shouldn\u2019t joke about killing people so much."
+    SpritePath: Neighbour_Sad
+    Choices:
+    - Text: Next Dialogue
+      NodeID: b696c158-232f-4612-893e-48f56a6c4c0e
+    GroupID: e77da036-dcc1-451e-b77a-f3252c33d5e3
+    Position: {x: 5182, y: 621}
+    isStartNode: 0
+    ChildIDs:
+    - b696c158-232f-4612-893e-48f56a6c4c0e
   OldGroupNames:
   - 1
   - 2
@@ -1497,12 +1484,11 @@ MonoBehaviour:
       - 32
       - 33
       - 34
-      - 35
-      - 36
       - 38
       - Choicaroonie
       - 37
       - ytut
+      - 36
     - Key: CommonBridge
       Value:
       - 46

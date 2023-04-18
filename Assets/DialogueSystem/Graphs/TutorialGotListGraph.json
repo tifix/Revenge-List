@@ -35,21 +35,6 @@
             "IsStartingDialogue": false
         },
         {
-            "DialogueName": "3",
-            "nodeID": "",
-            "SpeakerName": "Lilith",
-            "Text": "My pineapple pasta waits for me in the microwave to my right.",
-            "SpritePath": "Lilith_Unhappy2",
-            "Choices": [
-                {
-                    "Text": "Next Dialogue",
-                    "nextID": ""
-                }
-            ],
-            "DialogueType": 0,
-            "IsStartingDialogue": false
-        },
-        {
             "DialogueName": "0",
             "nodeID": "",
             "SpeakerName": "Lilith",
@@ -63,6 +48,21 @@
             ],
             "DialogueType": 0,
             "IsStartingDialogue": true
+        },
+        {
+            "DialogueName": "3",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "My pineapple pasta is in the microwave to my right.",
+            "SpritePath": "Lilith_Unhappy2",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
         }
     ]
 }

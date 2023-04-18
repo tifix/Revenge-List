@@ -110,36 +110,6 @@
                         "IsStartingDialogue": false
                     },
                     {
-                        "DialogueName": "35",
-                        "nodeID": "",
-                        "SpeakerName": "Lilith",
-                        "Text": "*I want to know what Astrid talked about with this swine…*",
-                        "SpritePath": "Lilith_Unhappy",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
-                        "DialogueName": "36",
-                        "nodeID": "",
-                        "SpeakerName": "Karl",
-                        "Text": "We really think you shouldn’t joke about killing people so much.",
-                        "SpritePath": "Neighbour_Sad",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
                         "DialogueName": "38",
                         "nodeID": "",
                         "SpeakerName": "Karl",
@@ -193,6 +163,21 @@
                         "nodeID": "",
                         "SpeakerName": "Karl",
                         "Text": "...as well as we do.",
+                        "SpritePath": "Neighbour_Sad",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "36",
+                        "nodeID": "",
+                        "SpeakerName": "Karl",
+                        "Text": "We really think you shouldn’t joke about killing people so much.",
                         "SpritePath": "Neighbour_Sad",
                         "Choices": [
                             {
@@ -881,7 +866,7 @@
                         "DialogueName": "60",
                         "nodeID": "",
                         "SpeakerName": "Lilith",
-                        "Text": "Anyway, me and Astrid had a chat. You know, woman to woman.\nHas she not told you?",
+                        "Text": "Anyway, me and Astrid had a chat. You know, woman to woman.\nDidn't she tell you?",
                         "SpritePath": "Lilith_Smug",
                         "Choices": [
                             {
@@ -896,7 +881,7 @@
                         "DialogueName": "61",
                         "nodeID": "",
                         "SpeakerName": "Karl",
-                        "Text": "Told me what?",
+                        "Text": "Tell me what?",
                         "SpritePath": "Neighbour_Sad",
                         "Choices": [
                             {
