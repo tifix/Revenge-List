@@ -3164,6 +3164,10 @@ PrefabInstance:
       value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 1548973129927656343, guid: cb8d011301534e14a84915a63758380d, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1548973129927656343, guid: cb8d011301534e14a84915a63758380d, type: 3}
       propertyPath: ShapeModule.randomPositionAmount
       value: 0
       objectReference: {fileID: 0}
@@ -3213,7 +3217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3615865189927272332, guid: cb8d011301534e14a84915a63758380d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3615865189927272333, guid: cb8d011301534e14a84915a63758380d, type: 3}
       propertyPath: m_RootOrder
@@ -3385,7 +3389,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897402303}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: -23.442698, y: 19.65276, z: -43.231014}
+  m_LocalPosition: {x: -23.44266, y: 19.65276, z: -43.231014}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4545,7 +4549,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162723989}
   m_LocalRotation: {x: 0.17364816, y: -0, z: -0, w: 0.9848078}
-  m_LocalPosition: {x: -23.442698, y: 19.65276, z: -43.231014}
+  m_LocalPosition: {x: -23.44266, y: 19.65276, z: -43.231014}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6061,6 +6065,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1685685377}
     - target: {fileID: 1202104339048890538, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3665701568203247820, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133116103567569644, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}

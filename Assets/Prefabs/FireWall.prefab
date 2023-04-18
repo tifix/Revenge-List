@@ -5055,7 +5055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zDepthMax: 8
-  xTravelMax: -13
+  xTravelMax: -20
   damage: 10
   isShakingCameraOnHit: 0
   imOverHead: 0
