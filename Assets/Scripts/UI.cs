@@ -205,7 +205,7 @@ public class UI : MonoBehaviour
             PlayerMovement.instance.SetLockMovement();
             Time.timeScale = 0;
         }
-        else StartCoroutine(DialogueAutoAdvanceInCombt(4));
+        else StartCoroutine(DialogueAutoAdvanceInCombt(1));
 
 
         foreach (DSNodeSaveData n in dialogueCur.Nodes)
@@ -260,14 +260,17 @@ public class UI : MonoBehaviour
     }
     IEnumerator DialogueAutoAdvanceInCombt(float timeShown)
     {
+        Time.timeScale = 0;
+        PlayerMovement.isMovementLocked = true;
         while (dialogueCur != null)
         {
-            //Time.timeScale = 0;
+            while (!isWaiting) yield return new WaitForEndOfFrame();       //Wait until the text finished typing + time shown
             yield return new WaitForSecondsRealtime(timeShown);
-            DialogueAdvance(new InputAction.CallbackContext());
+            if (isWaiting) { txtPageNr++; isWaiting = false; }
+
         }
-        //Time.timeScale = 0;
-        yield return null;
+
+        Time.timeScale = 1;
     }
 
     public Sprite SetBigSpriteForDialogue(string fileName)
