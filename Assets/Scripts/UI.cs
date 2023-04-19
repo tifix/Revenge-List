@@ -66,6 +66,7 @@ public class UI : MonoBehaviour
     [SerializeField]    AudioMixer      AudioMixer;                                         //audio mixer, volume of which we're changing
     [SerializeField]    Sprite          ListSpriteFull, ListSpriteNoMicro;    
     [SerializeField]    GameObject      RevengeListImageDisplayer;    
+    [SerializeField]    bool            PauseHideDialogue=false;                            //Did pausing interrupt dialogue - if yes, show it again.
     
 
     //
@@ -470,6 +471,10 @@ public class UI : MonoBehaviour
         //Hiding other UI elements while paused
         if (boxSettings.activeInHierarchy) boxSettings.SetActive(false);
         if (RevengeList.activeInHierarchy) RevengeList.SetActive(false);
+
+        //Hiding and showing dialogue as apropriate
+        if (boxTextDisplay.activeInHierarchy) { boxTextDisplay.SetActive(!boxPause.activeInHierarchy); PauseHideDialogue = true; }
+        if (PauseHideDialogue) {boxTextDisplay.SetActive(true); PauseHideDialogue = false; }
 
         //Pausing and unpausing audio apropriately
         if (boxPause.activeInHierarchy) { AudioManager.instance.musicSource.Pause(); AudioManager.instance.musicSource2.Pause(); }
