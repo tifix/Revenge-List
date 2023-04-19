@@ -1,0 +1,932 @@
+fileFormatVersion: 2
+guid: 8300031ffd863424eb67bef72f45a8f2
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2404
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2856e15360f3614c98f8c6ea7f0b145
+      internalID: 730064359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_1
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 2404
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b357fac563bae0f448e0cf6f58cbe269
+      internalID: 1067544824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_2
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 2404
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0eb7b1c9d939af4ab91a4721deb17a9
+      internalID: -628167227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_3
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 2404
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a65b796b57cd6724fb3a8a27599dce4a
+      internalID: -1540012143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_4
+      rect:
+        serializedVersion: 2
+        x: 3320
+        y: 2404
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e18a849d4905f48962394c5718618a
+      internalID: 168401897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_5
+      rect:
+        serializedVersion: 2
+        x: 4150
+        y: 2404
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2348bfa0ea8a404448e2a57238847460
+      internalID: -1048887661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_6
+      rect:
+        serializedVersion: 2
+        x: 4980
+        y: 2404
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ba6ef5911768f4eba912084f889f38
+      internalID: -2130595849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1803
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e544a2d4fed27a4cba989246c1deb36
+      internalID: -1653765041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_8
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 1803
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e6d868158f7e647b53e61d03683113
+      internalID: 2128470544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_9
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 1803
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f4dac66876b2854e9469e3014d8c134
+      internalID: 1970985914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_10
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 1803
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc9fcbbe42c32444a956dc6f1c0574bc
+      internalID: -976603301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_11
+      rect:
+        serializedVersion: 2
+        x: 3320
+        y: 1803
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7190ce932dca810419b3f21cd79a09b0
+      internalID: -1842917927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_12
+      rect:
+        serializedVersion: 2
+        x: 4150
+        y: 1803
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bdd8d402e5d1c84caa6968eba65e53d
+      internalID: -241594162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_13
+      rect:
+        serializedVersion: 2
+        x: 4980
+        y: 1803
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba5fa020ad840047aec934657f20e3c
+      internalID: -1795424932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1202
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9ef72ef25ec0b47ac4ecfabeed8a87
+      internalID: -272849254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_15
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 1202
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b1fbbf242118c24f8c2cc63a64ecbe4
+      internalID: -5523626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_16
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 1202
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6a33d3b0f8d7543a4679f801b4ee75
+      internalID: 403424698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_17
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 1202
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d73266d9082c94892585dd4a69a29c
+      internalID: 1094965021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_18
+      rect:
+        serializedVersion: 2
+        x: 3320
+        y: 1202
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3422369b9280bb64da33b10fb19e9917
+      internalID: 167667588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_19
+      rect:
+        serializedVersion: 2
+        x: 4150
+        y: 1202
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f79d9596016c9fa49b70d19be14dd17e
+      internalID: -980013384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_20
+      rect:
+        serializedVersion: 2
+        x: 4980
+        y: 1202
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986d2bd4e1dd9a54cab47e5e0a2064c9
+      internalID: 187010119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 601
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac1b04dd21466a458962db38dd5186d
+      internalID: -1642232798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_22
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 601
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f99d3c4eceadce48a469f8b6a9fda4f
+      internalID: 2019210456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_23
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 601
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2235221696605334f87ccf9c6e0a50b1
+      internalID: -844994370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_24
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 601
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b91d8aaf74f8841b52427d8227ac67
+      internalID: 893459005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_25
+      rect:
+        serializedVersion: 2
+        x: 3320
+        y: 601
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a14d9b18d7b1f41b46490aae678d1f
+      internalID: -314139990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_26
+      rect:
+        serializedVersion: 2
+        x: 4150
+        y: 601
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d3cf4dbe8aaa54fbd5ae36a46396cc
+      internalID: 1399057985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_27
+      rect:
+        serializedVersion: 2
+        x: 4980
+        y: 601
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d676246f2908b8b4d9ba310b61753f0b
+      internalID: 278223052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9c1650139d01b43b95c045ad00b236
+      internalID: -1231088482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_29
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 0
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3e3eb28f6b69f4eb175b6df59b251e
+      internalID: 688066688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_30
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 0
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c0161d5dd3e20647aecdce4c9cbe4c0
+      internalID: -1460270643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_31
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 0
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 105013d02810b3d4380d5c136b90b60e
+      internalID: -1484130698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_32
+      rect:
+        serializedVersion: 2
+        x: 3320
+        y: 0
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a12d4ff8f750f49880b8d3503cbf43
+      internalID: -44817321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith Attack Full Spritesheet Final_33
+      rect:
+        serializedVersion: 2
+        x: 4150
+        y: 0
+        width: 830
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f70941837722eb4489c5bb03044609c2
+      internalID: 1461012092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Lilith Attack Full Spritesheet Final_8: 2128470544
+      Lilith Attack Full Spritesheet Final_23: -844994370
+      Lilith Attack Full Spritesheet Final_12: -241594162
+      Lilith Attack Full Spritesheet Final_5: -1048887661
+      Lilith Attack Full Spritesheet Final_29: 688066688
+      Lilith Attack Full Spritesheet Final_32: -44817321
+      Lilith Attack Full Spritesheet Final_20: 187010119
+      Lilith Attack Full Spritesheet Final_14: -272849254
+      Lilith Attack Full Spritesheet Final_6: -2130595849
+      Lilith Attack Full Spritesheet Final_18: 167667588
+      Lilith Attack Full Spritesheet Final_15: -5523626
+      Lilith Attack Full Spritesheet Final_13: -1795424932
+      Lilith Attack Full Spritesheet Final_0: 730064359
+      Lilith Attack Full Spritesheet Final_1: 1067544824
+      Lilith Attack Full Spritesheet Final_7: -1653765041
+      Lilith Attack Full Spritesheet Final_27: 278223052
+      Lilith Attack Full Spritesheet Final_31: -1484130698
+      Lilith Attack Full Spritesheet Final_19: -980013384
+      Lilith Attack Full Spritesheet Final_9: 1970985914
+      Lilith Attack Full Spritesheet Final_21: -1642232798
+      Lilith Attack Full Spritesheet Final_28: -1231088482
+      Lilith Attack Full Spritesheet Final_11: -1842917927
+      Lilith Attack Full Spritesheet Final_17: 1094965021
+      Lilith Attack Full Spritesheet Final_26: 1399057985
+      Lilith Attack Full Spritesheet Final_22: 2019210456
+      Lilith Attack Full Spritesheet Final_4: 168401897
+      Lilith Attack Full Spritesheet Final_33: 1461012092
+      Lilith Attack Full Spritesheet Final_16: 403424698
+      Lilith Attack Full Spritesheet Final_25: -314139990
+      Lilith Attack Full Spritesheet Final_3: -1540012143
+      Lilith Attack Full Spritesheet Final_24: 893459005
+      Lilith Attack Full Spritesheet Final_30: -1460270643
+      Lilith Attack Full Spritesheet Final_10: -976603301
+      Lilith Attack Full Spritesheet Final_2: -628167227
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
