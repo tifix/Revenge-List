@@ -70,7 +70,7 @@ MonoBehaviour:
   - timing: 57
     myBeat: 3
     speed: 4
-  - timing: 66
+  - timing: 61
     myBeat: 4
     speed: 2
   beatsForWin: 9

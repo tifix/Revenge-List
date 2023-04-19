@@ -3305,7 +3305,7 @@ PrefabInstance:
       objectReference: {fileID: 833656598}
     - target: {fileID: 8133781382231593321, guid: cb8d011301534e14a84915a63758380d, type: 3}
       propertyPath: uponInteractionDo.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: TutorialTrack
+      value: QteTrack
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -6741,7 +6741,7 @@ PrefabInstance:
     - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
       propertyPath: QteTrack
       value: 
-      objectReference: {fileID: 8300000, guid: 61da71e1b34077f4697398d922c00935, type: 3}
+      objectReference: {fileID: 8300000, guid: afce67261c0dbc946ae7bc9ca7f4931b, type: 3}
     - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
       propertyPath: BossTrack
       value: 
