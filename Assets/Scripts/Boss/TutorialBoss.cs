@@ -24,6 +24,11 @@ public class TutorialBoss : BossClass
         SetQTEandDialogueForRound(0);
         AudioManager.instance.PlayMusic("BossTrack");
     }
+    public void SkipToLastPhase()
+    {
+        gameObject.SetActiveRecursively(true);
+        StartCoroutine(FirstAttack());
+    }
 
     protected override void Update()
     {

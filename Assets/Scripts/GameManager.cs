@@ -78,7 +78,14 @@ public class GameManager : MonoBehaviour
             PlayerMovement.instance.gameObject.transform.position = new Vector3(24.0f, 1.6f, 1.2f);
             cheat_SkipToOutro = false;
         }
+        if (cheat_SkipToMicroEnd) 
+        {
+            GameObject.FindGameObjectWithTag("Boss").transform.GetChild(1).gameObject.SetActive(true);
+            GameObject.FindObjectOfType<TutorialBoss>().SkipToLastPhase(); 
+            cheat_SkipToMicroEnd = false; 
+        }
     }
+    
     public void TogglePause() => SetPause(!isGamePaused);
     public void SetPause(bool targetState)
     {
