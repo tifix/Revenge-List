@@ -531,9 +531,13 @@ public class UI : MonoBehaviour
     public void ShowSpriteXLOther() { XLPortraitOther.gameObject.SetActive(true); }
 
     public void SetTypingSpeed(float typeRate) => Settings.instance.typingWait = Mathf.Lerp(0.04f,0.01f, typeRate); //left to slow, right to fast
-    public void SetVolume(float value) { float t = Mathf.Lerp(-80, 0, value); Debug.Log(t); AudioMixer.SetFloat("masterVolume", t); Settings.instance.volume = t; }  //left to mute, right to loud
-    public void SetVolumeMusic(float value) { float t = Mathf.Lerp(-80, 0, value); Debug.Log(t); AudioMixer.SetFloat("musicVolume", t); Settings.instance.volumeMusic = t; }  //left to mute, right to loud
-    public void SetVolumeSFX(float value) { float t = Mathf.Lerp(-80, 0, value); Debug.Log(t); AudioMixer.SetFloat("sfxVolume", t); Settings.instance.volumeSFX = t; }  //left to mute, right to loud
+    public void SetVolume(float value) { float t = Mathf.Lerp(-70, 0, value); Debug.Log(t); AudioMixer.SetFloat("masterVolume", t); Settings.instance.volume = t; AudioManager.instance.PlaySFX("MenuClick"); }  //left to mute, right to loud
+
+    // DAVE NOTE - PlayMusic in SetVolumeMusic not working as intended, as restarts background music but does intended job of letting you hear volume
+    public void SetVolumeMusic(float value) { float t = Mathf.Lerp(-70, 0, value); Debug.Log(t); AudioMixer.SetFloat("musicVolume", t); Settings.instance.volumeMusic = t; AudioManager.instance.PlayMusic("MenuClick"); }  //left to mute, right to loud 
+    // DAVE NOTE END
+
+    public void SetVolumeSFX(float value) { float t = Mathf.Lerp(-70, 0, value); Debug.Log(t); AudioMixer.SetFloat("sfxVolume", t); Settings.instance.volumeSFX = t; AudioManager.instance.PlaySFX("MenuClick"); }  //left to mute, right to loud
 
     public void PlayOutroSequence() => StartCoroutine("OutroSequenceWithTimings");
     
