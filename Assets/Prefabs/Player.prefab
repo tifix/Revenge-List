@@ -208,6 +208,7 @@ MonoBehaviour:
   dashLenght: 0.2
   dashCoolDown: 0.5
   zLimits: {x: 8, y: -10}
+  hasList: 1
 --- !u!114 &3395993812505339147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,6 +226,7 @@ MonoBehaviour:
   knockBackWhenHit: 0
   explosionStrength: 3
   canTakeDamage: 1
+  attackBuffer: 0.4
   attackIntervalMinimum: 0.15
   attackToIdleInterval: 0.3
   attackLastTimestamp: 0
@@ -235,7 +237,7 @@ MonoBehaviour:
     m_Bits: 320
   canBeDamaged: 1
   invincivilityTime: 1
-  canAttack: 1
+  hasAttacked: 0
 --- !u!65 &3395993812505339142
 BoxCollider:
   m_ObjectHideFlags: 0
