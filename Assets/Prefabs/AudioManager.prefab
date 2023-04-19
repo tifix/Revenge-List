@@ -245,9 +245,12 @@ MonoBehaviour:
   DashMC: {fileID: 8300000, guid: fbf4f06ea5035db4cbc84c3f7e936093, type: 3}
   BgMusic: {fileID: 8300000, guid: 01710705e87113b4381c2e9c1eda61dd, type: 3}
   BossTrack: {fileID: 8300000, guid: a6653b98998f6cf439cc8f4b3f79fbcb, type: 3}
+  TutorialTrack: {fileID: 8300000, guid: afce67261c0dbc946ae7bc9ca7f4931b, type: 3}
   MenuClick: {fileID: 8300000, guid: 1bf88ef18f748a04ba7669c7f3a26924, type: 3}
   MenuClickError: {fileID: 8300000, guid: 05fcf23fa242f2c46960a2be5b7c2224, type: 3}
   QteTrack: {fileID: 8300000, guid: 61da71e1b34077f4697398d922c00935, type: 3}
+  QteHit: {fileID: 0}
+  QteMiss: {fileID: 0}
   EnvelopeThrow: {fileID: 8300000, guid: 372bbd149e23e8e4e862b6631909ad85, type: 3}
   KickSFX: {fileID: 8300000, guid: b24c529f65e1d4c4f84bdb2ef51b986f, type: 3}
   FlipSFX: {fileID: 8300000, guid: 19f8b1ada518edb46b28aa7b8bb1983e, type: 3}
@@ -260,3 +263,5 @@ MonoBehaviour:
   MicroBeep: {fileID: 8300000, guid: 31ec8b6c43bc47642ad3546104ce3b66, type: 3}
   SteakLand: {fileID: 8300000, guid: e1fe14fb653ab7e4e8090fcd4bc1bdc4, type: 3}
   UnrollList: {fileID: 8300000, guid: c508f2965cbff5b4ea19fe7c8cb74558, type: 3}
+  FlyingGnome: {fileID: 0}
+  MicroHit: {fileID: 0}

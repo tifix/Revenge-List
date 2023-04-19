@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0cbb69a79da924468fa76b531195156, type: 3}
+  m_Name: TutorialQTE
+  m_EditorClassIdentifier: 
+  bpm: 120
+  startTime: 0
+  endTime: 0
+  beats:
+  - timing: 1
+    myBeat: 0
+    speed: 2
+  - timing: 5
+    myBeat: 1
+    speed: 2
+  - timing: 9
+    myBeat: 3
+    speed: 2
+  - timing: 13
+    myBeat: 2
+    speed: 2
+  - timing: 15
+    myBeat: 2
+    speed: 2
+  - timing: 17
+    myBeat: 3
+    speed: 2
+  - timing: 21
+    myBeat: 0
+    speed: 2
+  - timing: 25
+    myBeat: 3
+    speed: 2
+  - timing: 29
+    myBeat: 2
+    speed: 2
+  - timing: 33
+    myBeat: 2
+    speed: 2
+  - timing: 35
+    myBeat: 1
+    speed: 2
+  - timing: 37
+    myBeat: 3
+    speed: 2
+  - timing: 41
+    myBeat: 0
+    speed: 2
+  - timing: 45
+    myBeat: 1
+    speed: 2
+  - timing: 49
+    myBeat: 0
+    speed: 2
+  - timing: 53
+    myBeat: 2
+    speed: 2
+  - timing: 55
+    myBeat: 0
+    speed: 2
+  - timing: 57
+    myBeat: 3
+    speed: 4
+  - timing: 66
+    myBeat: 4
+    speed: 2
+  beatsForWin: 9
+  song: {fileID: 8300000, guid: afce67261c0dbc946ae7bc9ca7f4931b, type: 3}

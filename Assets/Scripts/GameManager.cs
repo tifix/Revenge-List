@@ -106,15 +106,13 @@ public class GameManager : MonoBehaviour
         return true;
     }
 
-    public static void StartQuickTimeEventEverything() 
+    public void StartQuickTimeEventEverything(string name) 
     {
         
         UI.instance.ToggleQTEScreen();
         QTEManager.instance.QTEStart();
 
-        instance.Invoke("StartMusic", 3);
-
-        
+        StartCoroutine(StartMusic(name));
     }
 
     // Set win State
@@ -200,7 +198,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void StartMusic() => AudioManager.instance.PlayMusic("QteTrack");
+    IEnumerator StartMusic(string name)
+    {
+        yield return new WaitForSeconds(4);
+        AudioManager.instance.PlayMusic(name);
+    }
 
     //I recommend looking into async loading of scenes, this would allow us to have a scene for transitioning (loading screen)
     //When loading a scene, you can choose the mode to load it in, a pretty cool one is "Additive", which basically just allows

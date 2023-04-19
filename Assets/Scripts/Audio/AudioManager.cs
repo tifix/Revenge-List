@@ -18,6 +18,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip DashMC;
     public AudioClip BgMusic;
     public AudioClip BossTrack;
+    public AudioClip TutorialTrack;
     public AudioClip MenuClick;
     public AudioClip MenuClickError;
     public AudioClip QteTrack;
@@ -153,6 +154,10 @@ public class AudioManager : MonoBehaviour
             case "BossTrack":
                 musicSource.volume = 1f;
                 musicSource.clip = BossTrack;
+                break;
+            case "TutorialTrack":
+                musicSource.volume = 1f;
+                musicSource.clip = TutorialTrack;
                 break;
             case "BgMusic":
                 musicSource.volume = 1f;

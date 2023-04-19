@@ -7,7 +7,7 @@ using UnityEditor;
 
 public enum Beats
 {
-    Up, Down, Left, Right
+    Up, Down, Left, Right, Null
 }
 
 [CreateAssetMenu(fileName = "beatMap", menuName = "QTE")]
