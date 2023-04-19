@@ -67,6 +67,7 @@ public class UI : MonoBehaviour
     [SerializeField]    Sprite          ListSpriteFull, ListSpriteNoMicro;    
     [SerializeField]    GameObject      RevengeListImageDisplayer;    
     [SerializeField]    bool            PauseHideDialogue=false;                            //Did pausing interrupt dialogue - if yes, show it again.
+    [SerializeField]    bool            PauseHideQTE=false;                            //Did pausing interrupt QTE - if yes, show it again.
     
 
     //
@@ -117,7 +118,7 @@ public class UI : MonoBehaviour
 
     public void DialogueAdvance(InputAction.CallbackContext obj)        //advancing the dialogue - next page if finished, fast forwarding otherwise.
     {
-        if (dialogueCur != null)
+        if (!PauseHideDialogue && dialogueCur != null)
         {
             if (isWaiting) { txtPageNr++; isWaiting = false; }
             else if (!dialogueSkipLocked) runCoroutine = false;
@@ -474,11 +475,15 @@ public class UI : MonoBehaviour
 
         //Hiding and showing dialogue as apropriate
         if (boxTextDisplay.activeInHierarchy) { boxTextDisplay.SetActive(!boxPause.activeInHierarchy); PauseHideDialogue = true; }
-        if (PauseHideDialogue) {boxTextDisplay.SetActive(true); PauseHideDialogue = false; }
+        else if (PauseHideDialogue) {boxTextDisplay.SetActive(true); PauseHideDialogue = false; }
+
+        //QTE hiding when paused.
+        if(boxQTE.activeInHierarchy && boxPause.activeInHierarchy) { boxQTE.SetActive(false);PauseHideQTE = true; }
+        if(PauseHideQTE && !boxPause.activeInHierarchy) { boxQTE.SetActive(true); PauseHideQTE = false; }
 
         //Pausing and unpausing audio apropriately
-        if (boxPause.activeInHierarchy) { AudioManager.instance.musicSource.Pause(); AudioManager.instance.musicSource2.Pause(); }
-        else { AudioManager.instance.musicSource.UnPause(); AudioManager.instance.musicSource2.UnPause(); }
+        if (boxPause.activeInHierarchy) { AudioManager.instance.musicSource.Pause(); }//AudioManager.instance.musicSource2.Pause();
+        else { AudioManager.instance.musicSource.UnPause(); }//AudioManager.instance.musicSource2.UnPause();
 
     }     
     public void BackToMenu() 
