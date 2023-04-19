@@ -68,7 +68,7 @@ public class QTEManager : MonoBehaviour
         if (currentMap == null)
             currentMap = defaultMap;
 
-        percentagePerSkull = (float)(1.0f / (currentMap.beats.Count - healthQTE + 1));
+        percentagePerSkull = (float)(1.0f / (currentMap.beats.Count - healthQTE));
 
         playQTE = false;
 
@@ -102,7 +102,7 @@ public class QTEManager : MonoBehaviour
         if (currentMap == null)
             currentMap = defaultMap;
 
-        percentagePerSkull = (float)(1.0f / (currentMap.beats.Count - healthQTE + 1));      //for fill you need
+        percentagePerSkull = (float)(1.0f / (currentMap.beats.Count - healthQTE));      //for fill you need
         FillSong.fillAmount = 0;
 
         anim.SetBool("QTE_Playing", true);
@@ -303,7 +303,7 @@ public class QTEManager : MonoBehaviour
 
     public void QTECleanUp()
     {
-        percentagePerSkull = (float)(1.0f / (currentMap.beats.Count - healthQTE + 1));
+        percentagePerSkull = (float)(1.0f / (currentMap.beats.Count - healthQTE));
         FillSong.fillAmount = 0;
 
         correctHits = 0;
@@ -327,7 +327,7 @@ public class QTEManager : MonoBehaviour
     public void SetBeatMap(QTEObject map)
     {
         currentMap = map;
-        percentagePerSkull = (float)(1.0f / (currentMap.beats.Count - healthQTE+1));
+        percentagePerSkull = (float)(1.0f / (currentMap.beats.Count - healthQTE));
         FillSong.fillAmount = 0;
     }
 
@@ -335,7 +335,7 @@ public class QTEManager : MonoBehaviour
     public void SetDefaultMap()
     {
         currentMap = defaultMap;
-        percentagePerSkull = (float)(1.0f / (currentMap.beats.Count - healthQTE + 1));
+        percentagePerSkull = (float)(1.0f / (currentMap.beats.Count - healthQTE));
         FillSong.fillAmount = 0;
     }
 

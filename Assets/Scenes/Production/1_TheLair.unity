@@ -7087,6 +7087,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3702850953895804210, guid: 044178dd346668d49946ca50d8299ffb, type: 3}
+      propertyPath: cheat_WarpToMicrowave
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3702850953895804210, guid: 044178dd346668d49946ca50d8299ffb, type: 3}
       propertyPath: cheat_FastForwardDialogue
       value: 0
       objectReference: {fileID: 0}
@@ -31507,7 +31511,7 @@ MonoBehaviour:
   roundEndDialogues: []
   dialogueDelay: 1.1
   phase_QTEs:
-  - {fileID: 11400000, guid: da30cc44ffddd3a4cb2f99f0b522a5dd, type: 2}
+  - {fileID: 11400000, guid: 02af4b4e76526dd4ebc01298855a9b6b, type: 2}
   overHeadAnimationDelay: 0
   straightAnimationDelay: 0
   camCenter: {fileID: 754989060}
@@ -31601,13 +31605,13 @@ MonoBehaviour:
       - m_Target: {fileID: 833656598}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: StartQuickTimeEventEverything
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: TutorialTrack
           m_BoolArgument: 1
         m_CallState: 2
   PromptCanvas: {fileID: 0}
