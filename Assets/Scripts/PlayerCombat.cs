@@ -65,6 +65,7 @@ public class PlayerCombat : ObjectScript
             }
             
         }
+        if (GameManager.instance.cheat_LowHPPlayer) { health = 1; GameManager.instance.cheat_LowHPPlayer = false; } //added a way to test player death state stuffs -M
     }
 
     public void DisableAttack()
@@ -157,8 +158,9 @@ public class PlayerCombat : ObjectScript
         canBeDamaged = false;
         StartCoroutine(Invincible(invincivilityTime));
 
-        if (health <= 0.0f)
+        if (health <= 0.0f && health!=-999)
         {
+            health = 999;
             StartCoroutine(OnDeath());
         }
     }
@@ -182,8 +184,9 @@ public class PlayerCombat : ObjectScript
         //Debug.Log("PLAYER DEAD... [WIP]");
         UI.instance.FadeOut();
         yield return new WaitForSeconds(1f);
-        UI.instance.FadeIn();
         GameManager.instance.SetLost(true);
+        UI.instance.EnableLostScreen();
+        UI.instance.FadeIn();
     }
 
     private void OnDestroy()    //Disabling attack input when exiting to menu

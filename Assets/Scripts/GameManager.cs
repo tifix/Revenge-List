@@ -22,14 +22,16 @@ public class GameManager : MonoBehaviour
     bool isCurrentlyShaking = false;    //is the camera shaking at the moment - used for removing multiple shakes at once
 
     [Header("Cheats")]
-    [Tooltip("enable to warp to Karl arena")] [SerializeField] bool cheat_WarpToKarl = false;
-    [Tooltip("enable to warp to Karl arena")] [SerializeField] bool cheat_WarpToMicrowave = false;
+    [Tooltip("adjust game speed to analyse details... in detail"), Range(0, 2f)] public float cheat_TimeScale = 1;
+    [Tooltip("enable to skip every dialogue encountered")] public bool cheat_FastForwardDialogue = false;
+    [Tooltip("enable to stop taking damage")] public bool cheat_GodMode = false;
+    [Tooltip("enable to warp to Karl arena")] public bool cheat_WarpToKarl = false;
+    [Tooltip("enable to warp to Microwave arena")] [SerializeField] bool cheat_WarpToMicrowave = false;
     [Tooltip("enable to instantly complete a boss phase")] public bool cheat_SkipBossPhase = false;
     [Tooltip("fast forward to when Karl is defeated")] public bool cheat_SkipToOutro = false;
-    [Tooltip("enable to skip every dialogue encountered")] public bool cheat_FastForwardDialogue = false;
-    [Tooltip("adjust game speed to analyse details... in detail"),Range(0,2f)] public float cheat_TimeScale = 1;
+    [Tooltip("fast forward to last phase of microwave")] public bool cheat_SkipToMicroEnd = false;
+    [Tooltip("Go stab yourself")] public bool cheat_LowHPPlayer = false;
     //[Tooltip("enable to instantly kill Karl. :(")] public bool cheat_KillBoss = false;
-    [Tooltip("enable to stop taking damage")] public bool cheat_GodMode = false;
     [Tooltip("enable to make QTEs impossible to lose")] public bool cheat_QTEAlwaysWin = false;
 
     //public GameObject loadingScreen;
@@ -84,6 +86,7 @@ public class GameManager : MonoBehaviour
         if (isGamePaused) Time.timeScale = 0;
         else Time.timeScale = 1;
     }
+    public void WarpToKarl() => cheat_WarpToKarl = true;
 
     public bool GetCamera() 
     {
@@ -129,8 +132,6 @@ public class GameManager : MonoBehaviour
     public void SetLost(bool targetState)
     {
         isGameLost = targetState;
-        if (isGameLost) Time.timeScale = 0;
-        else Time.timeScale = 1;
         UI.instance.EnableLostScreen();
     }
 

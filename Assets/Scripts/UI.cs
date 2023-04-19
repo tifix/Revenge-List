@@ -500,7 +500,6 @@ public class UI : MonoBehaviour
     public void EnableLostScreen()
     {
         boxLost.SetActive(true);
-        Invoke("BackToMenu", GameManager.instance.DeathReloadTime);
     }
 
     public void ToggleRevengeList()     //Added pausing when Revenge list shown
