@@ -3205,11 +3205,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1548973130407749384, guid: cb8d011301534e14a84915a63758380d, type: 3}
       propertyPath: m_Range
-      value: 8.615283
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1548973130407749384, guid: cb8d011301534e14a84915a63758380d, type: 3}
       propertyPath: m_Intensity
-      value: 3.3909442
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3615865189927272332, guid: cb8d011301534e14a84915a63758380d, type: 3}
       propertyPath: m_Name
@@ -3283,6 +3283,18 @@ PrefabInstance:
       propertyPath: executableSprite
       value: 
       objectReference: {fileID: 1727684979}
+    - target: {fileID: 3615865189927272334, guid: cb8d011301534e14a84915a63758380d, type: 3}
+      propertyPath: phase_QTEs.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: da30cc44ffddd3a4cb2f99f0b522a5dd, type: 2}
+    - target: {fileID: 3615865189927272334, guid: cb8d011301534e14a84915a63758380d, type: 3}
+      propertyPath: phase_QTEs.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 83ac4bcb91d29244f96343ceb4495d36, type: 2}
+    - target: {fileID: 3615865189927272334, guid: cb8d011301534e14a84915a63758380d, type: 3}
+      propertyPath: phase_QTEs.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 02af4b4e76526dd4ebc01298855a9b6b, type: 2}
     - target: {fileID: 3615865190073122274, guid: cb8d011301534e14a84915a63758380d, type: 3}
       propertyPath: m_Size.x
       value: 8.449653
