@@ -901,7 +901,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3395993812505339147, guid: 140465e8217c6d347a5bc5c7e0cd1573, type: 3}
       propertyPath: attackBuffer
-      value: 0.8
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3395993812505339147, guid: 140465e8217c6d347a5bc5c7e0cd1573, type: 3}
       propertyPath: damagedColour.a
@@ -921,7 +921,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3395993812505339147, guid: 140465e8217c6d347a5bc5c7e0cd1573, type: 3}
       propertyPath: attackToIdleInterval
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 3395993812505339147, guid: 140465e8217c6d347a5bc5c7e0cd1573, type: 3}
       propertyPath: attackIntervalMinimum
@@ -12239,7 +12239,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897402303}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: -8.890669, y: 20.066225, z: -43.300526}
+  m_LocalPosition: {x: -8.890622, y: 20.066225, z: -43.300526}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17427,7 +17427,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162723989}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: -8.890669, y: 20.066225, z: -43.300526}
+  m_LocalPosition: {x: -8.890622, y: 20.066225, z: -43.300526}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

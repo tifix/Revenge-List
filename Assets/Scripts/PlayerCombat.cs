@@ -25,8 +25,6 @@ public class PlayerCombat : ObjectScript
     //Check if player wants to continue the combo
     bool comboAttackBuffer = false;
 
-    string attackAnimId = "xd";
-    string currentAnim = "PL_idle";
     protected override void Awake()                             //Ensuring single instance of the script
     {
         base.Awake();
@@ -51,9 +49,8 @@ public class PlayerCombat : ObjectScript
 
     private void FixedUpdate()
     {
-        currentAnim = GetComponent<Animator>().GetCurrentAnimatorClipInfo(0)[0].clip.name;
         //Player wants to attack
-        if (comboAttackBuffer && Time.time > attackLastTimestamp + attackIntervalMinimum)
+        if(comboAttackBuffer && Time.time > attackLastTimestamp + attackIntervalMinimum)
         {
             comboAttackBuffer = false;
             Attack();
@@ -95,10 +92,10 @@ public class PlayerCombat : ObjectScript
 
         else if (Time.time > attackLastTimestamp + attackIntervalMinimum)
         {
-            GetComponent<Animator>().SetBool("isAttacking", true);
             hasAttacked = true;
+            attackLastTimestamp = Time.time;
+            GetComponent<Animator>().SetBool("isAttacking", true);
             PlayerMovement.instance.PauseMovement();
-            StartCoroutine(AnimCatchUp());
         }
         //if attack ON cooldown
         else
@@ -119,12 +116,11 @@ public class PlayerCombat : ObjectScript
 
         else if (Time.time > attackLastTimestamp + attackIntervalMinimum)
         {
-            GetComponent<Animator>().SetBool("isAttacking", true);
             hasAttacked = true;
+            attackLastTimestamp = Time.time;
+            GetComponent<Animator>().SetBool("isAttacking", true);
             PlayerMovement.instance.PauseMovement();
-            StartCoroutine(AnimCatchUp());
         }
-        //if attack ON cooldown
         else
         {
             Debug.Log("Attacking on cooldown!");
@@ -136,6 +132,19 @@ public class PlayerCombat : ObjectScript
     {
         health += _value;
         Debug.Log("Health: %f" + health);
+    }
+
+    public void DoDamage()
+    {
+        // Detect enemies in range
+        Collider[] hitEnemies = Physics.OverlapSphere(attackOrg.position, attackRange, enemyLayers);
+
+        // Damage destructibles hit by collider
+        foreach (Collider enemy in hitEnemies)
+        {
+            Debug.Log("Enemy hit: " + enemy.name);
+            if (enemy.TryGetComponent<ObjectScript>(out ObjectScript OS)) OS.ApplyDamage(10.0f);     //Fixed error where kicking boss proectiles crashed the game -MC
+        }
     }
 
     public override void ApplyDamage(float _value)
@@ -177,26 +186,8 @@ public class PlayerCombat : ObjectScript
         GameManager.instance.SetLost(true);
     }
 
-    IEnumerator AnimCatchUp()
-    {
-        yield return new WaitUntil(() => attackAnimId != currentAnim);
-        attackAnimId = currentAnim;        
-        attackLastTimestamp = Time.time;
-        yield return new WaitForSeconds(0.1f);
-        // Detect enemies in range
-        Collider[] hitEnemies = Physics.OverlapSphere(attackOrg.position, attackRange, enemyLayers);
-
-        // Damage destructibles hit by collider
-        foreach (Collider enemy in hitEnemies)
-        {
-            Debug.Log("Enemy hit: " + enemy.name);
-            if (enemy.TryGetComponent<ObjectScript>(out ObjectScript OS)) OS.ApplyDamage(10.0f);     //Fixed error where kicking boss proectiles crashed the game -MC
-        }
-    }
-
     private void OnDestroy()    //Disabling attack input when exiting to menu
     {
         input.Ground.Attack.Disable();
-
     }
 }
