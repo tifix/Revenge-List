@@ -69,6 +69,10 @@ public class AudioManager : MonoBehaviour
         sfxSource.Play();
     }
 
+    public void PlayClickEffect() =>sfxSource.PlayOneShot(MenuClick); 
+    public void PlayClickBadEffect() =>sfxSource.PlayOneShot(MenuClickError); 
+    
+
     // Plays a clip through the musicSource
     public void PlayMusic(AudioClip clip)
     {
