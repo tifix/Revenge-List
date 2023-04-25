@@ -11,26 +11,23 @@ public class PlayerCombat : ObjectScript
     Controls input;
     public static PlayerCombat instance;
 
-    [Range(0,1)] public float attackBuffer=0.4f;          //Buffer
-    [Range(0,1)] public float attackIntervalMinimum=0.6f; //Can attack again
-    [Range(0f,1)] public float attackToIdleInterval=0.7f; //Back to idle to late
-    public float attackLastTimestamp=0;
-    public GameObject attackBox;
-    BoxCollider col;
-    public LayerMask enemyLayers;
-    public bool canBeDamaged = true;
-    public float invincivilityTime = 1f;
-
-    public bool hasAttacked = false;
-    //Check if player wants to continue the combo
-    bool comboAttackBuffer = false;
+    [Range(0,1)]    public float attackBuffer=0.4f;             //Buffer
+    [Range(0,1)]    public float attackIntervalMinimum=0.6f;    //Can attack again
+    [Range(0f,1)]   public float attackToIdleInterval=0.7f;     //Back to idle to late
+                    public float attackLastTimestamp=0;
+                    public float invincivilityTime = 1f;
+             public GameObject   attackBox;
+                    BoxCollider  col;
+             public LayerMask    enemyLayers;
+             public bool         canBeDamaged = true;
+                    bool         comboAttackBuffer = false;     //Check if player wants to continue the combo
+                    bool         hasAttacked = false;     //Check if player wants to continue the combo
 
     protected override void Awake()                             //Ensuring single instance of the script
     {
         if (instance == null) instance = this;
         else Destroy(this);
         base.Awake();
-
         input = new Controls();
         col = attackBox.GetComponent<BoxCollider>();
         this.isAlive = true;
