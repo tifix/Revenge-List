@@ -43,6 +43,7 @@ public class TutorialBoss : BossClass
                 //Burst attack
                 if (phases[currentPhase].attacks[currentAttack].style == BossAttacks.ProjectileStyle.BURST)
                 {
+                    AudioManager.instance.PlaySFX("Zap");
                     float extraTimer = 0;
                     int count = phases[currentPhase].attacks[currentAttack].amount;
                     while (count > 0)
@@ -60,6 +61,7 @@ public class TutorialBoss : BossClass
                 //Single attack
                 else if (phases[currentPhase].attacks[currentAttack].style == BossAttacks.ProjectileStyle.SINGLE)
                 {
+                    AudioManager.instance.PlaySFX("Zap");
                     Attack(phases[currentPhase].attacks[currentAttack]);
                 }
 
@@ -71,6 +73,7 @@ public class TutorialBoss : BossClass
                 if (currentAttack >= phases[currentPhase].attacks.Count || GameManager.instance.cheat_SkipBossPhase)
                 {
                     ChangeAttack();
+                    AudioManager.instance.PlaySFX("Zap");
                     //End phase
                     EndPhase();
                     //Wait for shield to break

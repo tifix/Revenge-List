@@ -20,7 +20,7 @@ public class BossProjectile : MonoBehaviour
 
     private void Awake()
     {
-        if (hitSFX == null) hitSFX = (AudioClip)AssetDatabase.LoadAssetAtPath("Assets/AudioAssets/SteakLand.mp3", typeof(AudioClip));
+        if (hitSFX == null) hitSFX = (AudioClip)AssetDatabase.LoadAssetAtPath("Assets/AudioAssets/SteakLand.mp3", typeof(AudioClip));//Assigning if reference breaks ...somehow
     }
 
     void Update()
