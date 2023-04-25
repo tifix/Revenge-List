@@ -7,6 +7,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Audio;
+using UnityEngine.EventSystems;
 
 /*
  * Main UI handler
@@ -42,9 +43,9 @@ public class UI : MonoBehaviour
     /////////////////////////
     [Space, Header("Object references for UI objects")]
     /////////////////////////
-                    public GameObject   boxInteractPrompt; public GameObject boxQTE;        //object that displays dialogue and the quick time event parent
+    public                 GameObject   boxInteractPrompt; public GameObject boxQTE;        //object that displays dialogue and the quick time event parent
     [SerializeField]       GameObject   boxTextDisplay, boxPause, boxSettings;              //the pause menu, the settings menu and the prompt to interact with an object
-    [SerializeField]       GameObject   boxWon, boxLost;                                    //VictoryScreen and Death screen respectively
+    [SerializeField]       GameObject   boxLost;                                            //Death screen shown when player dies
     public                 GameObject   boxHealthbar, boxBossBar;                           //PLAYER AND BOSS healthbars respectively
     [Space(10)]
     [SerializeField] TextMeshProUGUI    txtMain;                                            //the text that displays the dialogue in UI.  
@@ -57,6 +58,7 @@ public class UI : MonoBehaviour
     [SerializeField]        Slider      bossHealthBar, bossShieldBar;
     [SerializeField]        Slider      settingVolumeMusic, settingVolumeSFX,settingVolume, settingTypeSpeed;
     [SerializeField]        Image       XLPortraitLilith, XLPortraitOther;                  //Portraits which display Lilith and others as they tallk
+    [SerializeField]        Image       DialogueDarken;                                     //Darkening overlay mid-dialouge;
     [Space(10)]
     [SerializeField]    GameObject      RevengeList;                                        //the gorgeous scrollable revenge list
     [SerializeField]    GameObject      RevengeListTriggerer;                               //the buton triggering the revenge lsit display
@@ -67,8 +69,8 @@ public class UI : MonoBehaviour
     [SerializeField]    Sprite          ListSpriteFull, ListSpriteNoMicro;    
     [SerializeField]    GameObject      RevengeListImageDisplayer;    
     [SerializeField]    bool            PauseHideDialogue=false;                            //Did pausing interrupt dialogue - if yes, show it again.
-    [SerializeField]    bool            PauseHideQTE=false;                            //Did pausing interrupt QTE - if yes, show it again.
-    
+    [SerializeField]    bool            PauseHideQTE=false;                                 //Did pausing interrupt QTE - if yes, show it again.
+    public              EventSystem     ES;                                                 //Event system used to assign default UI buttons
 
     //
     //Node typing data retrieval
@@ -391,6 +393,8 @@ public class UI : MonoBehaviour
         //enabling the choice displays once set
         if (!boxTextDisplay.gameObject.activeInHierarchy) boxTextDisplay.gameObject.SetActive(true);
         txtChoiceA.transform.parent.parent.gameObject.SetActive(true);
+
+        SetSelectedButton(txtChoiceA.transform.GetComponentInParent<Button>().gameObject);  //Setting choice button selectability. Also done in Dialogue.show
     }
     public void SetDialogueChoiceHidden() => txtChoiceA.transform.parent.parent.gameObject.SetActive(false);
 
@@ -433,6 +437,7 @@ public class UI : MonoBehaviour
     {
         if(OutroCredits.activeInHierarchy || OutroCinematicObject.activeInHierarchy) yield break;
         ToggleHealthbar(false);
+        DialogueDarken.gameObject.SetActive(false);
         OutroCinematicObject.SetActive(true);
         FadeIn();
         PlayerMovement.instance.PauseMovement();
@@ -463,11 +468,17 @@ public class UI : MonoBehaviour
         float t = 0;
         while (true) { t += Time.deltaTime; Debug.Log(t); yield return new WaitForEndOfFrame(); if (t > 13) break; }
         PlayerMovement.instance.UnPauseMovement();
+        DialogueDarken.gameObject.SetActive(true);
         GameManager.LoadMenu();
     }
 
 
     #region buttons and element toggles
+    public void SetSelectedButton(GameObject gameObject) //For controller support - when a screen is enabled, the default button shown must be enabled, done here
+    {
+        ES.SetSelectedGameObject(gameObject);
+    }
+
     public void TogglePauseMenu() //Toggle pause menu
     {
         boxPause.SetActive(!boxPause.activeInHierarchy);
@@ -478,8 +489,13 @@ public class UI : MonoBehaviour
         if (RevengeList.activeInHierarchy) RevengeList.SetActive(false);
 
         //Hiding and showing dialogue as apropriate
-        if (boxTextDisplay.activeInHierarchy) { boxTextDisplay.SetActive(!boxPause.activeInHierarchy); PauseHideDialogue = true; }
-        else if (PauseHideDialogue) {boxTextDisplay.SetActive(true); PauseHideDialogue = false; }
+        if (boxTextDisplay.activeInHierarchy) { boxTextDisplay.SetActive(false); PauseHideDialogue = true; }
+        else if (PauseHideDialogue) 
+        {
+            boxTextDisplay.SetActive(true); 
+            if(txtChoiceA.gameObject.activeInHierarchy) SetSelectedButton(txtChoiceA.transform.GetComponentInParent<Button>().gameObject);
+            PauseHideDialogue = false; 
+        }
 
         //QTE hiding when paused.
         if(boxQTE.activeInHierarchy && boxPause.activeInHierarchy) { boxQTE.SetActive(false);PauseHideQTE = true; }
@@ -499,6 +515,7 @@ public class UI : MonoBehaviour
         if (boxPause.activeInHierarchy) { AudioManager.instance.musicSource.Pause(); }//AudioManager.instance.musicSource2.Pause();
         else { AudioManager.instance.musicSource.UnPause(); }//AudioManager.instance.musicSource2.UnPause();
 
+        if (boxPause.activeInHierarchy) SetSelectedButton(boxPause.GetComponentInChildren<Button>().gameObject);    //Setting the default selected button
     }     
     public void BackToMenu() 
     {
@@ -528,6 +545,7 @@ public class UI : MonoBehaviour
     public void EnableLostScreen()
     {
         boxLost.SetActive(true);
+        SetSelectedButton(boxLost.GetComponentInChildren<Button>().gameObject);
     }
 
     public void ToggleRevengeList()     //Added pausing when Revenge list shown
