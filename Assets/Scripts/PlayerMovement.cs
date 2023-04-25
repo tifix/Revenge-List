@@ -191,7 +191,7 @@ public class PlayerMovement : MonoBehaviour
 
     void RevengeList(InputAction.CallbackContext obj)
     {
-        if(hasList)
+        if(hasList && !GameManager.instance.IsGamePaused() && !UI.instance.IsQTEPlaying())
             UI.instance.ToggleRevengeList();
     }
 

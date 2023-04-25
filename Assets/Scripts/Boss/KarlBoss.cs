@@ -12,6 +12,7 @@ public class KarlBoss : BossClass
     {
         base.OnEnable();
         if (anim == null) anim = GetComponentInChildren<Animator>();
+        StartCoroutine(base.Woosh(1f));
         AudioManager.instance.PlayMusic("BossTrack");
         Invoke("StartParticles", 0.5f); //Tiny delay so animations are in sync
     }

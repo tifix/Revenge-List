@@ -137,6 +137,12 @@ public class PlayerCombat : ObjectScript
 
     public void DoDamage()
     {
+        StartCoroutine(DelayedDamage());
+    }
+
+    IEnumerator DelayedDamage()
+    {
+        yield return new WaitForSeconds(0.1f);
         // Detect enemies in range
         Collider[] hitEnemies = Physics.OverlapSphere(attackOrg.position, attackRange, enemyLayers);
 
