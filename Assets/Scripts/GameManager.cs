@@ -87,8 +87,18 @@ public class GameManager : MonoBehaviour
     }
     
     public void TogglePause() => SetPause(!isGamePaused);
+
+    public bool IsGamePaused()
+    {
+        return isGamePaused;
+    }
     public void SetPause(bool targetState)
     {
+        //Escape takes priority over all other types of pauses
+        //esc and esc works fine
+        //if esc we can still open revenge list in the back
+        //if revenge list and esc and esc the revenge list closes, fine behaviour
+
         isGamePaused = targetState;
         if (isGamePaused) Time.timeScale = 0;
         else Time.timeScale = 1;
