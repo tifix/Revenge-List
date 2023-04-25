@@ -7759,7 +7759,7 @@ PrefabInstance:
     - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
       propertyPath: QteHit
       value: 
-      objectReference: {fileID: 8300000, guid: 96e5085e24b1f1b4d87255e48ab6f9ac, type: 3}
+      objectReference: {fileID: 8300000, guid: 361923ac16d724147b9e22d6a3ce7970, type: 3}
     - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
       propertyPath: WalkMC
       value: 
@@ -7783,7 +7783,7 @@ PrefabInstance:
     - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
       propertyPath: QteMiss
       value: 
-      objectReference: {fileID: 8300000, guid: 1bf88ef18f748a04ba7669c7f3a26924, type: 3}
+      objectReference: {fileID: 8300000, guid: b38bc5d3f5096d146b101469c5b54124, type: 3}
     - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
       propertyPath: QteTrack
       value: 
