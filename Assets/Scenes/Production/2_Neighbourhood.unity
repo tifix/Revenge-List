@@ -1236,6 +1236,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3395993812505339142, guid: 140465e8217c6d347a5bc5c7e0cd1573, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3395993812505339143, guid: 140465e8217c6d347a5bc5c7e0cd1573, type: 3}
       propertyPath: dashSFX
       value: 

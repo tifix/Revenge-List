@@ -27,7 +27,7 @@ public class TutorialBoss : BossClass
     public void SkipToLastPhase()
     {
         gameObject.SetActiveRecursively(true);
-        StartCoroutine(FirstAttack());
+        StartCoroutine(ThirdAttack());
     }
 
     protected override void Update()

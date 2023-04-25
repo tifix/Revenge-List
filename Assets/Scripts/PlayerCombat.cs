@@ -30,12 +30,9 @@ public class PlayerCombat : ObjectScript
         if (instance == null) instance = this;
         else Destroy(this);
         base.Awake();
-        col = attackBox.GetComponent<BoxCollider>();   
-    }
 
-    void Start()
-    {
         input = new Controls();
+        col = attackBox.GetComponent<BoxCollider>();
         this.isAlive = true;
         this.maxHealth = 100.0f;
         this.health = this.maxHealth;
@@ -187,8 +184,8 @@ public class PlayerCombat : ObjectScript
         UI.instance.FadeIn();
     }
 
-    private void OnDestroy()    //Disabling attack input when exiting to menu
+    private void OnDestroy()
     {
-        input.Ground.Attack.Disable();
+        input.Ground.Attack.started -= Attack;
     }
 }
