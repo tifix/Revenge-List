@@ -31193,7 +31193,7 @@ MonoBehaviour:
   isPausedWhileShowingA: 1
   preUseDialogue: {fileID: 11400000, guid: 5f6d223fcd9aa0947855da606c90d064, type: 2}
   waitAfterPreDialogue: 0.01
-  waitAfterInteract: 0
+  waitAfterInteract: 0.01
 --- !u!1 &4814028221092203615
 GameObject:
   m_ObjectHideFlags: 0
