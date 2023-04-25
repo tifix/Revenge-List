@@ -163,6 +163,9 @@ public class AudioManager : MonoBehaviour
                 musicSource.volume = 1f;
                 musicSource.clip = BgMusic;
                 break;
+            case "MenuClick":
+                sfxSource.clip = MenuClick;
+                break;
             case "QteTrack":
                 musicSource.volume = 1f;
                 musicSource.clip = QteTrack;
