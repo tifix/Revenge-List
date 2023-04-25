@@ -185,6 +185,7 @@ public class BossClass : MonoBehaviour
 
     public virtual void RepeatPhase()
     {
+        AudioManager.instance.PlayMusic("BossTrack");
         StartCoroutine(Woosh(1f)); //Knocks the player back into their position when the phase attacks ended right after going out of QTE 
         currentAttack = 0;
     }
