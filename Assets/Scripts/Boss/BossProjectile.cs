@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class BossProjectile : MonoBehaviour
@@ -15,6 +16,12 @@ public class BossProjectile : MonoBehaviour
 
     public Vector3 dir = new Vector3(-1,0,0);
     public GameObject destroyVFX;
+    public AudioClip hitSFX;
+
+    private void Awake()
+    {
+        if (hitSFX == null) hitSFX = (AudioClip)AssetDatabase.LoadAssetAtPath("Assets/AudioAssets/SteakLand.mp3", typeof(AudioClip));//Assigning if reference breaks ...somehow
+    }
 
     void Update()
     {
@@ -28,7 +35,8 @@ public class BossProjectile : MonoBehaviour
 
         else if(imOverHead && transform.position.y <= transform.GetChild(1).GetComponent<Transform>().position.y) //despawning after hitting the floor
         {
-            AudioManager.instance.PlaySFX("SteakLand");
+
+            AudioManager.instance.sfxSource.PlayOneShot(hitSFX);
             Instantiate<GameObject>(destroyVFX, transform.position, Quaternion.identity);
             if(isShakingCameraOnHit)GameManager.instance.CallShake(5, 0.5f);
             Destroy(gameObject);
