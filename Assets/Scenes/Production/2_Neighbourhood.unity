@@ -6935,6 +6935,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1162723990}
+    - target: {fileID: 509309130409614552, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 509309130409614554, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: beatObjects.Array.size
       value: 3
@@ -7101,7 +7105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4472082556904003229, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4739780529678773554, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -7175,6 +7179,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1162723990}
+    - target: {fileID: 8966028112275244296, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 8966028112275244303, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_IsActive
       value: 1
