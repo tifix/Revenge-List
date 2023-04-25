@@ -1,3 +1,4 @@
+using Newtonsoft.Json;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -56,11 +57,13 @@ public class SpriteTrail : MonoBehaviour
         while(t > 0)
         {
             GameObject obj = new GameObject("CloneTrail");
-            obj.transform.position = parentPos.position + new Vector3(0, sr.sprite.vertices[3].y / 2, 0);
+            obj.transform.position = parentPos.parent.position;
+            obj.transform.localScale = Vector3.one;
             obj.transform.localScale = parentPos.localScale;
+            //obj.transform.position = parentPos.position + new Vector3(0, 0.209f, 0);
 
             SpriteRenderer tempSR = obj.AddComponent<SpriteRenderer>();
-            tempSR.sprite = Sprite.Create(sr.sprite.texture, sr.sprite.textureRect, new Vector2(0.5f, 0), sr.sprite.pixelsPerUnit);
+            tempSR.sprite = Sprite.Create(sr.sprite.texture, sr.sprite.textureRect, new Vector2(0.5f, 0.75f), sr.sprite.pixelsPerUnit);
             tempSR.color = colourOverride;
             tempSR.flipX = sr.flipX;
             tempSR.flipY = sr.flipY;

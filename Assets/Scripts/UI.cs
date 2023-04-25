@@ -238,6 +238,11 @@ public class UI : MonoBehaviour
         if (pauseWhileRunning) PlayerMovement.instance.SetUnLockMovement();
     }
 
+    public bool IsInDialogue()
+    {
+        return boxTextDisplay.activeSelf;
+    }
+   
     public void DialogueShow(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning)                    //Call this with a dialogue structure to display it!
     {
         StartCoroutine(DialogueSkipLock()); //locks the ability to skip for REALTIME duration
@@ -482,10 +487,12 @@ public class UI : MonoBehaviour
 
         //Pausing game inputs and game time
         if (boxPause.activeInHierarchy) { PlayerMovement.instance.SetLockMovement(); GameManager.instance.SetPause(true); }
-        if (!boxPause.activeInHierarchy && !boxTextDisplay.activeInHierarchy)
+        else if (!boxPause.activeInHierarchy)
         {
-            PlayerMovement.instance.SetUnLockMovement();
-            GameManager.instance.SetPause(false);
+            if(!UI.instance.IsQTEPlaying()) //Don't unlock movement when we are in the QTE
+                PlayerMovement.instance.SetUnLockMovement();
+            if(!UI.instance.IsInDialogue())
+                GameManager.instance.SetPause(false);
         } //only unpausing if all pausing UI is hidden
 
         //Pausing and unpausing audio apropriately
