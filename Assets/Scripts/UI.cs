@@ -511,6 +511,10 @@ public class UI : MonoBehaviour
 
         boxQTE.SetActive(!boxQTE.activeInHierarchy); 
     }
+    public bool IsQTEPlaying()
+    {
+        return boxQTE.activeSelf;
+    }
     public void EnableLostScreen()
     {
         boxLost.SetActive(true);

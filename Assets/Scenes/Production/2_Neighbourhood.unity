@@ -3852,7 +3852,7 @@ PrefabInstance:
       objectReference: {fileID: 2213309349300726763, guid: e4eda74970f88dc468db13fe18084315, type: 3}
     - target: {fileID: 3615865189927272334, guid: cb8d011301534e14a84915a63758380d, type: 3}
       propertyPath: dialogueDelay
-      value: 2.5
+      value: 2.25
       objectReference: {fileID: 0}
     - target: {fileID: 3615865189927272334, guid: cb8d011301534e14a84915a63758380d, type: 3}
       propertyPath: executableSprite
@@ -6897,7 +6897,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 206191824458273344, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -4.999996
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 361665146755759477, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_SizeDelta.y
@@ -6957,7 +6957,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2964471093676275400, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -4.999996
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 3665701568203247820, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_IsActive
@@ -7077,7 +7077,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7788297029784818215, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -4.999996
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 8094783992337182196, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_RaycastTarget
@@ -7097,7 +7097,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9011750916492581194, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -4.999996
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 9210855763754378973, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_Camera
