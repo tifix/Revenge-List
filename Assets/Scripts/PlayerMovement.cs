@@ -74,9 +74,15 @@ public class PlayerMovement : MonoBehaviour
         {
             dir = movement.ReadValue<Vector2>();
             if (dir.x < 0)
+            {
                 sprite.flipX = true;
+                PlayerCombat.instance.MoveBox(-1.5f);
+            }
             else if (dir.x > 0)
+            {
                 sprite.flipX = false;
+                PlayerCombat.instance.MoveBox(1);
+            }
             ProcessInput();
             GetComponent<Animator>().SetFloat("walkDirection", dir.magnitude);
         }

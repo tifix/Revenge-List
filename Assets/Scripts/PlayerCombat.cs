@@ -15,8 +15,8 @@ public class PlayerCombat : ObjectScript
     [Range(0,1)] public float attackIntervalMinimum=0.6f; //Can attack again
     [Range(0f,1)] public float attackToIdleInterval=0.7f; //Back to idle to late
     public float attackLastTimestamp=0;
-    public Transform attackOrg;
-    public float attackRange = 2.0f;
+    public GameObject attackBox;
+    BoxCollider col;
     public LayerMask enemyLayers;
     public bool canBeDamaged = true;
     public float invincivilityTime = 1f;
@@ -27,9 +27,10 @@ public class PlayerCombat : ObjectScript
 
     protected override void Awake()                             //Ensuring single instance of the script
     {
-        base.Awake();
         if (instance == null) instance = this;
         else Destroy(this);
+        base.Awake();
+        col = attackBox.GetComponent<BoxCollider>();   
     }
 
     void Start()
@@ -128,11 +129,9 @@ public class PlayerCombat : ObjectScript
         }
     }
 
-    // For applying healing to the player
-    void ApplyHealing(float _value)
+    public void MoveBox(float x)
     {
-        health += _value;
-        Debug.Log("Health: %f" + health);
+        attackBox.transform.localPosition = new Vector3(x, attackBox.transform.localPosition.y, attackBox.transform.localPosition.z);
     }
 
     public void DoDamage()
@@ -144,7 +143,7 @@ public class PlayerCombat : ObjectScript
     {
         yield return new WaitForSeconds(0.1f);
         // Detect enemies in range
-        Collider[] hitEnemies = Physics.OverlapSphere(attackOrg.position, attackRange, enemyLayers);
+        Collider[] hitEnemies = Physics.OverlapBox(attackBox.transform.position, col.size, Quaternion.identity, enemyLayers);
 
         // Damage destructibles hit by collider
         foreach (Collider enemy in hitEnemies)
@@ -176,13 +175,6 @@ public class PlayerCombat : ObjectScript
         canBeDamaged = false;
         yield return new WaitForSeconds(duration);
         canBeDamaged = true;
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        if(attackOrg == null)
-            return;
-        Gizmos.DrawWireSphere(attackOrg.position, attackRange);
     }
 
     IEnumerator OnDeath()
