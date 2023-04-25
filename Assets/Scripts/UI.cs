@@ -238,6 +238,11 @@ public class UI : MonoBehaviour
         if (pauseWhileRunning) PlayerMovement.instance.SetUnLockMovement();
     }
 
+    public bool IsInDialogue()
+    {
+        return boxTextDisplay.activeSelf;
+    }
+   
     public void DialogueShow(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning)                    //Call this with a dialogue structure to display it!
     {
         StartCoroutine(DialogueSkipLock()); //locks the ability to skip for REALTIME duration
