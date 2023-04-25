@@ -68,6 +68,7 @@ MonoBehaviour:
   imOverHead: 0
   dir: {x: -1, y: 0, z: 0}
   destroyVFX: {fileID: 1429954232896169633, guid: 83036083a4ebcd34f98131bd3cf6f4d2, type: 3}
+  hitSFX: {fileID: 8300000, guid: a296d1656a467e841a76e380a4a1da1e, type: 3}
 --- !u!65 &535778296885272490
 BoxCollider:
   m_ObjectHideFlags: 0
