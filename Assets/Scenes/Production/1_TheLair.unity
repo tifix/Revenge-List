@@ -12243,7 +12243,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897402303}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: -8.8906975, y: 20.066225, z: -43.300526}
+  m_LocalPosition: {x: -8.890652, y: 20.066225, z: -43.300526}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17431,7 +17431,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162723989}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: -8.8906975, y: 20.066225, z: -43.300526}
+  m_LocalPosition: {x: -8.890652, y: 20.066225, z: -43.300526}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -31577,7 +31577,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 10d9e04e3e916d340810fa497ffcd983, type: 2}
   roundStartDialogues: []
   roundEndDialogues: []
-  dialogueDelay: 1.1
+  dialogueDelay: 2
   phase_QTEs:
   - {fileID: 11400000, guid: 02af4b4e76526dd4ebc01298855a9b6b, type: 2}
   overHeadAnimationDelay: 0

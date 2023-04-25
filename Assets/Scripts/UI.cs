@@ -426,9 +426,11 @@ public class UI : MonoBehaviour
     }
     public IEnumerator OutroSequenceWithTimings() 
     {
+        if(OutroCredits.activeInHierarchy || OutroCinematicObject.activeInHierarchy) yield break;
         ToggleHealthbar(false);
         OutroCinematicObject.SetActive(true);
         FadeIn();
+        PlayerMovement.instance.PauseMovement();
         yield return new WaitForSeconds(1);
         if (OutroDialogue1 != null) DialogueShow(OutroDialogue1, true); else Debug.LogWarning("OutroDialogue with backstory not assigned in UI!");
 
@@ -455,6 +457,7 @@ public class UI : MonoBehaviour
         AudioManager.instance.PlayMusic("CreditsTrack");
         float t = 0;
         while (true) { t += Time.deltaTime; Debug.Log(t); yield return new WaitForEndOfFrame(); if (t > 13) break; }
+        PlayerMovement.instance.UnPauseMovement();
         GameManager.LoadMenu();
     }
 

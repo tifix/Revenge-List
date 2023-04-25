@@ -1,3 +1,8 @@
+/*
+ * Extends interactible - adds DIALOGUE functionality.
+ * Dialogue is ALWAYS called BEFORE the interaction event happens
+ * Use wait before and wait after to allow transitions in and transitions out before the dialogue
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,11 +15,11 @@ using UnityEngine.Assertions;
 
 public class Inter_TextTrigger : Interactible
 {
-    private bool isRunning = false;
-    public bool isPausedWhileShowingA= true;
-    [Tooltip("text shown upon interaction")] public DSGraphSaveDataSO preUseDialogue;
-    [Tooltip("delay between showing dialogue and executing the event"),Range(0, 2f)] public float waitAfterPreDialogue = 0;
-    [Tooltip("delay between the event and script cleanup"),Range(0, 2f)] public float waitAfterInteract = 0;
+                                                                                               bool isRunning = false;
+    [Tooltip("should the game pause while showing the dialogue")]                       public bool isPausedWhileShowingA= true;
+    [Tooltip("text shown upon interaction")]                                            public DSGraphSaveDataSO preUseDialogue;
+    [Tooltip("delay between showing dialogue and executing the event"),Range(0, 2f)]    public float waitAfterPreDialogue = 0;
+    [Tooltip("delay between the event and script cleanup"),Range(0, 2f)]                public float waitAfterInteract = 0;
 
     protected override void Interaction()  
     {
@@ -31,15 +36,26 @@ public class Inter_TextTrigger : Interactible
         yield return new WaitForSeconds(waitAfterPreDialogue);
         while (UI.instance.runCoroutine == true) yield return new WaitForEndOfFrame();
 
-        yield return null;
-        Debug.Log("interactionEvent now!");
         //Actual interaction happens here
+        Debug.Log("interactionEvent now!");
         uponInteractionDo.Invoke();
         yield return null;
 
         //post use clean-up
-        if (isSingleUse) { Debug.Log("X"); UI.instance.boxInteractPrompt.SetActive(false); input.Ground.Interact.performed -= DoInteraction; Destroy(this); }
-        if (isDisabledOnUse) { Debug.Log("disabling trigger "+name); UI.instance.boxInteractPrompt.SetActive(false); gameObject.SetActive(false); }
+        if (isSingleUse) 
+        { 
+            Debug.Log("destroying single use trigger "+ name); 
+            UI.instance.boxInteractPrompt.SetActive(false); 
+            input.Ground.Interact.performed -= DoInteraction; 
+            Destroy(this); 
+        }
+        if (isDisabledOnUse) 
+        { 
+            Debug.Log("disabling trigger "+name); 
+            UI.instance.boxInteractPrompt.SetActive(false); 
+            gameObject.SetActive(false); 
+        }
+
         isRunning = false;
     }
 
