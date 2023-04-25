@@ -177,17 +177,6 @@
                 },
                 {
                     "name": "",
-                    "id": "331c0572-bc1c-48ae-8142-6fb583e17855",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Dash",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "512e8ea6-8e77-4eba-ad60-9691cbe31063",
                     "path": "<Gamepad>/rightTrigger",
                     "interactions": "",

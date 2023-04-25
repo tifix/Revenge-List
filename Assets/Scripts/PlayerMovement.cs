@@ -74,9 +74,15 @@ public class PlayerMovement : MonoBehaviour
         {
             dir = movement.ReadValue<Vector2>();
             if (dir.x < 0)
+            {
                 sprite.flipX = true;
+                PlayerCombat.instance.MoveBox(-1.5f);
+            }
             else if (dir.x > 0)
+            {
                 sprite.flipX = false;
+                PlayerCombat.instance.MoveBox(1);
+            }
             ProcessInput();
             GetComponent<Animator>().SetFloat("walkDirection", dir.magnitude);
         }
@@ -154,11 +160,6 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.DrawLine(new Vector3(transform.position.x, 0, 0), new Vector3(transform.position.x, 0, zLimits.y));
     }
 
-    private void OnDestroy()
-    {
-        movement.Disable();
-    }
-
     public void SetConditionalLock(bool b)
     {
         if (b) SetLockMovement();
@@ -198,5 +199,13 @@ public class PlayerMovement : MonoBehaviour
     public void SetList()
     {
         hasList = true;
+    }
+
+    private void OnDestroy()
+    {
+        movement.Disable();
+        input.Ground.Move.Disable();
+        input.Ground.Dash.performed -= DoDash;
+        input.Menu.List.performed -= RevengeList;
     }
 }
