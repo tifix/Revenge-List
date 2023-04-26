@@ -39,7 +39,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip FlyingGnome;
     public AudioClip MicroHit;
     public AudioClip Zap;
-    
+    public AudioClip Zap2;
+
     private void Awake()
     {
         // If there is not already an instance of AudioManager
@@ -147,6 +148,9 @@ public class AudioManager : MonoBehaviour
                 break;
             case "Zap":
                 sfxSource.clip = Zap;
+                break;
+            case "Zap2":
+                sfxSource.clip = Zap2;
                 break;
             default:
                 Debug.LogWarning("Incorrect name " + name + " check spelling");
