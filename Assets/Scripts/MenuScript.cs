@@ -7,7 +7,8 @@ public class MenuScript : MonoBehaviour
 {
 
     public GameObject CreditsPanel;
-    public GameObject SettingsPanel; 
+    public GameObject SettingsPanel;
+    public GameObject startGame;
     [SerializeField] AudioMixer AudioMixer;
 
     public void Start()
@@ -20,12 +21,14 @@ public class MenuScript : MonoBehaviour
     {
         AudioManager.instance.PlaySFX("MenuClick");
         CreditsPanel.SetActive(!CreditsPanel.activeInHierarchy);
+        startGame.SetActive(!startGame.activeInHierarchy);
     }
 
     public void ToggleSettingsPanel()
     {
         AudioManager.instance.PlaySFX("MenuClick");
         SettingsPanel.SetActive(!SettingsPanel.activeInHierarchy);
+        startGame.SetActive(!startGame.activeInHierarchy);
     }
 
 
@@ -34,11 +37,8 @@ public class MenuScript : MonoBehaviour
     public void SetVolumeMusic(float value) { float t = Mathf.Lerp(-70, 0, value); Debug.Log(t); AudioMixer.SetFloat("musicVolume", t); Settings.instance.volumeMusic = t; AudioManager.instance.PlayClickEffect(); }  //left to mute, right to loud
     public void SetVolumeSFX(float value) { float t = Mathf.Lerp(-70, 0, value); Debug.Log(t); AudioMixer.SetFloat("sfxVolume", t); Settings.instance.volumeSFX = t; AudioManager.instance.PlayClickEffect(); }  //left to mute, right to loud
 
-
     public void PlayTrack(string name)
     {
         AudioManager.instance.PlayMusic(name);
     }
-
-
 }

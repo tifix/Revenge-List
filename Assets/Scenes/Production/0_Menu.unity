@@ -1200,6 +1200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CreditsPanel: {fileID: 371397627}
   SettingsPanel: {fileID: 947195063}
+  startGame: {fileID: 1053339537}
   AudioMixer: {fileID: 24100000, guid: 3e5aac04f6592bf4e95cd98d34fe891b, type: 2}
 --- !u!1 &542520388
 GameObject:
@@ -6626,7 +6627,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!223 &2141119025
 Canvas:
   m_ObjectHideFlags: 0
