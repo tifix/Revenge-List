@@ -224,12 +224,12 @@ public class BossClass : MonoBehaviour
     }
     public void ShowDialogueRoundStart() //When the next round starts, some flavour dialogue is shown. It should NOT pause the game
     {
-        try { UI.instance.DialogueShow(roundStartDialogues[currentPhase], false); }
+        try { UI.instance.DialogueShow(roundStartDialogues[currentPhase], false,false); }
         catch { Debug.LogWarning("Invalid round dialogue at: " + currentPhase); }   //Display dialogue at the start of the new round
     }
     public void ShowDialogueRoundEnd()  //Invoked from boss health - when the boss is hit, before entering QTE display dialogue!
     {
-        try { UI.instance.DialogueShow(roundEndDialogues[currentPhase], true); }
+        try { UI.instance.DialogueShow(roundEndDialogues[currentPhase], false, true); }
         catch { Debug.LogWarning("Invalid round dialogue at: " + currentPhase); }   //Display dialogue prompt to attack Karl
     }
 

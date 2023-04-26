@@ -146,9 +146,9 @@ public class UI : MonoBehaviour
             }   
     }
 
-    protected IEnumerator DialogueTyper(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning) //typing the text over time
+    protected IEnumerator DialogueTyper(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning,bool autoAdvance) //IF paused, freeze gametime, if NOT auto-advance, lock movement
     {
-        NodeCurrent = DialogueInitialise(_dialogue, pauseWhileRunning);
+        NodeCurrent = DialogueInitialise(_dialogue, pauseWhileRunning, autoAdvance);
 
         //Main dialogue loop - repeat until the next one has no children
         while (true)
@@ -198,18 +198,23 @@ public class UI : MonoBehaviour
         DialogueCleanup(pauseWhileRunning);
     }
 
-    public DSNodeSaveData DialogueInitialise(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning) //Find the start node values
+    public DSNodeSaveData DialogueInitialise(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning, bool autoAdvance) //Find the start node values
     {
         //retrieve START node
         dialogueCur = _dialogue;
         NodeCurrent = null;
 
-        if (pauseWhileRunning)                          //Setting up pausing or auto-advancing apropriately
+        /* Pause while running freezes time AND player movement, lack of auto-advance should freeze movement too.
+         * 
+         */
+
+        if (pauseWhileRunning)                          
         {
             PlayerMovement.instance.SetLockMovement();
-            Time.timeScale = 0;
+            GameManager.instance.SetPause(true);
         }
-        else StartCoroutine(DialogueAutoAdvanceInCombt(1));
+        if(autoAdvance) StartCoroutine(DialogueAutoAdvanceInCombt(1));
+        else { PlayerMovement.instance.SetLockMovement(); }
 
 
         foreach (DSNodeSaveData n in dialogueCur.Nodes)
@@ -229,7 +234,7 @@ public class UI : MonoBehaviour
 
     public void DialogueCleanup(bool pauseWhileRunning) //Hide dialogue bits and resert values once done
     {
-        Time.timeScale = 1;
+        GameManager.instance.SetPause(false);
         runCoroutine = false;
         dialogueCur = null;
         boxTextDisplay.SetActive(false);
@@ -245,7 +250,7 @@ public class UI : MonoBehaviour
         return boxTextDisplay.activeSelf;
     }
    
-    public void DialogueShow(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning)                    //Call this with a dialogue structure to display it!
+    public void DialogueShow(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning, bool autoAdvance)                    //Call this with a dialogue structure to display it!
     {
         StartCoroutine(DialogueSkipLock()); //locks the ability to skip for REALTIME duration
         boxTextDisplay.SetActive(true);
@@ -254,12 +259,12 @@ public class UI : MonoBehaviour
         Debug.Log("initialising text");
         if (!runCoroutine)
         {
-            StartCoroutine(DialogueTyper(_dialogue, pauseWhileRunning));
+            StartCoroutine(DialogueTyper(_dialogue, pauseWhileRunning, autoAdvance));
             runCoroutine = true;
         }
     }
-    public void DialogueShow(DSGraphSaveDataSO _dialogue) => DialogueShow(_dialogue, false); //by default - pause world time while showing dialogue
-    public static void Dialogue(DSGraphSaveDataSO _dialogue) => instance.DialogueShow(_dialogue, false); //by default - pause world time while showing dialogue. Shorthand for those who can't type or wanna grab from weird places
+    public void DialogueShow(DSGraphSaveDataSO _dialogue) => DialogueShow(_dialogue, false,false); //by default - pause world time while showing dialogue
+    public static void Dialogue(DSGraphSaveDataSO _dialogue) => instance.DialogueShow(_dialogue, false,false); //by default - pause world time while showing dialogue. Shorthand for those who can't type or wanna grab from weird places
 
     IEnumerator DialogueSkipLock() //as requested by R*, dialogue is not skippable for the first moment after showing up. Coroutine needed as realtime is paused
     {
@@ -269,7 +274,7 @@ public class UI : MonoBehaviour
     }
     IEnumerator DialogueAutoAdvanceInCombt(float timeShown)
     {
-        Time.timeScale = 0;
+        GameManager.instance.SetPause(true);
         PlayerMovement.isMovementLocked = true;
         while (dialogueCur != null)
         {
@@ -279,7 +284,7 @@ public class UI : MonoBehaviour
 
         }
 
-        Time.timeScale = 1;
+        GameManager.instance.SetPause(false);
     }
 
     public Sprite SetBigSpriteForDialogue(string fileName)
@@ -410,8 +415,6 @@ public class UI : MonoBehaviour
         isWaiting = false;
     }
 
-
-
     #endregion
 
     public void FadeOut()
@@ -427,50 +430,6 @@ public class UI : MonoBehaviour
         if (anim != null) anim.SetTrigger("Cut");
     }
 
-
-    public void QuitToWindows() 
-    {
-        AudioManager.instance.PlaySFX("MenuClick");
-        Application.Quit(); 
-    }
-    public IEnumerator OutroSequenceWithTimings() 
-    {
-        if(OutroCredits.activeInHierarchy || OutroCinematicObject.activeInHierarchy) yield break;
-        ToggleHealthbar(false);
-        DialogueDarken.gameObject.SetActive(false);
-        OutroCinematicObject.SetActive(true);
-        FadeIn();
-        PlayerMovement.instance.PauseMovement();
-        yield return new WaitForSeconds(1);
-        if (OutroDialogue1 != null) DialogueShow(OutroDialogue1, true); else Debug.LogWarning("OutroDialogue with backstory not assigned in UI!");
-
-        while(dialogueCur!=null) yield return new WaitForEndOfFrame();   //waiting for the dialogue to finish, before proceeding
-        Debug.Log("Backstory speech finished");
-        Time.timeScale = 1;
-        CutToBlack(); //cut to black either too fast or glitched. TEST - Milla
-        
-        AudioManager.instance.PlaySFX("Hit");       //play stab sfx wiat till sfx finished
-        yield return new WaitForSeconds(0.5f);
-        OutroCinematicObject.GetComponent<Image>().color = Color.black;
-        AudioManager.instance.PlaySFX("KarlScream");       //play scream sfx
-        yield return new WaitForSeconds(1.5f);
-        //once the scream done finished, show dialgoue
-        if (OutroDialogue2 != null) DialogueShow(OutroDialogue2, true); else Debug.LogWarning("outro-most dialogue not assigned in UI!");
-
-        while (dialogueCur!=null) yield return new WaitForEndOfFrame();   //waiting for the dialogue to finish, before proceeding
-        Debug.Log("Karl finished talking about death and taxes, game finished!");
-        yield return new WaitForSeconds(3f);
-
-        dialogueCur = null;
-        //this is where the scrolling credits will go!
-        if (OutroCredits != null) OutroCredits.SetActive(true);
-        AudioManager.instance.PlayMusic("CreditsTrack");
-        float t = 0;
-        while (true) { t += Time.deltaTime; Debug.Log(t); yield return new WaitForEndOfFrame(); if (t > 13) break; }
-        PlayerMovement.instance.UnPauseMovement();
-        DialogueDarken.gameObject.SetActive(true);
-        GameManager.LoadMenu();
-    }
 
 
     #region buttons and element toggles
@@ -494,6 +453,7 @@ public class UI : MonoBehaviour
         {
             boxTextDisplay.SetActive(true); 
             if(txtChoiceA.gameObject.activeInHierarchy) SetSelectedButton(txtChoiceA.transform.GetComponentInParent<Button>().gameObject);
+            if (OutroCinematicObject.gameObject.activeInHierarchy) GameManager.instance.SetPause(false);
             PauseHideDialogue = false; 
         }
 
@@ -509,9 +469,12 @@ public class UI : MonoBehaviour
                 PlayerMovement.instance.SetUnLockMovement();
             else if (UI.instance.IsQTEPlaying())
                 QTEManager.instance.ShowSkulls();
-            if(!UI.instance.IsInDialogue())
+            if (!UI.instance.IsInDialogue()) 
                 GameManager.instance.SetPause(false);
+            
+            if (OutroCinematicObject.gameObject.activeInHierarchy) PlayerMovement.instance.SetLockMovement(); //Also locking movement in outro cinematic. 
         } //only unpausing if all pausing UI is hidden
+        
 
         //Pausing and unpausing audio apropriately
         if (boxPause.activeInHierarchy) { AudioManager.instance.musicSource.Pause(); }//AudioManager.instance.musicSource2.Pause();
@@ -578,9 +541,71 @@ public class UI : MonoBehaviour
     public void SetVolumeSFX(float value) { float t = Mathf.Lerp(-70, 0, value); Debug.Log(t); AudioMixer.SetFloat("sfxVolume", t); Settings.instance.volumeSFX = t; AudioManager.instance.PlayClickEffect(); }  //left to mute, right to loud
 
     public void PlayOutroSequence() => StartCoroutine("OutroSequenceWithTimings");
-    
-    
+
+
 
 
     #endregion
+
+
+
+    public void QuitToWindows()
+    {
+        AudioManager.instance.PlaySFX("MenuClick");
+        Application.Quit();
+    }
+
+    //The Long outro sequence that plays after KARL is defeated. Invoked through editor event on KarlPostFight 
+    public IEnumerator OutroSequenceWithTimings()
+    {
+        //Ensuring outro isn't triggered twice
+        if (OutroCredits.activeInHierarchy || OutroCinematicObject.activeInHierarchy) yield break;
+
+        //Hiding UI, locking the player
+        ToggleHealthbar(false);
+        DialogueDarken.gameObject.SetActive(false);
+        OutroCinematicObject.SetActive(true);
+        FadeIn();
+        GameManager.instance.SetPause(false);
+        PlayerMovement.instance.PauseMovement();
+        yield return new WaitForSeconds(1);
+
+        //Showing the exceptionally chonky outro dialogue. Debugging otherwise
+        if (OutroDialogue1 != null) DialogueShow(OutroDialogue1, false, false); 
+        else Debug.LogWarning("OutroDialogue with backstory not assigned in UI!");
+
+        //waiting for the dialogue to finish, before proceeding
+        while (dialogueCur != null) yield return new WaitForEndOfFrame();   
+        Debug.Log("Backstory speech finished");
+        CutToBlack();                                                                   //Make sure Fade object is enabled so transitions can work
+
+        //play stab sfx, then scream. Wait a moment for impact and continue to the other part of dialogue
+        AudioManager.instance.PlaySFX("Hit");       
+        yield return new WaitForSeconds(0.5f);
+        OutroCinematicObject.GetComponent<Image>().color = Color.black;
+        AudioManager.instance.PlaySFX("KarlScream");       
+        yield return new WaitForSeconds(1.5f);
+
+        //once the scream done finished, show dialgoue
+        if (OutroDialogue2 != null) DialogueShow(OutroDialogue2, false, false); else Debug.LogWarning("outro-most dialogue not assigned in UI!");
+        GameManager.instance.SetPause(false);
+
+        //waiting for the dialogue to finish, before proceeding
+        while (dialogueCur != null) yield return new WaitForEndOfFrame();   
+        Debug.Log("Karl finished talking about death and taxes, game finished!");
+        yield return new WaitForSeconds(3f);
+        dialogueCur = null;
+
+        //Showing credits and waiting for them to finish
+        if (OutroCredits != null) OutroCredits.SetActive(true);
+        AudioManager.instance.PlayMusic("CreditsTrack");
+        float t = 0;
+        while (true) { t += Time.deltaTime; Debug.Log(t); yield return new WaitForEndOfFrame(); if (t > 13) break; }
+
+        //OutroCleaning up
+        PlayerMovement.instance.UnPauseMovement();
+        DialogueDarken.gameObject.SetActive(true);
+        GameManager.LoadMenu();
+    }
+
 }

@@ -138,8 +138,8 @@ public class GameManager : MonoBehaviour
     public void SetWon(bool targetState)
     {
         isGameWon = targetState;
-        if (isGameWon) Time.timeScale = 0;
-        else Time.timeScale = 1;
+        if (isGameWon) instance.SetPause(true);
+        else instance.SetPause(false);
     }
 
     // Set lost State
