@@ -1,13 +1,23 @@
+using CartoonFX;
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ParticleSFX : MonoBehaviour
 {
-    public AudioClip sfxName;
 
-    private void Awake()
+    public ParticleSystem mySubEmitter;
+    public AudioClip onDeathSound;
+
+    void Update()
     {
-        AudioManager.instance.sfxSource.PlayOneShot(sfxName);
+        if (!onDeathSound) { return; }
+        if(mySubEmitter.isStopped)
+        {
+            AudioManager.instance.sfxSource.PlayOneShot(onDeathSound);
+        }
     }
 }
+
+

@@ -230,13 +230,12 @@ MonoBehaviour:
   attackIntervalMinimum: 0.2
   attackToIdleInterval: 0.3
   attackLastTimestamp: 0
+  invincivilityTime: 1
   attackBox: {fileID: 3395993812620112227}
   enemyLayers:
     serializedVersion: 2
     m_Bits: 320
   canBeDamaged: 1
-  invincivilityTime: 1
-  hasAttacked: 0
 --- !u!65 &3395993812505339142
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -356,7 +355,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3395993813611527098}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.209, z: 0}
+  m_LocalPosition: {x: -0.152, y: -0.161, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
