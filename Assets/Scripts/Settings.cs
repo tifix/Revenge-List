@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 /*
  * don't destroy with DATA ONLY for making menu settings and game settings persistent between scenes -audio not blaring once you leave the menu and whatnot

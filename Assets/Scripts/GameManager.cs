@@ -1,7 +1,9 @@
 using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 //using UnityEngine.UI;
 //using TMPro;
@@ -34,9 +36,6 @@ public class GameManager : MonoBehaviour
     //[Tooltip("enable to instantly kill Karl. :(")] public bool cheat_KillBoss = false;
     [Tooltip("enable to make QTEs impossible to lose")] public bool cheat_QTEAlwaysWin = false;
 
-    //public GameObject loadingScreen;
-    //public Slider slider;
-    //public TextMeshProUGUI progressText;  
 
     public void Awake()
     {
@@ -51,7 +50,7 @@ public class GameManager : MonoBehaviour
     {
         if(GetCamera())             //Find the camera object. If found and valid, track player
             CamFollowPlayer();
-        UI.instance.FadeIn();
+        if(UI.instance!=null) UI.instance.FadeIn(); //Added a null checker -M
         AudioManager.instance.PlayMusic("BgMusic");
     }
 
@@ -227,38 +226,12 @@ public class GameManager : MonoBehaviour
     //2 or more scenes to be loaded at once and be able to interact
     //This could be useful to have all the persitant data objects in said scene + the loading screen itself
     //Oh, loading the screen in an async manner, requieres the use of a coroutine - AV
-    #region Scene Switching
-    public static void LoadScene(int _SceneNumber) => SceneManager.LoadScene(_SceneNumber);
-    public static void LoadScene(string _SceneName) => SceneManager.LoadScene(_SceneName);
-    public static void LoadMenu() => SceneManager.LoadScene("0_Menu");
-    
-    public void LoadLevel(int index)
-    {
-        StartCoroutine(LoadLevelAsync(index));
-    }
 
-    IEnumerator LoadLevelAsync(int index)
-    {
-        //Loads in the background i.e. doesn't stop the game loop
-        AsyncOperation op = SceneManager.LoadSceneAsync(index, LoadSceneMode.Additive);
-
-        //loadingScreen.SetActive(true);
-
-        while (!op.isDone)
-        {
-            float progress = Mathf.Clamp01(op.progress / 0.9f);
-            
-            //Percentage loaded
-            //slider.value = progress;
-            //progressText.text = progress * 100f + "%";
-            
-            yield return null;
-        }
-    }
-
+    public static void LoadScene(int _SceneNumber) => SceneHandler.LoadScene(_SceneNumber);
+    public static void LoadScene(string _SceneName) => SceneHandler.LoadScene(SceneManager.GetSceneByName(_SceneName).buildIndex);
+    public static void LoadMenu() => SceneHandler.LoadScene(0);
     public void QuitToWindows() { Application.Quit(); }
 
-    #endregion
 
     public void Log(string text)
     {
