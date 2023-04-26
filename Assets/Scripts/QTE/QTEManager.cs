@@ -174,6 +174,14 @@ public class QTEManager : MonoBehaviour
 
             if (_skulls.Count > 0)
             {
+                if(GameManager.instance.IsGamePaused())
+                {
+                    foreach (SkullController sk in _skulls)
+                    {
+                        sk.gameObject.SetActive(false);
+                    }
+                    return;
+                }
                 for (int i = 0; i < _skulls.Count; i++)
                 {
                     //Hit the player
@@ -233,6 +241,14 @@ public class QTEManager : MonoBehaviour
                 }
                 
             }
+        }
+    }
+
+    public void ShowSkulls()
+    {
+        foreach (SkullController sk in _skulls)
+        {
+            sk.gameObject.SetActive(true);
         }
     }
 

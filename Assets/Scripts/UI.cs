@@ -505,8 +505,10 @@ public class UI : MonoBehaviour
         if (boxPause.activeInHierarchy) { PlayerMovement.instance.SetLockMovement(); GameManager.instance.SetPause(true); }
         else if (!boxPause.activeInHierarchy)
         {
-            if(!UI.instance.IsQTEPlaying()) //Don't unlock movement when we are in the QTE
+            if (!UI.instance.IsQTEPlaying()) //Don't unlock movement when we are in the QTE
                 PlayerMovement.instance.SetUnLockMovement();
+            else if (UI.instance.IsQTEPlaying())
+                QTEManager.instance.ShowSkulls();
             if(!UI.instance.IsInDialogue())
                 GameManager.instance.SetPause(false);
         } //only unpausing if all pausing UI is hidden
