@@ -89,6 +89,17 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""46bdb689-3178-4ed9-b864-174bbfeee9c8"",
+                    ""path"": ""<Keyboard>/j"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""4e925c09-fa67-4060-a64c-be69bcbef5bb"",
                     ""path"": ""<Gamepad>/leftStick"",
                     ""interactions"": """",

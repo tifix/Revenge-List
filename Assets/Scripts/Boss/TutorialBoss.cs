@@ -19,7 +19,7 @@ public class TutorialBoss : BossClass
         base.OnEnable();
         canAttack = false;
         //Change back to FirstAttack
-        StartCoroutine(FirstAttack());
+        StartCoroutine(ThirdAttack());
         GetComponent<bossHealth>().canTakeDamage = false;
         SetQTEandDialogueForRound(0);
         AudioManager.instance.PlayMusic("BossTrack");

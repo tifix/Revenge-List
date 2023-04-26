@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SkullController : MonoBehaviour
 {
-    int speed = 1;
+    float speed = 1;
     bool isAlive = true;
     bool badHit = false;
     void Awake()
@@ -16,7 +16,7 @@ public class SkullController : MonoBehaviour
         transform.Translate(speed * Time.deltaTime, 0, 0);
     }
 
-    public void SetSpeed(int s) { speed = s; }
+    public void SetSpeed(float s) { speed = s; }
 
     public void Kill() { isAlive = false; }
 

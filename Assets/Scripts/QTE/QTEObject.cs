@@ -20,9 +20,9 @@ public class QTEObject : ScriptableObject
         public int timing;
         public Beats myBeat;
         [Range(1, 6)]
-        public int speed;
+        public float speed;
 
-        public BeatType(int t, Beats b, int s)
+        public BeatType(int t, Beats b, float s)
         {
             timing = t;
             myBeat = b;
