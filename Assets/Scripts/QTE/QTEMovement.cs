@@ -23,7 +23,7 @@ public class QTEMovement : MonoBehaviour
         if (instance == null) instance = this;
         else Destroy(this);
     }
-
+    //QTEPerfect(Clone)
     // Start is called before the first frame update
     void OnEnable()
     {
