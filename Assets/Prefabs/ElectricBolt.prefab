@@ -225,6 +225,10 @@ PrefabInstance:
       propertyPath: sfxName
       value: 
       objectReference: {fileID: 8300000, guid: 6fdd030208e3f7347a17486eeca0ab8d, type: 3}
+    - target: {fileID: 5901647302453569532, guid: effb650189dc5714e9e9801b1cfb3991, type: 3}
+      propertyPath: onDeathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 6fdd030208e3f7347a17486eeca0ab8d, type: 3}
     - target: {fileID: 6316801874391591707, guid: effb650189dc5714e9e9801b1cfb3991, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -233,6 +237,18 @@ PrefabInstance:
       propertyPath: playOnAwake
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8223699583970813311, guid: effb650189dc5714e9e9801b1cfb3991, type: 3}
+      propertyPath: SubModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238936832233778476, guid: effb650189dc5714e9e9801b1cfb3991, type: 3}
+      propertyPath: onDeathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: c5c87a5f10bb8a24c9fa1d02bd4cd48f, type: 3}
+    - target: {fileID: 8238936832233778476, guid: effb650189dc5714e9e9801b1cfb3991, type: 3}
+      propertyPath: particleSystem
+      value: 
+      objectReference: {fileID: 4800709612658413915}
     - target: {fileID: 9027514048236820042, guid: effb650189dc5714e9e9801b1cfb3991, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -318,10 +334,6 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9027514048236820043, guid: effb650189dc5714e9e9801b1cfb3991, type: 3}
-      propertyPath: SubModule.subEmitters.Array.data[0].emitter
-      value: 
-      objectReference: {fileID: 5618193205483037295}
-    - target: {fileID: 9027514048236820043, guid: effb650189dc5714e9e9801b1cfb3991, type: 3}
       propertyPath: SubModule.subEmitters.Array.data[0].properties
       value: 0
       objectReference: {fileID: 0}
@@ -341,16 +353,41 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8238936832233778476, guid: effb650189dc5714e9e9801b1cfb3991, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: effb650189dc5714e9e9801b1cfb3991, type: 3}
+--- !u!1 &4121997915108696402 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 496487245117367874, guid: effb650189dc5714e9e9801b1cfb3991, type: 3}
+  m_PrefabInstance: {fileID: 4600330019373303568}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8988912184548653380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4121997915108696402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d340614dec9f40448c9abed3d481841, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleSystem: {fileID: 4121997915108696407}
+  onDeathSound: {fileID: 8300000, guid: c5c87a5f10bb8a24c9fa1d02bd4cd48f, type: 3}
+--- !u!198 &4121997915108696407 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 496487245117367879, guid: effb650189dc5714e9e9801b1cfb3991, type: 3}
+  m_PrefabInstance: {fileID: 4600330019373303568}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4800709612658413914 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9027514048236820042, guid: effb650189dc5714e9e9801b1cfb3991, type: 3}
   m_PrefabInstance: {fileID: 4600330019373303568}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &5618193205483037295 stripped
+--- !u!198 &4800709612658413915 stripped
 ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 8223699583970813311, guid: effb650189dc5714e9e9801b1cfb3991, type: 3}
+  m_CorrespondingSourceObject: {fileID: 9027514048236820043, guid: effb650189dc5714e9e9801b1cfb3991, type: 3}
   m_PrefabInstance: {fileID: 4600330019373303568}
   m_PrefabAsset: {fileID: 0}
