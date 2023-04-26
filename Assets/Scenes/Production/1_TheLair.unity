@@ -31816,7 +31816,7 @@ MonoBehaviour:
   roundEndDialogues: []
   dialogueDelay: 2
   phase_QTEs:
-  - {fileID: 11400000, guid: d5a494ddd5b53ab4b8995e15ab6464e9, type: 2}
+  - {fileID: 11400000, guid: 011669227db375d4b830888b1f0b6aa2, type: 2}
   overHeadAnimationDelay: 0
   straightAnimationDelay: 0
   camCenter: {fileID: 754989060}
