@@ -56,7 +56,7 @@ public class UI : MonoBehaviour
     [SerializeField]        Image       playerPortrait;                                     //Displayer of player portrait
     [SerializeField]        Sprite[]    playerPortraits = new Sprite[5];                    //Images to display as player looses health
     [SerializeField]        Slider      bossHealthBar, bossShieldBar;
-    [SerializeField]        Slider      settingVolumeMusic, settingVolumeSFX,settingVolume, settingTypeSpeed;
+    [SerializeField]        Slider      settingVolumeMusic, settingVolumeSFX,settingVolume, settingTypeSpeed;                                     //progres % counter
     [SerializeField]        Image       XLPortraitLilith, XLPortraitOther;                  //Portraits which display Lilith and others as they tallk
     [SerializeField]        Image       DialogueDarken;                                     //Darkening overlay mid-dialouge;
     [Space(10)]
@@ -416,15 +416,15 @@ public class UI : MonoBehaviour
 
     public void FadeOut()
     {
-        anim.SetTrigger("Out");
+        if(anim!=null) anim.SetTrigger("Out");
     }
     public void FadeIn()
     {
-        anim.SetTrigger("In");
+        if (anim != null) anim.SetTrigger("In");
     }
     public void CutToBlack()
     {
-        anim.SetTrigger("Cut");
+        if (anim != null) anim.SetTrigger("Cut");
     }
 
 

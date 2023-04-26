@@ -6689,7 +6689,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1257416088855492561
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15397,14 +15397,14 @@ ParticleSystemRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 99
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_MeshDistribution: 0
   m_SortMode: 0
   m_MinParticleSize: 0
   m_MaxParticleSize: 0.5
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
-  m_LengthScale: 2
+  m_LengthScale: 1.5
   m_SortingFudge: 0
   m_NormalDirection: 1
   m_ShadowBias: 0
@@ -16358,7 +16358,7 @@ MonoBehaviour:
   settingTypeSpeed: {fileID: 4906406618259172126}
   XLPortraitLilith: {fileID: 4763698780034001839}
   XLPortraitOther: {fileID: 3640916071015081630}
-  DialogueDarken: {fileID: 0}
+  DialogueDarken: {fileID: 7692547948947758615}
   RevengeList: {fileID: 3665701568203247820}
   RevengeListTriggerer: {fileID: 6266727062991833003}
   OutroCinematicObject: {fileID: 5226367951376373762}
@@ -16371,7 +16371,7 @@ MonoBehaviour:
   RevengeListImageDisplayer: {fileID: 2584429807499578594}
   PauseHideDialogue: 0
   PauseHideQTE: 0
-  ES: {fileID: 0}
+  ES: {fileID: 8277684524951441153}
 --- !u!1 &9010496361218702514
 GameObject:
   m_ObjectHideFlags: 0
