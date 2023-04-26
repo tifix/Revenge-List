@@ -321,6 +321,11 @@ public class QTEManager : MonoBehaviour
             beatObjects.RemoveAt(i + beatOffset);
         }
         isFinishingQTE = false; // - resetting the single outro checker for the next phase
+
+        foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Particle"))
+        {
+            Destroy(obj);
+        }
     }
 
     //Change the current beat map
