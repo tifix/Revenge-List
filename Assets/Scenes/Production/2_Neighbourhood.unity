@@ -3849,7 +3849,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3702850953895804210, guid: 044178dd346668d49946ca50d8299ffb, type: 3}
       propertyPath: cheat_SkipBossPhase
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3702850953895804210, guid: 044178dd346668d49946ca50d8299ffb, type: 3}
       propertyPath: cheat_WarpToMicrowave
@@ -3857,7 +3857,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3702850953895804210, guid: 044178dd346668d49946ca50d8299ffb, type: 3}
       propertyPath: cheat_FastForwardDialogue
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3702850953895804211, guid: 044178dd346668d49946ca50d8299ffb, type: 3}
       propertyPath: m_RootOrder
@@ -4689,6 +4689,10 @@ PrefabInstance:
       propertyPath: m_Center.x
       value: 3.1048265
       objectReference: {fileID: 0}
+    - target: {fileID: 3615865191426516544, guid: cb8d011301534e14a84915a63758380d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 234166287, guid: 367323c97415ca74b9985b29a9b84931, type: 3}
     - target: {fileID: 3615865191426516544, guid: cb8d011301534e14a84915a63758380d, type: 3}
       propertyPath: m_SortingOrder
       value: 0
