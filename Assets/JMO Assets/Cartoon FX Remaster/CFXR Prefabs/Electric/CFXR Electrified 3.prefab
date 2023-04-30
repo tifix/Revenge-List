@@ -9732,7 +9732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d340614dec9f40448c9abed3d481841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleSystem: {fileID: 496487245117367879}
+  onBirthSound: {fileID: 0}
   onDeathSound: {fileID: 8300000, guid: c5c87a5f10bb8a24c9fa1d02bd4cd48f, type: 3}
 --- !u!1 &6566140890059193891
 GameObject:

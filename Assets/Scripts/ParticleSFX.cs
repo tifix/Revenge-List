@@ -7,16 +7,46 @@ using UnityEngine;
 public class ParticleSFX : MonoBehaviour
 {
 
-    public ParticleSystem mySubEmitter;
+    private ParticleSystem parentParticleSystem;
+
+    private int currentNumberOfParticles;
+
+    public AudioClip onBirthSound;
     public AudioClip onDeathSound;
+
+    void Start()
+    {
+        parentParticleSystem = this.GetComponent<ParticleSystem>();
+        if(parentParticleSystem == null)
+        {
+            Debug.LogError("Missing Particle System", this);
+        }
+    }
 
     void Update()
     {
-        if (!onDeathSound) { return; }
-        if(mySubEmitter.isStopped)
+        var amount = Mathf.Abs(currentNumberOfParticles - parentParticleSystem.particleCount);
+
+        if(parentParticleSystem.particleCount < currentNumberOfParticles)
         {
-            AudioManager.instance.sfxSource.PlayOneShot(onDeathSound);
+            //Play Death Sound
+            StartCoroutine(PlaySound(onDeathSound));
         }
+
+        if(parentParticleSystem.particleCount > currentNumberOfParticles)
+        {
+            //play birth sound
+            StartCoroutine(PlaySound(onBirthSound));
+        }
+
+        currentNumberOfParticles = parentParticleSystem.particleCount;
+    }
+
+    private IEnumerator PlaySound(AudioClip clip)
+    {
+        yield return new WaitForSeconds(0.05f);
+
+        AudioManager.instance.sfxSource.PlayOneShot(clip);
     }
 }
 
