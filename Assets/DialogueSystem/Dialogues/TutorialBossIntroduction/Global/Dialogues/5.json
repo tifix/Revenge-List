@@ -1,9 +1,9 @@
 {
-    "DialogueName": "8",
+    "DialogueName": "5",
     "nodeID": "",
     "SpeakerName": "Lilith",
-    "Text": "They were fighting so much, they were always trying to grill each other. They got really clever with it. ",
-    "SpritePath": "",
+    "Text": "How dare you call yourself a microwave!",
+    "SpritePath": "Lilith_Angry",
     "Choices": [
         {
             "Text": "Next Dialogue",

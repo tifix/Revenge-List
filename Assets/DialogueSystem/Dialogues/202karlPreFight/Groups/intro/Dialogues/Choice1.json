@@ -1,7 +1,7 @@
 {
     "DialogueName": "Choice1",
     "nodeID": "",
-    "SpeakerName": "CHOICE",
+    "SpeakerName": "Lilith",
     "Text": "Dialogue text.",
     "SpritePath": "Lilith_Happy",
     "Choices": [

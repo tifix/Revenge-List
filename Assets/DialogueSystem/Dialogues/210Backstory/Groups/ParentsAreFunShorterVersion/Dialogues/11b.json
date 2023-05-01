@@ -1,9 +1,9 @@
 {
-    "DialogueName": "5",
+    "DialogueName": "11b",
     "nodeID": "",
     "SpeakerName": "Lilith",
-    "Text": "You know, Karl, you remind me of someone… Or something…",
-    "SpritePath": "",
+    "Text": "It was also because my parents were still alive.",
+    "SpritePath": "Insert Sprite Path Here.",
     "Choices": [
         {
             "Text": "Next Dialogue",

@@ -15,19 +15,6 @@ MonoBehaviour:
   FileName: 203battle1
   Groups: []
   Nodes:
-  - ID: c0b084c4-f64e-4618-b6f3-640d2be974da
-    Name: 2
-    SpeakerName: Astrid
-    Text: In my heart they are, honey!
-    SpritePath: Insert Sprite Path Here.
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 
-    GroupID: 
-    Position: {x: 2149, y: -639}
-    isStartNode: 0
-    ChildIDs:
-    - 
   - ID: d5424377-acc9-4573-a8db-9f9ea76ca1a5
     Name: 1
     SpeakerName: Karl
@@ -41,9 +28,22 @@ MonoBehaviour:
     isStartNode: 1
     ChildIDs:
     - c0b084c4-f64e-4618-b6f3-640d2be974da
+  - ID: c0b084c4-f64e-4618-b6f3-640d2be974da
+    Name: 2
+    SpeakerName: Astrid
+    Text: In my heart they are, honey!
+    SpritePath: Therapist_1
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 
+    GroupID: 
+    Position: {x: 2149, y: -639}
+    isStartNode: 0
+    ChildIDs:
+    - 
   OldGroupNames: []
   OldUngroupedNodeNames:
-  - 2
   - 1
+  - 2
   OldGroupNodeNames:
     list: []

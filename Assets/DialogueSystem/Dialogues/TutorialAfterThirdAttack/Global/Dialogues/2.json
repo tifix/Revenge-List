@@ -2,7 +2,7 @@
     "DialogueName": "2",
     "nodeID": "",
     "SpeakerName": "Lilith",
-    "Text": "So a wide attack?\nThat I should press \"left shift\" to \"dash\" through?\nThat's the best you got?",
+    "Text": "So a wide attack?\nThat I should press \"left shift\" to \"dash\" through?",
     "SpritePath": "Lilith_Unhappy2",
     "Choices": [
         {

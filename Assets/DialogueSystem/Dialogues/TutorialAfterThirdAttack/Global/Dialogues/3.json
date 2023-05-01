@@ -1,9 +1,9 @@
 {
-    "DialogueName": "7",
+    "DialogueName": "3",
     "nodeID": "",
     "SpeakerName": "Lilith",
-    "Text": "They really liked to barbeque, too…",
-    "SpritePath": "",
+    "Text": "That's the best you got?",
+    "SpritePath": "Lilith_Unhappy2",
     "Choices": [
         {
             "Text": "Next Dialogue",

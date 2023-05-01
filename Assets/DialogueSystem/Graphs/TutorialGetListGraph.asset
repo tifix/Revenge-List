@@ -15,32 +15,6 @@ MonoBehaviour:
   FileName: TutorialGetList
   Groups: []
   Nodes:
-  - ID: 13317bf6-1cd8-433c-8a05-cc8760df6b53
-    Name: 2
-    SpeakerName: Lilith
-    Text: Astrid...
-    SpritePath: Lilith_Unhappy2
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 5eb140fe-4924-4a0b-99e3-020d91bfc0d7
-    GroupID: 
-    Position: {x: 543, y: 351}
-    isStartNode: 0
-    ChildIDs:
-    - 5eb140fe-4924-4a0b-99e3-020d91bfc0d7
-  - ID: 5eb140fe-4924-4a0b-99e3-020d91bfc0d7
-    Name: 3
-    SpeakerName: Lilith
-    Text: "Nancy Brown\u2026"
-    SpritePath: Lilith_Unhappy2
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 495b4549-533e-4eca-99cb-74e9393e2e78
-    GroupID: 
-    Position: {x: 822, y: 350}
-    isStartNode: 0
-    ChildIDs:
-    - 495b4549-533e-4eca-99cb-74e9393e2e78
   - ID: d35ec4f8-a9f7-4f08-a195-7d0f114bf07a
     Name: 1
     SpeakerName: Lilith
@@ -80,12 +54,38 @@ MonoBehaviour:
     isStartNode: 1
     ChildIDs:
     - d35ec4f8-a9f7-4f08-a195-7d0f114bf07a
+  - ID: 13317bf6-1cd8-433c-8a05-cc8760df6b53
+    Name: 2
+    SpeakerName: Lilith
+    Text: Astrid...
+    SpritePath: Lilith_Unhappy2
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 5eb140fe-4924-4a0b-99e3-020d91bfc0d7
+    GroupID: 
+    Position: {x: 543, y: 351}
+    isStartNode: 0
+    ChildIDs:
+    - 5eb140fe-4924-4a0b-99e3-020d91bfc0d7
+  - ID: 5eb140fe-4924-4a0b-99e3-020d91bfc0d7
+    Name: 3
+    SpeakerName: Lilith
+    Text: Nancy Brown...
+    SpritePath: Lilith_Unhappy2
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 495b4549-533e-4eca-99cb-74e9393e2e78
+    GroupID: 
+    Position: {x: 822, y: 350}
+    isStartNode: 0
+    ChildIDs:
+    - 495b4549-533e-4eca-99cb-74e9393e2e78
   OldGroupNames: []
   OldUngroupedNodeNames:
-  - 2
-  - 3
   - 1
   - 4
   - 0
+  - 2
+  - 3
   OldGroupNodeNames:
     list: []
