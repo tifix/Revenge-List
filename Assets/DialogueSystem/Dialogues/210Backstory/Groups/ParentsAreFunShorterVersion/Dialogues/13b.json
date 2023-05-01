@@ -1,9 +1,9 @@
 {
-    "DialogueName": "5",
+    "DialogueName": "13b",
     "nodeID": "",
     "SpeakerName": "Lilith",
-    "Text": "You know, Karl, you remind me of someone… Or something…",
-    "SpritePath": "",
+    "Text": "That was after they went to marriage counsellor and stopped wanting to kill each other, you see.",
+    "SpritePath": "Insert Sprite Path Here.",
     "Choices": [
         {
             "Text": "Next Dialogue",

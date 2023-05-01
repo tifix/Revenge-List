@@ -23,7 +23,7 @@
             "DialogueName": "2",
             "nodeID": "",
             "SpeakerName": "Lilith",
-            "Text": "Breakfast? \nYou know what they say, evil doesn't work on an empty stomach. \n\r",
+            "Text": "Breakfast? \nYou know what they say, evil doesn't work on an empty stomach.",
             "SpritePath": "Lilith_Smug",
             "Choices": [
                 {

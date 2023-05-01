@@ -1,8 +1,8 @@
 {
     "DialogueName": "20",
     "nodeID": "",
-    "SpeakerName": "Karl",
-    "Text": "*Humming Single Ladies*",
+    "SpeakerName": "Lilith",
+    "Text": "Now he's humming single ladies...",
     "SpritePath": "Neighbour_Laughing",
     "Choices": [
         {

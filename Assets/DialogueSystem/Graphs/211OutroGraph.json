@@ -5,11 +5,11 @@
     },
     "UngroupedDialogues": [
         {
-            "DialogueName": "2",
+            "DialogueName": "4",
             "nodeID": "",
             "SpeakerName": "Karl",
-            "Text": "It seems I did both…",
-            "SpritePath": "",
+            "Text": "Please, Lily, tell Astrid that…",
+            "SpritePath": "Neighbour_Sad",
             "Choices": [
                 {
                     "Text": "Next Dialogue",
@@ -20,11 +20,11 @@
             "IsStartingDialogue": false
         },
         {
-            "DialogueName": "4",
+            "DialogueName": "3",
             "nodeID": "",
             "SpeakerName": "Karl",
-            "Text": "Please, Lily, tell Astrid that…",
-            "SpritePath": "",
+            "Text": "...",
+            "SpritePath": "Neighbour_Sad",
             "Choices": [
                 {
                     "Text": "Next Dialogue",
@@ -39,7 +39,7 @@
             "nodeID": "",
             "SpeakerName": "Karl",
             "Text": "Well, they did tell me that only mandatory things in life are death and taxes…",
-            "SpritePath": "",
+            "SpritePath": "Neighbour_Sad",
             "Choices": [
                 {
                     "Text": "Next Dialogue",
@@ -50,11 +50,11 @@
             "IsStartingDialogue": true
         },
         {
-            "DialogueName": "3",
+            "DialogueName": "2",
             "nodeID": "",
             "SpeakerName": "Karl",
-            "Text": "...",
-            "SpritePath": "",
+            "Text": "It seems I did both…",
+            "SpritePath": "Neighbour_Laughing",
             "Choices": [
                 {
                     "Text": "Next Dialogue",

@@ -5,21 +5,6 @@
     },
     "UngroupedDialogues": [
         {
-            "DialogueName": "0",
-            "nodeID": "",
-            "SpeakerName": "Microwave",
-            "Text": "...",
-            "SpritePath": "Microwave",
-            "Choices": [
-                {
-                    "Text": "Next Dialogue",
-                    "nextID": ""
-                }
-            ],
-            "DialogueType": 0,
-            "IsStartingDialogue": true
-        },
-        {
             "DialogueName": "2",
             "nodeID": "",
             "SpeakerName": "Lilith",
@@ -40,6 +25,21 @@
             "SpeakerName": "Lilith",
             "Text": "I should hit the skulls in time?",
             "SpritePath": "Lilith_Happy",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": true
+        },
+        {
+            "DialogueName": "0",
+            "nodeID": "",
+            "SpeakerName": "Microwave",
+            "Text": "...",
+            "SpritePath": "Microwave",
             "Choices": [
                 {
                     "Text": "Next Dialogue",

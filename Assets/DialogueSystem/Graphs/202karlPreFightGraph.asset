@@ -118,7 +118,7 @@ MonoBehaviour:
     Name: 47
     SpeakerName: Lilith
     Text: "It\u2019s a pity, really, you\u2019re sweet and I would have liked to
-      keep you around\u2026 Pfft\u2026 Pffffff \u2013"
+      keep you around... Pfft... Pffffff \u2013"
     SpritePath: Lilith_Happy
     Choices:
     - Text: Next Dialogue
@@ -170,7 +170,7 @@ MonoBehaviour:
   - ID: c063f2d6-04d6-46d7-92d0-c4312d09d1ed
     Name: 29
     SpeakerName: Lilith
-    Text: "Anyway, it seems I\u2019ll have to do the world a favour\u2026"
+    Text: "Anyway, it seems I\u2019ll have to do the world a favour..."
     SpritePath: Lilith_Unhappy2
     Choices:
     - Text: Next Dialogue
@@ -209,7 +209,7 @@ MonoBehaviour:
   - ID: e441c4f9-94e9-43d6-830a-5a2bbc0bf922
     Name: 18
     SpeakerName: Karl
-    Text: "I liked it so I put a ri\u2026"
+    Text: I liked it so I put a ri...
     SpritePath: Neighbour_Laughing
     Choices:
     - Text: Next Dialogue
@@ -219,23 +219,10 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - 2c55c018-01c9-4b0d-a7f3-2b6e10c575aa
-  - ID: cfa6e3c8-cfad-4268-9dff-bfe859321165
-    Name: 20
-    SpeakerName: Karl
-    Text: '*Humming Single Ladies*'
-    SpritePath: Neighbour_Laughing
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 3925843c-2114-4067-8a81-adb67857717b
-    GroupID: 2e8a6e81-953e-4d0e-8986-bbcce50e9e3c
-    Position: {x: 7366, y: -350}
-    isStartNode: 0
-    ChildIDs:
-    - 3925843c-2114-4067-8a81-adb67857717b
   - ID: 3925843c-2114-4067-8a81-adb67857717b
     Name: 21
     SpeakerName: Lilith
-    Text: "I can\u2019t allow this to continue\u2026 "
+    Text: I cannot allow this to continue...
     SpritePath: Lilith_Unhappy2
     Choices:
     - Text: Next Dialogue
@@ -250,8 +237,8 @@ MonoBehaviour:
     SpeakerName: Lilith
     Text: 'Killing him will be natural selection.
 
-      To make sure no genes that
-      annoying pass to the next generation.'
+      To make sure his annoying
+      genes don''t pass to the next generation.'
     SpritePath: Lilith_Smug
     Choices:
     - Text: Next Dialogue
@@ -287,19 +274,6 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - bf1a764f-85f1-4ed3-887b-9a9910a09ba4
-  - ID: bf1a764f-85f1-4ed3-887b-9a9910a09ba4
-    Name: 87
-    SpeakerName: Lilith
-    Text: "Oh my Satan\u2026"
-    SpritePath: Lilith_Unhappy2
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 2cf41f4c-2bdf-4dd6-be3e-bce666abf22a
-    GroupID: 60b93be0-7818-48be-8b9d-b993fe281240
-    Position: {x: 14286, y: 642}
-    isStartNode: 0
-    ChildIDs:
-    - 2cf41f4c-2bdf-4dd6-be3e-bce666abf22a
   - ID: 2cf41f4c-2bdf-4dd6-be3e-bce666abf22a
     Name: 88
     SpeakerName: Lilith
@@ -622,33 +596,6 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - 98ac463f-616f-4319-b787-dc048cddeb52
-  - ID: 98ac463f-616f-4319-b787-dc048cddeb52
-    Name: 14
-    SpeakerName: Lilith
-    Text: "Romantic night out with min \xE4lskling! Don\u2019t remember the last
-      time me and Astrid had the time."
-    SpritePath: Neighbour_Friendly
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 4b3abd09-7473-47c9-ae31-d3ae1c0cda2e
-    GroupID: 9456e0c8-1f89-46f4-b651-1c8b1401babd
-    Position: {x: 4905, y: 33}
-    isStartNode: 0
-    ChildIDs:
-    - 4b3abd09-7473-47c9-ae31-d3ae1c0cda2e
-  - ID: da8bfdc1-986c-417f-9088-4a12f71b518d
-    Name: 12
-    SpeakerName: Karl
-    Text: As much as Snuffles loves you, neighbour, he has my name in his collar.
-    SpritePath: Neighbour_Friendly
-    Choices:
-    - Text: Next Dialogue
-      NodeID: a477f607-6107-423c-91bd-b2dc18d762ce
-    GroupID: 9456e0c8-1f89-46f4-b651-1c8b1401babd
-    Position: {x: 3887, y: 36}
-    isStartNode: 0
-    ChildIDs:
-    - a477f607-6107-423c-91bd-b2dc18d762ce
   - ID: 54e76a75-9d99-4e00-b010-ff26a03cf181
     Name: 84
     SpeakerName: Karl
@@ -677,7 +624,7 @@ MonoBehaviour:
     - fd8929bc-226e-4365-802a-e834f6c90220
   - ID: 4b3abd09-7473-47c9-ae31-d3ae1c0cda2e
     Name: Choice2
-    SpeakerName: CHOICE
+    SpeakerName: Lilith
     Text: Dialogue text.
     SpritePath: Lilith_Unhappy2
     Choices:
@@ -800,20 +747,6 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - 54e76a75-9d99-4e00-b010-ff26a03cf181
-  - ID: 757bbeb1-fa3e-4c85-b632-6d76236e2daf
-    Name: 26
-    SpeakerName: Lilith
-    Text: "These kinds of people shouldn\u2019t be allowed to live and reproduce\u2026\nEspecially
-      with someone like\u2026"
-    SpritePath: Lilith_Unhappy2
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 74eea43f-9ab3-44bc-9758-d4f17d1eb54e
-    GroupID: 8241f30b-0095-4892-b2fe-3118633b011e
-    Position: {x: 7046, y: 40}
-    isStartNode: 0
-    ChildIDs:
-    - 74eea43f-9ab3-44bc-9758-d4f17d1eb54e
   - ID: 2c55c018-01c9-4b0d-a7f3-2b6e10c575aa
     Name: 19
     SpeakerName: Lilith
@@ -1164,7 +1097,9 @@ MonoBehaviour:
   - ID: 46f2739e-db47-45d6-adfc-178ec690f8d9
     Name: 10
     SpeakerName: Karl
-    Text: Would you like to join us, ... Lilith?
+    Text: 'Would you like to join us?
+
+      ...Lilith?'
     SpritePath: Neighbour_Friendly
     Choices:
     - Text: Next Dialogue
@@ -1463,6 +1398,73 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - f83ad49b-7e4c-4313-a934-c4252f702700
+  - ID: 98ac463f-616f-4319-b787-dc048cddeb52
+    Name: 14
+    SpeakerName: Lilith
+    Text: "Romantic night out with min sockerbulle! Don\u2019t remember the last
+      time me and Astrid had the time."
+    SpritePath: Neighbour_Friendly
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 4b3abd09-7473-47c9-ae31-d3ae1c0cda2e
+    GroupID: 9456e0c8-1f89-46f4-b651-1c8b1401babd
+    Position: {x: 4905, y: 33}
+    isStartNode: 0
+    ChildIDs:
+    - 4b3abd09-7473-47c9-ae31-d3ae1c0cda2e
+  - ID: da8bfdc1-986c-417f-9088-4a12f71b518d
+    Name: 12
+    SpeakerName: Karl
+    Text: As much as Snuffles loves you, neighbour, he has my name in his collar.
+    SpritePath: Neighbour_Friendly
+    Choices:
+    - Text: Next Dialogue
+      NodeID: a477f607-6107-423c-91bd-b2dc18d762ce
+    GroupID: 9456e0c8-1f89-46f4-b651-1c8b1401babd
+    Position: {x: 3898, y: 29}
+    isStartNode: 0
+    ChildIDs:
+    - a477f607-6107-423c-91bd-b2dc18d762ce
+  - ID: 757bbeb1-fa3e-4c85-b632-6d76236e2daf
+    Name: 26
+    SpeakerName: Lilith
+    Text: "These kinds of people shouldn\u2019t be allowed to live and reproduce...\nEspecially
+      with someone like..."
+    SpritePath: Lilith_Unhappy2
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 74eea43f-9ab3-44bc-9758-d4f17d1eb54e
+    GroupID: 8241f30b-0095-4892-b2fe-3118633b011e
+    Position: {x: 7047, y: 40}
+    isStartNode: 0
+    ChildIDs:
+    - 74eea43f-9ab3-44bc-9758-d4f17d1eb54e
+  - ID: bf1a764f-85f1-4ed3-887b-9a9910a09ba4
+    Name: 87
+    SpeakerName: Lilith
+    Text: Oh my Satan...
+    SpritePath: Lilith_Unhappy2
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 2cf41f4c-2bdf-4dd6-be3e-bce666abf22a
+    GroupID: 60b93be0-7818-48be-8b9d-b993fe281240
+    Position: {x: 14286, y: 642}
+    isStartNode: 0
+    ChildIDs:
+    - 2cf41f4c-2bdf-4dd6-be3e-bce666abf22a
+  - ID: cfa6e3c8-cfad-4268-9dff-bfe859321165
+    Name: 20
+    SpeakerName: Lilith
+    Text: Now he's humming single ladies...
+    SpritePath: Neighbour_Laughing
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 3925843c-2114-4067-8a81-adb67857717b
+    GroupID: 2e8a6e81-953e-4d0e-8986-bbcce50e9e3c
+    Position: {x: 7365, y: -351}
+    isStartNode: 0
+    ChildIDs:
+    - 3925843c-2114-4067-8a81-adb67857717b
   OldGroupNames:
   - 1
   - 2
@@ -1512,22 +1514,21 @@ MonoBehaviour:
       - 27
       - 29
       - 23
-      - 26
       - 28
+      - 26
     - Key: BackOffFromHer
       Value:
       - 16
       - 17
       - 18
-      - 20
       - 21
       - 22
       - 19
+      - 20
     - Key: YourDogDoesnLikeYou
       Value:
       - 85
       - 86
-      - 87
       - 88
       - 89
       - 90
@@ -1541,6 +1542,7 @@ MonoBehaviour:
       - 93
       - 96
       - bkjvj
+      - 87
     - Key: AstridDoesntLikeYourBbq
       Value:
       - 58
@@ -1573,10 +1575,10 @@ MonoBehaviour:
       Value:
       - 11
       - 13
-      - 14
-      - 12
       - 10
       - Choice2
+      - 14
+      - 12
     - Key: StopJoking
       Value:
       - 42

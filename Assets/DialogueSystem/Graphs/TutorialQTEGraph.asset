@@ -15,19 +15,6 @@ MonoBehaviour:
   FileName: TutorialQTE
   Groups: []
   Nodes:
-  - ID: b922909a-cb95-40ca-9298-2c5d8a5a8ade
-    Name: 0
-    SpeakerName: Microwave
-    Text: ...
-    SpritePath: Microwave
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 6b89b6ba-8ac1-4349-bb42-ff30e2a2ff4f
-    GroupID: 
-    Position: {x: 308, y: 210}
-    isStartNode: 1
-    ChildIDs:
-    - 6b89b6ba-8ac1-4349-bb42-ff30e2a2ff4f
   - ID: b5d1f8a7-f80c-40f1-b6ad-790d07069a0a
     Name: 2
     SpeakerName: Lilith
@@ -54,10 +41,23 @@ MonoBehaviour:
     isStartNode: 1
     ChildIDs:
     - b5d1f8a7-f80c-40f1-b6ad-790d07069a0a
+  - ID: b922909a-cb95-40ca-9298-2c5d8a5a8ade
+    Name: 0
+    SpeakerName: Microwave
+    Text: ...
+    SpritePath: Microwave
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 6b89b6ba-8ac1-4349-bb42-ff30e2a2ff4f
+    GroupID: 
+    Position: {x: 308, y: 210}
+    isStartNode: 1
+    ChildIDs:
+    - 6b89b6ba-8ac1-4349-bb42-ff30e2a2ff4f
   OldGroupNames: []
   OldUngroupedNodeNames:
-  - 0
   - 2
   - 1
+  - 0
   OldGroupNodeNames:
     list: []

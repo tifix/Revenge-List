@@ -5,21 +5,6 @@
     },
     "UngroupedDialogues": [
         {
-            "DialogueName": "2",
-            "nodeID": "",
-            "SpeakerName": "Astrid",
-            "Text": "In my heart they are, honey!",
-            "SpritePath": "Insert Sprite Path Here.",
-            "Choices": [
-                {
-                    "Text": "Next Dialogue",
-                    "nextID": ""
-                }
-            ],
-            "DialogueType": 0,
-            "IsStartingDialogue": false
-        },
-        {
             "DialogueName": "1",
             "nodeID": "",
             "SpeakerName": "Karl",
@@ -33,6 +18,21 @@
             ],
             "DialogueType": 0,
             "IsStartingDialogue": true
+        },
+        {
+            "DialogueName": "2",
+            "nodeID": "",
+            "SpeakerName": "Astrid",
+            "Text": "In my heart they are, honey!",
+            "SpritePath": "Therapist_1",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
         }
     ]
 }
