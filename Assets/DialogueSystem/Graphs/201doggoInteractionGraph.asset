@@ -16,7 +16,7 @@ MonoBehaviour:
   Groups:
   - ID: f1ad1020-f3e8-4c58-a6a5-6687ba446b56
     Name: Doggo
-    Position: {x: 2726, y: -469.00006}
+    Position: {x: 2726, y: -469}
   - ID: 3a58ca9e-e798-4361-ad49-050447c63fe4
     Name: PetTheDog
     Position: {x: 5268, y: -445}
@@ -79,7 +79,7 @@ MonoBehaviour:
     - 8aae9e00-56ab-493d-84b2-ff0db8df6745
   - ID: ae48f3df-f2fd-4055-bdd2-9dce6f09f439
     Name: 10
-    SpeakerName: Smuffles
+    SpeakerName: Snuffles
     Text: Bark!
     SpritePath: Doghappy
     Choices:
@@ -93,7 +93,7 @@ MonoBehaviour:
   - ID: 369dcbbe-9114-4d24-8cb2-f8a17632e790
     Name: 11
     SpeakerName: Lilith
-    Text: "That\u2019s right. Now, dear Hellhound, we shall be taking revenge on\u2026."
+    Text: "That\u2019s right. Now, dear Hellhound, we shall be taking revenge on..."
     SpritePath: Lilith_Unhappy2
     Choices:
     - Text: Next Dialogue
@@ -119,7 +119,7 @@ MonoBehaviour:
     - 
   - ID: 8db7990f-a3c4-4fb5-9f0e-83658cd896c1
     Name: 4
-    SpeakerName: Smuffles
+    SpeakerName: Snuffles
     Text: Bark!
     SpritePath: Doghappy
     Choices:

@@ -1,9 +1,9 @@
 {
-    "DialogueName": "DialogueName",
+    "DialogueName": "3",
     "nodeID": "",
-    "SpeakerName": "Karl",
-    "Text": "...sense of humour...",
-    "SpritePath": "Neighbour_Sad",
+    "SpeakerName": "Lilith",
+    "Text": "That's the best you got?",
+    "SpritePath": "Lilith_Unhappy2",
     "Choices": [
         {
             "Text": "Next Dialogue",

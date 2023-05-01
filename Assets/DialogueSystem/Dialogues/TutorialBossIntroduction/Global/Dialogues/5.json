@@ -1,9 +1,9 @@
 {
-    "DialogueName": "DialogueName",
+    "DialogueName": "5",
     "nodeID": "",
-    "SpeakerName": "Karl",
-    "Text": "...sense of humour...",
-    "SpritePath": "Neighbour_Sad",
+    "SpeakerName": "Lilith",
+    "Text": "How dare you call yourself a microwave!",
+    "SpritePath": "Lilith_Angry",
     "Choices": [
         {
             "Text": "Next Dialogue",

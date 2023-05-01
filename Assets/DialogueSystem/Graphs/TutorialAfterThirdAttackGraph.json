@@ -38,7 +38,22 @@
             "DialogueName": "2",
             "nodeID": "",
             "SpeakerName": "Lilith",
-            "Text": "So a wide attack?\nThat I should press \"left shift\" to \"dash\" through?\nThat's the best you got?",
+            "Text": "So a wide attack?\nThat I should press \"left shift\" to \"dash\" through?",
+            "SpritePath": "Lilith_Unhappy2",
+            "Choices": [
+                {
+                    "Text": "Next Dialogue",
+                    "nextID": ""
+                }
+            ],
+            "DialogueType": 0,
+            "IsStartingDialogue": false
+        },
+        {
+            "DialogueName": "3",
+            "nodeID": "",
+            "SpeakerName": "Lilith",
+            "Text": "That's the best you got?",
             "SpritePath": "Lilith_Unhappy2",
             "Choices": [
                 {

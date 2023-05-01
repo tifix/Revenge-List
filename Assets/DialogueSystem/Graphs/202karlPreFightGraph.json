@@ -53,7 +53,7 @@
                         "DialogueName": "31",
                         "nodeID": "",
                         "SpeakerName": "Karl",
-                        "Text": "Lily, I’ve been meaning to talk about this. Me and Astrid had a chat, and…",
+                        "Text": "Lily, I’ve been meaning to talk about this. Me and Astrid had a chat, and...",
                         "SpritePath": "Neighbour_Sad",
                         "Choices": [
                             {
@@ -127,7 +127,7 @@
                     {
                         "DialogueName": "Choicaroonie",
                         "nodeID": "",
-                        "SpeakerName": "CHOICE",
+                        "SpeakerName": "Lilith",
                         "Text": "Dialogue text.",
                         "SpritePath": "Lilith_Smug",
                         "Choices": [
@@ -147,7 +147,7 @@
                         "DialogueName": "37",
                         "nodeID": "",
                         "SpeakerName": "Karl",
-                        "Text": "Me and Astrid know that you’re joking, but especially since you’re carrying that sword around, other people might not understand your… \r",
+                        "Text": "Me and Astrid know that you’re joking, but - especially since you’re carrying that sword around - other people might not understand your...\r",
                         "SpritePath": "Neighbour_Sad",
                         "Choices": [
                             {
@@ -212,7 +212,7 @@
                         "DialogueName": "47",
                         "nodeID": "",
                         "SpeakerName": "Lilith",
-                        "Text": "It’s a pity, really, you’re sweet and I would have liked to keep you around… pfft… pffffff –",
+                        "Text": "It’s a pity, really, you’re sweet and I would have liked to keep you around… Pfft… Pffffff –",
                         "SpritePath": "Lilith_Happy",
                         "Choices": [
                             {
@@ -257,7 +257,7 @@
                         "DialogueName": "50",
                         "nodeID": "",
                         "SpeakerName": "Lilith",
-                        "Text": "Anyway…\nYou give me no choice but to kill…",
+                        "Text": "Anyway...\nYou give me no choice but to kill...",
                         "SpritePath": "Lilith_Smug",
                         "Choices": [
                             {
@@ -331,7 +331,7 @@
                     {
                         "DialogueName": "hurtmentallyskiptofight",
                         "nodeID": "",
-                        "SpeakerName": "CHOICE",
+                        "SpeakerName": "Lilith",
                         "Text": "Dialogue text.",
                         "SpritePath": "Lilith_Unhappy2",
                         "Choices": [
@@ -351,7 +351,7 @@
                         "DialogueName": "55",
                         "nodeID": "",
                         "SpeakerName": "Lilith",
-                        "Text": "(This is my chance to hurt him mentally, before going for the physical damage.)",
+                        "Text": "(This is my chance to hurt him mentally, before going in for the physical damage.)",
                         "SpritePath": "Lilith_Unhappy2",
                         "Choices": [
                             {
@@ -941,23 +941,8 @@
                         "DialogueName": "66",
                         "nodeID": "",
                         "SpeakerName": "Karl",
-                        "Text": "That you don’t like my barbeque…?",
+                        "Text": "That you don’t like my barbeque...?",
                         "SpritePath": "Neighbour_Sad",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
-                        "DialogueName": "67",
-                        "nodeID": "",
-                        "SpeakerName": "Astrid",
-                        "Text": "…",
-                        "SpritePath": "Therapist_1",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -1016,7 +1001,7 @@
                         "DialogueName": "71",
                         "nodeID": "",
                         "SpeakerName": "Astrid",
-                        "Text": "I just didn’t want to say anything!\nYou seem so into it, and you seem so happy while doing it, so…",
+                        "Text": "I just didn’t want to say anything!\nYou seem so into it, and you seem so happy while doing it, so...",
                         "SpritePath": "Therapist_1",
                         "Choices": [
                             {
@@ -1046,7 +1031,7 @@
                         "DialogueName": "72",
                         "nodeID": "",
                         "SpeakerName": "Karl",
-                        "Text": "…you don’t like my steaks?",
+                        "Text": "...you don’t like my steaks?",
                         "SpritePath": "Neighbour_Sad",
                         "Choices": [
                             {
@@ -1226,7 +1211,22 @@
                         "DialogueName": "75",
                         "nodeID": "",
                         "SpeakerName": "Astrid",
-                        "Text": "Karl, sockerbulle…",
+                        "Text": "Karl, sockerbulle...",
+                        "SpritePath": "Therapist_1",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "67",
+                        "nodeID": "",
+                        "SpeakerName": "Astrid",
+                        "Text": "...",
                         "SpritePath": "Therapist_1",
                         "Choices": [
                             {
@@ -1392,25 +1392,10 @@
                 "Key": "71f675ee-d7c6-4a2b-b341-ca23cf0f0dc4",
                 "Value": [
                     {
-                        "DialogueName": "44",
-                        "nodeID": "",
-                        "SpeakerName": "Karl",
-                        "Text": "Except the cool ones such as Astrid and myself! Hahaha!",
-                        "SpritePath": "Neighbour_Laughing",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
                         "DialogueName": "45",
                         "nodeID": "",
                         "SpeakerName": "Lilith",
-                        "Text": "This cannot continue…\nThis is why he made it to the list… I’m ending this now…",
+                        "Text": "This cannot continue...\nThis is why he made it to the list... I’m ending this now...",
                         "SpritePath": "Lilith_Unhappy",
                         "Choices": [
                             {
@@ -1425,8 +1410,23 @@
                         "DialogueName": "DialogueName",
                         "nodeID": "",
                         "SpeakerName": "Karl",
-                        "Text": "I’m sure they’re funny among the other kids, but adults don’t always have such a good humour.",
+                        "Text": "I’m sure they’re funny among the other kids, but adults don’t always have such a good sense of humour.",
                         "SpritePath": "Neighbour_Friendly",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "44",
+                        "nodeID": "",
+                        "SpeakerName": "Karl",
+                        "Text": "Except the cool ones such as Astrid and myself! Hahaha!",
+                        "SpritePath": "Neighbour_Laughing",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -1442,25 +1442,10 @@
                 "Key": "4a1038fd-6bc4-4993-9390-28a8a8ff1145",
                 "Value": [
                     {
-                        "DialogueName": "82",
-                        "nodeID": "",
-                        "SpeakerName": "Karl",
-                        "Text": "Yes. The fight is good. Because I have a licence…",
-                        "SpritePath": "Neighbour_Laughing",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
                         "DialogueName": "98",
                         "nodeID": "",
                         "SpeakerName": "Karl",
-                        "Text": "…TO GRILL!",
+                        "Text": "...TO GRILL!",
                         "SpritePath": "Neighbour_Laughing",
                         "Choices": [
                             {
@@ -1477,6 +1462,21 @@
                         "SpeakerName": "Lilith",
                         "Text": "DON’T SAY IT – ",
                         "SpritePath": "Lilith_Angry",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "82",
+                        "nodeID": "",
+                        "SpeakerName": "Karl",
+                        "Text": "Yes. The fight is good. Because I have a licence...",
+                        "SpritePath": "Neighbour_Laughing",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -1527,21 +1527,6 @@
                         "SpeakerName": "Karl",
                         "Text": "Pardon?",
                         "SpritePath": "Neighbour_Friendly",
-                        "Choices": [
-                            {
-                                "Text": "Next Dialogue",
-                                "nextID": ""
-                            }
-                        ],
-                        "DialogueType": 0,
-                        "IsStartingDialogue": false
-                    },
-                    {
-                        "DialogueName": "5",
-                        "nodeID": "",
-                        "SpeakerName": "Karl",
-                        "Text": "Darkness? Isn’t that rather glum? \nTo me, you look more like Lilith, the Queen of…",
-                        "SpritePath": "Neighbour_Laughing",
                         "Choices": [
                             {
                                 "Text": "Next Dialogue",
@@ -1615,7 +1600,7 @@
                         "DialogueName": "10",
                         "nodeID": "",
                         "SpeakerName": "Karl",
-                        "Text": "Would you like to join us, … Lilith?",
+                        "Text": "Would you like to join us, ... Lilith?",
                         "SpritePath": "Neighbour_Friendly",
                         "Choices": [
                             {
@@ -1629,7 +1614,7 @@
                     {
                         "DialogueName": "Choice1",
                         "nodeID": "",
-                        "SpeakerName": "CHOICE",
+                        "SpeakerName": "Lilith",
                         "Text": "Dialogue text.",
                         "SpritePath": "Lilith_Happy",
                         "Choices": [
@@ -1648,7 +1633,7 @@
                     {
                         "DialogueName": "choiceee",
                         "nodeID": "",
-                        "SpeakerName": "CHOICE",
+                        "SpeakerName": "Lilith",
                         "Text": "Dialogue text.",
                         "SpritePath": "Lilith_Unhappy2",
                         "Choices": [
@@ -1658,6 +1643,21 @@
                             },
                             {
                                 "Text": "Cut to the chase.",
+                                "nextID": ""
+                            }
+                        ],
+                        "DialogueType": 0,
+                        "IsStartingDialogue": false
+                    },
+                    {
+                        "DialogueName": "5",
+                        "nodeID": "",
+                        "SpeakerName": "Karl",
+                        "Text": "Darkness? Isn’t that rather glum? \nTo me, you look more like Lilith, the Queen of...",
+                        "SpritePath": "Neighbour_Laughing",
+                        "Choices": [
+                            {
+                                "Text": "Next Dialogue",
                                 "nextID": ""
                             }
                         ],
@@ -1673,7 +1673,7 @@
             "DialogueName": "DialogueName",
             "nodeID": "",
             "SpeakerName": "Karl",
-            "Text": "...sense of humour… ",
+            "Text": "...sense of humour...",
             "SpritePath": "Neighbour_Sad",
             "Choices": [
                 {
@@ -1687,7 +1687,7 @@
         {
             "DialogueName": "finalchoicee",
             "nodeID": "",
-            "SpeakerName": "CHOICE",
+            "SpeakerName": "Lilith",
             "Text": "Dialogue text.",
             "SpritePath": "Lilith_Smug",
             "Choices": [
