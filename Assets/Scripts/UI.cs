@@ -58,7 +58,8 @@ public class UI : MonoBehaviour
     [SerializeField]        Slider      bossHealthBar, bossShieldBar;
     [SerializeField]        Slider      settingVolumeMusic, settingVolumeSFX,settingVolume, settingTypeSpeed;                                     //progres % counter
     [SerializeField]        Image       XLPortraitLilith, XLPortraitOther;                  //Portraits which display Lilith and others as they tallk
-    [SerializeField]        Image       DialogueDarken;                                     //Darkening overlay mid-dialouge;
+    [SerializeField]        Image       DialogueDarken;                                     //Darkening overlay mid-dialouge and special outro fade;
+    [SerializeField]        GameObject  OutroBlack;                                         //special outro fade;
     [Space(10)]
     [SerializeField]    GameObject      RevengeList;                                        //the gorgeous scrollable revenge list
     [SerializeField]    GameObject      RevengeListTriggerer;                               //the buton triggering the revenge lsit display
@@ -580,12 +581,12 @@ public class UI : MonoBehaviour
         //waiting for the dialogue to finish, before proceeding
         while (dialogueCur != null) yield return new WaitForEndOfFrame();   
         Debug.Log("Backstory speech finished");
-        CutToBlack();                                                                   //Make sure Fade object is enabled so transitions can work
-
+        FadeOut();                                                                   //Make sure Fade object is enabled so transitions can work
+        
         //play stab sfx, then scream. Wait a moment for impact and continue to the other part of dialogue
         AudioManager.instance.PlaySFX("Hit");       
         yield return new WaitForSeconds(0.5f);
-        OutroCinematicObject.GetComponent<Image>().color = Color.black;
+        OutroBlack.SetActive(true);
         AudioManager.instance.PlaySFX("KarlScream");       
         yield return new WaitForSeconds(1.5f);
 
