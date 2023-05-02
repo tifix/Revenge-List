@@ -516,13 +516,15 @@ public class UI : MonoBehaviour
 
     public void ToggleRevengeList()     //Added pausing when Revenge list shown
     {
-        if(Settings.isMicrowaveOnList) RevengeListImageDisplayer.GetComponent<Image>().sprite = ListSpriteFull;                    //Varying which version of RL is showings
+        if(Settings.isMicrowaveOnList) RevengeListImageDisplayer.GetComponent<Image>().sprite = ListSpriteFull;     //Varying which version of RL is showings
         else { RevengeListImageDisplayer.GetComponent<Image>().sprite = ListSpriteNoMicro; }
 
-        PlayerCombat.instance.gameObject.GetComponent<Animator>().SetBool("isAttacking", false);    //Interupting attack combos- M
+        PlayerCombat.instance.gameObject.GetComponent<Animator>().SetBool("isAttacking", false);                    //Interupting attack combos- M
+        
         RevengeList.SetActive(!RevengeList.activeInHierarchy);
+        RevengeListTriggerer.SetActive(!RevengeList.activeInHierarchy);                                             //Hiding the RL prompt when the list is showing
+        
         AudioManager.instance.PlaySFX("UnrollList");
-        //GameManager.instance.SetPause(RevengeList.activeInHierarchy);
         PlayerMovement.instance.SetConditionalLock(RevengeList.activeInHierarchy);
     }
     public void SetSpriteXLLilith(Sprite s) { XLPortraitLilith.gameObject.SetActive(true); XLPortraitLilith.sprite = s; }

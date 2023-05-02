@@ -652,6 +652,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 3615865189927272333}
     m_Modifications:
+    - target: {fileID: 2851750987796272265, guid: d2ffcbbaa3ca6704981d6f93d85b95cd, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 15.182491
+      objectReference: {fileID: 0}
     - target: {fileID: 2851750987796272266, guid: d2ffcbbaa3ca6704981d6f93d85b95cd, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -666,7 +670,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2851750987796272266, guid: d2ffcbbaa3ca6704981d6f93d85b95cd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.51
+      value: -6.62
       objectReference: {fileID: 0}
     - target: {fileID: 2851750987796272266, guid: d2ffcbbaa3ca6704981d6f93d85b95cd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -700,6 +704,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FireWall 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2851750988095033556, guid: d2ffcbbaa3ca6704981d6f93d85b95cd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.48
+      objectReference: {fileID: 0}
     - target: {fileID: 2851750988276428822, guid: d2ffcbbaa3ca6704981d6f93d85b95cd, type: 3}
       propertyPath: m_Range
       value: 10
@@ -707,6 +715,22 @@ PrefabInstance:
     - target: {fileID: 2851750988276428822, guid: d2ffcbbaa3ca6704981d6f93d85b95cd, type: 3}
       propertyPath: m_Intensity
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424071606990312972, guid: d2ffcbbaa3ca6704981d6f93d85b95cd, type: 3}
+      propertyPath: m_Size.x
+      value: 9.715976
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424071606990312972, guid: d2ffcbbaa3ca6704981d6f93d85b95cd, type: 3}
+      propertyPath: m_Size.z
+      value: 23.443874
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424071606990312972, guid: d2ffcbbaa3ca6704981d6f93d85b95cd, type: 3}
+      propertyPath: m_Center.x
+      value: 3.737988
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424071606990312972, guid: d2ffcbbaa3ca6704981d6f93d85b95cd, type: 3}
+      propertyPath: m_Center.z
+      value: 2.771833
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
