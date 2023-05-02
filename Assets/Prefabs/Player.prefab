@@ -51,6 +51,38 @@ MonoBehaviour:
   scaleOverTime: {x: 1, y: 1, z: 1}
   colourOverTime: {r: 1, g: 1, b: 1, a: 1}
   fadeSpeed: 10
+--- !u!1 &2273592651604749662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5369061196099454314}
+  m_Layer: 3
+  m_Name: SpriteParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5369061196099454314
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2273592651604749662}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3395993813611527096}
+  m_Father: {fileID: 3395993812505339140}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3395993811860920322
 GameObject:
   m_ObjectHideFlags: 0
@@ -184,7 +216,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3395993813611527096}
+  - {fileID: 5369061196099454314}
   - {fileID: 3395993811860920323}
   - {fileID: 3395993812620112224}
   m_Father: {fileID: 0}
@@ -209,6 +241,7 @@ MonoBehaviour:
   dashCoolDown: 0.5
   zLimits: {x: 8, y: -10}
   hasList: 1
+  spriteParent: {fileID: 5369061196099454314}
 --- !u!114 &3395993812505339147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,7 +393,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6340818009461422460}
-  m_Father: {fileID: 3395993812505339140}
+  m_Father: {fileID: 5369061196099454314}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3395993813611527099
