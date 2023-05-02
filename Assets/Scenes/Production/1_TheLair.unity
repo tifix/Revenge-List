@@ -6887,7 +6887,7 @@ PrefabInstance:
     - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
       propertyPath: QteHit
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: 1bb1ff252622f8c488bdc8ec115dbbe4, type: 3}
     - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
       propertyPath: WalkMC
       value: 
@@ -6903,7 +6903,7 @@ PrefabInstance:
     - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
       propertyPath: QteMiss
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: 2cd4e0224fd3c5e448b62cc295e057c2, type: 3}
     - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
       propertyPath: BossTrack
       value: 
@@ -6920,6 +6920,10 @@ PrefabInstance:
       propertyPath: UnrollList
       value: 
       objectReference: {fileID: 8300000, guid: 76b72fe61a05a03438e2ed00cab8fe0e, type: 3}
+    - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
+      propertyPath: FireCrackle
+      value: 
+      objectReference: {fileID: 8300000, guid: a1834cf882fd564428035707f2ff1e72, type: 3}
     - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
       propertyPath: musicSource
       value: 
@@ -12213,7 +12217,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897402303}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: -8.872676, y: 19.65276, z: -43.451015}
+  m_LocalPosition: {x: -8.872707, y: 19.65276, z: -43.451015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17401,7 +17405,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162723989}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: -8.872676, y: 19.65276, z: -43.451015}
+  m_LocalPosition: {x: -8.872707, y: 19.65276, z: -43.451015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24537,7 +24541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 361665146755759477, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -533.00037
+      value: -533.00024
       objectReference: {fileID: 0}
     - target: {fileID: 401715734859749607, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_LocalScale.x
@@ -24690,6 +24694,10 @@ PrefabInstance:
     - target: {fileID: 2592405892236210583, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3399811224973672162, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -94
       objectReference: {fileID: 0}
     - target: {fileID: 3600300081084181245, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_IsActive
