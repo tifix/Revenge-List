@@ -250,10 +250,11 @@ public class UI : MonoBehaviour
         return boxTextDisplay.activeSelf;
     }
    
-    public void DialogueShow(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning, bool autoAdvance)                    //Call this with a dialogue structure to display it!
+    public void DialogueShow(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning, bool autoAdvance) //Call this with a dialogue structure to display it!
     {
-        StartCoroutine(DialogueSkipLock()); //locks the ability to skip for REALTIME duration
+        StartCoroutine(DialogueSkipLock());                                                         //locks the ability to skip for REALTIME duration
         boxTextDisplay.SetActive(true);
+        if (boxQTE.activeInHierarchy) boxQTE.SetActive(false);                                      //Force disable QTE when showing dialogue.
         RevengeListTriggerer.SetActive(false);
         PlayerCombat.instance.gameObject.GetComponent<Animator>().SetBool("isAttacking", false);    //Interupting attack combos- M
         Debug.Log("initialising text");
@@ -263,7 +264,7 @@ public class UI : MonoBehaviour
             runCoroutine = true;
         }
     }
-    public void DialogueShow(DSGraphSaveDataSO _dialogue) => DialogueShow(_dialogue, false,false); //by default - pause world time while showing dialogue
+    public void DialogueShow(DSGraphSaveDataSO _dialogue) => DialogueShow(_dialogue, false,false);      //by default - pause world time while showing dialogue
     public static void Dialogue(DSGraphSaveDataSO _dialogue) => instance.DialogueShow(_dialogue, false,false); //by default - pause world time while showing dialogue. Shorthand for those who can't type or wanna grab from weird places
 
     IEnumerator DialogueSkipLock() //as requested by R*, dialogue is not skippable for the first moment after showing up. Coroutine needed as realtime is paused
