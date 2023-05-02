@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Production/2_Neighbourhood.unity
     guid: 77879845d3ccefa4eb2c8a121857766b
   - enabled: 0
-    path: Assets/Scenes/Production/Y_LoadingScreen.unity
+    path: Assets/Scenes/Y_LoadingScreen.unity
     guid: 85da3473d1a96c84f9403e36016552e3
   m_configObjects: {}
