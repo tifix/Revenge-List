@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.U2D;
 
 [RequireComponent(typeof(Animator))]
 public class PlayerMovement : MonoBehaviour
@@ -45,6 +46,10 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 zLimits;
 
     public bool hasList = true;
+
+    public Transform spriteParent;
+    Vector3 spriteScale;
+    Vector3 spriteYPos;
     void Awake()
     {
         if (instance == null) instance = this;
@@ -54,6 +59,8 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         boxCol = GetComponent<BoxCollider>();
         sprite = GetComponentInChildren<SpriteRenderer>();
+        spriteScale = spriteParent.localScale;
+        spriteYPos = spriteParent.localPosition;
 
         //Bind movement to and action
         movement = input.Ground.Move;
@@ -83,8 +90,15 @@ public class PlayerMovement : MonoBehaviour
                 sprite.flipX = false;
                 PlayerCombat.instance.MoveBox(1);
             }
+            
             ProcessInput();
             GetComponent<Animator>().SetFloat("walkDirection", dir.magnitude);
+
+            float zPos = transform.position.z / 200;
+            Vector3 sScale = new Vector3(zPos, zPos, 0);
+            Vector3 sPos = new Vector3(0, zPos, 0);
+            spriteParent.localScale = spriteScale + sScale;
+            spriteParent.localPosition = spriteYPos + sPos;
         }
         else
         {
