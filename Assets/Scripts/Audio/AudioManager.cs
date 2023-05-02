@@ -40,6 +40,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip MicroHit;
     public AudioClip Zap;
     public AudioClip Zap2;
+    public AudioClip FireCrackle;
 
     private void Awake()
     {
@@ -151,6 +152,9 @@ public class AudioManager : MonoBehaviour
                 break;
             case "Zap2":
                 sfxSource.clip = Zap2;
+                break;
+            case "FireCrackle":
+                sfxSource.clip = FireCrackle;
                 break;
             default:
                 Debug.LogWarning("Incorrect name " + name + " check spelling");

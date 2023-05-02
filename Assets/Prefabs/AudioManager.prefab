@@ -267,3 +267,4 @@ MonoBehaviour:
   MicroHit: {fileID: 8300000, guid: 13383bb24e7c2e44eb04e9e688b55c4e, type: 3}
   Zap: {fileID: 8300000, guid: 6fdd030208e3f7347a17486eeca0ab8d, type: 3}
   Zap2: {fileID: 8300000, guid: c5c87a5f10bb8a24c9fa1d02bd4cd48f, type: 3}
+  FireCrackle: {fileID: 8300000, guid: a1834cf882fd564428035707f2ff1e72, type: 3}
