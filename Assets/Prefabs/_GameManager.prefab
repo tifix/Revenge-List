@@ -49,8 +49,6 @@ MonoBehaviour:
   isGameWon: 0
   isGameLost: 0
   DeathReloadTime: 5
-  LoadSlider: {fileID: 0}
-  ProgressText: {fileID: 0}
   cheat_TimeScale: 1
   cheat_FastForwardDialogue: 0
   cheat_GodMode: 0
