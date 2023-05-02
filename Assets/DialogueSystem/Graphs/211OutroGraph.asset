@@ -18,7 +18,7 @@ MonoBehaviour:
   - ID: b24464bf-068d-4517-ab88-969dc4d5851f
     Name: 4
     SpeakerName: Karl
-    Text: "Please, Lily, tell Astrid that\u2026"
+    Text: Please, Lily, tell Astrid that...
     SpritePath: Neighbour_Sad
     Choices:
     - Text: Next Dialogue
@@ -44,8 +44,8 @@ MonoBehaviour:
   - ID: aebe3097-b244-4517-bb64-53fe0210402d
     Name: 1
     SpeakerName: Karl
-    Text: "Well, they did tell me that only mandatory things in life are death and
-      taxes\u2026"
+    Text: Well, they did tell me that only mandatory things in life are death and
+      taxes...
     SpritePath: Neighbour_Sad
     Choices:
     - Text: Next Dialogue
@@ -58,7 +58,7 @@ MonoBehaviour:
   - ID: 981c9927-e1d3-4d5c-9100-ef63e4228ca9
     Name: 2
     SpeakerName: Karl
-    Text: "It seems I did both\u2026"
+    Text: It seems I did both...
     SpritePath: Neighbour_Laughing
     Choices:
     - Text: Next Dialogue
