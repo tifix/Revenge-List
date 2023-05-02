@@ -3844,6 +3844,26 @@ PrefabInstance:
       propertyPath: ProgressText
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3702850953895804210, guid: 044178dd346668d49946ca50d8299ffb, type: 3}
+      propertyPath: cheat_WarpToKarl
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3702850953895804210, guid: 044178dd346668d49946ca50d8299ffb, type: 3}
+      propertyPath: cheat_SkipToOutro
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3702850953895804210, guid: 044178dd346668d49946ca50d8299ffb, type: 3}
+      propertyPath: cheat_SkipBossPhase
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3702850953895804210, guid: 044178dd346668d49946ca50d8299ffb, type: 3}
+      propertyPath: cheat_WarpToMicrowave
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3702850953895804210, guid: 044178dd346668d49946ca50d8299ffb, type: 3}
+      propertyPath: cheat_FastForwardDialogue
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3702850953895804211, guid: 044178dd346668d49946ca50d8299ffb, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -5928,7 +5948,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122868301}
   m_LocalRotation: {x: 0.70710677, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -2.3, z: 0}
+  m_LocalPosition: {x: 0, y: -2.75, z: 0}
   m_LocalScale: {x: 3.0619094, y: 1.8629216, z: 2.05565}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7033,6 +7053,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1407210984}
   - component: {fileID: 1407210983}
+  - component: {fileID: 1407210985}
   m_Layer: 0
   m_Name: KarlPreFight_EnableOnAwake
   m_TagString: Untagged
@@ -7081,7 +7102,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 234166287, guid: 367323c97415ca74b9985b29a9b84931, type: 3}
+  m_Sprite: {fileID: 1759391621, guid: 28e3be80e4ca7434ebdbb7f8c9dec750, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7108,6 +7129,22 @@ Transform:
   m_Father: {fileID: 1820762646}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &1407210985
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407210982}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: eba37ee693c1c714fa54ba2e61e28802, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: eba37ee693c1c714fa54ba2e61e28802, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1419652338
 GameObject:
   m_ObjectHideFlags: 0
