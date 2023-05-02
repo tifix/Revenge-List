@@ -4594,6 +4594,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
+      propertyPath: BgMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: f3796ed598912f74b93b68b4e7232d00, type: 3}
+    - target: {fileID: 8476623665672524401, guid: 4f0aed7728ef6c5438a7517bfd21c607, type: 3}
       propertyPath: MenuClick
       value: 
       objectReference: {fileID: 8300000, guid: 637195b54182391448c78979467236cf, type: 3}
