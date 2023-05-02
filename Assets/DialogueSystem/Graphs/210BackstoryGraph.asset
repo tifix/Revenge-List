@@ -166,8 +166,8 @@ MonoBehaviour:
   - ID: 0f5d49bc-a7ac-4834-bbaf-63c24d6115be
     Name: 4
     SpeakerName: Lilith
-    Text: "Running away from barbeque tongs, trying to keep out\u2026 I still remember
-      it so clearly, mr Svensson."
+    Text: Running away from barbeque tongs, trying to keep out... I still remember
+      it so clearly, mr Svensson.
     SpritePath: 
     Choices:
     - Text: Next Dialogue
@@ -180,7 +180,7 @@ MonoBehaviour:
   - ID: bddb9703-df31-42e6-a633-0d4e0a4ca3dc
     Name: 7
     SpeakerName: Lilith
-    Text: "Stealing my girl\u2026 "
+    Text: Stealing my girl...
     SpritePath: 
     Choices:
     - Text: Next Dialogue
@@ -190,19 +190,6 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - 9cd5ae66-61fb-43a5-84c4-2f6b6f58c042
-  - ID: 861e91d4-7948-476c-a22a-a1e23c25b31a
-    Name: 14
-    SpeakerName: Lilith
-    Text: Anyway...
-    SpritePath: 
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 
-    GroupID: ecaf045f-8d6d-4b47-8938-85139aa43c15
-    Position: {x: 13143, y: -310}
-    isStartNode: 0
-    ChildIDs:
-    - 
   - ID: df1d83ad-3828-4b00-b2b5-1dc22ef58b19
     Name: 13
     SpeakerName: Lilith
@@ -233,7 +220,7 @@ MonoBehaviour:
   - ID: a3084bd0-f040-445a-9d02-c7c3e9f19679
     Name: 12
     SpeakerName: Lilith
-    Text: My parents....
+    Text: My parents...
     SpritePath: Insert Sprite Path Here.
     Choices:
     - Text: Next Dialogue
@@ -313,7 +300,7 @@ MonoBehaviour:
     Name: 6
     SpeakerName: Lilith
     Text: "It\u2019s weird I\u2019ve not already killed you, really. Your crimes
-      are numerous. The eggs\u2026 The dog\u2026"
+      are numerous. The eggs... The dog..."
     SpritePath: 
     Choices:
     - Text: Next Dialogue
@@ -323,6 +310,19 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - bddb9703-df31-42e6-a633-0d4e0a4ca3dc
+  - ID: 861e91d4-7948-476c-a22a-a1e23c25b31a
+    Name: 14
+    SpeakerName: Lilith
+    Text: Anyway...
+    SpritePath: 
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 
+    GroupID: ecaf045f-8d6d-4b47-8938-85139aa43c15
+    Position: {x: 13143, y: -310}
+    isStartNode: 0
+    ChildIDs:
+    - 
   OldGroupNames:
   - Start
   - BestGirl

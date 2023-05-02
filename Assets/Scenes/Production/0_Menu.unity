@@ -4177,11 +4177,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Production, writing, \t\tMilla Keski-Santti\r\nArt Lead, game design,
-    writing\tAlessandro Brillo\r\nProgramming lead, game design\tMikolaj Czarnecki\nProgramming,
-    audio design\t\tDave Burns\nProgramming, marketing\t\tAntonio Villalta Isidro\r\nEnvironment
-    art\t\tMairi Angiolini\r\nCharacter Art\r\t\t\tShiyuan Jiao\r\nAnimations\t\t\tRachel
-    Brown\r\n"
+  m_text: "Production, writing\t\tMilla Keski-Santti\r\nArt lead, game design\t\tAlessandro
+    Brillo\r\nProgramming lead, game design\tMikolaj Czarnecki\nAudio design, code\t\tDave
+    Burns\nProgramming\t\t\tAntonio Villalta Isidro\r\nEnvironment art\t\tMairi Angiolini\r\nCharacter
+    art\r\t\t\tShiyuan Jiao\r\nAnimations\t\t\tRachel Brown\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 11bc8c858a99c7c4683b0067f24b967a, type: 2}
   m_sharedMaterial: {fileID: 3522528611470643922, guid: 11bc8c858a99c7c4683b0067f24b967a, type: 2}
@@ -4208,7 +4207,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45.45
+  m_fontSize: 44.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6329,7 +6328,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.8
+  m_fontSize: 29.1
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6541,7 +6540,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 23340c2b56a999648a01795796873ad2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

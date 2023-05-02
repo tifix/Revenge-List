@@ -5662,7 +5662,7 @@ RectTransform:
   - {fileID: 896510695595591209}
   - {fileID: 7500161073709117475}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6137,7 +6137,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 98b5545860a47524daa28b95dffaf0b6, type: 3}
+  m_Texture: {fileID: 2800000, guid: 58a788238b1dcf04988a845a54f4e7c3, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
