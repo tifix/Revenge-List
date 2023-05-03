@@ -1015,6 +1015,10 @@ PrefabInstance:
       propertyPath: attackIntervalMinimum
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 3395993813611527096, guid: 140465e8217c6d347a5bc5c7e0cd1573, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3395993813611527099, guid: 140465e8217c6d347a5bc5c7e0cd1573, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -7062,11 +7066,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3702850953895804210, guid: 044178dd346668d49946ca50d8299ffb, type: 3}
       propertyPath: cheat_WarpToMicrowave
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3702850953895804210, guid: 044178dd346668d49946ca50d8299ffb, type: 3}
       propertyPath: cheat_FastForwardDialogue
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3702850953895804211, guid: 044178dd346668d49946ca50d8299ffb, type: 3}
       propertyPath: m_RootOrder
@@ -12217,7 +12221,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897402303}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: -8.872697, y: 19.65276, z: -43.451015}
+  m_LocalPosition: {x: -8.872669, y: 19.65276, z: -43.451015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17405,7 +17409,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162723989}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: -8.872697, y: 19.65276, z: -43.451015}
+  m_LocalPosition: {x: -8.872669, y: 19.65276, z: -43.451015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
