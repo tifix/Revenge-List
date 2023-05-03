@@ -25,8 +25,9 @@ public class SceneHandler : MonoBehaviour
 
     IEnumerator LoadLevelAsync(int index)   // plugged into UI - M
     {
-        AsyncOperation op = SceneManager.LoadSceneAsync(index, LoadSceneMode.Single);
-        
+        yield return null;
+        AsyncOperation op = SceneManager.LoadSceneAsync(index, LoadSceneMode.Single); //, LoadSceneMode.Single
+
         //Ensuring valid reference, debugging otherwise
         try { Debug.Log(loadSlider.gameObject.name + " Loading screen obtained properly. Default loading screen valid"); }
         catch { Debug.LogWarning("Loading bar object missing! Please grab it from UI prefab - Loading Panel"); }
@@ -35,7 +36,7 @@ public class SceneHandler : MonoBehaviour
         progressText.text = "Now Loading!";
         loadSlider.value = 0;
         loadSlider.GetComponentInParent<CanvasGroup>().alpha = 1;
-        yield return null;
+        yield return new WaitForSecondsRealtime(0.5f);
 
         //Loading with text display and progress slide.
         while (!op.isDone)
@@ -44,11 +45,15 @@ public class SceneHandler : MonoBehaviour
             Debug.Log("Loading! " + progress);
             //Percentage loaded
             loadSlider.value = progress;
-            progressText.text = (progress * 100f).ToString();
+            if(Mathf.RoundToInt(progress * 100f) % 2==0 ) yield return new WaitForSeconds(0.15f);
+            if(Mathf.RoundToInt(progress * 100f) % 3==0 ) yield return new WaitForSeconds(0.15f);
+            progressText.text = (Mathf.RoundToInt(progress * 100f) ).ToString();
 
-            yield return null;
+            //yield return null;
+            yield return new WaitForSecondsRealtime(0.1f);
         }
-        yield return new WaitForSeconds(0.5f);
+        loadSlider.value = 100;
+        yield return new WaitForSecondsRealtime(0.5f);
         loadSlider.GetComponentInParent<CanvasGroup>().alpha = 0;
     }
 }
