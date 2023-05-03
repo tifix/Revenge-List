@@ -3830,10 +3830,10 @@ RectTransform:
   m_Father: {fileID: 371397628}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.92602366, y: 0}
-  m_AnchorMax: {x: 1, y: 0.1105804}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.42546076, y: 0.052}
+  m_AnchorMax: {x: 0.5701079, y: 0.164}
+  m_AnchoredPosition: {x: 2.3420029, y: 0.5}
+  m_SizeDelta: {x: 6.470001, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1293676262
 MonoBehaviour:
@@ -4152,10 +4152,10 @@ RectTransform:
   m_Father: {fileID: 371397628}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.037166394, y: 0}
-  m_AnchorMax: {x: 0.92602366, y: 0.5609117}
-  m_AnchoredPosition: {x: 0, y: 28}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -95.19, y: 38.89}
+  m_SizeDelta: {x: 813.62, y: 428.22998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1365200938
 MonoBehaviour:
@@ -4180,7 +4180,8 @@ MonoBehaviour:
   m_text: "Production, writing\t\tMilla Keski-Santti\r\nArt lead, game design\t\tAlessandro
     Brillo\r\nProgramming lead, game design\tMikolaj Czarnecki\nAudio design, code\t\tDave
     Burns\nProgramming\t\t\tAntonio Villalta Isidro\r\nEnvironment art\t\tMairi Angiolini\r\nCharacter
-    art\r\t\t\tShiyuan Jiao\r\nAnimations\t\t\tRachel Brown\r"
+    art\r\t\t\tShiyuan Jiao\r\nAnimations\t\t\tRachel Brown\r\n\nThanks to our tutor\t\tMartin
+    Lynagh\nAnd to\t\t\tRobin Griffins\n\nAnd the mentor\t\tRockstar"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 11bc8c858a99c7c4683b0067f24b967a, type: 2}
   m_sharedMaterial: {fileID: 3522528611470643922, guid: 11bc8c858a99c7c4683b0067f24b967a, type: 2}
@@ -4207,7 +4208,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.8
+  m_fontSize: 38.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4243,7 +4244,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 9.407349, y: 5.433838, z: -16.692139, w: 5.938019}
+  m_margin: {x: 9.407349, y: 5.433838, z: -1.4303436, w: 5.966873}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4684,8 +4685,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.36933714, y: 0.5609117}
   m_AnchorMax: {x: 0.65829515, y: 1}
-  m_AnchoredPosition: {x: 0, y: 26}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 407, y: 22.040009}
+  m_SizeDelta: {x: -156.21, y: -134.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1462403462
 MonoBehaviour:
@@ -6328,7 +6329,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.05
+  m_fontSize: 60.55
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
