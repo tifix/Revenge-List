@@ -3,24 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 /*
-* continously shifts a RAW image along a given path.
-* 
+* continously shifts a PLAIN image along a given path, relative to it's up rotation.
+* movement.x is up translation, movement.y is right translation, basically
 */
 
-[RequireComponent(typeof(RawImage))]
+[RequireComponent(typeof(Image))]
 public class MoveConstantly : MonoBehaviour
 {
-    private RawImage image;
     public Vector2 movement;
-
-    public void OnEnable()
-    {
-        if (image == null) image=GetComponent<RawImage>();
-    }
 
     void Update()
     {
-        image.uvRect = new Rect(image.uvRect.position + movement*Time.deltaTime, image.uvRect.size);
+        Vector3 rel = transform.up * movement.x + transform.right * movement.y;
+        GetComponent<Image>().rectTransform.position += rel; 
     }
 }
 
