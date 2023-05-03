@@ -587,6 +587,7 @@ public class UI : MonoBehaviour
         AudioManager.instance.PlaySFX("Hit");       
         yield return new WaitForSeconds(0.5f);
         OutroBlack.SetActive(true);
+        FadeIn();
         AudioManager.instance.PlaySFX("KarlScream");       
         yield return new WaitForSeconds(1.5f);
 
@@ -604,7 +605,7 @@ public class UI : MonoBehaviour
         if (OutroCredits != null) OutroCredits.SetActive(true);
         AudioManager.instance.PlayMusic("CreditsTrack");
         float t = 0;
-        while (true) { t += Time.deltaTime; Debug.Log(t); yield return new WaitForEndOfFrame(); if (t > 13) break; }
+        while (true) { t += Time.deltaTime; Debug.Log(t); yield return new WaitForEndOfFrame(); if (t > 24) break; }
 
         //OutroCleaning up
         PlayerMovement.instance.UnPauseMovement();
