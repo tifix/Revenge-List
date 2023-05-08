@@ -147,11 +147,12 @@ public class UI : MonoBehaviour
             }   
     }
 
-    protected IEnumerator DialogueTyper(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning,bool autoAdvance) //IF paused, freeze gametime, if NOT auto-advance, lock movement
+    //Coroutine typing the dialogue text over-time. Invoke through Dialogue.Show() with dialogue ScriptableObject.
+    protected IEnumerator DialogueTyper(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning,bool autoAdvance)
     {
+        //Disable redundant UI objects, retrieve starting node.
         NodeCurrent = DialogueInitialise(_dialogue, pauseWhileRunning, autoAdvance);
-
-        //Main dialogue loop - repeat until the next one has no children
+        //Main dialogue loop - repeat until the next node has no children; end of dialogue stream is reached
         while (true)
         {
             txtSpeaker.text = NodeCurrent.SpeakerName;
@@ -159,7 +160,7 @@ public class UI : MonoBehaviour
             SetBigSpriteForDialogue("DialogueSprites/" + NodeCurrent.SpritePath);
             runCoroutine = true;
 
-            //Choice node special functionality HERE!
+            //Choice node special functionality HERE; load dialogue choices onto choice UI rather than type dialogue over time.
             if (NodeCurrent.Choices.Count > 1)
             {
                 dataTemp = _dialogue;
@@ -172,10 +173,10 @@ public class UI : MonoBehaviour
             //For regular nodes Slowly display the page text
             for (int j = 0; j < (pageText.Length + 1); j++)
             {
-                txtMain.text = pageText.Substring(0, j);               //slice the text 
-                if (GameManager.instance.cheat_FastForwardDialogue) {  goto endOfDialogue; }
+                txtMain.text = pageText.Substring(0, j);                                        //slice the text 
+                if (GameManager.instance.cheat_FastForwardDialogue) {  goto endOfDialogue; }    //skip to end of the dialogue if using debug tools.
                 yield return new WaitForSecondsRealtime(Settings.instance.typingWait);
-                if (!runCoroutine) break;
+                if (!runCoroutine) break;                                                       //loop-breaker for dialogue skipping with user input.
             }
             if (GameManager.instance.cheat_FastForwardDialogue) {  break; }
 
@@ -183,23 +184,21 @@ public class UI : MonoBehaviour
             txtMain.text = pageText; isWaiting = true;
             while (isWaiting == true) yield return null;
 
-            //Final node detection - break the loop if the node has no children
+            //Advancing to the next node and final node detection. Dialogue display is finished when no children nodes are detected.
             try
             {
-                if (string.IsNullOrEmpty(NodeCurrent.ChildIDs[0])) { Debug.LogWarning("End of dialogue stream reached"); break; }
-                NodeCurrent = FindSaveDataID(NodeCurrent.ChildIDs[0], _dialogue);
+                if (string.IsNullOrEmpty(NodeCurrent.ChildIDs[0])) { Debug.Log("End of dialogue stream reached"); break; }
+                NodeCurrent = FindSaveDataID(NodeCurrent.ChildIDs[0], _dialogue);   //Grab next node by ID
             }
-            catch { Debug.LogWarning("End of dialogue stream reached"); break; }
+            catch { Debug.Log("End of dialogue stream reached"); break; }
         }
-
         endOfDialogue:
         yield return 1;
-
-        //Disable once finished
+        //Disable dialogue UI and unpause the game once finished
         DialogueCleanup(pauseWhileRunning);
     }
 
-    public DSNodeSaveData DialogueInitialise(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning, bool autoAdvance) //Find the start node values
+    public DSNodeSaveData DialogueInitialise(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning, bool autoAdvance) //Find the start node values and
     {
         //retrieve START node
         dialogueCur = _dialogue;
@@ -233,7 +232,7 @@ public class UI : MonoBehaviour
     }
 
 
-    public void DialogueCleanup(bool pauseWhileRunning) //Hide dialogue bits and resert values once done
+    public void DialogueCleanup(bool pauseWhileRunning) //Hide dialogue bits and resert values once DialougeTyper() is finished
     {
         GameManager.instance.SetPause(false);
         runCoroutine = false;
@@ -249,14 +248,16 @@ public class UI : MonoBehaviour
     public bool IsInDialogue()
     {
         return boxTextDisplay.activeSelf;
-    }
+    }   //simple game-state checker
    
     public void DialogueShow(DSGraphSaveDataSO _dialogue, bool pauseWhileRunning, bool autoAdvance) //Call this with a dialogue structure to display it!
     {
         StartCoroutine(DialogueSkipLock());                                                         //locks the ability to skip for REALTIME duration
+
         boxTextDisplay.SetActive(true);
-        if (boxQTE.activeInHierarchy) boxQTE.SetActive(false);                                      //Force disable QTE when showing dialogue.
+        if (boxQTE.activeInHierarchy) boxQTE.SetActive(false);                                      //Force hide redundant UI elements
         RevengeListTriggerer.SetActive(false);
+
         PlayerCombat.instance.gameObject.GetComponent<Animator>().SetBool("isAttacking", false);    //Interupting attack combos- M
         Debug.Log("initialising text");
         if (!runCoroutine)

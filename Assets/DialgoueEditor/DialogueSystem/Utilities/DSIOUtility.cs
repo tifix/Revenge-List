@@ -55,24 +55,20 @@ namespace DS.Utilities
     #region Save Methods
     public static void Save()
         {
-            CreateStaticFolders();
-
-            GetElementsFromGraphView();
-
+            CreateStaticFolders();                      //Create folder structure from groups
+            GetElementsFromGraphView();                 
+                                                        //Export the Dialogue container to Scriptable Object
             DSGraphSaveDataSO graphData = CreateAsset<DSGraphSaveDataSO>("Assets/DialogueSystem/Graphs", $"{graphFileName}Graph");
-
             graphData.Init(graphFileName);
 
-            DSDialogueContainerSO dialogueContainer = new DSDialogueContainerSO();//CreateAsset<DSDialogueContainerSO>(containerFolderPath, graphFileName);
-
+            DSDialogueContainerSO dialogueContainer = new DSDialogueContainerSO();
             dialogueContainer.Init(graphFileName);
 
-            SaveGroups(graphData, dialogueContainer);
-            SaveNodes(graphData, dialogueContainer);
+            SaveGroups(graphData, dialogueContainer);   //Export groups - to graph, .Json file and Scriptable Object
+            SaveNodes(graphData, dialogueContainer);    //Export nodes - to graph, .Json file and Scriptable Object
 
-            SaveAsset(graphData);
-            //SaveAsset(dialogueContainer);
-            SaveToJsonMasterData(dialogueContainer);
+            SaveAsset(graphData);                       //Force refresh asset database
+            SaveToJsonMasterData(dialogueContainer);    //Export the Dialogue container to .Json
         }
 
         #region Groups
@@ -83,8 +79,6 @@ namespace DS.Utilities
             foreach (DSGroup group in groups)
             {
                 SaveGroupToGraph(group, graphData);
-
-                //SaveGroupToScriptableObject(group, dialogueContainer);
                 SaveGroupToJson(group, dialogueContainer);
 
                 groupNames.Add(group.title);
@@ -104,29 +98,6 @@ namespace DS.Utilities
 
             graphData.Groups.Add(groupData);
         }
-        /*
-        private static void SaveGroupToScriptableObject(DSGroup group, DSDialogueContainerSO dialogueContainer)
-        {
-            string groupName = group.title;
-
-            CreateFolder($"{containerFolderPath}/Groups", groupName);
-            CreateFolder($"{containerFolderPath}/Groups/{groupName}", "Dialogues");
-
-            DSDialogueGroupSO dialogueGroup = CreateAsset<DSDialogueGroupSO>($"{containerFolderPath}/Groups/{groupName}", groupName);
-
-
-
-
-            //dialogueGroup = Create
-
-            dialogueGroup.Init(groupName);
-
-            createdDialogueGroups.Add(group.ID, dialogueGroup);
-
-            dialogueContainer.DialogueGroups.Add(dialogueGroup, new List<DSDialogueSO>());
-
-            SaveAsset(dialogueGroup);
-        }*/
         private static void SaveGroupToJson(DSGroup group, DSDialogueContainerSO dialogueContainer)
         {
             string groupName = group.title;
@@ -137,15 +108,11 @@ namespace DS.Utilities
             StreamWriter writer = new StreamWriter($"{containerFolderPath}/Groups/" + groupName + "/" + groupName + ".json");
 
 
-
-            DSDialogueGroupSO dialogueGroup = new DSDialogueGroupSO();//(DSDialogueGroupSO)ScriptableObject.CreateInstance("DSDialogueGroupSO");
-
+            DSDialogueGroupSO dialogueGroup = new DSDialogueGroupSO();
             dialogueGroup.Init(groupName);
 
-
-            //Debug.Log("name "+groupName+ " ID " + group.ID);
+                        //Debug.Log("name "+groupName+ " ID " + group.ID);
             Debug.Log("name "+ dialogueGroup.GroupName);
-            //createdDialogueGroups.Add(group.ID, dialogueGroup);
             createdDialogueGroups.Add(group.ID, dialogueGroup);
 
             dialogueContainer.DialogueGroups.Add(groupName, new List<DSDialogueSO>());
@@ -181,15 +148,11 @@ namespace DS.Utilities
             foreach(DSNode node in nodes)
             {
                 SaveNodeToGraph(node, graphData);
-
                 SaveToJson(node, dialogueContainer);
-
-                //SaveNodeToScriptableObject(node, dialogueContainer);
 
                 if(node.Group != null)
                 {
                     groupedNodeNames.AddItem(node.Group.title, node.DialogueName);
-
                     continue;
                 }
 
@@ -289,38 +252,6 @@ namespace DS.Utilities
             writer.Write(s);
             writer.Close();
         }
-        /*
-        private static void SaveNodeToScriptableObject(DSNode node, DSDialogueContainerSO dialogueContainer)
-        {
-            DSDialogueSO dialogue;
-
-            if (node.Group != null)
-            {
-                dialogue = CreateAsset<DSDialogueSO>($"{containerFolderPath}/Groups/{node.Group.title}/Dialogues", node.DialogueName);
-
-                //dialogueContainer.DialogueGroups.AddItem(createdDialogueGroups[node.Group.ID], dialogue);         //removed for format switching
-            }
-            else
-            {
-                dialogue = CreateAsset<DSDialogueSO>($"{containerFolderPath}/Global/Dialogues", node.DialogueName);
-
-                dialogueContainer.UngroupedDialogues.Add(dialogue);
-            }
-
-            dialogue.Init(
-                node.DialogueName, 
-                node.Text,
-                node.SpeakerName,
-                node.SpritePath,
-                ConvertNodeChoicesToDialogueChoices(node.Choices),
-                node.DialogueType,
-                node.IsStartingNode()
-                );
-
-            createdDialogues.Add(node.ID, dialogue);
-
-            SaveAsset(dialogue);
-        }*/
         private static List<DSDialogueChoiceData> ConvertNodeChoicesToDialogueChoices(List<DSChoiceSaveData> nodeChoices)
         {
             List<DSDialogueChoiceData> dialogueChoices = new List<DSDialogueChoiceData>();
@@ -439,7 +370,6 @@ namespace DS.Utilities
         }
 
 
-
         private static void LoadNodes(List<DSNodeSaveData> nodes)
         {
             foreach (DSNodeSaveData nodeData in nodes)
@@ -461,14 +391,12 @@ namespace DS.Utilities
                 loadedNodes.Add(node.ID, node);
 
                 if(string.IsNullOrEmpty(nodeData.GroupID))
-                {
                     continue;
-                }
+                
 
                 DSGroup group = loadedGroups[nodeData.GroupID];
 
                 node.Group = group;
-
                 group.AddElement(node);
             }
         }
