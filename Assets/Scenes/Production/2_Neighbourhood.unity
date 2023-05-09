@@ -2151,6 +2151,10 @@ PrefabInstance:
       value: -36.404285
       objectReference: {fileID: 0}
     - target: {fileID: 4814028220110693398, guid: e00c074aaf2a8be4cbc9496d99af2ae7, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4814028220110693398, guid: e00c074aaf2a8be4cbc9496d99af2ae7, type: 3}
       propertyPath: preUseDialogue
       value: 
       objectReference: {fileID: 11400000, guid: 07048b609fe3c9048a9928f125cbb595, type: 2}
@@ -8079,6 +8083,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 833656598}
+    - target: {fileID: 1485988676, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1882817614, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -8101,7 +8109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 361665146755759477, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -532.99927
+      value: -533
       objectReference: {fileID: 0}
     - target: {fileID: 509309130320118764, guid: 10406c30651af614d84a6a9668a015bb, type: 3}
       propertyPath: m_Color.g

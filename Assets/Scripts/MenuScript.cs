@@ -7,6 +7,7 @@ public class MenuScript : MonoBehaviour
 {
 
     public GameObject CreditsPanel;
+    public GameObject CreditsPanel2;
     public GameObject SettingsPanel;
     public GameObject startGame;
     [SerializeField] AudioMixer AudioMixer;
@@ -17,11 +18,29 @@ public class MenuScript : MonoBehaviour
         PlayTrack("CreditsTrack");
     }
 
-    public void ToggleCreditsPanel()
+    public void ToggleCredits(bool state)
     {
         AudioManager.instance.PlaySFX("MenuClick");
+        if (state) 
+        {
+            CreditsPanel.SetActive(true);
+            startGame.SetActive(false);
+        }
+        else
+        {
+            CreditsPanel.SetActive(false);
+            CreditsPanel2.SetActive(false);
+            startGame.SetActive(true);
+        }
+    }
+    public void SwitchBetweenCredits()
+    {
+        //Switching the enabled-ness
         CreditsPanel.SetActive(!CreditsPanel.activeInHierarchy);
-        startGame.SetActive(!startGame.activeInHierarchy);
+        CreditsPanel2.SetActive(!CreditsPanel2.activeInHierarchy);
+
+        AudioManager.instance.PlaySFX("MenuClick");
+        startGame.SetActive(false);
     }
 
     public void ToggleSettingsPanel()
@@ -30,6 +49,7 @@ public class MenuScript : MonoBehaviour
         SettingsPanel.SetActive(!SettingsPanel.activeInHierarchy);
         startGame.SetActive(!startGame.activeInHierarchy);
     }
+
 
 
     public void SetTypingSpeed(float typeRate) => Settings.instance.typingWait = Mathf.Lerp(0.04f, 0.01f, typeRate); //left to slow, right to fast
