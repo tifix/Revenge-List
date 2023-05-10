@@ -4635,7 +4635,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46.25
+  m_fontSize: 40.3
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5164,7 +5164,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 98.2
+  m_fontSize: 90.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5452,10 +5452,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Production, writing\t\tMilla Keski-Santti\r\nArt lead, game design\t\tAlessandro
     Brillo\r\nProgramming lead, game design\tMikolaj Czarnecki\nAudio design, tools
-    programming\tDave Burns\nMechanics programming, promotional video\tAntonio Villalta
+    programming\tDave Burns\nGameplay programming, promotional videos\tAntonio Villalta
     Isidro\r\nEnvironmental art, promotional art\tMairi Angiolini\r\nCharacter art\r\t\t\tShiyuan
     Jiao\r\nAnimations\t\t\tRachel Brown\r\n\nAcademic tutor\t\tMartin Lynagh\nSpecial
-    thanks to\t\tRobin Griffiths\n\nMentor\t\t\tRockstar Games"
+    thanks to\t\tRobin Griffiths"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 11bc8c858a99c7c4683b0067f24b967a, type: 2}
   m_sharedMaterial: {fileID: 3522528611470643922, guid: 11bc8c858a99c7c4683b0067f24b967a, type: 2}
@@ -5482,7 +5482,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 34.4
+  m_fontSize: 29.95
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7748,7 +7748,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 62.6
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1

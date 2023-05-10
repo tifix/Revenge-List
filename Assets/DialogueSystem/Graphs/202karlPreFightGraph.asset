@@ -25,7 +25,7 @@ MonoBehaviour:
     Position: {x: -738, y: 177}
   - ID: d01246b4-8e40-46b1-a7b2-332560a06869
     Name: CommonBridge
-    Position: {x: 8974, y: -49}
+    Position: {x: 8920, y: -49}
   - ID: 8241f30b-0095-4892-b2fe-3118633b011e
     Name: DoTakeHerOUt
     Position: {x: 6120, y: -22}
@@ -932,76 +932,6 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - 2cd00df3-1b5e-4203-a7e5-54f7d7ae0e19
-  - ID: 08e28eca-a395-474f-9181-bc6b7efd65a1
-    Name: 48
-    SpeakerName: Lilith
-    Text: 'HAHAHAHAHAHA! '
-    SpritePath: Lilith_Smug
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 35c3cf7a-cdcd-4e5d-b970-19453c0443c9
-    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
-    Position: {x: 9358, y: 556}
-    isStartNode: 0
-    ChildIDs:
-    - 35c3cf7a-cdcd-4e5d-b970-19453c0443c9
-  - ID: 35c3cf7a-cdcd-4e5d-b970-19453c0443c9
-    Name: 49
-    SpeakerName: Lilith
-    Text: "I can\u2019t even say it with a straight face!"
-    SpritePath: Lilith_Happy
-    Choices:
-    - Text: Next Dialogue
-      NodeID: ed5f39f6-dff9-4600-9f35-64d7add17a73
-    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
-    Position: {x: 9628, y: 557}
-    isStartNode: 0
-    ChildIDs:
-    - ed5f39f6-dff9-4600-9f35-64d7add17a73
-  - ID: ed5f39f6-dff9-4600-9f35-64d7add17a73
-    Name: 50
-    SpeakerName: Lilith
-    Text: 'Anyway...
-
-      You give me no choice but to kill...'
-    SpritePath: Lilith_Smug
-    Choices:
-    - Text: Next Dialogue
-      NodeID: ffb2b259-2dc3-4f5b-9eee-9ea71c401dc6
-    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
-    Position: {x: 9897, y: 558}
-    isStartNode: 0
-    ChildIDs:
-    - ffb2b259-2dc3-4f5b-9eee-9ea71c401dc6
-  - ID: ffb2b259-2dc3-4f5b-9eee-9ea71c401dc6
-    Name: 51
-    SpeakerName: Karl
-    Text: 'Did you say grill?
-
-      Never mind the dog park, there is always time
-      for some barbeque!'
-    SpritePath: Neighbour_Laughing
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 4c5ce2c7-dc10-4a42-be6f-3836ea00d894
-    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
-    Position: {x: 10186, y: 566}
-    isStartNode: 0
-    ChildIDs:
-    - 4c5ce2c7-dc10-4a42-be6f-3836ea00d894
-  - ID: 4c5ce2c7-dc10-4a42-be6f-3836ea00d894
-    Name: DialogueName
-    SpeakerName: Snuffles
-    Text: ...
-    SpritePath: Dogsad
-    Choices:
-    - Text: Next Dialogue
-      NodeID: 2d23a5fe-273b-4162-a27a-88697c449fad
-    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
-    Position: {x: 10710, y: 563}
-    isStartNode: 0
-    ChildIDs:
-    - 2d23a5fe-273b-4162-a27a-88697c449fad
   - ID: aab63e29-924e-4cdc-a70b-b12e6bc96965
     Name: 2
     SpeakerName: Lilith
@@ -1465,6 +1395,76 @@ MonoBehaviour:
     isStartNode: 0
     ChildIDs:
     - 3925843c-2114-4067-8a81-adb67857717b
+  - ID: 08e28eca-a395-474f-9181-bc6b7efd65a1
+    Name: 48
+    SpeakerName: Lilith
+    Text: HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA
+    SpritePath: Lilith_Smug
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 35c3cf7a-cdcd-4e5d-b970-19453c0443c9
+    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
+    Position: {x: 8945, y: 634}
+    isStartNode: 0
+    ChildIDs:
+    - 35c3cf7a-cdcd-4e5d-b970-19453c0443c9
+  - ID: 35c3cf7a-cdcd-4e5d-b970-19453c0443c9
+    Name: 49
+    SpeakerName: Lilith
+    Text: "I can\u2019t even say it with a straight face!"
+    SpritePath: Lilith_Happy
+    Choices:
+    - Text: Next Dialogue
+      NodeID: ed5f39f6-dff9-4600-9f35-64d7add17a73
+    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
+    Position: {x: 9886, y: 133}
+    isStartNode: 0
+    ChildIDs:
+    - ed5f39f6-dff9-4600-9f35-64d7add17a73
+  - ID: ed5f39f6-dff9-4600-9f35-64d7add17a73
+    Name: 50
+    SpeakerName: Lilith
+    Text: 'Anyway...
+
+      You give me no choice but to kill...'
+    SpritePath: Lilith_Smug
+    Choices:
+    - Text: Next Dialogue
+      NodeID: ffb2b259-2dc3-4f5b-9eee-9ea71c401dc6
+    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
+    Position: {x: 10138, y: 131}
+    isStartNode: 0
+    ChildIDs:
+    - ffb2b259-2dc3-4f5b-9eee-9ea71c401dc6
+  - ID: ffb2b259-2dc3-4f5b-9eee-9ea71c401dc6
+    Name: 51
+    SpeakerName: Karl
+    Text: 'Did you say grill?
+
+      Never mind the dog park, there is always time
+      for some barbeque!'
+    SpritePath: Neighbour_Laughing
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 4c5ce2c7-dc10-4a42-be6f-3836ea00d894
+    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
+    Position: {x: 10384, y: 137}
+    isStartNode: 0
+    ChildIDs:
+    - 4c5ce2c7-dc10-4a42-be6f-3836ea00d894
+  - ID: 4c5ce2c7-dc10-4a42-be6f-3836ea00d894
+    Name: DialogueName
+    SpeakerName: Snuffles
+    Text: ...
+    SpritePath: Dogsad
+    Choices:
+    - Text: Next Dialogue
+      NodeID: 2d23a5fe-273b-4162-a27a-88697c449fad
+    GroupID: d01246b4-8e40-46b1-a7b2-332560a06869
+    Position: {x: 10771, y: 138}
+    isStartNode: 0
+    ChildIDs:
+    - 2d23a5fe-273b-4162-a27a-88697c449fad
   OldGroupNames:
   - 1
   - 2
@@ -1497,16 +1497,16 @@ MonoBehaviour:
       Value:
       - 46
       - 47
-      - 48
-      - 49
-      - 50
-      - 51
-      - DialogueName
       - 52
       - 54
       - hurtmentallyskiptofight
       - 55
       - 53
+      - 48
+      - 49
+      - 50
+      - 51
+      - DialogueName
     - Key: DoTakeHerOUt
       Value:
       - 24
